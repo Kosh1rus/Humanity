@@ -79,6 +79,8 @@ public sealed class VocalSystem : EntitySystem
 
     private bool TryPlayScreamSound(EntityUid uid, VocalComponent component)
     {
+        if (EntityManager.System<Content.Server.Humanity.Audio.WorldWarPlayerVoiceSystem>().TryPlayScream(uid))
+            return true;
         if (_random.Prob(component.WilhelmProbability))
         {
             _audio.PlayPvs(component.Wilhelm, uid, component.Wilhelm.Params);

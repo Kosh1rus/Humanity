@@ -4,6 +4,7 @@
   description: Heavy as a really heavy thing.
   abstract: true
   components:
+    - type: StoneDust
     - type: Clickable
     - type: Sprite
       noRot: true

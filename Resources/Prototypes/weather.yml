@@ -7,7 +7,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: AshfallLight
@@ -18,7 +18,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: AshfallHeavy
@@ -29,7 +29,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: Fallout
@@ -40,10 +40,11 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: Hail
+  color: "#C6D8E870"
   sprite:
     sprite: /Textures/Effects/weather.rsi
     state: hail
@@ -51,10 +52,11 @@
     path: /Audio/Effects/Weather/rain.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: Rain
+  color: "#C6D8E870"
   sprite:
     sprite: /Textures/Effects/weather.rsi
     state: rain
@@ -62,10 +64,11 @@
     collection: Rain
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: soundCollection
   id: Rain
+  color: "#C6D8E870"
   files:
     - /Audio/Effects/Weather/rain.ogg
     - /Audio/Effects/Weather/rain2.ogg
@@ -79,7 +82,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: SandstormHeavy
@@ -90,7 +93,7 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: SnowfallLight
@@ -101,7 +104,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: SnowfallMedium
@@ -112,7 +115,7 @@
     path: /Audio/Effects/Weather/snowstorm_weak.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: SnowfallHeavy
@@ -123,10 +126,11 @@
     path: /Audio/Effects/Weather/snowstorm.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12
 
 - type: weather
   id: Storm
+  color: "#C6D8E870"
   sprite:
     sprite: /Textures/Effects/weather.rsi
     state: storm
@@ -134,4 +138,4 @@
     path: /Audio/Effects/Weather/rain_heavy.ogg
     params:
       loop: true
-      volume: -6
+      volume: -12

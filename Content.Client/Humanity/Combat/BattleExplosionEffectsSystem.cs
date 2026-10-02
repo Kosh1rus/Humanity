@@ -4,6 +4,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
+using Content.Client.Humanity.Visuals;
 
 namespace Content.Client.Humanity.Combat;
 
@@ -27,8 +28,11 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
 
     public void SpawnEffects(ExplosionVisualsComponent explosion)
     {
-        if (explosion.ExplosionType is not ("CivGrenade" or "CivDefault") ||
-            !_maps.MapExists(explosion.Epicenter.MapId))
+        if (!_maps.MapExists(explosion.Epicenter.MapId))
+            return;
+        if (_overlays.TryGetOverlay<HumanityAtmosphereOverlay>(out var fog))
+            fog.Disperse(explosion.Epicenter, explosion.Intensity.Count * 1.2f);
+        if (explosion.ExplosionType is not ("CivGrenade" or "CivDefault"))
             return;
 
         Spawn("HumanityBlastFlash", explosion.Epicenter);

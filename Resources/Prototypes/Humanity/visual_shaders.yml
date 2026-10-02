@@ -1,0 +1,13 @@
+- type: shader
+  id: HumanityFoliage
+  kind: source
+  path: /Textures/Shaders/humanity_foliage.swsl
+  params:
+    wind_phase: 0
+    wind_speed: 1
+    wind_strength: 1
+
+- type: shader
+  id: HumanityAtmosphere
+  kind: source
+  path: /Textures/Shaders/humanity_atmosphere.swsl

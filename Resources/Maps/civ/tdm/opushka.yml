@@ -29,7 +29,7 @@ entities:
       name: Opushka (WW2)
     - type: Transform
     - type: MapLight
-      ambientLightColor: '#D8B059FF'
+      ambientLightColor: '#D8E0E4FF'
     - type: Map
       mapPaused: True
     - type: PhysicsMap

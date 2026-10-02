@@ -73,14 +73,16 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
                 return;
             }
         }
+        if (component.WeatherInitialised)
+            return;
         foreach (var mapId in _mapManager.GetAllMapIds())
         {
             if (component.WeatherInitialised == false)
             {
                 _weather.SetWeather(mapId, weather, endTime);
-                component.WeatherInitialised = true;
             }
         }
+        component.WeatherInitialised = true;
     }
 
 
@@ -89,21 +91,24 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
     {
         if (!Resolve(uid, ref component))
             return;
+        if (component.DayTimes.Count == 0)
+            return;
         var chosenDaylight = _random.Pick(component.DayTimes);
+        var worldWar = GameTicker.CurrentPreset?.ID == "TDMWW2";
 
         _sawmill.Info($"Selected daytime: {chosenDaylight}");
-        var pickedLight = "#D8B059";
+        var pickedLight = worldWar ? "#D8E0E4" : "#EEE2CB";
         if (chosenDaylight == "Day")
         {
-            pickedLight = "#D8B059";
+            pickedLight = worldWar ? "#D8E0E4" : "#EEE2CB";
         }
         else if (chosenDaylight == "Dawn" || chosenDaylight == "Dusk")
         {
-            pickedLight = "#cf7330";
+            pickedLight = worldWar ? "#B6ACAA" : "#DBAE88";
         }
         else if (chosenDaylight == "Night")
         {
-            pickedLight = "#2b3143";
+            pickedLight = "#59687F";
         }
         foreach (var mapId in _mapManager.GetAllMapIds())
         {

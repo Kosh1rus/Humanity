@@ -88,20 +88,20 @@ namespace Content.Client.Stylesheets
         public const string StyleClassPopupMessageLarge = "PopupMessageLarge";
         public const string StyleClassPopupMessageLargeCaution = "PopupMessageLargeCaution";
 
-        public static readonly Color PanelDark = Color.FromHex("#1E1E22");
+        public static readonly Color PanelDark = Color.FromHex("#20231F");
 
-        public static readonly Color NanoGold = Color.FromHex("#A88B5E");
+        public static readonly Color NanoGold = Color.FromHex("#C4AA76");
         public static readonly Color GoodGreenFore = Color.FromHex("#31843E");
         public static readonly Color ConcerningOrangeFore = Color.FromHex("#A5762F");
         public static readonly Color DangerousRedFore = Color.FromHex("#BB3232");
         public static readonly Color DisabledFore = Color.FromHex("#5A5A5A");
 
-        public static readonly Color ButtonColorDefault = Color.FromHex("#464966");
+        public static readonly Color ButtonColorDefault = Color.FromHex("#454943");
         public static readonly Color ButtonColorDefaultRed = Color.FromHex("#D43B3B");
-        public static readonly Color ButtonColorHovered = Color.FromHex("#575b7f");
+        public static readonly Color ButtonColorHovered = Color.FromHex("#626A5B");
         public static readonly Color ButtonColorHoveredRed = Color.FromHex("#DF6B6B");
         public static readonly Color ButtonColorPressed = Color.FromHex("#3e6c45");
-        public static readonly Color ButtonColorDisabled = Color.FromHex("#30313c");
+        public static readonly Color ButtonColorDisabled = Color.FromHex("#30332F");
 
         public static readonly Color ButtonColorCautionDefault = Color.FromHex("#ab3232");
         public static readonly Color ButtonColorCautionHovered = Color.FromHex("#cf2f2f");

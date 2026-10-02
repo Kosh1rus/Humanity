@@ -459,6 +459,8 @@ public abstract partial class SharedMoverController : VirtualController
         if (_inventory.TryGetSlotEntity(uid, "shoes", out var shoes) &&
             FootstepModifierQuery.TryComp(shoes, out var modifier))
         {
+            if (IsWorldWarMap(xform))
+                return TryGetFootstepSound(uid, xform, true, out sound, tileDef: tileDef);
             sound = modifier.FootstepSoundCollection;
             return sound != null;
         }
@@ -521,7 +523,7 @@ public abstract partial class SharedMoverController : VirtualController
         if (tileDef == null)
             return false;
 
-        sound = haveShoes ? tileDef.FootstepSounds : tileDef.BarestepSounds;
+        sound = GetWorldWarTerrainSound(xform, tileDef) ?? (haveShoes ? tileDef.FootstepSounds : tileDef.BarestepSounds);
         return sound != null;
     }
 }

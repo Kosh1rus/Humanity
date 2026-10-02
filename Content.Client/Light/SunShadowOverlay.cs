@@ -153,7 +153,7 @@ public sealed class SunShadowOverlay : Overlay
                     var maskShader = _protoManager.Index<ShaderPrototype>("Mix").Instance();
                     worldHandle.UseShader(maskShader);
 
-                    worldHandle.DrawTextureRect(_target.Texture, worldBounds, Color.Black.WithAlpha(alpha));
+                    worldHandle.DrawTextureRect(_blurTarget!.Texture, worldBounds, Color.Black.WithAlpha(alpha * 0.8f));
                 }, null);
         }
     }

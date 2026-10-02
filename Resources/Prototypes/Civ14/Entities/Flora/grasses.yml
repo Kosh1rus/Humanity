@@ -4,9 +4,13 @@
   id: WildPlantTallGrass
   description: Густая высокая трава. Похоже, здесь можно спрятаться.
   components:
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: tall_grass_3
+      layers:
+      - state: tall_grass_3
+        shader: HumanityFoliage
       drawdepth: Overdoors
     - type: SpriteFade
     - type: Clickable
@@ -34,18 +38,26 @@
   parent: WildPlantTallGrass
   id: WildPlantTallGrass2
   components:
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: tall_grass_4
+      layers:
+      - state: tall_grass_4
+        shader: HumanityFoliage
       drawdepth: Overdoors
 - type: entity
   name: высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrass3
   components:
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: tall_grass_5
+      layers:
+      - state: tall_grass_5
+        shader: HumanityFoliage
       drawdepth: Overdoors
 
 - type: entity
@@ -53,9 +65,13 @@
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDry
   components:
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: tall_grass_8
+      layers:
+      - state: tall_grass_8
+        shader: HumanityFoliage
       drawdepth: Overdoors
 
 - type: entity
@@ -63,9 +79,13 @@
   parent: WildPlantTallGrassDry
   id: WildPlantTallGrassDry2
   components:
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: tall_grass_9
+      layers:
+      - state: tall_grass_9
+        shader: HumanityFoliage
       drawdepth: Overdoors
 
 - type: entity
@@ -73,25 +93,40 @@
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead2
   components:
+    - type: FoliageAtmosphere
+      enabled: false
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: dead_tall_grass_4
+      layers:
+      - state: dead_tall_grass_4
+        shader: ""
       drawdepth: Overdoors
 - type: entity
   name: мёртвая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead3
   components:
+    - type: FoliageAtmosphere
+      enabled: false
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: dead_tall_grass_5
+      layers:
+      - state: dead_tall_grass_5
+        shader: ""
       drawdepth: Overdoors
 - type: entity
   name: мёртвая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead
   components:
+    - type: FoliageAtmosphere
+      enabled: false
+      shedLeaves: false
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
-      state: dead_tall_grass_3
+      layers:
+      - state: dead_tall_grass_3
+        shader: ""
       drawdepth: Overdoors

@@ -1,0 +1,39 @@
+- type: soundCollection
+  id: HumanityMudSteps
+  files:
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt1.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt2.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt3.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt4.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt5.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt6.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt7.ogg
+  - /Audio/Civ/Effects/Footsteps/Dirt/dirt8.ogg
+
+- type: soundCollection
+  id: HumanityGrassSteps
+  files:
+  - /Audio/Civ/Effects/Footsteps/Grass/grass1.ogg
+  - /Audio/Civ/Effects/Footsteps/Grass/grass2.ogg
+  - /Audio/Civ/Effects/Footsteps/Grass/grass3.ogg
+  - /Audio/Civ/Effects/Footsteps/Grass/grass4.ogg
+
+- type: soundCollection
+  id: HumanityBattleMaleScreams
+  files:
+  - /Audio/Humanity/Voices/male_1.ogg
+  - /Audio/Humanity/Voices/male_2.ogg
+  - /Audio/Humanity/Voices/male_3.ogg
+  - /Audio/Humanity/Voices/male_4.ogg
+  - /Audio/Humanity/Voices/male_5.ogg
+  - /Audio/Humanity/Voices/male_6.ogg
+
+- type: soundCollection
+  id: HumanityBattleFemaleScreams
+  files:
+  - /Audio/Humanity/Voices/female_1.ogg
+  - /Audio/Humanity/Voices/female_2.ogg
+  - /Audio/Humanity/Voices/female_3.ogg
+  - /Audio/Humanity/Voices/female_4.ogg
+  - /Audio/Humanity/Voices/female_5.ogg
+  - /Audio/Humanity/Voices/female_6.ogg

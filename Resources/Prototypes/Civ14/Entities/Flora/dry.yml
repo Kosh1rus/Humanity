@@ -4,9 +4,12 @@
   name: "средиземноморская сосна"
   description: "Крупная сосна, приспособленная к сухому климату."
   components:
+    - type: FoliageAtmosphere
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi
-      state: med_pine
+      layers:
+      - state: med_pine
+        shader: HumanityFoliage
     - type: Fixtures
       fixtures:
         fix1:
@@ -22,9 +25,13 @@
   name: "сухое средиземноморское дерево"
   description: "Крупная сосна засушливых краёв. Это дерево погибло."
   components:
+    - type: FoliageAtmosphere
+      enabled: false
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_dead.rsi
-      state: med_pine_dead
+      layers:
+      - state: med_pine_dead
+        shader: ""
 
 - type: decal
   id: TallGrass1

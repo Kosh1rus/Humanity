@@ -101,6 +101,9 @@ public sealed partial class FlintRockSystem : EntitySystem
         if (component.CurrentFlints == component.MaxFlints)
             component.LastRegenerationTime = _gameTiming.CurTime;
         component.CurrentFlints--;
+        var coordinates = Transform(uid).Coordinates;
+        RaiseNetworkEvent(new Content.Shared.Humanity.Visuals.StoneDustEvent(GetNetCoordinates(coordinates)),
+            Robust.Shared.Player.Filter.Pvs(uid, entityManager: EntityManager));
         var spawnPos = Transform(uid).MapPosition;
         var flint = Spawn("Flint", spawnPos);
         _hands.TryPickupAnyHand(args.Args.User, flint);

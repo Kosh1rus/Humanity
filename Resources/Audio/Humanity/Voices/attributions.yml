@@ -1,0 +1,21 @@
+- files:
+  - male_1.ogg
+  - male_2.ogg
+  - male_3.ogg
+  - male_4.ogg
+  - male_5.ogg
+  - male_6.ogg
+  license: CC0-1.0
+  copyright: "Male Grunt/Yelling sounds by HaelDB. Trimmed, converted to mono OGG, normalized and faded for Humanity."
+  source: https://opengameart.org/content/male-gruntyelling-sounds
+
+- files:
+  - female_1.ogg
+  - female_2.ogg
+  - female_3.ogg
+  - female_4.ogg
+  - female_5.ogg
+  - female_6.ogg
+  license: CC0-1.0
+  copyright: "Female Hurt Grunts & Groans by Nocturnal_Vanguard (AuraVoice). Split into clips, converted to mono OGG, normalized and faded for Humanity."
+  source: https://opengameart.org/content/female-hurt-grunts-groans

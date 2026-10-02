@@ -77,11 +77,12 @@
     - type: ApcPowerReceiver
       needsPower: false
       powerLoad: 0
+    - type: FireAtmosphere
     - type: PointLight
       enabled: false
       radius: 4
       energy: 4
-      color: "#E25822"
+      color: "#FFBD78"
     - type: HeatEmitter
       heatingRate: 10
     - type: GrillFuelBurn

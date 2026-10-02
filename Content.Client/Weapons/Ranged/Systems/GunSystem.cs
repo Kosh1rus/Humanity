@@ -248,11 +248,11 @@ public sealed partial class GunSystem : SharedGunSystem
             track.Offset = Vector2.UnitX / 2f;
         }
 
-        var lifetime = 0.4f;
+        var lifetime = 0.12f;
 
-        if (TryComp<TimedDespawnComponent>(gunUid, out var despawn))
+        if (TryComp<TimedDespawnComponent>(ent, out var despawn))
         {
-            lifetime = despawn.Lifetime;
+            lifetime = Math.Min(despawn.Lifetime, lifetime);
         }
 
         var anim = new Animation()
@@ -275,17 +275,17 @@ public sealed partial class GunSystem : SharedGunSystem
         };
 
         _animPlayer.Play(ent, anim, "muzzle-flash");
-        if (!TryComp(gunUid, out PointLightComponent? light))
+        if (!TryComp(ent, out PointLightComponent? light))
         {
             light = (PointLightComponent)_factory.GetComponent(typeof(PointLightComponent));
             light.NetSyncEnabled = false;
-            AddComp(gunUid, light);
+            AddComp(ent, light);
         }
 
-        Lights.SetEnabled(gunUid, true, light);
-        Lights.SetRadius(gunUid, 2f, light);
-        Lights.SetColor(gunUid, Color.FromHex("#cc8e2b"), light);
-        Lights.SetEnergy(gunUid, 5f, light);
+        Lights.SetEnabled(ent, true, light);
+        Lights.SetRadius(ent, 2.5f, light);
+        Lights.SetColor(ent, Color.FromHex("#FFD39A"), light);
+        Lights.SetEnergy(ent, 3f, light);
 
         var animTwo = new Animation()
         {
@@ -299,7 +299,7 @@ public sealed partial class GunSystem : SharedGunSystem
                     InterpolationMode = AnimationInterpolationMode.Linear,
                     KeyFrames =
                     {
-                        new AnimationTrackProperty.KeyFrame(5f, 0),
+                        new AnimationTrackProperty.KeyFrame(3f, 0),
                         new AnimationTrackProperty.KeyFrame(0f, lifetime)
                     }
                 },
@@ -317,10 +317,10 @@ public sealed partial class GunSystem : SharedGunSystem
             }
         };
 
-        var uidPlayer = EnsureComp<AnimationPlayerComponent>(gunUid);
+        var uidPlayer = EnsureComp<AnimationPlayerComponent>(ent);
 
-        _animPlayer.Stop(gunUid, uidPlayer, "muzzle-flash-light");
-        _animPlayer.Play((gunUid, uidPlayer), animTwo, "muzzle-flash-light");
+        _animPlayer.Stop(ent, uidPlayer, "muzzle-flash-light");
+        _animPlayer.Play((ent, uidPlayer), animTwo, "muzzle-flash-light");
     }
 
     public override void ShootProjectile(EntityUid uid,

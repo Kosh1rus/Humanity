@@ -12,6 +12,43 @@
       shader: unshaded
   - type: TimedDespawn
     lifetime: 0.48
+  - type: PointLight
+    color: "#FFD39A"
+    radius: 4
+    energy: 2
+  - type: Tag
+    tags: [ HideContextMenu ]
+
+- type: entity
+  id: HumanitySmallDust
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+    noRot: true
+    drawdepth: Effects
+    scale: "0.12, 0.12"
+    color: "#A3988530"
+  - type: TimedDespawn
+    lifetime: 3
+  - type: Tag
+    tags: [ HideContextMenu ]
+
+- type: entity
+  id: HumanityEmber
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/fire_greyscale.rsi
+    noRot: true
+    drawdepth: Effects
+    scale: "0.05, 0.05"
+    layers:
+    - state: "1"
+      shader: unshaded
+  - type: TimedDespawn
+    lifetime: 1
   - type: Tag
     tags: [ HideContextMenu ]
 

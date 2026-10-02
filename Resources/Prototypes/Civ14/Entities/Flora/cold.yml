@@ -4,10 +4,12 @@
   name: "сосна"
   description: "Да, это дерево."
   components:
+    - type: FoliageAtmosphere
     - type: Sprite
       sprite: Civ14/Flora/pinetrees.rsi
       layers:
         - state: pine_1
+          shader: HumanityFoliage
           map: ["random"]
     - type: RandomSprite
       available:
@@ -29,10 +31,12 @@
   name: "заснеженная сосна"
   description: "Обычная сосна, покрытая снегом."
   components:
+    - type: FoliageAtmosphere
     - type: Sprite
       sprite: Civ14/Flora/pinetrees_snow.rsi
       layers:
         - state: pine_1
+          shader: HumanityFoliage
           map: ["random"]
     - type: RandomSprite
       available:
@@ -55,10 +59,12 @@
   name: "заснеженное дерево"
   description: "Да, это дерево. Под снегом."
   components:
+    - type: FoliageAtmosphere
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_winter.rsi
       layers:
         - state: tree_1
+          shader: HumanityFoliage
           map: ["random"]
     - type: RandomSprite
       available:

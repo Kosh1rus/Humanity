@@ -1,0 +1,78 @@
+light_mode unshaded;
+uniform sampler2D SCREEN_TEXTURE;
+uniform highp float saturation;
+uniform highp float warmth;
+uniform sampler2D ROOF_MASK;
+uniform highp vec2 world_origin;
+uniform highp vec2 world_axis_x;
+uniform highp vec2 world_axis_y;
+uniform highp float fog_strength;
+uniform highp float fog_time;
+uniform highp vec2[8] blast_positions;
+uniform highp float[8] blast_radii;
+uniform highp float[8] blast_ages;
+
+highp float hash(highp vec2 point) {
+    return fract(sin(dot(point, vec2(127.1, 311.7))) * 43758.5453);
+}
+
+highp float cloud(highp vec2 point) {
+    highp vec2 cell = floor(point);
+    highp vec2 part = fract(point);
+    part = part * part * (3.0 - 2.0 * part);
+    return mix(mix(hash(cell), hash(cell + vec2(1.0, 0.0)), part.x),
+        mix(hash(cell + vec2(0.0, 1.0)), hash(cell + vec2(1.0)), part.x), part.y);
+}
+
+highp float roofCoverage(highp vec2 coord) {
+    highp vec2 feather = vec2(0.35) / vec2(length(world_axis_x), length(world_axis_y));
+    highp float roof = texture2D(ROOF_MASK, coord).a * 0.25;
+    roof += texture2D(ROOF_MASK, coord + vec2(feather.x, 0.0)).a * 0.125;
+    roof += texture2D(ROOF_MASK, coord - vec2(feather.x, 0.0)).a * 0.125;
+    roof += texture2D(ROOF_MASK, coord + vec2(0.0, feather.y)).a * 0.125;
+    roof += texture2D(ROOF_MASK, coord - vec2(0.0, feather.y)).a * 0.125;
+    roof += texture2D(ROOF_MASK, coord + feather).a * 0.0625;
+    roof += texture2D(ROOF_MASK, coord - feather).a * 0.0625;
+    roof += texture2D(ROOF_MASK, coord + vec2(feather.x, -feather.y)).a * 0.0625;
+    roof += texture2D(ROOF_MASK, coord + vec2(-feather.x, feather.y)).a * 0.0625;
+    return roof;
+}
+
+void fragment() {
+    highp vec2 coord = FRAGCOORD.xy * SCREEN_PIXEL_SIZE.xy;
+    highp vec4 scene = zTextureSpec(SCREEN_TEXTURE, coord);
+    highp float luminance = dot(scene.rgb, vec3(0.2126, 0.7152, 0.0722));
+    highp vec3 graded = mix(vec3(luminance), scene.rgb, saturation);
+    graded *= vec3(1.0 + warmth, 1.0, 1.0 - warmth);
+    highp vec2 world = world_origin + coord.x * world_axis_x + coord.y * world_axis_y;
+    highp vec2 drift = vec2(fog_time * 0.18, fog_time * 0.05);
+    highp vec2 flowing = world - drift;
+    highp float clearing = 1.0;
+    highp float piled = 0.0;
+    for (int i = 0; i < 8; i++) {
+        highp vec4 blast = vec4(blast_positions[i], blast_radii[i], blast_ages[i]);
+        if (blast.w >= 0.0) {
+            highp vec2 delta = world - blast.xy;
+            highp float distance = length(delta);
+            highp float radius = max(0.05, blast.z * (1.0 - exp(-blast.w * 4.0)));
+            highp float recovery = 1.0 - smoothstep(1.5, 8.0, blast.w);
+            highp float interior = 1.0 - smoothstep(radius * 0.3, radius, distance);
+            clearing *= 1.0 - interior * recovery * 0.92;
+            highp float ring = exp(-pow((distance - radius) / max(0.5, blast.z * 0.22), 2.0));
+            ring *= exp(-blast.w * 0.85);
+            flowing -= delta / max(distance, 0.1) * ring * blast.z * 0.22;
+            piled += ring * 0.1;
+        }
+    }
+    highp vec2 curl = vec2(cloud(flowing * 0.07 + fog_time * 0.006),
+        cloud(flowing * 0.07 + vec2(23.0, 7.0) - fog_time * 0.004)) - vec2(0.5);
+    highp float mist = cloud((flowing + curl * 1.4) * vec2(0.06, 0.2));
+    highp float wisps = cloud(flowing * vec2(0.15, 0.3) - drift * 0.04 + vec2(17.0, 9.0));
+    mist = smoothstep(0.24, 0.8, mist * 0.7 + wisps * 0.3);
+    mist = pow(mist, 1.8);
+    highp float outdoors = 1.0 - smoothstep(0.08, 0.92, roofCoverage(coord));
+    highp float haze = fog_strength * ((0.04 + mist * 0.7) * clearing + piled) * outdoors;
+    highp vec3 fogColor = vec3(0.24, 0.28, 0.29) * (0.5 + min(luminance * 1.5, 0.5));
+    graded = mix(graded, fogColor, haze);
+    COLOR = vec4(clamp(graded, 0.0, 1.0), 1.0);
+}

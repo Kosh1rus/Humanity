@@ -4,10 +4,12 @@
   name: "дерево умеренного климата"
   description: "Да, это дерево."
   components:
+    - type: FoliageAtmosphere
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi
       layers:
         - state: tree_1
+          shader: HumanityFoliage
           map: ["random"]
     - type: RandomSprite
       available:
@@ -32,6 +34,8 @@
   name: "мёртвое дерево"
   description: "Да, это дерево. Но уже мёртвое."
   components:
+    - type: FoliageAtmosphere
+      enabled: false
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_dead.rsi
       layers:

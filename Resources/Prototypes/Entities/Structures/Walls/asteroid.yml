@@ -10,6 +10,7 @@
   name: asteroid rock
   description: A rocky asteroid.
   components:
+    - type: StoneDust
     - type: Transform
       noRot: true
     - type: IconSmooth
