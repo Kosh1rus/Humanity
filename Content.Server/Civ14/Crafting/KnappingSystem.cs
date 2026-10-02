@@ -5,6 +5,8 @@ using Content.Shared.DoAfter;
 using Robust.Server.GameObjects;
 using Content.Shared.Popups;
 using Content.Shared.Hands.EntitySystems;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 
 namespace Content.Server.Rocks;
 
@@ -13,6 +15,7 @@ public sealed partial class KnappingSystem : EntitySystem
     [Dependency] private readonly DoAfterSystem _doAfter = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public override void Initialize()
     {
@@ -41,6 +44,12 @@ public sealed partial class KnappingSystem : EntitySystem
             return;
 
         component.CurrentHits++;
+        var coordinates = args.Args.Target is { } target && Exists(target)
+            ? Transform(target).Coordinates
+            : Transform(args.Args.User).Coordinates;
+        Spawn("EffectSparks", coordinates);
+        _audio.PlayPvs("/Audio/Items/Mining/pickaxe.ogg", coordinates,
+            AudioParams.Default.WithVolume(-8f).WithVariation(0.1f).WithMaxDistance(8f));
 
         if (component.CurrentHits >= component.HitsRequired)
         {
