@@ -138,7 +138,7 @@ public sealed class GrillFuelBurnSystem : EntitySystem
             return;
 
         var remainingTime = comp.Fuel;
-        args.PushMarkup($"Has approximately {remainingTime:F1} minutes of fuel remaining.");
+        args.PushMarkup($"Топлива осталось примерно на {remainingTime:F1} мин.");
     }
 
     public void ChangeSetting(EntityUid uid, EntityHeaterSetting setting, GrillFuelBurnComponent? comp = null)

@@ -68,7 +68,7 @@ public sealed partial class DiggingSystem : EntitySystem
 
         if (_doAfter.TryStartDoAfter(doAfterArgs))
         {
-            _popup.PopupEntity("You start digging the soil.", ent, user);
+            _popup.PopupEntity("Вы начинаете копать землю.", ent, user);
             args.Handled = true;
         }
     }
@@ -106,7 +106,7 @@ public sealed partial class DiggingSystem : EntitySystem
         }
         Spawn(result, coordinates);
 
-        _popup.PopupEntity("You finish digging the soil.", ent, args.User);
+        _popup.PopupEntity("Вы перекопали землю.", ent, args.User);
         args.Handled = true;
     }
 }

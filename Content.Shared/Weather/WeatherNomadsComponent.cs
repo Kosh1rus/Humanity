@@ -1,5 +1,6 @@
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Weather;
 
@@ -27,11 +28,14 @@ public sealed partial class WeatherNomadsComponent : Component
     [DataField("currentWeather")]
     public string CurrentWeather { get; set; } = "Clear";
 
-    [DataField("nextSwitchTime", customTypeSerializer: typeof(TimespanSerializer))]
+    [DataField("nextSwitchTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan NextSwitchTime { get; set; } = TimeSpan.Zero;
 
-    [DataField("nextSeasonChange", customTypeSerializer: typeof(TimespanSerializer))]
+    [DataField("nextSeasonChange", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan NextSeasonChange { get; set; } = TimeSpan.Zero;
+
+    [DataField]
+    public bool WeatherInitialized;
 
     [DataField("currentSeason")]
     public string CurrentSeason { get; set; } = "Spring";

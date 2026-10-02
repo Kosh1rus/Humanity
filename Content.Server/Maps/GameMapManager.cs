@@ -27,6 +27,7 @@ public sealed class GameMapManager : IGameMapManager
     private GameMapPrototype? _configSelectedMap;
     [ViewVariables(VVAccess.ReadOnly)]
     private GameMapPrototype? _selectedMap; // Don't change this value during a round!
+    private bool _selectionPending;
     [ViewVariables(VVAccess.ReadOnly)]
     private bool _mapRotationEnabled;
     [ViewVariables(VVAccess.ReadOnly)]
@@ -40,6 +41,8 @@ public sealed class GameMapManager : IGameMapManager
 
         _configurationManager.OnValueChanged(CCVars.GameMap, value =>
         {
+            _selectedMap = null;
+            _selectionPending = true;
             if (TryLookupMap(value, out GameMapPrototype? map))
             {
                 _configSelectedMap = map;
@@ -130,12 +133,24 @@ public sealed class GameMapManager : IGameMapManager
 
     public GameMapPrototype? GetSelectedMap()
     {
-        return _configSelectedMap ?? _selectedMap;
+        return _selectedMap ?? _configSelectedMap;
     }
 
     public void ClearSelectedMap()
     {
-        _selectedMap = default!;
+        _selectedMap = null;
+        _selectionPending = false;
+    }
+
+    public void ResetForNextRound()
+    {
+        if (!_selectionPending)
+            _selectedMap = null;
+    }
+
+    public void MarkMapLoaded()
+    {
+        _selectionPending = false;
     }
 
     public bool TrySelectMapIfEligible(string gameMap)
@@ -143,6 +158,7 @@ public sealed class GameMapManager : IGameMapManager
         if (!TryLookupMap(gameMap, out var map) || !IsMapEligible(map))
             return false;
         _selectedMap = map;
+        _selectionPending = true;
         return true;
     }
 
@@ -151,12 +167,14 @@ public sealed class GameMapManager : IGameMapManager
         if (!TryLookupMap(gameMap, out var map))
             throw new ArgumentException($"The map \"{gameMap}\" is invalid!");
         _selectedMap = map;
+        _selectionPending = true;
     }
 
     public void SelectMapRandom()
     {
         var maps = CurrentlyEligibleMaps().ToList();
         _selectedMap = _random.Pick(maps);
+        _selectionPending = true;
     }
 
     public void SelectMapFromRotationQueue(bool markAsPlayed = false)
@@ -164,6 +182,7 @@ public sealed class GameMapManager : IGameMapManager
         var map = GetFirstInRotationQueue();
 
         _selectedMap = map;
+        _selectionPending = true;
 
         if (markAsPlayed)
             EnqueueMap(map.ID);

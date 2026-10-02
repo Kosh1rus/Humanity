@@ -39,7 +39,7 @@ public sealed partial class CompostingSystem : EntitySystem
         var item = args.Used;
         if (!IsCompostable(item, component))
         {
-            _popup.PopupEntity($"This item cannot be used to make {component.OutputName}.", uid, args.User);
+            _popup.PopupEntity($"Этот предмет не подходит. Получаемый продукт: {component.OutputName}.", uid, args.User);
             return;
         }
 
@@ -47,14 +47,14 @@ public sealed partial class CompostingSystem : EntitySystem
         var currentLoad = component.CompostingItems.Count + component.ReadyCompost;
         if (currentLoad >= component.MaxCapacity)
         {
-            _popup.PopupEntity("It wont fit.", uid, args.User);
+            _popup.PopupEntity("Здесь больше нет места.", uid, args.User);
             return;
         }
 
         // Add item to composting process and delete it from the world
-        component.CompostingItems[item] = _gameTiming.CurTime + TimeSpan.FromMinutes(component.CompostTime);
+        component.CompostingItems.Add(component.CompostTime * 60f);
         QueueDel(item);
-        _popup.PopupEntity("You add the item.", uid, args.User);
+        _popup.PopupEntity("Вы добавили предмет.", uid, args.User);
         args.Handled = true;
     }
 
@@ -63,7 +63,8 @@ public sealed partial class CompostingSystem : EntitySystem
     /// </summary>
     private bool IsCompostable(EntityUid item, CompostingComponent component)
     {
-        var tagComponent = Comp<TagComponent>(item);
+        if (!TryComp<TagComponent>(item, out var tagComponent))
+            return false;
         var tags = tagComponent?.Tags.Select(tag => tag.Id).ToArray() ?? Array.Empty<string>();
         return component.Whitelist.Any(tag => tags.Contains(tag));
     }
@@ -76,16 +77,24 @@ public sealed partial class CompostingSystem : EntitySystem
         if (args.Handled || component.ReadyCompost <= 0)
             return;
 
+        if (!_hands.TryGetEmptyHand(args.User, out _))
+        {
+            _popup.PopupEntity("Ваши руки заняты.", uid, args.User);
+            args.Handled = true;
+            return;
+        }
+
         // Spawn compost and try to place it in the player's hand
         var compost = Spawn(component.OutputPrototype, Transform(uid).MapPosition);
         if (_hands.TryPickupAnyHand(args.User, compost))
         {
             component.ReadyCompost--;
-            _popup.PopupEntity($"You collect a unit of {component.OutputName}.", uid, args.User);
+            _popup.PopupEntity($"Вы получили: {component.OutputName}.", uid, args.User);
         }
         else
         {
-            _popup.PopupEntity("Your hands are full.", uid, args.User);
+            QueueDel(compost);
+            _popup.PopupEntity("Ваши руки заняты.", uid, args.User);
         }
         args.Handled = true;
     }
@@ -100,21 +109,15 @@ public sealed partial class CompostingSystem : EntitySystem
         var query = EntityQueryEnumerator<CompostingComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
-            var currentTime = _gameTiming.CurTime;
-            var toRemove = new List<EntityUid>();
-
-            foreach (var (item, endTime) in component.CompostingItems)
+            if (Paused(uid))
+                continue;
+            for (var i = component.CompostingItems.Count - 1; i >= 0; i--)
             {
-                if (currentTime >= endTime)
-                {
-                    toRemove.Add(item);
-                    component.ReadyCompost++;
-                }
-            }
-
-            foreach (var item in toRemove)
-            {
-                component.CompostingItems.Remove(item);
+                component.CompostingItems[i] -= frameTime;
+                if (component.CompostingItems[i] > 0)
+                    continue;
+                component.CompostingItems.RemoveAt(i);
+                component.ReadyCompost++;
             }
         }
     }
@@ -135,18 +138,18 @@ public sealed partial class CompostingSystem : EntitySystem
 
         if (compostingCount == 0 && readyCompost == 0)
         {
-            args.PushMarkup("It's empty.");
+            args.PushMarkup("Здесь пусто.");
             return;
         }
 
         if (compostingCount > 0)
         {
-            args.PushMarkup($"Its currently processing.");
+            args.PushMarkup("Идёт переработка.");
         }
 
         if (readyCompost > 0)
         {
-            args.PushMarkup($"There are {readyCompost} units of {component.OutputName} ready.");
+            args.PushMarkup($"Готово: {readyCompost} ед. — {component.OutputName}.");
         }
     }
 

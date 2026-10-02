@@ -73,14 +73,10 @@ public sealed partial class GameTicker
         _sawmill.Info($"Added game rule {ToPrettyString(ruleEntity)}");
         _adminLogger.Add(LogType.EventStarted, $"Added game rule {ToPrettyString(ruleEntity)}");
         var str = Loc.GetString("station-event-system-run-event", ("eventName", ToPrettyString(ruleEntity)));
-#if DEBUG
-        _chatManager.SendAdminAlert(str);
-#else
         if (RunLevel == GameRunLevel.InRound) // avoids telling admins the round type before it starts so that can be handled elsewhere.
         {
             _chatManager.SendAdminAlert(str);
         }
-#endif
         Log.Info(str);
 
         var ev = new GameRuleAddedEvent(ruleEntity, ruleId);
@@ -319,17 +315,17 @@ public sealed partial class GameTicker
     private void UpdateGameRules()
     {
 
-        if (_gameMapManager.GetSelectedMap() is { } mapPrototype)
+        if (RunLevel == GameRunLevel.PreRoundLobby && !_mapManager.MapExists(DefaultMap) &&
+            _gameMapManager.GetSelectedMap() is { } mapPrototype)
         {
             var map = mapPrototype;
-            if (map.FixedPreset != "" && map.FixedPresetInitialised == false)
+            if (map.FixedPreset != "" && Preset?.ID != map.FixedPreset)
             {
                 _sawmill.Info("Set game preset to " + map.FixedPreset);
                 SetGamePreset(map.FixedPreset);
-                map.FixedPresetInitialised = true;
             }
         }
-        else
+        if (RunLevel == GameRunLevel.InRound)
         {
             var query = EntityQueryEnumerator<DelayedStartRuleComponent, GameRuleComponent>();
             while (query.MoveNext(out var uid, out var delay, out var rule))

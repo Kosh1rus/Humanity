@@ -1,4 +1,5 @@
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Rocks;
 
@@ -9,7 +10,7 @@ public sealed partial class FlintRockComponent : Component
     /// Actual available flints amount
     /// </summary>
     [DataField("currentFlints")]
-    public int CurrentFlints = 0;
+    public int CurrentFlints = -1;
 
     /// <summary>
     /// Maximum flint amount on rock
@@ -26,7 +27,7 @@ public sealed partial class FlintRockComponent : Component
     /// <summary>
     /// Last time that it regenerated a flint
     /// </summary>
-    [DataField("lastRegenerationTime")]
+    [DataField("lastRegenerationTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan LastRegenerationTime = TimeSpan.Zero;
 
     /// <summary>

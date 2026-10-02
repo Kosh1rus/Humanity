@@ -21,6 +21,9 @@
     - type: STWeight
       self: 30
     - type: GunRequiresWield
+    - type: Wieldable
+      wieldedInhandPrefix: null
+      unwieldOnUse: false
     - type: Item
       size: Ginormous
       shape:

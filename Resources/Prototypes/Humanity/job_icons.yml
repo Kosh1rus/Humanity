@@ -1,0 +1,350 @@
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityBlugoslaviaCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: BlugoslaviaCaptain
+  jobName: job-name-civ-blugoslavia-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityBlugoslaviaMachinegunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: BlugoslaviaMachinegunner
+  jobName: job-name-civ-blugoslavia-machinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityBlugoslaviaMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: BlugoslaviaMedic
+  jobName: job-name-civ-blugoslavia-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityBlugoslaviaRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: BlugoslaviaRifleman
+  jobName: job-name-civ-blugoslavia-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityBlugoslaviaSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: BlugoslaviaSergeant
+  jobName: job-name-civ-blugoslavia-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishKnight
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishKnight
+  jobName: job-name-civ-english-knight
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishLord
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishLord
+  jobName: job-name-civ-english-lord
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishMedic
+  jobName: job-name-civ-english-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishRanged
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishRanged
+  jobName: job-name-civ-english-ranged
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishSpearman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishSpearman
+  jobName: job-name-civ-english-spearman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityEnglishSwordsman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: EnglishSwordsman
+  jobName: job-name-civ-english-man-at-arms
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchKnight
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchKnight
+  jobName: job-name-civ-french-knight
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchLord
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchLord
+  jobName: job-name-civ-french-lord
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchMedic
+  jobName: job-name-civ-french-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchRanged
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchRanged
+  jobName: job-name-civ-french-ranged
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchSpearman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchSpearman
+  jobName: job-name-civ-french-spearman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityFrenchSwordsman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: FrenchSwordsman
+  jobName: job-name-civ-french-man-at-arms
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanCaptain
+  jobName: job-name-civ-german-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanMachinegunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanMachinegunner
+  jobName: job-name-civ-german-machinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanMedic
+  jobName: job-name-civ-german-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanRifleman
+  jobName: job-name-civ-german-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanSergeant
+  jobName: job-name-civ-german-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGermanSubmachineGunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GermanSubmachineGunner
+  jobName: job-name-civ-german-submachinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagPrisonerGerman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagPrisonerGerman
+  jobName: job-name-civ-gulag-prisoner-german
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagPrisonerPolish
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagPrisonerPolish
+  jobName: job-name-civ-gulag-prisoner-polish
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagPrisonerUkrainian
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagPrisonerUkrainian
+  jobName: job-name-civ-gulag-prisoner-ukrainian
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagSovietCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagSovietCaptain
+  jobName: job-name-civ-gulag-soviet-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagSovietGuard
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagSovietGuard
+  jobName: job-name-civ-gulag-soviet-guard
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityGulagSovietSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: GulagSovietSergeant
+  jobName: job-name-civ-gulag-soviet-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityInsurgentLeader
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: InsurgentLeader
+  jobName: job-name-civ-insurgent-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityInsurgentMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: InsurgentMedic
+  jobName: job-name-civ-insurgent-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityInsurgentRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: InsurgentRifleman
+  jobName: job-name-civ-insurgent-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCWCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCWCaptain
+  jobName: job-name-civ-sovietcw-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCWMachinegunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCWMachinegunner
+  jobName: job-name-civ-sovietcw-machinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCWMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCWMedic
+  jobName: job-name-civ-sovietcw-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCWRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCWRifleman
+  jobName: job-name-civ-sovietcw-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCWSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCWSergeant
+  jobName: job-name-civ-sovietcw-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietCaptain
+  jobName: job-name-civ-soviet-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietMachinegunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietMachinegunner
+  jobName: job-name-civ-soviet-machinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietMedic
+  jobName: job-name-civ-soviet-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietRifleman
+  jobName: job-name-civ-soviet-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietSergeant
+  jobName: job-name-civ-soviet-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanitySovietSubmachineGunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: SovietSubmachineGunner
+  jobName: job-name-civ-soviet-submachinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUSCaptain
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: USCaptain
+  jobName: job-name-civ-us-cpt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUSMachinegunner
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: USMachinegunner
+  jobName: job-name-civ-us-machinegunner
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUSMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: USMedic
+  jobName: job-name-civ-us-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUSRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: USRifleman
+  jobName: job-name-civ-us-rifleman
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUSSergeant
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: USSergeant
+  jobName: job-name-civ-us-sgt
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUnitedNationsMedic
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: UnitedNationsMedic
+  jobName: job-name-civ-unitednations-medic
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconHumanityUnitedNationsRifleman
+  icon:
+    sprite: /Textures/Humanity/Interface/job_icons.rsi
+    state: UnitedNationsRifleman
+  jobName: job-name-civ-unitednations-rifleman

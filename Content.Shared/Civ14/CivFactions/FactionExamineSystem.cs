@@ -23,6 +23,8 @@ public sealed class FactionExamineSystem : EntitySystem
     private void OnFactionExamine(EntityUid uid, CivFactionComponent component, ExaminedEvent args)
     {
 
+        if (string.IsNullOrEmpty(component.FactionName))
+            return;
         if (TryComp<CivFactionComponent>(args.Examiner, out var examinerFaction))
         {
             if (component.FactionName == "")
@@ -31,19 +33,18 @@ public sealed class FactionExamineSystem : EntitySystem
             }
             if (component.FactionName == examinerFaction.FactionName)
             {
-                var str = $"They are a member of your faction, [color=#007f00]{component.FactionName}[/color].";
+                var str = $"Состоит в вашей фракции: [color=#007f00]{component.FactionName}[/color].";
                 args.PushMarkup(str);
             }
             else
             {
-                var str = $"They are a member of [color=#7f0000]{component.FactionName}[/color].";
+                var str = $"Состоит во фракции: [color=#7f0000]{component.FactionName}[/color].";
                 args.PushMarkup(str);
             }
         }
         else
         {
-            var str = $"They are not a member of any factions.";
-            args.PushMarkup(str);
+            args.PushText($"Состоит во фракции: {component.FactionName}.");
         }
     }
 

@@ -1,4 +1,5 @@
 using Robust.Shared.Prototypes;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.TreeBranch;
 
@@ -9,7 +10,7 @@ public sealed partial class TreeBranchesComponent : Component
     /// The current number of branches on the tree.
     /// </summary>
     [DataField("currentBranches")]
-    public int CurrentBranches = 0;
+    public int CurrentBranches = -1;
 
     /// <summary>
     /// The maximum number of branches the tree can have.
@@ -33,7 +34,7 @@ public sealed partial class TreeBranchesComponent : Component
     /// <summary>
     /// The timestamp of the last branch growth.
     /// </summary>
-    [DataField("lastGrowthTime")]
+    [DataField("lastGrowthTime", customTypeSerializer: typeof(TimeOffsetSerializer))]
     public TimeSpan LastGrowthTime = TimeSpan.Zero;
 
     /// <summary>

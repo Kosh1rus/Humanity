@@ -30,7 +30,7 @@ public sealed partial class SharpenSystem : EntitySystem
         var user = args.User;
         var verb = new AlternativeVerb
         {
-            Text = "Sharpen",
+            Text = "Заострить",
             Act = () => StartSharpeningByHand(uid, component, user)
         };
         args.Verbs.Add(verb);

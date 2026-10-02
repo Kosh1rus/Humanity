@@ -10,6 +10,10 @@ using Content.Shared.Chat;
 using Robust.Shared.Map.Components;
 using Robust.Shared.GameObjects; // Required for EntityUid
 using Content.Server.GameTicking;
+using Content.Shared.GameTicking;
+using Content.Shared.Humanity.Factions;
+using Robust.Shared.Timing;
+using Content.Shared.Weather;
 
 namespace Content.Server.Civ14.CivFactions;
 
@@ -21,6 +25,8 @@ public sealed class CivFactionsSystem : EntitySystem
     [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!; // Use IEntityManager
     [Dependency] private readonly GameTicker _gameTicker = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
+    private readonly Dictionary<NetUserId, (FactionData Faction, TimeSpan Expires)> _invites = new();
     private EntityUid? _factionsEntity;
     private CivFactionsComponent? _factionsComponent;
 
@@ -36,9 +42,12 @@ public sealed class CivFactionsSystem : EntitySystem
 
         // Subscribe to network events
         SubscribeNetworkEvent<CreateFactionRequestEvent>(OnCreateFactionRequest);
+        SubscribeNetworkEvent<FactionListRequestEvent>(OnFactionListRequest);
         SubscribeNetworkEvent<LeaveFactionRequestEvent>(OnLeaveFactionRequest);
         SubscribeNetworkEvent<InviteFactionRequestEvent>(OnInviteFactionRequest);
         SubscribeNetworkEvent<AcceptFactionInviteEvent>(OnAcceptFactionInvite);
+        SubscribeNetworkEvent<ManageFactionMemberEvent>(OnManageMember);
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnSpawnComplete);
     }
 
     /// <summary>
@@ -58,7 +67,8 @@ public sealed class CivFactionsSystem : EntitySystem
     /// <returns>True if the factions component is available and cached; false if it could not be ensured.</returns>
     private bool EnsureFactionsComponent()
     {
-        if (!_gameTicker.IsGameRuleActive("FactionRule"))
+        if ((_gameTicker.CurrentPreset ?? _gameTicker.Preset)?.ID == "TDMWW2" ||
+            !_gameTicker.IsGameRuleActive("FactionRule"))
         {
             Log.Info($"Factions are disabled on this map.");
             return false;
@@ -66,18 +76,24 @@ public sealed class CivFactionsSystem : EntitySystem
         if (_factionsComponent != null && !_entityManager.Deleted(_factionsEntity))
             return true; // Already cached and valid
 
+        _invites.Clear();
         var query = EntityQueryEnumerator<CivFactionsComponent>();
         if (query.MoveNext(out var owner, out var comp))
         {
             _factionsEntity = owner;
             _factionsComponent = comp;
+            foreach (var faction in comp.FactionList)
+            {
+                if (faction.FactionLeaders.Count == 0 && faction.FactionMembers.Count > 0)
+                    faction.FactionLeaders.Add(faction.FactionMembers[0]);
+            }
             Log.Info($"Found existing CivFactionsComponent on entity {_entityManager.ToPrettyString(owner)}");
             return true;
         }
         else
         {
-            var mapQuery = EntityQueryEnumerator<MapComponent>();
-            if (mapQuery.MoveNext(out var mapUid, out _))
+            var mapQuery = EntityQueryEnumerator<MapComponent, WeatherNomadsComponent>();
+            if (mapQuery.MoveNext(out var mapUid, out _, out _))
             {
                 Log.Info($"No CivFactionsComponent found. Creating one on map entity {_entityManager.ToPrettyString(mapUid)}.");
                 _factionsComponent = _entityManager.AddComponent<CivFactionsComponent>(mapUid);
@@ -98,6 +114,28 @@ public sealed class CivFactionsSystem : EntitySystem
     /// Handles a request to create a new faction, validating the faction name and player status, and adds the player as the initial member if successful.
     /// </summary>
 
+    private void OnFactionListRequest(FactionListRequestEvent msg, EntitySessionEventArgs args)
+    {
+        var factions = new Dictionary<string, List<string>>();
+        if (EnsureFactionsComponent() && _factionsComponent != null)
+        {
+            foreach (var faction in _factionsComponent.FactionList.OrderBy(f => f.FactionName))
+            {
+                var names = new List<string>();
+                foreach (var member in faction.FactionMembers)
+                {
+                    var session = _playerManager.Sessions.FirstOrDefault(p => p.UserId.ToString() == member);
+                    var name = session?.Name ?? "Участник вне сети";
+                    if (faction.FactionLeaders.Contains(member))
+                        name += " — глава";
+                    names.Add(name);
+                }
+                factions[faction.FactionName] = names;
+            }
+        }
+        RaiseNetworkEvent(new FactionListResponseEvent(factions), args.SenderSession.Channel);
+    }
+
     private void OnCreateFactionRequest(CreateFactionRequestEvent msg, EntitySessionEventArgs args)
     {
         if (!EnsureFactionsComponent())
@@ -110,7 +148,7 @@ public sealed class CivFactionsSystem : EntitySystem
         {
             Log.Error($"Player {args.SenderSession.Name} tried to create faction, but CivFactionsComponent is missing!");
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "Cannot create faction: Server configuration error.";
+            var errorMsg = "Не удалось создать фракцию из-за ошибки сервера.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, args.SenderSession.Channel);
             return;
         }
@@ -119,10 +157,10 @@ public sealed class CivFactionsSystem : EntitySystem
         var playerId = playerSession.UserId.ToString();
 
         // Validation
-        if (string.IsNullOrWhiteSpace(msg.FactionName) || msg.FactionName.Length > 32)
+        if (string.IsNullOrWhiteSpace(msg.FactionName) || msg.FactionName.Length > 32 || msg.FactionName != msg.FactionName.Trim() || msg.FactionName.Any(c => !char.IsLetterOrDigit(c) && c != ' ' && c != '-' && c != '_'))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "Invalid faction name.";
+            var errorMsg = "Недопустимое название фракции.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, playerSession.Channel);
             return;
         }
@@ -130,7 +168,7 @@ public sealed class CivFactionsSystem : EntitySystem
         if (IsPlayerInFaction(playerSession.UserId, out _))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "You are already in a faction.";
+            var errorMsg = "Вы уже состоите во фракции.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, playerSession.Channel);
             return;
         }
@@ -138,7 +176,7 @@ public sealed class CivFactionsSystem : EntitySystem
         if (_factionsComponent.FactionList.Any(f => f.FactionName.Equals(msg.FactionName, StringComparison.OrdinalIgnoreCase)))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = $"Faction name '{msg.FactionName}' is already taken.";
+            var errorMsg = $"Фракция с названием «{msg.FactionName}» уже существует.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, playerSession.Channel);
             return;
         }
@@ -147,15 +185,18 @@ public sealed class CivFactionsSystem : EntitySystem
         var newFaction = new FactionData // <-- Use FactionData
         {
             FactionName = msg.FactionName,
-            FactionMembers = new List<string> { playerId }
+            FactionMembers = new List<string> { playerId },
+            FactionLeaders = new List<string> { playerId }
         };
 
         _factionsComponent.FactionList.Add(newFaction);
+        _invites.Remove(playerSession.UserId);
+        SetMembership(playerSession, newFaction);
         Dirty(_factionsEntity.Value, _factionsComponent);
         Log.Info($"Player {playerSession.Name} created faction '{msg.FactionName}'.");
 
         // Send confirmation message
-        var confirmationMsg = $"Faction '{msg.FactionName}' created successfully.";
+        var confirmationMsg = $"Фракция «{msg.FactionName}» создана.";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, confirmationMsg, confirmationMsg, sourceEntity, false, playerSession.Channel);
 
         // Notify the client their status changed
@@ -181,16 +222,20 @@ public sealed class CivFactionsSystem : EntitySystem
         if (!TryGetPlayerFaction(playerSession.UserId, out var faction))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "You are not in a faction.";
+            var errorMsg = "Вы не состоите во фракции.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, playerSession.Channel);
             return;
         }
 
         faction!.FactionMembers.Remove(playerId);
+        faction.FactionLeaders.Remove(playerId);
+        if (faction.FactionLeaders.Count == 0 && faction.FactionMembers.Count > 0)
+            faction.FactionLeaders.Add(faction.FactionMembers[0]);
+        SetMembership(playerSession, null);
         Log.Info($"Player {playerSession.Name} left faction '{faction.FactionName}'.");
 
         // FIX: Correct arguments for ChatMessageToOne
-        var confirmationMsg = $"You have left faction '{faction.FactionName}'.";
+        var confirmationMsg = $"Вы покинули фракцию «{faction.FactionName}».";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, confirmationMsg, confirmationMsg, sourceEntity, false, playerSession.Channel);
 
         if (faction.FactionMembers.Count == 0)
@@ -224,15 +269,21 @@ public sealed class CivFactionsSystem : EntitySystem
         if (!TryGetPlayerFaction(inviterId, out var inviterFaction))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "You must be in a faction to invite others.";
+            var errorMsg = "Чтобы приглашать игроков, вступите во фракцию.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, inviterSession.Channel);
+            return;
+        }
+
+        if (!inviterFaction!.FactionLeaders.Contains(inviterId.ToString()))
+        {
+            Notify(inviterSession, "Приглашать игроков может только глава фракции.");
             return;
         }
 
         if (!_playerManager.TryGetSessionById(msg.TargetPlayerUserId, out var targetSession))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = "Could not find the player you tried to invite.";
+            var errorMsg = "Не удалось найти игрока, которого вы хотите пригласить.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, inviterSession.Channel);
             return;
         }
@@ -240,24 +291,25 @@ public sealed class CivFactionsSystem : EntitySystem
         if (IsPlayerInFaction(msg.TargetPlayerUserId, out _))
         {
             // FIX: Correct arguments for ChatMessageToOne (to inviter)
-            var inviterErrorMsg = $"{targetSession.Name} is already in a faction.";
+            var inviterErrorMsg = $"Игрок {targetSession.Name} уже состоит во фракции.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, inviterErrorMsg, inviterErrorMsg, sourceEntity, false, inviterSession.Channel);
 
             // FIX: Correct arguments for ChatMessageToOne (to target)
-            var targetErrorMsg = $"{inviterSession.Name} tried to invite you to '{inviterFaction!.FactionName}', but you are already in a faction.";
+            var targetErrorMsg = $"{inviterSession.Name} пригласил вас во фракцию «{inviterFaction!.FactionName}», но вы уже состоите во фракции.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, targetErrorMsg, targetErrorMsg, sourceEntity, false, targetSession.Channel);
             return;
         }
 
+        _invites[msg.TargetPlayerUserId] = (inviterFaction!, _timing.CurTime + TimeSpan.FromMinutes(5));
         var offerEvent = new FactionInviteOfferEvent(inviterSession.Name, inviterFaction!.FactionName, inviterId);
         RaiseNetworkEvent(offerEvent, Filter.SinglePlayer(targetSession));
 
         // FIX: Correct arguments for ChatMessageToOne (confirmation to inviter)
-        var inviterConfirmMsg = $"Invitation sent to {targetSession.Name}.";
+        var inviterConfirmMsg = $"Приглашение игроку {targetSession.Name} отправлено.";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, inviterConfirmMsg, inviterConfirmMsg, sourceEntity, false, inviterSession.Channel);
 
         // FIX: Correct arguments for ChatMessageToOne (notification to target)
-        var targetNotifyMsg = $"{inviterSession.Name} has invited you to join the faction '{inviterFaction.FactionName}'. Check your chat or notifications.";
+        var targetNotifyMsg = $"{inviterSession.Name} приглашает вас во фракцию «{inviterFaction.FactionName}». Проверьте чат или уведомления.";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, targetNotifyMsg, targetNotifyMsg, sourceEntity, false, targetSession.Channel);
 
         Log.Info($"Player {inviterSession.Name} invited {targetSession.Name} to faction '{inviterFaction.FactionName}'.");
@@ -282,7 +334,7 @@ public sealed class CivFactionsSystem : EntitySystem
         if (IsPlayerInFaction(accepterId, out var currentFaction))
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = $"You cannot accept the invite, you are already in faction '{currentFaction!.FactionName}'.";
+            var errorMsg = $"Вы уже состоите во фракции «{currentFaction!.FactionName}» и не можете принять приглашение.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, accepterSession.Channel);
             return;
         }
@@ -291,16 +343,23 @@ public sealed class CivFactionsSystem : EntitySystem
         if (targetFaction == null)
         {
             // FIX: Correct arguments for ChatMessageToOne
-            var errorMsg = $"The faction '{msg.FactionName}' no longer exists.";
+            var errorMsg = $"Фракция «{msg.FactionName}» больше не существует.";
             _chatManager.ChatMessageToOne(ChatChannel.Notifications, errorMsg, errorMsg, sourceEntity, false, accepterSession.Channel);
             return;
         }
 
+        if (!_invites.TryGetValue(accepterId, out var invite) || invite.Faction != targetFaction || invite.Expires <= _timing.CurTime)
+        {
+            Notify(accepterSession, "У вас нет действующего приглашения в эту фракцию. Попросите главу пригласить вас снова.");
+            return;
+        }
+        _invites.Remove(accepterId);
         targetFaction.FactionMembers.Add(accepterIdStr);
+        SetMembership(accepterSession, targetFaction);
         Dirty(_factionsEntity.Value, _factionsComponent);
 
         // FIX: Correct arguments for ChatMessageToOne
-        var confirmationMsg = $"You have joined faction '{targetFaction.FactionName}'.";
+        var confirmationMsg = $"Вы вступили во фракцию «{targetFaction.FactionName}».";
         _chatManager.ChatMessageToOne(ChatChannel.Notifications, confirmationMsg, confirmationMsg, sourceEntity, false, accepterSession.Channel);
         Log.Info($"Player {accepterSession.Name} accepted invite and joined faction '{targetFaction.FactionName}'.");
 
@@ -318,6 +377,70 @@ public sealed class CivFactionsSystem : EntitySystem
     /// When this method returns, contains the faction the player belongs to if found; otherwise, null.
     /// </param>
     /// <returns>True if the player is in a faction; otherwise, false.</returns>
+
+    private void Notify(ICommonSession session, string message)
+    {
+        _chatManager.ChatMessageToOne(ChatChannel.Notifications, message, message,
+            _factionsEntity ?? EntityUid.Invalid, false, session.Channel);
+    }
+
+    private void SetMembership(ICommonSession session, FactionData? faction)
+    {
+        if (session.AttachedEntity is { } player)
+        {
+            var component = EnsureComp<CivFactionComponent>(player);
+            component.SetFaction(faction?.FactionName ?? "");
+            Dirty(player, component);
+        }
+    }
+
+    private void OnSpawnComplete(PlayerSpawnCompleteEvent ev)
+    {
+        if (!EnsureFactionsComponent())
+            return;
+        TryGetPlayerFaction(ev.Player.UserId, out var faction);
+        SetMembership(ev.Player, faction);
+    }
+
+    private void OnManageMember(ManageFactionMemberEvent msg, EntitySessionEventArgs args)
+    {
+        if (!EnsureFactionsComponent() || _factionsComponent == null || _factionsEntity == null)
+            return;
+        var session = args.SenderSession;
+        if (!TryGetPlayerFaction(session.UserId, out var faction) || faction == null ||
+            !faction.FactionLeaders.Contains(session.UserId.ToString()))
+        {
+            Notify(session, "Управлять участниками может только глава фракции.");
+            return;
+        }
+        var target = msg.Target.ToString();
+        if (msg.Target == session.UserId || !faction.FactionMembers.Contains(target))
+        {
+            Notify(session, "Выберите другого участника своей фракции.");
+            return;
+        }
+        if (msg.TransferLeadership)
+        {
+            faction.FactionLeaders.Clear();
+            faction.FactionLeaders.Add(target);
+            Notify(session, "Руководство фракцией передано.");
+        }
+        else
+        {
+            faction.FactionMembers.Remove(target);
+            faction.FactionLeaders.Remove(target);
+            _invites.Remove(msg.Target);
+            if (_playerManager.TryGetSessionById(msg.Target, out var removed))
+            {
+                SetMembership(removed, null);
+                RaiseNetworkEvent(new PlayerFactionStatusChangedEvent(false, null), removed.Channel);
+                Notify(removed, $"Вас исключили из фракции «{faction.FactionName}».");
+            }
+            Notify(session, "Игрок исключён из фракции.");
+        }
+        Dirty(_factionsEntity.Value, _factionsComponent);
+        RaiseNetworkEvent(new PlayerFactionStatusChangedEvent(true, faction.FactionName), session.Channel);
+    }
 
     public bool IsPlayerInFaction(NetUserId userId, out FactionData? faction) // <-- Use FactionData
     {

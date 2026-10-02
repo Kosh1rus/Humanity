@@ -259,14 +259,18 @@ public sealed class WeatherNomadsSystem : EntitySystem
     /// </summary>
     private void OnMapInit(EntityUid uid, WeatherNomadsComponent component, MapInitEvent args)
     {
-        component.CurrentPrecipitation = Precipitation.Dry;
-        component.CurrentWeather = "Clear";
-        component.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomPrecipitationDuration(component));
-        component.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(component));
+        if (!component.WeatherInitialized)
+        {
+            component.CurrentPrecipitation = Precipitation.Dry;
+            component.CurrentWeather = "Clear";
+            component.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomPrecipitationDuration(component));
+            component.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(component));
+            component.WeatherInitialized = true;
+        }
 
         Dirty(uid, component);
         UpdateTileWeathers(uid, component);
-        _chat.DispatchGlobalAnnouncement($"Current season: {component.CurrentSeason}", "World", false, null, null);
+        _chat.DispatchGlobalAnnouncement($"Текущий сезон: {GetSeasonName(component.CurrentSeason)}.", "Мир", false, null, null);
     }
 
     /// <summary>
@@ -279,6 +283,8 @@ public sealed class WeatherNomadsSystem : EntitySystem
         var query = EntityQueryEnumerator<WeatherNomadsComponent>();
         while (query.MoveNext(out var uid, out var nomads))
         {
+            if (Paused(uid))
+                continue;
             // Handle season changes
             if (_timing.CurTime >= nomads.NextSeasonChange)
             {
@@ -286,7 +292,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
                 nomads.CurrentSeason = GetNextSeason(nomads.CurrentSeason);
                 nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(nomads));
                 Dirty(uid, nomads);
-                _chat.DispatchGlobalAnnouncement($"Changed season to {nomads.CurrentSeason}", null, false, null, null);
+                _chat.DispatchGlobalAnnouncement($"Новый сезон: {GetSeasonName(nomads.CurrentSeason)}.", null, false, null, null);
                 Log.Debug($"Season changed from {oldSeason} to {nomads.CurrentSeason} for entity {uid}, triggering UpdateTileWeathers");
                 UpdateTileWeathers(uid, nomads);
             }
@@ -370,10 +376,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
                     var newTile = new Tile(newTileDefinition.TileId);
                     grid.SetTile(tileRef.GridIndices, newTile);
                     Log.Debug($"Transformed tile at {tileRef.GridIndices} from {tileDef.ID} to {transformedTileName} for season {nomads.CurrentSeason}");
-                }
-                else
-                {
-                    Log.Debug($"No transformation rule found for tile {tileDef.ID} at {tileRef.GridIndices}");
                 }
 
                 // Get biome from tile definition
@@ -516,7 +518,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
                 }
                 if (!entityTransformationDictionary.TryGetValue(metaData.EntityPrototype.ID, out var transformedEntityPrototypeId))
                 {
-                    Log.Debug($"No transformation rule for entity {entity} with prototype ID {metaData.EntityPrototype.ID}");
                     continue;
                 }
 
@@ -610,6 +611,18 @@ public sealed class WeatherNomadsSystem : EntitySystem
     /// <summary>
     /// Gets the next season in the cycle.
     /// </summary>
+    private static string GetSeasonName(string season)
+    {
+        return season switch
+        {
+            "Spring" => "весна",
+            "Summer" => "лето",
+            "Autumn" => "осень",
+            "Winter" => "зима",
+            _ => season,
+        };
+    }
+
     private string GetNextSeason(string current)
     {
         return current switch

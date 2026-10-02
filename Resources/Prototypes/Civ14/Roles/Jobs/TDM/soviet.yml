@@ -10,7 +10,7 @@
       group: CivJobsSquadLeader
       time: 7200 # 2 hours
   startingGear: SovietCaptainGear
-  icon: "JobIconICpt"
+  icon: JobIconHumanitySovietCaptain
   supervisors: job-supervisors-nobody
   ranks:
     RankMajor:
@@ -54,7 +54,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: SovietSergeantGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanitySovietSergeant
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeantMajor:
@@ -102,7 +102,7 @@
   playTimeTracker: JobSovietSubmachineGunner
   startingGear: SovietSubmachineGunnerGear
   randomStartingGears: [SovietSubmachineGunnerGear, SovietSubmachineGunnerGear2]
-  icon: "JobIconSoldier"
+  icon: JobIconHumanitySovietSubmachineGunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -167,7 +167,7 @@
   playTimeTracker: JobSovietRifleman
   startingGear: SovietRiflemanGear
   randomStartingGears: [SovietRiflemanGear, SovietRiflemanGear2]
-  icon: "JobIconSoldier"
+  icon: JobIconHumanitySovietRifleman
   supervisors: job-supervisors-cpt
   ranks:
     RankLanceCorporal:
@@ -229,7 +229,7 @@
   playTimeTracker: JobSovietMachinegunner
   startingGear: SovietMachinegunnerGear
   randomStartingGears: [SovietMachinegunnerGear, SovietMachinegunnerGear2]
-  icon: "JobIconMg"
+  icon: JobIconHumanitySovietMachinegunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -295,7 +295,7 @@
   description: job-description-civ-soviet-medic
   playTimeTracker: JobSovietMedic
   startingGear: SovietMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanitySovietMedic
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement

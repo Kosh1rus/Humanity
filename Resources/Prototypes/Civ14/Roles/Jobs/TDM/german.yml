@@ -10,7 +10,7 @@
       group: CivJobsSquadLeader
       time: 7200 # 2 hours
   startingGear: GermanCaptainGear
-  icon: "JobIconICpt"
+  icon: JobIconHumanityGermanCaptain
   supervisors: job-supervisors-nobody
   ranks:
     RankMajor:
@@ -56,7 +56,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: GermanSergeantGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanityGermanSergeant
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeantMajor:
@@ -104,7 +104,7 @@
   playTimeTracker: JobGermanSubmachineGunner
   startingGear: GermanSubmachineGunnerGear
   randomStartingGears: [GermanSubmachineGunnerGear, GermanSubmachineGunnerGear2]
-  icon: "JobIconSoldier"
+  icon: JobIconHumanityGermanSubmachineGunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -167,7 +167,7 @@
   playTimeTracker: JobGermanRifleman
   startingGear: GermanRiflemanGear
   randomStartingGears: [GermanRiflemanGear, GermanRiflemanGear2]
-  icon: "JobIconSoldier"
+  icon: JobIconHumanityGermanRifleman
   supervisors: job-supervisors-cpt
   ranks:
     RankLanceCorporal:
@@ -226,7 +226,7 @@
   playTimeTracker: JobGermanMachinegunner
   startingGear: GermanMachinegunnerGear
   randomStartingGears: [GermanMachinegunnerGear, GermanMachinegunnerGear2]
-  icon: "JobIconMg"
+  icon: JobIconHumanityGermanMachinegunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -288,7 +288,7 @@
   description: job-description-civ-german-medic
   playTimeTracker: JobGermanMedic
   startingGear: GermanMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityGermanMedic
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement

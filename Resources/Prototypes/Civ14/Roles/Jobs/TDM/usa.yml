@@ -10,7 +10,7 @@
       group: CivJobsSquadLeader
       time: 7200 # 2 hours
   startingGear: USCaptainGear
-  icon: "JobIconICpt"
+  icon: JobIconHumanityUSCaptain
   supervisors: job-supervisors-nobody
   ranks:
     RankMajor:
@@ -54,7 +54,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: USSergeantGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanityUSSergeant
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeantMajor:
@@ -102,7 +102,7 @@
   playTimeTracker: JobUSRifleman
   startingGear: USRiflemanGear
   randomStartingGears: [USRiflemanGear, USRiflemanGear2]
-  icon: "JobIconICpl"
+  icon: JobIconHumanityUSRifleman
   supervisors: job-supervisors-cpt
   ranks:
     RankLanceCorporal:
@@ -164,7 +164,7 @@
   playTimeTracker: JobUSMachinegunner
   startingGear: USMachinegunnerGear
   randomStartingGears: [USMachinegunnerGear, USMachinegunnerGear2]
-  icon: "JobIconMg"
+  icon: JobIconHumanityUSMachinegunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -229,7 +229,7 @@
   description: job-description-civ-us-medic
   playTimeTracker: JobUSMedic
   startingGear: USMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityUSMedic
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement

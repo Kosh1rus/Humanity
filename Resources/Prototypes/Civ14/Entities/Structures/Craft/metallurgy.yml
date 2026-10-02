@@ -4,6 +4,7 @@
   parent: OreProcessor
   description: В ней переплавляют руду в металл.
   components:
+    - type: NomadEraLathe
     - type: Sprite
       sprite: Civ14/Objects/metallurgy.rsi
       layers:
@@ -33,6 +34,10 @@
       runningState: stone_kiln_on
       staticPacks:
         - StoneKiln
+        - HumanityCharcoal
+    - type: MaterialStorage
+      whitelist:
+        tags: [Ore, Sheet, Ingot, RawMaterial, Burnable]
     - type: Construction
       graph: StoneKiln
       node: end
@@ -65,6 +70,7 @@
 
 - type: latheRecipe
   id: IngotBronze
+  civAgeMin: 1
   result: IngotBronze1
   icon: { sprite: "/Textures/Objects/Materials/ingots.rsi", state: sheet-bronze }
   completetime: 2
@@ -74,6 +80,7 @@
 
 - type: latheRecipe
   id: IngotTin
+  civAgeMin: 1
   result: IngotTin1
   icon: { sprite: "/Textures/Objects/Materials/ingots.rsi", state: iron }
   completetime: 2
@@ -82,6 +89,7 @@
 
 - type: latheRecipe
   id: IngotCopper
+  civAgeMin: 1
   result: IngotCopper1
   icon: { sprite: "/Textures/Objects/Materials/ingots.rsi", state: copper }
   completetime: 2
@@ -95,6 +103,7 @@
   parent: OreProcessor
   description: В нём выплавляют железо из руды.
   components:
+    - type: NomadEraLathe
     - type: Sprite
       sprite: Civ14/Objects/metallurgy.rsi
       layers:
@@ -124,6 +133,9 @@
       runningState: bloomery_on
       staticPacks:
         - Bloomery
+    - type: MaterialStorage
+      whitelist:
+        tags: [Ore, Sheet, Ingot, RawMaterial, Burnable]
     - type: Construction
       graph: Bloomery
       node: end
@@ -135,6 +147,7 @@
 
 - type: latheRecipe
   id: IngotIron
+  civAgeMin: 2
   result: IngotIron1
   icon: { sprite: "/Textures/Objects/Materials/ingots.rsi", state: sheet-iron }
   completetime: 2

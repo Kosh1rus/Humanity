@@ -1,83 +1,37 @@
 <Document>
-# Guide to Metallurgy
+# Металлургия
 
-Sticks, stones and bones can only carry you so far, but Mother Nature is infinitely generous with her gifts, among which she includes a marvelous class of materials - metals. Grateful and astounded, we accept it and pledge that it will not be wasted on trifles. It shall serve us greatly in mastering ways of cutting, slashing, gutting, chopping and slicing. We shall use it to harness flames and tame explosions, to travel swiftly across vast distances and to bring the Torch of Civilization to the realms of dark ignorance! Bless you, Mother!
+## Добыча руды
 
-## Obtaining Ores
+Сделайте костяную кирку из дерева и костей. Используйте её на подходящих каменных участках, чтобы добыть камень и руду. Руды разных металлов встречаются не везде, поэтому исследуйте окрестности.
 
-You will need to mine rocks in order to obtain ores. First, get a pickaxe:
+<GuideEntityEmbed Entity="BonePickaxe" />
 
--   You'll need [bold]wood[/bold] and [bold]bone[/bold] for this. Go gather them (bones are obtained by butchering animals - click the carcass with something sharp, like a flint axe or a knife),
--   Make a [bold]bone pickaxe[/bold].
--   Find a [bold]rock[/bold] tile.
--   Wield the axe (press [bold]Z[/bold]). Go on [bold]Combat Mode[/bold] and click on it while holding the [bold]pickaxe[bold] on your active hand.
+## Каменная плавильня
 
-# Turning Ores into Metals
-
-## Kiln
+Каменная плавильня доступна с начала игры. В неё загружают руду и выбирают рецепт через меню устройства. С начала игры здесь получают стекло и уголь из древесины. В бронзовом веке открываются медь, олово и бронза. Для бронзы нужны медь и олово в соотношении 9:1.
 
 <GuideEntityEmbed Entity="StoneKiln" />
 
-The basic ore proccessor is the [bold]kiln[/bold]. This will enable you to produce basic ingots: [bold]Gold, Silver, Tin, Copper,[/bold] and [bold]Bronze[/bold].
+## Железо
 
-## Bloomery
+Сыродутный горн открывается в железном веке и перерабатывает железную руду в железные слитки. В той же эпохе открывается железная наковальня с металлическими инструментами. Каменную наковальню можно построить раньше, если нужны кузнечные изделия начального уровня.
 
 <GuideEntityEmbed Entity="Bloomery" />
 
-To produce [bold]Iron[/bold], you will need a [bold]bloomery[/bold].
+## Сталь
 
-## Blast Furnace
+В Средневековье можно построить сталеплавильный горн из 30 камней и 10 железных слитков. Одна единица железа и одна единица угля дают один стальной лист. Уголь добывают из руды или получают из трёх досок в каменной плавильне.
 
+<GuideEntityEmbed Entity="HumanitySteelForge" />
 
+На железной наковальне открываются средневековое оружие и доспехи, а в Возрождении — новые клинки. Для некоторых изделий нужна сталь.
 
-For advanced alloys like [bold]Steel[/bold], you will need a blast furnace.
+## Механическая мастерская
 
-# Metals
+В индустриальную эпоху постройте механическую мастерскую из 20 стальных листов и 15 досок. В неё загружают сталь, медь, стекло, древесину и уголь. Сначала доступны инструменты; позднее открываются винтовки с обоймами, автоматы с магазинами, радиостанции, фонарики и батареи. В последней эпохе доступны навигатор и бур.
 
-## Silver
+Боеприпасы производятся вместе с зарядами. Их рецепты используют упрощённые наборы металлов и угля. Рецепты поздних эпох закрыты и в меню, и на сервере.
 
-<GuideEntityEmbed Entity="IngotSilver" />
-
-Silver is a rare metal used for currency and jewelry. 1 ingot of silver can be used to produce 100 silver coins. The silver coin (sc) is the the basic measure of value in the game.
-
-## Gold
-
-<GuideEntityEmbed Entity="IngotGold" />
-
-Gold is the rarest metal, and is used in currency and fancy accessories. Gold has double the rarity and value of silver.
-
-## Tin
-
-<GuideEntityEmbed Entity="MaterialTin" />
-
-Tin is a somewhat rare metal, mostly used to make bronze together with cooper.
-
-## Copper
-
-<GuideEntityEmbed Entity="IngotCopper" />
-
-Copper is a basic metal that is important early on in the game. You can craft tools, kitchen accessories, and very basic armours from it.
-
-Later in the game, you will need copper to produce electric and electronic products.
-
-## Bronze
-
-<GuideEntityEmbed Entity="MaterialBronze" />
-
-Bronze is an alloy of tin and copper. You need to melt 9 parts of copper to 1 part of tin (9:1 ratio) in a [bold]kiln[bold]. For example, 1 unit of tin and 9 units of copper make 10 units of bronze.
-
-Bronze is an important early game alloy that will enable you to make decent weapons and armour.
-
-## Iron
-
-<GuideEntityEmbed Entity="IngotIron" />
-
-Smelt raw iron ore in the [bold]bloomery[bold] to obtain sponge iron.
-Work sponge iron at any anvil into usable iron ingots.
-
-## Steel
-
-<GuideEntityEmbed Entity="SheetSteel" />
-Smelt raw iron ore in the [bold]blast furnace[bold] to obtain pig iron.
-Work pig iron at the iron or steel anvil into usable steel sheets.
+<GuideEntityEmbed Entity="HumanityIndustrialWorkshop" />
 </Document>

@@ -2,6 +2,7 @@
 - type: job
   id: GulagPrisonerGerman
   name: job-name-civ-gulag-prisoner-german
+  icon: JobIconHumanityGulagPrisonerGerman
   faction: GulagPrisonerGerman
   originalName: Немецкий заключённый
   description: job-description-civ-gulag-prisoner
@@ -20,6 +21,7 @@
 - type: job
   id: GulagPrisonerUkrainian
   name: job-name-civ-gulag-prisoner-ukrainian
+  icon: JobIconHumanityGulagPrisonerUkrainian
   faction: GulagPrisonerUkrainian
   originalName: Украинский заключённый
   description: job-description-civ-gulag-prisoner
@@ -38,6 +40,7 @@
 - type: job
   id: GulagPrisonerPolish
   name: job-name-civ-gulag-prisoner-polish
+  icon: JobIconHumanityGulagPrisonerPolish
   faction: GulagPrisonerPolish
   originalName: Польский заключённый
   description: job-description-civ-gulag-prisoner

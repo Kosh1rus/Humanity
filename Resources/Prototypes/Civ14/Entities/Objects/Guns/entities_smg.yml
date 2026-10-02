@@ -6,6 +6,10 @@
   description: A submachinegun.
   abstract: true
   components:
+    - type: GunRequiresWield
+    - type: Wieldable
+      wieldedInhandPrefix: null
+      unwieldOnUse: false
     - type: Clothing
       sprite: Civ14/Weapons/Guns/SMGs/atreides.rsi
       quickEquip: true

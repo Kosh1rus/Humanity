@@ -42,10 +42,11 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         _lastCacheClear = _gameTiming.CurTime;
 
         // Schedule the announcement for 15 seconds later
-        var announcementMessage = $"The grace wall is up for {component.GracewallDuration.TotalMinutes} minutes!";
+        var announcementMessage = $"Подготовка — {component.GracewallDuration.TotalMinutes:F0} мин. Проход закрыт.";
         Timer.Spawn(TimeSpan.FromSeconds(15), () =>
         {
-            _chat.DispatchGlobalAnnouncement(announcementMessage, "Round", false, null, Color.Yellow);
+            if (GameTicker.IsGameRuleActive(uid, gameRule) && component.GracewallActive)
+                _chat.DispatchGlobalAnnouncement(announcementMessage, "Штаб", false, null, Color.Yellow);
         });
         Log.Info($"Grace wall active for {component.GracewallDuration.TotalMinutes} minutes.");
 
@@ -63,8 +64,10 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         base.Ended(uid, component, gameRule, args);
 
         // Ensure walls are deactivated if the rule ends unexpectedly
+        var wasActive = component.GracewallActive;
         DeactivateAllGraceWalls(component);
-        _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, Color.Yellow);
+        if (wasActive && GameTicker.RunLevel == GameRunLevel.InRound)
+            _chat.DispatchGlobalAnnouncement("Проход открыт. Бой начался!", "Штаб", false, null, Color.Yellow);
     }
 
     public override void Update(float frameTime)
@@ -91,7 +94,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
             {
                 Log.Info("Grace wall duration ended.");
                 DeactivateAllGraceWalls(gracewall);
-                _chat.DispatchGlobalAnnouncement("The grace wall is now down!", "Round", false, null, Color.Yellow);
+                _chat.DispatchGlobalAnnouncement("Проход открыт. Бой начался!", "Штаб", false, null, Color.Yellow);
             }
         }
     }

@@ -16,12 +16,16 @@ using Content.Client.Popups;
 using Content.Shared.Popups;
 using System.Linq;
 using System.Text;
+using System.Collections.Generic;
 using Robust.Shared.Network;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Player; // Required for ICommonSession
 using Content.Client.UserInterface.Systems.MenuBar.Widgets;
 using Robust.Shared.IoC; // Added for IoCManager
 using Content.Client.Commands;
+using Content.Shared.Humanity.Factions;
+using Content.Shared.Civ14.CivResearch;
+using Robust.Shared.Timing;
 
 namespace Content.Client.UserInterface.Systems.Faction;
 
@@ -45,6 +49,24 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
     private bool _factionControllerResourcesCleanedUp = false;
 
+    private bool FactionsDisabled()
+    {
+        return _player.LocalEntity is { } player &&
+               _ent.TryGetComponent(player, out TransformComponent? transform) &&
+               transform.MapUid is { } map &&
+               _ent.TryGetComponent(map, out CivResearchComponent? research) && research.IsTDM;
+    }
+
+    public override void FrameUpdate(FrameEventArgs args)
+    {
+        base.FrameUpdate(args);
+        var disabled = FactionsDisabled();
+        if (FactionButton is { } button)
+            button.Visible = !disabled;
+        if (disabled && _window?.IsOpen == true)
+            _window.Close();
+    }
+
     /// <summary>
     /// Performs initial setup for the faction UI controller, including subscribing to relevant network events and configuring logging.
     /// </summary>
@@ -53,6 +75,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         base.Initialize();
 
         SubscribeNetworkEvent<FactionInviteOfferEvent>(OnFactionInviteOffer);
+        SubscribeNetworkEvent<FactionListResponseEvent>(OnFactionList);
         SubscribeNetworkEvent<PlayerFactionStatusChangedEvent>(OnPlayerFactionStatusChanged);
         _sawmill = _logMan.GetSawmill("faction");
 
@@ -100,6 +123,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _window.OnCreateFactionPressed += HandleCreateFactionPressed;
         _window.OnLeaveFactionPressed += HandleLeaveFactionPressed;
         _window.OnInvitePlayerPressed += HandleInvitePlayerPressed;
+        _window.OnManageMemberPressed += HandleManageMember;
         _sawmill.Debug("FactionWindow events subscribed.");
 
         // Bind the key function
@@ -143,6 +167,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
             _window.OnCreateFactionPressed -= HandleCreateFactionPressed;
             _window.OnLeaveFactionPressed -= HandleLeaveFactionPressed;
             _window.OnInvitePlayerPressed -= HandleInvitePlayerPressed;
+            _window.OnManageMemberPressed -= HandleManageMember;
 
             // Ensure window is closed before disposing
             if (_window.IsOpen)
@@ -245,13 +270,13 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         _sawmill.Info($"Received faction invite from {msg.InviterName} for faction '{msg.FactionName}'.");
 
         // Improved feedback using a clickable popup or chat message
-        var message = $"{msg.InviterName} invited you to join faction '{msg.FactionName}'.";
+        var message = $"{msg.InviterName} приглашает вас во фракцию «{msg.FactionName}».";
         // Include InviterUserId in the command. It needs to be a string for the command line.
         var acceptCommand = $"/acceptfactioninvite \"{msg.FactionName}\"";
 
         // You could use a more interactive popup system if available,
         // but for now, let's add the command hint to the popup/chat.
-        var fullMessage = $"{message}\nType '{acceptCommand}' in chat to accept.";
+        var fullMessage = $"{message}\nЧтобы вступить, введите в чат: {acceptCommand}";
 
         var localPlayerEntity = _player.LocalSession?.AttachedEntity;
         if (localPlayerEntity.HasValue && _ent.EntityExists(localPlayerEntity))
@@ -265,7 +290,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         }
         // As a very robust fallback, also send to chat, as popups can sometimes be missed or problematic.
         // _consoleHost.ExecuteCommand($"say \"{message}\""); // Optional: 'say' might be too noisy. The popup and echo should suffice.
-        _consoleHost.ExecuteCommand($"echo \"To accept, type: {acceptCommand}\""); // Echo to self for easy copy/paste
+        _consoleHost.ExecuteCommand($"echo \"Для вступления введите: {acceptCommand}\"");
     }
 
     /// <summary>
@@ -374,59 +399,18 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     /// </remarks>
     private void HandleListFactionsPressed()
     {
-        _sawmill.Info("List Factions button pressed. Querying local state...");
-
-        if (_window == null)
-        {
-            _sawmill.Error("HandleListFactionsPressed called but _window is null!");
+        if (_window == null || FactionsDisabled())
             return;
-        }
-
-        var factionsComp = GetCivFactionsComponent();
-        if (factionsComp == null || factionsComp.FactionList == null) // Check FactionList null
-        {
-            _window.UpdateFactionList("Faction data not available.");
-            _sawmill.Warning("Faction data unavailable for listing.");
-            return;
-        }
-
-        if (factionsComp.FactionList.Count == 0)
-        {
-            _window.UpdateFactionList("No factions currently exist.");
-            _sawmill.Info("Displayed empty faction list.");
-            return;
-        }
-
-        var listBuilder = new StringBuilder();
-        // OrderBy requires System.Linq
-        foreach (var faction in factionsComp.FactionList.OrderBy(f => f.FactionName))
-        {
-            // Added detailed logging to inspect faction members state
-            _sawmill.Debug($"Inspecting faction for UI list: '{faction.FactionName ?? "Unnamed Faction"}'");
-            if (faction.FactionMembers == null)
-            {
-                _sawmill.Debug($"  - FactionMembers list is null.");
-            }
-            else
-            {
-                _sawmill.Debug($"  - FactionMembers.Count = {faction.FactionMembers.Count}");
-                if (faction.FactionMembers.Count > 0)
-                    _sawmill.Debug($"  - Members: [{string.Join(", ", faction.FactionMembers)}]");
-            }
-
-            // *** FIX: Construct the string first, then append ***
-            string factionLine = $"{faction.FactionName ?? "Unnamed Faction"}: {faction.FactionMembers?.Count ?? 0} members";
-            listBuilder.AppendLine(factionLine); // Use the AppendLine(string) overload
-        }
-
-        _window.UpdateFactionList(listBuilder.ToString());
-        _sawmill.Info($"Displayed faction list with {factionsComp.FactionList.Count} factions.");
+        _window.UpdateFactionList("Загрузка...");
+        _ent.RaisePredictiveEvent(new FactionListRequestEvent());
     }
     /// <summary>
     /// Handles the creation of a new faction based on user input, performing client-side validation and sending a creation request to the server.
     /// </summary>
     private void HandleCreateFactionPressed()
     {
+        if (FactionsDisabled())
+            return;
         if (_window == null)
         {
             _sawmill.Error("Attempted to create faction, but FactionWindow is null!");
@@ -441,7 +425,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         if (string.IsNullOrWhiteSpace(desiredName))
         {
             _sawmill.Warning("Create Faction pressed with empty name.");
-            var errorMsg = "Faction name cannot be empty.";
+            var errorMsg = "Введите название фракции.";
             if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
                 _popupSystem?.PopupEntity(errorMsg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback to cursor popup or console if entity/popupsystem is unavailable
@@ -454,7 +438,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         if (desiredName.Length > maxNameLength)
         {
             _sawmill.Warning($"Create Faction pressed with name too long: {desiredName}");
-            var msg = $"Faction name is too long (max {maxNameLength} characters).";
+            var msg = $"Название фракции слишком длинное. Максимум — {maxNameLength} символа.";
             if (_player.LocalSession?.AttachedEntity is { Valid: true } playerEntity) // playerEntity here is EntityUid
                 _popupSystem?.PopupEntity(msg, playerEntity, PopupType.SmallCaution); // Use playerEntity directly
             else // Fallback
@@ -482,15 +466,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // A more robust solution might involve a server confirmation event or a short delay.
         // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
 
-        //probably need to check if the name is being used or not
-        if (_ent.TryGetComponent<CivFactionComponent>(_player.LocalEntity, out var factionComp))
-        {
-            if (factionComp.FactionName == "")
-            {
-                _sawmill.Debug($"Setting faction name to '{desiredName}' in CivFactionComponent.");
-                factionComp.SetFaction(desiredName);
-            }
-        }
+
     }
 
     /// <summary>
@@ -503,10 +479,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Raise the network event to send it to the server
         _ent.RaisePredictiveEvent(leaveEvent); // Use RaisePredictiveEvent for client-initiated actions
         _sawmill.Info("Sent LeaveFactionRequestEvent to server.");
-        if (_ent.TryGetComponent<CivFactionComponent>(_player.LocalEntity, out var factionComp))
-        {
-            factionComp.SetFaction("");
-        }
+
         // Attempt to refresh the window state immediately.
         // RefreshFactionWindowState(); // Removed: UI will update via PlayerFactionStatusChangedEvent
     }
@@ -515,6 +488,18 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     /// <summary>
     /// Handles the invite player action from the faction window, validating input, searching for the player by name, and sending an invite request to the server.
     /// </summary>
+    private void HandleManageMember(bool transferLeadership)
+    {
+        var target = _player.Sessions.FirstOrDefault(session => session.Name.Equals(
+            _window?.InvitePlayerNameInputText.Trim(), StringComparison.OrdinalIgnoreCase));
+        if (target == null)
+        {
+            _popupSystem?.PopupCursor("Введите имя участника, который сейчас на сервере.", PopupType.SmallCaution);
+            return;
+        }
+        _ent.RaisePredictiveEvent(new ManageFactionMemberEvent(target.UserId, transferLeadership));
+    }
+
     private void HandleInvitePlayerPressed()
     {
         _sawmill.Debug("Invite Player button pressed.");
@@ -531,7 +516,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         if (string.IsNullOrWhiteSpace(targetPlayerName))
         {
             _sawmill.Debug("Invite player: Name field is empty.");
-            _popupSystem?.PopupCursor("Player name cannot be empty.", PopupType.SmallCaution);
+            _popupSystem?.PopupCursor("Введите имя игрока.", PopupType.SmallCaution);
             return;
         }
 
@@ -544,7 +529,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
 
         if (targetSession == null)
         {
-            var notFoundMsg = $"Player '{targetPlayerName}' not found.";
+            var notFoundMsg = $"Игрок «{targetPlayerName}» не найден.";
             _sawmill.Warning(notFoundMsg);
             _popupSystem?.PopupCursor(notFoundMsg, PopupType.SmallCaution);
             return;
@@ -559,7 +544,7 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
         // Send the event to the server
         _ent.RaisePredictiveEvent(inviteEvent);
         _sawmill.Info($"Sent InviteFactionRequestEvent for target player '{targetPlayerName}' (ID: {targetUserId}) to server.");
-        _popupSystem?.PopupCursor($"Invite sent to {targetPlayerName}.", PopupType.Small);
+        _popupSystem?.PopupCursor($"Приглашение для {targetPlayerName} отправлено.", PopupType.Small);
 
         _window.ClearInvitePlayerNameInput(); // Clear the input field
     }
@@ -678,8 +663,25 @@ public sealed class FactionUIController : UIController, IOnStateEntered<Gameplay
     /// <summary>
     /// Toggles the visibility of the faction management window, updating its state and synchronising the faction button's visual state.
     /// </summary>
+    private void OnFactionList(FactionListResponseEvent msg, EntitySessionEventArgs args)
+    {
+        if (_window == null || FactionsDisabled())
+            return;
+        var text = new StringBuilder();
+        foreach (var (faction, names) in msg.Factions)
+        {
+            text.Append(faction).Append(" · ").Append(names.Count).AppendLine();
+            foreach (var name in names)
+                text.Append("  ").AppendLine(name);
+            text.AppendLine();
+        }
+        _window.UpdateFactionList(msg.Factions.Count == 0 ? "Пока нет фракций." : text.ToString().TrimEnd());
+    }
+
     private void ToggleWindow()
     {
+        if (FactionsDisabled())
+            return;
         _sawmill.Debug($"ToggleWindow called. Window is null: {_window == null}");
         if (_window == null)
         {

@@ -1,0 +1,333 @@
+- type: latheRecipePack
+  id: HumanityCharcoal
+  recipes:
+  - HumanityCharcoal
+- type: latheRecipe
+  id: HumanityCharcoal
+  result: Coal1
+  materials:
+    Wood: 300
+  civAgeMin: 0
+  completetime: 10
+- type: latheRecipePack
+  id: HumanitySteelForge
+  recipes:
+  - HumanitySteel
+- type: latheRecipe
+  id: HumanitySteel
+  result: SheetSteel1
+  materials:
+    Iron: 100
+    Coal: 100
+  civAgeMin: 3
+  completetime: 15
+- type: latheRecipePack
+  id: HumanityIronTools
+  recipes:
+  - HumanityIronPickaxe
+  - HumanityIronShovel
+  - HumanityIronHatchet
+- type: latheRecipe
+  id: HumanityIronPickaxe
+  result: HumanityIronPickaxe
+  materials:
+    Iron: 500
+    Wood: 200
+  civAgeMin: 2
+  completetime: 15
+- type: latheRecipe
+  id: HumanityIronShovel
+  result: HumanityIronShovel
+  materials:
+    Iron: 300
+    Wood: 200
+  civAgeMin: 2
+  completetime: 15
+- type: latheRecipe
+  id: HumanityIronHatchet
+  result: HumanityIronHatchet
+  materials:
+    Iron: 400
+    Wood: 200
+  civAgeMin: 2
+  completetime: 15
+- type: latheRecipePack
+  id: HumanityIndustrialWorkshop
+  recipes:
+  - HumanityWrench
+  - HumanityScrewdriver
+  - HumanityWirecutter
+  - HumanityMosin
+  - HumanityMosinClip
+  - HumanityAKM
+  - HumanityAKMMagazine
+  - HumanityRadio
+  - HumanityFlashlight
+  - HumanityPowerCell
+  - HumanityGPS
+  - HumanityDrill
+- type: latheRecipe
+  id: HumanityWrench
+  result: Wrench
+  materials:
+    Steel: 200
+  civAgeMin: 5
+  completetime: 15
+- type: latheRecipe
+  id: HumanityScrewdriver
+  result: Screwdriver
+  materials:
+    Steel: 100
+    Wood: 100
+  civAgeMin: 5
+  completetime: 15
+- type: latheRecipe
+  id: HumanityWirecutter
+  result: Wirecutter
+  materials:
+    Steel: 200
+  civAgeMin: 5
+  completetime: 15
+- type: latheRecipe
+  id: HumanityMosin
+  result: civ13_boltaction_Mosin
+  materials:
+    Steel: 2000
+    Wood: 800
+    Copper: 500
+    Coal: 200
+  civAgeMin: 6
+  completetime: 30
+- type: latheRecipe
+  id: HumanityMosinClip
+  result: civ13_magazine_clip_(7.62x54mm)
+  materials:
+    Steel: 100
+    Copper: 200
+    Coal: 100
+  civAgeMin: 6
+  completetime: 30
+- type: latheRecipe
+  id: HumanityAKM
+  result: civ13_ar_AKM
+  materials:
+    Steel: 3000
+    Wood: 500
+    Copper: 1000
+    Coal: 500
+  civAgeMin: 7
+  completetime: 30
+- type: latheRecipe
+  id: HumanityAKMMagazine
+  result: civ13_magazine_AK47_(7.62x39mm)
+  materials:
+    Steel: 400
+    Copper: 1000
+    Coal: 500
+  civAgeMin: 7
+  completetime: 30
+- type: latheRecipe
+  id: HumanityRadio
+  result: RadioHandheld
+  materials:
+    Steel: 300
+    Copper: 500
+    Glass: 200
+  civAgeMin: 7
+  completetime: 30
+- type: latheRecipe
+  id: HumanityFlashlight
+  result: FlashlightLantern
+  materials:
+    Steel: 300
+    Copper: 300
+    Glass: 200
+  civAgeMin: 7
+  completetime: 30
+- type: latheRecipe
+  id: HumanityPowerCell
+  result: PowerCellMedium
+  materials:
+    Steel: 200
+    Copper: 400
+    Glass: 200
+  civAgeMin: 7
+  completetime: 30
+- type: latheRecipe
+  id: HumanityGPS
+  result: HumanityGPS
+  materials:
+    Steel: 400
+    Copper: 600
+    Glass: 400
+  civAgeMin: 8
+  completetime: 30
+- type: latheRecipe
+  id: HumanityDrill
+  result: MiningDrill
+  materials:
+    Steel: 1800
+    Copper: 1000
+    Glass: 300
+  civAgeMin: 8
+  completetime: 30
+- type: entity
+  id: HumanitySteelForge
+  parent: Bloomery
+  name: СЃС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅС‹Р№ РіРѕСЂРЅ
+  description: РџРµСЂРµСЂР°Р±Р°С‚С‹РІР°РµС‚ Р¶РµР»РµР·Рѕ Рё СѓРіРѕР»СЊ РІ СЃС‚Р°Р»СЊ. РЈРіРѕР»СЊ РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РІ РєР°РјРµРЅРЅРѕР№ РїР»Р°РІРёР»СЊРЅРµ РёР· РґСЂРµРІРµСЃРёРЅС‹.
+  components:
+  - type: NomadEraLathe
+  - type: Lathe
+    staticPacks:
+    - HumanitySteelForge
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Ore
+      - Sheet
+      - Ingot
+      - RawMaterial
+      - Burnable
+  - type: Construction
+    graph: HumanitySteelForge
+    node: end
+- type: construction
+  id: HumanitySteelForge
+  name: СЃС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅС‹Р№ РіРѕСЂРЅ
+  description: РџРµСЂРµСЂР°Р±Р°С‚С‹РІР°РµС‚ Р¶РµР»РµР·Рѕ Рё СѓРіРѕР»СЊ РІ СЃС‚Р°Р»СЊ. РЈРіРѕР»СЊ РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РІ РєР°РјРµРЅРЅРѕР№ РїР»Р°РІРёР»СЊРЅРµ РёР· РґСЂРµРІРµСЃРёРЅС‹.
+  graph: HumanitySteelForge
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  icon:
+    sprite: Civ14/Objects/metallurgy.rsi
+    state: bloomery
+  objectType: Structure
+  agemin: 3
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+- type: constructionGraph
+  id: HumanitySteelForge
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Stone
+        amount: 30
+        doAfter: 8
+      - material: Iron
+        amount: 10
+        doAfter: 8
+  - node: end
+    entity: HumanitySteelForge
+- type: entity
+  id: HumanityIndustrialWorkshop
+  parent: AnvilIron
+  name: РјРµС…Р°РЅРёС‡РµСЃРєР°СЏ РјР°СЃС‚РµСЂСЃРєР°СЏ
+  description: РџСЂРѕРёР·РІРѕРґРёС‚ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Рё РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ. РќРѕРІС‹Рµ РёР·РґРµР»РёСЏ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ РїРѕ РјРµСЂРµ СЃРјРµРЅС‹ СЌРїРѕС….
+  components:
+  - type: NomadEraLathe
+  - type: Lathe
+    staticPacks:
+    - HumanityIndustrialWorkshop
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - Ore
+      - Sheet
+      - Ingot
+      - RawMaterial
+      - Burnable
+  - type: Construction
+    graph: HumanityIndustrialWorkshop
+    node: end
+- type: construction
+  id: HumanityIndustrialWorkshop
+  name: РјРµС…Р°РЅРёС‡РµСЃРєР°СЏ РјР°СЃС‚РµСЂСЃРєР°СЏ
+  description: РџСЂРѕРёР·РІРѕРґРёС‚ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Рё РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ. РќРѕРІС‹Рµ РёР·РґРµР»РёСЏ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ РїРѕ РјРµСЂРµ СЃРјРµРЅС‹ СЌРїРѕС….
+  graph: HumanityIndustrialWorkshop
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  icon:
+    sprite: Civ14/Objects/metallurgy.rsi
+    state: iron_anvil
+  objectType: Structure
+  agemin: 5
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+- type: constructionGraph
+  id: HumanityIndustrialWorkshop
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Steel
+        amount: 20
+        doAfter: 8
+      - material: WoodPlank
+        amount: 15
+        doAfter: 8
+  - node: end
+    entity: HumanityIndustrialWorkshop
+- type: entity
+  id: HumanityGPS
+  parent: HandheldGPSBasic
+  name: РїРµСЂРµРЅРѕСЃРЅРѕР№ РЅР°РІРёРіР°С‚РѕСЂ
+  description: РџРѕРєР°Р·С‹РІР°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ Рё РїРѕРјРѕРіР°РµС‚ РЅР°Р№С‚Рё РґРѕСЂРѕРіСѓ Рє РїРѕСЃРµР»РµРЅРёСЋ.
+
+- type: entity
+  id: HumanityIronPickaxe
+  parent: Pickaxe
+  name: железная кирка
+  description: Прочная кирка для добычи камня и руды.
+  components:
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 500
+        Wood: 200
+
+- type: entity
+  id: HumanityIronShovel
+  parent: Shovel
+  name: железная лопата
+  description: Лопата с железным полотном. Копает быстрее грубых каменных и костяных инструментов.
+  components:
+    - type: Digging
+      digTime: 4
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 300
+        Wood: 200
+
+- type: entity
+  id: HumanityIronHatchet
+  parent: HydroponicsToolHatchet
+  name: железный топор
+  description: Железный топор для рубки деревьев и заготовки растительного волокна.
+  components:
+    - type: MeleeWeapon
+      wideAnimationRotation: 135
+      damage:
+        types:
+          Slash: 10
+          Structural: 15
+    - type: StrawCollector
+      collectTime: 4
+      minAmount: 1
+      maxAmount: 3
+    - type: PhysicalComposition
+      materialComposition:
+        Iron: 400
+        Wood: 200

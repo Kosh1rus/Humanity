@@ -81,6 +81,7 @@ public abstract class SharedWieldableSystem : EntitySystem
         if (!TryComp<HandsComponent>(args.User, out var hands))
         {
             args.Cancel();
+            return;
         }
         if (_hands.TryGetEmptyHand(args.User, out var hand, hands) == false)
         {

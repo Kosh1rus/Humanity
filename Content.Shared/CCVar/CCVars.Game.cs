@@ -33,7 +33,7 @@ public sealed partial class CCVars
     ///     Controls the default game preset.
     /// </summary>
     public static readonly CVarDef<string>
-        GameLobbyDefaultPreset = CVarDef.Create("game.defaultpreset", "nomads", CVar.ARCHIVE);
+        GameLobbyDefaultPreset = CVarDef.Create("game.defaultpreset", "ww2", CVar.ARCHIVE);
 
     /// <summary>
     ///     Controls if the game can force a different preset if the current preset's criteria are not met.
@@ -45,7 +45,7 @@ public sealed partial class CCVars
     ///     The preset for the game to fall back to if the selected preset could not be used, and fallback is enabled.
     /// </summary>
     public static readonly CVarDef<string>
-        GameLobbyFallbackPreset = CVarDef.Create("game.fallbackpreset", "Nomads", CVar.ARCHIVE);
+        GameLobbyFallbackPreset = CVarDef.Create("game.fallbackpreset", "TDMWW2", CVar.ARCHIVE);
 
     /// <summary>
     ///     Controls if people can win the game in Suspicion or Deathmatch.
@@ -88,7 +88,7 @@ public sealed partial class CCVars
     ///     Prototype to use for map pool.
     /// </summary>
     public static readonly CVarDef<string>
-        GameMapPool = CVarDef.Create("game.map_pool", "DefaultMapPool", CVar.SERVERONLY);
+        GameMapPool = CVarDef.Create("game.map_pool", "HumanityWorldWarTwoMaps", CVar.SERVERONLY);
 
     /// <summary>
     ///     The depth of the queue used to calculate which map is next in rotation.
@@ -101,7 +101,7 @@ public sealed partial class CCVars
     ///     Is map rotation enabled?
     /// </summary>
     public static readonly CVarDef<bool>
-        GameMapRotation = CVarDef.Create("game.map_rotation", true, CVar.SERVERONLY);
+        GameMapRotation = CVarDef.Create("game.map_rotation", false, CVar.SERVERONLY);
 
     /// <summary>
     ///     If roles should be restricted based on time.

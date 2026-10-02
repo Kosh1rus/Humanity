@@ -36,6 +36,10 @@ public interface IGameMapManager
     /// </summary>
     void ClearSelectedMap();
 
+    void MarkMapLoaded();
+
+    void ResetForNextRound();
+
     /// <summary>
     /// Attempts to select the given map, checking eligibility criteria
     /// </summary>

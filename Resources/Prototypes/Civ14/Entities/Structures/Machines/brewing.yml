@@ -93,7 +93,7 @@
         - Bread
         - Wheat
       compostTime: 10.0
-      outputName: "yeast"
+      outputName: "дрожжи"
       outputPrototype: "ReagentContainerYeast"
     - type: Construction
       agemin: 0

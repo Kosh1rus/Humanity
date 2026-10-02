@@ -4,6 +4,7 @@
   name: верстак стрелодела
   description: На нём делают луки и стрелы.
   components:
+    - type: NomadEraLathe
     - type: Transform
       noRot: false
     - type: Sprite

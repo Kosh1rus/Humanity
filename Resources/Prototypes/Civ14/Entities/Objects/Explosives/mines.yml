@@ -3,6 +3,8 @@
   parent: LandMineExplosive
   id: LandMineCiv
   components:
+    - type: Explosive
+      explosionType: CivDefault
     - type: Sprite
       drawdepth: Items
       sprite: Civ14/Objects/grenade.rsi
@@ -24,7 +26,7 @@
       sprite: Civ14/Objects/grenade.rsi
       state: boobytrap_armed
     - type: Explosive
-      explosionType: Default
+      explosionType: CivDefault
       maxIntensity: 5
       intensitySlope: 2
       totalIntensity: 30

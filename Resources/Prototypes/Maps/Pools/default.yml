@@ -1,10 +1,6 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-    - Camp
-    - CampWW2
     - Nomads
+    - CampWW2
     - Opushka
-    - Hotel
-    - Valley
-    - Gulag14

@@ -1,0 +1,32 @@
+- type: entity
+  id: HumanityBlastFlash
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/explosion.rsi
+    state: explosionfast
+    noRot: true
+    drawdepth: Effects
+    layers:
+    - state: explosionfast
+      shader: unshaded
+  - type: TimedDespawn
+    lifetime: 0.48
+  - type: Tag
+    tags: [ HideContextMenu ]
+
+- type: entity
+  id: HumanityBlastDust
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: Effects/chemsmoke.rsi
+    state: chemsmoke
+    noRot: true
+    drawdepth: Effects
+    color: "#5c5955d9"
+    scale: "0.6, 0.6"
+  - type: TimedDespawn
+    lifetime: 7
+  - type: Tag
+    tags: [ HideContextMenu ]

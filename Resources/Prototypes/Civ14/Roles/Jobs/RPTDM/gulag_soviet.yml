@@ -10,7 +10,7 @@
       group: CivJobsSquadLeader
       time: 7200 # 2 hours
   startingGear: GulagSovietCaptainGear
-  icon: "JobIconICpt"
+  icon: JobIconHumanityGulagSovietCaptain
   supervisors: job-supervisors-nobody
   ranks:
     RankMajor:
@@ -53,7 +53,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: SovietSergeantGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanityGulagSovietSergeant
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeantMajor:
@@ -99,7 +99,7 @@
   description: job-description-civ-gulag-soviet-guard
   playTimeTracker: JobGulagSovietGuard
   startingGear: GulagSovietGuardGear
-  icon: "JobIconSoldier"
+  icon: JobIconHumanityGulagSovietGuard
   supervisors: job-supervisors-cpt
   ranks:
     RankLanceCorporal:

@@ -53,7 +53,7 @@
   description: "В нём выплавляют железо из руды."
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: bloomery }
   objectType: Structure
-  agemin: 1
+  agemin: 2
   agemax: 8
   placementMode: SnapgridCenter
   canBuildInImpassable: false

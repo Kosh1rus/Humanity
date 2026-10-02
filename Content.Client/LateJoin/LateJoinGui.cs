@@ -44,7 +44,7 @@ namespace Content.Client.LateJoin
 
         public LateJoinGui()
         {
-            MinSize = SetSize = new Vector2(360, 560);
+            MinSize = SetSize = new Vector2(520, 620);
             IoCManager.InjectDependencies(this);
             _sprites = _entitySystem.GetEntitySystem<SpriteSystem>();
             _sawmill = Logger.GetSawmill("latejoin");
@@ -222,7 +222,7 @@ namespace Content.Client.LateJoin
                     }
                     if (currentFactionPlayers > 0)
                     {
-                        currentText = $"{departmentName} ({currentFactionPlayers} players)";
+                        currentText = $"{departmentName} ({currentFactionPlayers})";
                     }
                     category.AddChild(new PanelContainer
                     {

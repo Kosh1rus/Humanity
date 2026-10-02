@@ -73,12 +73,12 @@ namespace Content.Server.Farming
             if (ploughableTiles.Contains(tileDef.ID))
             {
                 actionType = PloughActionType.Plough;
-                popupMessage = "You begin plowing the soil.";
+                popupMessage = "Вы начинаете вспахивать землю.";
             }
             else if (grassTiles.Contains(tileDef.ID))
             {
                 actionType = PloughActionType.ClearGrass;
-                popupMessage = "You begin clearing the grass.";
+                popupMessage = "Вы начинаете расчищать траву.";
             }
             else
             {
@@ -117,7 +117,7 @@ namespace Content.Server.Farming
             {
                 // Create entity ploughedField
                 var ploughedField = Spawn("ploughedField", coordinates);
-                _popup.PopupEntity("You finish plowing the field.", ent, args.User);
+                _popup.PopupEntity("Вы вспахали землю.", ent, args.User);
             }
             else if (args.ActionType == PloughActionType.ClearGrass)
             {
@@ -125,7 +125,7 @@ namespace Content.Server.Farming
                 var dirtTile = _tileManager["FloorDirt"];
                 var newTile = new Tile(dirtTile.TileId);
                 _map.SetTile(gridUid, grid, snapPos, newTile);
-                _popup.PopupEntity("You finish clearing the grass, turning it into dirt.", ent, args.User);
+                _popup.PopupEntity("Вы расчистили траву. Теперь здесь голая земля.", ent, args.User);
             }
 
             args.Handled = true;

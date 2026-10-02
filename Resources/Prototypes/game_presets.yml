@@ -5,6 +5,7 @@
     - nomads
   name: extended-title
   showInVote: true
+  supportedMaps: HumanityNomadMaps
   description: extended-description
   rules:
     - RespawnDeadRule
@@ -15,7 +16,7 @@
   alias:
     - tdm
   name: tdm-title
-  showInVote: true
+  showInVote: false
   description: tdm-description
   rules:
     - RespawnDeadRuleTDMFixed
@@ -29,7 +30,7 @@
   alias:
     - tdm-asymmetric
   name: tdm-asy-title
-  showInVote: true
+  showInVote: false
   description: tdm-asy-description
   rules:
     - RespawnDeadRuleTDMFixed
@@ -43,7 +44,7 @@
   alias:
     - tdm-valley
   name: tdm-valley-title
-  showInVote: true
+  showInVote: false
   description: tdm-valley-description
   rules:
     - RespawnDeadRuleTDM
@@ -58,7 +59,7 @@
   alias:
     - gulag14
   name: gulag14
-  showInVote: true
+  showInVote: false
   description: gulag14-description
   rules:
     - RespawnDeadRuleTDMFixed

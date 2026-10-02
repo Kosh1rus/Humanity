@@ -12,7 +12,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: InsurgentLeaderGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanityInsurgentLeader
   supervisors: job-supervisors-nobody
   ranks:
     RankSergeantMajor:
@@ -63,7 +63,7 @@
   playTimeTracker: JobInsurgentRifleman
   startingGear: InsurgentRiflemanGear
   randomStartingGears: [InsurgentRiflemanGear, InsurgentRiflemanGear2, InsurgentRiflemanGear3]
-  icon: "JobIconICpl"
+  icon: JobIconHumanityInsurgentRifleman
   supervisors: job-supervisors-sgt
   ranks:
     RankLanceCorporal:
@@ -145,7 +145,7 @@
   description: job-description-civ-insurgent-medic
   playTimeTracker: JobInsurgentMedic
   startingGear: InsurgentMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityInsurgentMedic
   supervisors: job-supervisors-sgt
   requirements:
     - !type:TotalJobsTimeRequirement

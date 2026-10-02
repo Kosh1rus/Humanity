@@ -16,6 +16,7 @@ using Robust.Shared.Prototypes;
 using static Robust.Client.UserInterface.Controls.BaseButton;
 using Robust.Shared.Map;
 using Content.Shared.Civ14.CivResearch;
+using Content.Client.Humanity.Research;
 
 namespace Content.Client.Construction.UI
 {
@@ -40,6 +41,9 @@ namespace Content.Client.Construction.UI
         private readonly SpriteSystem _spriteSystem;
         private ConstructionSystem? _constructionSystem;
         private ConstructionPrototype? _selected;
+        private readonly NomadProgressSystem _research;
+        private int _lastAge = -1;
+        private string _search = string.Empty;
         private List<ConstructionPrototype> _favoritedRecipes = [];
         private Dictionary<string, TextureButton> _recipeButtons = new();
         private string _selectedCategory = string.Empty;
@@ -73,6 +77,8 @@ namespace Content.Client.Construction.UI
                     else
                         _constructionView.OpenCentered();
 
+                    OnViewPopulateRecipes(_constructionView, (_search, _selectedCategory));
+
                     if (_selected != null)
                         PopulateInfo(_selected);
                 }
@@ -91,6 +97,8 @@ namespace Content.Client.Construction.UI
             // This is a lot easier than a factory
             IoCManager.InjectDependencies(this);
             _constructionView = new ConstructionMenu();
+            _research = _entManager.System<NomadProgressSystem>();
+            _research.ProgressChanged += OnResearchProgress;
             _whitelistSystem = _entManager.System<EntityWhitelistSystem>();
             _spriteSystem = _entManager.System<SpriteSystem>();
             // This is required so that if we load after the system is initialized, we can bind to it immediately
@@ -129,6 +137,7 @@ namespace Content.Client.Construction.UI
         /// <inheritdoc />
         public void Dispose()
         {
+            _research.ProgressChanged -= OnResearchProgress;
             _constructionView.Dispose();
 
             SystemBindingChanged(null);
@@ -141,6 +150,16 @@ namespace Content.Client.Construction.UI
         private void OnPlacementChanged(object? sender, EventArgs e)
         {
             _constructionView.ResetPlacement();
+        }
+
+        private void OnResearchProgress(string text, int age)
+        {
+            _constructionView.SetResearchProgress(text);
+            if (_lastAge == age)
+                return;
+            _lastAge = age;
+            if (_constructionView.IsOpen)
+                OnViewPopulateRecipes(_constructionView, (_search, _selectedCategory));
         }
 
         /// <summary>
@@ -183,6 +202,7 @@ namespace Content.Client.Construction.UI
         {
             _sawmill = _logManager.GetSawmill("craftmenu");
             var (search, category) = args;
+            _search = search;
 
             var recipes = new List<ConstructionPrototype>();
 

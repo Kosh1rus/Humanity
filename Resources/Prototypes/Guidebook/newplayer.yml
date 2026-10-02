@@ -4,6 +4,8 @@
   priority: 0
   text: "/ServerInfo/Guidebook/NewPlayer/NewPlayer.xml"
   children:
+    - HumanityWorldWarTwo
+    - Nomads
     - Controls
     - CharacterCreation
 

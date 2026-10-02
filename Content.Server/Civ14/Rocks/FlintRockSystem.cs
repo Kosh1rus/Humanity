@@ -32,7 +32,11 @@ public sealed partial class FlintRockSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, FlintRockComponent component, MapInitEvent args)
     {
-        component.CurrentFlints = Random.Next(1, component.MaxFlints + 1);
+        if (component.CurrentFlints < 0)
+        {
+            component.CurrentFlints = Random.Next(1, component.MaxFlints + 1);
+            component.LastRegenerationTime = _gameTiming.CurTime;
+        }
     }
 
     public override void Update(float frameTime)
@@ -42,6 +46,8 @@ public sealed partial class FlintRockSystem : EntitySystem
         var query = EntityQueryEnumerator<FlintRockComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
+            if (Paused(uid))
+                continue;
             var currentTime = _gameTiming.CurTime;
             if (currentTime >= component.LastRegenerationTime + TimeSpan.FromHours(component.RegenerationTime))
             {
@@ -63,7 +69,7 @@ public sealed partial class FlintRockSystem : EntitySystem
 
         var verb = new AlternativeVerb
         {
-            Text = "Collect Flint",
+            Text = "Собрать кремень",
             Act = () => StartCollectingFlint(uid, component, user)
         };
         args.Verbs.Add(verb);
@@ -86,11 +92,19 @@ public sealed partial class FlintRockSystem : EntitySystem
         if (args.Cancelled || args.Handled)
             return;
 
+        args.Handled = true;
+        if (component.CurrentFlints <= 0)
+        {
+            _popup.PopupEntity("Здесь больше нечего собирать.", uid, args.Args.User);
+            return;
+        }
+        if (component.CurrentFlints == component.MaxFlints)
+            component.LastRegenerationTime = _gameTiming.CurTime;
         component.CurrentFlints--;
         var spawnPos = Transform(uid).MapPosition;
         var flint = Spawn("Flint", spawnPos);
         _hands.TryPickupAnyHand(args.Args.User, flint);
-        _popup.PopupEntity("You successfully collect a flint.", uid, args.Args.User);
+        _popup.PopupEntity("Вы собрали кремень.", uid, args.Args.User);
         args.Handled = true;
     }
 
@@ -102,9 +116,13 @@ public sealed partial class FlintRockSystem : EntitySystem
         var flintCount = component.CurrentFlints;
         if (flintCount > 0)
         {
-            var message = flintCount == 1
-                ? "A single piece of flint is partially exposed in the rock."
-                : $"There are {flintCount} loose pieces of flint in the rock.";
+            var flintWord = flintCount % 100 is >= 11 and <= 14 ? "кусков" : (flintCount % 10) switch
+            {
+                1 => "кусок",
+                >= 2 and <= 4 => "куска",
+                _ => "кусков",
+            };
+            var message = $"В камне виднеется {flintCount} {flintWord} кремня.";
             args.PushMarkup(message);
         }
     }

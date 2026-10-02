@@ -12,6 +12,11 @@ namespace Content.Server.KillTracking;
 /// </summary>
 public sealed class KillTrackingSystem : EntitySystem
 {
+    public void SetKillState(EntityUid uid, MobState state)
+    {
+        EnsureComp<KillTrackerComponent>(uid).KillState = state;
+    }
+
     /// <inheritdoc/>
     public override void Initialize()
     {

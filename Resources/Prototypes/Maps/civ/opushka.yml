@@ -1,18 +1,18 @@
 - type: gameMap
   id: Opushka
-  mapName: "Opushka (WW2)"
+  mapName: "Опушка — Вторая мировая"
   mapPath: /Maps/civ/tdm/opushka.yml
   minPlayers: 0
-  maxPlayers: 128
+  maxPlayers: 256
   maxRandomOffset: 0
   randomRotation: false
-  fixedPreset: TDM
+  fixedPreset: TDMWW2
   stations:
     Opushka:
       stationProto: StandardStationTDM
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Opushka (WW2)"
+          mapNameTemplate: "Опушка — Вторая мировая"
         - type: StationJobs
           availableJobs:
             # German

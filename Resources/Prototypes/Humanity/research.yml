@@ -1,0 +1,44 @@
+- type: entity
+  id: HumanityResearchTable
+  parent: TableWoodClassic
+  name: стол исследований
+  description: Рабочее место для опытов. Возьмите нужный материал в руку и используйте его на столе. Осмотрите стол, чтобы узнать требования и общий прогресс цивилизации.
+  components:
+    - type: NomadResearchTable
+    - type: Construction
+      graph: HumanityResearchTable
+      node: end
+
+- type: construction
+  id: HumanityResearchTable
+  name: стол исследований
+  description: Опыты с материалами ускоряют автоматическое развитие всей карты.
+  graph: HumanityResearchTable
+  startNode: start
+  targetNode: end
+  category: construction-category-production
+  icon: { sprite: Civ14/Structures/old_table4.rsi, state: full }
+  objectType: Structure
+  agemin: 0
+  agemax: 8
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: constructionGraph
+  id: HumanityResearchTable
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: end
+          steps:
+            - material: WoodPlank
+              amount: 8
+              doAfter: 8
+            - material: Stone
+              amount: 5
+              doAfter: 4
+    - node: end
+      entity: HumanityResearchTable

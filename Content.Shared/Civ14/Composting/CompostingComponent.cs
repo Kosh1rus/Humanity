@@ -24,8 +24,8 @@ public sealed partial class CompostingComponent : Component
     /// <summary>
     /// Items currently being composted and their completion times.
     /// </summary>
-    [DataField("compostingItems")]
-    public Dictionary<EntityUid, TimeSpan> CompostingItems = new();
+    [DataField("compostingBatches")]
+    public List<float> CompostingItems = new();
 
     /// <summary>
     /// Amount of finished compost ready to be collected.
@@ -49,5 +49,5 @@ public sealed partial class CompostingComponent : Component
     /// What the output is called when interacting.
     /// </summary>
     [DataField("outputName")]
-    public string OutputName = "compost";
+    public string OutputName = "компост";
 }

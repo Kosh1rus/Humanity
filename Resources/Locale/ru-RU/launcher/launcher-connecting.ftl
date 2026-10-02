@@ -31,5 +31,5 @@ connecting-state-ResolvingHost = Определение хоста
 connecting-state-EstablishingConnection = Установка соединения
 
 connecting-state-Connected = Подключён
-connecting-title = Civilization 14
+connecting-title = Humanity
 connecting-state-Handshake = Установка соединения

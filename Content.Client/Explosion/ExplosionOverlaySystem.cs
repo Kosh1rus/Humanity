@@ -1,4 +1,5 @@
 using Content.Shared.Explosion;
+using Content.Client.Humanity.Combat;
 using Content.Shared.Explosion.Components;
 using Robust.Client.Graphics;
 using Robust.Client.ResourceManagement;
@@ -21,6 +22,7 @@ public sealed class ExplosionOverlaySystem : EntitySystem
     [Dependency] private readonly SharedPointLightSystem _lights = default!;
     [Dependency] private readonly IMapManager _mapMan = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
+    [Dependency] private readonly BattleExplosionEffectsSystem _battleEffects = default!;
 
     public override void Initialize()
     {
@@ -60,6 +62,7 @@ public sealed class ExplosionOverlaySystem : EntitySystem
 
     private void OnExplosionInit(EntityUid uid, ExplosionVisualsComponent component, ComponentInit args)
     {
+        _battleEffects.SpawnEffects(component);
         EnsureComp<ExplosionVisualsTexturesComponent>(uid);
 
         if (!_protoMan.TryIndex(component.ExplosionType, out ExplosionPrototype? type) ||

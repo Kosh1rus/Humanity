@@ -907,6 +907,8 @@ namespace Content.Client.Lobby.UI
                     };
                     var jobIcon = _prototypeManager.Index(job.Icon);
                     icon.Texture = jobIcon.Icon.Frame0();
+                    if (icon.Texture.Width > 16 || icon.Texture.Height > 16)
+                        icon.TextureScale = new Vector2(32f / Math.Max(icon.Texture.Width, icon.Texture.Height));
                     selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
 
                     if (!_requirements.IsAllowed(job, (HumanoidCharacterProfile?)_preferencesManager.Preferences?.SelectedCharacter, out var reason))

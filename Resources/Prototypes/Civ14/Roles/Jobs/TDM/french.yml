@@ -9,7 +9,7 @@
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
   startingGear: FrenchLordGear
-  icon: "JobIconCommander"
+  icon: JobIconHumanityFrenchLord
   supervisors: job-supervisors-nobody
   special:
     - !type:AddComponentSpecial
@@ -42,7 +42,7 @@
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
   startingGear: FrenchKnightGear
-  icon: "JobIconOfficer"
+  icon: JobIconHumanityFrenchKnight
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -77,7 +77,7 @@
   playTimeTracker: JobFrenchSwordsman
   startingGear: FrenchSwordsmanGear
   randomStartingGears: [FrenchSwordsmanGear, FrenchSwordsmanGear2]
-  icon: "JobIconSword"
+  icon: JobIconHumanityFrenchSwordsman
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -122,7 +122,7 @@
   playTimeTracker: JobFrenchSpearman
   startingGear: FrenchSpearmanGear
   randomStartingGears: [FrenchSpearmanGear, FrenchSpearmanGear2]
-  icon: "JobIconSpear"
+  icon: JobIconHumanityFrenchSpearman
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -168,7 +168,7 @@
   playTimeTracker: JobFrenchRanged
   startingGear: FrenchRangedGear
   randomStartingGears: [FrenchRangedGear, FrenchRangedGear2]
-  icon: "JobIconRanged"
+  icon: JobIconHumanityFrenchRanged
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -240,7 +240,7 @@
   description: job-description-civ-french-medic
   playTimeTracker: JobFrenchMedic
   startingGear: FrenchMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityFrenchMedic
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial

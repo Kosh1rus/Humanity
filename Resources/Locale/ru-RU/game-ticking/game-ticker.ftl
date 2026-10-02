@@ -1,18 +1,16 @@
 game-ticker-restart-round = Перезапуск раунда...
 
-game-ticker-player-join-game-message = Добро пожаловать в Civilization 14! Если вы играете впервые, прочитайте правила. За помощью можно обратиться в локальный чат вне роли (LOOC) или общий чат вне роли (OOC).
-game-ticker-get-info-text = Добро пожаловать в [color=white]Civilization 14![/color]
-    Номер раунда: [color=white]#{$roundId}[/color]
-    Игроков сейчас: [color=white]{$playerCount}[/color]
+game-ticker-player-join-game-message = Правила и справочник — F1. Помощь — АХелп.
+game-ticker-get-info-text = Добро пожаловать в [color=white]Humanity![/color]
+    Раунд: [color=white]#{$roundId}[/color]
+    Игроков: [color=white]{$playerCount}[/color]
     Карта: [color=white]{$mapName}[/color]
-    Режим игры: [color=white]{$gmTitle}[/color]
-    — [color=yellow]{$desc}[/color]
-game-ticker-get-info-preround-text = Добро пожаловать в [color=white]Civilization 14![/color]
-    Номер раунда: [color=white]#{$roundId}[/color]
-    Игроков сейчас: [color=white]{$playerCount}[/color]; готовы: [color=white]{$readyCount}[/color]
+    Режим: [color=white]{$gmTitle}[/color]
+game-ticker-get-info-preround-text = Добро пожаловать в [color=white]Humanity![/color]
+    Раунд: [color=white]#{$roundId}[/color]
+    Игроков: [color=white]{$playerCount}[/color]; готовы: [color=white]{$readyCount}[/color]
     Карта: [color=white]{$mapName}[/color]
-    Режим игры: [color=white]{$gmTitle}[/color]
-    — [color=yellow]{$desc}[/color]
+    Режим: [color=white]{$gmTitle}[/color]
 latejoin-arrival-announcement = Прибытие: {$character} ({$job})!
 latejoin-arrival-sender = Мир
 

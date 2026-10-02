@@ -99,8 +99,6 @@ namespace Content.Server.GameTicking
             if (_mapManager.MapExists(DefaultMap))
                 return;
 
-            AddGamePresetRules();
-
             var maps = new List<GameMapPrototype>();
 
             // the map might have been force-set by something
@@ -117,12 +115,17 @@ namespace Content.Server.GameTicking
             // ideally SelectMapByConfigRules will always find a valid map
             if (mainStationMap != null)
             {
+                if (mainStationMap.FixedPreset != "" && Preset?.ID != mainStationMap.FixedPreset)
+                    SetGamePreset(mainStationMap.FixedPreset);
                 maps.Add(mainStationMap);
             }
             else
             {
                 throw new Exception("invalid config; couldn't select a valid station map!");
             }
+
+            AddGamePresetRules();
+            _gameMapManager.MarkMapLoaded();
 
             if (CurrentPreset?.MapPool != null &&
                 _prototypeManager.TryIndex<GameMapPoolPrototype>(CurrentPreset.MapPool, out var pool) &&
@@ -731,7 +734,7 @@ namespace Content.Server.GameTicking
 
             _banManager.Restart();
 
-            _gameMapManager.ClearSelectedMap();
+            _gameMapManager.ResetForNextRound();
 
             // Clear up any game rules.
             ClearGameRules();

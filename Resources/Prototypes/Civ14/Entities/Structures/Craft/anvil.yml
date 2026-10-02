@@ -4,6 +4,7 @@
   name: каменная наковальня
   description: Рабочее место кузнеца для изготовления оружия и доспехов.
   components:
+    - type: NomadEraLathe
     - type: Transform
       noRot: false
     - type: Sprite
@@ -69,6 +70,7 @@
 
 - type: latheRecipe
   id: civ13_head_khepresh_war_crown
+  civAgeMin: 1
   categories:
     - AnvilGold
   completetime: 10
@@ -77,6 +79,7 @@
   result: civ13_head_khepresh_war_crown
 - type: latheRecipe
   id: civ13_head_pharoah_headdress
+  civAgeMin: 1
   categories:
     - AnvilGold
   completetime: 10
@@ -85,6 +88,7 @@
   result: civ13_head_pharoah_headdress
 - type: latheRecipe
   id: civ13_head_sol_invictus_helmet
+  civAgeMin: 1
   categories:
     - AnvilGold
   completetime: 10
@@ -93,6 +97,7 @@
   result: civ13_head_sol_invictus_helmet
 - type: latheRecipe
   id: civ13_head_nemes_headdress
+  civAgeMin: 1
   categories:
     - AnvilGold
   completetime: 10
@@ -102,6 +107,7 @@
 
 - type: latheRecipe
   id: civ13_suit_bronze_chinese_lamellar
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -111,6 +117,7 @@
 
 - type: latheRecipe
   id: civ13_suit_bronze_egyptian_lamellar
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -120,6 +127,7 @@
 
 - type: latheRecipe
   id: civ13_suit_scaled_armor
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -129,6 +137,7 @@
 
 - type: latheRecipe
   id: civ13_suit_bronze_chestplate
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -138,6 +147,7 @@
 
 - type: latheRecipe
   id: civ13_head_greek_anax_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -147,6 +157,7 @@
 
 - type: latheRecipe
   id: civ13_head_aries_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -156,6 +167,7 @@
 
 - type: latheRecipe
   id: civ13_head_athena_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -165,6 +177,7 @@
 
 - type: latheRecipe
   id: civ13_head_lochagos_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -174,6 +187,7 @@
 
 - type: latheRecipe
   id: civ13_head_dimoerites_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -183,6 +197,7 @@
 
 - type: latheRecipe
   id: civ13_head_bronze_phrigian_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -192,6 +207,7 @@
 
 - type: latheRecipe
   id: civ13_head_bronze_osirus_headdress
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -201,6 +217,7 @@
 
 - type: latheRecipe
   id: civ13_head_bronze_anubis_headdress
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -210,6 +227,7 @@
 
 - type: latheRecipe
   id: civ13_head_egyptian_war_headdress
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -219,6 +237,7 @@
 
 - type: latheRecipe
   id: civ13_head_chinese_warrior_helmet
+  civAgeMin: 1
   categories:
     - AnvilBronze
   completetime: 10
@@ -234,6 +253,7 @@
   name: железная наковальня
   description: Рабочее место кузнеца для изготовления оружия и доспехов.
   components:
+    - type: NomadEraLathe
     - type: Transform
       noRot: false
     - type: Sprite
@@ -255,6 +275,9 @@
         - AnvilSwordsMedieval
         - AnvilShieldsMedieval
         - AnvilArmorMedieval
+        - AnvilSwordsImperial
+        - AnvilArmorImperial
+        - HumanityIronTools
     - type: MaterialStorage
       whitelist:
         tags:

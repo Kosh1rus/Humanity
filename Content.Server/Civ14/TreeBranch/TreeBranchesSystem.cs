@@ -30,7 +30,11 @@ public sealed partial class TreeBranchesSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, TreeBranchesComponent component, MapInitEvent args)
     {
-        component.CurrentBranches = Random.Next(0, component.MaxBranches);
+        if (component.CurrentBranches < 0)
+        {
+            component.CurrentBranches = Random.Next(1, component.MaxBranches + 1);
+            component.LastGrowthTime = _gameTiming.CurTime;
+        }
     }
 
     public override void Update(float frameTime)
@@ -40,6 +44,8 @@ public sealed partial class TreeBranchesSystem : EntitySystem
         var query = EntityQueryEnumerator<TreeBranchesComponent>();
         while (query.MoveNext(out var uid, out var component))
         {
+            if (Paused(uid))
+                continue;
             var currentTime = _gameTiming.CurTime;
             if (currentTime >= component.LastGrowthTime + TimeSpan.FromSeconds(component.GrowthTime))
             {
@@ -61,7 +67,7 @@ private void OnGetVerbs(EntityUid uid, TreeBranchesComponent component, ref GetV
 
     var verb = new AlternativeVerb
     {
-        Text = "Collect Branch",
+        Text = "Собрать ветку",
         Act = () => StartCollectingBranch(uid, component, user)
     };
     args.Verbs.Add(verb);
@@ -89,11 +95,19 @@ private void OnGetVerbs(EntityUid uid, TreeBranchesComponent component, ref GetV
         if (args.Cancelled || args.Handled)
             return;
 
+        args.Handled = true;
+        if (component.CurrentBranches <= 0)
+        {
+            _popup.PopupEntity("Здесь больше нечего собирать.", uid, args.Args.User);
+            return;
+        }
+        if (component.CurrentBranches == component.MaxBranches)
+            component.LastGrowthTime = _gameTiming.CurTime;
         component.CurrentBranches--;
         var spawnPos = Transform(uid).MapPosition;
         var branch = Spawn("LeafedStick", spawnPos);
         _hands.TryPickupAnyHand(args.Args.User, branch);
-        _popup.PopupEntity("You successfully collect a branch.", uid, args.Args.User);
+        _popup.PopupEntity("Вы собрали ветку.", uid, args.Args.User);
         args.Handled = true;
     }
 
@@ -105,9 +119,13 @@ private void OnGetVerbs(EntityUid uid, TreeBranchesComponent component, ref GetV
         var branchCount = component.CurrentBranches;
         if (branchCount > 0)
         {
-            var message = branchCount == 1
-                ? "There is 1 branch you could make use of."
-                : $"There are {branchCount} branches you could make use of.";
+            var branchWord = branchCount % 100 is >= 11 and <= 14 ? "веток" : (branchCount % 10) switch
+            {
+                1 => "ветка",
+                >= 2 and <= 4 => "ветки",
+                _ => "веток",
+            };
+            var message = $"Можно собрать ещё {branchCount} {branchWord}.";
             args.PushMarkup(message);
         }
     }

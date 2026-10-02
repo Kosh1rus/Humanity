@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 using Content.Client.Viewport;
 using Content.Shared.CCVar;
+using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controls;
 using Robust.Shared.Configuration;
@@ -53,6 +54,22 @@ namespace Content.Client.UserInterface.Controls
             var fixedFactor = _cfg.GetCVar(CCVars.ViewportFixedScaleFactor);
             var verticalFit = _cfg.GetCVar(CCVars.ViewportVerticalFit);
 
+            if (stretch && verticalFit && PixelSize.X > 0 && PixelSize.Y > 0)
+            {
+                var factor = Math.Max(1, (int) Math.Round(PixelSize.Y / (15f * EyeManager.PixelsPerMeter)));
+                var minWidth = _cfg.GetCVar(CCVars.ViewportMinimumWidth) * EyeManager.PixelsPerMeter;
+                var maxWidth = _cfg.GetCVar(CCVars.ViewportMaximumWidth) * EyeManager.PixelsPerMeter;
+                var width = Math.Clamp((int) Math.Ceiling(PixelSize.X / (double) factor), minWidth, maxWidth);
+                var height = (int) Math.Ceiling(PixelSize.Y / (double) factor);
+
+                Viewport.ViewportSize = new Vector2i(width, height);
+                Viewport.FixedStretchSize = Viewport.ViewportSize * factor;
+                Viewport.StretchMode = ScalingViewportStretchMode.Nearest;
+                Viewport.RenderScaleMode = ScalingViewportRenderScaleMode.Fixed;
+                Viewport.FixedRenderScale = renderScaleUp ? factor : 1;
+                return;
+            }
+
             if (stretch)
             {
                 var snapFactor = CalcSnappingFactor();
@@ -60,7 +77,7 @@ namespace Content.Client.UserInterface.Controls
                 {
                     // Did not find a snap, enable stretching.
                     Viewport.FixedStretchSize = null;
-                    Viewport.StretchMode = ScalingViewportStretchMode.Bilinear;
+                    Viewport.StretchMode = ScalingViewportStretchMode.Nearest;
                     Viewport.IgnoreDimension = verticalFit ? ScalingViewportIgnoreDimension.Horizontal : ScalingViewportIgnoreDimension.None;
 
                     if (renderScaleUp)

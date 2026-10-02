@@ -13,14 +13,14 @@ namespace Content.Client.Commands
         [Dependency] private readonly IEntityManager _entityManager = default!;
 
         public string Command => "acceptfactioninvite";
-        public string Description => "Accepts an invitation to join a faction.";
-        public string Help => $"Usage: {Command} \"<faction_name>\"";
+        public string Description => "Принять приглашение во фракцию.";
+        public string Help => $"Использование: {Command} \"<название_фракции>\"";
 
         public void Execute(IConsoleShell shell, string argStr, string[] args)
         {
             if (args.Length != 1)
             {
-                shell.WriteError("Invalid number of arguments.");
+                shell.WriteError("Укажите название фракции.");
                 shell.WriteLine(Help);
                 return;
             }
@@ -29,7 +29,7 @@ namespace Content.Client.Commands
 
             if (string.IsNullOrWhiteSpace(factionName))
             {
-                shell.WriteError("Faction name cannot be empty.");
+                shell.WriteError("Название фракции не может быть пустым.");
                 return;
             }
 
@@ -39,7 +39,7 @@ namespace Content.Client.Commands
             var acceptEvent = new AcceptFactionInviteEvent(factionName);
             _entityManager.RaisePredictiveEvent(acceptEvent);
 
-            shell.WriteLine($"Sent request to join faction: '{factionName}'.");
+            shell.WriteLine($"Отправлен запрос на вступление во фракцию «{factionName}».");
         }
     }
 }

@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "license": "AGPLv3",
+  "copyright": "Sprites from Civilization 13 contributors: https://github.com/civ13/civ13/tree/0d38999d5f9f987a944493f11c456537f39ac2f6. Composed as role icons for Humanity; source mapping in Tools/Humanity/Civ13Icons/manifest.json.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "Nomad"
+    },
+    {
+      "name": "BlugoslaviaCaptain"
+    },
+    {
+      "name": "BlugoslaviaMachinegunner"
+    },
+    {
+      "name": "BlugoslaviaMedic"
+    },
+    {
+      "name": "BlugoslaviaRifleman"
+    },
+    {
+      "name": "BlugoslaviaSergeant"
+    },
+    {
+      "name": "EnglishKnight"
+    },
+    {
+      "name": "EnglishLord"
+    },
+    {
+      "name": "EnglishMedic"
+    },
+    {
+      "name": "EnglishRanged"
+    },
+    {
+      "name": "EnglishSpearman"
+    },
+    {
+      "name": "EnglishSwordsman"
+    },
+    {
+      "name": "FrenchKnight"
+    },
+    {
+      "name": "FrenchLord"
+    },
+    {
+      "name": "FrenchMedic"
+    },
+    {
+      "name": "FrenchRanged"
+    },
+    {
+      "name": "FrenchSpearman"
+    },
+    {
+      "name": "FrenchSwordsman"
+    },
+    {
+      "name": "GermanCaptain"
+    },
+    {
+      "name": "GermanMachinegunner"
+    },
+    {
+      "name": "GermanMedic"
+    },
+    {
+      "name": "GermanRifleman"
+    },
+    {
+      "name": "GermanSergeant"
+    },
+    {
+      "name": "GermanSubmachineGunner"
+    },
+    {
+      "name": "GulagPrisonerGerman"
+    },
+    {
+      "name": "GulagPrisonerPolish"
+    },
+    {
+      "name": "GulagPrisonerUkrainian"
+    },
+    {
+      "name": "GulagSovietCaptain"
+    },
+    {
+      "name": "GulagSovietGuard"
+    },
+    {
+      "name": "GulagSovietSergeant"
+    },
+    {
+      "name": "InsurgentLeader"
+    },
+    {
+      "name": "InsurgentMedic"
+    },
+    {
+      "name": "InsurgentRifleman"
+    },
+    {
+      "name": "SovietCWCaptain"
+    },
+    {
+      "name": "SovietCWMachinegunner"
+    },
+    {
+      "name": "SovietCWMedic"
+    },
+    {
+      "name": "SovietCWRifleman"
+    },
+    {
+      "name": "SovietCWSergeant"
+    },
+    {
+      "name": "SovietCaptain"
+    },
+    {
+      "name": "SovietMachinegunner"
+    },
+    {
+      "name": "SovietMedic"
+    },
+    {
+      "name": "SovietRifleman"
+    },
+    {
+      "name": "SovietSergeant"
+    },
+    {
+      "name": "SovietSubmachineGunner"
+    },
+    {
+      "name": "USCaptain"
+    },
+    {
+      "name": "USMachinegunner"
+    },
+    {
+      "name": "USMedic"
+    },
+    {
+      "name": "USRifleman"
+    },
+    {
+      "name": "USSergeant"
+    },
+    {
+      "name": "UnitedNationsMedic"
+    },
+    {
+      "name": "UnitedNationsRifleman"
+    }
+  ]
+}

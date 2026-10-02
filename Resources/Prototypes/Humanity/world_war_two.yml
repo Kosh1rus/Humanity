@@ -1,0 +1,32 @@
+- type: guideEntry
+  id: HumanityWorldWarTwo
+  name: humanity-ww2-title
+  text: "/ServerInfo/Guidebook/Humanity/WorldWarTwo.xml"
+
+- type: gamePreset
+  id: TDMWW2
+  alias: [ ww2, tdm-ww2 ]
+  name: humanity-ww2-title
+  description: humanity-ww2-description
+  showInVote: true
+  supportedMaps: HumanityWorldWarTwoMaps
+  rules:
+    - RespawnDeadRuleTDMFixed
+    - GracewallRule
+    - CaptureAreaRule
+    - TeamDeathMatchRuleWW2
+    - RandomWeatherRule
+
+- type: gameMapPool
+  id: HumanityWorldWarTwoMaps
+  maps: [ CampWW2, Opushka ]
+
+- type: entity
+  parent: TeamDeathMatchRule
+  id: TeamDeathMatchRuleWW2
+  components:
+  - type: TeamDeathMatchRule
+    team1: Germany
+    team2: Soviet
+    roundDuration: 2700
+    disableNutrition: true

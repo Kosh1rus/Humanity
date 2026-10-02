@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Content.Server.Construction.Components;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Construction;
+using Content.Shared.Civ14.CivResearch;
 using Content.Shared.Construction.Prototypes;
 using Content.Shared.Construction.Steps;
 using Content.Shared.Coordinates;
@@ -40,6 +41,17 @@ namespace Content.Server.Construction
         // --- YOU HAVE BEEN WARNED! AAAH! ---
 
         private readonly Dictionary<ICommonSession, HashSet<int>> _beingBuilt = new();
+
+        private bool CanBuildInCurrentAge(EntityUid user, ConstructionPrototype recipe)
+        {
+            if (!TryComp<CivResearchComponent>(Transform(user).MapUid, out var research))
+                return !recipe.Hide;
+            var age = research.GetCurrentAge();
+            if (!recipe.Hide && age >= recipe.AgeMin && age <= recipe.AgeMax && (!research.IsTDM || recipe.TDM))
+                return true;
+            _popup.PopupEntity("Р­С‚РѕС‚ СЂРµС†РµРїС‚ РЅРµРґРѕСЃС‚СѓРїРµРЅ РІ С‚РµРєСѓС‰РµР№ СЌРїРѕС…Рµ.", user, user);
+            return false;
+        }
 
         private void InitializeInitial()
         {
@@ -333,6 +345,9 @@ namespace Content.Server.Construction
                 return false;
             }
 
+            if (!CanBuildInCurrentAge(user, constructionPrototype))
+                return false;
+
             if (_whitelistSystem.IsWhitelistFail(constructionPrototype.EntityWhitelist, user))
             {
                 _popup.PopupEntity(Loc.GetString("construction-system-cannot-start"), user, user);
@@ -417,6 +432,9 @@ namespace Content.Server.Construction
                 Log.Error($"Client sent {nameof(TryStartStructureConstructionMessage)} with no attached entity!");
                 return;
             }
+
+            if (!CanBuildInCurrentAge(user, constructionPrototype))
+                return;
 
             if (_whitelistSystem.IsWhitelistFail(constructionPrototype.EntityWhitelist, user))
             {

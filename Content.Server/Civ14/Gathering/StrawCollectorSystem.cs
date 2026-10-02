@@ -69,7 +69,7 @@ public sealed partial class StrawCollectorSystem : EntitySystem
 
         if (_doAfter.TryStartDoAfter(doAfterArgs))
         {
-            _popup.PopupEntity("You begin cutting the grass.", ent, user);
+            _popup.PopupEntity("Вы начинаете срезать траву.", ent, user);
             args.Handled = true;
         }
     }
@@ -103,7 +103,7 @@ public sealed partial class StrawCollectorSystem : EntitySystem
             Spawn("MaterialStraw1", coordinates);
         }
 
-        _popup.PopupEntity($"You finish cutting the grass.", ent, args.User);
+        _popup.PopupEntity("Вы срезали траву.", ent, args.User);
         args.Handled = true;
     }
 }

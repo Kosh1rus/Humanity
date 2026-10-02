@@ -548,5 +548,5 @@ ui-options-accessability-header-visuals = Отображение
 ui-options-accessability-header-content = Содержимое
 ui-options-reduced-motion = Уменьшить анимацию эффектов
 ui-options-enable-classic-overlay = Классическая плашка антагониста
-ui-options-hud-theme-civ = Civ14
+ui-options-hud-theme-civ = Humanity
 

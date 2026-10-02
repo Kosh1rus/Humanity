@@ -21,6 +21,7 @@
 
 - type: latheRecipe
   id: civ13_shield_bronze_shield
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 10
@@ -30,6 +31,7 @@
 
 - type: latheRecipe
   id: civ13_shield_athenian_aspis
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -39,6 +41,7 @@
 
 - type: latheRecipe
   id: civ13_shield_aspis_with_image_of_a_pegasus
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -48,6 +51,7 @@
 
 - type: latheRecipe
   id: civ13_shield_aspis_with_image_of_a_owl
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -57,6 +61,7 @@
 
 - type: latheRecipe
   id: civ13_shield_spartan_aspis
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -66,6 +71,7 @@
 
 - type: latheRecipe
   id: civ13_shield_egyptian_shield
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -75,6 +81,7 @@
 
 - type: latheRecipe
   id: civ13_shield_praetorian_roman_shield
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -83,6 +90,7 @@
   result: civ13_shield_praetorian_roman_shield
 - type: latheRecipe
   id: civ13_shield_roman_shield
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -91,6 +99,7 @@
   result: civ13_shield_roman_shield
 - type: latheRecipe
   id: civ13_shield_roman_shield_blue
+  civAgeMin: 1
   categories:
     - AnvilShieldsAncient
   completetime: 12
@@ -107,6 +116,7 @@
 
 - type: latheRecipe
   id: civ13_shield_iron_shield
+  civAgeMin: 3
   categories:
     - AnvilShieldsMedieval
   completetime: 12
@@ -116,6 +126,7 @@
 
 - type: latheRecipe
   id: civ13_shield_semioval_iron_shield
+  civAgeMin: 3
   categories:
     - AnvilShieldsMedieval
   completetime: 12
@@ -125,6 +136,7 @@
 
 - type: latheRecipe
   id: civ13_shield_steel_shield
+  civAgeMin: 3
   categories:
     - AnvilShieldsMedieval
   completetime: 12
@@ -134,6 +146,7 @@
 
 - type: latheRecipe
   id: civ13_shield_arabic_round_shield
+  civAgeMin: 3
   categories:
     - AnvilShieldsMedieval
   completetime: 12

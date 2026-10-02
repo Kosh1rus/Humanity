@@ -12,6 +12,9 @@
       slots:
         - Back
     - type: GunRequiresWield
+    - type: Wieldable
+      wieldedInhandPrefix: null
+      unwieldOnUse: false
     - type: Item
       size: Large
       shape:

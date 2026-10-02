@@ -45,7 +45,10 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     /// </summary>
     private void OnFragTrigger(Entity<ProjectileGrenadeComponent> entity, ref TriggerEvent args)
     {
-        FragmentIntoProjectiles(entity.Owner, entity.Comp);
+        if (entity.Comp.Fragmented)
+            return;
+        entity.Comp.Fragmented = true;
+        FragmentIntoProjectiles(entity.Owner, entity.Comp, args.User);
         args.Handled = true;
     }
 
@@ -53,7 +56,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     /// Spawns projectiles at the coordinates of the grenade upon triggering
     /// Can customize the angle and velocity the projectiles come out at
     /// </summary>
-    private void FragmentIntoProjectiles(EntityUid uid, ProjectileGrenadeComponent component)
+    private void FragmentIntoProjectiles(EntityUid uid, ProjectileGrenadeComponent component, EntityUid? user)
     {
         var grenadeCoord = _transformSystem.GetMapCoordinates(uid);
         var shootCount = 0;
@@ -66,7 +69,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             return;
         }
 
-        var segmentAngle = 360 / totalCount;
+        var segmentAngle = 360f / totalCount;
 
         while (TrySpawnContents(grenadeCoord, component, out var contentUid))
         {
@@ -77,7 +80,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             {
                 var angleMin = segmentAngle * shootCount;
                 var angleMax = segmentAngle * (shootCount + 1);
-                angle = Angle.FromDegrees(_random.Next(angleMin, angleMax));
+                angle = Angle.FromDegrees(_random.NextFloat(angleMin, angleMax));
                 shootCount++;
             }
 
@@ -85,7 +88,7 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             // slightly uneven, doesn't really change much, but it looks better
             var direction = angle.ToVec().Normalized();
             var velocity = _random.NextVector2(component.MinVelocity, component.MaxVelocity);
-            _gun.ShootProjectile(contentUid, direction, velocity, uid, null);
+            _gun.ShootProjectile(contentUid, direction, velocity, uid, user);
         }
     }
 

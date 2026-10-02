@@ -16,6 +16,9 @@
     - type: STWeight
       self: 5
     - type: GunRequiresWield
+    - type: Wieldable
+      wieldedInhandPrefix: null
+      unwieldOnUse: false
     - type: Item
       size: Large
       shape:

@@ -11,4 +11,4 @@ if [ "$(dirname $0)" != "." ]; then
 fi
 
 cd ../../
-dotnet run --project Content.Server --no-build
+dotnet run --project Content.Server -c Release --no-build -- --config-file Resources/ConfigPresets/Civ/production.toml

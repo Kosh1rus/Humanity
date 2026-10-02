@@ -45,6 +45,7 @@ namespace Content.Client.Construction.UI
         void ClearRecipeInfo();
         void SetRecipeInfo(string name, string description, Texture iconTexture, bool isItem, bool isFavorite);
         void ResetPlacement();
+        void SetResearchProgress(string text);
 
         #region Window Control
 
@@ -130,6 +131,12 @@ namespace Content.Client.Construction.UI
         {
             BuildButton.Pressed = false;
             EraseButton.Pressed = false;
+        }
+
+        public void SetResearchProgress(string text)
+        {
+            ResearchProgress.SetMessage(text);
+            ResearchProgress.Visible = !string.IsNullOrEmpty(text);
         }
 
         public void SetRecipeInfo(

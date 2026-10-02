@@ -22,6 +22,8 @@ public sealed partial class ProjectileGrenadeComponent : Component
     /// </summary>
     public int UnspawnedCount;
 
+    public bool Fragmented;
+
     /// <summary>
     ///     Total amount of projectiles
     /// </summary>

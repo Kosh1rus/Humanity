@@ -223,13 +223,13 @@
         - to: flintaxe
           steps:
             - tag: SharpenedFlint
-              name: a sharpened flint
+              name: заострённый кремень
               icon:
                 sprite: Civ14/Objects/old_weapons.rsi
                 state: sharpened_flint
               doAfter: 5
             - tag: SharpenedStick
-              name: a sharpened stick
+              name: заострённая палка
               icon:
                 sprite: Civ14/Objects/old_weapons.rsi
                 state: sharpened_stick

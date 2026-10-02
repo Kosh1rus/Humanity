@@ -6,5 +6,5 @@ ui-rules-wait = Кнопка принятия будет разблокиров�
 ui-rules-button-home = В начало
 
 ui-rules-button-back = Назад
-ui-rules-header = Официальные правила сервера Civ14
-ui-rules-header-rp = Официальные правила RP-сервера Civ14
+ui-rules-header = Официальные правила сервера Humanity
+ui-rules-header-rp = Официальные правила RP-сервера Humanity

@@ -1,4 +1,4 @@
 @echo off
 cd..
 cd..
-dotnet run --project Content.Client
+dotnet run --project Content.Client -c Release

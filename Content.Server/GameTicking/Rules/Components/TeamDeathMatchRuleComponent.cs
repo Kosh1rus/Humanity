@@ -40,6 +40,17 @@ public sealed partial class TeamDeathMatchRuleComponent : Component
 
     [DataField("kdRatio")]
     public Dictionary<string, PlayerKDStats> KDRatio = new();
+
+    [DataField]
+    public float RoundDuration;
+
+    [DataField]
+    public bool DisableNutrition;
+
+    public float Elapsed;
+    public bool TimedOut;
+    public string WinnerTeam = "";
+    public Dictionary<EntityUid, string> Participants = new();
 }
 
 // Add this class to track player stats

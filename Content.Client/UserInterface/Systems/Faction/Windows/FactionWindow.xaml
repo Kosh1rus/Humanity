@@ -2,85 +2,79 @@
     xmlns="https://spacestation14.io"
     xmlns:cc="clr-namespace:Content.Client.UserInterface.Controls"
     xmlns:windows="clr-namespace:Content.Client.UserInterface.Systems.Faction.Windows"
-    Title="Factions"
+    Title="Фракции"
     MinWidth="400"
     MinHeight="350">
-    <!-- Increased MinHeight slightly -->
     <BoxContainer Orientation="Vertical"
                   Margin="5">
 
-        <!-- View when NOT in a faction -->
         <BoxContainer Name="NotInFactionView"
                       Orientation="Vertical"
                       Visible="True">
-            <Label Text="You are not currently in a faction."
+            <Label Text="Вы пока не состоите во фракции."
                    Align="Center"
                    Margin="0 0 0 10"/>
 
-            <!-- *** ADDED THIS SECTION *** -->
             <BoxContainer Orientation="Horizontal"
                           Margin="0 5">
-                <Label Text="Faction Name:"
+                <Label Text="Название фракции:"
                        MinWidth="100"
                        VerticalAlignment="Center"/>
                 <LineEdit Name="FactionNameInput"
                           Access="Public"
                           HorizontalExpand="True"
-                          PlaceHolder="Enter desired faction name"/>
+                          PlaceHolder="Введите название фракции"/>
             </BoxContainer>
-            <!-- *** END ADDED SECTION *** -->
 
             <Button Name="CreateFactionButton"
-                    Text="Create Faction"
+                    Text="Создать фракцию"
                     Access="Public"
                     Margin="0 5"/>
             <Button Name="ListFactionsButtonNotInFaction"
-                    Text="List Factions"
+                    Text="Список фракций"
                     Access="Public"
                     Margin="0 5"/>
         </BoxContainer>
 
-        <!-- View when IN a faction -->
         <BoxContainer Name="InFactionView"
                       Orientation="Vertical"
                       Visible="False">
             <Label Name="CurrentFactionLabel"
-                   Text="Current Faction: -"
+                   Text="Ваша фракция: —"
                    Align="Center"
                    Margin="0 0 0 10"/>
-            <!-- Input for inviting a player -->
             <BoxContainer Orientation="Horizontal"
                     Margin="0 0 0 5">
-                <Label Text="Player to Invite:"
+                <Label Text="Имя игрока:"
                        MinWidth="100"
                        VerticalAlignment="Center"/>
                 <LineEdit Name="InvitePlayerNameInput"
                           Access="Public"
                           HorizontalExpand="True"
-                          PlaceHolder="Enter player name"/>
+                          PlaceHolder="Введите имя игрока"/>
             </BoxContainer>
             <Button Name="InvitePlayerButton"
-                    Text="Invite Player"
+                    Text="Пригласить"
                     Access="Public"
                     Margin="0 5"/>
             <Button Name="LeaveFactionButton"
-                    Text="Leave Faction"
+                    Text="Покинуть фракцию"
                     Access="Public"
                     Margin="0 5"/>
+            <Button Name="KickPlayerButton" Text="Исключить участника" Access="Public" Margin="0 5"/>
+            <Button Name="TransferLeaderButton" Text="Передать руководство" Access="Public" Margin="0 5"/>
+            <Label Text="Приглашения и управление участниками доступны главе."/>
             <Button Name="ListFactionsButtonInFaction"
-                    Text="List Factions"
+                    Text="Список фракций"
                     Access="Public"
                     Margin="0 5"/>
         </BoxContainer>
 
-        <!-- Area to display the faction list -->
         <ScrollContainer VerticalExpand="True"
                          Margin="0 10 0 0">
             <Label Name="FactionListLabel"
-                   Text="Faction list will appear here..."
+                   Text="Здесь появится список фракций."
                    Access="Public"/>
-            <!-- Consider using RichTextLabel for better formatting later -->
-            <!-- <RichTextLabel Name="FactionListLabel" /> -->
         </ScrollContainer>
 
     </BoxContainer>

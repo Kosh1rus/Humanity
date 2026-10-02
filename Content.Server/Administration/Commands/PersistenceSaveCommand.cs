@@ -5,6 +5,7 @@ using Robust.Shared.Console;
 using Robust.Shared.Map;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Utility;
+using Content.Server.Humanity.Persistence;
 
 namespace Content.Server.Administration.Commands;
 
@@ -48,7 +49,14 @@ public sealed class PersistenceSave : IConsoleCommand
         }
 
         var mapLoader = _system.GetEntitySystem<MapLoaderSystem>();
-        mapLoader.TrySaveMap(mapId, new ResPath(saveFilePath));
+        var success = args.Length == 1 && _config.GetCVar(CCVars.UsePersistence)
+            ? _system.GetEntitySystem<NomadWorldSaveSystem>().Save(_map.GetMapEntityId(mapId))
+            : mapLoader.TrySaveMap(mapId, new ResPath(saveFilePath));
+        if (!success)
+        {
+            shell.WriteError("Не удалось сохранить мир. Проверьте серверный журнал.");
+            return;
+        }
         shell.WriteLine(Loc.GetString("cmd-savemap-success"));
     }
 }

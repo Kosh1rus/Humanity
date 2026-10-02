@@ -1,58 +1,53 @@
-using System;
-using Robust.Shared.GameObjects;
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.Manager.Attributes;
-using Robust.Shared.ViewVariables;
-using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared.Civ14.CivResearch;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class CivResearchComponent : Component
 {
-    /// <summary>
-    /// Defines if research is currently active and progressing
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
     [DataField("researchEnabled"), AutoNetworkedField]
     public bool ResearchEnabled { get; set; } = true;
-    /// <summary>
-    /// The current research level. From 0 to 800.
-    /// </summary>
 
     [DataField("researchLevel"), AutoNetworkedField]
-    public float ResearchLevel { get; set; } = 0f;
-    /// <summary>
-    /// For autoresearch, how much research increases per tick.
-    /// This defaults to 100 levels per hour.
-    /// </summary>
+    public float ResearchLevel { get; set; }
 
     [DataField("researchSpeed"), AutoNetworkedField]
-    public float ResearchSpeed { get; set; } = 0.001368f;
-    /// <summary>
-    /// The maximum research level.
-    /// Should probably stay below 900 as 9 is used as the research level for disabled and futuristic stuff.
-    /// </summary>
+    public float ResearchSpeed { get; set; } = 100f / (3600f * 20f);
 
     [DataField("maxResearch"), AutoNetworkedField]
     public float MaxResearch { get; set; } = 800;
-    /// <summary>
-    /// If the map is tdm or not. Crafting is restricted in TDM maps.
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
+
     [DataField("isTDM"), AutoNetworkedField]
-    public bool IsTDM { get; set; } = false;
-    /// <summary>
-    /// Calculates the current age based on the ResearchLevel.
-    /// Age is determined by flooring the division of ResearchLevel by 100.
-    /// </summary>
-    /// <returns>The current age as an integer.</returns>
-    public int GetCurrentAge()
+    public bool IsTDM { get; set; }
+
+    [DataField, AutoNetworkedField]
+    public float ManualResearch { get; set; }
+
+    [DataField, AutoNetworkedField]
+    public float ManualResearchLimit { get; set; } = 40;
+
+    public int GetCurrentAge() => (int) MathF.Floor(ResearchLevel / 100f);
+
+    public bool CanResearch => ResearchEnabled && !IsTDM && ResearchLevel < MaxResearch;
+
+    public float Advance(float points, bool manual = false)
     {
-        return (int)Math.Floor(ResearchLevel / 100f);
+        if (!CanResearch || !float.IsFinite(points) || points <= 0)
+            return 0;
+
+        var age = GetCurrentAge();
+        if (manual)
+            points = MathF.Min(points, MathF.Max(0, ManualResearchLimit - ManualResearch));
+
+        points = MathF.Min(points, MaxResearch - ResearchLevel);
+        if (manual)
+            points = MathF.Min(points, (age + 1) * 100f - ResearchLevel);
+
+        ResearchLevel += points;
+        if (manual)
+            ManualResearch += points;
+        if (GetCurrentAge() != age)
+            ManualResearch = 0;
+        return points;
     }
-
 }
-

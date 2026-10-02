@@ -35,21 +35,26 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 
         SubscribeLocalEvent<SuicideEvent>(OnSuicide);
         SubscribeLocalEvent<MobStateChangedEvent>(OnMobStateChanged);
-        foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
-        {
+    }
+
+    protected override void Started(EntityUid uid, RespawnDeadRuleComponent component, GameRuleComponent rule, GameRuleStartedEvent args)
+    {
+        if (TryComp<RespawnTrackerComponent>(uid, out var tracker))
             tracker.GlobalTimer = _timing.CurTime + tracker.RespawnDelay;
-        }
     }
 
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
 
-        if (_station.GetStations().FirstOrNull() is not { } station)
+        if (GameTicker.RunLevel != GameRunLevel.InRound)
             return;
 
-        foreach (var tracker in EntityQuery<RespawnTrackerComponent>())
+        var query = EntityQueryEnumerator<RespawnDeadRuleComponent, RespawnTrackerComponent, GameRuleComponent>();
+        while (query.MoveNext(out var uid, out _, out var tracker, out var rule))
         {
+            if (!GameTicker.IsGameRuleActive(uid, rule))
+                continue;
             if (!tracker.Fixed)
             {
                 foreach (var (player, time) in tracker.RespawnQueue)
@@ -57,8 +62,6 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
                     if (_timing.CurTime < time)
                         continue;
 
-                    if (!_playerManager.TryGetSessionById(player, out var session))
-                        continue;
                     //This autorespawner is disabled since people can manually return to the lobby.
                     //We just check on the spawn event if the player is not in the queue.
                     //if (session.GetMind() is { } mind && TryComp<MindComponent>(mind, out var mindComp) && mindComp.OwnedEntity.HasValue)
@@ -72,7 +75,7 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
                 if (_timing.CurTime > tracker.GlobalTimer && _announced == false)
                 {
                     _announced = true;
-                    var announcementMessage = "Reinforcements are arriving!";
+                    var announcementMessage = "Подкрепления доступны. Вступайте через лобби.";
                     RespawnFixed(tracker);
                     _chat.DispatchGlobalAnnouncement(announcementMessage, "Round", false, null, Color.Yellow);
                     tracker.GlobalTimer = _timing.CurTime + tracker.RespawnDelay;
@@ -84,10 +87,7 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 
     private void RespawnFixed(RespawnTrackerComponent tracker)
     {
-        foreach (var (player, time) in tracker.RespawnQueue)
-        {
-            tracker.RespawnQueue.Remove(player);
-        }
+        tracker.RespawnQueue.Clear();
     }
 
     private void OnSuicide(SuicideEvent ev)
@@ -145,11 +145,15 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
             return false;
         }
 
-        var msg = Loc.GetString("rule-respawn-in-seconds", ("second", respawnTracker.Comp.RespawnDelay.TotalSeconds));
+        var readyAt = respawnTracker.Comp.Fixed
+            ? respawnTracker.Comp.GlobalTimer
+            : _timing.CurTime + respawnTracker.Comp.RespawnDelay;
+        var seconds = Math.Max(0, Math.Ceiling((readyAt - _timing.CurTime).TotalSeconds));
+        var msg = Loc.GetString("rule-respawn-in-seconds", ("second", seconds));
         var wrappedMsg = Loc.GetString("chat-manager-server-wrap-message", ("message", msg));
         _chatManager.ChatMessageToOne(ChatChannel.Server, msg, wrappedMsg, respawnTracker, false, player.Comp.PlayerSession.Channel, Color.LimeGreen);
 
-        respawnTracker.Comp.RespawnQueue[player.Comp.PlayerSession.UserId] = _timing.CurTime + respawnTracker.Comp.RespawnDelay;
+        respawnTracker.Comp.RespawnQueue[player.Comp.PlayerSession.UserId] = readyAt;
 
         return true;
     }

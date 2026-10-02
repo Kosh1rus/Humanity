@@ -9,7 +9,7 @@
     - !type:OverallPlaytimeRequirement
       time: 10800 #3 hrs
   startingGear: EnglishLordGear
-  icon: "JobIconCommander"
+  icon: JobIconHumanityEnglishLord
   supervisors: job-supervisors-nobody
   special:
     - !type:AddComponentSpecial
@@ -43,7 +43,7 @@
     - !type:OverallPlaytimeRequirement
       time: 5400 #1.5 hrs
   startingGear: EnglishKnightGear
-  icon: "JobIconOfficer"
+  icon: JobIconHumanityEnglishKnight
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -78,7 +78,7 @@
   playTimeTracker: JobEnglishSwordsman
   startingGear: EnglishSwordsmanGear
   randomStartingGears: [EnglishSwordsmanGear, EnglishSwordsmanGear2]
-  icon: "JobIconSword"
+  icon: JobIconHumanityEnglishSwordsman
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -123,7 +123,7 @@
   playTimeTracker: JobEnglishSpearman
   startingGear: EnglishSpearmanGear
   randomStartingGears: [EnglishSpearmanGear, EnglishSpearmanGear2]
-  icon: "JobIconSpear"
+  icon: JobIconHumanityEnglishSpearman
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -168,7 +168,7 @@
   playTimeTracker: JobEnglishRanged
   startingGear: EnglishRangedGear
   randomStartingGears: [EnglishRangedGear, EnglishRangedGear2]
-  icon: "JobIconRanged"
+  icon: JobIconHumanityEnglishRanged
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial
@@ -240,7 +240,7 @@
   description: job-description-civ-english-medic
   playTimeTracker: JobEnglishMedic
   startingGear: EnglishMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityEnglishMedic
   supervisors: job-supervisors-lord
   special:
     - !type:AddComponentSpecial

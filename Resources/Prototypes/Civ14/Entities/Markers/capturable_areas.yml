@@ -8,7 +8,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_red
     - type: CaptureArea
-      name: "Objective Area"
+      name: "Основная точка"
       captureDuration: 300 # 5 min
       captureRadius: 6
       contestedResetTime: 10 # 10 seconds before timer resets when contested
@@ -22,7 +22,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_green
     - type: CaptureArea
-      name: "the Castle"
+      name: "Замок"
       captureDuration: 240 # 4 min
       captureRadius: 6
       contestedResetTime: 10 # 10 seconds before timer resets when contested
@@ -39,7 +39,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_green
     - type: CaptureArea
-      name: "the Castle"
+      name: "Замок"
       captureDuration: 240 # 4 min
       captureRadius: 6
       contestedResetTime: 10 # 10 seconds before timer resets when contested
@@ -56,7 +56,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_blue
     - type: CaptureArea
-      name: "the Main House"
+      name: "Главный дом"
       captureDuration: 240 # 3 min
       captureRadius: 5
       contestedResetTime: 10 # 10 seconds before timer resets when contested
@@ -73,7 +73,7 @@
       sprite: Civ14/Markers/areas.rsi
       state: capture_red
     - type: CaptureArea
-      name: "the command post"
+      name: "Командный пункт"
       captureDuration: 180 # 3 min
       captureRadius: 4
       contestedResetTime: 10 # 10 seconds before timer resets when contested

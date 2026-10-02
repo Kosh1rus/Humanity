@@ -1,6 +1,5 @@
 @echo off
 cd..
 cd..
-python3 mapGeneration.py
-dotnet run --project Content.Server
+dotnet run --project Content.Server -c Release -- --config-file Resources/ConfigPresets/Civ/production.toml
 pause

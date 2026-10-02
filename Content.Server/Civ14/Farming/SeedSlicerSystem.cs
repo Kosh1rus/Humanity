@@ -18,6 +18,8 @@ public sealed class SeedSlicerSystem : EntitySystem
 
     private void OnAfterInteract(EntityUid uid, SeedSlicerComponent slicer, AfterInteractEvent args)
     {
+        if (args.Handled || !args.CanReach)
+            return;
         var target = args.Target;
         if (target == null)
             return;
@@ -37,13 +39,13 @@ public sealed class SeedSlicerSystem : EntitySystem
         }
 
         // Obtém o nome da entidade do MetaDataComponent
-        string entityName = "unknown entity";
+        string entityName = "неизвестный предмет";
         if (TryComp<MetaDataComponent>(target.Value, out var metaData))
         {
             entityName = metaData.EntityName;
         }
 
-        _popup.PopupCursor($"You extract a seed from the {entityName}.", user, PopupType.Medium);
+        _popup.PopupCursor($"Вы извлекли семя. Источник: {entityName}.", user, PopupType.Medium);
 
         QueueDel(target.Value);
 

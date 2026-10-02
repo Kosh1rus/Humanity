@@ -19,6 +19,7 @@ public sealed partial class FactionWindow : DefaultWindow
     public event Action? OnCreateFactionPressed;
     public event Action? OnLeaveFactionPressed;
     public event Action? OnInvitePlayerPressed;
+    public event Action<bool>? OnManageMemberPressed;
 
     // This property relies on the XAML generator succeeding
     public string FactionNameInputText => FactionNameInput?.Text ?? string.Empty;
@@ -39,6 +40,8 @@ public sealed partial class FactionWindow : DefaultWindow
         CreateFactionButton.OnPressed += (args) => OnCreateFactionPressed?.Invoke();
         LeaveFactionButton.OnPressed += (args) => OnLeaveFactionPressed?.Invoke();
         InvitePlayerButton.OnPressed += (args) => OnInvitePlayerPressed?.Invoke();
+        KickPlayerButton.OnPressed += _ => OnManageMemberPressed?.Invoke(false);
+        TransferLeaderButton.OnPressed += _ => OnManageMemberPressed?.Invoke(true);
 
         // The closing brace for the constructor is here
     } // <-- END OF CONSTRUCTOR
@@ -85,7 +88,7 @@ public sealed partial class FactionWindow : DefaultWindow
         if (isInFaction)
         {
             // This line relies on the XAML generator succeeding
-            CurrentFactionLabel.Text = $"Current Faction: {factionName ?? "Unknown"}";
+            CurrentFactionLabel.Text = $"Ваша фракция: {factionName ?? "неизвестна"}";
             Sawmill.Debug($"CurrentFactionLabel text set to: '{CurrentFactionLabel.Text}'");
         }
 
@@ -108,4 +111,5 @@ public sealed partial class FactionWindow : DefaultWindow
         // If using RichTextLabel:
         // FactionListLabel.SetMarkup(listData);
     }
+
 } // <-- END OF CLASS

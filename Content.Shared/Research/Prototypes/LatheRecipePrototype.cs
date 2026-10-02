@@ -65,6 +65,9 @@ namespace Content.Shared.Research.Prototypes
         [DataField]
         public bool ApplyMaterialDiscount = true;
 
+        [DataField]
+        public int CivAgeMin;
+
         /// <summary>
         /// List of categories used for visually sorting lathe recipes in the UI.
         /// </summary>

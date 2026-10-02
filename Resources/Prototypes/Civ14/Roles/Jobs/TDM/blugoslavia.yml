@@ -10,7 +10,7 @@
       group: CivJobsSquadLeader
       time: 7200 # 2 hours
   startingGear: BlugoslaviaCaptainGear
-  icon: "JobIconICpt"
+  icon: JobIconHumanityBlugoslaviaCaptain
   supervisors: job-supervisors-nobody
   ranks:
     RankMajor:
@@ -55,7 +55,7 @@
       group: CivJobsEnlisted
       time: 7200 # 2 hours
   startingGear: BlugoslaviaSergeantGear
-  icon: "JobIconISgt"
+  icon: JobIconHumanityBlugoslaviaSergeant
   supervisors: job-supervisors-cpt
   ranks:
     RankSergeantMajor:
@@ -103,7 +103,7 @@
   playTimeTracker: JobBlugoslaviaRifleman
   startingGear: BlugoslaviaRiflemanGear
   randomStartingGears: [BlugoslaviaRiflemanGear]
-  icon: "JobIconICpl"
+  icon: JobIconHumanityBlugoslaviaRifleman
   supervisors: job-supervisors-cpt
   ranks:
     RankLanceCorporal:
@@ -151,7 +151,7 @@
   playTimeTracker: JobBlugoslaviaMachinegunner
   startingGear: BlugoslaviaMachinegunnerGear
   randomStartingGears: [BlugoslaviaMachinegunnerGear]
-  icon: "JobIconMg"
+  icon: JobIconHumanityBlugoslaviaMachinegunner
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement
@@ -203,7 +203,7 @@
   description: job-description-civ-blugoslavia-medic
   playTimeTracker: JobBlugoslaviaMedic
   startingGear: BlugoslaviaMedicGear
-  icon: "JobIconMedic"
+  icon: JobIconHumanityBlugoslaviaMedic
   supervisors: job-supervisors-cpt
   requirements:
     - !type:TotalJobsTimeRequirement

@@ -42,7 +42,7 @@ public sealed partial class CompostInteractionSystem : EntitySystem
 
         if (_doAfter.TryStartDoAfter(doAfterArgs))
         {
-            _popup.PopupEntity("You begin applying compost to the field.", field, user);
+            _popup.PopupEntity("Вы начинаете удобрять грядку компостом.", field, user);
             args.Handled = true;
         }
     }
@@ -55,14 +55,14 @@ public sealed partial class CompostInteractionSystem : EntitySystem
             return;
 
         var usedEntity = GetEntity(args.Used);
-        if (TryComp<CompostComponent>(usedEntity, out var compostComp))
-        {
-            plantHolder.NutritionLevel += compostComp.NutritionValue;
-        }
+        if (TerminatingOrDeleted(usedEntity) || EntityManager.IsQueuedForDeletion(usedEntity) ||
+            !TryComp<CompostComponent>(usedEntity, out var compostComp))
+            return;
+        plantHolder.NutritionLevel += compostComp.NutritionValue;
 
         QueueDel(usedEntity);
 
-        _popup.PopupEntity("You finish applying compost to the field.", field, args.User);
+        _popup.PopupEntity("Вы удобрили грядку компостом.", field, args.User);
         args.Handled = true;
     }
 }
