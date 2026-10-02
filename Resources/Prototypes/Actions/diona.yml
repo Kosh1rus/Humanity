@@ -1,7 +1,7 @@
 - type: entity
   id: DionaGibAction
-  name: Gib Yourself!
-  description: Split apart into 3 nymphs.
+  name: Разделиться!
+  description: Распасться на трёх нимф.
   components:
   - type: InstantAction
     icon:
@@ -13,8 +13,8 @@
 
 - type: entity
   id: DionaReformAction
-  name: Reform
-  description: Reform back into a whole Diona.
+  name: Собраться вновь
+  description: Соединиться и снова стать цельной дионой.
   components:
   - type: InstantAction
     icon:

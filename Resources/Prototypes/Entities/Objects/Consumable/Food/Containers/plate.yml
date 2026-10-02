@@ -7,10 +7,10 @@
 # Large Plate
 
 - type: entity
-  name: large plate
+  name: "большая тарелка"
   parent: BaseItem
   id: FoodPlate
-  description: A large plate, excellent for bread.
+  description: "Большая тарелка, отлично подходит для хлеба."
   components:
     - type: Sprite
       sprite: Objects/Consumable/Food/plates.rsi
@@ -75,10 +75,10 @@
 # Small Plate
 
 - type: entity
-  name: small plate
+  name: "маленькая тарелка"
   parent: FoodPlate
   id: FoodPlateSmall
-  description: A small plate. Delicate.
+  description: "Небольшая хрупкая тарелка."
   components:
     - type: Sprite
       sprite: Objects/Consumable/Food/plates.rsi

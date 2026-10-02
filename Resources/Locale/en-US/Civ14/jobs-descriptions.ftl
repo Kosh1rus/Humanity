@@ -58,3 +58,4 @@ job-description-civ-unitednations-medic = As a field medic for the UN, keep civi
 job-description-civ-gulag-soviet-cpt = You are a captain assigned to watch over the gulag. Manage your prison and keep it from decending into chaos!
 job-description-civ-gulag-soviet-sgt = You are a sergeant assigned to watch over the gulag. Keep the guards and prisoners in check!
 job-description-civ-gulag-soviet-guard = You are a guard assigned to watch over the gulag. Follow orders from your superiors and keep the prisoners in check!
+job-description-civ-gulag-prisoner = You are a prisoner in the camp. Survive, work with the other prisoners, and look for a way out.

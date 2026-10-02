@@ -1,8 +1,8 @@
 - type: entity
-  name: mini hoe
+  name: "мотыжка"
   parent: BaseItem
   id: HydroponicsToolMiniHoe
-  description: It's used for removing weeds or scratching your back.
+  description: "Для прополки сорняков или чесания спины."
   components:
     - type: Tag
       tags:
@@ -46,10 +46,10 @@
       storedRotation: -90
 
 - type: entity
-  name: scythe
+  name: "коса"
   parent: BaseItem
   id: HydroponicsToolScythe
-  description: A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow.
+  description: "Изогнутое лезвие на длинной рукояти. Помогает пожинать плоды своих трудов."
   components:
     - type: Sharp
     - type: Sprite
@@ -72,10 +72,10 @@
       price: 40
 
 - type: entity
-  name: hatchet
+  name: "топорик"
   parent: BaseItem
   id: HydroponicsToolHatchet
-  description: A very sharp axe blade upon a short fibremetal handle. It has a long history of chopping things, but now it is used for chopping wood.
+  description: "Небольшой топор с очень острым лезвием. Рубить им можно что угодно, но обычно им рубят дрова."
   components:
     - type: Tag
       tags:

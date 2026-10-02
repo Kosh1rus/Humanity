@@ -1,24 +1,24 @@
 - type: construction
-  name: pencil
+  name: "карандаш"
   id: Pencil
   graph: Pencil
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A simple wooden pencil.
+  description: "Простой деревянный карандаш."
   icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: pencil }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: paper
+  name: "бумага"
   id: Paper
   graph: Paper
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A simple sheet of paper.
+  description: "Простой лист бумаги."
   icon: { sprite: Civ14/Objects/bureaucracy.rsi, state: paper }
   objectType: Item
   agemin: 0

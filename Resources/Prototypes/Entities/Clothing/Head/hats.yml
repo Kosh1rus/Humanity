@@ -447,8 +447,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatSurgcapBlue
-  name: surgical cap
-  description: A blue cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+  name: "хирургическая шапочка"
+  description: "Синяя шапочка для хирурга. Не даёт волосам щекотать ваши внутренние органы."
   components:
     - type: Sprite
       sprite: Clothing/Head/Hats/surgcap_blue.rsi

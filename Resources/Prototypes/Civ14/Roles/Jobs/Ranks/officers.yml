@@ -1,65 +1,65 @@
 - type: rank
   id: RankFieldMarshal
-  name: Field Marshal
-  prefix: FM.
+  name: Фельдмаршал
+  prefix: Фельдм.
   paygrade: O11
 
 - type: rank
   id: RankGeneral
-  name: General
-  prefix: Gen.
+  name: Генерал
+  prefix: Ген.
   paygrade: O10
 
 - type: rank
   id: RankLieutenantGeneral
-  name: Lieutenant General
-  prefix: LtGen.
+  name: Генерал-лейтенант
+  prefix: Ген.-лейт.
   paygrade: O9
 
 - type: rank
   id: RankMajorGeneral
-  name: Major General
-  prefix: MajGen.
+  name: Генерал-майор
+  prefix: Ген.-майор
   paygrade: O8
 
 - type: rank
   id: RankBrigadierGeneral
-  name: Brigadier General
-  prefix: BGen.
+  name: Бригадный генерал
+  prefix: Бриг. ген.
   paygrade: O7
 
 - type: rank
   id: RankColonel
-  name: Colonel
-  prefix: Col.
+  name: Полковник
+  prefix: Полк.
   paygrade: O6
 
 - type: rank
   id: RankLieutenantColonel
-  name: Lieutenant Colonel
-  prefix: LtCol.
+  name: Подполковник
+  prefix: Подполк.
   paygrade: O5
 
 - type: rank
   id: RankMajor
-  name: Major
-  prefix: Maj.
+  name: Майор
+  prefix: Майор
   paygrade: O4
 
 - type: rank
   id: RankCaptain
-  name: Captain
-  prefix: Capt.
+  name: Капитан
+  prefix: Кап.
   paygrade: O3
 
 - type: rank
   id: RankFirstLT
-  name: First Lieutenant
-  prefix: 1stLt.
+  name: Старший лейтенант
+  prefix: Ст. лейт.
   paygrade: O2
 
 - type: rank
   id: RankSecondLT
-  name: Second Lieutenant
-  prefix: 2ndLt.
+  name: Младший лейтенант
+  prefix: Мл. лейт.
   paygrade: O1

@@ -288,8 +288,8 @@
 - type: entity
   id: ShelfBar
   parent: ShelfBase
-  name: bar shelf
-  description: Made out of the finest synthetic wood for all alcohol holding needs.
+  name: "барная полка"
+  description: "Из лучшей искусственной древесины. Выдержит весь ваш запас спиртного."
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/Departments/Service/bar.rsi

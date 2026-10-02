@@ -1,5 +1,6 @@
 - type: entity
-  name: native tribesman
+  name: "воин племени"
+  description: "Воин племени с оружием ближнего боя."
   parent: BaseMobHuman
   id: MobNativeMelee
   suffix: "Melee, Hostile"
@@ -28,7 +29,8 @@
         task: SimpleHumanoidHostileCompound
 
 - type: entity
-  name: native tribesman
+  name: "стрелок племени"
+  description: "Воин племени с дальнобойным оружием."
   parent: BaseMobHuman
   id: MobNativeRanged
   suffix: "Ranged, Hostile"
@@ -71,7 +73,8 @@
     - type: CombatMode
 
 - type: entity
-  name: friendly tribesman
+  name: "дружественный стрелок племени"
+  description: "Стрелок племени, настроенный дружелюбно."
   parent: BaseMobHuman
   id: MobNativeRangedFriendly
   suffix: "Ranged, Friendly"
@@ -113,7 +116,8 @@
     - type: CombatMode
 
 - type: entity
-  name: friendly tribesman
+  name: "дружественный воин племени"
+  description: "Воин племени, настроенный дружелюбно."
   parent: MobNativeMelee
   id: MobNativeMeleeFriendly
   suffix: "Melee, Friendly"

@@ -11,3 +11,5 @@ tdm-asy-description = One faction defends for a set period, another has to captu
 tdm-valley-title = Points Gamemode - Valley
 tdm-valley-description = Factions need to gather 1000 points to win. Check gamebook/wiki for more info.
 
+gulag14 = Gulag 14
+gulag14-description = Guards and prisoners face off in a prison camp.

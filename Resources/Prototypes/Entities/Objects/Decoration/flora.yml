@@ -252,7 +252,7 @@
 - type: entity
   parent: BaseTreeSnow
   id: FloraTreeSnow
-  name: snowy tree
+  name: "заснеженное дерево"
   components:
     - type: Sprite
       layers:
@@ -271,7 +271,7 @@
 - type: entity
   parent: BaseTreeSnow
   id: FloraTreeStump
-  name: tree stump
+  name: "пень"
   components:
     - type: Sprite
       state: treestump
@@ -314,7 +314,7 @@
 - type: entity
   parent: BaseTreeConifer
   id: FloraTreeChristmas01
-  name: christmas tree
+  name: "рождественская ёлка"
   components:
     - type: Sprite
       state: treechristmas01

@@ -41,10 +41,10 @@
       speed: 0.65
 
 - type: entity
-  name: kitchen knife
+  name: "кухонный нож"
   parent: BaseKnife
   id: KitchenKnife
-  description: A general purpose Chef's Knife made by Asters Merchant Guild. Guaranteed to stay sharp for years to come..
+  description: "Универсальный поварской нож от Гильдии торговцев Астер. Останется острым на долгие годы."
   components:
     - type: Tag
       tags:
@@ -60,10 +60,10 @@
         - FoodRecipes
 
 - type: entity
-  name: butcher's cleaver
+  name: "мясницкий тесак"
   parent: BaseKnife
   id: ButchCleaver
-  description: A huge blade used for chopping and chopping up meat. This includes clowns and clown-by-products.
+  description: "Тяжёлый клинок для рубки мяса. Клоуны и изделия из них тоже считаются."
   components:
     - type: Tag
       tags:

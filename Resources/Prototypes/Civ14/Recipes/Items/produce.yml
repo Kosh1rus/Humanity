@@ -1,24 +1,24 @@
 - type: construction
-  name: small mill
+  name: "ручная мельница"
   id: KitchenMill
   graph: KitchenMill
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A small, hand-powered, wood mill.
+  description: "Небольшая деревянная мельница с ручным приводом."
   icon: { sprite: Civ14/Objects/structures.rsi, state: flour_mill }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: campfire
+  name: "очаг"
   id: KitchenCampfire
   graph: KitchenCampfire
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: "Keeps you warm and cooks your food."
+  description: "Согревает и позволяет готовить пищу."
   icon: { sprite: Civ14/Objects/kitchen.rsi, state: fireplace_on }
   objectType: Item
   agemin: 0

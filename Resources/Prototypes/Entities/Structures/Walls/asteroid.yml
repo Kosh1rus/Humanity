@@ -697,9 +697,9 @@
 - type: entity
   id: WallRock
   parent: BaseWall
-  name: rock
+  name: "каменная стена"
   suffix: planetmap
-  description: Its made of large, uneven rocks stacked together.
+  description: "Сложена из крупных неровных камней."
   components:
     - type: Transform
       noRot: true
@@ -741,9 +741,9 @@
 - type: entity
   id: WallRockSand2
   parent: WallRock
-  name: rock
+  name: "каменная стена"
   suffix: planetmap
-  description: Its made of large, uneven rocks stacked together.
+  description: "Сложена из крупных неровных камней."
   components:
     - type: Icon
       sprite: Structures/Walls/rock.rsi

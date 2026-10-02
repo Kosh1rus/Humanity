@@ -1,8 +1,8 @@
 - type: entity
   id: WoodDoorRustic
-  name: rustic wooden door
+  name: деревенская деревянная дверь
   parent: WoodDoor
-  description: A rustic wooden door.
+  description: Простая деревянная дверь в деревенском стиле.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Doors/wood_door_rustic.rsi
@@ -21,9 +21,9 @@
 
 - type: entity
   id: WoodDoorClassic
-  name: wooden door
+  name: деревянная дверь
   parent: WoodDoor
-  description: A classic wooden door.
+  description: Обычная деревянная дверь.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Doors/wood_door_classic.rsi
@@ -43,9 +43,9 @@
 # Cell Door
 - type: entity
   id: CellDoor
-  name: cell door
+  name: решётчатая дверь
   parent: BaseMaterialDoor
-  description: A door of metal bars.
+  description: Дверь из металлических прутьев.
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -101,7 +101,7 @@
 # Metal Door
 - type: entity
   id: MetalHeavyDoor
-  name: metal heavy door
+  name: тяжёлая металлическая дверь
   parent: BaseMaterialDoor
   components:
     - type: Sprite

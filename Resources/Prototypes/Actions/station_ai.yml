@@ -1,8 +1,8 @@
 ﻿# Actions
 - type: entity
   id: ActionJumpToCore
-  name: Jump to core
-  description: Sends your eye back to the core.
+  name: Вернуться к ядру
+  description: Переместить ваше око обратно к ядру.
   components:
   - type: InstantAction
     priority: -9
@@ -14,8 +14,8 @@
 
 - type: entity
   id: ActionSurvCameraLights
-  name: Toggle camera lights
-  description: Enable surveillance camera lights near wherever you're viewing.
+  name: Переключить подсветку камер
+  description: Включить или выключить подсветку камер наблюдения рядом с точкой обзора.
   components:
   - type: InstantAction
     priority: -5
@@ -40,8 +40,8 @@
 
 - type: entity
   id: ActionAIViewLaws
-  name: View Laws
-  description: View the laws that you must follow.
+  name: Посмотреть законы
+  description: Показать законы, которым вы обязаны подчиняться.
   components:
   - type: InstantAction
     checkCanInteract: false

@@ -1,8 +1,8 @@
 - type: entity
   id: Barbedwire
-  description: A barbed wire fence.
+  description: Ограждение из колючей проволоки.
   parent: BaseStructure
-  name: barbed wire
+  name: колючая проволока
   components:
     - type: InteractionOutline
     - type: Sprite

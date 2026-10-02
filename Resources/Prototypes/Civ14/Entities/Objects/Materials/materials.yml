@@ -1,7 +1,7 @@
 - type: entity
   parent: MaterialBase
   id: BasePoo
-  description: It smells really bad.
+  description: "Пахнет очень плохо."
   abstract: true
   components:
     - type: Sprite
@@ -27,19 +27,20 @@
 - type: entity
   parent: BasePoo
   id: HumanPoo
-  name: poo
+  name: "человеческие экскременты"
+  description: "Отходы человеческого организма."
 
 - type: entity
   parent: BasePoo
   id: AnimalPoo
-  name: poo
-  description: Smells bad and has an earthy scent.
+  name: "навоз"
+  description: "Пахнет землёй и совсем немного — животным."
 
 - type: entity
   parent: MaterialBase
   id: Compost
-  name: compost
-  description: Decomposed organic matter, full of nutrients for the soil.
+  name: "компост"
+  description: "Перегнившая органика, богатая питательными веществами для почвы."
   components:
     - type: Sprite
       sprite: Civ14/Objects/pooeffect.rsi

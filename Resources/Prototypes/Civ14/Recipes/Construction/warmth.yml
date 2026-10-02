@@ -1,11 +1,11 @@
 - type: construction
-  name: brazier
+  name: "каменная жаровня"
   id: Brazier
   graph: Brazier
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A stone firepit, provides warmth. Can be refueled with wood and garbage.
+  description: "Каменный очаг для обогрева. В него можно подбрасывать дрова и мусор."
   icon: { sprite: Civ14/Objects/structures.rsi, state: s_brazier0 }
   objectType: Structure
   agemin: 0
@@ -26,13 +26,13 @@
       entity: Brazier
 
 - type: construction
-  name: potbelly stove
+  name: "печь-буржуйка"
   id: StovePotbelly
   graph: StovePotbelly
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: An iron stove.
+  description: "Железная печь для обогрева."
   icon: { sprite: Civ14/Objects/kitchen.rsi, state: oven_off }
   objectType: Structure
   agemin: 2
@@ -53,13 +53,13 @@
       entity: StovePotbelly
 
 - type: construction
-  name: tiki torch
+  name: "факел тики"
   id: TikiTorch
   graph: TikiTorch
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A static torch.
+  description: "Стационарный источник света."
   icon: { sprite: Civ14/Objects/lighting.rsi, state: tikitorch-on }
   objectType: Structure
   agemin: 0
@@ -80,13 +80,13 @@
       entity: TikiTorch
 
 - type: construction
-  name: iron lantern
+  name: "железный фонарь"
   id: IronLantern
   graph: IronLantern
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A static light source.
+  description: "Железный фонарь, которому нужно топливо."
   icon: { sprite: Civ14/Objects/lighting.rsi, state: lantern-on }
   objectType: Structure
   agemin: 2

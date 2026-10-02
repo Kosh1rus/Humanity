@@ -1,0 +1,10 @@
+examine-trigger-voice = На дисплее написано: «{$keyphrase}».
+trigger-voice-uninitialized = На дисплее написано: «Не настроено...».
+verb-trigger-voice-record = Записать
+verb-trigger-voice-stop = Остановить
+verb-trigger-voice-clear = Удалить запись
+popup-trigger-voice-start-recording = Запись началась.
+popup-trigger-voice-stop-recording = Запись остановлена.
+popup-trigger-voice-record-failed-too-long = Фраза слишком длинная. Попробуйте ещё раз.
+popup-trigger-voice-record-failed-too-short = Фраза слишком короткая. Попробуйте ещё раз.
+popup-trigger-voice-recorded = Фраза записана.

@@ -56,17 +56,20 @@ namespace Content.Server.Speech.EntitySystems
             // ensuring that the replaced words cannot be replaced again.
             var maskMessage = message;
 
-            foreach (var (first, replace) in prototype.WordReplacements)
+            var replacements = prototype.WordReplacements
+                .Select(pair => (First: _loc.GetString(pair.Key), Replace: _loc.GetString(pair.Value)))
+                .OrderByDescending(pair => pair.First.Length);
+
+            foreach (var (f, r) in replacements)
             {
-                var f = _loc.GetString(first);
-                var r = _loc.GetString(replace);
+                var pattern = $@"(?<!\w){Regex.Escape(f)}(?!\w)";
                 // this is kind of slow but its not that bad
                 // essentially: go over all matches, try to match capitalization where possible, then replace
                 // rather than using regex.replace
-                for (int i = Regex.Count(maskMessage, $@"(?<!\w){f}(?!\w)", RegexOptions.IgnoreCase); i > 0; i--)
+                for (int i = Regex.Count(maskMessage, pattern, RegexOptions.IgnoreCase); i > 0; i--)
                 {
                     // fetch the match again as the character indices may have changed
-                    Match match = Regex.Match(maskMessage, $@"(?<!\w){f}(?!\w)", RegexOptions.IgnoreCase);
+                    Match match = Regex.Match(maskMessage, pattern, RegexOptions.IgnoreCase);
                     var replacement = r;
 
                     // Intelligently replace capitalization

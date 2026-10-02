@@ -108,8 +108,8 @@
             Closed: { state: disposal-closed }
 
 - type: entity
-  name: toilet
-  description: The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean.
+  name: "унитаз"
+  description: "Установка HT-451 для утилизации мелких отходов. Выглядит на удивление чистой."
   id: ToiletEmpty
   parent: BaseToilet
   suffix: Empty

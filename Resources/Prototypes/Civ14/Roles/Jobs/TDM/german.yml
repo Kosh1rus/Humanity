@@ -2,7 +2,7 @@
   id: GermanCaptain
   name: job-name-civ-german-cpt
   faction: Germany
-  originalName: Kapitän
+  originalName: Капитан
   description: job-description-civ-german-cpt
   playTimeTracker: JobGermanCaptain
   requirements:
@@ -46,7 +46,7 @@
 
 - type: job
   id: GermanSergeant
-  originalName: Sergeant
+  originalName: Сержант
   name: job-name-civ-german-sgt
   faction: Germany
   description: job-description-civ-german-sergeant
@@ -99,7 +99,7 @@
   id: GermanSubmachineGunner
   name: job-name-civ-german-submachinegunner
   faction: Germany
-  originalName: Maschinenpistole Schütze
+  originalName: Автоматчик
   description: job-description-civ-german-submachinegunner
   playTimeTracker: JobGermanSubmachineGunner
   startingGear: GermanSubmachineGunnerGear
@@ -162,7 +162,7 @@
   id: GermanRifleman
   name: job-name-civ-german-rifleman
   faction: Germany
-  originalName: Schütze
+  originalName: Стрелок
   description: job-description-civ-german-rifleman
   playTimeTracker: JobGermanRifleman
   startingGear: GermanRiflemanGear
@@ -221,7 +221,7 @@
   id: GermanMachinegunner
   name: job-name-civ-german-machinegunner
   faction: Germany
-  originalName: Maschinengewehrschütze # how to pronounce that
+  originalName: Пулемётчик
   description: job-description-civ-german-machinegunner
   playTimeTracker: JobGermanMachinegunner
   startingGear: GermanMachinegunnerGear
@@ -284,7 +284,7 @@
   id: GermanMedic
   name: job-name-civ-german-medic
   faction: Germany
-  originalName: Sanitäter
+  originalName: Санитар
   description: job-description-civ-german-medic
   playTimeTracker: JobGermanMedic
   startingGear: GermanMedicGear

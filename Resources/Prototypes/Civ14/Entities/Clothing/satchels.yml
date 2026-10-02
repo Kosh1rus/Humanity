@@ -1,8 +1,8 @@
 - type: entity
   id: ClothingSatchelMedical
   parent: ClothingBeltStorageBase
-  name: medical satchel
-  description: A medical satchel with a variety of medical supplies.
+  name: медицинская сумка
+  description: Сумка с разнообразными медицинскими принадлежностями.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Storage/medical_satchel.rsi
@@ -20,8 +20,8 @@
 - type: entity
   id: ClothingSatchelMedicalFilled
   parent: ClothingSatchelMedical
-  name: medical satchel
-  description: A medical satchel with a variety of medical supplies.
+  name: медицинская сумка
+  description: Сумка с разнообразными медицинскими принадлежностями.
   suffix: filled
   components:
     - type: StorageFill
@@ -39,8 +39,8 @@
 - type: entity
   id: ClothingSatchelMedicalMedsFilled
   parent: ClothingSatchelMedical
-  name: medical satchel
-  description: A medical satchel with a variety of medical supplies.
+  name: медицинская сумка
+  description: Сумка с разнообразными медицинскими принадлежностями.
   suffix: filled, meds
   components:
     - type: StorageFill
@@ -55,8 +55,8 @@
 - type: entity
   id: ClothingSatchelMedkit
   parent: ClothingSatchelMedical
-  name: medical kit
-  description: A medical kit with a variety of medical supplies.
+  name: медицинский набор
+  description: Набор разнообразных медицинских принадлежностей.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Storage/medkit.rsi
@@ -74,8 +74,8 @@
 - type: entity
   parent: ClothingBackpackDuffel
   id: BackpackMedicalBag
-  name: medical duffelbag
-  description: A large medical duffelbag filled with supplies.
+  name: медицинская дорожная сумка
+  description: Большая сумка с медицинскими принадлежностями.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Storage/medical_bag.rsi
@@ -89,7 +89,7 @@
 - type: entity
   id: ClothingBackpackDuffelFilled
   parent: BackpackMedicalBag
-  name: medical duffelbag
+  name: медицинская дорожная сумка
   suffix: filled
   components:
     - type: StorageFill

@@ -1,8 +1,8 @@
 - type: entity
-  name: pickaxe
+  name: "кирка"
   parent: BaseItem
   id: Pickaxe
-  description: Notched to perfection, for jamming it into rocks.
+  description: "Зубцы как раз подходят для того, чтобы вонзать её в камень."
   components:
     - type: Tag
       tags:

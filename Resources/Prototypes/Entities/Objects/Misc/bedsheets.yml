@@ -29,7 +29,7 @@
 - type: entity
   id: BedsheetBlack
   parent: BedsheetBase
-  name: black bedsheet
+  name: "чёрная простыня"
   components:
     - type: Sprite
       state: sheetblack
@@ -39,7 +39,7 @@
 - type: entity
   id: BedsheetBlue
   parent: BedsheetBase
-  name: blue bedsheet
+  name: "синяя простыня"
   components:
     - type: Sprite
       state: sheetblue
@@ -59,7 +59,7 @@
 - type: entity
   id: BedsheetBrownCiv
   parent: BedsheetBrown
-  name: brown bedsheet
+  name: "коричневая простыня"
   components:
     - type: Sprite
       sprite: Civ14/Objects/items.rsi
@@ -145,7 +145,7 @@
 - type: entity
   id: BedsheetGreen
   parent: BedsheetBase
-  name: green bedsheet
+  name: "зелёная простыня"
   components:
     - type: Sprite
       state: sheetgreen
@@ -197,8 +197,8 @@
 - type: entity
   id: BedsheetMedical
   parent: BedsheetBase
-  name: medical bedsheet
-  description: It's a sterilized blanket commonly used in the Medbay. Sterilization is voided if a virologist is present onboard the station.
+  name: "медицинская простыня"
+  description: "Стерильная простыня, обычно используемая в медотсеке. При наличии вирусолога на станции стерильность не гарантируется."
   components:
     - type: Sprite
       state: sheetmedical
@@ -230,7 +230,7 @@
 - type: entity
   id: BedsheetOrange
   parent: BedsheetBase
-  name: orange bedsheet
+  name: "оранжевая простыня"
   components:
     - type: Sprite
       state: sheetorange
@@ -240,7 +240,7 @@
 - type: entity
   id: BedsheetPurple
   parent: BedsheetBase
-  name: purple bedsheet
+  name: "фиолетовая простыня"
   components:
     - type: Sprite
       state: sheetpurple
@@ -292,7 +292,7 @@
 - type: entity
   id: BedsheetRed
   parent: BedsheetBase
-  name: red bedsheet
+  name: "красная простыня"
   components:
     - type: Sprite
       state: sheetred

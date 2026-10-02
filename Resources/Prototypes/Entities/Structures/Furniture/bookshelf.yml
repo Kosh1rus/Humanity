@@ -1,8 +1,8 @@
 - type: entity
   id: Bookshelf
   parent: BaseStructure
-  name: "bookshelf"
-  description: Mostly filled with books.
+  name: "книжный шкаф"
+  description: "Полки почти целиком заняты книгами."
   components:
   - type: Sprite
     sprite: Structures/Furniture/bookshelf.rsi

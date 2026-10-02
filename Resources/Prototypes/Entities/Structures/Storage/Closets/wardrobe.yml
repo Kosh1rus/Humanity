@@ -11,8 +11,8 @@
 - type: entity
   id: WardrobeBlue
   parent: WardrobeBase
-  name: blue wardrobe
-  description: "A wardrobe packed with stylish blue clothing."
+  name: "синий гардероб"
+  description: "Шкаф, набитый стильной синей одеждой."
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -196,7 +196,7 @@
 - type: entity
   id: WardrobeMedicalDoctor
   parent: WardrobeWhite
-  name: medical doctor's wardrobe
+  name: "шкаф врача"
 
 - type: entity
   id: WardrobeRobotics

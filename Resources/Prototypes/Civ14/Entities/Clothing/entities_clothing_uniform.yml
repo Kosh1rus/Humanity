@@ -1,8 +1,8 @@
 - type: entity
-  name: preacher's clothing
+  name: "одежда проповедника"
   parent: ClothingUniformBase
   id: civ13_uniform_preachers_clothing
-  description: Typical priest clothing.
+  description: "Обычное облачение священнослужителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/chaplain.rsi
@@ -15,10 +15,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white t-shirt and purple shorts
+  name: "белая футболка и фиолетовые шорты"
   parent: ClothingUniformBase
   id: civ13_uniform_white_t_shirt_and_purple_shorts
-  description: An oversized white t-shirt and purple cargo shorts.
+  description: "Свободная белая футболка и фиолетовые шорты с карманами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ballas1.rsi
@@ -31,10 +31,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: baggy black clothing
+  name: "свободная чёрная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_baggy_black_clothing
-  description: An oversized black outfit.
+  description: "Мешковатый чёрный костюм."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ballas2.rsi
@@ -47,10 +47,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: purple shirt and khaki pants
+  name: "фиолетовая рубашка и брюки хаки"
   parent: ClothingUniformBase
   id: civ13_uniform_purple_shirt_and_khaki_pants
-  description: An oversized purple shirt and khaki cargo pants.
+  description: "Свободная фиолетовая рубашка и просторные брюки цвета хаки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ballas3.rsi
@@ -63,10 +63,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green sweatshirt and jeans
+  name: "зелёный свитшот и джинсы"
   parent: ClothingUniformBase
   id: civ13_uniform_green_sweatshirt_and_jeans
-  description: An oversized green sweatshirt and jeans.
+  description: "Свободный зелёный свитшот с джинсами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/grove1.rsi
@@ -79,10 +79,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green checkered outfit
+  name: "зелёная рубашка в клетку"
   parent: ClothingUniformBase
   id: civ13_uniform_green_checkered_outfit
-  description: A green checkered shirt and beige pants.
+  description: "Зелёная клетчатая рубашка и бежевые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/grove2.rsi
@@ -95,10 +95,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green jersey and jeans
+  name: "зелёная майка и джинсы"
   parent: ClothingUniformBase
   id: civ13_uniform_green_jersey_and_jeans
-  description: A green basketball jersey and black jeans.
+  description: "Зелёная баскетбольная майка и чёрные джинсы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/grove3.rsi
@@ -111,10 +111,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chad clothing
+  name: "наряд красавчика"
   parent: ClothingUniformBase
   id: civ13_uniform_chad_clothing
-  description: Wow!
+  description: "Вот это да!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/chad.rsi
@@ -127,10 +127,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: contestant clothing
+  name: "форма участника"
   parent: ClothingUniformBase
   id: civ13_uniform_contestant_clothing
-  description: regular jumpsuit for contestants
+  description: "Обычный комбинезон участника соревнования."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/squid_player.rsi
@@ -143,10 +143,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: replicant black bodyglove
+  name: "чёрный облегающий комбинезон репликанта"
   parent: ClothingUniformBase
   id: civ13_uniform_replicant_black_bodyglove
-  description: A tight bodyglove worn by troopers.
+  description: "Плотно облегающий комбинезон солдата-репликанта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/replicant_bodyglove.rsi
@@ -159,10 +159,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red bodyglove
+  name: "красный облегающий комбинезон"
   parent: ClothingUniformBase
   id: civ13_uniform_red_bodyglove
-  description: A tight red bodyglove worn by Red guards.
+  description: "Плотно облегающий комбинезон красного гвардейца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/redbodyglove.rsi
@@ -175,10 +175,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue bodyglove
+  name: "синий облегающий комбинезон"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_bodyglove
-  description: A tight blue bodyglove worn by senate guards.
+  description: "Плотно облегающий комбинезон сенатского гвардейца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bluebodyglove.rsi
@@ -191,12 +191,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial stormtrooper officer uniform
+  name: "чёрная форма офицера имперских штурмовиков"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_stormtrooper_officer_uniform
-  description: >-
-    A double-breasted black tunic rank and trousers with a metal plac denoting
-    rank for NCO's in the Stormtrooper Corps.
+  description: "Двубортный чёрный китель, брюки и металлический знак звания младшего командира штурмового корпуса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
@@ -209,12 +207,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial stormtrooper officer uniform
+  name: "оливковая форма офицера имперского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_stormtrooper_officer_uniform_1
-  description: >-
-    A double-breasted olive-green tunic rank and trousers with a metal plac
-    denoting rank for CO's in the Imperial Navy.
+  description: "Двубортный оливковый китель, брюки и металлический знак офицерского звания."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/impofficer_captain.rsi
@@ -227,10 +223,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial technician grey uniform
+  name: "серая форма имперского техника"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_technician_grey_uniform
-  description: A grey jumpsuit for technician's in the Engineering Corps.
+  description: "Серый комбинезон техника инженерного корпуса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_grey.rsi
@@ -243,10 +239,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial technician blue uniform
+  name: "синяя форма имперского техника"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_technician_blue_uniform
-  description: A blue jumpsuit for technician's in the Engineering Corps.
+  description: "Синий комбинезон техника инженерного корпуса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_blue.rsi
@@ -259,10 +255,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial technician black uniform
+  name: "чёрная форма имперского техника"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_technician_black_uniform
-  description: A black jumpsuit for technician's in the Engineering Corps.
+  description: "Чёрный комбинезон техника инженерного корпуса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/imp_technician_black.rsi
@@ -275,12 +271,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic ensign uniform
+  name: "форма республиканского флотского мичмана"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_ensign_uniform
-  description: >-
-    A double-breasted blue-grey tunic and trousers for NCO's in the Republic
-    Navy.
+  description: "Серо-голубой двубортный китель и брюки младшего командира республиканского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repofficer_ensign.rsi
@@ -293,12 +287,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic medical officer
+  name: "форма республиканского военврача"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_medical_officer
-  description: >-
-    A double-breasted white-grey tunic and trousers for NCO's in the Republic
-    Medical Corps.
+  description: "Бело-серый двубортный китель и брюки медицинского корпуса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repofficer_medical.rsi
@@ -311,12 +303,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic naval officer uniform
+  name: "форма офицера республиканского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_naval_officer_uniform
-  description: >-
-    A double-breasted olive-green tunic rank and trousers with a metal plac
-    denoting rank for CO's in the Republic Navy.
+  description: "Оливковый двубортный китель, брюки и металлический знак офицерского звания."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repofficer_navcaptain.rsi
@@ -329,10 +319,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic naval captain uniform
+  name: "форма капитана республиканского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_naval_captain_uniform
-  description: A well adjusted captain's jacket.
+  description: "Аккуратно подогнанный капитанский китель."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repcaptain_uniform.rsi
@@ -345,10 +335,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic naval ensign uniform
+  name: "форма мичмана республиканского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_naval_ensign_uniform
-  description: A well adjusted ensign's jacket.
+  description: "Аккуратно подогнанный китель мичмана."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repensign_uniform.rsi
@@ -361,10 +351,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: republic medical officer uniform
+  name: "форма республиканского военврача"
   parent: ClothingUniformBase
   id: civ13_uniform_republic_medical_officer_uniform
-  description: A well adjusted medical jacket.
+  description: "Аккуратно подогнанный китель военного медика."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/repmedical_uniform.rsi
@@ -378,10 +368,10 @@
       time: 5
 
 - type: entity
-  name: imperial naval lieutenant uniform
+  name: "форма лейтенанта имперского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_naval_lieutenant_uniform
-  description: A well adjusted lieutenant's jacket.
+  description: "Аккуратно подогнанный лейтенантский китель."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/imp_stormofficer.rsi
@@ -394,10 +384,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wise tutor's outfit
+  name: "одежда мудрого наставника"
   parent: ClothingUniformBase
   id: civ13_uniform_wise_tutors_outfit
-  description: A loose outfit worn by the wise & experienced.
+  description: "Свободное одеяние опытного наставника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor.rsi
@@ -410,10 +400,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wise tutor's alternative outfit
+  name: "другая одежда мудрого наставника"
   parent: ClothingUniformBase
   id: civ13_uniform_wise_tutors_alternative_outfit
-  description: A loose outfit worn by the wise & experienced.
+  description: "Свободное одеяние опытного наставника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor2.rsi
@@ -426,10 +416,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wise disciple outfit
+  name: "одежда ученика"
   parent: ClothingUniformBase
   id: civ13_uniform_wise_disciple_outfit
-  description: A loose outfit worn by the unwise & unexperienced.
+  description: "Свободное одеяние того, кому ещё предстоит набраться мудрости."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/wise_tutor3.rsi
@@ -442,10 +432,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: arrogant student's outfit
+  name: "одежда заносчивого ученика"
   parent: ClothingUniformBase
   id: civ13_uniform_arrogant_students_outfit
-  description: A loose outfit worn by arrogant students.
+  description: "Свободное одеяние ученика с нелёгким характером."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arrogant_student.rsi
@@ -458,10 +448,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: rebellion trooper uniform
+  name: "форма бойца повстанцев"
   parent: ClothingUniformBase
   id: civ13_uniform_rebellion_trooper_uniform
-  description: A plain looking uniform worn by soldiers of the rebel alliance.
+  description: "Скромная форма солдата Повстанческого альянса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rebel1.rsi
@@ -474,10 +464,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: DRA officer uniform
+  name: "форма офицера ДРА"
   parent: ClothingUniformBase
   id: civ13_uniform_DRA_officer_uniform
-  description: A military uniform worn by DRA officers.
+  description: "Военная форма офицера армии Демократической Республики Афганистан."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_officer.rsi
@@ -490,10 +480,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: long tunic
+  name: "длинная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_long_tunic
-  description: A simple cloth tunic, with a brass and leather belt.
+  description: "Простая тканевая туника с поясом из кожи и латуни."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customroman.rsi
@@ -507,10 +497,10 @@
       time: 8
 
 - type: entity
-  name: blue tunic
+  name: "синяя туника"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_tunic
-  description: A blue tunic.
+  description: "Простая синяя туника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic.rsi
@@ -523,10 +513,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: red tunic
+  name: "красная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_red_tunic
-  description: A red tunic.
+  description: "Простая красная туника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/red_tunic.rsi
@@ -540,10 +530,10 @@
       time: 8
 
 - type: entity
-  name: toga
+  name: "тога"
   parent: ClothingUniformBase
   id: civ13_uniform_toga
-  description: A simple cloth toga.
+  description: "Простая тканевая тога."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
@@ -556,10 +546,10 @@
       material: Cloth
       time: 6
 - type: entity
-  name: half-shoulder white toga
+  name: "белая тога на одно плечо"
   parent: ClothingUniformBase
   id: civ13_uniform_half_shoulder_white_toga
-  description: A simple cloth toga, covering just one of the shoulders.
+  description: "Простая белая тога, закрывающая только одно плечо."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/toga2.rsi
@@ -572,12 +562,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: roman centurion uniform
+  name: "одеяние римского центуриона"
   parent: ClothingUniformBase
   id: civ13_uniform_roman_centurion_uniform
-  description: >-
-    A red tunic covered with iron armor, with added golden plates. Used by the
-    roman army's centurions.
+  description: "Красная туника, железный доспех и золотые накладки римского центуриона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/roman_centurion.rsi
@@ -642,10 +630,10 @@
       sprite: Civ14/Clothing/exported/uniforms/greek_commander.rsi
 
 - type: entity
-  name: white tunic
+  name: "белая туника"
   parent: ClothingUniformBase
   id: civ13_uniform_white_tunic
-  description: A light white tunic.
+  description: "Лёгкая белая туника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/toxotai.rsi
@@ -658,10 +646,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green celtic trousers
+  name: "зелёные кельтские штаны"
   parent: ClothingUniformBase
   id: civ13_uniform_green_celtic_trousers
-  description: Celtic-style trousers, in green.
+  description: "Зелёные штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/celtic_green.rsi
@@ -674,10 +662,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue celtic trousers
+  name: "синие кельтские штаны"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_celtic_trousers
-  description: Celtic-style trousers, in blue.
+  description: "Синие штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/celtic_blue.rsi
@@ -690,10 +678,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red celtic trousers
+  name: "красные кельтские штаны"
   parent: ClothingUniformBase
   id: civ13_uniform_red_celtic_trousers
-  description: Celtic-style trousers, in red.
+  description: "Красные штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/celtic_red.rsi
@@ -706,10 +694,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: short celtic braccae
+  name: "короткие кельтские браки"
   parent: ClothingUniformBase
   id: civ13_uniform_short_celtic_braccae
-  description: Short, celtic-style wool trousers.
+  description: "Короткие шерстяные штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/celtic_short_braccae.rsi
@@ -727,10 +715,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: long celtic braccae
+  name: "длинные кельтские браки"
   parent: ClothingUniformBase
   id: civ13_uniform_long_celtic_braccae
-  description: Long, celtic-style wool trousers.
+  description: "Длинные шерстяные штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/celtic_long_braccae.rsi
@@ -748,10 +736,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: mayan loincloth
+  name: "набедренная повязка майя"
   parent: ClothingUniformBase
   id: civ13_uniform_mayan_loincloth
-  description: Mayan-style loincloth.
+  description: "Набедренная повязка в стиле народа майя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/mayan_loincloth.rsi
@@ -764,10 +752,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: aztec loincloth
+  name: "набедренная повязка ацтека"
   parent: ClothingUniformBase
   id: civ13_uniform_aztec_loincloth
-  description: A loincloth fit for a ferocious aztec warrior.
+  description: "Повязка, достойная грозного ацтекского воина."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/aztec_loincloth.rsi
@@ -785,10 +773,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: pharaohic shendyt
+  name: "фараонский схенти"
   parent: ClothingUniformBase
   id: civ13_uniform_pharaohic_shendyt
-  description: A fancy, decorated shendyt.
+  description: "Роскошно украшенный египетский набедренник."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pharaoh.rsi
@@ -801,10 +789,10 @@
       material: Cloth
       time: 14
 - type: entity
-  name: nemes shendyt
+  name: "схенти с немесом"
   parent: ClothingUniformBase
   id: civ13_uniform_nemes_shendyt
-  description: A fancy, decorated shendyt.
+  description: "Украшенный набедренник египетского правителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/greatshendyt.rsi
@@ -817,10 +805,10 @@
       material: Cloth
       time: 18
 - type: entity
-  name: ainu robes
+  name: "одеяние айнов"
   parent: ClothingUniformBase
   id: civ13_uniform_ainu_robes
-  description: A set of robes worn by the ainu.
+  description: "Традиционная одежда айнов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe.rsi
@@ -833,10 +821,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: ainu robes
+  name: "одеяние айнов"
   parent: ClothingUniformBase
   id: civ13_uniform_ainu_robes_1
-  description: A set of robes worn by the ainu.
+  description: "Традиционная одежда айнов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ainu_robe2.rsi
@@ -849,12 +837,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: white kimono
+  name: "белое кимоно"
   parent: ClothingUniformBase
   id: civ13_uniform_white_kimono
-  description: >-
-    A plain kimono in popular asian style, with simplistic underwear concealed
-    beneath.
+  description: "Простое белое кимоно с нижним бельём."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/kimono.rsi
@@ -867,10 +853,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: white towel
+  name: "белое полотенце"
   parent: ClothingUniformBase
   id: civ13_uniform_white_towel
-  description: A simple towel to wrap around yourself.
+  description: "Обычное полотенце, которое можно обернуть вокруг тела."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/towel.rsi
@@ -884,12 +870,10 @@
       time: 5
 
 - type: entity
-  name: police outfit
+  name: "форма полицейского"
   parent: ClothingUniformBase
   id: civ13_uniform_police_outfit
-  description: >-
-    An outfit composed of a blue emergency services shirt and denim trousers. It
-    has a police badge attached
+  description: "Синяя служебная рубашка, джинсы и полицейский жетон."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop.rsi
@@ -902,12 +886,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: police supervisor outfit
+  name: "форма старшего полицейского"
   parent: ClothingUniformBase
   id: civ13_uniform_police_supervisor_outfit
-  description: >-
-    An outfit composed of a blue emergency services shirt and denim trousers. It
-    has a police supervisor badge attached
+  description: "Синяя служебная рубашка, джинсы и жетон начальника смены."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/traffic_cop_sup.rsi
@@ -920,10 +902,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sheriff's department sheriff outfit
+  name: "форма шерифа"
   parent: ClothingUniformBase
   id: civ13_uniform_sheriffs_department_sheriff_outfit
-  description: A law enforcement outfit worn by the town's sherrif.
+  description: "Служебная форма городского шерифа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sd_sheriff.rsi
@@ -936,10 +918,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sheriff's department deputy outfit
+  name: "форма помощника шерифа"
   parent: ClothingUniformBase
   id: civ13_uniform_sheriffs_department_deputy_outfit
-  description: A law enforcement outfit worn by the town's deputies.
+  description: "Служебная форма помощника городского шерифа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sd_deputy.rsi
@@ -952,10 +934,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: short colonial outfit
+  name: "короткая колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_short_colonial_outfit
-  description: ""
+  description: "Короткий костюм колониального фасона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_col_short_full.rsi
@@ -968,10 +950,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: US Army Uniform
+  name: "тропическая форма армии США"
   parent: ClothingUniformBase
   id: civ13_uniform_US_Army_Uniform
-  description: A standard tropical US army uniform.
+  description: "Стандартная форма американского солдата для тропиков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_fp.rsi
@@ -984,12 +966,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: woodland camo uniform
+  name: "форма в лесном камуфляже"
   parent: ClothingUniformBase
   id: civ13_uniform_woodland_camo_uniform
-  description: >-
-    The standard US Army camo uniform implemented in the early 1980s. Still used
-    during the present day by many countries.
+  description: "Форма с лесным камуфляжем, принятым армией США в начале 1980-х годов. Используется во многих странах и сегодня."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo.rsi
@@ -1002,10 +982,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OG-107 trousers
+  name: "армейские брюки OG-107"
   parent: ClothingUniformBase
   id: civ13_uniform_OG_107_trousers
-  description: The standard US Army OG-107 uniform trousers.
+  description: "Стандартные брюки формы OG-107 армии США."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_greentrousers_og107.rsi
@@ -1018,10 +998,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OG-107 uniform with rolled sleeves
+  name: "форма OG-107 с закатанными рукавами"
   parent: ClothingUniformBase
   id: civ13_uniform_OG_107_uniform_with_rolled_sleeves
-  description: A rolled-sleeves version of the US Army OG-107 uniform.
+  description: "Армейская форма США OG-107 с закатанными рукавами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_uni_og107_rolled.rsi
@@ -1034,12 +1014,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OG-107 trousers and khaki undershirt
+  name: "брюки OG-107 и рубаха хаки"
   parent: ClothingUniformBase
   id: civ13_uniform_OG_107_trousers_and_khaki_undershirt
-  description: >-
-    A light version of the US Army OG-107 trousers and the service khaki
-    undershirt.
+  description: "Облегчённая форма: армейские брюки OG-107 и рубаха цвета хаки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni.rsi
@@ -1052,12 +1030,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OG-107 trousers and white undershirt
+  name: "брюки OG-107 и белая рубаха"
   parent: ClothingUniformBase
   id: civ13_uniform_OG_107_trousers_and_white_undershirt
-  description: >-
-    A light version of the US Army OG-107 trousers and the service white
-    untucked undershirt.
+  description: "Облегчённая форма: армейские брюки OG-107 и белая рубаха навыпуск."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_og107_lightuni2.rsi
@@ -1070,10 +1046,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tigerstripes camo uniform
+  name: "форма в камуфляже «тигровые полосы»"
   parent: ClothingUniformBase
   id: civ13_uniform_tigerstripes_camo_uniform
-  description: A camo uniform in the tigerstripes pattern.
+  description: "Форма с камуфляжным рисунком «тигровые полосы»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_tigerstripes.rsi
@@ -1086,10 +1062,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: desert camouflage uniform
+  name: "форма армии США в пустынном камуфляже"
   parent: ClothingUniformBase
   id: civ13_uniform_desert_camouflage_uniform
-  description: The standard US Army desert camo uniform the late 20th century.
+  description: "Стандартная пустынная форма американской армии конца XX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_dcu.rsi
@@ -1102,10 +1078,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: woodland camouflage uniform
+  name: "форма армии США в лесном камуфляже"
   parent: ClothingUniformBase
   id: civ13_uniform_woodland_camouflage_uniform
-  description: The standard US Army camo uniform the late 20th century.
+  description: "Стандартная лесная форма американской армии конца XX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland.rsi
@@ -1118,12 +1094,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: woodland camouflage uniform
+  name: "лесная форма со знаками «Хезболлы»"
   parent: ClothingUniformBase
   id: civ13_uniform_woodland_camouflage_uniform_1
-  description: >-
-    The standard US Army camo uniform the late 20th century, with Hezbollah
-    insiginia.
+  description: "Американская лесная форма конца XX века со знаками «Хезболлы»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_woodland_hez.rsi
@@ -1136,10 +1110,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UCP camo uniform
+  name: "форма армии США в камуфляже UCP"
   parent: ClothingUniformBase
   id: civ13_uniform_UCP_camo_uniform
-  description: The standard US Army camo uniform the early 21st century.
+  description: "Стандартная американская форма начала XXI века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ucp.rsi
@@ -1152,10 +1126,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OCP camo uniform
+  name: "форма армии США в камуфляже OCP"
   parent: ClothingUniformBase
   id: civ13_uniform_OCP_camo_uniform
-  description: The standard US Army camo uniform from 2018 onwards.
+  description: "Американская военная форма образца 2018 года."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_camo_ocp.rsi
@@ -1168,12 +1142,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: MultiCam camo uniform
+  name: "форма в камуфляже MultiCam"
   parent: ClothingUniformBase
   id: civ13_uniform_MultiCam_camo_uniform
-  description: >-
-    A uniform in a camouflage pattern designed for use in a wide range of
-    environments and conditions. Usually given to special operations units.
+  description: "Камуфляж для разных условий и местности. Часто выдаётся подразделениям специального назначения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/multicam.rsi
@@ -1186,10 +1158,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: U.S. Army training uniform
+  name: "тренировочная форма армии США"
   parent: ClothingUniformBase
   id: civ13_uniform_U.S._Army_training_uniform
-  description: An informal outfit made of OCP pattern trousers and a olive drab shirt.
+  description: "Брюки в камуфляже OCP и простая оливковая рубашка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_lightuni_modern.rsi
@@ -1202,12 +1174,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: american uniform
+  name: "зимняя форма армии США"
   parent: ClothingUniformBase
   id: civ13_uniform_american_uniform
-  description: >-
-    The standard us army uniform of the korean war, this one outfitted for
-    winter.
+  description: "Зимняя форма американской армии времён Корейской войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/usuni_korea.rsi
@@ -1220,10 +1190,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chinese uniform
+  name: "зимняя китайская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_chinese_uniform
-  description: The standard winter chinese uniform.
+  description: "Стандартная зимняя форма китайской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/korea_china.rsi
@@ -1236,10 +1206,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: local NLF uniform
+  name: "чёрная форма НФО"
   parent: ClothingUniformBase
   id: civ13_uniform_local_NLF_uniform
-  description: A black uniform of the NLF.
+  description: "Чёрная форма бойца Национального фронта освобождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v1.rsi
@@ -1252,10 +1222,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: local NLF uniform
+  name: "чёрно-синяя форма НФО"
   parent: ClothingUniformBase
   id: civ13_uniform_local_NLF_uniform_1
-  description: A black and blue uniform of the NLF.
+  description: "Чёрно-синяя форма бойца Национального фронта освобождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v2.rsi
@@ -1268,10 +1238,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: local NLF uniform
+  name: "чёрно-песочная форма НФО"
   parent: ClothingUniformBase
   id: civ13_uniform_local_NLF_uniform_1_2
-  description: A black and khaki uniform of the NLF.
+  description: "Чёрная форма с брюками цвета хаки бойца Национального фронта освобождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v3.rsi
@@ -1284,10 +1254,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: local NLF uniform
+  name: "сине-песочная форма НФО"
   parent: ClothingUniformBase
   id: civ13_uniform_local_NLF_uniform_1_2_3
-  description: A blue and khaki uniform of the NLF.
+  description: "Синяя форма с брюками цвета хаки бойца Национального фронта освобождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v4.rsi
@@ -1300,10 +1270,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: local NLF uniform
+  name: "серая форма НФО"
   parent: ClothingUniformBase
   id: civ13_uniform_local_NLF_uniform_1_2_3_4
-  description: A grey uniform of the NLF.
+  description: "Серая форма бойца Национального фронта освобождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/localnlfuniform_v5.rsi
@@ -1316,10 +1286,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NVA uniform
+  name: "форма армии Северного Вьетнама"
   parent: ClothingUniformBase
   id: civ13_uniform_NVA_uniform
-  description: A khaki uniform of the North Vietnamese Army.
+  description: "Форма цвета хаки военнослужащего армии Северного Вьетнама."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/NVAuni.rsi
@@ -1332,12 +1302,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NVA sergeant uniform
+  name: "форма сержанта армии Северного Вьетнама"
   parent: ClothingUniformBase
   id: civ13_uniform_NVA_sergeant_uniform
-  description: >-
-    A khaki uniform of the North Vietnamese Army. This one is bearing the ranks
-    of a sergeant.
+  description: "Форма цвета хаки со знаками сержантского звания."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/NVAuni_sl.rsi
@@ -1350,12 +1318,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: specialist pants with woodland pattern paint
+  name: "армейские брюки с лесной маскировкой"
   parent: ClothingUniformBase
   id: civ13_uniform_specialist_pants_with_woodland_pattern_paint
-  description: >-
-    A army issued pair of pants and woodland pattern body-paint; to blend
-    seamlessly into the enviroment
+  description: "Армейские брюки и боевая раскраска с лесным рисунком, помогающие слиться с местностью."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/toughguy.rsi
@@ -1368,10 +1334,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chinese Red Guard Uniform
+  name: "форма китайской Красной гвардии"
   parent: ClothingUniformBase
   id: civ13_uniform_Chinese_Red_Guard_Uniform
-  description: An uniform worn by the Red guard.
+  description: "Форма бойца китайской Красной гвардии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/redguard.rsi
@@ -1384,12 +1350,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: afghanka uniform
+  name: "форма «афганка»"
   parent: ClothingUniformBase
   id: civ13_uniform_afghanka_uniform
-  description: >-
-    A standard soviet uniform developped and issued in the early 80's, still in
-    use after the collapse of the Soviet Union.
+  description: "Советская полевая форма начала 1980-х годов. Использовалась и после распада СССР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/afghanka_open.rsi
@@ -1402,10 +1366,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cafr afghanka uniform
+  name: "потёртая «афганка» КАФР"
   parent: ClothingUniformBase
   id: civ13_uniform_cafr_afghanka_uniform
-  description: A heavily weathered Afghanka uniform with a CAFR patch on the front.
+  description: "Поношенная форма «афганка» с нашивкой КАФР на груди."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cafr_afghanka_open.rsi
@@ -1418,10 +1382,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: KLMK camo uniform
+  name: "маскхалат КЛМК"
   parent: ClothingUniformBase
   id: civ13_uniform_KLMK_camo_uniform
-  description: A suit in the KLMK camo pattern, issued by the Soviet Union in the 1970s.
+  description: "Советский маскировочный костюм в камуфляже КЛМК образца 1970-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sov_klmk.rsi
@@ -1434,10 +1398,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow tunic
+  name: "жёлтая туника"
   parent: ClothingUniformBase
   id: civ13_uniform_yellow_tunic
-  description: A light yellow tunic.
+  description: "Лёгкая жёлтая туника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/yellow_tunic.rsi
@@ -1450,12 +1414,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: KZS camo uniform
+  name: "маскхалат КЗС"
   parent: ClothingUniformBase
   id: civ13_uniform_KZS_camo_uniform
-  description: >-
-    A suit in the KZS camo pattern, issued by the Soviet Union in the late
-    1970s.
+  description: "Советский защитный костюм в камуфляже КЗС образца конца 1970-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sov_kzs.rsi
@@ -1468,10 +1430,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet officer uniform
+  name: "форма советского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_Soviet_officer_uniform
-  description: A Soviet officer uniform, used by officers in the Red Army.
+  description: "Военная форма офицера Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sovuni_officer.rsi
@@ -1484,10 +1446,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: DRA uniform
+  name: "форма солдата ДРА"
   parent: ClothingUniformBase
   id: civ13_uniform_DRA_uniform
-  description: A military uniform worn by DRA soldiers.
+  description: "Военная форма солдата армии Демократической Республики Афганистан."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dra_uni.rsi
@@ -1500,10 +1462,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: DRA NCO uniform
+  name: "форма сержанта ДРА"
   parent: ClothingUniformBase
   id: civ13_uniform_DRA_NCO_uniform
-  description: A military uniform worn by DRA NCOs.
+  description: "Военная форма младшего командира армии Демократической Республики Афганистан."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dra_uni_nco.rsi
@@ -1516,10 +1478,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red bowling outfit
+  name: "красный костюм для боулинга"
   parent: ClothingUniformBase
   id: civ13_uniform_red_bowling_outfit
-  description: A stylish red bowling shirt with black pants.
+  description: "Стильная красная рубашка для боулинга и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bowling_red.rsi
@@ -1532,10 +1494,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow bowling outfit
+  name: "жёлтый костюм для боулинга"
   parent: ClothingUniformBase
   id: civ13_uniform_yellow_bowling_outfit
-  description: A stylish yellow bowling shirt with black pants.
+  description: "Стильная жёлтая рубашка для боулинга и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bowling_yellow.rsi
@@ -1548,10 +1510,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green bowling outfit
+  name: "зелёный костюм для боулинга"
   parent: ClothingUniformBase
   id: civ13_uniform_green_bowling_outfit
-  description: A stylish green bowling shirt with black pants.
+  description: "Стильная зелёная рубашка для боулинга и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bowling_green.rsi
@@ -1564,10 +1526,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue bowling outfit
+  name: "синий костюм для боулинга"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_bowling_outfit
-  description: A stylish blue bowling shirt with black pants.
+  description: "Стильная синяя рубашка для боулинга и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bowling_blue.rsi
@@ -1580,10 +1542,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: hippie outfit
+  name: "одежда хиппи"
   parent: ClothingUniformBase
   id: civ13_uniform_hippie_outfit
-  description: A tie-dye t-shirt with bootleg grey jeans. Right on, man!
+  description: "Футболка с узором тай-дай и серые джинсы клёш. Мир вам, друзья!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/hippy.rsi
@@ -1596,12 +1558,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow sundress
+  name: "жёлтый летний сарафан"
   parent: ClothingUniformBase
   id: civ13_uniform_yellow_sundress
-  description: >-
-    A mid century style dress often worn outside in fair weather associated with
-    a new generation of independent women
+  description: "Лёгкое платье середины XX века для тёплого дня."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sundress_yellow.rsi
@@ -1614,10 +1574,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: Chad Town jersey
+  name: "майка клуба «Чад Таун»"
   parent: ClothingUniformBase
   id: civ13_uniform_Chad_Town_jersey
-  description: A football jersey of the Chad Town Football Club, C.T.F.C.
+  description: "Футбольная майка клуба «Чад Таун»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi
@@ -1630,10 +1590,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: purple toga
+  name: "пурпурная тога"
   parent: ClothingUniformBase
   id: civ13_uniform_purple_toga
-  description: A fancy cloth toga.
+  description: "Нарядная тога из пурпурной ткани."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customtoga.rsi
@@ -1646,10 +1606,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Unga Bunga jersey
+  name: "майка клуба «Унга-Бунга»"
   parent: ClothingUniformBase
   id: civ13_uniform_Unga_Bunga_jersey
-  description: A football jersey of the Unga Bunga United, U.B.U.
+  description: "Футбольная майка клуба «Унга-Бунга Юнайтед»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -1662,12 +1622,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shirtless gator pants
+  name: "облегающие брюки из кожи аллигатора"
   parent: ClothingUniformBase
   id: civ13_uniform_shirtless_gator_pants
-  description: >-
-    A tight fitting pair of alligator scale pants. When you're this on-point;
-    wearing a shirt would just cramp your style.
+  description: "В таких брюках рубашка уже ни к чему: весь стиль и так на виду."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/gator_pants.rsi
@@ -1685,10 +1643,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: NKVD uniform
+  name: "форма НКВД"
   parent: ClothingUniformBase
   id: civ13_uniform_NKVD_uniform
-  description: A soviet NKVD uniform, worn by members of the NKVD.
+  description: "Служебная форма сотрудника Народного комиссариата внутренних дел."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
@@ -1701,10 +1659,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: KGB uniform
+  name: "форма КГБ"
   parent: ClothingUniformBase
   id: civ13_uniform_KGB_uniform
-  description: A Russian KGB uniform, used by KGB.
+  description: "Служебная форма сотрудника Комитета государственной безопасности."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nkvd_uni.rsi
@@ -1717,10 +1675,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: GULAG prisoner clothing
+  name: "одежда заключённого ГУЛАГа"
   parent: ClothingUniformBase
   id: civ13_uniform_GULAG_prisoner_clothing
-  description: A worn out GULAG prisoner outfit.
+  description: "Изношенная одежда заключённого лагеря."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/gulagprisoner.rsi
@@ -1733,10 +1691,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese Officer Uniform
+  name: "форма японского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_Officer_Uniform
-  description: An Imperial Japanese Army officer uniform.
+  description: "Форма офицера Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/japoffuni.rsi
@@ -1749,10 +1707,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese Army Uniform
+  name: "форма японской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_Army_Uniform
-  description: A standard imperial japanese army uniform.
+  description: "Стандартная форма военнослужащего Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/japuni.rsi
@@ -1765,10 +1723,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: japanese naval uniform
+  name: "форма японского флота"
   parent: ClothingUniformBase
   id: civ13_uniform_japanese_naval_uniform
-  description: A imperial japanese navy uniform.
+  description: "Форма моряка Императорского флота Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy.rsi
@@ -1781,10 +1739,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese naval petty officer uniform
+  name: "форма японского флотского старшины"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_naval_petty_officer_uniform
-  description: An Imperial Japanese naval petty officer uniform.
+  description: "Форма старшины Императорского флота Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_po.rsi
@@ -1797,10 +1755,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese naval officer uniform
+  name: "форма японского флотского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_naval_officer_uniform
-  description: An Imperial Japanese naval officer uniform.
+  description: "Форма офицера Императорского флота Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_navy_officer.rsi
@@ -1813,12 +1771,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese SNLF uniform
+  name: "форма японской морской пехоты"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_SNLF_uniform
-  description: >-
-    A prestigious Imperial Japanese SNLF uniform, worn by elite naval infantry
-    renowned for their expertise in amphibious assault operations.
+  description: "Форма бойца специальных морских десантных сил Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni_snlf.rsi
@@ -1831,10 +1787,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese tanker uniform
+  name: "форма японского танкиста"
   parent: ClothingUniformBase
   id: civ13_uniform_Japanese_tanker_uniform
-  description: An Imperial Japanese Army uniform, this one bears the rank of a tanker.
+  description: "Форма экипажа танка Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/japtanker.rsi
@@ -1847,10 +1803,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: british uniform
+  name: "британская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_british_uniform
-  description: A khaki uniform worn by the British Army.
+  description: "Форма британской армии цвета хаки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_british.rsi
@@ -1863,10 +1819,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: British officer uniform
+  name: "британская тропическая форма офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_British_officer_uniform
-  description: A tropical green British officer uniform.
+  description: "Зелёная офицерская форма для службы в тропиках."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_british_off_tropical.rsi
@@ -1879,10 +1835,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chinese uniform
+  name: "форма китайской Красной армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Chinese_uniform
-  description: A Chinese Red Army uniform.
+  description: "Форма бойца китайской Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_china.rsi
@@ -1895,10 +1851,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chinese uniform
+  name: "форма китайской Красной армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Chinese_uniform_1
-  description: A Chinese Red Army uniform.
+  description: "Форма бойца китайской Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_china_off.rsi
@@ -1911,10 +1867,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chinese uniform
+  name: "форма китайской Красной армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Chinese_uniform_1_2
-  description: A Chinese Red Army uniform.
+  description: "Форма бойца китайской Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2.rsi
@@ -1927,10 +1883,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chinese uniform
+  name: "китайская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_chinese_uniform_1
-  description: A chinese army uniform.
+  description: "Форма военнослужащего китайской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_china2_off.rsi
@@ -1943,10 +1899,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chinese Red Army uniform
+  name: "форма китайской Красной армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Chinese_Red_Army_uniform
-  description: A uniform worn by the Chinese Red Army.
+  description: "Форма бойца китайской Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cra_uni.rsi
@@ -1959,10 +1915,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German uniform
+  name: "форма Германской имперской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_German_uniform
-  description: A feldgrau uniform worn by the Imperial German Army.
+  description: "Серая полевая форма солдата Германской империи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_german.rsi
@@ -1975,10 +1931,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German doctor uniform
+  name: "форма немецкого военного врача"
   parent: ClothingUniformBase
   id: civ13_uniform_German_doctor_uniform
-  description: A German feldgrau uniform, usually worn by doctors in the Wehrmacht.
+  description: "Полевая форма цвета фельдграу, которую носят врачи вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/geruni_doctor.rsi
@@ -1991,10 +1947,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German officer uniform
+  name: "форма немецкого офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_German_officer_uniform
-  description: A German feldgrau uniform, almost always worn by officers in the Wehrmacht.
+  description: "Полевая форма цвета фельдграу, которую носят офицеры вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/geruni_officer.rsi
@@ -2007,10 +1963,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German tanker uniform
+  name: "форма немецкого танкиста"
   parent: ClothingUniformBase
   id: civ13_uniform_German_tanker_uniform
-  description: A German feldgrau uniform, often worn by tankers in the Wehrmacht.
+  description: "Серая полевая форма танкиста вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/gertanker.rsi
@@ -2023,10 +1979,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German MP uniform
+  name: "форма военной полиции вермахта"
   parent: ClothingUniformBase
   id: civ13_uniform_German_MP_uniform
-  description: A German feldgrau uniform, mostly worn by Military Police in the Wehrmacht.
+  description: "Серая полевая форма немецкого военного полицейского."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/geruni_mp.rsi
@@ -2039,10 +1995,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German SS uniform
+  name: "форма солдата СС"
   parent: ClothingUniformBase
   id: civ13_uniform_German_SS_uniform
-  description: A German SS uniform, always worn by soldaten in the Schutzstaffel.
+  description: "Форма военнослужащего войск СС."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ssuni.rsi
@@ -2055,10 +2011,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German SS officer uniform
+  name: "форма офицера СС"
   parent: ClothingUniformBase
   id: civ13_uniform_German_SS_officer_uniform
-  description: A german SS officer uniform, worn by officers in the Schutzstaffel.
+  description: "Форма офицера войск СС."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ssuni_officer.rsi
@@ -2071,12 +2027,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German camo SS uniform
+  name: "камуфляжная форма СС"
   parent: ClothingUniformBase
   id: civ13_uniform_German_camo_SS_uniform
-  description: >-
-    This German SS uniform features the iconic 1944 Erbsenmuster dot-pattern,
-    historically worn by members of the Schutzstaffel.
+  description: "Форма войск СС с пятнистым камуфляжем «горох» образца 1944 года."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ssuni_camo.rsi
@@ -2089,10 +2043,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet uniform
+  name: "советская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_Soviet_uniform
-  description: A Soviet uniform, used by infantry in the Red Army.
+  description: "Форма пехотинца Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sovuni.rsi
@@ -2105,10 +2059,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet tanker uniform
+  name: "форма советского танкиста"
   parent: ClothingUniformBase
   id: civ13_uniform_Soviet_tanker_uniform
-  description: A Soviet tanker uniform, used by tank crewmen in the Red Army.
+  description: "Форма экипажа танка Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/sovtanker.rsi
@@ -2121,10 +2075,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet berezka uniform
+  name: "зимняя форма в камуфляже «Берёзка»"
   parent: ClothingUniformBase
   id: civ13_uniform_Soviet_berezka_uniform
-  description: A Soviet berezka uniform, adapted to the winter wilderness.
+  description: "Советская форма в камуфляже «Берёзка» для зимней местности."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/berezka.rsi
@@ -2137,10 +2091,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet amoeba outfit
+  name: "советский маскхалат «Амёба»"
   parent: ClothingUniformBase
   id: civ13_uniform_Soviet_amoeba_outfit
-  description: A Soviet camouflage outfit, designed specifically for reconnaissance units.
+  description: "Камуфляжная одежда советского разведчика."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/amoeba.rsi
@@ -2153,10 +2107,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cadpat uniform
+  name: "форма в камуфляже CADPAT"
   parent: ClothingUniformBase
   id: civ13_uniform_cadpat_uniform
-  description: A canadian pattern uniform
+  description: "Канадская форма с камуфляжным рисунком CADPAT."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_winter.rsi
@@ -2169,12 +2123,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic italian soldier uniform
+  name: "мундир итальянского солдата наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_italian_soldier_uniform
-  description: >-
-    A uniform of the italian army. It has a dark green shirt with a bright
-    orange trimmings along the arms and feet and a white saltire.
+  description: "Тёмно-зелёный мундир с ярко-оранжевой отделкой и белыми перекрещёнными ремнями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
@@ -2187,10 +2139,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Italian officer uniform
+  name: "форма итальянского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_Italian_officer_uniform
-  description: An Italian uniform, used by officers of the Italian Royal Army.
+  description: "Форма офицера Королевской армии Италии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/it_uni_officer.rsi
@@ -2203,10 +2155,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Greek uniform
+  name: "греческая военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_Greek_uniform
-  description: A Hellenic army uniform.
+  description: "Форма солдата греческой армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww2_japuni.rsi
@@ -2219,10 +2171,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue colonial clothing
+  name: "синяя колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_colonial_clothing
-  description: A set composed of a light blue linen shirt and short trousers.
+  description: "Светло-синяя льняная рубашка и короткие брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni1.rsi
@@ -2235,10 +2187,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: white colonial clothing
+  name: "белая колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_white_colonial_clothing
-  description: A set composed of a white linen shirt and black trousers.
+  description: "Белая льняная рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni2.rsi
@@ -2251,10 +2203,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: Hitlerjugend outfit
+  name: "форма гитлерюгенда"
   parent: ClothingUniformBase
   id: civ13_uniform_Hitlerjugend_outfit
-  description: The standard uniform of the HJ.
+  description: "Стандартная форма участника гитлерюгенда."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/hj_uni.rsi
@@ -2267,10 +2219,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American uniform
+  name: "американская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_American_uniform
-  description: An American uniform, used by soldiers in the US army during WW2.
+  description: "Форма солдата армии США времён Второй мировой войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/usuni2.rsi
@@ -2283,10 +2235,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American tanker uniform
+  name: "форма американского танкиста"
   parent: ClothingUniformBase
   id: civ13_uniform_American_tanker_uniform
-  description: An American uniform, used by tankers in the US army.
+  description: "Форма экипажа танка армии США."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ustanker.rsi
@@ -2299,10 +2251,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: U.S. Navy uniform
+  name: "форма флота США"
   parent: ClothingUniformBase
   id: civ13_uniform_U.S._Navy_uniform
-  description: An american uniform, used by sailors in the US navy during WW2.
+  description: "Форма моряка американского флота времён Второй мировой войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_navy.rsi
@@ -2315,10 +2267,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American captain uniform
+  name: "форма американского капитана"
   parent: ClothingUniformBase
   id: civ13_uniform_American_captain_uniform
-  description: An American uniform, used by captains in the US army.
+  description: "Военная форма капитана армии США."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/usuni_cap.rsi
@@ -2331,10 +2283,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American MP uniform
+  name: "форма военной полиции США"
   parent: ClothingUniformBase
   id: civ13_uniform_American_MP_uniform
-  description: An American uniform, used by Military Police in the US army.
+  description: "Форма американского военного полицейского."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/usuni_mp.rsi
@@ -2347,12 +2299,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American uniform with shirt
+  name: "форма солдата США без куртки"
   parent: ClothingUniformBase
   id: civ13_uniform_American_uniform_with_shirt
-  description: >-
-    An American uniform, used by soldiers in the US army, this one has no
-    jacket.
+  description: "Армейская форма американского солдата, которую носят без куртки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_shirtless.rsi
@@ -2365,10 +2315,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Finnish uniform
+  name: "финская зимняя военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_Finnish_uniform
-  description: A Finnish winter uniform.
+  description: "Зимняя форма финской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/geruni_ww2_winter.rsi
@@ -2381,10 +2331,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UPA uniform
+  name: "форма УПА"
   parent: ClothingUniformBase
   id: civ13_uniform_UPA_uniform
-  description: A Ukrayins'ka Povstans'ka Armiya uniform.
+  description: "Форма бойца Украинской повстанческой армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/upa_uni.rsi
@@ -2397,10 +2347,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UPA officer uniform
+  name: "форма офицера УПА"
   parent: ClothingUniformBase
   id: civ13_uniform_UPA_officer_uniform
-  description: A Ukrayins'ka Povstans'ka Armiya officer uniform.
+  description: "Форма офицера Украинской повстанческой армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/upa_off.rsi
@@ -2414,10 +2364,10 @@
       time: 5
 
 - type: entity
-  name: Blugoslavian officer uniform
+  name: "форма блюгославского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_Blugoslavian_officer_uniform
-  description: A ceremonial uniform of Blugoslavia, used by officers and commanders.
+  description: "Парадная форма офицеров и командиров Блюгославии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/baf_command.rsi
@@ -2425,10 +2375,10 @@
       sprite: Civ14/Clothing/exported/uniforms/baf_command.rsi
 
 - type: entity
-  name: Blugoslavian navy uniform
+  name: "форма флота Блюгославии"
   parent: ClothingUniformBase
   id: civ13_uniform_Blugoslavian_navy_uniform
-  description: A blue uniform of the Blugoslavian Navy.
+  description: "Синяя форма блюгославского моряка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/blugoslavian_sailor.rsi
@@ -2441,10 +2391,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian navy uniform
+  name: "форма флота Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_navy_uniform
-  description: A red uniform of the Redmenian Navy.
+  description: "Красная форма редменийского моряка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/redmenian_sailor.rsi
@@ -2457,10 +2407,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white medical scrubs
+  name: "белая медицинская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_white_medical_scrubs
-  description: Sanitary clothing worn by medical personnel.
+  description: "Санитарная одежда медработника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/scrubs_white.rsi
@@ -2473,10 +2423,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dark green medical scrubs
+  name: "тёмно-зелёная медицинская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_dark_green_medical_scrubs
-  description: Sanitary clothing worn by medical personnel. This one is dark green.
+  description: "Санитарная одежда медработника тёмно-зелёного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/scrubs_darkgreen.rsi
@@ -2489,10 +2439,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: light green medical scrubs
+  name: "светло-зелёная медицинская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_light_green_medical_scrubs
-  description: Sanitary clothing worn by medical personnel. This one is light green.
+  description: "Санитарная одежда медработника светло-зелёного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/scrubs_lightgreen.rsi
@@ -2505,10 +2455,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: navy medical scrubs
+  name: "тёмно-синяя медицинская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_navy_medical_scrubs
-  description: Sanitary clothing worn by medical personnel. This one is navy.
+  description: "Санитарная одежда медработника тёмно-синего цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/scrubs_navy.rsi
@@ -2521,10 +2471,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: irish olive uniform
+  name: "оливковая форма ирландских миротворцев"
   parent: ClothingUniformBase
   id: civ13_uniform_irish_olive_uniform
-  description: A uniform worn by the UN Irish troops.
+  description: "Форма ирландского военнослужащего в составе миротворческих сил ООН."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/un_irish.rsi
@@ -2537,10 +2487,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: african mercenary uniform
+  name: "форма африканского наёмника"
   parent: ClothingUniformBase
   id: civ13_uniform_african_mercenary_uniform
-  description: A light uniform worn by mercenaries.
+  description: "Лёгкая форма наёмного бойца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/afr_merc.rsi
@@ -2553,10 +2503,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: creed shirt
+  name: "рубашка кредо"
   parent: ClothingUniformBase
   id: civ13_uniform_creed_shirt
-  description: A white shirt of the creed.
+  description: "Белая рубашка последователя кредо."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ac_shirt.rsi
@@ -2569,10 +2519,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Abashiri Guard Uniform
+  name: "форма охранника Абасири"
   parent: ClothingUniformBase
   id: civ13_uniform_Abashiri_Guard_Uniform
-  description: A standard uniform for the guards of Abashiri Prison.
+  description: "Стандартная форма сотрудника охраны тюрьмы Абасири."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/abashiri_guard.rsi
@@ -2585,10 +2535,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Abashiri Prison Uniform
+  name: "тюремная юката Абасири"
   parent: ClothingUniformBase
   id: civ13_uniform_Abashiri_Prison_Uniform
-  description: A standard yukata for the guards of Abashiri Prison.
+  description: "Простая юката сотрудника тюрьмы Абасири."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/abashiri_prisoner.rsi
@@ -2601,10 +2551,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian Army uniform
+  name: "форма Русской императорской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Russian_Army_uniform
-  description: A standard Imperial Russian Army uniform.
+  description: "Стандартная форма солдата Русской императорской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rusuni.rsi
@@ -2617,10 +2567,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian Army uniform
+  name: "форма Русской императорской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Russian_Army_uniform_1
-  description: A standard Imperial Russian Army uniform.
+  description: "Стандартная форма солдата Русской императорской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian2.rsi
@@ -2633,10 +2583,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian Army officer uniform
+  name: "офицерская форма Русской императорской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Russian_Army_officer_uniform
-  description: A standard Imperial Russian Army uniform, with officer epaulettes.
+  description: "Форма императорской армии с офицерскими погонами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian_o.rsi
@@ -2649,12 +2599,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Red Army uniform
+  name: "ранняя форма Красной армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Red_Army_uniform
-  description: >-
-    A standard early 20th century Russian uniform, with no epaulettes or
-    insignias.
+  description: "Форма начала XX века без погон и знаков отличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_russian.rsi
@@ -2667,10 +2615,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Kuban Cossak beshmet
+  name: "кубанский казачий бешмет"
   parent: ClothingUniformBase
   id: civ13_uniform_Kuban_Cossak_beshmet
-  description: A red beshmet with grey trousers, traditional of the Kuban Cossaks.
+  description: "Красный бешмет с серыми брюками — традиционная одежда кубанских казаков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/kuban_cossak.rsi
@@ -2683,10 +2631,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: light brown outfit
+  name: "белая рубашка со светло-коричневыми брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_light_brown_outfit
-  description: An outfit composed of a white shirt and light brown trousers.
+  description: "Простой комплект из белой рубашки и светло-коричневых брюк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern1.rsi
@@ -2699,10 +2647,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: black outfit
+  name: "белая рубашка с чёрными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_black_outfit
-  description: An outfit composed of a white shirt and black trousers.
+  description: "Простой комплект из белой рубашки и чёрных брюк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern2.rsi
@@ -2715,10 +2663,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: shirt outfit
+  name: "дорогая рубашка с чёрными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_shirt_outfit
-  description: An outfit composed of a expensive white shirt and black trousers.
+  description: "Дорогая белая рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bman.rsi
@@ -2731,10 +2679,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: grey outfit
+  name: "белая рубашка с серыми брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_grey_outfit
-  description: An outfit composed of a white shirt and grey trousers.
+  description: "Простой комплект из белой рубашки и серых брюк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern3.rsi
@@ -2747,10 +2695,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: brown outfit
+  name: "белая рубашка с коричневыми брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_brown_outfit
-  description: An outfit composed of a white shirt and brown trousers.
+  description: "Простой комплект из белой рубашки и коричневых брюк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern4.rsi
@@ -2763,10 +2711,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: modern outfit
+  name: "современный повседневный комплект"
   parent: ClothingUniformBase
   id: civ13_uniform_modern_outfit
-  description: An outfit composed of a white shirt and black cargo pants.
+  description: "Белая рубашка и чёрные брюки карго."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern7.rsi
@@ -2779,10 +2727,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: swat outfit
+  name: "форма полицейского спецназа"
   parent: ClothingUniformBase
   id: civ13_uniform_swat_outfit
-  description: A uniform used by police special forces.
+  description: "Боевая форма сотрудника полицейского спецподразделения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/swat.rsi
@@ -2795,10 +2743,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cleansuit
+  name: "костюм радиационной защиты"
   parent: ClothingUniformBase
   id: civ13_uniform_cleansuit
-  description: A white personal protective uniform against ambient radiation.
+  description: "Белая защитная одежда для работы в условиях радиационного загрязнения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cleansuit.rsi
@@ -2816,10 +2764,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: swat outfit
+  name: "форма полицейского спецназа"
   parent: ClothingUniformBase
   id: civ13_uniform_swat_outfit_1
-  description: A uniform used by police special forces.
+  description: "Боевая форма сотрудника полицейского спецподразделения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/swat_new.rsi
@@ -2832,10 +2780,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian Camo Uniform
+  name: "камуфляжная форма Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_Camo_Uniform
-  description: A Redmenian combat uniform, slightly camoed.
+  description: "Боевая форма редменийской армии с маскировочным рисунком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
@@ -2848,10 +2796,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: police outfit
+  name: "полицейская форма"
   parent: ClothingUniformBase
   id: civ13_uniform_police_outfit_1
-  description: A uniform used by police forces.
+  description: "Служебная форма сотрудника полиции."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/police.rsi
@@ -2864,10 +2812,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: prison outfit
+  name: "тюремная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_prison_outfit
-  description: Normally worn by criminals and scum.
+  description: "Одежда, которую обычно выдают заключённым."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/prisoner.rsi
@@ -2880,10 +2828,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: russian military outfit
+  name: "российская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_russian_military_outfit
-  description: An outfit composed of camo pants and shirt.
+  description: "Камуфляжные рубашка и брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/milrus2.rsi
@@ -2896,10 +2844,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: security outfit
+  name: "форма охраны"
   parent: ClothingUniformBase
   id: civ13_uniform_security_outfit
-  description: An outfit composed of a green jacket and black pants.
+  description: "Зелёная куртка и чёрные брюки сотрудника охраны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/baily.rsi
@@ -2912,10 +2860,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tactical outfit
+  name: "тактическая одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_tactical_outfit
-  description: An outfit composed of a camo cargo pants and tan ubac.
+  description: "Камуфляжные брюки карго и песочная боевая рубаха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tactical1.rsi
@@ -2928,10 +2876,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: pmc outfit
+  name: "форма бойца ЧВК"
   parent: ClothingUniformBase
   id: civ13_uniform_pmc_outfit
-  description: A outfit used by PMC units.
+  description: "Служебная одежда бойца частной военной компании."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pmc.rsi
@@ -2944,10 +2892,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy outfit
+  name: "дорогой костюм"
   parent: ClothingUniformBase
   id: civ13_uniform_fancy_outfit
-  description: A outfit that is expensive and has style.
+  description: "Стильный наряд, явно не из дешёвых."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/mafia.rsi
@@ -2960,10 +2908,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: worker outfit
+  name: "рабочая одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_worker_outfit
-  description: A outfit used by construction workers.
+  description: "Практичная одежда строителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/engi.rsi
@@ -2976,10 +2924,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: gorka outfit
+  name: "костюм «Горка»"
   parent: ClothingUniformBase
   id: civ13_uniform_gorka_outfit
-  description: A gorka outfit used by Spetsnaz.
+  description: "Полевой костюм, который носят бойцы спецназа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/gorka.rsi
@@ -2992,10 +2940,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: modern skirt
+  name: "юбка с белой рубашкой"
   parent: ClothingUniformBase
   id: civ13_uniform_modern_skirt
-  description: An outfit composed of a black skirt and white shirt.
+  description: "Чёрная юбка и белая рубашка современного покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern8.rsi
@@ -3008,10 +2956,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: old man suit
+  name: "старомодный мужской костюм"
   parent: ClothingUniformBase
   id: civ13_uniform_old_man_suit
-  description: An outfit worn by fancy men in the 1800s.
+  description: "Нарядный костюм в стиле XIX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/oldmansuit.rsi
@@ -3024,10 +2972,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy outfit
+  name: "старинный парадный костюм"
   parent: ClothingUniformBase
   id: civ13_uniform_fancy_outfit_1
-  description: An outfit worn by fancy men in the 1800s.
+  description: "Нарядный мужской костюм XIX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cozyoldy.rsi
@@ -3040,10 +2988,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy suit
+  name: "костюм проходимца"
   parent: ClothingUniformBase
   id: civ13_uniform_fancy_suit
-  description: An outfit used by scum.
+  description: "Парадный костюм, который почему-то напоминает о сомнительных делах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/peakyblinder.rsi
@@ -3056,10 +3004,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: constable outfit
+  name: "форма констебля"
   parent: ClothingUniformBase
   id: civ13_uniform_constable_outfit
-  description: An black outfit used by enforcers of the law.
+  description: "Чёрная служебная одежда блюстителя порядка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/constable.rsi
@@ -3072,10 +3020,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: fire fighter uniform
+  name: "форма пожарного"
   parent: ClothingUniformBase
   id: civ13_uniform_fire_fighter_uniform
-  description: An outfit used by fire fighters. Damn hot.
+  description: "Защитная одежда пожарного. В ней жарковато."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/oldfirefighter.rsi
@@ -3088,10 +3036,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black dress
+  name: "чёрное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_black_dress
-  description: An dress used by fancy woman.
+  description: "Нарядное чёрное платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/black_tango_alt_s.rsi
@@ -3104,10 +3052,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: clown outfit
+  name: "костюм клоуна"
   parent: ClothingUniformBase
   id: civ13_uniform_clown_outfit
-  description: An outfit used by clowns.
+  description: "Яркий наряд клоуна."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/clown.rsi
@@ -3120,10 +3068,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: jester outfit
+  name: "костюм шута"
   parent: ClothingUniformBase
   id: civ13_uniform_jester_outfit
-  description: A jester outfit. WHERE IS ME FUN HAHA.
+  description: "Наряд шута. Где веселье, а?"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/jester.rsi
@@ -3136,10 +3084,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: farmer outfit
+  name: "одежда фермера"
   parent: ClothingUniformBase
   id: civ13_uniform_farmer_outfit
-  description: An outfit composed of a checkered shirt and a denim bib.
+  description: "Клетчатая рубашка и джинсовый комбинезон."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/farmer_outfit.rsi
@@ -3152,10 +3100,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: mechanic outfit
+  name: "одежда механика"
   parent: ClothingUniformBase
   id: civ13_uniform_mechanic_outfit
-  description: An outfit composed of a white shirt and a leather bib.
+  description: "Белая рубашка и кожаный рабочий фартук."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/mechanic_outfit.rsi
@@ -3168,12 +3116,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: blue traditional dress
+  name: "синее платье начала XX века"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_traditional_dress
-  description: >-
-    A early 20th century style dress made to be well fitting, often worn by
-    housewives
+  description: "Приталенное синее платье в стиле начала XX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tradwife_blue.rsi
@@ -3186,10 +3132,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: blue shorts
+  name: "синие шорты"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_shorts
-  description: Basic blue shorts.
+  description: "Простые синие шорты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/shorts_blue.rsi
@@ -3202,10 +3148,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red shorts
+  name: "красные шорты"
   parent: ClothingUniformBase
   id: civ13_uniform_red_shorts
-  description: Basic red shorts
+  description: "Простые красные шорты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/shorts_red.rsi
@@ -3218,10 +3164,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow shorts
+  name: "жёлтые шорты"
   parent: ClothingUniformBase
   id: civ13_uniform_yellow_shorts
-  description: Basic yellow shorts
+  description: "Простые жёлтые шорты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/shorts_yellow.rsi
@@ -3234,10 +3180,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Philippine Republic Army Uniform
+  name: "форма армии Филиппинской республики"
   parent: ClothingUniformBase
   id: civ13_uniform_Philippine_Republic_Army_Uniform
-  description: A standard philippine republic army uniform.
+  description: "Стандартная форма солдата армии Филиппинской республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/filuni.rsi
@@ -3250,10 +3196,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Tiradores de Muerta Uniform
+  name: "форма «Тирадорес де ла Муэрте»"
   parent: ClothingUniformBase
   id: civ13_uniform_Tiradores_de_Muerta_Uniform
-  description: A standard philippine republic army uniform.
+  description: "Форма бойца филиппинского подразделения «Тирадорес де ла Муэрте»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/filuni_sniper.rsi
@@ -3266,10 +3212,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: US Army Officer Uniform
+  name: "тропическая форма офицера США"
   parent: ClothingUniformBase
   id: civ13_uniform_US_Army_Officer_Uniform
-  description: A standard tropical US army officer uniform.
+  description: "Стандартная тропическая форма офицера армии США."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/us_fp_off.rsi
@@ -3282,10 +3228,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Spanish Republican Uniform
+  name: "форма испанского республиканца"
   parent: ClothingUniformBase
   id: civ13_uniform_Spanish_Republican_Uniform
-  description: A Uniform used by the spanish republican forces.
+  description: "Форма военнослужащего Испанской республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanishrepublican.rsi
@@ -3298,10 +3244,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Spanish Nationalist Uniform
+  name: "форма испанского националиста"
   parent: ClothingUniformBase
   id: civ13_uniform_Spanish_Nationalist_Uniform
-  description: A Uniform used by the spanish Nationalist forces.
+  description: "Форма военнослужащего испанских националистов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanishnationalist.rsi
@@ -3314,10 +3260,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Brigadists Uniform
+  name: "форма интербригадовца"
   parent: ClothingUniformBase
   id: civ13_uniform_Brigadists_Uniform
-  description: A Cheap Blue Uniform.
+  description: "Простая синяя форма бойца интернациональной бригады."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/intbrigadist.rsi
@@ -3330,10 +3276,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian army uniform
+  name: "форма армии Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_army_uniform
-  description: An easy to see uniform used by Blugoslavia.
+  description: "Яркая форма редменийского военнослужащего."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rdf_standard.rsi
@@ -3346,10 +3292,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian Camo Uniform
+  name: "камуфляжная форма командира Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_Camo_Uniform_1
-  description: A Redmenian combat uniform used by squad leaders.
+  description: "Боевая форма командира редменийского отделения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rdf_standardc.rsi
@@ -3362,10 +3308,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian Ceremonial Uniform
+  name: "парадная форма Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_Ceremonial_Uniform
-  description: A ceremonial uniform of Redmenia, used by officers and commanders
+  description: "Торжественная форма редменийских офицеров и командиров."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rdf_command.rsi
@@ -3378,10 +3324,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenian Camo Uniform
+  name: "камуфляжная форма Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenian_Camo_Uniform_1_2
-  description: A Redmenian combat uniform, slightly camoed.
+  description: "Боевая форма редменийской армии с маскировочным рисунком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rdf_modern.rsi
@@ -3394,10 +3340,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NCR uniform
+  name: "форма солдата НКР"
   parent: ClothingUniformBase
   id: civ13_uniform_NCR_uniform
-  description: NCR Trooper Fatigues
+  description: "Повседневная полевая форма солдата Новой Калифорнийской Республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ncr_fatigues.rsi
@@ -3410,12 +3356,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Legionaire Armor
+  name: "доспех легионера"
   parent: ClothingUniformBase
   id: civ13_uniform_Legionaire_Armor
-  description: >-
-    A red T-shirt and dark skirt with leather armor overtop. Commonly worn by
-    Caesar's Legion.
+  description: "Красная футболка, тёмная юбка и кожаный доспех бойца Легиона Цезаря."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/legionaire.rsi
@@ -3436,10 +3380,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy colonial clothing
+  name: "нарядная колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_fancy_colonial_clothing
-  description: A set composed of a quality white linen shirt and black trousers.
+  description: "Добротная белая льняная рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni4.rsi
@@ -3452,12 +3396,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: short-sleeved colonial clothing
+  name: "колониальная одежда с короткими рукавами"
   parent: ClothingUniformBase
   id: civ13_uniform_short_sleeved_colonial_clothing
-  description: >-
-    A set composed of a light white linen shirt with short sleeves and black
-    trousers.
+  description: "Лёгкая белая льняная рубашка с короткими рукавами и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni3.rsi
@@ -3470,10 +3412,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green colonial clothing
+  name: "зелёная колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_green_colonial_clothing
-  description: A set composed of a green linen shirt and black trousers.
+  description: "Зелёная льняная рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni5.rsi
@@ -3486,10 +3428,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: pink colonial clothing
+  name: "розовая колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_pink_colonial_clothing
-  description: A set composed of a pink linen shirt and black trousers.
+  description: "Розовая льняная рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/civuni6.rsi
@@ -3503,10 +3445,10 @@
       time: 7
 
 - type: entity
-  name: dark dress
+  name: "тёмное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_dark_dress
-  description: A dark dress, used by peasant women.
+  description: "Тёмное платье крестьянки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dress1.rsi
@@ -3519,10 +3461,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: blue dress
+  name: "синее платье"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_dress
-  description: A blue dress.
+  description: "Простое синее платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dress2.rsi
@@ -3535,10 +3477,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: brown dress
+  name: "коричневое платье"
   parent: ClothingUniformBase
   id: civ13_uniform_brown_dress
-  description: A brown dress.
+  description: "Простое коричневое платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dress3.rsi
@@ -3551,10 +3493,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: green dress
+  name: "зелёное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_green_dress
-  description: A green dress.
+  description: "Простое зелёное платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dressg.rsi
@@ -3567,10 +3509,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: red dress
+  name: "красное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_red_dress
-  description: A red dress.
+  description: "Простое красное платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dressr.rsi
@@ -3583,12 +3525,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: conquistador uniform
+  name: "мундир конкистадора"
   parent: ClothingUniformBase
   id: civ13_uniform_conquistador_uniform
-  description: >-
-    A regal uniform often worn by a class of explorers known as conquistadors in
-    search of wealth.
+  description: "Богатое одеяние завоевателя, отправившегося на поиски славы и золота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/conquistador.rsi
@@ -3601,10 +3541,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: pilgrim clothing
+  name: "одежда паломника"
   parent: ClothingUniformBase
   id: civ13_uniform_pilgrim_clothing
-  description: A set of plain black and grey clothes worn by transient followers of faith.
+  description: "Простая чёрно-серая одежда странника, следующего своей вере."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pilgrim.rsi
@@ -3617,10 +3557,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: black stripes clothing
+  name: "одежда с чёрными полосами"
   parent: ClothingUniformBase
   id: civ13_uniform_black_stripes_clothing
-  description: A set of clothes with a black striped shirt.
+  description: "Комплект с рубашкой в чёрную полоску."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pirate1.rsi
@@ -3633,10 +3573,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: red stripes clothing
+  name: "одежда с красными полосами"
   parent: ClothingUniformBase
   id: civ13_uniform_red_stripes_clothing
-  description: A set of clothes with a red striped shirt.
+  description: "Комплект с рубашкой в красную полоску."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pirate2.rsi
@@ -3649,10 +3589,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: blue stripes clothing
+  name: "одежда с синими полосами"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_stripes_clothing
-  description: A set of clothes with a blue striped shirt.
+  description: "Комплект с рубашкой в синюю полоску."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pirate3.rsi
@@ -3665,10 +3605,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: baggy clothing
+  name: "свободная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_baggy_clothing
-  description: A set of clothes with a white shirt and baggy trousers
+  description: "Белая рубашка и мешковатые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pirate4.rsi
@@ -3681,10 +3621,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sleeveless clothing
+  name: "одежда без рукавов"
   parent: ClothingUniformBase
   id: civ13_uniform_sleeveless_clothing
-  description: A set of clothes with a sleeveless shirt.
+  description: "Простой комплект с рубашкой без рукавов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pirate5.rsi
@@ -3697,10 +3637,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: british sailor clothes
+  name: "форма британского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_british_sailor_clothes
-  description: A set of royal navy sailor clothes, with a white shirt and trousers.
+  description: "Белые рубашка и брюки матроса Королевского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/british_sailor1.rsi
@@ -3713,12 +3653,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: open british sailor clothes
+  name: "расстёгнутая форма британского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_open_british_sailor_clothes
-  description: >-
-    A set of royal navy sailor clothes, with an unbuttoned white shirt and
-    trousers.
+  description: "Белая рубашка навыпуск и брюки матроса Королевского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/british_sailor2.rsi
@@ -3731,10 +3669,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: british sailor trousers
+  name: "брюки британского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_british_sailor_trousers
-  description: White british sailor trousers. For when it's too hot to wear a shirt.
+  description: "Белые матросские брюки. На жаре рубашку можно и снять."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/british_sailor3.rsi
@@ -3747,10 +3685,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: grey british sailor clothes
+  name: "серая форма британского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_grey_british_sailor_clothes
-  description: A set of royal navy sailor clothes, with a grey shirt and trousers.
+  description: "Серые рубашка и брюки матроса Королевского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/british_sailor4.rsi
@@ -3763,12 +3701,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese sailor clothes
+  name: "форма португальского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_portuguese_sailor_clothes
-  description: >-
-    A set of portuguese navy sailor clothes, with a white shirt and green
-    trousers.
+  description: "Белая рубашка и зелёные брюки моряка португальского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor1.rsi
@@ -3781,12 +3717,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: open portuguese sailor clothes
+  name: "расстёгнутая форма португальского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_open_portuguese_sailor_clothes
-  description: >-
-    A set of portuguese navy sailor clothes, with an unbuttoned white shirt and
-    geen trousers.
+  description: "Расстёгнутая белая рубашка и зелёные брюки португальского матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor2.rsi
@@ -3799,10 +3733,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese sailor trousers
+  name: "брюки португальского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_portuguese_sailor_trousers
-  description: Green portuguese sailor trousers. For when it's too hot to wear a shirt.
+  description: "Зелёные матросские брюки. На жаре рубашку можно и снять."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor3.rsi
@@ -3815,12 +3749,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese sailor clothes with scarf
+  name: "форма португальского матроса с шарфом"
   parent: ClothingUniformBase
   id: civ13_uniform_portuguese_sailor_clothes_with_scarf
-  description: >-
-    A set of portuguese navy sailor clothes, with a white shirt and green
-    trousers. There's a green scarf attached.
+  description: "Белая рубашка, зелёные брюки и зелёный шарф."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/portuguese_sailor4.rsi
@@ -3833,10 +3765,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish sailor clothes
+  name: "форма испанского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_spanish_sailor_clothes
-  description: A set of spanish navy sailor clothes, with brown shirt and trousers.
+  description: "Коричневые рубашка и брюки моряка испанского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor1.rsi
@@ -3849,12 +3781,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: open spanish sailor clothes
+  name: "расстёгнутая форма испанского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_open_spanish_sailor_clothes
-  description: >-
-    A set of spanish navy sailor clothes, with an unbuttoned brown shirt and
-    trousers.
+  description: "Расстёгнутая коричневая рубашка и брюки испанского матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor2.rsi
@@ -3867,10 +3797,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish sailor trousers
+  name: "брюки испанского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_spanish_sailor_trousers
-  description: Brown spanish sailor trousers. For when it's too hot to wear a shirt.
+  description: "Коричневые матросские брюки. На жаре рубашку можно и снять."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanish_sailor3.rsi
@@ -3883,10 +3813,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish soldier uniform
+  name: "форма испанского солдата"
   parent: ClothingUniformBase
   id: civ13_uniform_spanish_soldier_uniform
-  description: Blue spanish soldier trousers and a fancy white shirt.
+  description: "Синие армейские брюки и нарядная белая рубашка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/spanish_soldier.rsi
@@ -3899,12 +3829,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french officer clothes
+  name: "одежда французского офицера"
   parent: ClothingUniformBase
   id: civ13_uniform_french_officer_clothes
-  description: >-
-    A set of french officer clothes, with a light blue shirt and black trousers,
-    both with golden buttons.
+  description: "Светло-голубая рубашка и чёрные брюки с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/french_officer.rsi
@@ -3917,10 +3845,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: baycona outfit
+  name: "старинная форма офицера Байконы"
   parent: ClothingUniformBase
   id: civ13_uniform_baycona_outfit
-  description: A set of baycona officer clothes, this seems to be very old.
+  description: "Старая, но ещё добротная форма офицера Байконы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/baycona.rsi
@@ -3933,10 +3861,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french sailor clothes
+  name: "форма французского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_french_sailor_clothes
-  description: A set of french navy sailor clothes, with light blue shirt and trousers.
+  description: "Светло-голубые рубашка и брюки моряка французского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/french_sailor1.rsi
@@ -3949,12 +3877,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: open french sailor clothes
+  name: "расстёгнутая форма французского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_open_french_sailor_clothes
-  description: >-
-    A set of french navy sailor clothes, with an unbuttoned light blue shirt and
-    trousers.
+  description: "Расстёгнутая светло-голубая рубашка и брюки французского матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/french_sailor2.rsi
@@ -3967,10 +3893,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french sailor trousers
+  name: "брюки французского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_french_sailor_trousers
-  description: Light blue french sailor trousers. For when it's too hot to wear a shirt.
+  description: "Светло-голубые матросские брюки. На жаре рубашку можно и снять."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/french_sailor3.rsi
@@ -3983,10 +3909,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dutch sailor clothes
+  name: "форма голландского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_dutch_sailor_clothes
-  description: A set of dutch navy sailor clothes, with a white shirt and orange trousers.
+  description: "Белая рубашка и оранжевые брюки моряка флота Соединённых провинций."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor1.rsi
@@ -3999,12 +3925,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: open dutch sailor clothes
+  name: "расстёгнутая форма голландского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_open_dutch_sailor_clothes
-  description: >-
-    A set of dutch navy sailor clothes, with an unbuttoned white shirt and
-    orange trousers.
+  description: "Расстёгнутая белая рубашка и оранжевые брюки голландского матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor2.rsi
@@ -4017,10 +3941,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dutch sailor trousers
+  name: "брюки голландского матроса"
   parent: ClothingUniformBase
   id: civ13_uniform_dutch_sailor_trousers
-  description: Orange dutch sailor trousers. For when it's too hot to wear a shirt.
+  description: "Оранжевые матросские брюки. На жаре рубашку можно и снять."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dutch_sailor3.rsi
@@ -4033,12 +3957,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: officer clothes
+  name: "офицерская одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_officer_clothes
-  description: >-
-    A set of officer clothes, with a white shirt and black trousers, both with
-    golden buttons.
+  description: "Белая рубашка и чёрные брюки с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/officer.rsi
@@ -4051,10 +3973,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dutch army uniform
+  name: "форма армии Соединённых провинций"
   parent: ClothingUniformBase
   id: civ13_uniform_dutch_army_uniform
-  description: A set of united provinces army clothes. Yellow shirts and trousers.
+  description: "Жёлтые рубашка и брюки голландского солдата."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dutch_army.rsi
@@ -4067,10 +3989,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese army uniform
+  name: "форма португальской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_portuguese_army_uniform
-  description: A set of portuguese army clothes. Red shirt with black and white trousers.
+  description: "Красная рубашка и чёрно-белые брюки солдата."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/portuguese_army.rsi
@@ -4083,10 +4005,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: French Army uniform
+  name: "форма французской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_French_Army_uniform
-  description: A set of french army clothes. White shirt with blue and white trousers.
+  description: "Белая рубашка и сине-белые брюки солдата."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/french_army.rsi
@@ -4099,12 +4021,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: nightingale dress
+  name: "платье сестры милосердия"
   parent: ClothingUniformBase
   id: civ13_uniform_nightingale_dress
-  description: >-
-    A modest nurse dress with a sown on apron. Often found worn by nurses
-    tending to the injuries within wartime field hospitals.
+  description: "Скромное платье с пришитым фартуком. Подойдёт для работы в полевом госпитале."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nightingale.rsi
@@ -4117,12 +4037,10 @@
       material: Cloth
       time: 9
 - type: entity
-  name: napoleonic french soldier uniform
+  name: "французский мундир наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_french_soldier_uniform
-  description: >-
-    A uniform of the french army, with golden epaulettes, black shirt and a gold
-    buttoned white gilet.
+  description: "Чёрный мундир с золотыми эполетами и белым жилетом на золотых пуговицах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_french_army.rsi
@@ -4135,12 +4053,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic blackwatch soldier uniform
+  name: "мундир шотландского полка «Чёрная стража»"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_blackwatch_soldier_uniform
-  description: >-
-    A uniform of the british army's scottish infantry. Often worn in fearsome
-    highland charges with a red shirt, itchy kilt and a white saltire.
+  description: "Красный мундир, клетчатый килт и белые перекрещённые ремни британского горца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/blackwatch.rsi
@@ -4153,12 +4069,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic walloon soldier uniform
+  name: "валлонский мундир наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_walloon_soldier_uniform
-  description: >-
-    A uniform of the spanish army. Often worn by swiss conscripts loyal to spain
-    it has a dark navy shirt with a red gilet with gold buttons.
+  description: "Тёмно-синий мундир и красный жилет с золотыми пуговицами. Его носили солдаты на службе Испании."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/walloon_guard.rsi
@@ -4171,10 +4085,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: EMR pattern uniform
+  name: "форма в камуфляже ЕМР"
   parent: ClothingUniformBase
   id: civ13_uniform_EMR_pattern_uniform
-  description: The standard Russian Federation Army camo uniform.
+  description: "Стандартная камуфляжная форма российской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/russian_emr.rsi
@@ -4187,12 +4101,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: patriotic american soldier uniform
+  name: "мундир американского патриота"
   parent: ClothingUniformBase
   id: civ13_uniform_patriotic_american_soldier_uniform
-  description: >-
-    A uniform of the american army. Often worn by proud defenders of freedom and
-    liberty it is blue with a white saltire and a red undershirt.
+  description: "Синий мундир, красная нижняя рубаха и белые перекрещённые ремни."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/patriot.rsi
@@ -4205,13 +4117,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic prussian soldier uniform
+  name: "прусский мундир наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_prussian_soldier_uniform
-  description: >-
-    A uniform of the prussian army. Often worn by professional troops it has a
-    navy shirt with red and white leather shoulder epaulettes with a assortment
-    of buttons.
+  description: "Тёмно-синий мундир с красно-белыми кожаными наплечниками и множеством пуговиц."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_prussian_army.rsi
@@ -4224,12 +4133,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic jaeger soldier uniform
+  name: "егерский мундир наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_jaeger_soldier_uniform
-  description: >-
-    A uniform of the joint austrian and german army. It has a dark green shirt
-    with black saltire, and a lime green collar and epaulletes.
+  description: "Тёмно-зелёный мундир с чёрными перекрещёнными ремнями, светло-зелёным воротником и эполетами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_jaegers.rsi
@@ -4242,12 +4149,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: napoleonic portuguese soldier uniform
+  name: "португальский мундир наполеоновской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_napoleonic_portuguese_soldier_uniform
-  description: >-
-    A uniform of the portuguese army. Often worn by pennisula soldiers, it has a
-    dark navy shirt with a white saltire.
+  description: "Тёмно-синий мундир с белыми перекрещёнными ремнями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_portuguese_army.rsi
@@ -4260,12 +4165,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: japanese soldier uniform
+  name: "мундир японского солдата"
   parent: ClothingUniformBase
   id: civ13_uniform_japanese_soldier_uniform
-  description: >-
-    A uniform of the imperial japanese army. It has a black buttoned shirt and
-    blue trousers with a white harness.
+  description: "Чёрная рубашка на пуговицах, синие брюки и белая портупея."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nap_satsuma.rsi
@@ -4278,10 +4181,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: merchant suit
+  name: "костюм имперского торговца"
   parent: ClothingUniformBase
   id: civ13_uniform_merchant_suit
-  description: A fancy imperial merchant suit.
+  description: "Нарядный костюм зажиточного торговца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/merchant_suit.rsi
@@ -4294,10 +4197,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: Ripped outfit
+  name: "потрёпанная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_Ripped_outfit
-  description: A set of blue jeans and brown hoodie.
+  description: "Синие джинсы и коричневое худи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/scavfit.rsi
@@ -4310,10 +4213,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: outfit
+  name: "повседневная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_outfit
-  description: A set of tan pants and a brown coat.
+  description: "Песочные брюки и коричневая куртка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/wastelander.rsi
@@ -4326,10 +4229,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: pioneer outfit
+  name: "одежда первопроходца"
   parent: ClothingUniformBase
   id: civ13_uniform_pioneer_outfit
-  description: A red shirt with leather trousers, commonly used among pioneers.
+  description: "Красная рубашка и кожаные штаны покорителя новых земель."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pioneer_outfit.rsi
@@ -4342,10 +4245,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: rancher outfit
+  name: "одежда скотовода"
   parent: ClothingUniformBase
   id: civ13_uniform_rancher_outfit
-  description: A blue shirt with light beige trousers.
+  description: "Синяя рубашка и светло-бежевые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rancher_outfit.rsi
@@ -4358,10 +4261,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: cowboy outfit
+  name: "одежда ковбоя"
   parent: ClothingUniformBase
   id: civ13_uniform_cowboy_outfit
-  description: A white shirt with leather trousers, worn among cowboys and ranchers.
+  description: "Белая рубашка и кожаные штаны, привычные ковбоям и скотоводам."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cowboy_outfit.rsi
@@ -4374,10 +4277,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: checkered outfit
+  name: "клетчатая рубашка и светлые брюки"
   parent: ClothingUniformBase
   id: civ13_uniform_checkered_outfit
-  description: A red-and-white checkered shirt and light beige trousers.
+  description: "Красно-белая рубашка в клетку и светло-бежевые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/checkered_outfit.rsi
@@ -4390,10 +4293,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: worker outfit
+  name: "рабочая одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_worker_outfit_1
-  description: A navy blue shirt with denim trousers.
+  description: "Тёмно-синяя рубашка и джинсовые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/worker_outfit.rsi
@@ -4406,10 +4309,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: texan shirt outfit
+  name: "техасский домашний наряд"
   parent: ClothingUniformBase
   id: civ13_uniform_texan_shirt_outfit
-  description: A white undershirt with beige briefs. it has texan style bowtie.
+  description: "Белая нижняя рубашка, бежевые трусы и галстук-боло в техасском стиле."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/texas.rsi
@@ -4422,10 +4325,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: lederhosen
+  name: "ледерхозен"
   parent: ClothingUniformBase
   id: civ13_uniform_lederhosen
-  description: The traditional south german attire.
+  description: "Традиционная одежда южной Германии с кожаными шортами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/lederhosen.rsi
@@ -4438,12 +4341,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: classy outlaw outfit
+  name: "нарядный костюм разбойника"
   parent: ClothingUniformBase
   id: civ13_uniform_classy_outlaw_outfit
-  description: >-
-    A well made black and red outfit with white arms and gold buttons. Often
-    worn by self styled leaders, always with a plan.
+  description: "Добротный чёрно-красный костюм с белыми рукавами и золотыми пуговицами. Такой носит человек, у которого всегда есть план."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/gang_leader.rsi
@@ -4456,13 +4357,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: outlaw outfit
+  name: "одежда разбойника"
   parent: ClothingUniformBase
   id: civ13_uniform_outlaw_outfit
-  description: >-
-    A blue shirt with blue denim trousers and white suspenders. Often worn by
-    people at arms length with the wrong side of the law, clothes sense is no
-    judicator of character however.
+  description: "Синяя рубашка, джинсы и белые подтяжки. По одежде о человеке судить трудно."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arthur_morgan.rsi
@@ -4475,10 +4373,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: bartender outfit
+  name: "одежда бармена"
   parent: ClothingUniformBase
   id: civ13_uniform_bartender_outfit
-  description: A stylish bartender outfit.
+  description: "Стильный рабочий наряд бармена."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bartender.rsi
@@ -4491,10 +4389,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black victorian shirt and vest
+  name: "чёрная рубашка и викторианский жилет"
   parent: ClothingUniformBase
   id: civ13_uniform_black_victorian_shirt_and_vest
-  description: A no nonsense black shirt & vest with gold buttons, made in victorian style.
+  description: "Чёрные рубашка и жилет с золотыми пуговицами в викторианском стиле."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/victorianvest.rsi
@@ -4507,12 +4405,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: black victorian shirt and red vest
+  name: "чёрная рубашка и красный жилет"
   parent: ClothingUniformBase
   id: civ13_uniform_black_victorian_shirt_and_red_vest
-  description: >-
-    A no nonsense black shirt & red vest with gold buttons, made in victorian
-    style.
+  description: "Красный жилет с золотыми пуговицами поверх чёрной рубашки. Фасон викторианской эпохи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/victorianredvest.rsi
@@ -4525,12 +4421,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: red victorian shirt and black vest
+  name: "красная рубашка и чёрный жилет"
   parent: ClothingUniformBase
   id: civ13_uniform_red_victorian_shirt_and_black_vest
-  description: >-
-    A no nonsense red shirt & black vest with gold buttons, made in victorian
-    style.
+  description: "Чёрный жилет с золотыми пуговицами поверх красной рубашки. Фасон викторианской эпохи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/victorianblred.rsi
@@ -4543,10 +4437,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: white shirt and black waistcoat
+  name: "белая рубашка и чёрный жилет"
   parent: ClothingUniformBase
   id: civ13_uniform_white_shirt_and_black_waistcoat
-  description: A no nonsense black waistcoat with white shirt.
+  description: "Строгий чёрный жилет поверх белой рубашки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/waistcoat.rsi
@@ -4558,12 +4452,10 @@
       cost: 5
       time: 11
 - type: entity
-  name: saloon dress outfit
+  name: "платье хозяйки салуна"
   parent: ClothingUniformBase
   id: civ13_uniform_saloon_dress_outfit
-  description: >-
-    A eye catching dress often worn by frontier damsels looking to drum up
-    business.
+  description: "Заметное платье для тех, кто хочет привлечь посетителей салуна."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dress_saloon.rsi
@@ -4576,12 +4468,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: cheongsam dress
+  name: "платье ципао"
   parent: ClothingUniformBase
   id: civ13_uniform_cheongsam_dress
-  description: >-
-    A tight fitting and attractive dress commmonly worn by women hailing from
-    the orient.
+  description: "Приталенное китайское платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cheongsam.rsi
@@ -4594,10 +4484,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: plain black dress
+  name: "простое чёрное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_plain_black_dress
-  description: A plain black dress for women to properly uphold their modesty
+  description: "Скромное чёрное платье без украшений."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dress_black.rsi
@@ -4610,12 +4500,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: white wedding dress
+  name: "белое свадебное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_white_wedding_dress
-  description: >-
-    A cermonial white wedding dress. Something old, something new, something
-    borrowed, something blue.
+  description: "Белое платье для свадьбы. Что-то старое, что-то новое, что-то взятое взаймы и что-то голубое."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bride_white.rsi
@@ -4628,10 +4516,10 @@
       material: Cloth
       time: 16
 - type: entity
-  name: victorian black dress
+  name: "чёрное викторианское платье"
   parent: ClothingUniformBase
   id: civ13_uniform_victorian_black_dress
-  description: A black dress for a lady, made in a victorian style.
+  description: "Чёрное женское платье викторианского фасона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/victorianblackdress.rsi
@@ -4644,10 +4532,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: neck length black dress
+  name: "закрытое чёрное платье"
   parent: ClothingUniformBase
   id: civ13_uniform_neck_length_black_dress
-  description: A prim and proper black dress, covers from neck to ankle.
+  description: "Строгое чёрное платье от шеи до щиколоток."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/victorian_dress.rsi
@@ -4659,10 +4547,10 @@
       cost: 4
       time: 7
 - type: entity
-  name: union uniform
+  name: "форма солдата Союза"
   parent: ClothingUniformBase
   id: civ13_uniform_union_uniform
-  description: A blue uniform worn by union soldiers.
+  description: "Синяя форма солдата армии Союза."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/union_uniform.rsi
@@ -4675,10 +4563,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: confederate uniform
+  name: "форма конфедерата"
   parent: ClothingUniformBase
   id: civ13_uniform_confederate_uniform
-  description: A grey uniform worn by confederate soldiers.
+  description: "Серая форма солдата Конфедерации."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
@@ -4691,10 +4579,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: confederate uniform
+  name: "форма конфедерата"
   parent: ClothingUniformBase
   id: civ13_uniform_confederate_uniform_1
-  description: A grey uniform worn by confederate soldiers.
+  description: "Серая форма солдата Конфедерации."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform1.rsi
@@ -4707,12 +4595,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: confederate uniform
+  name: "форма конфедерата с брюками Союза"
   parent: ClothingUniformBase
   id: civ13_uniform_confederate_uniform_1_2
-  description: >-
-    A grey uniform worn by confederate soldiers, however this one has union
-    pants.
+  description: "Серая форма солдата Конфедерации, но брюки от формы Союза."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/confederate_uniform2.rsi
@@ -4725,13 +4611,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: eccentric businessman outfit
+  name: "костюм эксцентричного богача"
   parent: ClothingUniformBase
   id: civ13_uniform_eccentric_businessman_outfit
-  description: >-
-    A cream jacket with white undershirt, the jacket and the shirt seem to be
-    sown into one piece for convenience and it has texan style bowtie. This
-    person probably has a lot of money..
+  description: "Кремовый пиджак, белая рубашка и техасский галстук-боло. Рубашка пришита к пиджаку для удобства. Владелец явно при деньгах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/doug_dimmadome.rsi
@@ -4744,10 +4627,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white tunic
+  name: "белая туника"
   parent: ClothingUniformBase
   id: civ13_uniform_white_tunic_1
-  description: A long white tunic, with golden trimmings.
+  description: "Длинная белая туника с золотой отделкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/white_tunic_long.rsi
@@ -4760,10 +4643,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: crusader tunic
+  name: "туника крестоносца"
   parent: ClothingUniformBase
   id: civ13_uniform_crusader_tunic
-  description: A white tunic with a red cross in the middle.
+  description: "Белая туника с красным крестом на груди."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/crusader1.rsi
@@ -4776,10 +4659,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: leather tunic
+  name: "кожаная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_leather_tunic
-  description: A light leather tunic.
+  description: "Лёгкая туника из кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/leather_tunic.rsi
@@ -4797,10 +4680,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: kilt
+  name: "килт"
   parent: ClothingUniformBase
   id: civ13_uniform_kilt
-  description: A green and tartan woolen kilt.
+  description: "Шерстяной килт с зелёным клетчатым узором."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/kilt.rsi
@@ -4812,10 +4695,10 @@
       cost: 2
       time: 10
 - type: entity
-  name: beggar clothing
+  name: "одежда нищего"
   parent: ClothingUniformBase
   id: civ13_uniform_beggar_clothing
-  description: Loosely stitched from patch cloth, contains deep pockets for spare change.
+  description: "Сшита из лоскутов, а в глубоких карманах найдётся место для мелочи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/beggar_clothing.rsi
@@ -4827,10 +4710,10 @@
       cost: 4
       time: 8
 - type: entity
-  name: blue-white tunic
+  name: "сине-белая туника"
   parent: ClothingUniformBase
   id: civ13_uniform_blue_white_tunic
-  description: A light blue and white tunic.
+  description: "Светлая туника голубого и белого цветов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/blue_tunic2.rsi
@@ -4843,10 +4726,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow-red tunic
+  name: "жёлто-красная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_yellow_red_tunic
-  description: A light red and yellow tunic.
+  description: "Лёгкая туника красного и жёлтого цветов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/red_tunic2.rsi
@@ -4859,10 +4742,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy arabic tunic
+  name: "нарядная арабская туника"
   parent: ClothingUniformBase
   id: civ13_uniform_fancy_arabic_tunic
-  description: A light fitting tunic with arabic motifs.
+  description: "Лёгкая туника с арабским орнаментом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arabw_tunic.rsi
@@ -4875,10 +4758,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: light brown tunic
+  name: "светло-коричневая туника"
   parent: ClothingUniformBase
   id: civ13_uniform_light_brown_tunic
-  description: A light, loose fitting tunic.
+  description: "Лёгкая свободная туника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
@@ -4891,12 +4774,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: emirate tunic
+  name: "туника эмира"
   parent: ClothingUniformBase
   id: civ13_uniform_emirate_tunic
-  description: >-
-    A loose fitting green tunic with arabic motifs and long sleeves. Often worn
-    by emirate rulers
+  description: "Свободная зелёная туника с длинными рукавами и арабским орнаментом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/emir_tunic.rsi
@@ -4909,10 +4790,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: light brown arabic tunic
+  name: "светло-коричневая арабская туника"
   parent: ClothingUniformBase
   id: civ13_uniform_light_brown_arabic_tunic
-  description: A light, loose fitting arabic tunic.
+  description: "Лёгкая свободная туника светло-коричневого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arab1.rsi
@@ -4925,10 +4806,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: light white arabic tunic
+  name: "лёгкая белая арабская туника"
   parent: ClothingUniformBase
   id: civ13_uniform_light_white_arabic_tunic
-  description: A light, loose fitting arabic tunic.
+  description: "Лёгкая свободная туника белого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arab2.rsi
@@ -4941,10 +4822,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: white arabic tunic
+  name: "белая арабская туника"
   parent: ClothingUniformBase
   id: civ13_uniform_white_arabic_tunic
-  description: A loose fitting arabic tunic.
+  description: "Просторная белая туника арабского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arab3.rsi
@@ -4957,10 +4838,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Wise Knight robes
+  name: "одеяние мудрого рыцаря"
   parent: ClothingUniformBase
   id: civ13_uniform_Wise_Knight_robes
-  description: A lightly darkened robe used by wise knights.
+  description: "Слегка потемневшее одеяние мудрого рыцаря."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/wise_knight.rsi
@@ -4973,10 +4854,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Arrogant Warrior robes
+  name: "одеяние заносчивого воина"
   parent: ClothingUniformBase
   id: civ13_uniform_Arrogant_Warrior_robes
-  description: A darkened robe used by upset warriors.
+  description: "Тёмное одеяние вспыльчивого воина."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/arrogant_warrior.rsi
@@ -4989,10 +4870,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: steppe wool tunic
+  name: "шерстяная туника степняка"
   parent: ClothingUniformBase
   id: civ13_uniform_steppe_wool_tunic
-  description: A brown tunic made out of wool. Often worn by nomads upon the great steppes.
+  description: "Коричневая шерстяная туника кочевника из бескрайней степи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/steppe_wool_tunic.rsi
@@ -5004,10 +4885,10 @@
       cost: 3
       time: 10
 - type: entity
-  name: count outfit
+  name: "графский наряд"
   parent: ClothingUniformBase
   id: civ13_uniform_count_outfit
-  description: A fancy count outfit.
+  description: "Роскошная одежда графа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/count_outfit.rsi
@@ -5020,10 +4901,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: purple renaissance clothing
+  name: "пурпурный наряд эпохи Возрождения"
   parent: ClothingUniformBase
   id: civ13_uniform_purple_renaissance_clothing
-  description: A baggy renaissance-style outfit.
+  description: "Просторный костюм в стиле Возрождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/renaissance.rsi
@@ -5036,12 +4917,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: doge outfit
+  name: "одеяние дожа"
   parent: ClothingUniformBase
   id: civ13_uniform_doge_outfit
-  description: >-
-    A gold embroidered baggy renaissance-style outfit. Often worn by republic
-    rulers over many petty merchantile aristocrats.
+  description: "Просторное одеяние с золотой вышивкой, достойное главы торговой республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/doge.rsi
@@ -5054,10 +4933,10 @@
       material: Cloth
       time: 14
 - type: entity
-  name: pontifical renaissance clothing
+  name: "папское одеяние эпохи Возрождения"
   parent: ClothingUniformBase
   id: civ13_uniform_pontifical_renaissance_clothing
-  description: A baggy renaissance-style outfit, with colored stripes.
+  description: "Просторное облачение с цветными полосами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/pontifical.rsi
@@ -5070,12 +4949,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: nun dress
+  name: "платье монахини"
   parent: ClothingUniformBase
   id: civ13_uniform_nun_dress
-  description: >-
-    A very modest nun dress. With a small cross around the neck, to aide
-    protection against temptation.
+  description: "Очень скромное платье с маленьким крестом на шее."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/nun.rsi
@@ -5088,12 +4965,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: black priest outfit
+  name: "чёрное облачение священника"
   parent: ClothingUniformBase
   id: civ13_uniform_black_priest_outfit
-  description: >-
-    A plain black outfit with a clerical white collar around the neck, often
-    worn by priests of organized religions.
+  description: "Простая чёрная одежда с белым священническим воротником."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/christian_priest.rsi
@@ -5106,12 +4981,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: green landschneckt uniform
+  name: "зелёный костюм ландскнехта"
   parent: ClothingUniformBase
   id: civ13_uniform_green_landschneckt_uniform
-  description: >-
-    A ornate and bright uniform often worn by elite mercenaries & central
-    european troops during the 15th century.
+  description: "Яркая форма наёмника Центральной Европы XV века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/landschneckt.rsi
@@ -5124,10 +4997,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: huipil
+  name: "уипиль"
   parent: ClothingUniformBase
   id: civ13_uniform_huipil
-  description: A light cloth, with blue trimmings.
+  description: "Лёгкая традиционная одежда с синей отделкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/huipil.rsi
@@ -5140,10 +5013,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: half huipil
+  name: "короткий уипиль"
   parent: ClothingUniformBase
   id: civ13_uniform_half_huipil
-  description: A light cloth, covering the lower part of the body. With red trimmings.
+  description: "Лёгкая тканевая одежда с красной отделкой, закрывающая нижнюю часть тела."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/halfhuipil.rsi
@@ -5156,10 +5029,10 @@
       material: Cloth
       time: 4
 - type: entity
-  name: dark hanfu
+  name: "тёмное ханьфу"
   parent: ClothingUniformBase
   id: civ13_uniform_dark_hanfu
-  description: A light, loose fitting hanfu.
+  description: "Лёгкое свободное ханьфу тёмного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dark_hanfu.rsi
@@ -5172,10 +5045,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: light artisan clothing
+  name: "светлая одежда ремесленника"
   parent: ClothingUniformBase
   id: civ13_uniform_light_artisan_clothing
-  description: A light, loose fitting bit of clothes.
+  description: "Лёгкая свободная рабочая одежда."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/artisan3.rsi
@@ -5188,10 +5061,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: artisan clothing
+  name: "одежда ремесленника"
   parent: ClothingUniformBase
   id: civ13_uniform_artisan_clothing
-  description: A light, loose fitting bit of clothes.
+  description: "Лёгкая свободная рабочая одежда."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/artisan1.rsi
@@ -5204,10 +5077,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: dark artisan clothing
+  name: "тёмная одежда ремесленника"
   parent: ClothingUniformBase
   id: civ13_uniform_dark_artisan_clothing
-  description: A light, loose fitting bit of clothes.
+  description: "Лёгкая свободная рабочая одежда тёмного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/artisan2.rsi
@@ -5220,10 +5093,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: haori
+  name: "хаори"
   parent: ClothingUniformBase
   id: civ13_uniform_haori
-  description: A light, loose fitting bit of clothes, worn in japan.
+  description: "Лёгкая свободная японская накидка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/haori_custom.rsi
@@ -5236,10 +5109,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: haori
+  name: "хаори"
   parent: ClothingUniformBase
   id: civ13_uniform_haori_1
-  description: A light, loose fitting bit of clothes, worn in japan.
+  description: "Лёгкая свободная японская накидка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/haori_samurai.rsi
@@ -5253,10 +5126,10 @@
       time: 5
 
 - type: entity
-  name: stormcloak curass
+  name: "кираса Братьев Бури"
   parent: ClothingUniformBase
   id: civ13_uniform_stormcloak_curass
-  description: A blue tabard over some leather armor with chainmail underneath.
+  description: "Синий табар поверх кожаного доспеха с кольчугой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/stormcloak.rsi
@@ -5274,10 +5147,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Ulfric Stormcloak's clothes
+  name: "одежда Ульфрика Буревестника"
   parent: ClothingUniformBase
   id: civ13_uniform_Ulfric_Stormcloaks_clothes
-  description: A suit of blue fine clothing over some trousers
+  description: "Добротная синяя одежда поверх брюк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ulfric.rsi
@@ -5298,10 +5171,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: whiterun guard curass
+  name: "кираса стражника Вайтрана"
   parent: ClothingUniformBase
   id: civ13_uniform_whiterun_guard_curass
-  description: An orange tabard over some leather armor with chainmail underneath.
+  description: "Оранжевый табар поверх кожаного доспеха с кольчугой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/whiterun.rsi
@@ -5322,10 +5195,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: imperial armor
+  name: "имперский доспех"
   parent: ClothingUniformBase
   id: civ13_uniform_imperial_armor
-  description: A red tunic with leather armor overtop.
+  description: "Красная туника под кожаным доспехом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tes13_imperial.rsi
@@ -5352,10 +5225,10 @@
         amount: 1
 
 - type: entity
-  name: Jarl Bolgruf's clothes
+  name: "одежда ярла Балгруфа"
   parent: ClothingUniformBase
   id: civ13_uniform_Jarl_Bolgrufs_clothes
-  description: A suit of fine clothing over some trousers
+  description: "Добротный наряд ярла с брюками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/bolgruf.rsi
@@ -5376,12 +5249,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: russian military outfit VSR 93
+  name: "форма в камуфляже ВСР-93"
   parent: ClothingUniformBase
   id: civ13_uniform_russian_military_outfit_VSR_93
-  description: >-
-    An outfit composed of the VSR93 camo pants and shirt, along with a high
-    waistbelt.
+  description: "Рубашка, брюки и высокий пояс в российском камуфляже ВСР-93."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/rus_vsr93.rsi
@@ -5394,10 +5265,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: russian OMON uniform
+  name: "форма российского ОМОНа"
   parent: ClothingUniformBase
   id: civ13_uniform_russian_OMON_uniform
-  description: An outfit designed and issued for the OMON forces of the Russian Federation.
+  description: "Служебная форма бойца российского ОМОНа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/omon.rsi
@@ -5410,10 +5281,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black tunic
+  name: "чёрная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_black_tunic
-  description: An all black tunic and trousers outfit.
+  description: "Чёрные туника и брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_black.rsi
@@ -5426,10 +5297,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sand-colored tunic
+  name: "песочная туника"
   parent: ClothingUniformBase
   id: civ13_uniform_sand_colored_tunic
-  description: A dark yellow, sand-colored tunic and trousers outfit.
+  description: "Тёмно-жёлтые туника и брюки песочного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand.rsi
@@ -5442,10 +5313,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sand-colored tunic with woodland camo trousers
+  name: "песочная туника с лесными камуфляжными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_sand_colored_tunic_with_woodland_camo_trousers
-  description: A dark yellow, sand-colored tunic with woodland camo trousers.
+  description: "Тёмно-жёлтая туника с брюками в лесном камуфляже."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_woodland.rsi
@@ -5458,10 +5329,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sand-colored uniform with desert camo trousers
+  name: "песочная форма с пустынными камуфляжными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_sand_colored_uniform_with_desert_camo_trousers
-  description: A dark yellow, sand-colored uniform with desert camo trousers.
+  description: "Песочная форма с брюками в пустынном камуфляже."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_dcu.rsi
@@ -5474,10 +5345,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: light brown uniform with green trousers
+  name: "светло-коричневая форма с зелёными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_light_brown_uniform_with_green_trousers
-  description: A light brown uniform with green trousers.
+  description: "Светло-коричневая форма с зелёными брюками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_sand_green.rsi
@@ -5490,10 +5361,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black tunic with desert camo trousers
+  name: "чёрная туника с пустынными камуфляжными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_black_tunic_with_desert_camo_trousers
-  description: A black tunic with desert camo trousers, worn by insurgent leaders.
+  description: "Чёрная туника командира повстанцев с брюками в пустынном камуфляже."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/insurgent_leader.rsi
@@ -5506,10 +5377,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: IDF olive uniform
+  name: "оливковая форма ЦАХАЛ"
   parent: ClothingUniformBase
   id: civ13_uniform_IDF_olive_uniform
-  description: The plain olive coloured uniform of the Israeli Defense Forces.
+  description: "Простая оливковая форма Армии обороны Израиля."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/idf_olive.rsi
@@ -5522,10 +5393,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: motorist outfit
+  name: "одежда автомобилиста"
   parent: ClothingUniformBase
   id: civ13_uniform_motorist_outfit
-  description: A casual jeans and white shirt combo.
+  description: "Джинсы и белая рубашка на каждый день."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/motorist.rsi
@@ -5538,12 +5409,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: war correspondent outfit
+  name: "одежда военного корреспондента"
   parent: ClothingUniformBase
   id: civ13_uniform_war_correspondent_outfit
-  description: >-
-    Casual brown trousers and a black shirt, perfect for running away from
-    gunfire.
+  description: "Коричневые брюки и чёрная рубашка. В них удобно убегать от обстрела."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/reporter.rsi
@@ -5556,12 +5425,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: punk outfit
+  name: "панковская одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_punk_outfit
-  description: >-
-    A rowdy alternative culture purple sleeveless shirt and purple trousers for
-    bringing down the establishment.
+  description: "Фиолетовые брюки и майка без рукавов для тех, кто спорит с системой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/punk.rsi
@@ -5574,10 +5441,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: paramedic uniform
+  name: "форма парамедика"
   parent: ClothingUniformBase
   id: civ13_uniform_paramedic_uniform
-  description: A uniform used by EMS workers.
+  description: "Служебная форма сотрудника скорой помощи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/paramedic.rsi
@@ -5590,10 +5457,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: firefighter uniform
+  name: "форма пожарного"
   parent: ClothingUniformBase
   id: civ13_uniform_firefighter_uniform
-  description: A uniform used by firefighters. Offers heat protection on the legs.
+  description: "Защищает ноги пожарного от жара."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/firefighter.rsi
@@ -5606,10 +5473,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shirt outfit
+  name: "коричневая рубашка с чёрными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_shirt_outfit_1
-  description: A brown shirt with black pants.
+  description: "Коричневая рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/detective1.rsi
@@ -5622,10 +5489,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shirt outfit
+  name: "синяя рубашка с чёрными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_shirt_outfit_1_2
-  description: A blue shirt with black pants.
+  description: "Синяя рубашка и чёрные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/detective2.rsi
@@ -5638,10 +5505,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shirt outfit
+  name: "чёрная рубашка с серыми брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_shirt_outfit_1_2_3
-  description: A black shirt with grey pants.
+  description: "Чёрная рубашка и серые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/detective3.rsi
@@ -5654,10 +5521,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: track pants
+  name: "спортивные брюки с рубашкой"
   parent: ClothingUniformBase
   id: civ13_uniform_track_pants
-  description: A shirt with tracksuit pants.
+  description: "Простая рубашка и брюки от спортивного костюма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/trackpants.rsi
@@ -5670,10 +5537,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tactical outfit
+  name: "тактическая форма"
   parent: ClothingUniformBase
   id: civ13_uniform_tactical_outfit_1
-  description: A outfit used by tactical units.
+  description: "Одежда для бойца тактического подразделения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tacti.rsi
@@ -5686,12 +5553,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tacticool hawaiian outfit
+  name: "гавайская рубашка спецназовца"
   parent: ClothingUniformBase
   id: civ13_uniform_tacticool_hawaiian_outfit
-  description: >-
-    Assorted surplus cammo trousers with a nice hawaiian shirt for all your
-    operating needs.
+  description: "Камуфляжные брюки из военных запасов и яркая гавайская рубашка. Всё, что нужно для операции со вкусом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tacticool_hawaiian_blue.rsi
@@ -5704,10 +5569,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: camouflage shirt with blue pants
+  name: "камуфляжная рубашка с синими брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_camouflage_shirt_with_blue_pants
-  description: A camouflage shirt with blue pants.
+  description: "Камуфляжная рубашка и синие брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen1.rsi
@@ -5720,10 +5585,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tanktop with camouflage pants
+  name: "майка с камуфляжными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_tanktop_with_camouflage_pants
-  description: A tanktop with camouflage pants.
+  description: "Простая майка и камуфляжные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen2.rsi
@@ -5736,10 +5601,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black shirt with camouflage pants
+  name: "чёрная рубашка с камуфляжными брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_black_shirt_with_camouflage_pants
-  description: A black shirt with camouflage pants.
+  description: "Чёрная рубашка и камуфляжные брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/boomerwaffen3.rsi
@@ -5752,10 +5617,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: modern shaman outfit
+  name: "одежда современного шамана"
   parent: ClothingUniformBase
   id: civ13_uniform_modern_shaman_outfit
-  description: A modern shaman outfit.
+  description: "Наряд шамана современного покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern_shaman.rsi
@@ -5768,10 +5633,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: ACU pattern uniform
+  name: "форма в камуфляже ACU"
   parent: ClothingUniformBase
   id: civ13_uniform_ACU_pattern_uniform
-  description: The standard Ukrainian Ground Forces camo uniform.
+  description: "Штатная камуфляжная форма сухопутных войск Украины."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ukraine_acu.rsi
@@ -5784,10 +5649,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: EMR pattern uniform
+  name: "форма в камуфляже ЕМР"
   parent: ClothingUniformBase
   id: civ13_uniform_EMR_pattern_uniform_1
-  description: The standard Russian Federation Army camo uniform.
+  description: "Стандартная камуфляжная форма российской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_vdv.rsi
@@ -5800,10 +5665,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: EMR desert pattern uniform
+  name: "форма в пустынном камуфляже ЕМР"
   parent: ClothingUniformBase
   id: civ13_uniform_EMR_desert_pattern_uniform
-  description: The standard Russian Federation Army camo uniform.
+  description: "Российская военная форма в пустынной расцветке ЕМР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/russian_emr_desert.rsi
@@ -5816,10 +5681,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Syrian Army uniform
+  name: "форма сирийской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Syrian_Army_uniform
-  description: Standard Uniform of the syrian army.
+  description: "Стандартная форма солдата сирийской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/syr_army.rsi
@@ -5832,10 +5697,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Free Syrian Army uniform
+  name: "форма Свободной сирийской армии"
   parent: ClothingUniformBase
   id: civ13_uniform_Free_Syrian_Army_uniform
-  description: Standard uniform used by the FSA forces.
+  description: "Форма бойца Свободной сирийской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/salv_army.rsi
@@ -5848,10 +5713,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: jeans with suspenders
+  name: "джинсы с подтяжками"
   parent: ClothingUniformBase
   id: civ13_uniform_jeans_with_suspenders
-  description: A pair of jeans secured by suspenders.
+  description: "Джинсы, закреплённые подтяжками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/warband1.rsi
@@ -5864,10 +5729,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: camo trousers and white sleeveless shirt
+  name: "камуфляжные брюки и белая майка"
   parent: ClothingUniformBase
   id: civ13_uniform_camo_trousers_and_white_sleeveless_shirt
-  description: A mix of woodland camoflage trousers and a white sleeveless shirt.
+  description: "Брюки в лесном камуфляже и белая майка без рукавов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/warband2.rsi
@@ -5880,10 +5745,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cadpat uniform
+  name: "форма в камуфляже CADPAT"
   parent: ClothingUniformBase
   id: civ13_uniform_cadpat_uniform_1
-  description: A canadian pattern uniform
+  description: "Канадская форма с камуфляжным рисунком CADPAT."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cad_pat.rsi
@@ -5896,10 +5761,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cadpat uniform
+  name: "форма в камуфляже CADPAT"
   parent: ClothingUniformBase
   id: civ13_uniform_cadpat_uniform_1_2
-  description: A canadian pattern uniform
+  description: "Канадская форма с камуфляжным рисунком CADPAT."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cad_pat_arid.rsi
@@ -5912,10 +5777,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: type 07 chinese uniform
+  name: "китайская форма «Тип 07»"
   parent: ClothingUniformBase
   id: civ13_uniform_type_07_chinese_uniform
-  description: The standard modern Chinese military uniform.
+  description: "Стандартная современная форма китайской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/type07.rsi
@@ -5928,10 +5793,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: floral shirt with light pants
+  name: "рубашка в цветочек со светлыми брюками"
   parent: ClothingUniformBase
   id: civ13_uniform_floral_shirt_with_light_pants
-  description: A pair of light pants with a red floral shirt.
+  description: "Красная рубашка с цветочным узором и светлые брюки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cartel1.rsi
@@ -5944,10 +5809,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: M93 DPM camo uniform
+  name: "форма в камуфляже M93 DPM"
   parent: ClothingUniformBase
   id: civ13_uniform_M93_DPM_camo_uniform
-  description: A DPM variant camo uniform used by the Dutch Army.
+  description: "Камуфляжная форма голландской армии в расцветке DPM."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/dutch_dpm.rsi
@@ -5960,10 +5825,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: leather loincloth
+  name: "кожаная набедренная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_leather_loincloth
-  description: A wrap of leather cloth, worn around the waist.
+  description: "Полоса кожи, обёрнутая вокруг бёдер."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/leatherloincloth1.rsi
@@ -5981,10 +5846,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: cotton loincloth
+  name: "хлопковая набедренная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_cotton_loincloth
-  description: An wrap of cotton loincloth, worn around the waist.
+  description: "Полоса хлопковой ткани, обёрнутая вокруг бёдер."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/loincloth1.rsi
@@ -5997,10 +5862,10 @@
       material: Cloth
       time: 4
 - type: entity
-  name: leaf skirt
+  name: "юбка из листьев"
   parent: ClothingUniformBase
   id: civ13_uniform_leaf_skirt
-  description: A wrap of leaves, worn around the waist.
+  description: "Листья, повязанные вокруг талии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt.rsi
@@ -6017,10 +5882,10 @@
       - id: MaterialStraw1
         amount: 1
 - type: entity
-  name: long leaf skirt
+  name: "длинная юбка из листьев"
   parent: ClothingUniformBase
   id: civ13_uniform_long_leaf_skirt
-  description: ""
+  description: "Длинная юбка из листьев, закреплённая на талии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/leaves_skirt_long.rsi
@@ -6032,10 +5897,10 @@
       cost: 6
       time: 14
 - type: entity
-  name: au naturel leaf covering
+  name: "прикрытие из листьев"
   parent: ClothingUniformBase
   id: civ13_uniform_au_naturel_leaf_covering
-  description: leaves arranged on the body to preserve modesty
+  description: "Несколько листьев, которые помогают сохранить приличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/adam.rsi
@@ -6047,10 +5912,10 @@
       cost: 2
       time: 2
 - type: entity
-  name: short leather loincloth
+  name: "короткая кожаная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_short_leather_loincloth
-  description: A wrap of leather cloth, worn around the waist.
+  description: "Короткая набедренная повязка из кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indian1.rsi
@@ -6068,10 +5933,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: long leather loincloth
+  name: "длинная кожаная набедренная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_long_leather_loincloth
-  description: A wrap of leather cloth, worn around the waist.
+  description: "Полоса кожи, обёрнутая вокруг пояса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indian2.rsi
@@ -6089,10 +5954,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: covering leather loincloth
+  name: "закрытая кожаная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_covering_leather_loincloth
-  description: A wrap of leather cloth, worn around the waist and the chest.
+  description: "Кожаная одежда, обёрнутая вокруг талии и груди."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indian3.rsi
@@ -6110,10 +5975,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: indian chief clothing
+  name: "одежда вождя коренных жителей"
   parent: ClothingUniformBase
   id: civ13_uniform_indian_chief_clothing
-  description: An elaborate wrap of leather cloth, worn by tribal chiefs.
+  description: "Богато украшенная кожаная одежда племенного вождя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indianchef.rsi
@@ -6131,10 +5996,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: pygmy shaman clothing
+  name: "одежда шамана пигмеев"
   parent: ClothingUniformBase
   id: civ13_uniform_pygmy_shaman_clothing
-  description: A white cloth, worn around the waist, painted with religious symbols.
+  description: "Белая поясная ткань с религиозными знаками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
@@ -6147,10 +6012,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: indian shaman clothing
+  name: "одежда шамана коренных жителей"
   parent: ClothingUniformBase
   id: civ13_uniform_indian_shaman_clothing
-  description: A white cloth, worn around the waist, painted with religious symbols.
+  description: "Белая поясная ткань с религиозными знаками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/indianshaman.rsi
@@ -6163,10 +6028,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: big leopard pelt
+  name: "большая шкура леопарда"
   parent: ClothingUniformBase
   id: civ13_uniform_big_leopard_pelt
-  description: A massive leopard pelt.
+  description: "Огромная шкура леопарда."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/giant_leopard_pelt.rsi
@@ -6179,12 +6044,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: slene cattle fur loincloth
+  name: "набедренная повязка из коровьей шкуры"
   parent: ClothingUniformBase
   id: civ13_uniform_slene_cattle_fur_loincloth
-  description: >-
-    A wrap of cattle fur tassles fashioned into a loincloth, often worn by the
-    zulu people.
+  description: "Повязка с кистями из коровьего меха, какую носят воины зулусов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/zulu_slene.rsi
@@ -6202,12 +6065,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: shirtless lizard pants
+  name: "облегающие брюки из чешуи ящерицы"
   parent: ClothingUniformBase
   id: civ13_uniform_shirtless_lizard_pants
-  description: >-
-    A tight fitting pair of lizard scale pants. When you're this on-point;
-    wearing a shirt would just cramp your style.
+  description: "В таких брюках рубашка уже ни к чему: весь стиль и так на виду."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/lizard_pants.rsi
@@ -6225,10 +6086,10 @@
       - id: MaterialLeather1
         amount: 1
 - type: entity
-  name: British uniform
+  name: "британская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_British_uniform
-  description: A khaki trench suit worn by soldiers of the British Army.
+  description: "Форма цвета хаки солдата британской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
@@ -6241,10 +6102,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Polish uniform
+  name: "польская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_Polish_uniform
-  description: A Polish uniform, used by the Polish Army.
+  description: "Форма военнослужащего польской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/trenchsuit.rsi
@@ -6257,10 +6118,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: French uniform
+  name: "французская военная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_French_uniform
-  description: A French light blue uniform, used by the French Army.
+  description: "Светло-голубая форма солдата французской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/ww1_french.rsi
@@ -6273,10 +6134,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Green Strap Bikini
+  name: "зелёное бикини на бретелях"
   parent: ClothingUniformBase
   id: civ13_uniform_Green_Strap_Bikini
-  description: Seems to be two piece green Bikini, the top is held up by straps.
+  description: "Раздельный зелёный купальник с верхом на бретелях."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/g_strapbikini.rsi
@@ -6289,12 +6150,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Green Band Bikini
+  name: "зелёное бикини с топом-повязкой"
   parent: ClothingUniformBase
   id: civ13_uniform_Green_Band_Bikini
-  description: >-
-    Seems to be two piece green Bikini, the top is held up by a tight horizontal
-    cloth.
+  description: "Раздельный зелёный купальник с облегающим верхом без бретелей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/g_bandbikini.rsi
@@ -6307,10 +6166,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Green Swimtrunks
+  name: "зелёные плавки"
   parent: ClothingUniformBase
   id: civ13_uniform_Green_Swimtrunks
-  description: Seems to be pants made for swiming in.
+  description: "Простые зелёные плавки для купания."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/g_swimtrunks.rsi
@@ -6323,10 +6182,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: football jersey
+  name: "футбольная майка"
   parent: ClothingUniformBase
   id: civ13_uniform_football_jersey
-  description: A football team's official jersey.
+  description: "Официальная майка футбольной команды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_custom.rsi
@@ -6339,10 +6198,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: stola
+  name: "стола"
   parent: ClothingUniformBase
   id: civ13_uniform_stola
-  description: A simple cloth stola, roman clothing for women.
+  description: "Простая тканевая стола — женская одежда Древнего Рима."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/fem_roman.rsi
@@ -6355,10 +6214,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: short loincloth
+  name: "короткая набедренная повязка"
   parent: ClothingUniformBase
   id: civ13_uniform_short_loincloth
-  description: A simple, small loincloth.
+  description: "Простая небольшая повязка на бёдра."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customspartan.rsi
@@ -6377,10 +6236,10 @@
         amount: 1
 
 - type: entity
-  name: shendyt
+  name: "схенти"
   parent: ClothingUniformBase
   id: civ13_uniform_shendyt
-  description: A kilt-like cloth used around the waist.
+  description: "Похожая на короткую юбку египетская одежда вокруг талии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customshendyt.rsi
@@ -6393,10 +6252,10 @@
       material: Cloth
       time: 4
 - type: entity
-  name: celtic trousers
+  name: "кельтские штаны"
   parent: ClothingUniformBase
   id: civ13_uniform_celtic_trousers
-  description: Thick cloth celtic trousers.
+  description: "Плотные тканевые штаны кельтского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customceltic.rsi
@@ -6409,10 +6268,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tunic
+  name: "туника"
   parent: ClothingUniformBase
   id: civ13_uniform_tunic
-  description: A simple cloth tunic, with a leather belt.
+  description: "Простая тканевая туника с кожаным поясом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customtunic.rsi
@@ -6425,10 +6284,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: arabic tunic
+  name: "арабская туника"
   parent: ClothingUniformBase
   id: civ13_uniform_arabic_tunic
-  description: A light cloth tunic, in arabic style.
+  description: "Лёгкая тканевая туника арабского покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customarabictunic.rsi
@@ -6441,10 +6300,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: renaissance outfit
+  name: "костюм эпохи Возрождения"
   parent: ClothingUniformBase
   id: civ13_uniform_renaissance_outfit
-  description: A renaissance-style outfit.
+  description: "Наряд в стиле Возрождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customren.rsi
@@ -6457,10 +6316,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: renaissance outfit
+  name: "папское одеяние эпохи Возрождения"
   parent: ClothingUniformBase
   id: civ13_uniform_renaissance_outfit_1
-  description: A renaissance-style pontifical outfit.
+  description: "Торжественный наряд священнослужителя в стиле Возрождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_pontifical.rsi
@@ -6473,10 +6332,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: dress
+  name: "платье"
   parent: ClothingUniformBase
   id: civ13_uniform_dress
-  description: A female dress.
+  description: "Простое женское платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customdress.rsi
@@ -6489,10 +6348,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: dress
+  name: "платье"
   parent: ClothingUniformBase
   id: civ13_uniform_dress_1
-  description: A female dress.
+  description: "Простое женское платье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custombuttonup_full.rsi
@@ -6505,10 +6364,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: tribal robe
+  name: "племенное одеяние"
   parent: ClothingUniformBase
   id: civ13_uniform_tribal_robe
-  description: A tribal robe.
+  description: "Традиционная одежда племени."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/tribalrobe.rsi
@@ -6521,10 +6380,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: uniform
+  name: "форма викторианской эпохи"
   parent: ClothingUniformBase
   id: civ13_uniform_uniform
-  description: A victorian Era uniform.
+  description: "Форменная одежда в стиле викторианской эпохи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/customuni.rsi
@@ -6537,10 +6396,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: camo uniform
+  name: "современная камуфляжная форма"
   parent: ClothingUniformBase
   id: civ13_uniform_camo_uniform
-  description: A modern era camouflaged uniform.
+  description: "Военная форма с современным маскировочным рисунком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/modern_camo_custom.rsi
@@ -6553,10 +6412,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: pyjamas
+  name: "пижама"
   parent: ClothingUniformBase
   id: civ13_uniform_pyjamas
-  description: Basic striped pyjamas.
+  description: "Простая полосатая пижама."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custompyjamas.rsi
@@ -6569,10 +6428,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: crinoine dress
+  name: "платье с кринолином"
   parent: ClothingUniformBase
   id: civ13_uniform_crinoine_dress
-  description: A laced dress.
+  description: "Нарядное платье со шнуровкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/crinoline_dress.rsi
@@ -6585,10 +6444,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: modern outfit
+  name: "современная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_modern_outfit_1
-  description: A generic outfit.
+  description: "Обычный повседневный комплект."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
@@ -6601,10 +6460,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: Facility uniform
+  name: "форма персонала комплекса"
   parent: ClothingUniformBase
   id: civ13_uniform_Facility_uniform
-  description: A sterile white uniform.
+  description: "Белая стерильная рабочая форма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_mod_full.rsi
@@ -6617,10 +6476,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: baggy modern outfit
+  name: "свободная современная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_baggy_modern_outfit
-  description: ""
+  description: "Просторный повседневный комплект."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_modbaggy_full.rsi
@@ -6633,10 +6492,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: colonial outfit
+  name: "колониальная одежда"
   parent: ClothingUniformBase
   id: civ13_uniform_colonial_outfit
-  description: ""
+  description: "Одежда колониального фасона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/custom_col_full.rsi
@@ -6649,10 +6508,10 @@
       material: Cloth
       time: 7
 - type: entity
-  name: track pants
+  name: "спортивные брюки с рубашкой"
   parent: ClothingUniformBase
   id: civ13_uniform_track_pants_1
-  description: A shirt with tracksuit pants.
+  description: "Простая рубашка и брюки от спортивного костюма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/trackpants_custom.rsi
@@ -6665,10 +6524,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cafr uniform
+  name: "форма КАФР"
   parent: ClothingUniformBase
   id: civ13_uniform_cafr_uniform
-  description: A camouflage uniform issued by the Central Asian Federal Republic.
+  description: "Камуфляжная форма Центральноазиатской Федеративной Республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/cafr_newiform.rsi
@@ -6681,10 +6540,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Unga Bunga jersey
+  name: "майка клуба «Унга-Бунга»"
   parent: ClothingUniformBase
   id: civ13_uniform_Unga_Bunga_jersey_1
-  description: A football jersey of the Unga Bunga United, U.B.U.
+  description: "Футбольная майка клуба «Унга-Бунга Юнайтед»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -6697,10 +6556,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: flamengo shirt with yellow shorts
+  name: "майка «Фламенго» с жёлтыми шортами"
   parent: ClothingUniformBase
   id: civ13_uniform_flamengo_shirt_with_yellow_shorts
-  description: A C.R. Flamengo football shirt, with yellow swimming trunks.
+  description: "Футбольная майка клуба «Фламенго» и жёлтые плавательные шорты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/flamengo.rsi
@@ -6713,10 +6572,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Blugoslavia goalkeeper jersey
+  name: "вратарская майка Блюгославии"
   parent: ClothingUniformBase
   id: civ13_uniform_Blugoslavia_goalkeeper_jersey
-  description: A football jersey of the goalkeeper of Blugoslavia Football Club, C.T.F.C.
+  description: "Футбольная майка вратаря клуба Блюгославии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_blue_gk.rsi
@@ -6729,10 +6588,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Redmenia jersey
+  name: "футбольная майка Редмении"
   parent: ClothingUniformBase
   id: civ13_uniform_Redmenia_jersey
-  description: A football jersey of the Redmenia United, U.B.U.
+  description: "Майка футбольного клуба «Редмения Юнайтед»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_red.rsi
@@ -6745,10 +6604,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Blugoslavia jersey
+  name: "футбольная майка Блюгославии"
   parent: ClothingUniformBase
   id: civ13_uniform_Blugoslavia_jersey
-  description: A football jersey of the Blugoslavia Football Club, C.T.F.C.
+  description: "Майка футбольного клуба Блюгославии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/uniforms/football_blue.rsi

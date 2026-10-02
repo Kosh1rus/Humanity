@@ -16,10 +16,10 @@
 # Cautery
 
 - type: entity
-  name: cautery
+  name: "прижигатель"
   id: Cautery
   parent: BaseToolSurgery
-  description: A surgical tool used to cauterize open wounds.
+  description: "Хирургический инструмент для прижигания открытых ран."
   components:
     - type: Sprite
       sprite: _Shitmed/Objects/Specific/Medical/Surgery/cautery.rsi
@@ -74,10 +74,10 @@
 # Scalpel
 
 - type: entity
-  name: scalpel
+  name: "скальпель"
   id: Scalpel
   parent: BaseToolSurgery
-  description: A surgical tool used to make incisions into flesh.
+  description: "Хирургический инструмент для разрезов тканей."
   components:
     - type: Sharp
       butcherDelayModifier: 1.5 # Butchering with a scalpel, regardless of the type, will take 50% longer
@@ -170,10 +170,10 @@
 # Retractor
 
 - type: entity
-  name: retractor
+  name: "ранорасширитель"
   id: Retractor
   parent: BaseToolSurgery
-  description: A surgical tool used to hold open incisions.
+  description: "Хирургический инструмент, удерживающий края разреза."
   components:
     - type: Sprite
       sprite: _Shitmed/Objects/Specific/Medical/Surgery/retractor.rsi
@@ -191,10 +191,10 @@
 
 # Hemostat
 - type: entity
-  name: hemostat
+  name: "кровоостанавливающий зажим"
   id: Hemostat
   parent: BaseToolSurgery # Shitmed Change
-  description: A surgical tool used to compress blood vessels to prevent bleeding.
+  description: "Хирургический зажим для сдавливания сосудов и остановки кровотечения."
   components:
     - type: Sprite
 
@@ -218,8 +218,8 @@
 - type: entity
   parent: BaseToolSurgery
   id: Bonesetter
-  name: bone setter
-  description: Used for setting bones back into place.
+  name: "костоправ"
+  description: "Инструмент для вправления костей."
   components:
     - type: Sprite
       sprite: _Shitmed/Objects/Specific/Medical/Surgery/bonesetter.rsi

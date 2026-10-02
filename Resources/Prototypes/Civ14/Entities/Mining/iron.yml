@@ -1,7 +1,8 @@
 - type: entity
   parent: OreBase
   id: IronOre
-  name: iron ore
+  name: "железная руда"
+  description: "Из неё можно выплавить железо."
   suffix: Full
   components:
     - type: Stack

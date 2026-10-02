@@ -128,10 +128,10 @@
               - civ13_caliber_a792x57_weak
 
 - type: entity
-  name: MG34
+  name: "пулемёт MG34"
   parent: civ13_mg_Maschinengewehr_13
   id: civ13_mg_MG34
-  description: "German light machinegun chambered in 7.92x57mm Mauser. An utterly devastating support weapon."
+  description: "Немецкий пулемёт под патрон 7,92 × 57 мм Mauser. Грозное оружие огневой поддержки."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mg34.rsi
@@ -351,10 +351,10 @@
             tags:
               - civ13_caliber_a65x50
 - type: entity
-  name: DP-28
+  name: "ручной пулемёт ДП-28"
   parent: BaseGunCivMG
   id: civ13_mg_DP_28
-  description: The DP-28 light machinegun. This one is in 7.62x54mmR.
+  description: "Советский ручной пулемёт под патрон 7,62 × 54 мм R."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/dp.rsi
@@ -493,10 +493,10 @@
               - civ13_caliber_a556x45
 
 - type: entity
-  name: RPD machine gun
+  name: "ручной пулемёт РПД"
   parent: BaseGunCivMG
   id: civ13_mg_RPD_machine_gun
-  description: A soviet machinegun chambered in 7.62x39 rounds.
+  description: "Советский ручной пулемёт под патрон 7,62 × 39 мм."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/rpd.rsi
@@ -541,12 +541,10 @@
       sprite: Civ14/Weapons/Guns/c6.rsi
 
 - type: entity
-  name: M60
+  name: "пулемёт M60"
   parent: BaseGunCivMG
   id: civ13_mg_M60
-  description: >-
-    An american machinegun chambered in 7.62x51mm NATO rounds. Heavy and handles
-    like a pig.
+  description: "Тяжёлый и неуклюжий американский пулемёт под патрон 7,62 × 51 мм НАТО."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/m60.rsi

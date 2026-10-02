@@ -1,8 +1,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingOrthodox1
-  name: "icon of Mary"
-  description: "An icon depicting Mary, mother of Jesus. Often used in Eastern Orthodox cultures."
+  name: "икона Богородицы"
+  description: "Икона Девы Марии, матери Иисуса. Такие иконы распространены в православии."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -10,8 +10,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingOrthodox2
-  name: "icon of Trinity"
-  description: "An icon depicting the saint Trinity. Often used in Eastern Orthodox cultures."
+  name: "икона Святой Троицы"
+  description: "Икона Святой Троицы, почитаемая в православии."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingOrthodox3
-  name: "icon of Archangel Michael"
-  description: "An icon depicting Archangel Michael. Often used in Eastern Orthodox cultures."
+  name: "икона архангела Михаила"
+  description: "Икона архангела Михаила, почитаемого в православии."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -29,8 +29,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv1
-  name: painting
-  description: "A large foamy wave crashes into the rocky shore. A bit of sunlight passes through the clouds, glistening on the sea surface and wet boulders."
+  name: картина
+  description: "Большая пенная волна разбивается о скалистый берег. Лучи солнца пробиваются сквозь облака и блестят на воде и мокрых валунах."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv2
-  name: painting
-  description: "A serene city street with a few people on a summer day. Two- and three-storey houses stand to the left and right, separated by a cobblestone road. A massive building with spires could be seen in the distance."
+  name: картина
+  description: "Тихая городская улица летним днём. По обеим сторонам мощёной дороги стоят двух- и трёхэтажные дома, вдали виднеется большое здание со шпилями."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -49,8 +49,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv3
-  name: painting
-  description: "A blazing sunset seen from a steep cliff above the sea."
+  name: картина
+  description: "Пылающий закат над морем, увиденный с высокого утёса."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -59,8 +59,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv4
-  name: painting
-  description: "A wooded mountain valley with a small pond at the clearing, where a group of horsemen could be seen. The mountains themselves loom farther ahead, obscured by a thin haze."
+  name: картина
+  description: "Лесистая горная долина. На поляне у небольшого пруда видны всадники, а горы вдали укрыты лёгкой дымкой."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -69,8 +69,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv5
-  name: painting
-  description: "A still life painting, depicting a table with a piece of white cloth, several fruits and a human skull."
+  name: картина
+  description: "Натюрморт: стол с белой тканью, несколькими фруктами и человеческим черепом."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -79,8 +79,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv6
-  name: painting
-  description: "A long-tailed bird with black, olive green and white plumage, resembling a magpie, perches on a tree branch, surrounded by white cherry blossoms."
+  name: картина
+  description: "Длиннохвостая птица с чёрным, оливковым и белым оперением, похожая на сороку, сидит на ветке среди белых цветов вишни."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -89,8 +89,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv7
-  name: painting
-  description: "A lone figure with a carrying pole on their shoulders stands under a tall pine on the sloping shore, gazing at the snow-peaked mountain across the strait. The sky is colored dark orange by the setting sun."
+  name: картина
+  description: "Под высокой сосной на пологом берегу стоит человек с коромыслом. Он смотрит через пролив на заснеженную гору. Заходящее солнце окрашивает небо в тёмно-оранжевый цвет."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -99,8 +99,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv8
-  name: painting
-  description: "A hilly landscape, where a large temple with red timber beams and sweeping roofs stands on the bank of a river."
+  name: картина
+  description: "Холмистый пейзаж: на берегу реки стоит большой храм с красными деревянными балками и загнутыми крышами."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -109,8 +109,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv9
-  name: painting
-  description: "A small encampment in the desert, with a few tents, several horses and loaded camels. A faraway river crosses the expanse of barren dunes."
+  name: картина
+  description: "Небольшой лагерь среди пустыни: несколько шатров, лошади и навьюченные верблюды. Вдали среди голых дюн течёт река."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -119,8 +119,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv10
-  name: painting
-  description: "A barque at sea, lit by the full moon."
+  name: картина
+  description: "Парусный барк в море под светом полной луны."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -129,8 +129,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv11
-  name: painting
-  description: "A famous painting with a starry sky."
+  name: картина
+  description: "Знаменитая картина со звёздным небом."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -139,8 +139,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv12
-  name: painting
-  description: "An arid desert, with some tents in the middle."
+  name: картина
+  description: "Засушливая пустыня с несколькими шатрами."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -149,8 +149,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingCiv13
-  name: painting
-  description: "A still life."
+  name: картина
+  description: "Натюрморт."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -159,8 +159,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingHitler
-  name: "Portrait of Hitler"
-  description: "A portrait of Hitler."
+  name: "Портрет Гитлера"
+  description: "Портрет Гитлера."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -169,8 +169,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingLenin
-  name: "Portrait of Lenin"
-  description: "A portrait of Lenin."
+  name: "Портрет Ленина"
+  description: "Портрет Ленина."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -179,8 +179,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingStalin
-  name: "Portrait of Stalin"
-  description: "A portrait of Stalin."
+  name: "Портрет Сталина"
+  description: "Портрет Сталина."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -189,8 +189,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingBrezhnev
-  name: "Portrait of Brezhnev"
-  description: "A portrait of Brezhnev."
+  name: "Портрет Брежнева"
+  description: "Портрет Брежнева."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -199,8 +199,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingSokolov
-  name: "Portrait of Marshal Sokolov"
-  description: "A portrait of Marshal Sokolov."
+  name: "Портрет маршала Соколова"
+  description: "Портрет маршала Соколова."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -209,8 +209,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingKarmal
-  name: "Portrait of Babrak Karmal"
-  description: "A portrait of Babrak Karmal."
+  name: "Портрет Бабрака Кармаля"
+  description: "Портрет Бабрака Кармаля."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -219,8 +219,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingHirohito
-  name: "Portrait of Hirohito"
-  description: "A portrait of Hirohito."
+  name: "Портрет Хирохито"
+  description: "Портрет Хирохито."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -229,8 +229,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingKinggeorgev
-  name: "Portrait of King George V"
-  description: "A portrait of King George V."
+  name: "Портрет короля Георга V"
+  description: "Портрет короля Георга V."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -239,8 +239,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingKhalifAli
-  name: "Portrait of Khalif Ali"
-  description: "A portrait of Khalif Ali."
+  name: "Портрет халифа Али"
+  description: "Портрет халифа Али."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -248,8 +248,8 @@
 - type: entity
   parent: PaintingBase
   id: PaintingKhalifAli2
-  name: "Portrait of Khalif Ali"
-  description: "A portrait of Khalif Ali."
+  name: "Портрет халифа Али"
+  description: "Портрет халифа Али."
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseWall
   id: StrawWall
-  name: straw wall
-  description: A basic wall made of straw and dry leaves. Burns easily.
+  name: соломенная стена
+  description: Простая стена из соломы и сухих листьев. Легко загорается.
   components:
     - type: MeleeSound
       soundGroups:
@@ -49,8 +49,8 @@
 - type: entity
   parent: BaseWall
   id: DirtWall
-  name: dirt wall
-  description: A basic wall made of dried mud bricks.
+  name: глинобитная стена
+  description: Простая стена из высушенных глиняных кирпичей.
   components:
     - type: MeleeSound
       soundGroups:
@@ -95,8 +95,8 @@
 - type: entity
   parent: BaseWall
   id: ClayWall
-  name: clay wall
-  description: A wall made of fired clay bricks.
+  name: стена из обожжённой глины
+  description: Стена из кирпичей обожжённой глины.
   components:
     - type: MeleeSound
       soundGroups:
@@ -137,8 +137,8 @@
 - type: entity
   parent: BaseWall
   id: LogWallIndestructible
-  name: log wall
-  description: A wall made of stacked hardwood logs. For that rustic feel.
+  name: бревенчатая стена
+  description: Стена из уложенных друг на друга брёвен твёрдой древесины.
   suffix: indestructible
   components:
     - type: MeleeSound
@@ -160,8 +160,8 @@
 - type: entity
   parent: LogWallIndestructible
   id: LogWall
-  name: log wall
-  description: A wall made of stacked hardwood logs. For that rustic feel.
+  name: бревенчатая стена
+  description: Стена из уложенных друг на друга брёвен твёрдой древесины.
   suffix: ""
   components:
     - type: Damageable
@@ -194,8 +194,8 @@
 - type: entity
   parent: BaseWall
   id: MedievalWall
-  name: medieval wall
-  description: A medieval wood and lime washed plaster wall.
+  name: средневековая стена
+  description: Деревянная стена, оштукатуренная и побелённая известью.
   components:
     - type: MeleeSound
       soundGroups:
@@ -243,8 +243,8 @@
 - type: entity
   parent: BaseWall
   id: StoneBlockWallIndestructible
-  name: stone block wall
-  description: An ancient wall made of stacked stone blocks.
+  name: стена из каменных блоков
+  description: Стена древней кладки из каменных блоков.
   suffix: indestructible
   components:
     - type: Tag
@@ -261,8 +261,8 @@
 - type: entity
   parent: StoneBlockWallIndestructible
   id: StoneBlockWall
-  name: stone block wall
-  description: An ancient wall made of stacked stone blocks.
+  name: стена из каменных блоков
+  description: Стена древней кладки из каменных блоков.
   suffix: ""
   components:
     - type: Destructible
@@ -284,8 +284,8 @@
 - type: entity
   parent: StoneBlockWall
   id: MayanStoneWall
-  name: mayan stone wall
-  description: A Mayan-style stone wall.
+  name: каменная стена майя
+  description: Каменная стена в стиле майя.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/mayan.rsi
@@ -306,8 +306,8 @@
 - type: entity
   parent: StoneBlockWallIndestructible
   id: StoneBrickWallIndestructible
-  name: stone brick wall
-  description: A wall made of well-stacked stone bricks.
+  name: стена из каменного кирпича
+  description: Стена из аккуратно уложенного каменного кирпича.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/new_stonebrick.rsi
@@ -320,8 +320,8 @@
 - type: entity
   parent: StoneBlockWall
   id: StoneBrickWall
-  name: stone brick wall
-  description: A wall made of well-stacked stone bricks.
+  name: стена из каменного кирпича
+  description: Стена из аккуратно уложенного каменного кирпича.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/new_stonebrick.rsi
@@ -342,8 +342,8 @@
 - type: entity
   parent: StoneBlockWall
   id: MarbleBlockWall
-  name: marble block wall
-  description: An ancient wall made of stacked marble blocks.
+  name: мраморная стена
+  description: Стена древней кладки из мраморных блоков.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/marble_block_wall.rsi
@@ -364,8 +364,8 @@
 - type: entity
   parent: StoneBlockWallIndestructible
   id: FortressBrickWallIndestructible
-  name: fortress stone wall
-  description: A strong, reinforced stone brick wall.
+  name: крепостная каменная стена
+  description: Прочная укреплённая стена из каменного кирпича.
   suffix: indestructible
   components:
     - type: Sprite
@@ -379,8 +379,8 @@
 - type: entity
   parent: StoneBlockWall
   id: FortressBrickWall
-  name: fortress stone wall
-  description: A strong, reinforced stone brick wall.
+  name: крепостная каменная стена
+  description: Прочная укреплённая стена из каменного кирпича.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
@@ -408,8 +408,8 @@
 - type: entity
   parent: StoneBlockWall
   id: RomanStoneBrickWall
-  name: roman stone wall
-  description: A Roman-style stone wall.
+  name: римская каменная стена
+  description: Каменная стена в римском стиле.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/roman.rsi
@@ -429,8 +429,8 @@
 - type: entity
   parent: StoneBlockWall
   id: GrecianStoneBrickWall
-  name: grecian stone wall
-  description: A Greek-style stone wall.
+  name: греческая каменная стена
+  description: Каменная стена в древнегреческом стиле.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/grecian.rsi
@@ -451,8 +451,8 @@
 - type: entity
   parent: BaseWall
   id: SandstoneBlockWallIndestructible
-  name: sandstone block wall
-  description: An ancient wall made of stacked sandstone blocks.
+  name: стена из песчаника
+  description: Стена древней кладки из блоков песчаника.
   suffix: indestructible
   components:
     - type: Tag
@@ -469,8 +469,8 @@
 - type: entity
   parent: SandstoneBlockWallIndestructible
   id: SandstoneBlockWall
-  name: sandstone block wall
-  description: An ancient wall made of stacked sandstone blocks.
+  name: стена из песчаника
+  description: Стена древней кладки из блоков песчаника.
   suffix: ""
   components:
     - type: Destructible
@@ -492,8 +492,8 @@
 - type: entity
   parent: SandstoneBlockWall
   id: EgyptianSandstoneBrickWall
-  name: egyptian sandstone wall
-  description: An Egyptian-style stone wall.
+  name: египетская стена из песчаника
+  description: Стена из песчаника в египетском стиле.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/egyptian.rsi
@@ -513,8 +513,8 @@
 - type: entity
   parent: SandstoneBlockWallIndestructible
   id: SandstoneBrickWallIndestructible
-  name: sandstone brick wall
-  description: A wall made of well-stacked sandstone bricks.
+  name: стена из песчаникового кирпича
+  description: Стена из аккуратно уложенного песчаникового кирпича.
   suffix: indestructible
   components:
     - type: Sprite
@@ -528,8 +528,8 @@
 - type: entity
   parent: SandstoneBlockWall
   id: SandstoneBrickWall
-  name: sandstone brick wall
-  description: A wall made of well-stacked sandstone bricks.
+  name: стена из песчаникового кирпича
+  description: Стена из аккуратно уложенного песчаникового кирпича.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
@@ -550,8 +550,8 @@
 - type: entity
   parent: SandstoneBlockWallIndestructible
   id: RedSandstoneBlockWallIndestructible
-  name: red sandstone block wall
-  description: A wall made of red sandstone blocks.
+  name: стена из красного песчаника
+  description: Стена из блоков красного песчаника.
   suffix: indestructible
   components:
     - type: Sprite
@@ -565,8 +565,8 @@
 - type: entity
   parent: SandstoneBlockWall
   id: RedSandstoneBlockWall
-  name: red sandstone block wall
-  description: A wall made of red sandstone blocks.
+  name: стена из красного песчаника
+  description: Стена из блоков красного песчаника.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
@@ -587,8 +587,8 @@
 - type: entity
   parent: SandstoneBlockWallIndestructible
   id: FortressSandstoneBrickWallIndestructible
-  name: fortress sandstone wall
-  description: A fortress wall made of dark sandstone bricks.
+  name: крепостная стена из песчаника
+  description: Крепостная стена из кирпича тёмного песчаника.
   suffix: indestructible
   components:
     - type: Sprite
@@ -602,8 +602,8 @@
 - type: entity
   parent: SandstoneBlockWall
   id: FortressSandstoneBrickWall
-  name: fortress sandstone wall
-  description: A fortress wall made of dark sandstone bricks.
+  name: крепостная стена из песчаника
+  description: Крепостная стена из кирпича тёмного песчаника.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
@@ -632,9 +632,9 @@
 - type: entity
   id: WallRockIndestructible
   parent: BaseWall
-  name: rock
+  name: скала
   suffix: indestructible
-  description: This wall cannot be destroyed.
+  description: Эту стену невозможно разрушить.
   components:
     - type: Transform
       noRot: true
@@ -663,9 +663,9 @@
 - type: entity
   id: WallRockSandIndestructible
   parent: WallRockIndestructible
-  name: rock
+  name: скала
   suffix: indestructible
-  description: This wall cannot be destroyed.
+  description: Эту стену невозможно разрушить.
   components:
     - type: Transform
       noRot: true
@@ -694,9 +694,9 @@
 - type: entity
   id: WallRockSand2Indestructible
   parent: WallRockIndestructible
-  name: rock
+  name: скала
   suffix: indestructible
-  description: This wall cannot be destroyed.
+  description: Эту стену невозможно разрушить.
   components:
     - type: Transform
       noRot: true
@@ -725,8 +725,8 @@
 - type: entity
   parent: BaseWall
   id: AztecWall
-  name: aztec wall
-  description: A wood wall in the Aztec style.
+  name: ацтекская стена
+  description: Деревянная стена в ацтекском стиле.
   components:
     - type: MeleeSound
       soundGroups:
@@ -773,8 +773,8 @@
 - type: entity
   parent: BaseWall
   id: NordicWall
-  name: nordic wall
-  description: A wood wall in the Nordic european style.
+  name: северная деревянная стена
+  description: Деревянная стена в североевропейском стиле.
   components:
     - type: MeleeSound
       soundGroups:
@@ -821,8 +821,8 @@
 - type: entity
   parent: BaseWall
   id: ConcreteWallIndestructible
-  name: concrete wall
-  description: A modern, sturdy concrete wall.
+  name: бетонная стена
+  description: Прочная современная стена из бетона.
   suffix: indestructible
   components:
     - type: Tag
@@ -839,8 +839,8 @@
 - type: entity
   parent: ConcreteWallIndestructible
   id: ConcreteWall
-  name: concrete wall
-  description: A modern, sturdy concrete wall.
+  name: бетонная стена
+  description: Прочная современная стена из бетона.
   suffix: ""
   components:
     - type: Damageable
@@ -857,8 +857,8 @@
 - type: entity
   parent: BaseWall
   id: OldBrickWallIndestructible
-  name: brick wall
-  description: A classic red brick wall.
+  name: кирпичная стена
+  description: Классическая стена из красного кирпича.
   suffix: indestructible
   components:
     - type: Tag
@@ -875,8 +875,8 @@
 - type: entity
   parent: OldBrickWallIndestructible
   id: OldBrickWall
-  name: brick wall
-  description: A classic red brick wall.
+  name: кирпичная стена
+  description: Классическая стена из красного кирпича.
   suffix: ""
   components:
     - type: Damageable

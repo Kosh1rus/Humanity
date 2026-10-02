@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseTree
   id: TreeAcacia
-  name: acacia tree
-  description: A large savanna tree.
+  name: "акация"
+  description: "Крупное дерево саванны."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: TreeAcacia
   id: TreeAcaciaDead
-  name: dead acacia tree
-  description: A large savanna tree. This one is dead.
+  name: "мёртвая акация"
+  description: "Крупное дерево саванны. Эта акация погибла."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_dead.rsi
@@ -29,8 +29,8 @@
 - type: entity
   parent: BaseTree
   id: TreePalm
-  name: palm tree
-  description: A tall palm tree.
+  name: "пальма"
+  description: "Высокая пальма."
   components:
     - type: Sprite
       sprite: Civ14/Flora/palms.rsi
@@ -87,8 +87,8 @@
 - type: entity
   parent: TreePalm
   id: TreePalmDead
-  name: dead palm tree
-  description: A tall palm tree. This one is dead.
+  name: "сухая пальма"
+  description: "Высокая пальма, которая уже погибла."
   components:
     - type: Sprite
       sprite: Civ14/Flora/palms.rsi

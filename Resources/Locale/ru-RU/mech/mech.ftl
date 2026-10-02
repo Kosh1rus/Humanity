@@ -1,0 +1,14 @@
+mech-verb-enter = Сесть в меха
+mech-verb-exit = Извлечь пилота
+mech-equipment-begin-install = Устанавливается оборудование: {THE($item)}...
+mech-equipment-finish-install = Оборудование установлено: {THE($item)}.
+mech-no-enter = Вы не можете управлять этим мехом.
+mech-eject-pilot-alert = {$user} вытаскивает пилота из меха {$item}!
+mech-equipment-select-popup = Выбрано оборудование: {$item}.
+mech-equipment-select-none-popup = Оборудование не выбрано.
+mech-ui-open-verb = Открыть панель управления
+mech-menu-title = Панель управления мехом
+mech-integrity-display = Прочность: {$amount}%
+mech-energy-display = Заряд: {$amount}%
+mech-energy-missing = Заряд: НЕТ
+mech-slot-display = Свободных слотов: {$amount}

@@ -1,8 +1,8 @@
 # Yes we have decals for this, but you cannot hide under a decal can you???
 - type: entity
-  name: tall grass
+  name: высокая трава
   id: WildPlantTallGrass
-  description: A patch of tall grass. Looks like a decent hiding spot.
+  description: Густая высокая трава. Похоже, здесь можно спрятаться.
   components:
     - type: Sprite
       sprite: Civ14/Flora/bushes_dry.rsi
@@ -30,7 +30,7 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
 - type: entity
-  name: tall grass
+  name: высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrass2
   components:
@@ -39,7 +39,7 @@
       state: tall_grass_4
       drawdepth: Overdoors
 - type: entity
-  name: tall grass
+  name: высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrass3
   components:
@@ -49,7 +49,7 @@
       drawdepth: Overdoors
 
 - type: entity
-  name: dry tall grass
+  name: сухая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDry
   components:
@@ -59,7 +59,7 @@
       drawdepth: Overdoors
 
 - type: entity
-  name: dry tall grass
+  name: сухая высокая трава
   parent: WildPlantTallGrassDry
   id: WildPlantTallGrassDry2
   components:
@@ -69,7 +69,7 @@
       drawdepth: Overdoors
 
 - type: entity
-  name: dead tall grass
+  name: мёртвая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead2
   components:
@@ -78,7 +78,7 @@
       state: dead_tall_grass_4
       drawdepth: Overdoors
 - type: entity
-  name: dead tall grass
+  name: мёртвая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead3
   components:
@@ -87,7 +87,7 @@
       state: dead_tall_grass_5
       drawdepth: Overdoors
 - type: entity
-  name: dead tall grass
+  name: мёртвая высокая трава
   parent: WildPlantTallGrass
   id: WildPlantTallGrassDead
   components:

@@ -1,8 +1,8 @@
 - type: entity
-  name: puddle
+  name: лужа
   id: PuddleWater
   suffix: Empty
-  description: A puddle of water. You can drink from it if you are desperate.
+  description: Лужа воды. Если совсем прижмёт, из неё можно попить.
   placement:
     mode: SnapgridCenter
   components:

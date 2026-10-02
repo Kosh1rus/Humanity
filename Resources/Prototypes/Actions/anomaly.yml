@@ -1,7 +1,7 @@
 - type: entity
   id: ActionAnomalyPulse
-  name: Anomaly pulse
-  description: Release a pulse of energy of your abnormal nature
+  name: Импульс аномалии
+  description: Высвободить импульс энергии, порождённый вашей аномальной природой.
   components:
   - type: InstantAction
     icon: Structures/Specific/anomaly.rsi/anom1.png

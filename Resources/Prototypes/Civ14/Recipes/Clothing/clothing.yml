@@ -1,76 +1,76 @@
 - type: construction
-  name: leather loincloth
+  name: "кожаная набедренная повязка"
   id: LeatherLoincloth
   graph: LeatherLoincloth
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple leather loincloth.
+  description: "Простая набедренная повязка из кожи."
   icon: { sprite: Civ14/Clothing/exported/uniforms/leatherloincloth1.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: leather sandals
+  name: "кожаные сандалии"
   id: LeatherSandals
   graph: LeatherSandals
   startNode: start
   targetNode: leathersandals
   category: construction-category-clothing
-  description: A pair of simple, thin leather strap sandals. Covers up to the lower foot.
+  description: "Простые сандалии из тонких кожаных ремешков. Закрывают только ступни."
   icon: { sprite: Civ14/Clothing/exported/shoes/flipflops.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: bone helmet
+  name: "костяной шлем"
   id: BoneHelmet
   graph: BoneHelmet
   startNode: start
   targetNode: bonehelmet
   category: construction-category-clothing
-  description: A helmet made of bones.
+  description: "Шлем, собранный из костей."
   icon: { sprite: Civ14/Clothing/exported/hats/bone_helmet.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: leather cap
+  name: "кожаная шапка"
   id: LeatherCap
   graph: LeatherCap
   startNode: start
   targetNode: leathercap
   category: construction-category-clothing
-  description: A cap made of leather.
+  description: "Простая шапка из кожи."
   icon: { sprite: Civ14/Clothing/exported/hats/roundcap_hat.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: bone armor
+  name: "костяной доспех"
   id: BoneArmor
   graph: BoneArmor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A spooky armor, made of assorted bones.
+  description: "Жутковатый доспех, собранный из разных костей."
   icon: { sprite: Civ14/Clothing/exported/suits/bonearmor.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: quiver
+  name: "колчан"
   id: ClothingBeltQuiver
   graph: Quiver
   startNode: start
   targetNode: Quiver
   category: construction-category-clothing
-  description: Can hold up to 15 arrows, and fits snug around your waist.
+  description: "Крепится на поясе и вмещает до 15 стрел."
   icon: { sprite: Clothing/Belt/quiver.rsi, state: icon }
   objectType: Item
   agemin: 0

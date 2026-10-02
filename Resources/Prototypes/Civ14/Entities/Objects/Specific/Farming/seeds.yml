@@ -20,7 +20,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: WheatSeedsCiv
-  name: "wheat seeds"
+  name: "семена пшеницы"
+  description: "Можно посадить, чтобы вырастить пшеницу."
   components:
     - type: Seed
       seedId: wheat
@@ -32,7 +33,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: BarleySeedsCiv
-  name: "barley seeds"
+  name: "семена ячменя"
+  description: "Можно посадить, чтобы вырастить ячмень."
   components:
     - type: Seed
       seedId: barley
@@ -44,7 +46,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: CornSeedsCiv
-  name: "corn seeds"
+  name: "семена кукурузы"
+  description: "Можно посадить, чтобы вырастить кукурузу."
   components:
     - type: Seed
       seedId: corn
@@ -56,7 +59,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: RiceSeedsCiv
-  name: "rice seeds"
+  name: "семена риса"
+  description: "Можно посадить, чтобы вырастить рис."
   components:
     - type: Seed
       seedId: rice
@@ -68,7 +72,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: PotatoSeedsCiv
-  name: "potato seeds"
+  name: "семенной картофель"
+  description: "Клубни для посадки картофеля."
   components:
     - type: Seed
       seedId: potato
@@ -80,7 +85,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: HempSeedsCiv
-  name: "hemp seeds"
+  name: "семена конопли"
+  description: "Можно посадить, чтобы вырастить коноплю."
   components:
     - type: Seed
       seedId: hemp
@@ -92,7 +98,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: HealingHerbsSeedsCiv
-  name: "healing herbs seeds"
+  name: "семена лекарственных трав"
+  description: "Можно посадить, чтобы вырастить лекарственные травы."
   components:
     - type: Seed
       seedId: HealingHerbs
@@ -104,7 +111,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: ComfreySeedsCiv
-  name: "comfrey seeds"
+  name: "семена окопника"
+  description: "Можно посадить, чтобы вырастить окопник."
   components:
     - type: Seed
       seedId: ComfreyHerbs
@@ -116,7 +124,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: YarrowSeedsCiv
-  name: "yarrow seeds"
+  name: "семена тысячелистника"
+  description: "Можно посадить, чтобы вырастить тысячелистник."
   components:
     - type: Seed
       seedId: YarrowHerbs
@@ -128,7 +137,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: ElderflowerSeedsCiv
-  name: "elderflower seeds"
+  name: "семена бузины"
+  description: "Можно посадить, чтобы вырастить бузину."
   components:
     - type: Seed
       seedId: ElderflowerHerbs
@@ -140,7 +150,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: MilkThistleSeedsCiv
-  name: "milk thistle seeds"
+  name: "семена расторопши"
+  description: "Можно посадить, чтобы вырастить расторопшу."
   components:
     - type: Seed
       seedId: MilkThistleHerbs
@@ -152,7 +163,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: AloeSeedsCiv
-  name: "aloe vera seeds"
+  name: "семена алоэ"
+  description: "Можно посадить, чтобы вырастить алоэ."
   components:
     - type: Seed
       seedId: aloe
@@ -164,7 +176,8 @@
 - type: entity
   parent: SeedBaseCiv
   id: PoppySeedsCiv
-  name: "poppy seeds"
+  name: "семена мака"
+  description: "Можно посадить, чтобы вырастить мак."
   components:
     - type: Seed
       seedId: poppy

@@ -1,0 +1,61 @@
+
+cmd-roleban-desc = Запрещает пользователю играть на роли
+
+cmd-roleban-hint-1 = <имя или ID игрока>
+cmd-roleban-hint-2 = <должность>
+cmd-roleban-hint-3 = <причина>
+cmd-roleunban-hint-1 = <ID запрета роли>
+cmd-rolebanlist-hint-1 = <имя или ID игрока>
+cmd-rolebanlist-hint-2 = [включить снятые запреты]
+cmd-roleban-existing = Для {$target} уже действует запрет на роль {$role}.
+
+cmd-roleban-help = Использование: roleban <name or user ID> <job> <reason> [продолжительность в минутах, не указывать или 0 для навсегда]
+
+
+cmd-roleban-hint-4 = [продолжительность в минутах, не указывать или 0 для навсегда]
+
+cmd-roleban-hint-5 = [тяжесть]
+
+cmd-roleban-hint-duration-1 = Навсегда
+
+cmd-roleban-hint-duration-2 = 1 день
+
+cmd-roleban-hint-duration-3 = 3 дня
+
+cmd-roleban-hint-duration-4 = 1 неделя
+
+cmd-roleban-hint-duration-5 = 2 недели
+
+cmd-roleban-hint-duration-6 = 1 месяц
+
+
+
+cmd-roleunban-desc = Возвращает пользователю возможность играть на роли
+
+cmd-roleunban-help = Использование: roleunban <role ban id>
+
+cmd-rolebanlist-desc = Список запретов ролей игрока
+
+cmd-rolebanlist-help = Использование: <name or user ID> [include unbanned]
+
+
+cmd-roleban-minutes-parse = { $time } — недопустимое количество минут.\n{ $help }
+
+cmd-roleban-severity-parse = { $severity } — недопустимая степень наказания.\n{ $help }.
+
+cmd-roleban-arg-count = Недопустимое количество аргументов.
+
+cmd-roleban-job-parse = Работа { $job } не существует.
+
+cmd-roleban-name-parse = Невозможно найти игрока с таким именем.
+
+cmd-roleban-success = { $target } запрещено играть на роли { $role } по причине { $reason } { $length }.
+
+cmd-roleban-inf = навсегда
+
+cmd-roleban-until =  до { $expires }
+
+
+cmd-departmentban-desc = Запрещает пользователю играть на ролях, входящих в отдел
+
+cmd-departmentban-help = Использование: departmentban <name or user ID> <department> <reason> [продолжительность в минутах, не указывать или 0 для навсегда]

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: MortarKit
-  name: portable mortar
-  description: A support weapon capable of droping bombs on heads from a distance. This one seems rather modern.
+  name: "переносной миномёт"
+  description: "Оружие поддержки, способное обрушивать мины на противника издалека. Выглядит довольно современным."
   components:
     - type: Sprite
       sprite: Civ14/Objects/Mortars/mortar.rsi
@@ -60,8 +60,8 @@
 - type: entity
   parent: MortarKit
   id: MortarOld
-  name: old portable mortar
-  description: A support weapon capable of droping bombs on heads from a distance.
+  name: "старый переносной миномёт"
+  description: "Оружие поддержки для обстрела целей на расстоянии."
   components:
     - type: Sprite
       sprite: Civ14/Objects/Mortars/mortar_old.rsi

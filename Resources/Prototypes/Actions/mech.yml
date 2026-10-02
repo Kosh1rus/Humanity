@@ -1,7 +1,7 @@
 - type: entity
   id: ActionMechCycleEquipment
-  name: Cycle
-  description: Cycles currently selected equipment
+  name: Сменить оборудование
+  description: Переключить выбранное оборудование меха.
   components:
   - type: InstantAction
     itemIconStyle: NoItem
@@ -13,8 +13,8 @@
 
 - type: entity
   id: ActionMechOpenUI
-  name: Control Panel
-  description: Opens the control panel for the mech
+  name: Панель управления
+  description: Открыть панель управления мехом.
   components:
   - type: InstantAction
     itemIconStyle: NoItem
@@ -26,8 +26,8 @@
 
 - type: entity
   id: ActionMechEject
-  name: Eject
-  description: Ejects the pilot from the mech
+  name: Покинуть мех
+  description: Высадить пилота из меха.
   components:
   - type: InstantAction
     itemIconStyle: NoItem

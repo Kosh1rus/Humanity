@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseSign
   id: SignCustom
-  name: wood sign
+  name: деревянная вывеска
   description: ""
   components:
     - type: Sprite
@@ -20,8 +20,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivTfc
-  name: "Texas Fried Chicken"
-  description: "A sign Texas people usually like."
+  name: "Техасская жареная курица"
+  description: "Вывеска, которая обычно нравится техасцам."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -30,8 +30,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivWeedshop
-  name: "Weed Shop"
-  description: "A sign stoners usually like."
+  name: "Магазин травки"
+  description: "Любимая вывеска любителей травки."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -40,8 +40,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivMckellens
-  name: "McKellen's"
-  description: "A sign for the McKellen's Franchise establishment."
+  name: "Маккелленс"
+  description: "Вывеска заведения сети «Маккелленс»."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -50,8 +50,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivSheriff
-  name: "Sheriff's Office"
-  description: "A sign for the local Sheriff's Office."
+  name: "Офис шерифа"
+  description: "Вывеска местного офиса шерифа."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -60,8 +60,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivBank
-  name: "bank"
-  description: "A sign for the local bank."
+  name: "банк"
+  description: "Вывеска местного банка."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -70,8 +70,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivBarsign
-  name: "BAR"
-  description: "A sign that says bar on it."
+  name: "БАР"
+  description: "Вывеска с надписью «БАР»."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -80,8 +80,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivCafesignRu
-  name: "CAFE"
-  description: "A sign that says CAFE on it in cyrillic."
+  name: "КАФЕ"
+  description: "Вывеска с надписью «КАФЕ» кириллицей."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -90,8 +90,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivBarber
-  name: "barbershop"
-  description: "A swirly object indicating a barbershop."
+  name: "парикмахерская"
+  description: "Полосатый знак парикмахерской."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -100,8 +100,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivBailypost
-  name: "Baily post"
-  description: "Protection service."
+  name: "пост охраны"
+  description: "Здесь несут службу охранники."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -110,8 +110,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivBailypost2
-  name: "Baily post"
-  description: "Protection service."
+  name: "пост охраны"
+  description: "Здесь несут службу охранники."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -120,8 +120,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivMinefield
-  name: "Minefield"
-  description: "Achtung! Minen."
+  name: "Минное поле"
+  description: "Осторожно, мины!"
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -130,8 +130,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivColonialSign
-  name: "sign"
-  description: "Signs something."
+  name: "знак"
+  description: "Обозначает что-то важное."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -140,8 +140,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivCustomsign2
-  name: "sign"
-  description: "Signs something."
+  name: "знак"
+  description: "Обозначает что-то важное."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -150,8 +150,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivCustomsign
-  name: "sign"
-  description: "Signs something."
+  name: "знак"
+  description: "Обозначает что-то важное."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -160,8 +160,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN1
-  name: "ONE"
-  description: "A silver sign which reads 'I'."
+  name: "римская цифра I"
+  description: "Серебристая табличка с римской цифрой I."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -170,8 +170,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN2
-  name: "TWO"
-  description: "A silver sign which reads 'II'."
+  name: "римская цифра II"
+  description: "Серебристая табличка с римской цифрой II."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -180,8 +180,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN3
-  name: "THREE"
-  description: "A silver sign which reads 'III'."
+  name: "римская цифра III"
+  description: "Серебристая табличка с римской цифрой III."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -190,8 +190,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN4
-  name: "FOUR"
-  description: "A silver sign which reads 'IV'."
+  name: "римская цифра IV"
+  description: "Серебристая табличка с римской цифрой IV."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -200,8 +200,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN5
-  name: "FIVE"
-  description: "A silver sign which reads 'V'."
+  name: "римская цифра V"
+  description: "Серебристая табличка с римской цифрой V."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -210,8 +210,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivN6
-  name: "SIX"
-  description: "A silver sign which reads 'VI'."
+  name: "римская цифра VI"
+  description: "Серебристая табличка с римской цифрой VI."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -220,8 +220,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivMedal
-  name: "presence recognition"
-  description: "A recognition plaque staight from the ministy of admission! This one seems to be for the persons presence, what an award!"
+  name: "награда за присутствие"
+  description: "Наградная табличка от министерства признания заслуг. Похоже, её вручили просто за присутствие. Вот это достижение!"
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -230,8 +230,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivRestroom
-  name: "restroom"
-  description: "A sign indicating the presence of a restroom."
+  name: "туалет"
+  description: "Знак, указывающий на туалет."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -240,8 +240,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivRestroomMale
-  name: "restroom"
-  description: "A sign indicating the presence of a male restroom."
+  name: "туалет"
+  description: "Знак, указывающий на мужской туалет."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -250,8 +250,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivRestroomFemale
-  name: "restroom"
-  description: "A sign indicating the presence of a female restroom."
+  name: "туалет"
+  description: "Знак, указывающий на женский туалет."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -260,8 +260,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivJustice
-  name: "justice"
-  description: "A justice sign."
+  name: "правосудие"
+  description: "Знак правосудия."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -270,8 +270,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivCourt
-  name: "court"
-  description: "The court house."
+  name: "суд"
+  description: "Здание суда."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals_wide.rsi"
@@ -280,8 +280,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivTownhall
-  name: "town hall"
-  description: "The town hall."
+  name: "ратуша"
+  description: "Городская ратуша."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals_wide.rsi"
@@ -290,8 +290,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivHotelUral
-  name: "Hotel Ural sign"
-  description: "A worn-out sign with 'Hotel Ural' written in Cyrillic."
+  name: "вывеска гостиницы «Урал»"
+  description: "Потрёпанная вывеска с надписью «Гостиница Урал» кириллицей."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals_wide.rsi"
@@ -300,8 +300,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivAnatomy
-  name: "anatomy poster"
-  description: "A poster detailing the complexity of the human body."
+  name: "плакат по анатомии"
+  description: "Плакат с подробной схемой человеческого тела."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -310,8 +310,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivXrayOn
-  name: "lightbox"
-  description: "A medical lightbox used to examine X-ray images."
+  name: "негатоскоп"
+  description: "Медицинский световой экран для просмотра рентгеновских снимков."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -320,8 +320,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivPeriodic
-  name: "periodic table"
-  description: "A tabular display of the chemical elements."
+  name: "периодическая таблица"
+  description: "Таблица химических элементов."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -330,8 +330,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivCasino
-  name: "casino"
-  description: "A blinking casino sign."
+  name: "казино"
+  description: "Мигающая вывеска казино."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals_wider.rsi"
@@ -340,8 +340,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivOpen
-  name: "open"
-  description: "A blinking open sign."
+  name: "открыто"
+  description: "Мигающая вывеска «ОТКРЫТО»."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -350,8 +350,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivGunshop
-  name: "gun store"
-  description: "A blinking gun store sign."
+  name: "оружейный магазин"
+  description: "Мигающая вывеска оружейного магазина."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -360,8 +360,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivGas
-  name: "gas"
-  description: "A flashing gas station sign."
+  name: "заправка"
+  description: "Мигающая вывеска заправки."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -370,8 +370,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivSale
-  name: "SALE sign"
-  description: "A sign indicating a sale."
+  name: "вывеска «Распродажа»"
+  description: "Вывеска с объявлением о распродаже."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -380,8 +380,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivRent
-  name: "FOR RENT sign"
-  description: "A sign indicating something for rent."
+  name: "вывеска «Сдаётся»"
+  description: "Вывеска с объявлением об аренде."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -390,8 +390,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivDonutShop
-  name: "Randy's Donuts"
-  description: "A donut and pastries franchise."
+  name: "Пончики Рэнди"
+  description: "Сеть кафе с пончиками и выпечкой."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -400,8 +400,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivDeerTrophy
-  name: "hunting deer trophy"
-  description: "Looks like we finally found Bambi..."
+  name: "охотничий трофей: олень"
+  description: "Кажется, Бэмби всё-таки нашли..."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -410,8 +410,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivSovietPoster
-  name: "military poster"
-  description: "A Soviet military poster depicting a saluting soldier in front of the Soviet flag."
+  name: "военный плакат"
+  description: "Советский военный плакат: солдат отдаёт честь на фоне флага СССР."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -420,8 +420,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivSovafghanPoster1
-  name: "Soviet-Afghan friendship poster"
-  description: "A poster depicting a Soviet and DRA soldier smiling at each other while holding a rifle together."
+  name: "плакат о советско-афганской дружбе"
+  description: "Советский солдат и солдат ДРА улыбаются друг другу, вместе держа винтовку."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -430,8 +430,8 @@
 - type: entity
   parent: BaseSign
   id: SignCivSovafghanPoster2
-  name: "Soviet-Afghan friendship poster"
-  description: "A poster depicting armed men holding the Soviet and DRA flags."
+  name: "плакат о советско-афганской дружбе"
+  description: "Вооружённые люди держат флаги СССР и ДРА."
   components:
     - type: Sprite
       sprite: "Civ14/Objects/decals.rsi"
@@ -440,8 +440,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: Billboard
-  name: billboard
-  description: "Goodness, what are they selling us this time?"
+  name: рекламный щит
+  description: "И что же нам продают на этот раз?"
   components:
     - type: Sprite
       noRot: true

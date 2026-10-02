@@ -101,10 +101,10 @@
             tags:
               - civ13_caliber_c8mmnambu
 - type: entity
-  name: Luger P08
+  name: "пистолет «Люгер» P08"
   parent: civ13_pistol
   id: civ13_pistol_Luger_P08
-  description: A Luger P08 chambered in 9x19mm parabellum, german design.
+  description: "Немецкий пистолет под патрон 9 × 19 мм Парабеллум."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/luger.rsi
@@ -139,10 +139,10 @@
             tags:
               - civ13_caliber_a9x19
 - type: entity
-  name: Walther P38
+  name: "пистолет Walther P38"
   parent: civ13_pistol
   id: civ13_pistol_Walther_P38
-  description: A Walther P38 chambered in 9x19mm parabellum, german design.
+  description: "Немецкий пистолет под патрон 9 × 19 мм Парабеллум."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/waltherp38.rsi
@@ -633,12 +633,10 @@
             tags:
               - civ13_caliber_c8mmnambu
 - type: entity
-  name: M1911A1
+  name: "пистолет M1911A1"
   parent: civ13_pistol
   id: civ13_pistol_M1911A1
-  description: >-
-    The standard issue pistol of the US Armed forces from 1911 to 1985.
-    Chambered in .45 ACP.
+  description: "Штатный пистолет вооружённых сил США с 1911 по 1985 год. Использует патроны .45 ACP."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/colt.rsi
@@ -710,12 +708,10 @@
             tags:
               - civ13_caliber_a45acp
 - type: entity
-  name: TT-33
+  name: "пистолет ТТ-33"
   parent: civ13_pistol
   id: civ13_pistol_TT_33
-  description: >-
-    The standard issue pistol of the Soviet Union before the 1950's. Chambered
-    in 7.62x25mm Tokarev.
+  description: "Штатный пистолет вооружённых сил СССР до 1950-х годов. Использует патроны 7,62 × 25 мм Токарева."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/tt30.rsi
@@ -750,12 +746,10 @@
             tags:
               - civ13_caliber_a762x25
 - type: entity
-  name: Makarov PM
+  name: "пистолет Макарова ПМ"
   parent: civ13_pistol
   id: civ13_pistol_Makarov_PM
-  description: >-
-    The standard issue pistol of the Soviet Union and Russian Federation after
-    the 1950's. Chambered in 9x18mm Makarov.
+  description: "Штатный пистолет советских и российских вооружённых сил с 1950-х годов. Использует патроны 9 × 18 мм."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/makarov.rsi

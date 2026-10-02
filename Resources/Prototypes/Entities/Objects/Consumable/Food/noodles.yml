@@ -78,10 +78,10 @@
 # Tastes like pasta, bad humor.
 
 - type: entity
-  name: spaghetti and meatballs
+  name: "спагетти с фрикадельками"
   parent: FoodNoodlesBase
   id: FoodNoodlesMeatball
-  description: Now that's a nice-a meatball!
+  description: "Вот это я понимаю — фрикаделька!"
   components:
   - type: FlavorProfile
     flavors:

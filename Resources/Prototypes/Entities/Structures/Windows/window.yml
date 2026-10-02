@@ -1,8 +1,8 @@
 - type: entity
   id: Window
   parent: BaseStructure
-  name: window
-  description: Don't smudge up the glass down there.
+  name: "окно"
+  description: "Не пачкайте стекло."
   placement:
     mode: SnapgridCenter
     snap:
@@ -96,7 +96,7 @@
 - type: entity
   parent: Window
   id: TintedWindow
-  name: tinted window
+  name: "тонированное окно"
   components:
   - type: Sprite
     drawdepth: WallTops

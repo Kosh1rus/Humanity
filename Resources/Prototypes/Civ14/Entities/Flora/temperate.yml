@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseTree
   id: TreeTemperate
-  name: temperate tree
-  description: Yep, it's a tree.
+  name: "дерево умеренного климата"
+  description: "Да, это дерево."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi
@@ -29,8 +29,8 @@
 - type: entity
   parent: TreeTemperate
   id: TreeTemperateDead
-  name: dead tree
-  description: Yep, it's a tree. But it's dead.
+  name: "мёртвое дерево"
+  description: "Да, это дерево. Но уже мёртвое."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_dead.rsi

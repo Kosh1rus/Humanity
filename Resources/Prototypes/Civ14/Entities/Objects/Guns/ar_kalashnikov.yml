@@ -1,10 +1,10 @@
 # kalashnikovs and related weapons
 
 - type: entity
-  name: AKM
+  name: "АКМ"
   parent: BaseGunCivAR
   id: civ13_ar_AKM
-  description: Iconic Soviet assault rifle, chambered in 7.62x39mm.
+  description: "Знаменитый советский автомат под патрон 7,62 × 39 мм."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/ak47.rsi
@@ -67,10 +67,10 @@
       # Inherits other gun stats from AKM
 
 - type: entity
-  name: AK-74
+  name: "АК-74"
   parent: civ13_ar_AKM
   id: civ13_ar_AK_74
-  description: Soviet assault rifle, chambered in 5.45x39mm.
+  description: "Советский автомат под патрон 5,45 × 39 мм."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/ak74.rsi
@@ -289,10 +289,10 @@
       angleDecay: 27
 
 - type: entity
-  name: AK-12
+  name: "АК-12"
   parent: civ13_ar_AK_74
   id: civ13_ar_AK_12
-  description: A fifth generation Modern AK variant, chambered in 5.45x39mm.
+  description: "Современный автомат Калашникова пятого поколения под патрон 5,45 × 39 мм."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/ak12.rsi

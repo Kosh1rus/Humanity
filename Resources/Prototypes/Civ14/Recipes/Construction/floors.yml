@@ -1,11 +1,11 @@
 - type: construction
-  name: thatch floor
+  name: "соломенный настил"
   id: TileThatch
   graph: TileThatch
   startNode: start
   targetNode: end
   category: construction-category-tiles
-  description: A floor made of compressed dried straw.
+  description: "Пол из плотно утрамбованной сухой соломы."
   icon: { sprite: Civ14/Structures/Floors/wood.rsi, state: thatch_hand }
   objectType: Item
   agemin: 0
@@ -29,13 +29,13 @@
       entity: FloorTileItemThatch
 
 - type: construction
-  name: ancient road
+  name: "древняя дорога"
   id: TileRoad
   graph: TileRoad
   startNode: start
   targetNode: end
   category: construction-category-tiles
-  description: An ancient rough cobblestone road.
+  description: "Старая дорога из грубо уложенного булыжника."
   icon: { sprite: Civ14/Structures/Floors/roads.rsi, state: r_roadfull }
   objectType: Item
   agemin: 0
@@ -58,13 +58,13 @@
       entity: FloorTileItemRoad
 
 - type: construction
-  name: cobblestone floor
+  name: "булыжная мостовая"
   id: TileCobblestone
   graph: TileCobblestone
   startNode: start
   targetNode: end
   category: construction-category-tiles
-  description: A cobblestone floor.
+  description: "Пол, вымощенный булыжником."
   icon: { sprite: Civ14/Objects/floors.rsi, state: cobble_vertical_dark }
   objectType: Item
   agemin: 1
@@ -87,13 +87,13 @@
       entity: FloorTileItemCobblestone
 
 - type: construction
-  name: bridging tile
+  name: "настил для моста"
   id: TileBridge
   graph: TileBridge
   startNode: start
   targetNode: end
   category: construction-category-tiles
-  description: A tile used to make a makeshift bridge.
+  description: "Из таких настилов собирают временный мост."
   icon: { sprite: Civ14/Structures/Floors/wood.rsi, state: woodalt7 }
   objectType: Item
   agemin: 0

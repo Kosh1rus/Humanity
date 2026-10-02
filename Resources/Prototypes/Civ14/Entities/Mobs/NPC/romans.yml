@@ -1,5 +1,6 @@
 - type: entity
-  name: roman legionary
+  name: "римский легионер"
+  description: "Воин римского легиона."
   parent: BaseMobHuman
   id: MobRomanMelee
   suffix: "Melee, Hostile"
@@ -18,7 +19,8 @@
         task: SimpleHumanoidHostileCompound
 
 - type: entity
-  name: roman sagittarius
+  name: "римский лучник"
+  description: "Воин римской армии с луком."
   parent: BaseMobHuman
   id: MobRomanRanged
   suffix: "Ranged, Hostile"
@@ -51,7 +53,8 @@
     - type: CombatMode
 
 - type: entity
-  name: allied sagittarius
+  name: "союзный римский лучник"
+  description: "Лучник союзного римского отряда."
   parent: BaseMobHuman
   id: MobRomanRangedFriendly
   suffix: "Ranged, Friendly"
@@ -83,7 +86,8 @@
     - type: CombatMode
 
 - type: entity
-  name: allied legionary
+  name: "союзный римский легионер"
+  description: "Легионер союзного римского отряда."
   parent: MobRomanMelee
   id: MobRomanMeleeFriendly
   suffix: "Melee, Friendly"

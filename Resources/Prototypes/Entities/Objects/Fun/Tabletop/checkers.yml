@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseBoardEntity
   id: CheckerBoard
-  name: checkerboard
-  description: A checkerboard. Pieces included!
+  name: "шашки"
+  description: "Доска и шашки входят в комплект."
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/chessboard.rsi

@@ -825,10 +825,10 @@
         - Slice
 
 - type: entity
-  name: burned mess
+  name: "подгоревшее месиво"
   parent: FoodBakingBase
   id: FoodBadRecipe
-  description: Someone should be demoted from cook for this.
+  description: "Кого-то следовало бы разжаловать из поваров."
   components:
     - type: FlavorProfile
       flavors:

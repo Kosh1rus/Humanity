@@ -57,7 +57,7 @@
   id: HospitalCurtains
   parent: BaseCurtains
   suffix: Hospital
-  description: Contains less than 1% mercury.
+  description: "Содержит менее 1% ртути."
   components:
   - type: Sprite
     snapCardinals: true

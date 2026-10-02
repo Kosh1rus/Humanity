@@ -190,8 +190,8 @@
 - type: entity
   parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
   id: DrinkChampagneBottleFull
-  name: champagne bottle
-  description: Only people devoid of imagination can't find an excuse for champagne.
+  name: "бутылка шампанского"
+  description: "Только человеку без воображения не найти повода выпить шампанского."
   components:
     - type: SolutionContainerManager
       solutions:
@@ -209,8 +209,8 @@
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
   id: DrinkCognacBottleFull
-  name: cognac bottle
-  description: A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+  name: "бутылка коньяка"
+  description: "Крепкий сладковатый напиток после многократной перегонки и долгой выдержки. В этот раз можно обойтись без криков «ОХРАНА!»."
   components:
     - type: SolutionContainerManager
       solutions:
@@ -476,8 +476,8 @@
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
   id: DrinkVodkaBottleFull
-  name: vodka bottle
-  description: Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+  name: "бутылка водки"
+  description: "Ах, водка. Для многих русских — и напиток, и топливо."
   components:
     - type: SolutionContainerManager
       solutions:
@@ -512,8 +512,8 @@
 - type: entity
   parent: [DrinkBottleVisualsOpenable, DrinkBottleGlassBaseFull]
   id: DrinkWineBottleFull
-  name: Doublebearded Bearded Special wine bottle
-  description: A faint aura of unease and asspainery surrounds the bottle.
+  name: "бутылка вина «Особое Бородатое»"
+  description: "От бутылки веет лёгкой тревогой и предчувствием неприятностей."
   components:
     - type: SolutionContainerManager
       solutions:
@@ -536,8 +536,8 @@
 - type: entity
   parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
   id: DrinkBeerBottleFull
-  name: beer bottle # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
-  description: An alcoholic beverage made from malted grains, hops, yeast, and water.
+  name: "бутылка пива"
+  description: "Алкогольный напиток из солода, хмеля, дрожжей и воды."
   components:
     - type: STWeight
       self: 1
@@ -632,8 +632,8 @@
 - type: entity
   parent: [DrinkBottleVisualsOpenable, DrinkBottlePlasticBaseFull]
   id: DrinkWaterBottleFull
-  name: water bottle
-  description: Simple clean water of unknown origin. You think that maybe you dont want to know it.
+  name: "бутылка воды"
+  description: "Обычная чистая вода неизвестного происхождения. Возможно, лучше не выяснять, откуда она."
   components:
     - type: STWeight
       self: 1
@@ -668,8 +668,8 @@
 - type: entity
   parent: DrinkWaterBottleFull
   id: DrinkSodaWaterBottleFull
-  name: soda water bottle
-  description: Like water, but angry!
+  name: "бутылка газированной воды"
+  description: "Как обычная вода, только сердитая!"
   components:
     - type: SolutionContainerManager
       solutions:

@@ -1,11 +1,11 @@
 - type: construction
-  name: bed roll
+  name: "спальный тюфяк"
   id: BedRollPrim14
   graph: BedRollPrim14
   startNode: start
   targetNode: bedroll
   category: construction-category-misc
-  description: Comfortable and portable.
+  description: "Удобный и лёгкий в переноске."
   icon: { sprite: Civ14/Objects/items.rsi, state: bedroll_r }
   objectType: Item
   agemin: 0

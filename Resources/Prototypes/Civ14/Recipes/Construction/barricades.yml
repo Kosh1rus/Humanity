@@ -1,11 +1,11 @@
 - type: construction
-  name: stone barricade
+  name: "каменная баррикада"
   id: BarricadeStonewall
   graph: BarricadeStonewall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A low stone wall.
+  description: "Невысокая каменная стена."
   icon:
     sprite: Civ14/Structures/barricades.rsi
     state: rock_barricade
@@ -32,13 +32,13 @@
       entity: BarricadeStonewall
 
 - type: construction
-  name: dirt wall
+  name: "земляная стена"
   id: BarricadeDirtwall
   graph: BarricadeDirtwall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A dirt barricade.
+  description: "Земляная баррикада."
   icon:
     sprite: Civ14/Structures/barricades.rsi
     state: dirt_wall
@@ -66,13 +66,13 @@
       entity: BarricadeDirtwall
 
 - type: construction
-  name: sandbag wall
+  name: "стена из мешков с песком"
   id: BarricadeSandbags
   graph: BarricadeSandbags
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A sandbag barricade.
+  description: "Стена из мешков с песком."
   icon:
     sprite: Civ14/Structures/barricades.rsi
     state: sandbag
@@ -100,13 +100,13 @@
       entity: BarricadeSandbags
 
 - type: construction
-  name: barbed wire
+  name: "колючая проволока"
   id: Barbedwire
   graph: Barbedwire
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A coil of barbed wire, useful for area denial.
+  description: "Ограждение из колючей проволоки."
   icon:
     sprite: Civ14/Objects/structures.rsi
     state: barbwire

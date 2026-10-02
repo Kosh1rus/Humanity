@@ -1,8 +1,8 @@
 - type: entity
-  name: fire extinguisher
+  name: "огнетушитель"
   parent: BaseItem
   id: FireExtinguisher
-  description: It extinguishes fires.
+  description: "Тушит пожары."
   components:
   - type: Sprite
     sprite: Objects/Misc/fire_extinguisher.rsi

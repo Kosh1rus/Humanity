@@ -2,7 +2,7 @@
   id: USCaptain
   name: job-name-civ-us-cpt
   faction: US
-  originalName: Captain
+  originalName: Капитан
   description: job-description-civ-us-cpt
   playTimeTracker: JobUSCaptain
   requirements:
@@ -44,7 +44,7 @@
 
 - type: job
   id: USSergeant
-  originalName: Sergeant
+  originalName: Сержант
   name: job-name-civ-us-sgt
   faction: US
   description: job-description-civ-us-sergeant
@@ -97,7 +97,7 @@
   id: USRifleman
   name: job-name-civ-us-rifleman
   faction: US
-  originalName: Rifleman
+  originalName: Стрелок
   description: job-description-civ-us-rifleman
   playTimeTracker: JobUSRifleman
   startingGear: USRiflemanGear
@@ -159,7 +159,7 @@
   id: USMachinegunner
   name: job-name-civ-us-machinegunner
   faction: US
-  originalName: Machinegunner
+  originalName: Пулемётчик
   description: job-description-civ-us-machinegunner
   playTimeTracker: JobUSMachinegunner
   startingGear: USMachinegunnerGear
@@ -225,7 +225,7 @@
   id: USMedic
   name: job-name-civ-us-medic
   faction: US
-  originalName: Medic
+  originalName: Медик
   description: job-description-civ-us-medic
   playTimeTracker: JobUSMedic
   startingGear: USMedicGear

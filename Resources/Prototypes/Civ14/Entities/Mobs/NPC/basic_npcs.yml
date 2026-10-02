@@ -1,5 +1,6 @@
 - type: entity
-  name: scavenger
+  name: "мародёр"
+  description: "Ищет всё, что плохо лежит."
   parent: BaseMobHuman
   id: MobScavenger
   suffix: AI

@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: ActionRevertPolymorph
-  name: Revert
-  description: Revert back into your original form.
+  name: Вернуть облик
+  description: Вернуться к первоначальному облику.
   components:
   - type: InstantAction
     event: !type:RevertPolymorphActionEvent
@@ -15,8 +15,8 @@
 
 - type: entity
   id: ActionPolymorphWizardSpider
-  name: Spider Polymorph
-  description: Polymorphs you into a Spider.
+  name: Превратиться в паука
+  description: Принять облик паука.
   components:
   - type: InstantAction
     useDelay: 60
@@ -29,8 +29,8 @@
 
 - type: entity
   id: ActionPolymorphWizardRod
-  name: Rod Form
-  description: CLANG!
+  name: Облик стержня
+  description: ДЗЫНЬ!
   components:
   - type: InstantAction
     useDelay: 60
@@ -43,8 +43,8 @@
 
 - type: entity
   id: ActionPolymorphJaunt
-  name: Ethereal Jaunt
-  description: Melt into the Ethereal Plane for a quick getaway!
+  name: Эфирный скачок
+  description: Раствориться в эфирном измерении и быстро ускользнуть!
   components:
   - type: Magic
   - type: InstantAction
@@ -64,8 +64,8 @@
 - type: entity
   id: ActionPolymorphJauntII
   parent: ActionPolymorphJaunt
-  name: Ethereal Jaunt II
-  description: Melt into the Ethereal Plane for an even quicker getaway!
+  name: Эфирный скачок II
+  description: Раствориться в эфирном измерении и ускользнуть ещё быстрее!
   components:
   - type: InstantAction
     useDelay: 25
@@ -79,8 +79,8 @@
 - type: entity
   id: ActionPolymorphJauntIII
   parent: ActionPolymorphJaunt
-  name: Ethereal Jaunt III
-  description: Are you even tangible anymore?
+  name: Эфирный скачок III
+  description: Вы вообще ещё материальны?
   components:
   - type: InstantAction
     useDelay: 20

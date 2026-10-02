@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseTree
   id: TreeMed
-  name: mediterranean tree
-  description: A large pine tree adapted to dry climates.
+  name: "средиземноморская сосна"
+  description: "Крупная сосна, приспособленная к сухому климату."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: TreeMed
   id: TreeMedDead
-  name: dead mediterranean tree
-  description: A large pine tree adapted to dry climates. This one is dead.
+  name: "сухое средиземноморское дерево"
+  description: "Крупная сосна засушливых краёв. Это дерево погибло."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_dead.rsi

@@ -75,8 +75,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: ValleySupplyBox
-  name: supply delivery
-  description: A wheeled crate with several supplies.
+  name: "ящик со снабжением"
+  description: "Ящик на колёсах с различными припасами."
   suffix: Point System
   components:
     - type: Sprite

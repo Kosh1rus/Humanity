@@ -78,10 +78,10 @@
         - FoodPacketCheesieTrash
 
 - type: entity
-  name: chips
+  name: "чипсы"
   parent: FoodSnackBase
   id: FoodSnackChips
-  description: Commander Riker's What-The-Crisps.
+  description: "Чипсы коммандера Райкера «Что за хруст?»."
   components:
     - type: FlavorProfile
       flavors:
@@ -96,10 +96,10 @@
         - FoodPacketChipsTrash
 
 - type: entity
-  name: chocolate bar
+  name: "плитка шоколада"
   parent: BaseItem
   id: FoodSnackChocolate
-  description: Tastes like cardboard.
+  description: "На вкус как картон."
   components:
     - type: Sprite
       sprite: Objects/Consumable/Food/snacks.rsi
@@ -162,10 +162,10 @@
         path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: energy bar
+  name: "энергетический батончик"
   parent: FoodSnackBase
   id: FoodSnackEnergyBar
-  description: An energy bar with a lot of punch.
+  description: "Батончик, который здорово взбодрит."
   components:
     - type: FlavorProfile
       flavors:

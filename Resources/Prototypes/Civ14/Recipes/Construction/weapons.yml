@@ -1,11 +1,11 @@
 - type: construction
-  name: wood club
+  name: "деревянная дубина"
   id: WoodClub
   graph: WoodClub
   startNode: start
   targetNode: woodclub
   category: construction-category-weapons
-  description: A crude wood club.
+  description: "Грубая дубина из дерева."
   icon: { sprite: Civ14/Objects/StoneAge/club.rsi, state: icon }
   objectType: Item
   agemin: 0

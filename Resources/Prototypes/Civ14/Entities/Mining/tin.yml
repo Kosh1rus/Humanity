@@ -7,7 +7,8 @@
 - type: entity
   parent: OreBase
   id: TinOre
-  name: tin ore
+  name: "оловянная руда"
+  description: "Из неё можно выплавить олово."
   suffix: Full
   components:
     - type: Stack
@@ -49,7 +50,8 @@
 - type: entity
   parent: IngotBase
   id: IngotTin
-  name: tin ingot
+  name: "оловянный слиток"
+  description: "Слиток олова для изготовления вещей."
   suffix: Full
   components:
     - type: Material

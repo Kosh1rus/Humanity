@@ -2,7 +2,7 @@
 
 - type: job
   id: InsurgentLeader
-  originalName: Qaynarqan
+  originalName: Командир
   name: job-name-civ-insurgent-sgt
   faction: Insurgents
   description: job-description-civ-insurgent-sgt
@@ -58,7 +58,7 @@
   id: InsurgentRifleman
   name: job-name-civ-insurgent-rifleman
   faction: Insurgents
-  originalName: Tufangchy
+  originalName: Стрелок
   description: job-description-civ-insurgent-rifleman
   playTimeTracker: JobInsurgentRifleman
   startingGear: InsurgentRiflemanGear
@@ -141,7 +141,7 @@
   id: InsurgentMedic
   name: job-name-civ-insurgent-medic
   faction: Insurgents
-  originalName: Shifobash
+  originalName: Санитар
   description: job-description-civ-insurgent-medic
   playTimeTracker: JobInsurgentMedic
   startingGear: InsurgentMedicGear

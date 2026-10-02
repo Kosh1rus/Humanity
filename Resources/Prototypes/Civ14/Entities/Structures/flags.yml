@@ -2,7 +2,7 @@
   parent: BaseSign
   id: BaseFlagPole
   abstract: true
-  description: "A flag on a pole."
+  description: "Флаг на древке."
   components:
     - type: Sprite
       drawdepth: WallMountedItems
@@ -11,8 +11,8 @@
 
 - type: entity
   id: civ13_flag_pirates
-  name: Pirate flag
-  description: A black and white pirate flags with skull and bones.
+  name: пиратский флаг
+  description: Чёрно-белый пиратский флаг с черепом и костями.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -20,8 +20,8 @@
 
 - type: entity
   id: civ13_flag_black
-  name: Black flag
-  description: A black flag.
+  name: чёрный флаг
+  description: Однотонный чёрный флаг.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -29,8 +29,8 @@
 
 - type: entity
   id: civ13_flag_french
-  name: French flag
-  description: The French flag, white with golden fleur-de-lys.
+  name: флаг Франции
+  description: Белый королевский флаг с золотыми лилиями.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -38,8 +38,8 @@
 
 - type: entity
   id: civ13_flag_french_modern
-  name: French flag
-  description: The modern french tricoleur.
+  name: флаг Франции
+  description: Современный французский триколор.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -47,8 +47,8 @@
 
 - type: entity
   id: civ13_flag_french_monarchist
-  name: French flag
-  description: The french monarchist flag.
+  name: флаг Франции
+  description: Флаг французских монархистов.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -56,8 +56,8 @@
 
 - type: entity
   id: civ13_flag_spanish
-  name: Spanish Flag
-  description: The Spanish flag, white with a red cross of burgundy.
+  name: флаг Испании
+  description: Белый флаг с красным Бургундским крестом.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -65,8 +65,8 @@
 
 - type: entity
   id: civ13_flag_spanish_modern
-  name: Spanish Flag
-  description: The modern yellow and red spanish flag.
+  name: флаг Испании
+  description: Современный красно-жёлтый флаг Испании.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -74,8 +74,8 @@
 
 - type: entity
   id: civ13_flag_italian
-  name: Italian Flag
-  description: The modern italian flag.
+  name: флаг Италии
+  description: Современный итальянский триколор.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -83,8 +83,8 @@
 
 - type: entity
   id: civ13_flag_british
-  name: British flag
-  description: The Union Jack.
+  name: флаг Великобритании
+  description: Юнион Джек.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -92,8 +92,8 @@
 
 - type: entity
   id: civ13_flag_portuguese
-  name: Portuguese flag
-  description: A white flag with the Portuguese Coat of Arms in the middle.
+  name: флаг Португалии
+  description: Белый флаг с гербом Португалии в центре.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -101,8 +101,8 @@
 
 - type: entity
   id: civ13_flag_dutch
-  name: Dutch Flag
-  description: The tricolor Dutch flag.
+  name: флаг Нидерландов
+  description: Трёхцветный флаг Нидерландов.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -110,8 +110,8 @@
 
 - type: entity
   id: civ13_flag_dutch_old
-  name: Dutch Flag
-  description: The tricolor Dutch flag.
+  name: флаг Нидерландов
+  description: Трёхцветный флаг Нидерландов.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -119,8 +119,8 @@
 
 - type: entity
   id: civ13_flag_japanese
-  name: Imperial Japanese flag
-  description: The Imperial Japanese flag.
+  name: флаг императорской Японии
+  description: Флаг императорской Японии.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -128,8 +128,8 @@
 
 - type: entity
   id: civ13_flag_russian
-  name: Russian flag
-  description: The tricolor Russian flag.
+  name: флаг России
+  description: Российский триколор.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -137,8 +137,8 @@
 
 - type: entity
   id: civ13_flag_soviet
-  name: Soviet Union Flag
-  description: The Soviet flag.
+  name: флаг СССР
+  description: Флаг Советского Союза.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -146,8 +146,8 @@
 
 - type: entity
   id: civ13_flag_us
-  name: USA flag
-  description: The US flag.
+  name: флаг США
+  description: Флаг Соединённых Штатов.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -155,8 +155,8 @@
 
 - type: entity
   id: civ13_flag_german
-  name: German flag
-  description: The German flag.
+  name: флаг Германии
+  description: Флаг Германии.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -164,8 +164,8 @@
 
 - type: entity
   id: civ13_flag_german_modern
-  name: German flag
-  description: The German flag.
+  name: флаг Германии
+  description: Флаг Германии.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -173,8 +173,8 @@
 
 - type: entity
   id: civ13_flag_confed
-  name: Confederate flag
-  description: The Confederate flag
+  name: флаг Конфедерации
+  description: Флаг Конфедеративных Штатов Америки.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -182,8 +182,8 @@
 
 - type: entity
   id: civ13_flag_reich
-  name: Third Reich Flag
-  description: The Third Reich war flag.
+  name: флаг Третьего рейха
+  description: Военный флаг Третьего рейха.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -191,8 +191,8 @@
 
 - type: entity
   id: civ13_flag_chinese
-  name: Republic of China Flag
-  description: The Republic of China flag.
+  name: флаг Китайской Республики
+  description: Флаг Китайской Республики.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -200,8 +200,8 @@
 
 - type: entity
   id: civ13_flag_filipino
-  name: Philippines Republic
-  description: The Republic of the Philippines flag.
+  name: флаг Филиппин
+  description: Флаг Республики Филиппины.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -209,8 +209,8 @@
 
 - type: entity
   id: civ13_flag_filipino_war
-  name: Philippines Republic
-  description: The Republic of the Philippines flag. This one flipped for wartime.
+  name: флаг Филиппин
+  description: Флаг Республики Филиппины. Перевёрнутое полотнище означает состояние войны.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -218,8 +218,8 @@
 
 - type: entity
   id: civ13_flag_nva
-  name: North Vietnam Flag
-  description: The flag of North Vietnam.
+  name: флаг Северного Вьетнама
+  description: Флаг Северного Вьетнама.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -227,8 +227,8 @@
 
 - type: entity
   id: civ13_flag_vietcong
-  name: Vietcong Flag
-  description: The flag of the National Liberation Front of Vietnam.
+  name: флаг Вьетконга
+  description: Флаг Национального фронта освобождения Южного Вьетнама.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -236,8 +236,8 @@
 
 - type: entity
   id: civ13_flag_campaign_redmenia
-  name: Redmenia Flag
-  description: The flag of Redmenia.
+  name: флаг Редмении
+  description: Флаг Редмении.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -245,8 +245,8 @@
 
 - type: entity
   id: civ13_flag_campaign_blugoslavia
-  name: Blugoslavia Flag
-  description: The flag of Blugoslavia.
+  name: флаг Блугославии
+  description: Флаг Блугославии.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -254,8 +254,8 @@
 
 - type: entity
   id: civ13_flag_pole
-  name: Flagpole
-  description: Flagless, apply cloth or a flag.
+  name: флагшток
+  description: Флага пока нет. Прикрепите ткань или готовый флаг.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -263,8 +263,8 @@
 
 - type: entity
   id: civ13_flag_bearclan
-  name: Bearclan Banner
-  description: A Bearclan banner.
+  name: знамя Медвежьего клана
+  description: Знамя Медвежьего клана.
   parent: BaseFlagPole
   components:
     - type: Sprite
@@ -272,8 +272,8 @@
 
 - type: entity
   id: civ13_flag_ravenclan
-  name: Raven Banner
-  description: A Ravenclan banner.
+  name: знамя Вороньего клана
+  description: Знамя Вороньего клана.
   parent: BaseFlagPole
   components:
     - type: Sprite

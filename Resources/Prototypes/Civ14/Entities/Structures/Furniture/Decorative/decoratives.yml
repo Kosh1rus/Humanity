@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: StructureDecorativeBase
-  name: decorative piece
-  description: A basic decoration.
+  name: украшение
+  description: Простое украшение.
   components:
     - type: Sprite
       noRot: true
@@ -13,8 +13,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemWood
-  name: wood totem
-  description: A wood totem.
+  name: деревянный тотем
+  description: Тотем, вырезанный из дерева.
   components:
     - type: Sprite
       sprite: Civ14/Structures/totems.rsi
@@ -31,8 +31,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneMonkey
-  name: monkey totem
-  description: A stone statue of a monkey.
+  name: тотем обезьяны
+  description: Каменное изваяние обезьяны.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -49,8 +49,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneMouse
-  name: mouse totem
-  description: A stone statue of a mouse.
+  name: тотем мыши
+  description: Каменное изваяние мыши.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneBear
-  name: bear totem
-  description: A stone statue of a bear.
+  name: тотем медведя
+  description: Каменное изваяние медведя.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -85,8 +85,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneWolf
-  name: wolf totem
-  description: A stone statue of a wolf.
+  name: тотем волка
+  description: Каменное изваяние волка.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -103,8 +103,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneTurkey
-  name: turkey totem
-  description: A stone statue of a turkey.
+  name: тотем индейки
+  description: Каменное изваяние индейки.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -121,8 +121,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: TotemStoneGoose
-  name: goose totem
-  description: A stone statue of a goose.
+  name: тотем гуся
+  description: Каменное изваяние гуся.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -139,8 +139,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueMoai
-  name: moai statue
-  description: A large stone statue of a head.
+  name: статуя моаи
+  description: Огромная каменная голова.
   components:
     - type: Sprite
       sprite: Civ14/Structures/totems.rsi
@@ -157,8 +157,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueMoai1
-  name: moai statue
-  description: A large stone statue of a head.
+  name: статуя моаи
+  description: Огромная каменная голова.
   components:
     - type: Sprite
       sprite: Civ14/Structures/totems.rsi
@@ -175,8 +175,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueTiki
-  name: tiki statue
-  description: A wooden polinesian statue.
+  name: статуя тики
+  description: Деревянная полинезийская статуя.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -193,8 +193,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueTiki1
-  name: tiki statue
-  description: A wooden polinesian statue.
+  name: статуя тики
+  description: Деревянная полинезийская статуя.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -211,8 +211,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueAztec
-  name: aztec statue
-  description: A mesoamerican stone statue.
+  name: ацтекская статуя
+  description: Каменная статуя из Мезоамерики.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -229,8 +229,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StatueOlmec
-  name: olmec statue
-  description: A mesoamerican stone head.
+  name: ольмекская статуя
+  description: Каменная голова из Мезоамерики.
   components:
     - type: Sprite
       sprite: Civ14/Structures/religious.rsi
@@ -245,10 +245,10 @@
       material: Stone
 
 - type: entity
-  name: traffic cone
+  name: дорожный конус
   parent: BaseItem
   id: traffic cone
-  description: An orange traffic cone.
+  description: Оранжевый дорожный конус.
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi

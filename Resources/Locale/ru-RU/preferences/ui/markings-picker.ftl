@@ -1,0 +1,29 @@
+markings-search = Поиск
+
+markings-used = Выбранные элементы внешности
+markings-unused = Доступные элементы внешности
+markings-add = Добавить элемент
+markings-remove = Убрать элемент
+markings-rank-up = Выше
+markings-rank-down = Ниже
+marking-points-remaining = Можно добавить: {$points}
+marking-used = {$marking-name}
+marking-used-forced = {$marking-name} (обязательно)
+marking-slot-add = Добавить
+marking-slot-remove = Удалить
+marking-slot = Слой {$number}
+
+markings-category-Special = Особые
+markings-category-Hair = Волосы
+markings-category-FacialHair = Растительность на лице
+markings-category-Head = Голова
+markings-category-HeadTop = Верх головы
+markings-category-HeadSide = Боковые части головы
+markings-category-Snout = Морда
+markings-category-UndergarmentTop = Нижняя одежда: верх
+markings-category-UndergarmentBottom = Нижняя одежда: низ
+markings-category-Chest = Грудь
+markings-category-Arms = Руки
+markings-category-Legs = Ноги
+markings-category-Tail = Хвост
+markings-category-Overlay = Наложение

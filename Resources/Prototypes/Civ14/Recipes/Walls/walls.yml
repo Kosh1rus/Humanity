@@ -1,11 +1,11 @@
 - type: construction
-  name: straw wall
+  name: "соломенная стена"
   id: StrawWall
   graph: StrawWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A basic wall made of straw and dry leaves. Burns easily.
+  description: "Простая стена из соломы и сухих листьев. Легко загорается."
   icon:
     sprite: Civ14/Structures/Walls/straw.rsi
     state: full
@@ -19,13 +19,13 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: dirt wall
+  name: "глинобитная стена"
   id: DirtWall
   graph: DirtWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A basic wall made of dried mud bricks.
+  description: "Простая стена из высушенных глиняных кирпичей."
   icon:
     sprite: Civ14/Structures/Walls/dirtwall.rsi
     state: full
@@ -38,13 +38,13 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: clay wall
+  name: "стена из обожжённой глины"
   id: ClayWall
   graph: ClayWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wall made of fired clay bricks.
+  description: "Стена из кирпичей обожжённой глины."
   icon:
     sprite: Civ14/Structures/claystuff.rsi
     state: claybrickwall
@@ -58,13 +58,13 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: log wall
+  name: "бревенчатая стена"
   id: LogWall
   graph: LogWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wall made of stacked hardwood logs. For that rustic feel.
+  description: "Стена из уложенных друг на друга брёвен твёрдой древесины."
   icon:
     sprite: Civ14/Structures/Walls/oldwood.rsi
     state: full
@@ -91,13 +91,13 @@
       entity: StrawWall
 
 - type: construction
-  name: medieval wall
+  name: "средневековая стена"
   id: MedievalWall
   graph: MedievalWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A medieval wood and lime washed plaster wall.
+  description: "Деревянная стена, оштукатуренная и побелённая известью."
   icon:
     sprite: Civ14/Structures/Walls/medieval.rsi
     state: full
@@ -163,13 +163,13 @@
       entity: ClayWall
 
 - type: construction
-  name: stone block wall
+  name: "стена из каменных блоков"
   id: StoneBlockWall
   graph: StoneBlockWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: An ancient wall made of stacked stone blocks.
+  description: "Стена древней кладки из каменных блоков."
   icon:
     sprite: Civ14/Structures/Walls/stone_block_wall.rsi
     state: full
@@ -192,13 +192,13 @@
     - node: end
       entity: StoneBlockWall
 - type: construction
-  name: mayan stone wall
+  name: "каменная стена майя"
   id: MayanStoneWall
   graph: MayanStoneWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A Mayan-style stone wall.
+  description: "Каменная стена в стиле майя."
   icon:
     sprite: Civ14/Structures/Walls/mayan.rsi
     state: full
@@ -221,13 +221,13 @@
     - node: end
       entity: MayanStoneWall
 - type: construction
-  name: stone brick wall
+  name: "стена из каменного кирпича"
   id: StoneBrickWall
   graph: StoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wall made of well-stacked stone bricks.
+  description: "Стена из аккуратно уложенного каменного кирпича."
   icon:
     sprite: Civ14/Structures/Walls/new_stonebrick.rsi
     state: full
@@ -250,13 +250,13 @@
     - node: end
       entity: StoneBrickWall
 - type: construction
-  name: marble block wall
+  name: "мраморная стена"
   id: MarbleBlockWall
   graph: MarbleBlockWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: An ancient wall made of stacked marble blocks.
+  description: "Стена древней кладки из мраморных блоков."
   icon:
     sprite: Civ14/Structures/Walls/marble_block_wall.rsi
     state: full
@@ -279,13 +279,13 @@
     - node: end
       entity: MarbleBlockWall
 - type: construction
-  name: fortress stone wall
+  name: "крепостная каменная стена"
   id: FortressBrickWall
   graph: FortressBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A strong, reinforced stone brick wall.
+  description: "Прочная укреплённая стена из каменного кирпича."
   icon:
     sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
     state: full
@@ -308,13 +308,13 @@
     - node: end
       entity: FortressBrickWall
 - type: construction
-  name: roman stone wall
+  name: "римская каменная стена"
   id: RomanStoneBrickWall
   graph: RomanStoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A Roman-style stone wall.
+  description: "Каменная стена в римском стиле."
   icon:
     sprite: Civ14/Structures/Walls/roman.rsi
     state: full
@@ -337,13 +337,13 @@
     - node: end
       entity: RomanStoneBrickWall
 - type: construction
-  name: grecian stone wall
+  name: "греческая каменная стена"
   id: GrecianStoneBrickWall
   graph: GrecianStoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A Greek-style stone wall.
+  description: "Каменная стена в древнегреческом стиле."
   icon:
     sprite: Civ14/Structures/Walls/grecian.rsi
     state: full
@@ -366,13 +366,13 @@
     - node: end
       entity: GrecianStoneBrickWall
 - type: construction
-  name: sandstone block wall
+  name: "стена из песчаника"
   id: SandstoneBlockWall
   graph: SandstoneBlockWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: An ancient wall made of stacked sandstone blocks.
+  description: "Стена древней кладки из блоков песчаника."
   icon:
     sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
     state: full
@@ -395,13 +395,13 @@
     - node: end
       entity: SandstoneBlockWall
 - type: construction
-  name: egyptian sandstone wall
+  name: "египетская стена из песчаника"
   id: EgyptianSandstoneBrickWall
   graph: EgyptianSandstoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: An Egyptian-style stone wall.
+  description: "Стена из песчаника в египетском стиле."
   icon:
     sprite: Civ14/Structures/Walls/egyptian.rsi
     state: full
@@ -424,13 +424,13 @@
     - node: end
       entity: EgyptianSandstoneBrickWall
 - type: construction
-  name: sandstone brick wall
+  name: "стена из песчаникового кирпича"
   id: SandstoneBrickWall
   graph: SandstoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wall made of well-stacked sandstone bricks.
+  description: "Стена из аккуратно уложенного песчаникового кирпича."
   icon:
     sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
     state: full
@@ -453,13 +453,13 @@
     - node: end
       entity: SandstoneBrickWall
 - type: construction
-  name: red sandstone block wall
+  name: "стена из красного песчаника"
   id: RedSandstoneBlockWall
   graph: RedSandstoneBlockWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wall made of red sandstone blocks.
+  description: "Стена из блоков красного песчаника."
   icon:
     sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
     state: full
@@ -482,13 +482,13 @@
     - node: end
       entity: RedSandstoneBlockWall
 - type: construction
-  name: fortress sandstone wall
+  name: "крепостная стена из песчаника"
   id: FortressSandstoneBrickWall
   graph: FortressSandstoneBrickWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A fortress wall made of dark sandstone bricks.
+  description: "Крепостная стена из кирпича тёмного песчаника."
   icon:
     sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
     state: full
@@ -512,13 +512,13 @@
       entity: FortressSandstoneBrickWall
 
 - type: construction
-  name: aztec wall
+  name: "ацтекская стена"
   id: AztecWall
   graph: AztecWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wood wall in the Aztec style.
+  description: "Деревянная стена в ацтекском стиле."
   icon:
     sprite: Civ14/Structures/Walls/aztec.rsi
     state: full
@@ -545,13 +545,13 @@
       entity: AztecWall
 
 - type: construction
-  name: nordic wall
+  name: "северная деревянная стена"
   id: NordicWall
   graph: NordicWall
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: A wood wall in the Nordic european style.
+  description: "Деревянная стена в североевропейском стиле."
   icon:
     sprite: Civ14/Structures/Walls/nordic.rsi
     state: full

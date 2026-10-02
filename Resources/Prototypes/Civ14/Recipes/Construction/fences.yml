@@ -1,11 +1,11 @@
 - type: construction
-  name: wooden fence
+  name: "деревянный забор"
   id: FenceWoodClassic
   graph: FenceWoodClassic
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: "A rustic wood fence for your garden."
+  description: "Простой деревянный забор для сада."
   icon: { sprite: Civ14/Structures/fence.rsi, state: fence }
   objectType: Structure
   agemin: 0
@@ -25,13 +25,13 @@
       entity: FenceWoodClassic
 
 - type: construction
-  name: wooden fence gate
+  name: "деревянная калитка"
   id: FenceWoodClassicGate
   graph: FenceWoodClassicGate
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: "A rustic wood fence gate."
+  description: "Простая деревянная калитка."
   icon: { sprite: Civ14/Structures/Doors/material_doors.rsi, state: fence }
   objectType: Structure
   agemin: 0

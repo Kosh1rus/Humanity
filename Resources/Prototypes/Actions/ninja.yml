@@ -1,8 +1,8 @@
 # gloves
 - type: entity
   id: ActionToggleNinjaGloves
-  name: Toggle ninja gloves
-  description: Toggles all glove actions on left click. Includes your doorjack, draining power, stunning enemies and hacking certain computers.
+  name: Переключить перчатки ниндзя
+  description: Переключить действие перчаток при нажатии левой кнопки мыши. Доступны взлом дверей и некоторых компьютеров, откачка энергии и оглушение врагов.
   components:
   - type: InstantAction
     priority: -13
@@ -11,8 +11,8 @@
 # suit
 - type: entity
   id: ActionCreateThrowingStar
-  name: Create throwing star
-  description: Channels suit power into creating a throwing star that deals extra stamina damage.
+  name: Создать метательную звезду
+  description: Потратить заряд костюма на метательную звезду, которая наносит дополнительный урон выносливости.
   components:
   - type: InstantAction
     useDelay: 0.5
@@ -25,8 +25,8 @@
 
 - type: entity
   id: ActionRecallKatana
-  name: Recall katana
-  description: Teleports the Energy Katana linked to this suit to its wearer, cost based on distance.
+  name: Призвать катану
+  description: Телепортировать энергетическую катану, привязанную к костюму. Расход энергии зависит от расстояния.
   components:
   - type: InstantAction
     useDelay: 1
@@ -39,8 +39,8 @@
 
 - type: entity
   id: ActionNinjaEmp
-  name: EM Burst
-  description: Disable any nearby technology with an electro-magnetic pulse.
+  name: ЭМИ-импульс
+  description: Вывести из строя технику поблизости электромагнитным импульсом.
   components:
   - type: InstantAction
     icon:
@@ -52,8 +52,8 @@
 
 - type: entity
   id: ActionTogglePhaseCloak
-  name: Phase cloak
-  description: Toggles your suit's phase cloak. Beware that if you are hit, all abilities are disabled for 5 seconds, including your cloak!
+  name: Фазовая маскировка
+  description: Включить или выключить фазовую маскировку костюма. Если вас ударят, все способности, включая маскировку, отключатся на 5 секунд!
   components:
   - type: InstantAction
     # have to plan (un)cloaking ahead of time
@@ -64,8 +64,8 @@
 # katana
 - type: entity
   id: ActionEnergyKatanaDash
-  name: Katana dash
-  description: Teleport to anywhere you can see, if your Energy Katana is in your hand.
+  name: Рывок с катаной
+  description: Телепортироваться в любую видимую точку, если энергетическая катана у вас в руке.
   components:
   - type: WorldTargetAction
     icon:

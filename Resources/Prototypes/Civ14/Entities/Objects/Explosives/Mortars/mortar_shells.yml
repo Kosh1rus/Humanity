@@ -14,8 +14,8 @@
 - type: entity
   parent: MortarAmmoBase
   id: MortarShellHE
-  name: high explosive mortar shell
-  description: A mortar shell packed with high explosive. Drop into a mortar tube to activate.
+  name: "фугасная миномётная мина"
+  description: "Миномётная мина с мощным взрывчатым зарядом. Для выстрела опустите её в ствол миномёта."
   components:
     - type: Item
     - type: Sprite

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseRailing
   id: BaseCivWindow
-  name: "window"
-  description: "A basic window."
+  name: "окно"
+  description: "Обычное окно."
   abstract: true
   components:
     - type: Sprite
@@ -38,8 +38,8 @@
 - type: entity
   parent: BaseCivWindow
   id: DirtWallWindow
-  name: "dirt wall window"
-  description: "A basic wall made of dried mud bricks. This one has a window."
+  name: "окно в глинобитной стене"
+  description: "Стена из высушенных глиняных кирпичей с окном."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -56,8 +56,8 @@
 - type: entity
   parent: BaseCivWindow
   id: StrawWallWindow
-  name: "straw wall window"
-  description: "A basic wall made of straw and dry leaves. Burns easily. This one has a window."
+  name: "окно в соломенной стене"
+  description: "Стена из соломы и сухих листьев с окном. Легко загорается."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -74,8 +74,8 @@
 - type: entity
   parent: BaseCivWindow
   id: ClayWallWindow
-  name: "clay wall window"
-  description: "A wall made of fired clay bricks. This one has a window."
+  name: "окно в стене из обожжённой глины"
+  description: "Стена из кирпичей обожжённой глины с окном."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -92,8 +92,8 @@
 - type: entity
   parent: BaseCivWindow
   id: LogWallWindow
-  name: "log wall window"
-  description: "A wall made of stacked hardwood logs. For that rustic feel. This one has a window."
+  name: "окно в бревенчатой стене"
+  description: "Стена из брёвен твёрдой древесины с окном."
   components:
     - type: Sprite
       drawdepth: SmallObjects
@@ -110,8 +110,8 @@
 - type: entity
   parent: BaseCivWindow
   id: WoodWindowClassic
-  name: "wood window"
-  description: "A rustic wood window."
+  name: "деревянное окно"
+  description: "Окно в деревенском стиле с деревянной рамой."
   components:
     - type: Sprite
       drawdepth: SmallObjects

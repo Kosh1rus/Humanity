@@ -200,8 +200,8 @@
 - type: entity
   parent: BookBase
   id: BookPossum
-  name: fallen ambitions - the tragic tale of morty the possum
-  description: The book is in good condition, with a hardcover and a dark green forest background. In the center of the cover, there is a sad looking possum sitting on a branch, with a distant and lonely expression on its face. The title, "Fallen Ambitions - The Tragic Tale of Morty the Possum," is written in bold, gold letters above the possum.
+  name: "«Несбывшиеся надежды: печальная история опоссума Морти»"
+  description: "Книга в хорошем состоянии. На тёмно-зелёной обложке нарисован печальный опоссум, сидящий на ветке и глядящий вдаль. Над ним золотыми буквами выведено название."
   components:
     - type: Sprite
       sprite: Objects/Misc/books.rsi

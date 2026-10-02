@@ -122,10 +122,10 @@
     - type: DisarmMalus
 
 - type: entity
-  name: arming sword
+  name: "рыцарский меч"
   parent: BaseSword
   id: civ13_sword_arming_sword
-  description: A very common medieval medium-sized sword.
+  description: "Распространённый средневековый меч средней длины."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/armingsword.rsi
@@ -281,10 +281,10 @@
     - type: DisarmMalus
 
 - type: entity
-  name: saif
+  name: "сайф"
   parent: BaseSword
   id: civ13_sword_saif
-  description: A medium sword, original from the arab peninsula.
+  description: "Меч средней длины родом с Аравийского полуострова."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/umar_sword.rsi
@@ -322,10 +322,10 @@
     - type: DisarmMalus
 
 - type: entity
-  name: longsword
+  name: "длинный меч"
   parent: BaseSword
   id: civ13_sword_longsword
-  description: A sword with a long blade. Commonly used in the medieval era.
+  description: "Меч с длинным клинком. Широко применялся в Средние века."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/longsword.rsi
@@ -574,10 +574,10 @@
     - type: DisarmMalus
 
 - type: entity
-  name: shashka sword
+  name: "шашка"
   parent: BaseSword
   id: civ13_sword_shashka_sword
-  description: A caucasian sabre, very sharp and meant to be used single-handedly.
+  description: "Острая кавказская сабля для боя одной рукой."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/shashka.rsi

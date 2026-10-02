@@ -1,6 +1,6 @@
 - type: entity
-  name: Stielhandgranate 24
-  description: A german WW2 fragmentation grenade.
+  name: "граната Stielhandgranate 24"
+  description: "Немецкая осколочная граната времён Второй мировой войны."
   parent: GrenadeBase
   id: GrenadeSHG24
   components:
@@ -42,8 +42,8 @@
               acts: ["Destruction"]
 
 - type: entity
-  name: M67 grenade
-  description: A modern US fragmentation grenade.
+  name: граната M67
+  description: Современная американская осколочная граната.
   parent: GrenadeBase
   id: GrenadeM67
   components:
@@ -84,8 +84,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
 - type: entity
-  name: F-1 grenade
-  description: A Soviet WW2-era fragmentation grenade.
+  name: граната Ф-1
+  description: Советская осколочная граната времён Второй мировой войны.
   parent: GrenadeBase
   id: GrenadeF1
   components:
@@ -126,8 +126,8 @@
             - !type:DoActsBehavior
               acts: ["Destruction"]
 - type: entity
-  name: RGD-5 grenade
-  description: A Cold War era Soviet fragmentation grenade.
+  name: граната РГД-5
+  description: Советская осколочная граната времён холодной войны.
   parent: GrenadeBase
   id: GrenadeRGD5
   components:
@@ -172,8 +172,8 @@
 - type: entity
   parent: GrenadeBase
   id: SmokeGrenadeRDG2
-  name: RDG-2 smoke grenade
-  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  name: дымовая граната РДГ-2
+  description: Создаёт большое и долго не рассеивающееся облако дыма.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Grenades/rdg2.rsi
@@ -188,8 +188,8 @@
 - type: entity
   parent: GrenadeBase
   id: SmokeGrenadeNHG39
-  name: Nebelhandgranate 39 smoke grenade
-  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  name: дымовая граната Nebelhandgranate 39
+  description: Создаёт большое и долго не рассеивающееся облако дыма.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Grenades/smoke_grenade.rsi
@@ -204,8 +204,8 @@
 - type: entity
   parent: GrenadeBase
   id: SmokeGrenadeM18
-  name: M18 smoke grenade
-  description: A tactical grenade that releases a large, long-lasting cloud of smoke when used.
+  name: дымовая граната M18
+  description: Создаёт большое и долго не рассеивающееся облако дыма.
   components:
     - type: Sprite
       sprite: Civ14/Objects/Grenades/m18.rsi

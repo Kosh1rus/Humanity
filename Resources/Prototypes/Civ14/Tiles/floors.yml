@@ -68,7 +68,7 @@
 
 - type: tile
   id: FloorThatch
-  name: thatch floor
+  name: соломенный настил
   sprite: /Textures/Civ14/Structures/Floors/wood.rsi/thatch2.png
   variants: 1
   baseTurf: FloorDirt
@@ -84,12 +84,12 @@
 
 - type: stack
   id: FloorTileThatch
-  name: thatch floor
+  name: соломенный настил
   spawn: FloorTileItemThatch
   maxCount: 30
 
 - type: entity
-  name: thatch floor
+  name: соломенный настил
   parent: FloorTileItemBase
   id: FloorTileItemThatch
   components:
@@ -118,8 +118,8 @@
 - type: entity
   id: FloorThatch
   parent: FloorWoodClassic
-  name: thatch floor
-  description: "A floor made of compressed dried straw."
+  name: соломенный настил
+  description: "Настил из плотно утрамбованной сухой соломы."
   components:
     - type: Sprite
       sprite: Civ14/Structures/Floors/wood.rsi
@@ -136,8 +136,8 @@
 - type: entity
   id: FloorWoodClassic
   parent: BaseStructure
-  name: wood floor
-  description: "A rustic wood floor."
+  name: деревянный настил
+  description: "Простой настил из деревянных досок."
   components:
     - type: Sprite
       sprite: Civ14/Structures/Floors/wood.rsi
@@ -164,7 +164,7 @@
 
 - type: tile
   id: FloorRoad
-  name: ancient road
+  name: старая дорога
   sprite: /Textures/Civ14/Structures/Floors/roads.rsi/r_roadfull.png
   variants: 1
   baseTurf: FloorDirt
@@ -180,12 +180,12 @@
 
 - type: stack
   id: FloorTileRoad
-  name: ancient road
+  name: старая дорога
   spawn: FloorTileItemRoad
   maxCount: 30
 
 - type: entity
-  name: ancient road
+  name: старая дорога
   parent: FloorTileItemBase
   id: FloorTileItemRoad
   components:
@@ -211,8 +211,8 @@
 - type: entity
   id: FloorRoad
   parent: BaseStructure
-  name: ancient road
-  description: "An ancient rough cobblestone road."
+  name: старая дорога
+  description: "Старая дорога, выложенная грубым булыжником."
   components:
     - type: Sprite
       sprite: Civ14/Structures/Floors/roads.rsi
@@ -236,7 +236,7 @@
 
 - type: tile
   id: FloorCobblestone
-  name: cobblestone floor
+  name: булыжная мостовая
   sprite: /Textures/Civ14/Objects/floors.rsi/cobble_vertical_dark.png
   variants: 1
   baseTurf: FloorDirt
@@ -252,12 +252,12 @@
 
 - type: stack
   id: FloorTileCobblestone
-  name: cobblestone floor
+  name: булыжная мостовая
   spawn: FloorTileItemCobblestone
   maxCount: 30
 
 - type: entity
-  name: cobblestone floor
+  name: булыжная мостовая
   parent: FloorTileItemBase
   id: FloorTileItemCobblestone
   components:
@@ -283,8 +283,8 @@
 - type: entity
   id: FloorCobblestone
   parent: BaseStructure
-  name: cobblestone floor
-  description: "A cobblestone floor."
+  name: булыжная мостовая
+  description: "Пол, выложенный булыжником."
   components:
     - type: Sprite
       sprite: Civ14/Objects/floors.rsi
@@ -308,7 +308,7 @@
 
 - type: tile
   id: FloorBridge
-  name: bridge
+  name: мост
   sprite: /Textures/Civ14/Structures/Floors/wood.rsi/woodalt7.png
   variants: 1
   baseTurf: FloorDirt
@@ -324,12 +324,12 @@
 
 - type: stack
   id: FloorTileBridge
-  name: bridging tile
+  name: мостовой настил
   spawn: FloorTileItemBridge
   maxCount: 10
 
 - type: entity
-  name: bridging tile
+  name: мостовой настил
   parent: FloorTileItemBase
   id: FloorTileItemBridge
   components:
@@ -358,8 +358,8 @@
 - type: entity
   id: FloorBridge
   parent: FloorWoodClassic
-  name: bridge
-  description: "A makeshift wooden bridge."
+  name: мост
+  description: "Временный мост из деревянных досок."
   components:
     - type: Sprite
       sprite: Civ14/Structures/Floors/wood.rsi

@@ -163,10 +163,10 @@
 # Tastes like bun, grass.
 
 - type: entity
-  name: bacon burger
+  name: "бургер с беконом"
   parent: FoodBurgerBase
   id: FoodBurgerBacon
-  description: The perfect combination of all things American.
+  description: "Идеальное сочетание всего по-американски вкусного."
   components:
     - type: FlavorProfile
       flavors:
@@ -906,10 +906,10 @@
 # Tastes like bun, diabetes.
 
 - type: entity
-  name: tofu burger
+  name: "бургер с тофу"
   parent: FoodBurgerBase
   id: FoodBurgerTofu
-  description: What... is that meat?
+  description: "Погодите... это что, мясо?"
   components:
     - type: FlavorProfile
       flavors:

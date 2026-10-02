@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
-  name: mop
+  name: "швабра"
   id: MopItem
-  description: A mop that can't be stopped.
+  description: "Незаменимое орудие уборки."
   components:
     - type: Sprite
       sprite: Civ14/Objects/janitor.rsi
@@ -112,10 +112,10 @@
     - type: DnaSubstanceTrace
 
 - type: entity
-  name: wet floor sign
+  name: "знак «Мокрый пол»"
   id: WetFloorSign
   parent: ClothingOuterBase
-  description: Caution! Wet Floor!
+  description: "Осторожно, мокрый пол!"
   components:
     - type: Sprite
       sprite: Objects/Specific/Janitorial/wet_floor_sign.rsi

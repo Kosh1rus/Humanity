@@ -9,8 +9,7 @@ namespace Content.Shared.Localizations
     {
         [Dependency] private readonly ILocalizationManager _loc = default!;
 
-        // If you want to change your codebase's language, do it here.
-        private const string Culture = "en-US";
+        private const string Culture = "ru-RU";
 
         /// <summary>
         /// Custom format strings used for parsing and displaying minutes:seconds timespans.
@@ -27,16 +26,26 @@ namespace Content.Shared.Localizations
         {
             var culture = new CultureInfo(Culture);
 
-            _loc.LoadCulture(culture);
-            _loc.AddFunction(culture, "PRESSURE", FormatPressure);
-            _loc.AddFunction(culture, "POWERWATTS", FormatPowerWatts);
-            _loc.AddFunction(culture, "POWERJOULES", FormatPowerJoules);
-            _loc.AddFunction(culture, "UNITS", FormatUnits);
-            _loc.AddFunction(culture, "TOSTRING", args => FormatToString(culture, args));
-            _loc.AddFunction(culture, "LOC", FormatLoc);
-            _loc.AddFunction(culture, "NATURALFIXED", FormatNaturalFixed);
-            _loc.AddFunction(culture, "NATURALPERCENT", FormatNaturalPercent);
-            _loc.AddFunction(culture, "PLAYTIME", FormatPlaytime);
+            var cultureEn = new CultureInfo("en-US");
+            if (!_loc.HasCulture(cultureEn))
+                _loc.LoadCulture(cultureEn);
+            if (!_loc.HasCulture(culture))
+                _loc.LoadCulture(culture);
+
+            foreach (var loadedCulture in new[] { cultureEn, culture })
+            {
+                _loc.AddFunction(loadedCulture, "PRESSURE", FormatPressure);
+                _loc.AddFunction(loadedCulture, "POWERWATTS", FormatPowerWatts);
+                _loc.AddFunction(loadedCulture, "POWERJOULES", FormatPowerJoules);
+                _loc.AddFunction(loadedCulture, "UNITS", FormatUnits);
+                _loc.AddFunction(loadedCulture, "TOSTRING", args => FormatToString(loadedCulture, args));
+                _loc.AddFunction(loadedCulture, "LOC", FormatLoc);
+                _loc.AddFunction(loadedCulture, "NATURALFIXED", FormatNaturalFixed);
+                _loc.AddFunction(loadedCulture, "NATURALPERCENT", FormatNaturalPercent);
+                _loc.AddFunction(loadedCulture, "PLAYTIME", FormatPlaytime);
+            }
+
+            _loc.AddFunction(culture, "RUSSIANUNIT", FormatRussianUnit);
 
 
             /*
@@ -44,10 +53,10 @@ namespace Content.Shared.Localizations
              * localization you should NOT modify these, instead add new functions specific to your language/culture.
              * This ensures the english translations continue to work as expected when fallbacks are needed.
              */
-            var cultureEn = new CultureInfo("en-US");
-
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
+            _loc.SetFallbackCluture(cultureEn);
+            _loc.SetCulture(culture);
         }
 
         private ILocValue FormatMany(LocArgs args)
@@ -62,6 +71,43 @@ namespace Content.Shared.Localizations
             {
                 return (LocValueString) FormatMakePlural(args);
             }
+        }
+
+        private static ILocValue FormatRussianUnit(LocArgs args)
+        {
+            var unit = ((LocValueString) args.Args[0]).Value;
+            var amount = ((LocValueNumber) args.Args[1]).Value;
+            var forms = unit switch
+            {
+                "листы" => new[] { "лист", "листа", "листов" },
+                "слитки" => new[] { "слиток", "слитка", "слитков" },
+                "доски" => new[] { "доска", "доски", "досок" },
+                "рулоны" => new[] { "рулон", "рулона", "рулонов" },
+                "единицы" => new[] { "единица", "единицы", "единиц" },
+                "куски" => new[] { "кусок", "куска", "кусков" },
+                "пряди" => new[] { "прядь", "пряди", "прядей" },
+                "куски руды" => new[] { "кусок руды", "куска руды", "кусков руды" },
+                "банкноты" => new[] { "банкнота", "банкноты", "банкнот" },
+                "монеты" => new[] { "монета", "монеты", "монет" },
+                _ => null,
+            };
+
+            if (forms == null)
+                return new LocValueString(unit);
+
+            if (amount != Math.Truncate(amount))
+                return new LocValueString(forms[1]);
+
+            var lastTwo = (long)Math.Abs(amount) % 100;
+            var lastOne = lastTwo % 10;
+            var index = lastTwo is >= 11 and <= 14 ? 2 : lastOne switch
+            {
+                1 => 0,
+                >= 2 and <= 4 => 1,
+                _ => 2,
+            };
+
+            return new LocValueString(forms[index]);
         }
 
         private ILocValue FormatNaturalPercent(LocArgs args)
@@ -105,32 +151,25 @@ namespace Content.Shared.Localizations
             }
         }
 
-        // TODO: allow fluent to take in lists of strings so this can be a format function like it should be.
-        /// <summary>
-        /// Formats a list as per english grammar rules.
-        /// </summary>
         public static string FormatList(List<string> list)
         {
             return list.Count switch
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} and {list[1]}",
-                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))}, and {list[^1]}"
+                2 => $"{list[0]} и {list[1]}",
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))} и {list[^1]}"
             };
         }
 
-        /// <summary>
-        /// Formats a list as per english grammar rules, but uses or instead of and.
-        /// </summary>
         public static string FormatListToOr(List<string> list)
         {
             return list.Count switch
             {
                 <= 0 => string.Empty,
                 1 => list[0],
-                2 => $"{list[0]} or {list[1]}",
-                _ => $"{string.Join(" or ", list)}"
+                2 => $"{list[0]} или {list[1]}",
+                _ => $"{string.Join(", ", list.GetRange(0, list.Count - 1))} или {list[^1]}"
             };
         }
 

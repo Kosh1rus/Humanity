@@ -263,8 +263,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieLamp
-  name: lamp plushie
-  description: A light emitting friend!
+  name: "плюшевая лампа"
+  description: "Мягкий друг, который ещё и светится!"
   components:
     - type: Sprite
       state: plushie_lamp

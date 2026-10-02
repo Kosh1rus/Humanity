@@ -50,8 +50,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: PhoneInstrument
-  name: red phone
-  description: Should anything ever go wrong...
+  name: "красный телефон"
+  description: "На случай, если что-то пойдёт совсем не так..."
   components:
     - type: Sprite
       sprite: Objects/Fun/Instruments/otherinstruments.rsi

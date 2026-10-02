@@ -1,11 +1,11 @@
 - type: construction
-  name: compost bin
+  name: "компостный ящик"
   id: CompostBin
   graph: CompostBin
   startNode: start
   targetNode: end
   category: construction-category-furniture
-  description: A wood box, used to turn trash and scraps into fertilizer.
+  description: "Деревянный ящик, в котором отходы превращаются в удобрение."
   icon: { sprite: Civ14/Objects/structures.rsi, state: compostbin }
   objectType: Structure
   agemin: 0

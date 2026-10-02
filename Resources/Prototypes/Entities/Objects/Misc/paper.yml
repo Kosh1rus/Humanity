@@ -52,10 +52,10 @@
       size: Tiny
 
 - type: entity
-  name: paper
+  name: "бумага"
   parent: BasePaper
   id: Paper
-  description: "A piece of white paper."
+  description: "Чистый лист белой бумаги."
   components:
     - type: Sprite
       sprite: Objects/Misc/bureaucracy.rsi
@@ -83,10 +83,10 @@
       node: end
 
 - type: entity
-  name: paper scrap
+  name: "клочок бумаги"
   parent: BasePaper
   id: PaperScrap
-  description: "A crumpled up piece of white paper."
+  description: "Смятый клочок белой бумаги."
   components:
     - type: Tag
       tags:
@@ -295,8 +295,8 @@
 - type: entity
   id: BoxFolderClipboard
   parent: BoxFolderBase
-  name: clipboard
-  description: The weapon of choice for those on the front lines of bureaucracy.
+  name: "планшет с бумагами"
+  description: "Главное оружие бойца на передовой бюрократии."
   components:
     - type: Sprite
       sprite: Objects/Misc/clipboard.rsi

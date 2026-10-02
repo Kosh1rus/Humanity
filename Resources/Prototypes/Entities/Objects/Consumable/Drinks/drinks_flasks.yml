@@ -22,8 +22,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkMREFlask
-  name: MRE flask
-  description: An old military flask, filled with the finest contents for soldiers.
+  name: "армейская фляга"
+  description: "Старая армейская фляга с лучшим, что могли налить солдату."
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/mreflask.rsi

@@ -264,8 +264,8 @@
 - type: entity
   parent: DrinkBaseCup
   id: DrinkTeacup
-  name: teacup
-  description: A plain white porcelain teacup.
+  name: "чайная чашка"
+  description: "Простая белая фарфоровая чашка."
   components:
   - type: SolutionContainerManager
     solutions:

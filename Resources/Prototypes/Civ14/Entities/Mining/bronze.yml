@@ -9,7 +9,8 @@
 - type: entity
   parent: IngotBase
   id: IngotBronze
-  name: bronze ingot
+  name: "бронзовый слиток"
+  description: "Слиток бронзы для изготовления вещей."
   suffix: Full
   components:
     - type: Material

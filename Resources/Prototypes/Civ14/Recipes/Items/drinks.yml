@@ -1,11 +1,11 @@
 - type: construction
-  name: wood cup
+  name: "деревянная чашка"
   id: WoodCup
   graph: WoodCup
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: A crude cup, made of wood.
+  description: "Простая чашка, вырезанная из дерева."
   icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup2 }
   objectType: Item
   agemin: 0
@@ -26,13 +26,13 @@
       entity: WoodCup
 
 - type: construction
-  name: wood mug
+  name: "деревянная кружка"
   id: WoodMug
   graph: WoodMug
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: A crude mug, made of wood.
+  description: "Простая кружка, вырезанная из дерева."
   icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup }
   objectType: Item
   agemin: 0

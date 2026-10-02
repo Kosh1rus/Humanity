@@ -49,7 +49,8 @@
       amount: 1
 
 - type: entity
-  name: pill
+  name: "таблетка сульфаниламида"
+  description: "Таблетка противомикробного средства."
   suffix: Sulfanilamide 10u
   parent: Pill
   id: PillSulfanilamide
@@ -69,7 +70,8 @@
               Quantity: 10
 
 - type: entity
-  name: pill canister
+  name: "упаковка сульфаниламида"
+  description: "Баночка с таблетками сульфаниламида."
   parent: PillCanister
   id: PillCanisterSulfanilamide
   suffix: Sulfanilamide 10u, 5
@@ -82,10 +84,10 @@
           amount: 5
 
 - type: entity
-  name: adrenaline syrette
+  name: "шприц-тюбик с адреналином"
   parent: ChemicalMedipen
   id: SyretteAdrenaline
-  description: A rapid and safe way to stabilize patients in critical condition.
+  description: "Позволяет быстро и безопасно стабилизировать пациента в критическом состоянии."
   components:
     - type: Sprite
       sprite: Civ14/Objects/syringe.rsi
@@ -109,10 +111,10 @@
       tags: []
 
 - type: entity
-  name: morphine syrette
+  name: "шприц-тюбик с морфином"
   parent: ChemicalMedipen
   id: SyretteMorphine
-  description: A strong painkiller, in a syrette for quick delivery.
+  description: "Сильное обезболивающее в удобном шприце-тюбике."
   components:
     - type: Sprite
       sprite: Civ14/Objects/syringe.rsi

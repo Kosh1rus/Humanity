@@ -113,10 +113,10 @@
               - civ13_caliber_a556x45
 
 - type: entity
-  name: M16A2
+  name: "M16A2"
   parent: civ13_ar_M16A1
   id: civ13_ar_M16A2
-  description: A modernized version of the M16, with burst fire instead of automatic.
+  description: "Модернизированная винтовка M16 со стрельбой очередями фиксированной длины вместо автоматического огня."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/m16.rsi

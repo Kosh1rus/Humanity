@@ -43,8 +43,8 @@
 - type: entity
   parent: DrinkGlassBase
   id: DrinkShotGlass
-  name: shot glass
-  description: Perfect for slamming down onto the table angrily.
+  name: "стопка"
+  description: "Идеальна, чтобы сердито хлопнуть ею по столу."
   components:
   - type: SolutionContainerManager
     solutions:

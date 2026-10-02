@@ -173,10 +173,10 @@
         collection: lighterOffSounds
 
 - type: entity
-  name: cheap lighter
+  name: "дешёвая зажигалка"
   parent: Lighter
   id: CheapLighter
-  description: "A dangerously inexpensive plastic lighter, don't burn your thumb!"
+  description: "Подозрительно дешёвая пластиковая зажигалка. Берегите большой палец!"
   components:
     - type: Sprite
       sprite: Objects/Tools/lighters.rsi
@@ -202,10 +202,10 @@
           maxVol: 4 #uses less fuel than a welder, so this isnt as bad as it looks
 
 - type: entity
-  name: flippo lighter
+  name: "зажигалка «Флиппо»"
   parent: BaseItem
   id: FlippoLighter
-  description: "A rugged metal lighter, lasts quite a while."
+  description: "Прочная металлическая зажигалка. Прослужит долго."
   components:
     - type: Sprite
       sprite: Objects/Tools/lighters.rsi

@@ -1,7 +1,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialStraw
-  name: straw
+  name: "солома"
+  description: "Сухие стебли растений для строительства и ремесла."
   suffix: Full
   components:
     - type: Sprite
@@ -46,7 +47,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialLeather
-  name: leather
+  name: "кожа"
+  description: "Выделанная кожа для изготовления вещей."
   suffix: Full
   components:
     - type: Sprite
@@ -87,7 +89,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDirt
-  name: dirt
+  name: "земля"
   suffix: Full
   components:
     - type: Sprite
@@ -136,7 +138,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialStone
-  name: stone
+  name: "камень"
+  description: "Прочный камень для строительства и ремесла."
   suffix: Full
   components:
     - type: Sprite
@@ -177,7 +180,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialSandstone
-  name: stone
+  name: "песчаник"
+  description: "Мягкий камень для строительства и ремесла."
   suffix: Full
   components:
     - type: Sprite
@@ -218,7 +222,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialClay
-  name: clay
+  name: "глина"
+  description: "Податливый материал для изготовления вещей."
   suffix: Full
   components:
     - type: Sprite
@@ -259,7 +264,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialRope
-  name: rope
+  name: "верёвка"
+  description: "Прочная верёвка для связывания и ремесла."
   suffix: Full
   components:
     - type: Sprite
@@ -300,7 +306,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialPeltBrownBear
-  name: brown bear pelt
+  name: "шкура бурого медведя"
+  description: "Тяжёлая медвежья шкура с густым мехом."
   suffix: Full
   components:
     - type: Sprite
@@ -341,7 +348,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialPeltGreyWolf
-  name: grey wolf pelt
+  name: "шкура серого волка"
+  description: "Волчья шкура с густым серым мехом."
   suffix: Full
   components:
     - type: Sprite
@@ -382,7 +390,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialBarbwire
-  name: barbed wire
+  name: "колючая проволока"
+  description: "Подходит для ограждений, которые не хочется пересекать."
   suffix: Full
   components:
     - type: Sprite
@@ -415,7 +424,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialSandbags
-  name: sandbags
+  name: "мешки с песком"
+  description: "Из них можно возвести укрытие."
   suffix: Full
   components:
     - type: Sprite

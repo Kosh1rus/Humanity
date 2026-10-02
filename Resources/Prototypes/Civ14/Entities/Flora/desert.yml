@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseTree
   id: TreeCactus
-  name: cactus
-  description: A large cactus.
+  name: "кактус"
+  description: "Большой кактус."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees.rsi

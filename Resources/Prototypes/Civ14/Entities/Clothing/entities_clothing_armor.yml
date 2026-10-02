@@ -1,8 +1,8 @@
 - type: entity
-  name: imperial officer armor
+  name: "броня имперского офицера"
   parent: ClothingOuterBase
   id: civ13_suit_imperial_officer_armor
-  description: A thick, steel armor worn by imperial officers
+  description: "Тяжёлые стальные доспехи имперского офицера."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/imperial_officer.rsi
@@ -18,10 +18,10 @@
           Heat: 0.85
 
 - type: entity
-  name: bronze chinese lamellar
+  name: "китайский бронзовый ламеллярный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_bronze_chinese_lamellar
-  description: A bronze lamellar armor, used by warriors of early chinese dynasties.
+  description: "Бронзовый доспех из пластин, которым пользовались воины ранних китайских династий."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/chinese_lamellar.rsi
@@ -37,10 +37,10 @@
           Heat: 0.85
 
 - type: entity
-  name: green plated armor
+  name: "зелёный латный доспех"
   parent: civ13_suit_plated_armor
   id: civ13_suit_green_plated_armor
-  description: A thick, expensive iron armor, covering most of the body.
+  description: "Тяжёлый дорогой железный доспех зелёного цвета, закрывающий почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
@@ -48,10 +48,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_green.rsi
 
 - type: entity
-  name: red plated armor
+  name: "красный латный доспех"
   parent: civ13_suit_plated_armor
   id: civ13_suit_red_plated_armor
-  description: A thick, expensive iron armor, covering most of the body.
+  description: "Тяжёлый дорогой железный доспех красного цвета, закрывающий почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
@@ -59,10 +59,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_red.rsi
 
 - type: entity
-  name: blue plated armor
+  name: "синий латный доспех"
   parent: civ13_suit_plated_armor
   id: civ13_suit_blue_plated_armor
-  description: A thick, expensive iron armor, covering most of the body.
+  description: "Тяжёлый дорогой железный доспех синего цвета, закрывающий почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
@@ -70,10 +70,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_blue.rsi
 
 - type: entity
-  name: replicant trooper armor
+  name: "броня солдата-репликанта"
   parent: ClothingOuterBase
   id: civ13_suit_replicant_trooper_armor
-  description: A thick, expensive plastoid armor, covering most of the body.
+  description: "Тяжёлая дорогостоящая пластоидная броня, закрывающая почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
@@ -89,10 +89,10 @@
           Heat: 0.44
 
 - type: entity
-  name: replicant pilot armor
+  name: "броня пилота-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_pilot_armor
-  description: A thin, expensive plastoid armor, covering most of the body.
+  description: "Лёгкая дорогостоящая пластоидная броня, закрывающая почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
@@ -100,10 +100,10 @@
       sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
 
 - type: entity
-  name: replicant MP armor
+  name: "броня военной полиции репликантов"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_MP_armor
-  description: An extremely thick, expensive plastoid armor, covering most of the body.
+  description: "Особенно тяжёлая пластоидная броня, закрывающая почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
@@ -111,10 +111,10 @@
       sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
 
 - type: entity
-  name: replicant sergeant armor
+  name: "броня сержанта-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_sergeant_armor
-  description: A thick, expensive green marked plastoid armor, covering most of the body.
+  description: "Тяжёлая пластоидная броня с зелёными знаками отличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
@@ -122,12 +122,10 @@
       sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
 
 - type: entity
-  name: replicant reinforced armor
+  name: "усиленная броня репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_reinforced_armor
-  description: >-
-    A thick, expensive plastoid armor with a blast plate, covering most of the
-    body.
+  description: "Тяжёлая пластоидная броня с дополнительной защитной пластиной."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
@@ -135,10 +133,10 @@
       sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
 
 - type: entity
-  name: replicant lieutenant armor
+  name: "броня лейтенанта-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_lieutenant_armor
-  description: A thick, expensive blue marked plastoid armor, covering most of the body.
+  description: "Тяжёлая пластоидная броня с синими знаками отличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
@@ -146,10 +144,10 @@
       sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
 
 - type: entity
-  name: replicant commando armor
+  name: "броня коммандос-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_commando_armor
-  description: A thick, extremely expensive plastoid armor, covering most of the chest.
+  description: "Очень дорогая и прочная пластоидная броня, защищающая прежде всего грудь."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repcommando.rsi
@@ -157,10 +155,10 @@
       sprite: Civ14/Clothing/exported/suits/repcommando.rsi
 
 - type: entity
-  name: replicant captain armor
+  name: "броня капитана-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_captain_armor
-  description: A thick, expensive red marked plastoid armor, covering most of the body.
+  description: "Тяжёлая пластоидная броня с красными знаками отличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
@@ -168,10 +166,10 @@
       sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
 
 - type: entity
-  name: replicant commander armor
+  name: "броня командира-репликанта"
   parent: civ13_suit_replicant_trooper_armor
   id: civ13_suit_replicant_commander_armor
-  description: A thick, expensive gold marked plastoid armor, covering most of the body.
+  description: "Тяжёлая пластоидная броня с золотыми знаками отличия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
@@ -179,12 +177,10 @@
       sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
 
 - type: entity
-  name: red guard armor with robe
+  name: "броня красного гвардейца с плащом"
   parent: ClothingOuterBase
   id: civ13_suit_red_guard_armor_with_robe
-  description: >-
-    A thick, extremely expensive plastoid armor with a crimson red robe
-    attached.
+  description: "Тяжёлая пластоидная броня с багряным плащом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/redguard.rsi
@@ -200,10 +196,10 @@
           Heat: 0.25
 
 - type: entity
-  name: senate guard armor with robe
+  name: "броня сенатского гвардейца с плащом"
   parent: ClothingOuterBase
   id: civ13_suit_senate_guard_armor_with_robe
-  description: A thick, extremely expensive plastoid armor with a royal blue robe attached.
+  description: "Тяжёлая пластоидная броня с плащом королевского синего цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/senateguard.rsi
@@ -219,10 +215,10 @@
           Heat: 0.25
 
 - type: entity
-  name: standard stormtrooper armor
+  name: "стандартная броня штурмовика"
   parent: ClothingOuterBase
   id: civ13_suit_standard_stormtrooper_armor
-  description: A thick, expensive imperial plastoid armor, covering most of the body.
+  description: "Тяжёлая пластоидная броня имперского штурмовика, закрывающая почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
@@ -238,12 +234,10 @@
           Heat: 0.5
 
 - type: entity
-  name: stormsurgeon armor
+  name: "броня штурмового медика"
   parent: civ13_suit_standard_stormtrooper_armor
   id: civ13_suit_stormsurgeon_armor
-  description: >-
-    A thick, expensive imperial stormsurgeon plastoid armor with mint green
-    highlights, covering most of the body.
+  description: "Тяжёлая пластоидная броня имперского медика с мятно-зелёными отметками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
@@ -251,12 +245,10 @@
       sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
 
 - type: entity
-  name: light stormtrooper armor
+  name: "лёгкая броня штурмовика"
   parent: civ13_suit_standard_stormtrooper_armor
   id: civ13_suit_light_stormtrooper_armor
-  description: >-
-    A light, substandard imperial stormtrooper plastoid armor with removed
-    plates for added mobility , covering some of the body.
+  description: "Облегчённая пластоидная броня имперского штурмовика. Часть пластин снята ради подвижности."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
@@ -264,12 +256,10 @@
       sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
 
 - type: entity
-  name: segmented armor
+  name: "сегментный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_segmented_armor
-  description: >-
-    A thick and expensive segmented piece of iron armor, its scales protect the
-    torso.
+  description: "Тяжёлый дорогой железный доспех из пластин, защищающих туловище."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
@@ -286,10 +276,10 @@
           Radiation: 0.85
 
 - type: entity
-  name: chainmail
+  name: "кольчуга"
   parent: ClothingOuterBase
   id: civ13_suit_chainmail
-  description: Wearable armor made of several small interlinked chains.
+  description: "Доспех из множества переплетённых металлических колец."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
@@ -307,10 +297,10 @@
           Heat: 0.85
 
 - type: entity
-  name: linothorax armor
+  name: "линоторакс"
   parent: ClothingOuterBase
   id: civ13_suit_linothorax_armor
-  description: A thick linen armor, covering the torso and lower body.
+  description: "Плотный льняной доспех, защищающий туловище и нижнюю часть тела."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
@@ -332,10 +322,10 @@
       time: 10
 
 - type: entity
-  name: bronze egyptian lamellar
+  name: "египетский бронзовый ламеллярный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_bronze_egyptian_lamellar
-  description: A bronze lamellar armor, used by soldiers of pharaonic dynasties.
+  description: "Бронзовый доспех из пластин, которым пользовались воины фараонов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/egyptian_lamellar.rsi
@@ -351,10 +341,10 @@
           Heat: 0.85
 
 - type: entity
-  name: scaled armor
+  name: "чешуйчатый доспех"
   parent: ClothingOuterBase
   id: civ13_suit_scaled_armor
-  description: An armor made of serveral scales made of bronze.
+  description: "Доспех из бронзовых чешуек."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/scaled_armor.rsi
@@ -370,10 +360,10 @@
           Heat: 0.85
 
 - type: entity
-  name: aztec harness
+  name: "ацтекская нагрудная броня"
   parent: ClothingOuterBase
   id: civ13_suit_aztec_harness
-  description: A few metal plates on leather strips, covering the torso.
+  description: "Несколько металлических пластин на кожаных ремнях защищают туловище."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
@@ -395,10 +385,10 @@
       time: 8
 
 - type: entity
-  name: alligator scale armor
+  name: "броня из кожи аллигатора"
   parent: ClothingOuterBase
   id: civ13_suit_alligator_scale_armor
-  description: A carefully cured & hardened alligator scale armor, covering the torso.
+  description: "Тщательно выделанная и затвердевшая кожа аллигатора защищает туловище."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
@@ -421,10 +411,10 @@
       time: 10
 
 - type: entity
-  name: pharaonic armor of the gods
+  name: "божественные доспехи фараона"
   parent: ClothingOuterBase
   id: civ13_suit_pharaonic_armor_of_the_gods
-  description: The armor of the divine gods of the desert
+  description: "Доспехи богов пустыни."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/settra.rsi
@@ -432,10 +422,10 @@
       sprite: Civ14/Clothing/exported/suits/settra.rsi
 
 - type: entity
-  name: creed armor
+  name: "броня Кредо"
   parent: ClothingOuterBase
   id: civ13_suit_creed_armor
-  description: A leather armor worn by the creed.
+  description: "Кожаный доспех, который носят члены Кредо."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ac_armor.rsi
@@ -452,10 +442,10 @@
           Radiation: 0.9
 
 - type: entity
-  name: creed armor
+  name: "броня Кредо"
   parent: ClothingOuterBase
   id: civ13_suit_creed_armor_1_2
-  description: A leather armor worn by the creed.
+  description: "Кожаный доспех, который носят члены Кредо."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ac_armor_napol.rsi
@@ -472,10 +462,10 @@
           Radiation: 0.9
 
 - type: entity
-  name: NCR Trooper Armor
+  name: "броня солдата НКР"
   parent: ClothingOuterBase
   id: civ13_suit_NCR_Trooper_Armor
-  description: An NCR Armored Vest
+  description: "Бронированный жилет солдата НКР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ncr_armor.rsi
@@ -491,12 +481,10 @@
           Heat: 0.85
 
 - type: entity
-  name: imperial chestplate
+  name: "имперская кираса"
   parent: ClothingOuterBase
   id: civ13_suit_imperial_chestplate
-  description: >-
-    An iron chestplate made in a imperial style, it is not wholly protective
-    against bullets but allows more maneuverability to avoid them.
+  description: "Железная кираса имперского образца. От пуль защищает не полностью, зато не стесняет движений."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
@@ -514,13 +502,10 @@
           Heat: 0.85
 
 - type: entity
-  name: arbites armor
+  name: "броня арбитра"
   parent: ClothingOuterBase
   id: civ13_suit_arbites_armor
-  description: >-
-    A thick, authoritive red armor with reinforced steel leggings and shoulder
-    plates, covering most of the body. Futile attempts to assault arbite
-    enforcers of the law find that rebellion is fruitless.
+  description: "Массивная красная броня стража порядка с усиленными стальными наплечниками и поножами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/arbit.rsi
@@ -537,10 +522,10 @@
           Radiation: 0
 
 - type: entity
-  name: plated armor
+  name: "латный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_plated_armor
-  description: A thick, expensive iron armor, covering most of the body.
+  description: "Тяжёлый дорогой железный доспех, закрывающий почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
@@ -557,12 +542,10 @@
           Arrow: 0.15
           Heat: 0.85
 - type: entity
-  name: leather samurai armor
+  name: "кожаный самурайский доспех"
   parent: ClothingOuterBase
   id: civ13_suit_leather_samurai_armor
-  description: >-
-    A protective & lightweight armor, bound to and covering most of the body yet
-    slightly flexible. Often worn by a lord's bodyguards.
+  description: "Лёгкий гибкий доспех, закрывающий почти всё тело. Такой носят телохранители феодалов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/samurai3.rsi
@@ -583,12 +566,10 @@
       material: Leather
       time: 13
 - type: entity
-  name: samurai armor
+  name: "самурайский доспех"
   parent: ClothingOuterBase
   id: civ13_suit_samurai_armor
-  description: >-
-    A dense, metal armor of japanese origin, covering most of the body. Often
-    worn by a loyal warriors to a feudal lord.
+  description: "Плотный японский металлический доспех, который носят верные воины феодального владыки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
@@ -606,10 +587,10 @@
           Heat: 0.85
 
 - type: entity
-  name: samurai lord armor
+  name: "доспех самурайского владыки"
   parent: civ13_suit_samurai_armor
   id: civ13_suit_samurai_lord_armor
-  description: A thick, expensive armor of japanese origin. Often worn by feudal lords.
+  description: "Тяжёлый дорогой японский доспех феодального владыки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
@@ -617,9 +598,10 @@
       sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
 
 - type: entity
-  name: red samurai lord armor
+  name: "красный доспех самурайского владыки"
   parent: civ13_suit_samurai_lord_armor
   id: civ13_suit_red_samurai_lord_armor
+  description: "Красный тяжёлый доспех японского феодального владыки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
@@ -627,12 +609,10 @@
       sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
 
 - type: entity
-  name: templar plated armor
+  name: "латный доспех тамплиера"
   parent: civ13_suit_plated_armor
   id: civ13_suit_templar_plated_armor
-  description: >-
-    A thick, expensive iron armor, covering most of the body. This one is
-    covered by white linen with the cross.
+  description: "Тяжёлый железный доспех под белой накидкой с крестом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
@@ -640,10 +620,10 @@
       sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
 
 - type: entity
-  name: bronze chestplate
+  name: "бронзовая кираса"
   parent: ClothingOuterBase
   id: civ13_suit_bronze_chestplate
-  description: A bronze chestplate.
+  description: "Кираса из бронзы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bronze_chestplate.rsi
@@ -661,10 +641,10 @@
           Heat: 0.9
 
 - type: entity
-  name: iron chestplate
+  name: "железная кираса"
   parent: ClothingOuterBase
   id: civ13_suit_iron_chestplate
-  description: An iron chestplate.
+  description: "Кираса из железа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
@@ -682,10 +662,10 @@
           Heat: 0.9
 
 - type: entity
-  name: leather armor
+  name: "кожаный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_leather_armor
-  description: Several pressed sheets of leather, making a reasonable armor plate.
+  description: "Несколько слоёв плотной кожи обеспечивают неплохую защиту."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
@@ -708,10 +688,10 @@
       time: 13
 
 - type: entity
-  name: gambeson
+  name: "гамбезон"
   parent: ClothingOuterBase
   id: civ13_suit_gambeson
-  description: A thick, padded jacket made of layered cloth, offering basic protection for infantry.
+  description: "Стёганая куртка из нескольких слоёв ткани. Даёт пехотинцу базовую защиту."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gambeson.rsi
@@ -734,12 +714,10 @@
       time: 13
 
 - type: entity
-  name: hauberk
+  name: "хауберк"
   parent: ClothingOuterBase
   id: civ13_suit_hauberk
-  description: >-
-    A longer version of the chainmail, worn as a coat. Offers greater
-    protection.
+  description: "Удлинённая кольчуга, которую носят как рубаху. Защищает лучше обычной."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hauberk.rsi
@@ -757,12 +735,10 @@
           Heat: 0.8
 
 - type: entity
-  name: emirate armor
+  name: "доспех эмира"
   parent: ClothingOuterBase
   id: civ13_suit_emirate_armor
-  description: >-
-    A loosely fitting but protective suit of armor to wrap around the body &
-    tunic for an emirate lord.
+  description: "Свободный, но прочный доспех поверх туники. Подобает правителю эмирата."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
@@ -778,12 +754,10 @@
           Heat: 0.8
 
 - type: entity
-  name: varangian lamellar armor
+  name: "варяжский ламеллярный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_varangian_lamellar_armor
-  description: >-
-    A close fitting armor of small iron rectangular shapes to make a scale vest.
-    Manageably heavy but flexible.
+  description: "Доспех из небольших прямоугольных железных пластин. Тяжёлый, но достаточно гибкий."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
@@ -799,12 +773,10 @@
           Heat: 0.8
 
 - type: entity
-  name: imperial chinese armor
+  name: "имперский китайский доспех"
   parent: ClothingOuterBase
   id: civ13_suit_imperial_chinese_armor
-  description: >-
-    A well built & laquered armor with iron plates concealed inwardly and
-    outwardly protecting the body, made in imperial chinese style.
+  description: "Добротный лакированный доспех китайского имперского образца с железными пластинами внутри и снаружи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
@@ -822,12 +794,10 @@
           Heat: 0.8
 
 - type: entity
-  name: steppe leather armor
+  name: "степной кожаный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_steppe_leather_armor
-  description: >-
-    Leather armor made from sheets of leather bound in a steppe nomad style,
-    making adequate protection for prospective warriors.
+  description: "Сшитые по обычаю степных кочевников куски кожи дают воину надёжную защиту."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
@@ -850,10 +820,10 @@
       time: 14
 
 - type: entity
-  name: royal plated armor
+  name: "королевский латный доспех"
   parent: civ13_suit_plated_armor
   id: civ13_suit_royal_plated_armor
-  description: A thick, expensive iron armor, covering most of the body.
+  description: "Тяжёлый дорогой железный доспех, закрывающий почти всё тело."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
@@ -861,10 +831,10 @@
       sprite: Civ14/Clothing/exported/suits/royalplate.rsi
 
 - type: entity
-  name: dwemmer armor
+  name: "двемерский доспех"
   parent: ClothingOuterBase
   id: civ13_suit_dwemmer_armor
-  description: A thick, expensive armor of dwemmer metal.
+  description: "Тяжёлый дорогой доспех из двемерского металла."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dwarmor.rsi
@@ -880,10 +850,10 @@
           Heat: 0.85
 
 - type: entity
-  name: stormcloak officer armor
+  name: "броня офицера Братьев Бури"
   parent: ClothingOuterBase
   id: civ13_suit_stormcloak_officer_armor
-  description: A thick, leather armor of hide with a bearpelt draped over it.
+  description: "Тяжёлый кожаный доспех с накинутой медвежьей шкурой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/stormcloak.rsi
@@ -899,12 +869,10 @@
           Heat: 0.85
 
 - type: entity
-  name: zgz1 advanced armor
+  name: "усовершенствованная броня ZGZ-1"
   parent: ClothingOuterBase
   id: civ13_suit_zgz1_advanced_armor
-  description: >-
-    An advanced piece of armor that provides medium protection against kinetic
-    and other projectiles. This armor is mostly used by the Chinese.
+  description: "Современная китайская броня со средней защитой от пуль и других снарядов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
@@ -920,12 +888,10 @@
           Heat: 0.6
 
 - type: entity
-  name: Medical zgz1 advanced armor
+  name: "медицинская броня ZGZ-1"
   parent: civ13_suit_zgz1_advanced_armor
   id: civ13_suit_Medical_zgz1_advanced_armor
-  description: >-
-    An advanced piece of armor that provides medium protection against kinetic
-    and other projectiles. This armor is mostly used by the Chinese medics.
+  description: "Современная броня китайских военных медиков со средней защитой от пуль и других снарядов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
@@ -933,10 +899,10 @@
       sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
 
 - type: entity
-  name: scrap plate armor
+  name: "латы из металлолома"
   parent: ClothingOuterBase
   id: civ13_suit_scrap_plate_armor
-  description: A ramshackle suit of armor, reminiscence of medieval times.
+  description: "Грубо собранный доспех, напоминающий средневековые латы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
@@ -953,10 +919,10 @@
           Radiation: 0.6
 
 - type: entity
-  name: mechanized armor
+  name: "механизированная броня"
   parent: ClothingOuterBase
   id: civ13_suit_mechanized_armor
-  description: A thick, thrown together iron armor, covering most of the body.
+  description: "Тяжёлый железный доспех, собранный на скорую руку."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/mechanicalarmor.rsi
@@ -972,10 +938,10 @@
           Heat: 0.44
 
 - type: entity
-  name: chitin chestplate
+  name: "хитиновая кираса"
   parent: ClothingOuterBase
   id: civ13_suit_chitin_chestplate
-  description: A chitin chestplate, specially crafted from insects.
+  description: "Кираса, изготовленная из панцирей насекомых."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/chitin_armor.rsi
@@ -991,10 +957,10 @@
           Heat: 0.85
 
 - type: entity
-  name: sauron's armor
+  name: "доспех Саурона"
   parent: ClothingOuterBase
   id: civ13_suit_saurons_armor
-  description: The armor of sauron
+  description: "Доспех тёмного владыки Саурона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sauronarmor.rsi
@@ -1011,10 +977,10 @@
           Radiation: 0.55
 
 - type: entity
-  name: ork plated armor
+  name: "орочьи латы"
   parent: ClothingOuterBase
   id: civ13_suit_plated_armor_1
-  description: A cheap dark iron armor.
+  description: "Недорогой доспех из тёмного железа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
@@ -1033,10 +999,10 @@
           Radiation: 0.55
 
 - type: entity
-  name: heavy ork plated armor
+  name: "тяжёлые орочьи латы"
   parent: ClothingOuterBase
   id: civ13_suit_plated_armor_1_2
-  description: A cheap dark iron armor.
+  description: "Тяжёлый недорогой доспех из тёмного железа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
@@ -1055,10 +1021,10 @@
           Radiation: 0.55
 
 - type: entity
-  name: orc urukhai armor
+  name: "броня урук-хай"
   parent: ClothingOuterBase
   id: civ13_suit_orc_urukhai_armor
-  description: Orc make good armor!
+  description: "Крепкий доспех работы орков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/urukhai_armor.rsi
@@ -1075,10 +1041,10 @@
           Radiation: 0.75
 
 - type: entity
-  name: orc whitehand armor
+  name: "броня Белой Руки"
   parent: ClothingOuterBase
   id: civ13_suit_orc_whitehand_armor
-  description: Orc make good armor!
+  description: "Крепкий доспех орков Белой Руки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/whitehand_armor.rsi
@@ -1095,10 +1061,10 @@
           Radiation: 0.75
 
 - type: entity
-  name: orc grunt armor
+  name: "броня орка-воина"
   parent: ClothingOuterBase
   id: civ13_suit_orc_grunt_armor
-  description: Orc make good armor!
+  description: "Крепкий доспех работы орков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/grunt_armor.rsi
@@ -1115,10 +1081,10 @@
           Radiation: 0.8
 
 - type: entity
-  name: carbon black suit
+  name: "чёрный карбоновый костюм"
   parent: ClothingOuterBase
   id: civ13_suit_carbon_black_suit
-  description: A high tech suit made of compressed carbon materials.
+  description: "Высокотехнологичный костюм из уплотнённых углеродных материалов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
@@ -1126,12 +1092,10 @@
       sprite: Civ14/Clothing/exported/suits/bxsuit.rsi
 
 - type: entity
-  name: primitive wood armor
+  name: "примитивный деревянный доспех"
   parent: ClothingOuterBase
   id: civ13_suit_primitive_wood_armor
-  description: >-
-    A wooden set of armor made of small planks held together by plant fiber
-    ropes.
+  description: "Небольшие деревянные планки, связанные верёвками из растительных волокон."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
@@ -1153,12 +1117,10 @@
       time: 5
 
 - type: entity
-  name: primitive bone hair-pipe armor
+  name: "примитивный костяной нагрудник"
   parent: ClothingOuterBase
   id: civ13_suit_primitive_bone_hair_pipe_armor
-  description: >-
-    A bone set of chest armor made of tightly packed small bones held together
-    by plant fiber ropes.
+  description: "Плотно связанные мелкие кости защищают грудь; вместо ремней — верёвки из растительных волокон."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi

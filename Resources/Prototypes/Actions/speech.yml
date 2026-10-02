@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: ActionConfigureMeleeSpeech
-  name: Set Battlecry
-  description: Set a custom battlecry for when you attack!
+  name: Задать боевой клич
+  description: Придумать клич, который вы будете выкрикивать при атаке!
   components:
   - type: InstantAction
     itemIconStyle: BigItem

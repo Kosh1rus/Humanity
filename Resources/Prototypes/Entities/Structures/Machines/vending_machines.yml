@@ -137,8 +137,8 @@
 - type: entity
   parent: VendingMachine
   id: VendingMachineCigs
-  name: ShadyCigs Deluxe
-  description: If you want to get cancer, might as well do it in style.
+  name: "автомат ShadyCigs Deluxe"
+  description: "Если уж губить здоровье, то со вкусом."
   components:
     - type: VendingMachine
       pack: CigaretteMachineInventory

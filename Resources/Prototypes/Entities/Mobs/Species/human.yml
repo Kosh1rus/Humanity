@@ -57,10 +57,10 @@
               sprite: Mobs/Species/Human/displacement.rsi
               state: jumpsuit-female
 - type: entity
-  name: human remains
+  name: "человеческие останки"
   parent: BaseItem
   id: HumanRemains
-  description: The remains of some poor person.
+  description: "Всё, что осталось от несчастного человека."
   components:
     - type: Sprite
       sprite: Civ14/Objects/tribal.rsi

@@ -1,6 +1,6 @@
 - type: entity
   id: civ13_magazine_default
-  name: pistol magazine
+  name: "пистолетный магазин"
   parent: BaseItem
   components:
     - type: BallisticAmmoProvider
@@ -56,7 +56,7 @@
 
 - type: entity
   id: civ13_magazine_clip_(7.62x54mm)
-  name: clip (7.62x54mm)
+  name: "обойма (7,62 × 54 мм)"
   parent: civ13_base_clip
   components:
     - type: BallisticAmmoProvider
@@ -94,7 +94,7 @@
         - civ13_magazine_magazine_box_(7.62x54mm)
 - type: entity
   id: civ13_magazine_magazine_(7.62x54mm)
-  name: magazine (7.62x54mm)
+  name: "магазин (7,62×54 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -138,7 +138,7 @@
         - civ13_magazine_Ammo_Box_(9x39mm)
 - type: entity
   id: civ13_magazine_belt_(7.62x51mm)
-  name: belt (7.62x51mm)
+  name: "патронная лента (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -204,7 +204,7 @@
         - civ13_magazine_magazine_box_(7.65x53mm)
 - type: entity
   id: civ13_magazine_clip_(7.92x57mm)
-  name: clip (7.92x57mm)
+  name: "обойма (7,92 × 57 мм)"
   parent: civ13_base_clip
   components:
     - type: BallisticAmmoProvider
@@ -601,7 +601,7 @@
         - civ13_magazine_Nambu_magazine
 - type: entity
   id: civ13_magazine_Luger_magazine
-  name: Luger magazine
+  name: "магазин Люгера"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -623,7 +623,7 @@
         - civ13_magazine_Luger_magazine
 - type: entity
   id: civ13_magazine_Walther_magazine
-  name: Walther magazine
+  name: "магазин Walther"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1222,7 +1222,7 @@
         - civ13_magazine_shotgun_beanbag_box_(.12_gauge)
 - type: entity
   id: civ13_magazine_AK_74_magazine_(5.45x39mm)
-  name: AK-74 magazine (5.45x39mm)
+  name: "магазин АК-74 (5,45 × 39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1311,7 +1311,7 @@
 
 - type: entity
   id: civ13_magazine_Type_100_Magazine
-  name: Type 100 Magazine
+  name: "магазин «Тип 100»"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1333,7 +1333,7 @@
         - civ13_magazine_Type_100_Magazine
 - type: entity
   id: civ13_magazine_Type_99_Magazine
-  name: Type-99 Magazine
+  name: "магазин «Тип 99»"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1377,7 +1377,7 @@
         - civ13_magazine_Type_97_Magazine
 - type: entity
   id: civ13_magazine_Type_96_Magazine
-  name: Type-96 Magazine
+  name: "магазин «Тип 96»"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1444,7 +1444,7 @@
 
 - type: entity
   id: civ13_magazine_Sten_Magazine_(9x19mm)
-  name: Sten Magazine (9x19mm)
+  name: "магазин Sten (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1466,7 +1466,7 @@
         - civ13_magazine_Sten_Magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_mp40_(9x19mm)
-  name: MP 40 magazine (9x19mm)
+  name: "магазин MP 40 (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1488,7 +1488,7 @@
         - civ13_magazine_mp40_(9x19mm)
 - type: entity
   id: civ13_magazine_MP5_magazine_(9x19mm)
-  name: MP5 magazine (9x19mm)
+  name: "магазин MP5 (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1554,7 +1554,7 @@
         - civ13_magazine_FG_42_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_MG34_magazine_(7.92x57mm)
-  name: MG34 magazine (7.92x57mm)
+  name: "магазин MG 34 (7,92×57 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1598,7 +1598,7 @@
         - civ13_magazine_MG13_magazine_(7.92x57mm)
 - type: entity
   id: civ13_magazine_M3A1_magazine_(.45_ACP)
-  name: M3A1 magazine (.45 ACP)
+  name: "магазин M3A1 (.45 ACP)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1620,7 +1620,7 @@
         - civ13_magazine_M3A1_magazine_(.45_ACP)
 - type: entity
   id: civ13_magazine_PPS_43_magazine_(7.62x25mm)
-  name: PPS-43 magazine (7.62x25mm)
+  name: "магазин ППС-43 (7,62×25 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1642,7 +1642,7 @@
         - civ13_magazine_PPS_43_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
-  name: PPSh-41 drum magazine (7.62x25mm)
+  name: "барабанный магазин ППШ-41 (7,62 × 25 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1664,7 +1664,7 @@
         - civ13_magazine_PPSh_41_drum_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_DP_pan_(7.62x54mmR)
-  name: DP pan (7.62x54mmR)
+  name: "дисковый магазин ДП (7,62×54 мм R)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1708,7 +1708,7 @@
         - civ13_magazine_DT_magazine_(7.62x54mmR)
 - type: entity
   id: civ13_magazine_StG_44_magazine_(7.92x33mm)
-  name: StG 44 magazine (7.92x33mm)
+  name: "магазин StG 44 (7,92×33 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1818,7 +1818,7 @@
         - civ13_magazine_SVT_40_magazine_(7.62x54mm)
 - type: entity
   id: civ13_magazine_M1911_magazine_(.45)
-  name: M1911 magazine (.45)
+  name: "магазин M1911 (.45)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1862,7 +1862,7 @@
         - civ13_magazine_magazine_box_(.45)
 - type: entity
   id: civ13_magazine_TT_33_magazine_(7.62x25mm)
-  name: TT-33 magazine (7.62x25mm)
+  name: "магазин ТТ-33 (7,62 × 25 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1884,7 +1884,7 @@
         - civ13_magazine_TT_33_magazine_(7.62x25mm)
 - type: entity
   id: civ13_magazine_PM_Makarov_magazine_(9x18mm)
-  name: PM Makarov magazine (9x18mm)
+  name: "магазин ПМ (9 × 18 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -1928,7 +1928,7 @@
         - civ13_magazine_clip_(30_06)_8_rounds
 - type: entity
   id: civ13_magazine_M1_Carbine_Small_magazine_(7.62x33mm)
-  name: M1 Carbine Small magazine (7.62x33mm)
+  name: "малый магазин карабина M1 (7,62×33 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2010,7 +2010,7 @@
         - civ13_magazine_clip_(30_06)
 - type: entity
   id: civ13_magazine_browning_ammo_belt
-  name: browning ammo belt
+  name: "патронная лента Browning"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2032,7 +2032,7 @@
         - civ13_magazine_browning_ammo_belt
 - type: entity
   id: civ13_magazine_BAR_magazine_(30_06)
-  name: BAR magazine (30-06)
+  name: "магазин BAR (.30-06)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2054,7 +2054,7 @@
         - civ13_magazine_BAR_magazine_(30_06)
 - type: entity
   id: civ13_magazine_Thompson_magazine_(.45)
-  name: Thompson magazine (.45)
+  name: "магазин Томпсона (.45)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2076,7 +2076,7 @@
         - civ13_magazine_Thompson_magazine_(.45)
 - type: entity
   id: civ13_magazine_Thompson_drum_magazine_(.45)
-  name: Thompson drum magazine (.45)
+  name: "барабанный магазин Томпсона (.45)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2142,7 +2142,7 @@
         - civ13_magazine_Desert_eagle_magazine_(44.magnum)
 - type: entity
   id: civ13_magazine_Browning_hi_power_magazine
-  name: Browning hi-power magazine (9mm Parabellum)
+  name: "магазин Browning Hi-Power (9 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2165,7 +2165,7 @@
 
 - type: entity
   id: civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
-  name: Makeshift AK-47 magazine (7.62x39mm)
+  name: "самодельный магазин АК-47 (7,62×39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2187,7 +2187,7 @@
         - civ13_magazine_Makeshift_AK_47_magazine_(7.62x39mm)
 - type: entity
   id: civ13_magazine_AK47_(7.62x39mm)
-  name: AK-47 magazine (7.62x39mm)
+  name: "магазин АК-47 (7,62 × 39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2275,7 +2275,7 @@
         - civ13_magazine_AK_74M_magazine_(5.45x39mm)
 - type: entity
   id: civ13_magazine_AK_101_magazine_(5.46x45mm)
-  name: AK-101 magazine (5.46x45mm)
+  name: "магазин АК-101 (5,56×45 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2341,7 +2341,7 @@
         - civ13_magazine_MAG5_60_STANAG_(5.56x45mm)
 - type: entity
   id: civ13_magazine_AR_10_magazine_(7.62x51mm)
-  name: AR-10 magazine (7.62x51mm)
+  name: "магазин AR-10 (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2363,7 +2363,7 @@
         - civ13_magazine_AR_10_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_M14_magazine_(7.62x51mm)
-  name: M14 magazine (7.62x51mm)
+  name: "магазин M14 (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2407,7 +2407,7 @@
         - civ13_magazine_ammo_box_(7.62x51mm)
 - type: entity
   id: civ13_magazine_G3_magazine_(7.62x51mm)
-  name: G3 magazine (7.62x51mm)
+  name: "магазин G3 (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2429,7 +2429,7 @@
         - civ13_magazine_G3_magazine_(7.62x51mm)
 - type: entity
   id: civ13_magazine_FN_Fal_magazine_(7.62x51mm)
-  name: FN Fal magazine (7.62x51mm)
+  name: "магазин FN FAL (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2473,7 +2473,7 @@
         - civ13_magazine_MK18_magazine_(5.56mm_NATO)
 - type: entity
   id: civ13_magazine_SCAR_H_magazine_(7.62x51mm)
-  name: SCAR-H magazine (7.62x51mm)
+  name: "магазин SCAR-H (7,62×51 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2496,7 +2496,7 @@
 
 - type: entity
   id: civ13_magazine_PKM_ammo_belt_(7.62x54mmR)
-  name: PKM ammo belt (7.62x54mmR)
+  name: "патронная лента ПКМ (7,62×54 мм R)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2562,7 +2562,7 @@
         - civ13_magazine_Ammo_can_(12.7x108mm)
 - type: entity
   id: civ13_magazine_RPD_drum_(7.62x39)
-  name: RPD drum (7.62x39)
+  name: "барабанный магазин РПД (7,62×39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2584,7 +2584,7 @@
         - civ13_magazine_RPD_drum_(7.62x39)
 - type: entity
   id: civ13_magazine_RPK_74_magazine_(5.45x39)
-  name: RPK-74 magazine (5.45x39)
+  name: "магазин РПК-74 (5,45×39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2606,7 +2606,7 @@
         - civ13_magazine_RPK_74_magazine_(5.45x39)
 - type: entity
   id: civ13_magazine_RPK_47_magazine_(7.62x39mm)
-  name: RPK-47 magazine (7.62x39mm)
+  name: "магазин РПК-47 (7,62×39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2672,7 +2672,7 @@
         - civ13_magazine_Jericho_941_magazine_(9x19mm)
 - type: entity
   id: civ13_magazine_Negev_Belt_(5.56x45mm)
-  name: Negev Belt (5.56x45mm)
+  name: "патронная лента Negev (5,56×45 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2694,7 +2694,7 @@
         - civ13_magazine_Negev_Belt_(5.56x45mm)
 - type: entity
   id: civ13_magazine_belt_(5.56x45mm)
-  name: belt (5.56x45mm)
+  name: "патронная лента (5,56×45 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2732,7 +2732,7 @@
         - civ13_magazine_clip_(7.62x51mm)
 - type: entity
   id: civ13_magazine_P90_magazine_(50)
-  name: P90 magazine (50)
+  name: "магазин P90 на 50 патронов"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2798,7 +2798,7 @@
         - civ13_magazine_G17_Glock_(9x19mm)
 - type: entity
   id: civ13_magazine_Kriss_Vector_(9x19mm)
-  name: Kriss Vector (9x19mm)
+  name: "магазин Kriss Vector (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2908,7 +2908,7 @@
         - civ13_magazine_MP_443_(9x19mm)
 - type: entity
   id: civ13_magazine_Uzi_magazine_(9x19mm_Parabellum)
-  name: Uzi magazine (9x19mm Parabellum)
+  name: "магазин Uzi (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2930,7 +2930,7 @@
         - civ13_magazine_Uzi_magazine_(9x19mm_Parabellum)
 - type: entity
   id: civ13_magazine_MAC_10_magazine_(.45_ACP)
-  name: MAC-10 magazine (.45 ACP)
+  name: "магазин MAC-10 (.45 ACP)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2952,7 +2952,7 @@
         - civ13_magazine_MAC_10_magazine_(.45_ACP)
 - type: entity
   id: civ13_magazine_TEC_9_(9x19mm_Parabellum)
-  name: TEC-9 (9x19mm Parabellum)
+  name: "магазин TEC-9 (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -2974,7 +2974,7 @@
         - civ13_magazine_TEC_9_(9x19mm_Parabellum)
 - type: entity
   id: civ13_magazine_Skorpion_magazine_(9x19mm_Parabellum)
-  name: Skorpion magazine (9x19mm Parabellum)
+  name: "магазин «Скорпион» (9×19 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -3106,7 +3106,7 @@
         - civ13_magazine_bergmann_(8x22mm)
 - type: entity
   id: civ13_magazine_AR15_magazine_(5.56x45mm)
-  name: AR15 magazine (5.56x45mm)
+  name: "магазин AR-15 (5,56×45 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -3128,7 +3128,7 @@
         - civ13_magazine_AR15_magazine_(5.56x45mm)
 - type: entity
   id: civ13_magazine_STANAG_magazine_(5.56x45mm)
-  name: STANAG magazine (5.56x45mm)
+  name: "магазин STANAG (5,56 × 45 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -3204,7 +3204,7 @@
         - civ13_magazine_VSS_Vintorez_magazine_(9x39mm)
 - type: entity
   id: civ13_magazine_SR_3_magazine_(9x39mm)
-  name: SR-3 magazine (9x39mm)
+  name: "магазин СР-3 (9×39 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider
@@ -3601,7 +3601,7 @@
         - civ13_magazine_C6_GPMG_ammo_can
 - type: entity
   id: civ13_magazine_QBZ_95_magazine_(5.8x42mm)
-  name: QBZ-95 magazine (5.8x42mm)
+  name: "магазин QBZ-95 (5,8×42 мм)"
   parent: civ13_magazine_default
   components:
     - type: BallisticAmmoProvider

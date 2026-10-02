@@ -283,8 +283,8 @@
 - type: entity
   parent: BaseFenceMetal
   id: FenceMetalGate
-  name: chain link fence gate
-  description: You could use the door instead of vaulting over--if you're a COWARD, that is.
+  name: "калитка из сетки"
+  description: "Можно пройти через калитку вместо того, чтобы перелезать через забор. Если духу не хватает."
   components:
   - type: Sprite
     layers:

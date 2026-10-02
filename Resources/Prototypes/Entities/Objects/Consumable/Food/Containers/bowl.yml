@@ -1,10 +1,10 @@
 # Bowls
 
 - type: entity
-  name: bowl
+  name: "миска"
   parent: ReagentContainerBase
   id: FoodBowlBig
-  description: A simple bowl, used for soups and salads.
+  description: "Простая миска для супа и салата."
   components:
   - type: Item
     storedRotation: -90

@@ -1,0 +1,10 @@
+atmos-plaque-component-desc-zum = Эта табличка посвящена созданию атмосферного подразделения ZUM. Пусть оно продолжит дело подразделений ZAS, LINDA и FEA.
+atmos-plaque-component-desc-fea = Эта табличка напоминает о закрытии атмосферного подразделения FEA и обо всех, кто погиб из-за его работы: обожжённых, отравленных и изломанных.
+atmos-plaque-component-desc-linda = Эта табличка напоминает о закрытии атмосферного подразделения LINDA и обо всех, кто погиб из-за его работы: обожжённых, отравленных и изломанных.
+atmos-plaque-component-desc-zas = Эта табличка напоминает о закрытии атмосферного подразделения ZAS и обо всех, кто погиб из-за его работы: обожжённых, отравленных и изломанных.
+atmos-plaque-component-desc-unset = Эм...
+atmos-plaque-component-name-zum = Табличка атмосферного подразделения ZUM
+atmos-plaque-component-name-fea = Табличка атмосферного подразделения FEA
+atmos-plaque-component-name-linda = Табличка атмосферного подразделения LINDA
+atmos-plaque-component-name-zas = Табличка атмосферного подразделения ZAS
+atmos-plaque-component-name-unset = Эм...

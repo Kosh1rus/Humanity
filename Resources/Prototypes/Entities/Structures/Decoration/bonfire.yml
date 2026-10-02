@@ -1,8 +1,8 @@
 - type: entity
   id: Bonfire
   parent: BaseStructure
-  name: bonfire
-  description: What can be better than a late evening under the sky with guitar and friends?
+  name: "костёр"
+  description: "Что может быть лучше вечера под открытым небом с гитарой и друзьями?"
   components:
   - type: Sprite
     noRot: true

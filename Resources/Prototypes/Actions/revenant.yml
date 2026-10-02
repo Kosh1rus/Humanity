@@ -1,7 +1,7 @@
 - type: entity
   id: ActionRevenantShop
-  name: Shop
-  description: Opens the ability shop.
+  name: Магазин способностей
+  description: Открыть магазин способностей.
   components:
   - type: InstantAction
     icon: Interface/Actions/shop.png
@@ -9,8 +9,8 @@
 
 - type: entity
   id: ActionRevenantDefile
-  name: Defile
-  description: Costs 30 Essence.
+  name: Осквернить
+  description: Стоимость — 30 единиц эссенции.
   components:
   - type: InstantAction
     icon: Interface/Actions/defile.png
@@ -19,8 +19,8 @@
 
 - type: entity
   id: ActionRevenantOverloadLights
-  name: Overload Lights
-  description: Costs 40 Essence.
+  name: Перегрузить освещение
+  description: Стоимость — 40 единиц эссенции.
   components:
   - type: InstantAction
     icon: Interface/Actions/overloadlight.png
@@ -39,8 +39,8 @@
 
 - type: entity
   id: ActionRevenantMalfunction
-  name: Malfunction
-  description: Costs 60 Essence.
+  name: Вызвать сбой
+  description: Стоимость — 60 единиц эссенции.
   components:
   - type: InstantAction
     icon: Interface/Actions/malfunction.png

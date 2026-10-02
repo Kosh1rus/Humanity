@@ -475,8 +475,8 @@
 - type: entity
   parent: CrateGeneric
   id: CrateCoffin
-  name: coffin
-  description: A comfy coffin, excelent place for the vampires and corpses.
+  name: "гроб"
+  description: "Уютный гроб — самое место для вампира или покойника."
   components:
     - type: Sprite
       sprite: Structures/Storage/Crates/coffin.rsi
@@ -513,9 +513,9 @@
 - type: entity
   parent: CrateGeneric
   id: CrateWoodenGrave
-  name: grave
+  name: "могила"
   suffix: wooden
-  description: Someone died here...
+  description: "Здесь кто-то похоронен..."
   components:
     - type: Sprite
       sprite: Structures/Storage/Crates/wooden_grave.rsi
@@ -560,9 +560,9 @@
 - type: entity
   parent: CrateWoodenGrave
   id: CrateStoneGrave
-  name: grave
+  name: "могила"
   suffix: stone
-  description: Someone died here...
+  description: "Здесь кто-то похоронен..."
   components:
     - type: Sprite
       sprite: Structures/Storage/Crates/stone_grave.rsi

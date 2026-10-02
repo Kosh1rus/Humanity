@@ -1,8 +1,8 @@
 - type: entity
   id: CrenelatedWall
-  description: A stone wall with crenelations.
+  description: Каменная стена с зубцами для укрытия защитников.
   parent: BaseBarricade
-  name: crenelated wall
+  name: зубчатая стена
   placement:
     mode: SnapgridCenter
   components:
@@ -39,9 +39,9 @@
 
 - type: entity
   id: CrenelatedWallFull
-  description: A stone wall with crenelations.
+  description: Каменная стена с зубцами для укрытия защитников.
   parent: CrenelatedWall
-  name: crenelated wall
+  name: зубчатая стена
   components:
     - type: Sprite
       sprite: Civ14/Structures/walls.rsi
@@ -59,9 +59,9 @@
 # sandbags and other similar stuff
 - type: entity
   id: BarricadeSandbags
-  description: A sandbag wall.
+  description: Стена из мешков с песком.
   parent: BaseBarricade
-  name: sandbag wall
+  name: стена из мешков с песком
   placement:
     mode: SnapgridCenter
   components:
@@ -101,9 +101,9 @@
       node: end
 - type: entity
   id: BarricadeSandbagsMedium
-  description: An unfinished sandbag wall.
+  description: Недостроенная стена из мешков с песком.
   parent: BarricadeSandbags
-  name: sandbag wall
+  name: стена из мешков с песком
   placement:
     mode: SnapgridCenter
   components:
@@ -116,9 +116,9 @@
       blocking: 60
 - type: entity
   id: BarricadeSandbagsLow
-  description: An unfinished sandbag wall.
+  description: Недостроенная стена из мешков с песком.
   parent: BarricadeSandbags
-  name: sandbag wall
+  name: стена из мешков с песком
   placement:
     mode: SnapgridCenter
   components:
@@ -132,9 +132,9 @@
 # snow wall
 - type: entity
   id: BarricadeSnowwall
-  description: A snowwall barricade.
+  description: Снежная баррикада.
   parent: BarricadeSandbags
-  name: snow wall
+  name: снежная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -156,9 +156,9 @@
 
 - type: entity
   id: BarricadeSnowwallMedium
-  description: An unfinished snow barricade.
+  description: Недостроенная снежная баррикада.
   parent: BarricadeSnowwall
-  name: snow wall
+  name: снежная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -171,9 +171,9 @@
       blocking: 60
 - type: entity
   id: BarricadeSnowwallLow
-  description: An unfinished snow barricade.
+  description: Недостроенная снежная баррикада.
   parent: BarricadeSnowwall
-  name: snow wall
+  name: снежная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -188,9 +188,9 @@
 # dirt wall
 - type: entity
   id: BarricadeDirtwall
-  description: A dirt barricade.
+  description: Земляная баррикада.
   parent: BarricadeSandbags
-  name: dirt wall
+  name: земляная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -216,9 +216,9 @@
       node: end
 - type: entity
   id: BarricadeDirtwallMedium
-  description: An unfinished dirt barricade.
+  description: Недостроенная земляная баррикада.
   parent: BarricadeDirtwall
-  name: dirt wall
+  name: земляная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -232,9 +232,9 @@
 
 - type: entity
   id: BarricadeDirtwallLow
-  description: An unfinished dirt barricade.
+  description: Недостроенная земляная баррикада.
   parent: BarricadeDirtwall
-  name: dirt wall
+  name: земляная стена
   placement:
     mode: SnapgridCenter
   components:
@@ -248,9 +248,9 @@
 
 - type: entity
   id: BarricadeStonewall
-  description: A low stone wall.
+  description: Невысокая каменная стена.
   parent: BarricadeSandbags
-  name: stone barricade
+  name: каменная баррикада
   placement:
     mode: SnapgridCenter
   components:
@@ -277,9 +277,9 @@
 
 - type: entity
   id: BarricadeSandstonewall
-  description: A low sandstone wall.
+  description: Невысокая стена из песчаника.
   parent: BarricadeSandbags
-  name: sandstone barricade
+  name: баррикада из песчаника
   placement:
     mode: SnapgridCenter
   components:
@@ -301,9 +301,9 @@
 
 - type: entity
   id: BarricadeVelvetRope
-  description: A fancy velvet rope between two golden poles.
+  description: Бархатный канат между двумя позолоченными стойками.
   parent: BarricadeSandbags
-  name: velvet rope
+  name: бархатный канат
   placement:
     mode: SnapgridCenter
   components:
@@ -324,9 +324,9 @@
 
 - type: entity
   id: BarricadeJerseyBarrier
-  description: A modular concrete barrier, also useful as a barricade.
+  description: Сборное бетонное заграждение, пригодное и для баррикады.
   parent: BarricadeSandbags
-  name: jersey barrier
+  name: дорожное бетонное ограждение
   placement:
     mode: SnapgridCenter
   components:
@@ -359,9 +359,9 @@
 
 - type: entity
   id: BarricadeJerseyBarrierAlt
-  description: A modular concrete barrier, also useful as a barricade.
+  description: Сборное бетонное заграждение, пригодное и для баррикады.
   parent: BarricadeSandbags
-  name: jersey barrier
+  name: дорожное бетонное ограждение
   placement:
     mode: SnapgridCenter
   components:
@@ -392,8 +392,8 @@
 - type: entity
   parent: BaseStructure
   id: HescoBastionIndestructible
-  name: Hesco bastion
-  description: A modern gabion primarily used for flood control and military fortifications.
+  name: бастион Hesco
+  description: Современный габион для защиты от наводнений и возведения укреплений.
   suffix: indestructible
   placement:
     mode: SnapgridCenter
@@ -441,8 +441,8 @@
 - type: entity
   parent: HescoBastionIndestructible
   id: HescoBastion
-  name: Hesco bastion
-  description: A modern gabion primarily used for flood control and military fortifications.
+  name: бастион Hesco
+  description: Современный габион для защиты от наводнений и возведения укреплений.
   suffix: destroyable
   placement:
     mode: SnapgridCenter
@@ -463,8 +463,8 @@
 - type: entity
   parent: BaseBarricade
   id: BarricadeJunk
-  name: junk
-  description: A pile of junk. Not much to see here.
+  name: хлам
+  description: Груда хлама. Ничего примечательного.
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -520,8 +520,8 @@
 - type: entity
   parent: BaseStructure
   id: BarricadeSandbagsTall
-  name: tall sandbag wall
-  description: A tall sandbag wall.
+  name: высокая стена из мешков с песком
+  description: Высокая стена из мешков с песком.
   placement:
     mode: SnapgridCenter
     snap:
@@ -577,9 +577,9 @@
 
 - type: entity
   id: BarricadeAntiTank
-  description: A static anti-tank obstacle defense made of metal angle beams.
+  description: Неподвижное противотанковое заграждение из стальных уголков.
   parent: BaseStructure
-  name: czech hedgehog
+  name: противотанковый ёж
   components:
     - type: InteractionOutline
     - type: Sprite
@@ -608,9 +608,9 @@
 # Metal Bars
 - type: entity
   id: BarricadeMetalBars
-  description: A set of solid metal bars.
+  description: Ряд прочных металлических прутьев.
   parent: BaseStructure
-  name: metal bars
+  name: металлические прутья
   components:
     - type: Sprite
       sprite: Civ14/Structures/walls.rsi
@@ -635,10 +635,10 @@
 # Barricade Railing
 - type: entity
   id: BarricadeRailingBase
-  description: A sandbag wall.
+  description: Стена из мешков с песком.
   parent: BaseBarricade
   abstract: true
-  name: barricade railing base
+  name: основание ограждения
   placement:
     mode: SnapgridCenter
   components:
@@ -679,9 +679,9 @@
 
 - type: entity
   id: BarricadeRailingStone
-  description: A stone railing.
+  description: Каменное ограждение.
   parent: BarricadeRailingBase
-  name: stone railing
+  name: каменное ограждение
   components:
      - type: Sprite
        sprite: Civ14/Objects/Railing.rsi
@@ -689,9 +689,9 @@
 
 - type: entity
   id: BarricadeRailingSandstone
-  description: A sandstone railing.
+  description: Ограждение из песчаника.
   parent: BarricadeRailingBase
-  name: sandstone railing
+  name: ограждение из песчаника
   components:
      - type: Sprite
        sprite: Civ14/Objects/Railing.rsi
@@ -699,9 +699,9 @@
 
 - type: entity
   id: BarricadeRailingBrick
-  description: A brick railing.
+  description: Кирпичное ограждение.
   parent: BarricadeRailingBase
-  name: brick railing
+  name: кирпичное ограждение
   components:
      - type: Sprite
        sprite: Civ14/Objects/Railing.rsi

@@ -1,11 +1,11 @@
 - type: construction
-  name: Half mask
+  name: "полумаска"
   id: civ13_mask_Half_mask
   graph: civ13_mask_Half_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Прикрывает нижнюю часть лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/halfmask.rsi
     state: icon
@@ -27,13 +27,13 @@
     - node: end
       entity: civ13_mask_Half_mask
 - type: construction
-  name: GP-9 gas mask
+  name: "противогаз ГП-9"
   id: civ13_mask_GP_9_gas_mask
   graph: civ13_mask_GP_9_gas_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A panoramic gas mask intented for civilian use and civil denfense.
+  description: "Панорамный противогаз для гражданского населения и служб защиты."
   icon:
     sprite: Civ14/Clothing/exported/masks/russiamask.rsi
     state: icon
@@ -55,13 +55,13 @@
     - node: end
       entity: civ13_mask_GP_9_gas_mask
 - type: construction
-  name: ShM-1 gas mask
+  name: "противогаз ШМ-1"
   id: civ13_mask_ShM_1_gas_mask
   graph: civ13_mask_ShM_1_gas_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A Soviet helmet styled-rubber mask introduced right before WW2.
+  description: "Советская резиновая шлем-маска, появившаяся незадолго до Второй мировой войны."
   icon:
     sprite: Civ14/Clothing/exported/masks/shm1.rsi
     state: icon
@@ -83,13 +83,13 @@
     - node: end
       entity: civ13_mask_ShM_1_gas_mask
 - type: construction
-  name: GP-5 gas mask
+  name: "противогаз ГП-5"
   id: civ13_mask_GP_5_gas_mask
   graph: civ13_mask_GP_5_gas_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A Soviet helmet styled-rubber mask.
+  description: "Советский противогаз с резиновой шлем-маской."
   icon:
     sprite: Civ14/Clothing/exported/masks/gp5.rsi
     state: icon
@@ -111,15 +111,13 @@
     - node: end
       entity: civ13_mask_GP_5_gas_mask
 - type: construction
-  name: PMK-1 gas mask
+  name: "противогаз ПМК-1"
   id: civ13_mask_PMK_1_gas_mask
   graph: civ13_mask_PMK_1_gas_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    Compact combined mask designed in the late 1970s, used by Soviet and Russian
-    Armed Forces.
+  description: "Компактный общевойсковой противогаз конца 1970-х годов, применявшийся советской и российской армиями."
   icon:
     sprite: Civ14/Clothing/exported/masks/pmk1.rsi
     state: icon
@@ -141,13 +139,13 @@
     - node: end
       entity: civ13_mask_PMK_1_gas_mask
 - type: construction
-  name: M2 gas mask
+  name: "противогаз M2"
   id: civ13_mask_M2_gas_mask
   graph: civ13_mask_M2_gas_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Compact combined mask designed in 1939, used by the US army.
+  description: "Компактный общевойсковой противогаз образца 1939 года, применявшийся армией США."
   icon:
     sprite: Civ14/Clothing/exported/masks/m2.rsi
     state: icon
@@ -170,15 +168,13 @@
       entity: civ13_mask_M2_gas_mask
 
 - type: construction
-  name: plague doctor's mask
+  name: "маска чумного доктора"
   id: civ13_mask_plague_doctors_mask
   graph: civ13_mask_plague_doctors_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A covid shaped mask stuffed with herbs to better protect against malanges &
-    plagues.
+  description: "Маска с длинным клювом, набитым травами для защиты от заразы."
   icon:
     sprite: Civ14/Clothing/exported/masks/plaguedoctor.rsi
     state: icon
@@ -200,15 +196,13 @@
     - node: end
       entity: civ13_mask_plague_doctors_mask
 - type: construction
-  name: sterile mask
+  name: "медицинская маска"
   id: civ13_mask_sterile_mask
   graph: civ13_mask_sterile_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A thin surgical mask, worn by medical professionals to stop the spread of
-    disease or transmission.
+  description: "Тонкая медицинская маска, которая помогает сдерживать распространение болезней."
   icon:
     sprite: Civ14/Clothing/exported/masks/sterile.rsi
     state: icon
@@ -230,13 +224,13 @@
     - node: end
       entity: civ13_mask_sterile_mask
 - type: construction
-  name: a cloth sack mask
+  name: "мешок на голову"
   id: civ13_mask_a_cloth_sack_mask
   graph: civ13_mask_a_cloth_sack_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cloth bag placed on the head by force, or by choice.
+  description: "Тканевый мешок. Его можно надеть добровольно или против воли."
   icon:
     sprite: Civ14/Clothing/exported/masks/sack.rsi
     state: icon
@@ -258,15 +252,13 @@
     - node: end
       entity: civ13_mask_a_cloth_sack_mask
 - type: construction
-  name: a cloth sack mask with eyeholes
+  name: "мешок на голову с прорезями"
   id: civ13_mask_a_cloth_sack_mask_with_eyeholes
   graph: civ13_mask_a_cloth_sack_mask_with_eyeholes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A cloth sack placed on the head by force, or by choice. It has crude
-    eyeholes cut into it
+  description: "Тканевый мешок с грубо вырезанными отверстиями для глаз."
   icon:
     sprite: Civ14/Clothing/exported/masks/scarecrow_sack.rsi
     state: icon
@@ -288,13 +280,13 @@
     - node: end
       entity: civ13_mask_a_cloth_sack_mask_with_eyeholes
 - type: construction
-  name: rat mask
+  name: "маска крысы"
   id: civ13_mask_rat_mask
   graph: civ13_mask_rat_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a verminous rat.
+  description: "Пластиковая маска с мордой крысы."
   icon:
     sprite: Civ14/Clothing/exported/masks/rat.rsi
     state: icon
@@ -316,13 +308,13 @@
     - node: end
       entity: civ13_mask_rat_mask
 - type: construction
-  name: raven mask
+  name: "маска ворона"
   id: civ13_mask_raven_mask
   graph: civ13_mask_raven_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a carrion eating raven.
+  description: "Пластиковая маска с головой ворона-падальщика."
   icon:
     sprite: Civ14/Clothing/exported/masks/raven.rsi
     state: icon
@@ -344,13 +336,13 @@
     - node: end
       entity: civ13_mask_raven_mask
 - type: construction
-  name: bat mask
+  name: "маска летучей мыши"
   id: civ13_mask_bat_mask
   graph: civ13_mask_bat_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a frightening bat.
+  description: "Пластиковая маска с мордой пугающей летучей мыши."
   icon:
     sprite: Civ14/Clothing/exported/masks/bat.rsi
     state: icon
@@ -372,13 +364,13 @@
     - node: end
       entity: civ13_mask_bat_mask
 - type: construction
-  name: bear mask
+  name: "маска медведя"
   id: civ13_mask_bear_mask
   graph: civ13_mask_bear_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a not so cuddly bear.
+  description: "Пластиковая маска с мордой совсем не ласкового медведя."
   icon:
     sprite: Civ14/Clothing/exported/masks/bear.rsi
     state: icon
@@ -400,13 +392,13 @@
     - node: end
       entity: civ13_mask_bear_mask
 - type: construction
-  name: owl mask
+  name: "маска совы"
   id: civ13_mask_owl_mask
   graph: civ13_mask_owl_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a all seeing owl.
+  description: "Пластиковая маска с мордой зоркой совы."
   icon:
     sprite: Civ14/Clothing/exported/masks/owl.rsi
     state: icon
@@ -428,13 +420,13 @@
     - node: end
       entity: civ13_mask_owl_mask
 - type: construction
-  name: bee mask
+  name: "маска пчелы"
   id: civ13_mask_bee_mask
   graph: civ13_mask_bee_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a buzzy bee.
+  description: "Пластиковая маска с мордочкой жужжащей пчелы."
   icon:
     sprite: Civ14/Clothing/exported/masks/bee.rsi
     state: icon
@@ -456,13 +448,13 @@
     - node: end
       entity: civ13_mask_bee_mask
 - type: construction
-  name: jackal mask
+  name: "маска шакала"
   id: civ13_mask_jackal_mask
   graph: civ13_mask_jackal_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a scavenging jackal.
+  description: "Пластиковая маска с мордой шакала-падальщика."
   icon:
     sprite: Civ14/Clothing/exported/masks/jackal.rsi
     state: icon
@@ -484,13 +476,13 @@
     - node: end
       entity: civ13_mask_jackal_mask
 - type: construction
-  name: fox mask
+  name: "маска лисы"
   id: civ13_mask_fox_mask
   graph: civ13_mask_fox_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a crafty fox.
+  description: "Пластиковая маска с мордой хитрой лисы."
   icon:
     sprite: Civ14/Clothing/exported/masks/fox.rsi
     state: icon
@@ -512,13 +504,13 @@
     - node: end
       entity: civ13_mask_fox_mask
 - type: construction
-  name: frog mask
+  name: "маска лягушки"
   id: civ13_mask_frog_mask
   graph: civ13_mask_frog_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a slimy frog. 'Ribbit!'
+  description: "Пластиковая маска с мордой скользкой лягушки. Ква!"
   icon:
     sprite: Civ14/Clothing/exported/masks/frog.rsi
     state: icon
@@ -540,13 +532,13 @@
     - node: end
       entity: civ13_mask_frog_mask
 - type: construction
-  name: cow mask
+  name: "маска коровы"
   id: civ13_mask_cow_mask
   graph: civ13_mask_cow_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a cow. 'Moo!'
+  description: "Пластиковая маска с мордой коровы. Му-у!"
   icon:
     sprite: Civ14/Clothing/exported/masks/cowmask.rsi
     state: icon
@@ -568,13 +560,13 @@
     - node: end
       entity: civ13_mask_cow_mask
 - type: construction
-  name: pig mask
+  name: "маска свиньи"
   id: civ13_mask_pig_mask
   graph: civ13_mask_pig_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a pig. 'Oink!'
+  description: "Пластиковая маска с пятачком свиньи. Хрю!"
   icon:
     sprite: Civ14/Clothing/exported/masks/pig.rsi
     state: icon
@@ -596,13 +588,13 @@
     - node: end
       entity: civ13_mask_pig_mask
 - type: construction
-  name: joy
+  name: "маска радости"
   id: civ13_mask_joy
   graph: civ13_mask_joy
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a joy emojii.
+  description: "Пластиковая маска в виде улыбающегося смайлика."
   icon:
     sprite: Civ14/Clothing/exported/masks/joy.rsi
     state: icon
@@ -624,13 +616,13 @@
     - node: end
       entity: civ13_mask_joy
 - type: construction
-  name: gorilla mask
+  name: "маска гориллы"
   id: civ13_mask_gorilla_mask
   graph: civ13_mask_gorilla_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask in the form of a gorilla. 'Oook ook!'
+  description: "Пластиковая маска с мордой гориллы. У-у-у!"
   icon:
     sprite: Civ14/Clothing/exported/masks/gorilla.rsi
     state: icon
@@ -652,13 +644,13 @@
     - node: end
       entity: civ13_mask_gorilla_mask
 - type: construction
-  name: clown mask
+  name: "маска клоуна"
   id: civ13_mask_clown_mask
   graph: civ13_mask_clown_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mask used around the world by clowns.
+  description: "Маска, какую клоуны носят по всему миру."
   icon:
     sprite: Civ14/Clothing/exported/masks/clownmask.rsi
     state: icon
@@ -680,13 +672,13 @@
     - node: end
       entity: civ13_mask_clown_mask
 - type: construction
-  name: clown mask
+  name: "маска клоуна"
   id: civ13_mask_clown_mask_1
   graph: civ13_mask_clown_mask_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask to hide your identity, used around the world by clowns.
+  description: "Пластиковая маска клоуна, скрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/clownmask.rsi
     state: icon
@@ -708,13 +700,13 @@
     - node: end
       entity: civ13_mask_clown_mask_1
 - type: construction
-  name: american flag mask
+  name: "маска с флагом США"
   id: civ13_mask_american_flag_mask
   graph: civ13_mask_american_flag_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic mask to hide your identity. This one has an American flag on it.
+  description: "Пластиковая маска с американским флагом, скрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/payday1.rsi
     state: icon
@@ -736,13 +728,13 @@
     - node: end
       entity: civ13_mask_american_flag_mask
 - type: construction
-  name: clown mask
+  name: "маска клоуна"
   id: civ13_mask_clown_mask_1_2
   graph: civ13_mask_clown_mask_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic clown mask to hide your identity.
+  description: "Пластиковая маска клоуна, скрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/payday2.rsi
     state: icon
@@ -764,13 +756,13 @@
     - node: end
       entity: civ13_mask_clown_mask_1_2
 - type: construction
-  name: clown mask
+  name: "маска клоуна"
   id: civ13_mask_clown_mask_1_2_3
   graph: civ13_mask_clown_mask_1_2_3
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic clown mask to hide your identity.
+  description: "Пластиковая маска клоуна, скрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/payday3.rsi
     state: icon
@@ -792,13 +784,13 @@
     - node: end
       entity: civ13_mask_clown_mask_1_2_3
 - type: construction
-  name: clown mask
+  name: "маска клоуна"
   id: civ13_mask_clown_mask_1_2_3_4
   graph: civ13_mask_clown_mask_1_2_3_4
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plastic clown mask to hide your identity.
+  description: "Пластиковая маска клоуна, скрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/payday4.rsi
     state: icon
@@ -821,13 +813,13 @@
       entity: civ13_mask_clown_mask_1_2_3_4
 
 - type: construction
-  name: red kerchief
+  name: "красный шейный платок"
   id: civ13_mask_red_kerchief
   graph: civ13_mask_red_kerchief
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A piece of light cloth, worn around the neck.
+  description: "Лёгкий платок, который носят на шее."
   icon:
     sprite: Civ14/Clothing/exported/masks/redkerchief0.rsi
     state: icon
@@ -849,13 +841,13 @@
     - node: end
       entity: civ13_mask_red_kerchief
 - type: construction
-  name: shemagh
+  name: "шемаг"
   id: civ13_mask_shemagh
   graph: civ13_mask_shemagh
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A piece of light cloth, used to protect the head and face.
+  description: "Лёгкий платок, защищающий голову и лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/shemagh0.rsi
     state: icon
@@ -877,13 +869,13 @@
     - node: end
       entity: civ13_mask_shemagh
 - type: construction
-  name: blue kerchief
+  name: "синий шейный платок"
   id: civ13_mask_blue_kerchief
   graph: civ13_mask_blue_kerchief
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A piece of light cloth, worn around the neck.
+  description: "Лёгкий платок, который носят на шее."
   icon:
     sprite: Civ14/Clothing/exported/masks/bluekerchief0.rsi
     state: icon
@@ -905,13 +897,13 @@
     - node: end
       entity: civ13_mask_blue_kerchief
 - type: construction
-  name: yellow kerchief
+  name: "жёлтый шейный платок"
   id: civ13_mask_yellow_kerchief
   graph: civ13_mask_yellow_kerchief
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A piece of light cloth, worn around the neck.
+  description: "Лёгкий платок, который носят на шее."
   icon:
     sprite: Civ14/Clothing/exported/masks/yellowkerchief0.rsi
     state: icon
@@ -933,13 +925,13 @@
     - node: end
       entity: civ13_mask_yellow_kerchief
 - type: construction
-  name: grey kerchief
+  name: "серый шейный платок"
   id: civ13_mask_grey_kerchief
   graph: civ13_mask_grey_kerchief
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A piece of light cloth, worn around the neck.
+  description: "Лёгкий платок, который носят на шее."
   icon:
     sprite: Civ14/Clothing/exported/masks/greykerchief0.rsi
     state: icon
@@ -961,13 +953,13 @@
     - node: end
       entity: civ13_mask_grey_kerchief
 - type: construction
-  name: anubis mask
+  name: "маска Анубиса"
   id: civ13_mask_anubis_mask
   graph: civ13_mask_anubis_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bronze mask in the form of a the egyptian god of the dead, anubis.
+  description: "Бронзовая маска в облике древнеегипетского бога мёртвых Анубиса."
   icon:
     sprite: Civ14/Clothing/exported/masks/anubis.rsi
     state: icon
@@ -989,13 +981,13 @@
     - node: end
       entity: civ13_mask_anubis_mask
 - type: construction
-  name: christian gold necklace
+  name: "золотой крестик"
   id: civ13_mask_christian_gold_necklace
   graph: civ13_mask_christian_gold_necklace
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: " A golden necklace with a christian cross. It is made out of gold. Looks expensive."
+  description: "Золотая цепочка с христианским крестом. Выглядит дорогой."
   icon:
     sprite: Civ14/Clothing/exported/masks/necklace_christian_gold.rsi
     state: icon
@@ -1017,13 +1009,13 @@
     - node: end
       entity: civ13_mask_christian_gold_necklace
 - type: construction
-  name: osiris mask
+  name: "маска Осириса"
   id: civ13_mask_osiris_mask
   graph: civ13_mask_osiris_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mask in the form of a the egyptian god of the underworld, osiris.
+  description: "Маска в облике древнеегипетского владыки загробного мира Осириса."
   icon:
     sprite: Civ14/Clothing/exported/masks/osiris.rsi
     state: icon
@@ -1045,13 +1037,13 @@
     - node: end
       entity: civ13_mask_osiris_mask
 - type: construction
-  name: stone mask
+  name: "каменная маска"
   id: civ13_mask_stone_mask
   graph: civ13_mask_stone_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A stone mask with a masculine apperance with fangs.
+  description: "Каменная маска с клыкастым мужским лицом."
   icon:
     sprite: Civ14/Clothing/exported/masks/stone_mask.rsi
     state: icon
@@ -1073,13 +1065,13 @@
     - node: end
       entity: civ13_mask_stone_mask
 - type: construction
-  name: jewelled stone mask
+  name: "каменная маска с самоцветами"
   id: civ13_mask_jewelled_stone_mask
   graph: civ13_mask_jewelled_stone_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A jewelled stone mask, possibly sometype of honorific attire?
+  description: "Каменная маска с самоцветами. Возможно, знак почётного положения."
   icon:
     sprite: Civ14/Clothing/exported/masks/stone_mask_jeweled.rsi
     state: icon
@@ -1101,13 +1093,13 @@
     - node: end
       entity: civ13_mask_jewelled_stone_mask
 - type: construction
-  name: woodlands face camo
+  name: "лесной камуфляж для лица"
   id: civ13_mask_woodlands_face_camo
   graph: civ13_mask_woodlands_face_camo
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Face painting in woodland camo pattern.
+  description: "Краска на лице образует лесной камуфляжный рисунок."
   icon:
     sprite: Civ14/Clothing/exported/masks/painting_woodland.rsi
     state: icon
@@ -1129,13 +1121,13 @@
     - node: end
       entity: civ13_mask_woodlands_face_camo
 - type: construction
-  name: black balaclava
+  name: "чёрная балаклава"
   id: civ13_mask_black_balaclava
   graph: civ13_mask_black_balaclava
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black balaclava, covering the face.
+  description: "Чёрная балаклава, закрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/balaclava.rsi
     state: icon
@@ -1157,13 +1149,13 @@
     - node: end
       entity: civ13_mask_black_balaclava
 - type: construction
-  name: snow balaclava
+  name: "белая балаклава"
   id: civ13_mask_snow_balaclava
   graph: civ13_mask_snow_balaclava
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white balaclava, covering the face.
+  description: "Белая балаклава, закрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/snowclava.rsi
     state: icon
@@ -1185,13 +1177,13 @@
     - node: end
       entity: civ13_mask_snow_balaclava
 - type: construction
-  name: snow balaclava
+  name: "зелёная балаклава"
   id: civ13_mask_snow_balaclava_1
   graph: civ13_mask_snow_balaclava_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green balaclava, covering the face.
+  description: "Зелёная балаклава, закрывающая лицо."
   icon:
     sprite: Civ14/Clothing/exported/masks/swatclava.rsi
     state: icon
@@ -1214,13 +1206,13 @@
       entity: civ13_mask_snow_balaclava_1
 
 - type: construction
-  name: grey headscarf
+  name: "серый платок на голову"
   id: civ13_mask_grey_headscarf
   graph: civ13_mask_grey_headscarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headscarf,it protects your face from the cold.
+  description: "Платок защищает лицо от холода."
   icon:
     sprite: Civ14/Clothing/exported/masks/headscarfgrey.rsi
     state: icon
@@ -1242,13 +1234,13 @@
     - node: end
       entity: civ13_mask_grey_headscarf
 - type: construction
-  name: Asbestos headscarf
+  name: "асбестовый платок на голову"
   id: civ13_mask_Asbestos_headscarf
   graph: civ13_mask_Asbestos_headscarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A Heavy Asbestos farbic headscarf, it protects your head from heat and cold.
+  description: "Плотный асбестовый платок защищает голову от жара и холода."
   icon:
     sprite: Civ14/Clothing/exported/masks/headscarfgreyA.rsi
     state: icon
@@ -1270,13 +1262,13 @@
     - node: end
       entity: civ13_mask_Asbestos_headscarf
 - type: construction
-  name: olive headscarf
+  name: "оливковый платок на голову"
   id: civ13_mask_olive_headscarf
   graph: civ13_mask_olive_headscarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Оливковый платок для защиты головы и лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/headscarfolive.rsi
     state: icon
@@ -1298,13 +1290,13 @@
     - node: end
       entity: civ13_mask_olive_headscarf
 - type: construction
-  name: white headscarf
+  name: "белый платок на голову"
   id: civ13_mask_white_headscarf
   graph: civ13_mask_white_headscarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Белый платок для защиты головы и лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/headscarfwhite.rsi
     state: icon
@@ -1326,13 +1318,13 @@
     - node: end
       entity: civ13_mask_white_headscarf
 - type: construction
-  name: green balaclava
+  name: "зелёная балаклава"
   id: civ13_mask_green_balaclava
   graph: civ13_mask_green_balaclava
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green balaclava, covering the mouth.
+  description: "Зелёная балаклава, закрывающая рот."
   icon:
     sprite: Civ14/Clothing/exported/masks/sovietbala.rsi
     state: icon
@@ -1354,13 +1346,13 @@
     - node: end
       entity: civ13_mask_green_balaclava
 - type: construction
-  name: samurai mask
+  name: "самурайская маска"
   id: civ13_mask_samurai_mask
   graph: civ13_mask_samurai_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mask of metal, often worn by lords to protect their face.
+  description: "Металлическая маска, которую носят воины для защиты лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/samurai1.rsi
     state: icon
@@ -1382,13 +1374,13 @@
     - node: end
       entity: civ13_mask_samurai_mask
 - type: construction
-  name: red samurai mask
+  name: "красная самурайская маска"
   id: civ13_mask_red_samurai_mask
   graph: civ13_mask_red_samurai_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Красная металлическая маска для защиты лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/samurai2.rsi
     state: icon
@@ -1410,13 +1402,13 @@
     - node: end
       entity: civ13_mask_red_samurai_mask
 - type: construction
-  name: blue samurai mask
+  name: "синяя самурайская маска"
   id: civ13_mask_blue_samurai_mask
   graph: civ13_mask_blue_samurai_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Синяя металлическая маска для защиты лица."
   icon:
     sprite: Civ14/Clothing/exported/masks/samurai3.rsi
     state: icon
@@ -1438,13 +1430,13 @@
     - node: end
       entity: civ13_mask_blue_samurai_mask
 - type: construction
-  name: skull mask
+  name: "маска-череп"
   id: civ13_mask_skull_mask
   graph: civ13_mask_skull_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A skull mask, used by shamans.
+  description: "Маска в виде черепа, которую используют шаманы."
   icon:
     sprite: Civ14/Clothing/exported/masks/skull_mask.rsi
     state: icon
@@ -1466,13 +1458,13 @@
     - node: end
       entity: civ13_mask_skull_mask
 - type: construction
-  name: wooden mask
+  name: "деревянная маска"
   id: civ13_mask_wooden_mask
   graph: civ13_mask_wooden_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tribal wooden mask.
+  description: "Деревянная племенная маска."
   icon:
     sprite: Civ14/Clothing/exported/masks/woodenmask.rsi
     state: icon
@@ -1494,13 +1486,13 @@
     - node: end
       entity: civ13_mask_wooden_mask
 - type: construction
-  name: expressive wooden mask
+  name: "деревянная маска с ухмылкой"
   id: civ13_mask_expressive_wooden_mask
   graph: civ13_mask_expressive_wooden_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tribal wooden mask. This one has a grin transfixed on its face
+  description: "Племенная деревянная маска с застывшей ухмылкой."
   icon:
     sprite: Civ14/Clothing/exported/masks/bumba.rsi
     state: icon
@@ -1522,13 +1514,13 @@
     - node: end
       entity: civ13_mask_expressive_wooden_mask
 - type: construction
-  name: black african wooden mask
+  name: "чёрная африканская маска"
   id: civ13_mask_black_african_wooden_mask
   graph: civ13_mask_black_african_wooden_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A african tribal wooden mask. Often used for ceremonial purposes
+  description: "Деревянная племенная маска, которую часто используют в обрядах."
   icon:
     sprite: Civ14/Clothing/exported/masks/african1.rsi
     state: icon
@@ -1550,13 +1542,13 @@
     - node: end
       entity: civ13_mask_black_african_wooden_mask
 - type: construction
-  name: face plate
+  name: "бронепластина для лица"
   id: civ13_mask_face_plate
   graph: civ13_mask_face_plate
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bulletproof face plate. Used to protect your pretty face.
+  description: "Пулестойкая лицевая пластина. Бережёт вашу красоту."
   icon:
     sprite: Civ14/Clothing/exported/masks/iogplate.rsi
     state: icon
@@ -1578,13 +1570,13 @@
     - node: end
       entity: civ13_mask_face_plate
 - type: construction
-  name: gold plated mask
+  name: "позолоченная маска"
   id: civ13_mask_gold_plated_mask
   graph: civ13_mask_gold_plated_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mask plated in gold. Looks expensive.
+  description: "Маска с золотым покрытием. Выглядит дорого."
   icon:
     sprite: Civ14/Clothing/exported/masks/salamon.rsi
     state: icon
@@ -1606,13 +1598,13 @@
     - node: end
       entity: civ13_mask_gold_plated_mask
 - type: construction
-  name: chitin mask
+  name: "хитиновая маска"
   id: civ13_mask_chitin_mask
   graph: civ13_mask_chitin_mask
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mask made from insect chitin.
+  description: "Маска из хитина насекомых."
   icon:
     sprite: Civ14/Clothing/exported/masks/chitin_mask.rsi
     state: icon
@@ -1634,15 +1626,13 @@
     - node: end
       entity: civ13_mask_chitin_mask
 - type: construction
-  name: "'rite nasty boss jawpiece"
+  name: "челюсть свирепого вожака"
   id: civ13_mask_rite_nasty_boss_jawpiece
   graph: civ13_mask_rite_nasty_boss_jawpiece
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A chunk of crude metal crafted into the shape of a orcish jaw, cements
-    status amongst brutes making them appear larger.
+  description: "Грубая металлическая накладка в форме орочьей челюсти. Делает владельца внушительнее в глазах других громил."
   icon:
     sprite: Civ14/Clothing/exported/masks/bossjaw.rsi
     state: icon
@@ -1664,15 +1654,13 @@
     - node: end
       entity: civ13_mask_rite_nasty_boss_jawpiece
 - type: construction
-  name: solitaire masque
+  name: "маска одиночки"
   id: civ13_mask_solitaire_masque
   graph: civ13_mask_solitaire_masque
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: >-
-    A hauntingly chiselled and androgynous mask. Often worn by elite elven
-    assassins who only work alone.
+  description: "Пугающе безликая, искусно вырезанная маска. Её носят элитные эльфийские убийцы, работающие в одиночку."
   icon:
     sprite: Civ14/Clothing/exported/masks/solitaire.rsi
     state: icon

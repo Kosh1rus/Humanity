@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: NoticeBoard
-  name: notice board
-  description: Is there a job for a witcher?
+  name: "доска объявлений"
+  description: "Не найдётся ли работёнки для ведьмака?"
   placement:
     mode: SnapgridCenter
   components:

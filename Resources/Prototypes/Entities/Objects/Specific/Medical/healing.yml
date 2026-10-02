@@ -117,8 +117,8 @@
       count: 1
 
 - type: entity
-  name: bruise pack
-  description: A therapeutic gel pack and bandages designed to treat blunt-force trauma.
+  name: "пакет от ушибов"
+  description: "Лечебный гель и повязки для обработки травм от ударов."
   parent: BaseHealingItem
   id: Brutepack
   suffix: Full
@@ -207,8 +207,8 @@
       count: 1
 
 - type: entity
-  name: blood pack
-  description: Contains a groundbreaking universal blood replacement created by Nanotrasen's advanced medical science.
+  name: "пакет кровезаменителя"
+  description: "Содержит универсальный заменитель крови, созданный передовой медициной НаноТрейзен."
   parent: BaseHealingItem
   id: Bloodpack
   suffix: Full
@@ -274,8 +274,8 @@
         path: "/Audio/Items/Medical/brutepack_end.ogg"
 
 - type: entity
-  name: roll of gauze
-  description: Some sterile gauze to wrap around bloody stumps.
+  name: "рулон марли"
+  description: "Стерильная марля для перевязки кровоточащих ран."
   parent: BaseHealingItem
   id: Gauze
   suffix: Full
@@ -326,8 +326,8 @@
       count: 10
 
 - type: entity
-  name: roll of leather bandages
-  description: Some improvised leather bandages to wrap around bloody stumps.
+  name: "рулон кожаных бинтов"
+  description: "Самодельные кожаные полосы для перевязки кровоточащих ран."
   parent: Gauze
   id: GauzeLeather
   suffix: Full

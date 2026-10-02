@@ -64,7 +64,7 @@
     graph: FilingCabinet
 
 - type: entity
-  name: filing cabinet
+  name: "картотечный шкаф"
   parent: BaseFilingCabinet
   id: filingCabinet
   components:
@@ -78,7 +78,7 @@
     node: filingCabinet
 
 - type: entity
-  name: tall cabinet
+  name: "высокий картотечный шкаф"
   parent: BaseFilingCabinet
   id: filingCabinetTall
   components:

@@ -1,53 +1,53 @@
 - type: rank
   id: RankSergeantMajor
-  name: Sergeant Major
-  prefix: SgtMaj.
+  name: Сержант-майор
+  prefix: Серж.-майор
   paygrade: E9
 
 - type: rank
   id: RankFirstSergeant
-  name: First Sergeant
-  prefix: 1stSgt.
+  name: Первый сержант
+  prefix: 1-й серж.
   paygrade: E8
 
 - type: rank
   id: RankMasterSergeant
-  name: Master Sergeant
-  prefix: MSgt.
+  name: Мастер-сержант
+  prefix: Мастер-серж.
   paygrade: E7
 
 - type: rank
   id: RankStaffSergeant
-  name: Staff Sergeant
-  prefix: SSgt.
+  name: Штаб-сержант
+  prefix: Штаб-серж.
   paygrade: E6
 
 - type: rank
   id: RankSergeant
-  name: Sergeant
-  prefix: Sgt.
+  name: Сержант
+  prefix: Серж.
   paygrade: E5
 
 - type: rank
   id: RankCorporal
-  name: Corporal
-  prefix: Cpl.
+  name: Капрал
+  prefix: Капр.
   paygrade: E4
 
 - type: rank
   id: RankLanceCorporal
-  name: Lance Corporal
-  prefix: LCpl.
+  name: Младший капрал
+  prefix: Мл. капр.
   paygrade: E3
 
 - type: rank
   id: RankPrivateFirstClass
-  name: Private First Class
-  prefix: Pfc.
+  name: Рядовой первого класса
+  prefix: Ряд. 1-го кл.
   paygrade: E2
 
 - type: rank
   id: RankPrivate
-  name: Private
-  prefix: Pvt.
+  name: Рядовой
+  prefix: Ряд.
   paygrade: E1

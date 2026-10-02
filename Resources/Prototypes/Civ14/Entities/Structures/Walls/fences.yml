@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseFenceWood
   id: FenceWoodClassic
-  name: "wooden fence"
-  description: "A rustic wood fence for your garden."
+  name: "деревянный забор"
+  description: "Простой деревянный забор для сада."
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -40,8 +40,8 @@
 - type: entity
   parent: FenceWoodSmallGate
   id: FenceWoodClassicGate
-  name: wooden fence gate
-  description: A rustic wood fence gate.
+  name: деревянная калитка
+  description: Простая деревянная калитка.
   components:
     - type: Sprite
       sprite: Civ14/Structures/Doors/material_doors.rsi

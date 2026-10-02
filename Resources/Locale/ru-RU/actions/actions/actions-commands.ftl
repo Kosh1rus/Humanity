@@ -1,0 +1,9 @@
+upgradeaction-command-need-one-argument = Команде upgradeaction нужен хотя бы один аргумент: UID сущности действия. Вторым аргументом можно указать уровень.
+upgradeaction-command-max-two-arguments = Команда upgradeaction принимает не больше двух аргументов: UID сущности действия и необязательный уровень.
+upgradeaction-command-second-argument-not-number = Второй аргумент команды upgradeaction должен быть числом.
+upgradeaction-command-less-than-required-level = Уровень для команды upgradeaction должен быть больше нуля.
+upgradeaction-command-incorrect-entityuid-format = Для команды upgradeaction укажите корректный UID сущности.
+upgradeaction-command-entity-does-not-exist = Сущность не существует. Для команды upgradeaction нужен UID существующей сущности.
+upgradeaction-command-entity-is-not-action = У этой сущности нет компонента улучшения действия; повысить её уровень нельзя.
+upgradeaction-command-cannot-level-up = Повысить уровень этого действия нельзя.
+upgradeaction-command-description = Повышает уровень действия на один или устанавливает указанный уровень, если это возможно.

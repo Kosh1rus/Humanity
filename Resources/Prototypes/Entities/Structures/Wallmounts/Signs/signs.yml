@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseSign
   id: PaintingMonkey
-  name: monkey painting
-  description: Return to monky.
+  name: "картина с обезьяной"
+  description: "Назад к обезьяне."
   components:
     - type: Sprite
       state: monkey_painting
@@ -650,8 +650,8 @@
 - type: entity
   parent: BaseSign
   id: SignMedical
-  name: medbay sign
-  description: A sign indicating the medical bay.
+  name: "указатель медпункта"
+  description: "Знак, указывающий путь к медпункту."
   components:
     - type: Sprite
       state: medbay
@@ -793,8 +793,8 @@
 - type: entity
   parent: BaseSign
   id: SignSurgery
-  name: surgery sign
-  description: A sign indicating the operating theater.
+  name: "указатель операционной"
+  description: "Знак, указывающий путь к операционной."
   components:
     - type: Sprite
       state: surgery
@@ -856,8 +856,8 @@
 - type: entity
   parent: BaseSign
   id: SignDanger
-  name: danger warning sign
-  description: A sign warning against some danger.
+  name: "предупреждение об опасности"
+  description: "Знак предупреждает об опасности."
   components:
     - type: Sprite
       state: danger
@@ -1238,8 +1238,8 @@
 - type: entity
   parent: BaseSign
   id: SignKiddiePlaque
-  name: kiddie plaque
-  description: A modest plaque.
+  name: "детская табличка"
+  description: "Скромная табличка."
   components:
     - type: Sprite
       state: kiddieplaque

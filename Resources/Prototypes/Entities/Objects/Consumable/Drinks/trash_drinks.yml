@@ -291,7 +291,7 @@
       sprite: Objects/Consumable/TrashDrinks/whiskeybottle_empty.rsi
 
 - type: entity
-  name: wine bottle
+  name: "винная бутылка"
   parent: DrinkBottleBaseEmpty
   id: DrinkBottleWine
   components:

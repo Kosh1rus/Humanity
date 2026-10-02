@@ -29,8 +29,8 @@
 - type: entity
   parent: BaseSign
   id: PosterBroken
-  name: broken poster
-  description: "You can't make out anything from the poster's original print. It's ruined."
+  name: "испорченный плакат"
+  description: "Невозможно разобрать, что было напечатано на плакате."
   components:
     - type: Sprite
       drawdepth: WallTops
@@ -105,8 +105,8 @@
 - type: entity
   parent: PosterBase
   id: PosterContrabandSmoke
-  name: "Smoke"
-  description: "A poster advertising a rival corporate brand of cigarettes."
+  name: "плакат «Smoke»"
+  description: "Реклама сигарет конкурирующей компании."
   components:
     - type: Sprite
       state: poster7_contraband
@@ -818,8 +818,8 @@
 - type: entity
   parent: PosterBase
   id: PosterLegitCohibaRobustoAd
-  name: "Cohiba Robusto Ad"
-  description: "Cohiba Robusto, the classy cigar."
+  name: "реклама «Cohiba Robusto»"
+  description: "«Cohiba Robusto» — сигара для тех, кто ценит стиль."
   components:
     - type: Sprite
       state: poster25_legit

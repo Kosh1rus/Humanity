@@ -1,8 +1,8 @@
 - type: entity
-  name: armband
+  name: "нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_armband
-  description: A cloth armband.
+  description: "Простая матерчатая повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customarmband.rsi
@@ -16,10 +16,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: Dayfield body-armor
+  name: "бронежилет «Дейфилд»"
   parent: ClothingNeckBase
   id: civ13_accessory_Dayfield_body_armor
-  description: British-made wearable armor made of steel sheets.
+  description: "Британский бронежилет из стальных пластин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/modern_dayfield.rsi
@@ -41,10 +41,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow armband
+  name: "жёлтая нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_yellow_armband
-  description: A fancy yellow armband!
+  description: "Нарядная жёлтая повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
@@ -58,10 +58,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Spanish Republican armband
+  name: "повязка испанского республиканца"
   parent: ClothingNeckBase
   id: civ13_accessory_Spanish_Republican_armband
-  description: A fancy Spanish Republican Armband!
+  description: "Нарукавная повязка сторонника Испанской республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
@@ -75,10 +75,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: French webbing vest
+  name: "французский разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_French_webbing_vest
-  description: ""
+  description: "Разгрузочный жилет французского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/french_vest.rsi
@@ -92,10 +92,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UN armband
+  name: "повязка ООН"
   parent: ClothingNeckBase
   id: civ13_accessory_UN_armband
-  description: A blue UN armband.
+  description: "Синяя нарукавная повязка с символикой ООН."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/un.rsi
@@ -109,10 +109,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green armband
+  name: "зелёная нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_green_armband
-  description: A fancy green armband!
+  description: "Нарядная зелёная повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/portuguese.rsi
@@ -126,10 +126,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: orange armband
+  name: "оранжевая нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_orange_armband
-  description: A fancy orange armband!
+  description: "Нарядная оранжевая повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/dutch.rsi
@@ -143,10 +143,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: polish armband
+  name: "польская нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_polish_armband
-  description: A polish armband!
+  description: "Повязка с польской символикой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
@@ -160,10 +160,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red wagner armband
+  name: "красная повязка «Вагнер»"
   parent: ClothingNeckBase
   id: civ13_accessory_red_wagner_armband
-  description: A PMC group armband
+  description: "Нарукавная повязка бойца ЧВК «Вагнер»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/wagred.rsi
@@ -177,10 +177,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: iron arm bangle
+  name: "железный браслет"
   parent: ClothingNeckBase
   id: civ13_accessory_iron_arm_bangle
-  description: Iron bangles to wear on your arms.
+  description: "Железный браслет, который носят на предплечье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
@@ -194,12 +194,10 @@
       material: Iron
       time: 10
 - type: entity
-  name: golden Public Order ribbon
+  name: "золотая лента «За общественный порядок»"
   parent: ClothingNeckBase
   id: civ13_accessory_golden_Public_Order_ribbon
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: "Награда отличившимся сотрудникам правоохранительных органов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/police_gold.rsi
@@ -213,12 +211,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: silver Public Order ribbon
+  name: "серебряная лента «За общественный порядок»"
   parent: ClothingNeckBase
   id: civ13_accessory_silver_Public_Order_ribbon
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: "Награда отличившимся сотрудникам правоохранительных органов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/police_silver.rsi
@@ -232,10 +228,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: copper arm bangle
+  name: "медный браслет"
   parent: ClothingNeckBase
   id: civ13_accessory_copper_arm_bangle
-  description: Copper bangles to wear on your arms.
+  description: "Медный браслет, который носят на предплечье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
@@ -249,12 +245,10 @@
       material: Copper
       time: 10
 - type: entity
-  name: bronze Public Order ribbon
+  name: "бронзовая лента «За общественный порядок»"
   parent: ClothingNeckBase
   id: civ13_accessory_bronze_Public_Order_ribbon
-  description: >-
-    A ribbon given to law enforcement officers that distinguished themselves
-    during their service.
+  description: "Награда отличившимся сотрудникам правоохранительных органов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
@@ -268,10 +262,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Sheriff Star
+  name: "звезда шерифа"
   parent: ClothingNeckBase
   id: civ13_accessory_Sheriff_Star
-  description: A golden star of the town's Sheriff.
+  description: "Золотая звезда городского шерифа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
@@ -285,10 +279,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: deputy armband
+  name: "повязка помощника шерифа"
   parent: ClothingNeckBase
   id: civ13_accessory_deputy_armband
-  description: A yellow armband, used to identify the Sheriff's deputies.
+  description: "Жёлтая нарукавная повязка, по которой узнают помощников шерифа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/spanish.rsi
@@ -302,10 +296,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: police badge
+  name: "полицейский жетон"
   parent: ClothingNeckBase
   id: civ13_accessory_police_badge
-  description: A police badge in a star shape, with an officer's name engraved.
+  description: "Жетон в форме звезды с выгравированным именем офицера."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/sheriff.rsi
@@ -319,10 +313,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red armband
+  name: "красная нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_red_armband
-  description: A red armband
+  description: "Красная повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/red.rsi
@@ -336,10 +330,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue armband
+  name: "синяя нарукавная повязка"
   parent: ClothingNeckBase
   id: civ13_accessory_blue_armband
-  description: A red armband
+  description: "Синяя повязка на рукав."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/french.rsi
@@ -353,10 +347,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Light black breastplate body-armor
+  name: "лёгкий чёрный панцирь"
   parent: ClothingNeckBase
   id: civ13_accessory_Light_black_breastplate_body_armor
-  description: Wearable light armor made of steel sheets.
+  description: "Лёгкий нагрудный доспех из стальных пластин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
@@ -378,10 +372,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue tie
+  name: "синий галстук"
   parent: ClothingNeckBase
   id: civ13_accessory_blue_tie
-  description: A blue tie.
+  description: "Обычный синий галстук."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
@@ -395,10 +389,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue scarf
+  name: "синий флотский шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_blue_scarf
-  description: A blue scarf, used by royal navy sailors.
+  description: "Синий шарф моряков королевского флота."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
@@ -412,10 +406,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue scarf
+  name: "синий хлопковый шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_blue_scarf_1
-  description: A light cotton scarf, in blue.
+  description: "Лёгкий шарф из синего хлопка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
@@ -429,10 +423,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: grey scarf
+  name: "серый хлопковый шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_grey_scarf
-  description: A light cotton scarf, in grey.
+  description: "Лёгкий шарф из серого хлопка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
@@ -446,10 +440,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red scarf
+  name: "красный хлопковый шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_red_scarf
-  description: A light cotton scarf, in red.
+  description: "Лёгкий шарф из красного хлопка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
@@ -463,10 +457,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow scarf
+  name: "жёлтый хлопковый шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_yellow_scarf
-  description: A light cotton scarf, in yellow.
+  description: "Лёгкий шарф из жёлтого хлопка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
@@ -480,10 +474,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spiked bracers
+  name: "наручи с шипами"
   parent: ClothingNeckBase
   id: civ13_accessory_spiked_bracers
-  description: A pair of punkish spiked bracers.
+  description: "Пара наручей с шипами в духе панк-моды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
@@ -497,10 +491,10 @@
       time: 10
 
 - type: entity
-  name: gold native necklace
+  name: "золотые украшения коренных жителей"
   parent: ClothingNeckBase
   id: civ13_accessory_indian_accessories_1_2
-  description: gold native necklaces.
+  description: "Золотые ожерелья коренных народов Америки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indian2.rsi
@@ -514,10 +508,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: indian shaman bodypaint
+  name: "боевая раскраска шамана"
   parent: ClothingNeckBase
   id: civ13_accessory_indian_shaman_bodypaint
-  description: Red and white bodypaint, worn by native shamans.
+  description: "Красно-белая раскраска, которую носят шаманы коренных народов Америки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
@@ -531,10 +525,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red indian acessories
+  name: "красная боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_red_indian_acessories
-  description: red face paint and indian necklaces.
+  description: "Красная краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indianr.rsi
@@ -548,10 +542,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green native bodypaint
+  name: "зелёная боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_green_indian_acessories
-  description: green face paint and indian necklaces.
+  description: "Зелёная краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indiang.rsi
@@ -565,10 +559,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue native bodypaint
+  name: "синяя боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_blue_indian_acessories
-  description: blue face paint and indian necklaces.
+  description: "Синяя краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indianb.rsi
@@ -582,10 +576,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow native bodypaint
+  name: "жёлтая боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_yellow_indian_acessories
-  description: yellow face paint and indian necklaces.
+  description: "Жёлтая краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indiany.rsi
@@ -599,10 +593,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white native bodypaint
+  name: "белая боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_white_indian_acessories
-  description: white face paint and indian necklaces.
+  description: "Белая краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indianw.rsi
@@ -616,10 +610,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black native bodypaint
+  name: "чёрная боевая раскраска"
   parent: ClothingNeckBase
   id: civ13_accessory_black_indian_acessories
-  description: black face paint and indian necklaces.
+  description: "Чёрная краска для лица и ожерелья коренных жителей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/indianbl.rsi
@@ -633,10 +627,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: bone talisman
+  name: "костяной талисман"
   parent: ClothingNeckBase
   id: civ13_accessory_bone_talisman
-  description: A bone talisman.
+  description: "Талисман из кости."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/talisman.rsi
@@ -650,10 +644,10 @@
       material: Bone
       time: 8
 - type: entity
-  name: red cross armband
+  name: "повязка Красного Креста"
   parent: ClothingNeckBase
   id: civ13_accessory_red_cross_armband
-  description: A white armband with the red cross in it.
+  description: "Белая нарукавная повязка с красным крестом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/redcross.rsi
@@ -667,10 +661,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NSDAP armband
+  name: "повязка НСДАП"
   parent: ClothingNeckBase
   id: civ13_accessory_NSDAP_armband
-  description: A red armband with the swastika on it.
+  description: "Красная нарукавная повязка со свастикой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/nsdap.rsi
@@ -684,10 +678,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Kenpeitai armband
+  name: "повязка кэмпэйтай"
   parent: ClothingNeckBase
   id: civ13_accessory_Kenpeitai_armband
-  description: A white armband with red japanese characters on it.
+  description: "Белая нарукавная повязка с красными японскими иероглифами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
@@ -701,10 +695,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: military police armband
+  name: "повязка военной полиции"
   parent: ClothingNeckBase
   id: civ13_accessory_military_police_armband
-  description: A black armband with "MP" written on it.
+  description: "Чёрная повязка с буквами MP."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/usmp.rsi
@@ -718,10 +712,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Volkssturm armband
+  name: "повязка фольксштурма"
   parent: ClothingNeckBase
   id: civ13_accessory_Volkssturm_armband
-  description: A red, white and black armband of the Volkssturm
+  description: "Красно-бело-чёрная нарукавная повязка фольксштурма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
@@ -735,10 +729,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cat tail and ears
+  name: "кошачьи уши и хвост"
   parent: ClothingNeckBase
   id: civ13_accessory_cat_tail_and_ears
-  description: intresting
+  description: "Пушистые аксессуары для любителей кошек."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/kitty.rsi
@@ -752,10 +746,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: scarf
+  name: "шарф"
   parent: ClothingNeckBase
   id: civ13_accessory_scarf
-  description: A cloth scarf.
+  description: "Простой матерчатый шарф."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customscarf.rsi
@@ -769,10 +763,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: sash
+  name: "перевязь"
   parent: ClothingNeckBase
   id: civ13_accessory_sash
-  description: A cloth sash.
+  description: "Широкая матерчатая перевязь."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customsash.rsi
@@ -786,10 +780,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: tabard
+  name: "табар"
   parent: ClothingNeckBase
   id: civ13_accessory_tabard
-  description: A cloth tabard.
+  description: "Простая накидка без рукавов, которую носят поверх одежды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customtabard.rsi
@@ -802,50 +796,50 @@
       material: Cloth
       time: 3
 - type: entity
-  name: red tabard
+  name: "красный табард"
   parent: ClothingNeckBase
   id: civ13_accessory_tabard_red
-  description: A cloth tabard, dyed red.
+  description: "Полотняный табард, окрашенный в красный цвет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tabard_red.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tabard_red.rsi
 - type: entity
-  name: red and yellow tabard
+  name: "красно-жёлтый табард"
   parent: ClothingNeckBase
   id: civ13_accessory_tabard_red_yellow
-  description: A cloth tabard, dyed red and yellow.
+  description: "Полотняный табард красного и жёлтого цветов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tabard_red_yellow.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tabard_red_yellow.rsi
 - type: entity
-  name: blue tabard
+  name: "синий табард"
   parent: ClothingNeckBase
   id: civ13_accessory_tabard_blue
-  description: A cloth tabard, dyed blue.
+  description: "Полотняный табард, окрашенный в синий цвет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tabard_blue.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tabard_blue.rsi
 - type: entity
-  name: blue and white tabard
+  name: "сине-белый табард"
   parent: ClothingNeckBase
   id: civ13_accessory_tabard_blue_white
-  description: A cloth tabard, dyed blue and white.
+  description: "Полотняный табард синего и белого цветов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tabard_blue_white.rsi
     - type: Clothing
       sprite: Civ14/Clothing/exported/ties/tabard_blue_white.rsi
 - type: entity
-  name: apron
+  name: "фартук"
   parent: ClothingNeckBase
   id: civ13_accessory_apron
-  description: A cloth apron.
+  description: "Простой матерчатый фартук."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/apron.rsi
@@ -859,10 +853,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: priest band
+  name: "священнический воротник"
   parent: ClothingNeckBase
   id: civ13_accessory_priest_band
-  description: A priest band.
+  description: "Отличительный воротник священнослужителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
@@ -876,10 +870,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cape
+  name: "плащ-накидка"
   parent: ClothingNeckBase
   id: civ13_accessory_cape
-  description: A cloth cape.
+  description: "Простая матерчатая накидка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/customcape.rsi
@@ -893,10 +887,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: black tie
+  name: "чёрный галстук"
   parent: ClothingNeckBase
   id: civ13_accessory_black_tie
-  description: A black tie.
+  description: "Обычный чёрный галстук."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/black_tie.rsi
@@ -910,10 +904,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black bowtie
+  name: "чёрная бабочка"
   parent: ClothingNeckBase
   id: civ13_accessory_black_bowtie
-  description: A black bowtie.
+  description: "Чёрный галстук-бабочка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
@@ -927,10 +921,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: marksman patch
+  name: "нашивка меткого стрелка"
   parent: ClothingNeckBase
   id: civ13_accessory_marksman_patch
-  description: A patch with a marksman logo on it. Usually worn by skilled shooters.
+  description: "Нашивка со знаком меткого стрелка. Обычно её носят опытные бойцы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
@@ -944,10 +938,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russia patch
+  name: "нашивка «Россия»"
   parent: ClothingNeckBase
   id: civ13_accessory_Russia_patch
-  description: A patch with the flag of Russia.
+  description: "Нашивка с российским флагом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
@@ -961,10 +955,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Spetsgruppa A patch
+  name: "нашивка группы «Альфа»"
   parent: ClothingNeckBase
   id: civ13_accessory_Spetsgruppa_A_patch
-  description: A special forces patch, this one is of spetsnaz.
+  description: "Нашивка подразделения специального назначения «Альфа»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
@@ -978,10 +972,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SWAT patch
+  name: "нашивка SWAT"
   parent: ClothingNeckBase
   id: civ13_accessory_SWAT_patch
-  description: A SWAT tag.
+  description: "Нашивка бойца полицейского спецназа SWAT."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/swat.rsi
@@ -995,10 +989,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: special forces patch
+  name: "нашивка спецназа"
   parent: ClothingNeckBase
   id: civ13_accessory_special_forces_patch
-  description: A patch used by special forces.
+  description: "Нашивка бойца подразделения специального назначения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
@@ -1012,10 +1006,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SECURITY
+  name: "нашивка «Охрана»"
   parent: ClothingNeckBase
   id: civ13_accessory_SECURITY
-  description: A tag used by security forces.
+  description: "Нашивка сотрудника службы безопасности."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/policetag.rsi
@@ -1029,10 +1023,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: "Standard Single Pauldron "
+  name: "одиночный наплечник"
   parent: ClothingNeckBase
   id: civ13_accessory_Standard_Single_Pauldron_
-  description: A plastoid armored shoulder cover.
+  description: "Защитная накладка на одно плечо из пластоида."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
@@ -1046,10 +1040,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green PASGT body armor
+  name: "зелёный бронежилет PASGT"
   parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_green_PASGT_body_armor
-  description: Wearable armor that can stop most pistol rounds. This one is green colored.
+  description: "Зелёный бронежилет, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
@@ -1062,10 +1056,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UN PASGT body armor
+  name: "бронежилет PASGT ООН"
   parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_un_PASGT_body_armor
-  description: Wearable armor that can stop most pistol rounds. This one is blue colored for use by the UN.
+  description: "Синий бронежилет миротворца ООН, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pasgt_un.rsi
@@ -1073,10 +1067,10 @@
       sprite: Civ14/Clothing/exported/ties/pasgt_un.rsi
 
 - type: entity
-  name: red tie
+  name: "красный галстук"
   parent: ClothingNeckBase
   id: civ13_accessory_red_tie
-  description: A red tie.
+  description: "Обычный красный галстук."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/red_tie.rsi
@@ -1090,10 +1084,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: "Standard Double Pauldron "
+  name: "двойной наплечник"
   parent: ClothingNeckBase
   id: civ13_accessory_Standard_Double_Pauldron_
-  description: Dual plastoid shoulder cover.
+  description: "Защитные накладки из пластоида на оба плеча."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
@@ -1107,10 +1101,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wearable sign
+  name: "носимая табличка"
   parent: ClothingNeckBase
   id: civ13_accessory_wearable_sign
-  description: A wooden sign with a string, wearable over the clothing.
+  description: "Деревянная табличка на верёвке. Носится поверх одежды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
@@ -1124,10 +1118,10 @@
       material: WoodPlank
       time: 6
 - type: entity
-  name: Combat Medical Badge
+  name: "знак боевого медика"
   parent: ClothingNeckBase
   id: civ13_accessory_Combat_Medical_Badge
-  description: A badge given to those who excel in providing medical care during combat.
+  description: "Награда за выдающуюся медицинскую помощь во время боя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
@@ -1141,10 +1135,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German webbing vest
+  name: "немецкий разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_German_webbing_vest
-  description: ""
+  description: "Разгрузочный жилет немецкого образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -1157,13 +1151,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Webbing vest
+  name: "разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_Webbing_vest
-  description: >-
-    This webbing vest includes two sturdy leather belts equipped with small
-    pouches for ammunition and grenades, providing essential storage for
-    frontline soldiers.
+  description: "Два прочных кожаных ремня с подсумками для патронов и гранат. Помогает бойцу нести всё необходимое."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -1177,10 +1168,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Iron Cross
+  name: "Железный крест I класса"
   parent: ClothingNeckBase
   id: civ13_accessory_Iron_Cross
-  description: An iron cross given to 1st class ranking personnel
+  description: "Награда «Железный крест» I класса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
@@ -1194,10 +1185,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Iron Cross
+  name: "Железный крест II класса"
   parent: ClothingNeckBase
   id: civ13_accessory_Iron_Cross_1
-  description: An iron cross given to 2nd class ranking personnel
+  description: "Награда «Железный крест» II класса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
@@ -1211,10 +1202,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Great Iron Cross
+  name: "Большой Железный крест"
   parent: ClothingNeckBase
   id: civ13_accessory_Great_Iron_Cross
-  description: A great iron cross
+  description: "Высшая степень награды «Железный крест»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/GEK.rsi
@@ -1228,10 +1219,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Knight Iron Cross
+  name: "Рыцарский крест Железного креста"
   parent: ClothingNeckBase
   id: civ13_accessory_Knight_Iron_Cross
-  description: A knight iron cross
+  description: "Рыцарский крест Железного креста."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
@@ -1245,10 +1236,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Knight Iron Cross
+  name: "Рыцарский крест с дубовыми листьями"
   parent: ClothingNeckBase
   id: civ13_accessory_Knight_Iron_Cross_1
-  description: An oak knight iron cross
+  description: "Рыцарский крест с дубовыми листьями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
@@ -1262,10 +1253,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Knight Iron Cross
+  name: "Рыцарский крест с золотыми дубовыми листьями"
   parent: ClothingNeckBase
   id: civ13_accessory_Knight_Iron_Cross_1_2
-  description: A gold oak knight iron cross
+  description: "Рыцарский крест с золотыми дубовыми листьями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
@@ -1279,10 +1270,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Long Service Medal
+  name: "медаль за выслугу лет"
   parent: ClothingNeckBase
   id: civ13_accessory_Long_Service_Medal
-  description: A Wehrmacht long service medal
+  description: "Награда за долгую службу в вермахте."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
@@ -1296,10 +1287,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Eastern Front Medal
+  name: "медаль «За Восточную кампанию»"
   parent: ClothingNeckBase
   id: civ13_accessory_Eastern_Front_Medal
-  description: A Wehrmacht eastern front medal
+  description: "Награда вермахта участникам кампании на Восточном фронте."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
@@ -1313,10 +1304,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Assault Badge
+  name: "штурмовой знак"
   parent: ClothingNeckBase
   id: civ13_accessory_Assault_Badge
-  description: An assault badge for assistance in infantry assaults
+  description: "Награда за участие в пехотных атаках."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
@@ -1330,10 +1321,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Tank Destruction Badge
+  name: "знак «За уничтожение танка»"
   parent: ClothingNeckBase
   id: civ13_accessory_Tank_Destruction_Badge
-  description: A badge showing the wearer has destroyed an enemy tank
+  description: "Награда бойцу, уничтожившему вражеский танк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
@@ -1347,10 +1338,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Tank Destruction Badge
+  name: "знак «За уничтожение танка»"
   parent: ClothingNeckBase
   id: civ13_accessory_Tank_Destruction_Badge_1
-  description: A badge showing the wearer has destroyed an enemy tank
+  description: "Награда бойцу, уничтожившему вражеский танк."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
@@ -1364,10 +1355,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Wounded Badge
+  name: "чёрный знак «За ранение»"
   parent: ClothingNeckBase
   id: civ13_accessory_Wounded_Badge
-  description: A black badge showing the wearer has been wounded for the fatherland
+  description: "Чёрный знак бойца, получившего ранение на службе."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/black_wound.rsi
@@ -1381,10 +1372,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Wounded Badge
+  name: "серебряный знак «За ранение»"
   parent: ClothingNeckBase
   id: civ13_accessory_Wounded_Badge_1
-  description: A silver badge showing the wearer has been wounded for the fatherland
+  description: "Серебряный знак бойца, получившего ранение на службе."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
@@ -1398,10 +1389,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Wounded Badge
+  name: "золотой знак «За ранение»"
   parent: ClothingNeckBase
   id: civ13_accessory_Wounded_Badge_1_2
-  description: A gold badge showing the wearer has been wounded for the fatherland
+  description: "Золотой знак бойца, получившего ранение на службе."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
@@ -1415,10 +1406,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Wehrmacht Sadler
+  name: "нагрудный орёл вермахта"
   parent: ClothingNeckBase
   id: civ13_accessory_Wehrmacht_Sadler
-  description: An eagle pin displaying the symbol of the wehrmacht
+  description: "Значок с орлом — символом вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
@@ -1432,10 +1423,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SS Sadler
+  name: "нагрудный орёл СС"
   parent: ClothingNeckBase
   id: civ13_accessory_SS_Sadler
-  description: An eagle pin displaying the symbol of the schutzstaffel
+  description: "Значок с орлом — символом СС."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
@@ -1449,10 +1440,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SS pin
+  name: "значок СС"
   parent: ClothingNeckBase
   id: civ13_accessory_SS_pin
-  description: A pin displaying the symbol of the Schutzstaffel
+  description: "Значок с символикой СС."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
@@ -1466,10 +1457,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NSDAP pin
+  name: "значок НСДАП"
   parent: ClothingNeckBase
   id: civ13_accessory_NSDAP_pin
-  description: A pin displaying the symbol of the 3rd Reich
+  description: "Значок с символикой Третьего рейха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
@@ -1483,10 +1474,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Totenkopf pin
+  name: "значок «Мёртвая голова»"
   parent: ClothingNeckBase
   id: civ13_accessory_Totenkopf_pin
-  description: A pin displaying the symbol of the SS Totenkopf
+  description: "Значок с символикой подразделений СС «Мёртвая голова»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
@@ -1500,10 +1491,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NSDAP pin
+  name: "значок НСДАП"
   parent: ClothingNeckBase
   id: civ13_accessory_NSDAP_pin_1
-  description: A pin displaying the symbol of the NSDAP
+  description: "Значок с символикой НСДАП."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/nsdap.rsi
@@ -1517,10 +1508,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: East Asia War medal
+  name: "медаль «За войну в Восточной Азии»"
   parent: ClothingNeckBase
   id: civ13_accessory_East_Asia_War_medal
-  description: A medal given to those who fought in the pacific theatre.
+  description: "Награда участникам боёв на Тихоокеанском театре военных действий."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
@@ -1534,10 +1525,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: China Incident medal
+  name: "медаль «За инцидент в Китае»"
   parent: ClothingNeckBase
   id: civ13_accessory_China_Incident_medal
-  description: A medal given to those who fought in China and Manchuria from 1931-1937.
+  description: "Награда участникам боёв в Китае и Маньчжурии в 1931–1937 годах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
@@ -1551,10 +1542,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: China Incident medal
+  name: "медаль «За инцидент в Китае»"
   parent: ClothingNeckBase
   id: civ13_accessory_China_Incident_medal_1
-  description: A medal given to those who fought in Chinafrom 1937-1945.
+  description: "Награда участникам боёв в Китае в 1937–1945 годах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
@@ -1568,12 +1559,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Order of the Rising Sun
+  name: "орден Восходящего солнца"
   parent: ClothingNeckBase
   id: civ13_accessory_Order_of_the_Rising_Sun
-  description: >-
-    A medal given to those who fought valiantly for japan and contributed
-    greatly to war efforts.
+  description: "Японская награда за выдающиеся заслуги на войне."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
@@ -1587,12 +1576,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Supreme Soviet of the Soviet Union
+  name: "значок депутата Верховного Совета СССР"
   parent: ClothingNeckBase
   id: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
-  description: >-
-    A Soviet flag pin signifying that the wearer is part of the supreme council
-    as a delegate.
+  description: "Значок с советским флагом, указывающий на членство в Верховном Совете СССР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
@@ -1606,10 +1593,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: People's Commissariat of Internal Affairs Pin
+  name: "значок НКВД"
   parent: ClothingNeckBase
   id: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
-  description: A pin used by the interior ministry of the soviet union.
+  description: "Знак принадлежности к Народному комиссариату внутренних дел СССР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/nkvd.rsi
@@ -1623,12 +1610,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Hero of the Soviet Union Medal
+  name: "медаль Героя Советского Союза"
   parent: ClothingNeckBase
   id: civ13_accessory_Hero_of_the_Soviet_Union_Medal
-  description: >-
-    A medal given to soldiers of the soviet union who have achevied heroic feats
-    in service to the Soviet state and society.
+  description: "Награда за героический подвиг на службе Советскому государству и обществу."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
@@ -1642,16 +1627,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Order of the Red Star Medal
+  name: "орден Красной Звезды"
   parent: ClothingNeckBase
   id: civ13_accessory_Order_of_the_Red_Star_Medal
-  description: >-
-    The Order of the Red Star was awarded to soldiers of the Soviet Army, Navy,
-    border and internal security forces, employees of the State Security
-    Committee of the USSR, as well as NCOs and officers of the bodies of
-    internal affairs; to units, warships, associations, enterprises,
-    institutions and organizations; as well as to military personnel of foreign
-    countries.
+  description: "Советский орден за военные заслуги. Им награждали военнослужащих, сотрудников органов безопасности, воинские части и организации."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
@@ -1665,12 +1644,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: For the Defence of Stalingrad Medal
+  name: "медаль «За оборону Сталинграда»"
   parent: ClothingNeckBase
   id: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
-  description: >-
-    Given to soldiers who have defended Stalingrad during the harsh war against
-    the german invaders.
+  description: "Награда защитникам Сталинграда во время Великой Отечественной войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
@@ -1684,12 +1661,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: For the Defence of Leningrad Medal
+  name: "медаль «За оборону Ленинграда»"
   parent: ClothingNeckBase
   id: civ13_accessory_For_the_Defence_of_Leningrad_Medal
-  description: >-
-    Given to soldiers who have defended Leningrad during the harsh war against
-    the german invaders.
+  description: "Награда защитникам Ленинграда во время Великой Отечественной войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
@@ -1703,12 +1678,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Guards Unit Badge
+  name: "гвардейский знак"
   parent: ClothingNeckBase
   id: civ13_accessory_Guards_Unit_Badge
-  description: >-
-    Given to soldiers who have shown that they are to be distinguished from
-    basic infantry and are now under the rank of Guard.
+  description: "Знак военнослужащего гвардейской части."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
@@ -1722,10 +1695,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Italian webbing vest
+  name: "итальянский разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_Italian_webbing_vest
-  description: ""
+  description: "Разгрузочный жилет итальянского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -1739,10 +1712,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Fascist Party Pin
+  name: "значок Фашистской партии Италии"
   parent: ClothingNeckBase
   id: civ13_accessory_Fascist_Party_Pin
-  description: Given to members of the Italian Fascist party.
+  description: "Партийный значок члена итальянской Фашистской партии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
@@ -1756,12 +1729,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Officer's Colonial Order of the Star of Italy Medal
+  name: "колониальный орден Звезды Италии, офицер"
   parent: ClothingNeckBase
   id: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
-  description: >-
-    Given to members of the Italian millitary who have served in the colonies of
-    the Kingdom of Italy, showing the rank of Officer .
+  description: "Орден офицерской степени за службу в колониях Королевства Италия."
   components:
     - type: Sprite
       sprite: >-
@@ -1779,12 +1750,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Knight's Colonial Order of the Star of Italy Medal
+  name: "колониальный орден Звезды Италии, кавалер"
   parent: ClothingNeckBase
   id: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
-  description: >-
-    Given to members of the Italian millitary who have served in the colonies of
-    the Kingdom of Italy, showing the rank of Knight .
+  description: "Орден кавалерской степени за службу в колониях Королевства Италия."
   components:
     - type: Sprite
       sprite: >-
@@ -1802,12 +1771,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Communist Party Pin
+  name: "значок коммунистической партии"
   parent: ClothingNeckBase
   id: civ13_accessory_Communist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Communism.
+  description: "Политический значок сторонника коммунизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
@@ -1821,12 +1788,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Anarcho-communist Party Pin
+  name: "значок анархо-коммунистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Anarcho_communist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-communism.
+  description: "Политический значок сторонника анархо-коммунизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
@@ -1840,10 +1805,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Anarchist Party Pin
+  name: "значок анархистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Anarchist_Party_Pin
-  description: A political pin signifying that the wearer supports the beliefs of Anarchy.
+  description: "Политический значок сторонника анархизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
@@ -1857,12 +1822,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Monarchist Party Pin
+  name: "значок монархистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Monarchist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of a
-    Monarchy.
+  description: "Политический значок сторонника монархии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
@@ -1876,12 +1839,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Republican Party Pin
+  name: "значок республиканцев"
   parent: ClothingNeckBase
   id: civ13_accessory_Republican_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of a
-    Republic.
+  description: "Политический значок сторонника республики."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
@@ -1895,10 +1856,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Fascist Party Pin
+  name: "значок фашистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Fascist_Party_Pin_1
-  description: A political pin signifying that the wearer supports the beliefs of Fascism.
+  description: "Политический значок сторонника фашизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
@@ -1912,12 +1873,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: National-socialist Party Pin
+  name: "значок национал-социалистов"
   parent: ClothingNeckBase
   id: civ13_accessory_National_socialist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    National-Socialism.
+  description: "Политический значок сторонника национал-социализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
@@ -1931,12 +1890,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Minarchist Party Pin
+  name: "значок минархистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Minarchist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Minarchism.
+  description: "Политический значок сторонника минимального государства."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
@@ -1950,12 +1907,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Anarcho-capitalist Party Pin
+  name: "значок анархо-капиталистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Anarcho_capitalist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-capitalism.
+  description: "Политический значок сторонника анархо-капитализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
@@ -1969,12 +1924,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Libertarian Party Pin
+  name: "значок либертарианцев"
   parent: ClothingNeckBase
   id: civ13_accessory_Libertarian_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Libertarianism.
+  description: "Политический значок сторонника либертарианства."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
@@ -1988,12 +1941,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: MSF Party Pin
+  name: "значок Фронта мусульманских студентов"
   parent: ClothingNeckBase
   id: civ13_accessory_MSF_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Muslim-Students-Front.
+  description: "Значок сторонника Фронта мусульманских студентов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
@@ -2007,12 +1958,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Liberal Party Pin
+  name: "значок либералов"
   parent: ClothingNeckBase
   id: civ13_accessory_Liberal_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Liberalism.
+  description: "Политический значок сторонника либерализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
@@ -2026,12 +1975,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Anarcho-liberal Party Pin
+  name: "значок анархо-либералов"
   parent: ClothingNeckBase
   id: civ13_accessory_Anarcho_liberal_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-liberalism.
+  description: "Политический значок сторонника анархо-либерализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
@@ -2045,12 +1992,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Anarcho-primitist Party Pin
+  name: "значок анархо-примитивистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Anarcho_primitist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Anarcho-primitism.
+  description: "Политический значок сторонника анархо-примитивизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
@@ -2064,12 +2009,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Evironmentalist Party Pin
+  name: "значок защитников природы"
   parent: ClothingNeckBase
   id: civ13_accessory_Evironmentalist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Evironmentalism.
+  description: "Политический значок сторонника охраны окружающей среды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
@@ -2083,10 +2026,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Christian Party Pin
+  name: "значок христианской партии"
   parent: ClothingNeckBase
   id: civ13_accessory_Christian_Party_Pin
-  description: A political pin signifying that the wearer supports the beliefs of Christ.
+  description: "Политический значок сторонника христианской партии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
@@ -2100,10 +2043,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Muslim Brotherhood Party Pin
+  name: "значок «Братьев-мусульман»"
   parent: ClothingNeckBase
   id: civ13_accessory_Muslim_Brotherhood_Party_Pin
-  description: A political pin signifying that the wearer supports the beliefs of Muhammad.
+  description: "Политический значок сторонника движения «Братья-мусульмане»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
@@ -2117,12 +2060,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Conservative Party Pin
+  name: "значок консерваторов"
   parent: ClothingNeckBase
   id: civ13_accessory_Conservative_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Conservatism.
+  description: "Политический значок сторонника консерватизма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
@@ -2136,12 +2077,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Nationalist Party Pin
+  name: "значок националистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Nationalist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Nationalism.
+  description: "Политический значок сторонника национализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
@@ -2155,12 +2094,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Egalitarian Party Pin
+  name: "значок эгалитаристов"
   parent: ClothingNeckBase
   id: civ13_accessory_Egalitarian_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Egalitarianism.
+  description: "Политический значок сторонника равноправия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
@@ -2174,12 +2111,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Globalist Party Pin
+  name: "значок глобалистов"
   parent: ClothingNeckBase
   id: civ13_accessory_Globalist_Party_Pin
-  description: >-
-    A political pin signifying that the wearer supports the beliefs of
-    Globalism.
+  description: "Политический значок сторонника глобализма."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
@@ -2193,12 +2128,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Farmer's Union Pin
+  name: "значок союза фермеров"
   parent: ClothingNeckBase
   id: civ13_accessory_Farmers_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further farmer's rights.
+  description: "Значок участника объединения, защищающего права фермеров."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
@@ -2212,12 +2145,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Miner's Union Pin
+  name: "значок профсоюза шахтёров"
   parent: ClothingNeckBase
   id: civ13_accessory_Miners_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further miner's rights.
+  description: "Значок участника объединения, защищающего права шахтёров."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
@@ -2231,12 +2162,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Factory Worker's Union Pin
+  name: "значок союза фабричных рабочих"
   parent: ClothingNeckBase
   id: civ13_accessory_Factory_Workers_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further worker's rights.
+  description: "Значок участника объединения, защищающего права фабричных рабочих."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
@@ -2250,12 +2179,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Labour Worker's Union Pin
+  name: "значок профсоюза рабочих"
   parent: ClothingNeckBase
   id: civ13_accessory_Labour_Workers_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Labourer's rights.
+  description: "Значок участника объединения, защищающего права рабочих."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
@@ -2269,12 +2196,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Medical Worker's Guild Pin
+  name: "значок гильдии медработников"
   parent: ClothingNeckBase
   id: civ13_accessory_Medical_Workers_Guild_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Medical Worker's rights.
+  description: "Значок объединения, защищающего интересы медицинских работников."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
@@ -2288,12 +2213,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Office Worker's Union Pin
+  name: "значок союза офисных работников"
   parent: ClothingNeckBase
   id: civ13_accessory_Office_Workers_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Office Worker's rights.
+  description: "Значок участника объединения, защищающего права офисных работников."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
@@ -2307,12 +2230,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Hospitality Pin
+  name: "значок работников сферы услуг"
   parent: ClothingNeckBase
   id: civ13_accessory_Hospitality_Pin
-  description: >-
-    A Political pin signifying that the wearer supports the beliefs of
-    Hospitality Worker's rights.
+  description: "Значок сторонника прав работников сферы услуг."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
@@ -2326,12 +2247,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Lumberjack's Union Pin
+  name: "значок профсоюза лесорубов"
   parent: ClothingNeckBase
   id: civ13_accessory_Lumberjacks_Union_Pin
-  description: >-
-    A Union pin signifying that the wearer supports the beliefs of working to
-    protect and further Lumberjack's rights.
+  description: "Значок участника объединения, защищающего права лесорубов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
@@ -2345,12 +2264,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Merchant's Guild Pin
+  name: "значок гильдии торговцев"
   parent: ClothingNeckBase
   id: civ13_accessory_Merchants_Guild_Pin
-  description: >-
-    A Guild pin signifying that the wearer supports the beliefs of working to
-    protect and further the Guild's rights.
+  description: "Значок объединения, защищающего интересы торговцев."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
@@ -2364,10 +2281,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Kapitan rank epaulettes
+  name: "погоны капитана"
   parent: ClothingNeckBase
   id: civ13_accessory_Kapitan_rank_epaulettes
-  description: the rank of Kapitan, Captain, epaulettes.
+  description: "Погоны со знаком звания «капитан»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
@@ -2381,10 +2298,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Tenyente rank epaulettes
+  name: "погоны лейтенанта"
   parent: ClothingNeckBase
   id: civ13_accessory_Tenyente_rank_epaulettes
-  description: the rank of Tenyente, Lieutenant, epaulettes.
+  description: "Погоны со знаком звания «лейтенант»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
@@ -2398,10 +2315,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Sarhente rank patch
+  name: "нашивка сержанта"
   parent: ClothingNeckBase
   id: civ13_accessory_Sarhente_rank_patch
-  description: the rank of Sarhente, Sergeant, sleeve patches.
+  description: "Нарукавная нашивка со знаком звания «сержант»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
@@ -2415,10 +2332,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Kabo rank patch
+  name: "нашивка капрала"
   parent: ClothingNeckBase
   id: civ13_accessory_Kabo_rank_patch
-  description: the rank of Kabo, Corporal, sleeve patches.
+  description: "Нарукавная нашивка со знаком звания «капрал»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
@@ -2432,10 +2349,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Nitohei rank patch
+  name: "нашивка нито-хэй"
   parent: ClothingNeckBase
   id: civ13_accessory_Nitohei_rank_patch
-  description: the rank of 2nd class soldier, to be sewn into the collar of a uniform.
+  description: "Знак рядового 2-го класса для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
@@ -2449,10 +2366,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Ittohei rank patch
+  name: "нашивка итто-хэй"
   parent: ClothingNeckBase
   id: civ13_accessory_Ittohei_rank_patch
-  description: the rank of 1st class soldier, to be sewn into the collar of a uniform.
+  description: "Знак рядового 1-го класса для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
@@ -2466,12 +2383,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Jotohei rank patch
+  name: "нашивка дзёто-хэй"
   parent: ClothingNeckBase
   id: civ13_accessory_Jotohei_rank_patch
-  description: >-
-    the rank of senior soldier (lance corporal or specialist), to be sewn into
-    the collar of a uniform.
+  description: "Знак старшего рядового для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
@@ -2485,12 +2400,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Gunso rank patch
+  name: "нашивка гунсо"
   parent: ClothingNeckBase
   id: civ13_accessory_Gunso_rank_patch
-  description: >-
-    the rank of Gunso, squad leader or sergeanr, to be sewn into the collar of a
-    uniform.
+  description: "Знак сержанта для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
@@ -2504,10 +2417,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Shoi rank patch
+  name: "нашивка сёи"
   parent: ClothingNeckBase
   id: civ13_accessory_Shoi_rank_patch
-  description: the rank of Shoi, 2nd Lieutenant, to be sewn into the collar of a uniform.
+  description: "Знак младшего лейтенанта для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
@@ -2521,10 +2434,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Chui rank patch
+  name: "нашивка тюи"
   parent: ClothingNeckBase
   id: civ13_accessory_Chui_rank_patch
-  description: the rank of Chui, 1st Lieutenant, to be sewn into the collar of a uniform.
+  description: "Знак лейтенанта для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
@@ -2538,10 +2451,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Tai-i rank patch
+  name: "нашивка тайи"
   parent: ClothingNeckBase
   id: civ13_accessory_Tai_i_rank_patch
-  description: the rank of Rikugun Tai-i, Captain, to be sewn into the collar of a uniform.
+  description: "Знак капитана для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
@@ -2555,10 +2468,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Schutze rank patch
+  name: "нашивка шютце"
   parent: ClothingNeckBase
   id: civ13_accessory_Schutze_rank_patch
-  description: the rank of 2nd class soldier, to be sewn into the collar of a uniform.
+  description: "Знак рядового для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
@@ -2572,10 +2485,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Oberschutze rank patch
+  name: "нашивка обершютце"
   parent: ClothingNeckBase
   id: civ13_accessory_Oberschutze_rank_patch
-  description: the rank of 1st class soldier, to be sewn into the collar of a uniform.
+  description: "Знак старшего рядового для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
@@ -2589,10 +2502,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Gefreiter rank patch
+  name: "нашивка ефрейтора"
   parent: ClothingNeckBase
   id: civ13_accessory_Gefreiter_rank_patch
-  description: the rank of Acting Corporal, to be sewn into the collar of a uniform.
+  description: "Знак ефрейтора для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
@@ -2606,10 +2519,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Obergefreiter rank patch
+  name: "нашивка обер-ефрейтора"
   parent: ClothingNeckBase
   id: civ13_accessory_Obergefreiter_rank_patch
-  description: the rank of Corporal, to be sewn into the collar of a uniform.
+  description: "Знак старшего ефрейтора для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
@@ -2623,10 +2536,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Unteroffizier rank patch
+  name: "нашивка унтер-офицера"
   parent: ClothingNeckBase
   id: civ13_accessory_Unteroffizier_rank_patch
-  description: the rank of Sergeant, to be sewn into the collar of a uniform.
+  description: "Знак унтер-офицера для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
@@ -2640,10 +2553,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Ober Leutnant rank patch
+  name: "нашивка обер-лейтенанта"
   parent: ClothingNeckBase
   id: civ13_accessory_Ober_Leutnant_rank_patch
-  description: the rank of 1st Lieutenant, to be sewn into the collar of a uniform.
+  description: "Знак старшего лейтенанта для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
@@ -2657,10 +2570,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Hauptmann rank patch
+  name: "нашивка гауптмана"
   parent: ClothingNeckBase
   id: civ13_accessory_Hauptmann_rank_patch
-  description: the rank of Captain, to be sewn into the collar of a uniform.
+  description: "Знак капитана для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
@@ -2674,10 +2587,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Untersturmfuhrer rank patch
+  name: "нашивка унтерштурмфюрера"
   parent: ClothingNeckBase
   id: civ13_accessory_Untersturmfuhrer_rank_patch
-  description: the rank of SS 2nd Lieutenant, to be sewn into the collar of a uniform.
+  description: "Знак младшего лейтенанта СС для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
@@ -2691,10 +2604,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Scharfuhrer rank patch
+  name: "нашивка шарфюрера"
   parent: ClothingNeckBase
   id: civ13_accessory_Scharfuhrer_rank_patch
-  description: the rank of SS Sergeant, to be sewn into the collar of a uniform.
+  description: "Знак сержанта СС для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
@@ -2708,10 +2621,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Obersturmfuhrer rank patch
+  name: "нашивка оберштурмфюрера"
   parent: ClothingNeckBase
   id: civ13_accessory_Obersturmfuhrer_rank_patch
-  description: the rank of SS 1st Lieutenant, to be sewn into the collar of a uniform.
+  description: "Знак старшего лейтенанта СС для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
@@ -2725,10 +2638,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Hauptsturmfuhrer rank patch
+  name: "нашивка гауптштурмфюрера"
   parent: ClothingNeckBase
   id: civ13_accessory_Hauptsturmfuhrer_rank_patch
-  description: the rank of SS Captain, to be sewn into the collar of a uniform.
+  description: "Знак капитана СС для воротника мундира."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
@@ -2742,10 +2655,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Khorunzhyj rank patches
+  name: "нашивки хорунжего"
   parent: ClothingNeckBase
   id: civ13_accessory_Khorunzhyj_rank_patches
-  description: the rank of Khorunzhyj, 2nd Lieutenant.
+  description: "Знаки офицерского звания «хорунжий»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
@@ -2759,10 +2672,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Vistun rank patch
+  name: "нашивка вистуна"
   parent: ClothingNeckBase
   id: civ13_accessory_Vistun_rank_patch
-  description: the rank of Vistun, Sergeant, sleeve patches.
+  description: "Нарукавная нашивка со знаком сержантского звания."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
@@ -2776,10 +2689,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shoulder holster
+  name: "плечевая кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_shoulder_holster
-  description: A handgun holster.
+  description: "Кобура для пистолета, которую носят под мышкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/holster.rsi
@@ -2793,10 +2706,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: armpit holster
+  name: "подмышечная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_armpit_holster
-  description: A worn-out handgun holster. Perfect for concealed carry
+  description: "Потёртая кобура для скрытого ношения пистолета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/holster.rsi
@@ -2810,10 +2723,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: waist holster
+  name: "поясная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_waist_holster
-  description: A handgun holster. Made of expensive leather.
+  description: "Кобура для пистолета из дорогой кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/holster.rsi
@@ -2827,10 +2740,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chest holster
+  name: "нагрудная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_chest_holster
-  description: A handgun holster with slung around the chest.
+  description: "Кобура для пистолета с ремнями вокруг груди."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
@@ -2844,10 +2757,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: hip holster
+  name: "набедренная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_hip_holster
-  description: A handgun holster slung low on the hip.
+  description: "Кобура для пистолета, закреплённая низко на бедре."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
@@ -2861,10 +2774,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: double hip holster
+  name: "двойная набедренная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_double_hip_holster
-  description: A double handgun holster slung low on the hip.
+  description: "Пара кобур для пистолетов, закреплённых низко на бёдрах."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
@@ -2878,10 +2791,10 @@
       material: Leather
       time: 7
 - type: entity
-  name: hip holster
+  name: "набедренная кобура"
   parent: ClothingNeckBase
   id: civ13_accessory_hip_holster_1
-  description: A handgun holster slung low on the hip.
+  description: "Кобура для пистолета, закреплённая низко на бедре."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
@@ -2895,10 +2808,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: replicant kama
+  name: "кама репликанта"
   parent: ClothingNeckBase
   id: civ13_accessory_replicant_kama
-  description: A kama skirt with a built in holster slung low on the hip.
+  description: "Защитная юбка-кама со встроенной набедренной кобурой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
@@ -2912,18 +2825,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: silver locket
+  name: "серебряный медальон"
   parent: ClothingNeckBase
   id: civ13_accessory_silver_locket
-  description: >-
-    This oval shaped, argentium sterling silver locket hangs on an incredibly
-    fine, refractive string, almost thin as hair and microweaved from links to a
-    deceptive strength, of similar material. The edges are engraved very
-    delicately with an elegant curving design, but overall the main is unmarked
-    and smooth to the touch, leaving room for either remaining as a stolid piece
-    or future alterations. There is an obvious internal place for a picture or
-    lock of some sort, but even behind that is a very thin compartment unhinged
-    with the pinch of a thumb and forefinger.
+  description: "Овальный медальон из серебра на тонкой прочной цепочке. Края украшены изящной гравировкой, а гладкая крышка ждёт собственный узор. Внутри есть место для фотографии и потайное отделение, которое открывается лёгким нажатием."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/locket.rsi
@@ -2937,10 +2842,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: load bearing equipment
+  name: "разгрузочное снаряжение"
   parent: ClothingNeckBase
   id: civ13_accessory_load_bearing_equipment
-  description: Used to hold things when you don't have enough hands.
+  description: "Помогает переносить вещи, когда рук уже не хватает."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/webbing.rsi
@@ -2954,10 +2859,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: short sword sheath
+  name: "ножны для короткого меча"
   parent: ClothingNeckBase
   id: civ13_accessory_short_sword_sheath
-  description: A case of leather for a shorter length sword.
+  description: "Кожаные ножны подходящей длины для короткого меча."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
@@ -2971,10 +2876,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: long sword sheath
+  name: "ножны для длинного меча"
   parent: ClothingNeckBase
   id: civ13_accessory_long_sword_sheath
-  description: A large leather case. Looks long enough to accommodate most swords.
+  description: "Большие кожаные ножны. Подойдут для большинства длинных мечей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
@@ -2988,10 +2893,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: katana sheath
+  name: "ножны для катаны"
   parent: ClothingNeckBase
   id: civ13_accessory_katana_sheath
-  description: A case of leather for a katana.
+  description: "Кожаные ножны для катаны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
@@ -3005,10 +2910,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: daisho sheaths
+  name: "ножны для дайсё"
   parent: ClothingNeckBase
   id: civ13_accessory_daisho_sheaths
-  description: A pair of leather cases for a matched weapon set.
+  description: "Пара кожаных ножен для двух мечей из комплекта дайсё."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
@@ -3022,10 +2927,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: sword sheath
+  name: "ножны для меча"
   parent: ClothingNeckBase
   id: civ13_accessory_sword_sheath
-  description: A case of leather for holding a sword, it is of intermediate length.
+  description: "Кожаные ножны для меча средней длины."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
@@ -3039,10 +2944,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: knife sheath
+  name: "ножны для ножа"
   parent: ClothingNeckBase
   id: civ13_accessory_knife_sheath
-  description: A leather case for holding a knife.
+  description: "Кожаные ножны для ножа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
@@ -3056,10 +2961,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: belt loop
+  name: "поясная петля"
   parent: ClothingNeckBase
   id: civ13_accessory_belt_loop
-  description: A loop for your belt. You could probably store something dibilitating there.
+  description: "Петля для пояса. На неё можно подвесить что-нибудь полезное."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
@@ -3073,12 +2978,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: duty rig
+  name: "служебный пояс"
   parent: ClothingNeckBase
   id: civ13_accessory_duty_rig
-  description: >-
-    A set of loops and cases on a belt. You could probably store some
-    enforcement tool there.
+  description: "Пояс с петлями и чехлами для служебного снаряжения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tacholster.rsi
@@ -3092,10 +2995,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: loose pouches
+  name: "подсумки"
   parent: ClothingNeckBase
   id: civ13_accessory_loose_pouches
-  description: A pair of loose pouches, perfect for getting some pacifying tools quickly.
+  description: "Пара подсумков, из которых удобно быстро доставать снаряжение."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
@@ -3109,12 +3012,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: thrown weapon bandolier
+  name: "перевязь для метательного оружия"
   parent: ClothingNeckBase
   id: civ13_accessory_thrown_weapon_bandolier
-  description: >-
-    A set of leather cases on belts for storing and retrieving thrown weapons
-    quickly.
+  description: "Кожаные чехлы на ремнях позволяют быстро доставать метательное оружие."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
@@ -3128,10 +3029,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: bandolier
+  name: "патронташ"
   parent: ClothingNeckBase
   id: civ13_accessory_bandolier
-  description: two leather belts with small pouches for ammunition.
+  description: "Два кожаных ремня с небольшими подсумками для патронов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/bandolier.rsi
@@ -3145,10 +3046,10 @@
       material: Leather
       time: 7
 - type: entity
-  name: green chest webbing
+  name: "зелёная нагрудная разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_green_chest_webbing
-  description: A green chest-level webbing, with three medium sized pouches.
+  description: "Зелёная разгрузка с тремя подсумками среднего размера."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
@@ -3162,10 +3063,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: NLF small pouches
+  name: "подсумки НФО"
   parent: ClothingNeckBase
   id: civ13_accessory_NLF_small_pouches
-  description: A green chest-level webbing with multiple small-sized pouches.
+  description: "Зелёная нагрудная разгрузка с несколькими небольшими подсумками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
@@ -3179,12 +3080,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NLF chestrig
+  name: "нагрудная разгрузка НФО"
   parent: ClothingNeckBase
   id: civ13_accessory_NLF_chestrig
-  description: >-
-    A green chest-level webbing, with three medium-sized pouches along with two
-    smaller ones.
+  description: "Зелёная разгрузка с тремя средними и двумя малыми подсумками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
@@ -3198,10 +3097,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: khaki chest webbing
+  name: "нагрудная разгрузка хаки"
   parent: ClothingNeckBase
   id: civ13_accessory_khaki_chest_webbing
-  description: A khaki chest-level webbing, with three medium sized pouches.
+  description: "Разгрузка цвета хаки с тремя подсумками среднего размера."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
@@ -3215,10 +3114,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: black pouches
+  name: "чёрные подсумки"
   parent: ClothingNeckBase
   id: civ13_accessory_black_pouches
-  description: A set of pouches to store magazines in.
+  description: "Подсумки для магазинов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
@@ -3232,10 +3131,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: large black pouches
+  name: "большие чёрные подсумки"
   parent: ClothingNeckBase
   id: civ13_accessory_large_black_pouches
-  description: A large set of pouches to store magazines in.
+  description: "Вместительные подсумки для магазинов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/largepouches.rsi
@@ -3249,10 +3148,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: large tan pouches
+  name: "большие песочные подсумки"
   parent: ClothingNeckBase
   id: civ13_accessory_large_tan_pouches
-  description: A large set of pouches to store magazines in.
+  description: "Вместительные подсумки для магазинов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
@@ -3266,10 +3165,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tan pouches
+  name: "песочные подсумки"
   parent: ClothingNeckBase
   id: civ13_accessory_tan_pouches
-  description: A set of pouches to store magazines in.
+  description: "Подсумки для магазинов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
@@ -3283,12 +3182,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tan UBAC
+  name: "песочная боевая рубаха"
   parent: ClothingNeckBase
   id: civ13_accessory_tan_UBAC
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is tan.
+  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Песочного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
@@ -3302,12 +3199,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green UBAC
+  name: "зелёная боевая рубаха"
   parent: ClothingNeckBase
   id: civ13_accessory_green_UBAC
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is green.
+  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Зелёного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
@@ -3321,12 +3216,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black UBAC
+  name: "чёрная боевая рубаха"
   parent: ClothingNeckBase
   id: civ13_accessory_black_UBAC
-  description: >-
-    A flexible, close-fitting shirt with camouflage sleeves designed to be worn
-    under combat equipment. This one is black.
+  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Чёрного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
@@ -3340,10 +3233,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: grey sweater
+  name: "серый свитер"
   parent: ClothingNeckBase
   id: civ13_accessory_grey_sweater
-  description: A sweater to help you be comfy.
+  description: "Мягкий серый свитер, в котором удобно и тепло."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/sweater.rsi
@@ -3357,10 +3250,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: light webbing
+  name: "лёгкая разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_light_webbing
-  description: A light webbing, with lower capacity but permitting fast movement.
+  description: "Вмещает меньше обычной разгрузки, зато не мешает быстро двигаться."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -3374,10 +3267,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: Chinese light webbing
+  name: "лёгкая китайская разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_Chinese_light_webbing
-  description: ""
+  description: "Лёгкая разгрузка китайского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -3391,10 +3284,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: US Army webbing
+  name: "разгрузка армии США"
   parent: ClothingNeckBase
   id: civ13_accessory_US_Army_webbing
-  description: A large webbing with several small pockets.
+  description: "Большая разгрузка с несколькими маленькими карманами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/us_vest.rsi
@@ -3408,10 +3301,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: US Army bandolier
+  name: "патронташ армии США"
   parent: ClothingNeckBase
   id: civ13_accessory_US_Army_bandolier
-  description: A large cotton bandolier with several small pouches.
+  description: "Большой хлопковый патронташ с несколькими маленькими подсумками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
@@ -3425,10 +3318,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: shotgun bandolier
+  name: "патронташ для дробовика"
   parent: ClothingNeckBase
   id: civ13_accessory_shotgun_bandolier
-  description: A bandolier with several holes made to fit shotgun shells.
+  description: "Патронташ с ячейками для ружейных патронов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
@@ -3442,10 +3335,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: US Army M79 Vest
+  name: "жилет M79 армии США"
   parent: ClothingNeckBase
   id: civ13_accessory_US_Army_M79_Vest
-  description: A large webbing with several small pockets.
+  description: "Большая разгрузка с несколькими маленькими карманами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
@@ -3459,10 +3352,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Grenadier Webbing
+  name: "разгрузка гранатомётчика"
   parent: ClothingNeckBase
   id: civ13_accessory_Grenadier_Webbing
-  description: A large webbing with several small pockets.
+  description: "Большая разгрузка с несколькими маленькими карманами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
@@ -3476,10 +3369,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Grenadier Webbing
+  name: "разгрузка гранатомётчика"
   parent: ClothingNeckBase
   id: civ13_accessory_Grenadier_Webbing_1
-  description: A large webbing with several small pockets.
+  description: "Большая разгрузка с несколькими маленькими карманами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
@@ -3493,12 +3386,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: survival webbing
+  name: "походная разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_survival_webbing
-  description: >-
-    A green set of chest and knee-level pouches for storing a pistol, magazines
-    and other gear needed to survive in the wilderness.
+  description: "Зелёные нагрудные и набедренные подсумки для пистолета, магазинов и снаряжения выживальщика."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
@@ -3512,10 +3403,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Imperial Russian Army bandolier
+  name: "патронташ Русской императорской армии"
   parent: ClothingNeckBase
   id: civ13_accessory_Imperial_Russian_Army_bandolier
-  description: A large leather bandolier 6 small pouches for strip clips.
+  description: "Большой кожаный патронташ с шестью подсумками для патронных обойм."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ru_band.rsi
@@ -3529,10 +3420,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: filipino webbing
+  name: "филиппинская разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_filipino_webbing
-  description: 8 black leather pouches.
+  description: "Восемь подсумков из чёрной кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
@@ -3546,10 +3437,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cartridge rigging
+  name: "патронная разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_cartridge_rigging
-  description: A rig of cases for ammo and a bayonet.
+  description: "Подсумки для патронов и чехол для штыка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/civil_war.rsi
@@ -3563,10 +3454,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: CAF Tacvest
+  name: "тактический жилет КВС"
   parent: ClothingNeckBase
   id: civ13_accessory_CAF_Tacvest
-  description: A large webbing with several pouches.
+  description: "Большая разгрузка с несколькими подсумками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
@@ -3580,10 +3471,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Leather webbing vest
+  name: "кожаный разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_Leather_webbing_vest
-  description: ""
+  description: "Разгрузочный жилет из кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/british_vest.rsi
@@ -3598,10 +3489,10 @@
       time: 5
 
 - type: entity
-  name: Greek webbing vest
+  name: "греческий разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_Greek_webbing_vest
-  description: ""
+  description: "Разгрузочный жилет греческого образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/german_vest.rsi
@@ -3615,10 +3506,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian webbing vest
+  name: "российский разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_Russian_webbing_vest
-  description: This webbing appears to have four green polyester pouches.
+  description: "Разгрузка с четырьмя зелёными полиэстеровыми подсумками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
@@ -3632,12 +3523,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: US webbing
+  name: "американская разгрузка"
   parent: ClothingNeckBase
   id: civ13_accessory_US_webbing
-  description: >-
-    A khaki canvas pouch rig with 10 pouches total for ammo and other various
-    items
+  description: "Разгрузка из парусины цвета хаки с десятью подсумками для боеприпасов и снаряжения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
@@ -3652,10 +3541,10 @@
       time: 5
 
 - type: entity
-  name: stethoscope
+  name: "стетоскоп"
   parent: ClothingNeckBase
   id: civ13_accessory_stethoscope
-  description: A medical apparatus for listening to the sounds of the human body.
+  description: "Медицинский прибор, позволяющий слушать работу сердца и лёгких."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
@@ -3669,10 +3558,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: TATBA-7 vest
+  name: "бронежилет ТАТБА-7"
   parent: ClothingNeckBase
   id: civ13_accessory_TATBA_7_vest
-  description: Chinese light plate carrier, comes with a single plate inserted.
+  description: "Лёгкий китайский бронежилет с одной установленной бронепластиной."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/tatba.rsi
@@ -3686,10 +3575,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B3 body armor
+  name: "бронежилет 6Б3"
   parent: ClothingNeckBase
   id: civ13_accessory_6B3_body_armor
-  description: A ballistic vest of Soviet origin, issued in the mid 1980s.
+  description: "Советский бронежилет, поступивший на вооружение в середине 1980-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b3.rsi
@@ -3709,10 +3598,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B3 green camo body armor
+  name: "бронежилет 6Б3 в зелёном камуфляже"
   parent: civ13_accessory_6B3_body_armor
   id: civ13_accessory_6B3_green_camo_body_armor
-  description: ""
+  description: "Советский бронежилет 6Б3 в зелёном камуфляже."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
@@ -3725,10 +3614,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B2 body armor
+  name: "бронежилет 6Б2"
   parent: ClothingNeckBase
   id: civ13_accessory_6B2_body_armor
-  description: A ballistic vest of Soviet origin, issued in the early 1980s.
+  description: "Советский бронежилет, принятый на вооружение в начале 1980-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b2.rsi
@@ -3749,10 +3638,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B5 body armor
+  name: "бронежилет 6Б5"
   parent: ClothingNeckBase
   id: civ13_accessory_6B5_body_armor
-  description: A ballistic vest of Soviet origin, issued in the late 1980s.
+  description: "Советский бронежилет, поступивший на вооружение в конце 1980-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b5.rsi
@@ -3773,12 +3662,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: N34-B body armor
+  name: "бронежилет N34-B"
   parent: ClothingNeckBase
   id: civ13_accessory_N34_B_body_armor
-  description: >-
-    A modern piece of Blugoslavian armor introduced in 2023, made fully out of
-    kevlar while also having some space left for plate inserts.
+  description: "Современный бронежилет Блюгославии образца 2023 года. Сделан из кевлара и имеет карманы для бронепластин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/n34bm.rsi
@@ -3793,12 +3680,10 @@
           Arrow: 0.3
           Heat: 0.78
 - type: entity
-  name: N34-BM body armor
+  name: "медицинский бронежилет N34-BM"
   parent: civ13_accessory_N34_B_body_armor
   id: civ13_accessory_N34_BM_body_armor
-  description: >-
-    A Blugoslavian armor used by medics and doctors alike, comes with a white
-    medical cross on the back.
+  description: "Блюгославский бронежилет для медиков с белым крестом на спине."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
@@ -3806,12 +3691,10 @@
       sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
 
 - type: entity
-  name: black Interceptor Body Armor
+  name: "чёрный бронежилет Interceptor"
   parent: ClothingNeckBase
   id: civ13_accessory_black_Interceptor_Body_Armor
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection.
+  description: "Способен остановить даже некоторые винтовочные пули. Для лучшей защиты можно установить бронепластины."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/iba_black.rsi
@@ -3832,13 +3715,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UCP Interceptor Body Armor
+  name: "бронежилет Interceptor в расцветке UCP"
   parent: ClothingNeckBase
   id: civ13_accessory_UCP_Interceptor_Body_Armor
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection. This one has the Universal Camouflage
-    Pattern.
+  description: "Способен остановить некоторые винтовочные пули. Бронепластины усиливают защиту. Окрашен в универсальный камуфляж UCP."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/iba_ucp.rsi
@@ -3859,13 +3739,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: OCP Interceptor Body Armor
+  name: "бронежилет Interceptor в расцветке OCP"
   parent: ClothingNeckBase
   id: civ13_accessory_OCP_Interceptor_Body_Armor
-  description: >-
-    Wearable armor that can stop even some rifle rounds. Can be fitted with
-    plates to increase protection. This one has the Operational Camouflage
-    Pattern.
+  description: "Способен остановить некоторые винтовочные пули. Бронепластины усиливают защиту. Окрашен в камуфляж OCP."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/iba_ocp.rsi
@@ -3886,10 +3763,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tan plate carrier
+  name: "песочный плитник"
   parent: ClothingNeckBase
   id: civ13_accessory_tan_plate_carrier
-  description: A plate carrier that can store magazines and pouches. This one is tan.
+  description: "Плитоносец с креплениями для магазинов и подсумков. Песочного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/platecarrier_tan.rsi
@@ -3910,10 +3787,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: olive plate carrier
+  name: "оливковый плитник"
   parent: ClothingNeckBase
   id: civ13_accessory_olive_plate_carrier
-  description: A plate carrier that can store magazines and pouches. This one is olive.
+  description: "Плитоносец с креплениями для магазинов и подсумков. Оливкового цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/platecarrier_green.rsi
@@ -3934,10 +3811,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black plate carrier
+  name: "чёрный плитник"
   parent: ClothingNeckBase
   id: civ13_accessory_black_plate_carrier
-  description: A plate carrier that can store magazines and pouches. This one is black.
+  description: "Плитоносец с креплениями для магазинов и подсумков. Чёрного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/platecarrier_black.rsi
@@ -3958,12 +3835,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: UARM plate carrier
+  name: "плитник UARM"
   parent: ClothingNeckBase
   id: civ13_accessory_UARM_plate_carrier
-  description: >-
-    A plate carrier that can store magazines and pouches. This one is made by
-    UARM.
+  description: "Плитоносец UARM с креплениями для магазинов и подсумков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ukraine_armor.rsi
@@ -3984,10 +3859,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B45 body armor
+  name: "бронежилет 6Б45"
   parent: ClothingNeckBase
   id: civ13_accessory_6B45_body_armor
-  description: A modern body armor of Russian origin.
+  description: "Современный российский бронежилет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b45.rsi
@@ -4008,10 +3883,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B45 extended body armor
+  name: "расширенный бронежилет 6Б45"
   parent: ClothingNeckBase
   id: civ13_accessory_6B45_extended_body_armor
-  description: A modern body armor of Russian origin.
+  description: "Современный российский бронежилет с дополнительной защитой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b45_ext.rsi
@@ -4032,12 +3907,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B46 body armor
+  name: "бронежилет 6Б46"
   parent: ClothingNeckBase
   id: civ13_accessory_6B46_body_armor
-  description: >-
-    A modern plate carrier of Russian origin. This one is used by paratroopers
-    and vehicle crewmen as it is a lighter version of the 6B45.
+  description: "Облегчённый российский бронежилет для десантников и экипажей боевых машин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b46.rsi
@@ -4058,12 +3931,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: M-1952 Flak Jacket
+  name: "противоосколочный жилет M-1952"
   parent: ClothingNeckBase
   id: civ13_accessory_M_1952_Flak_Jacket
-  description: >-
-    Wearable armor meant to protect against shrapnel and light hits. Won't do
-    much against large caliber weapons.
+  description: "Защищает от осколков и лёгких попаданий, но мало поможет против крупнокалиберного оружия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
@@ -4077,12 +3948,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: M-1969 Flak Jacket
+  name: "противоосколочный жилет M-1969"
   parent: ClothingNeckBase
   id: civ13_accessory_M_1969_Flak_Jacket
-  description: >-
-    Wearable armor with neck protection meant to protect against shrapnel and
-    light hits. Won't do much against large caliber weapons.
+  description: "Защищает шею и корпус от осколков и лёгких попаданий, но мало поможет против крупнокалиберного оружия."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
@@ -4096,12 +3965,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: 6B1 vest
+  name: "бронежилет 6Б1"
   parent: ClothingNeckBase
   id: civ13_accessory_6B1_vest
-  description: >-
-    Wearable Armor meant to protect against shrapnel and light caliber weaponry.
-    Won't do much against large caliber weapons.
+  description: "Защищает от осколков и малокалиберных пуль. Против крупного калибра почти бесполезен."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/6b1.rsi
@@ -4122,12 +3989,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: woodland PASGT body armor
+  name: "бронежилет PASGT в лесном камуфляже"
   parent: ClothingNeckBase
   id: civ13_accessory_woodland_PASGT_body_armor
-  description: >-
-    Wearable armor that can stop most pistol rounds. This one is in U.S.
-    Woodland pattern.
+  description: "Бронежилет в американском лесном камуфляже, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pasgt_woodland.rsi
@@ -4148,10 +4013,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: khaki PASGT body armor
+  name: "бронежилет PASGT цвета хаки"
   parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_khaki_PASGT_body_armor
-  description: Wearable armor that can stop most pistol rounds. This one is khaki colored.
+  description: "Бронежилет цвета хаки, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
@@ -4164,12 +4029,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blizzard PASGT body armor
+  name: "бронежилет PASGT в зимнем камуфляже"
   parent: civ13_accessory_woodland_PASGT_body_armor
   id: civ13_accessory_blizzard_PASGT_body_armor
-  description: >-
-    Wearable armor that can stop most pistol rounds. This one has a blizzard
-    pattern.
+  description: "Бронежилет в снежной расцветке, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
@@ -4182,10 +4045,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: RB-23 body armor
+  name: "бронежилет RB-23"
   parent: ClothingNeckBase
   id: civ13_accessory_RB_23_body_armor
-  description: A modern ballistic vest of Redmenian origin.
+  description: "Современный бронежилет редменийского производства."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/rb23.rsi
@@ -4206,10 +4069,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Masada body armor
+  name: "зелёный бронежилет «Масада»"
   parent: ClothingNeckBase
   id: civ13_accessory_Masada_body_armor
-  description: Israeli wearable armor that can stop most pistol rounds. This one is green.
+  description: "Израильский бронежилет, способный остановить большинство пистолетных пуль."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/greenkevlarvest.rsi
@@ -4230,10 +4093,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chainmail
+  name: "кольчуга"
   parent: ClothingNeckBase
   id: civ13_accessory_chainmail
-  description: Wearable armor made of several small interlinked chains.
+  description: "Доспех из множества соединённых металлических колец."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/chainmail.rsi
@@ -4254,10 +4117,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: knee protections
+  name: "наколенники"
   parent: ClothingNeckBase
   id: civ13_accessory_knee_protections
-  description: Used to increase the protection of the legs.
+  description: "Дополнительно защищают колени и ноги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
@@ -4271,10 +4134,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: leg guards
+  name: "поножи"
   parent: ClothingNeckBase
   id: civ13_accessory_leg_guards
-  description: Used to increase the protection of the legs.
+  description: "Дополнительно защищают ноги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/legguards.rsi
@@ -4288,10 +4151,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: elbow protections
+  name: "налокотники"
   parent: ClothingNeckBase
   id: civ13_accessory_elbow_protections
-  description: Used to increase the protection of the arms.
+  description: "Дополнительно защищают локти и руки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
@@ -4305,10 +4168,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: arm guards
+  name: "наручи"
   parent: ClothingNeckBase
   id: civ13_accessory_arm_guards
-  description: Used to increase the protection of the arms.
+  description: "Дополнительно защищают руки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/armguards.rsi
@@ -4322,10 +4185,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: tan carrier vest
+  name: "песочный разгрузочный бронежилет"
   parent: ClothingNeckBase
   id: civ13_accessory_tan_carrier_vest
-  description: A kevlar vest with pouches, it is tan.
+  description: "Кевларовый жилет с подсумками. Песочного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/pcarrier_tan.rsi
@@ -4346,10 +4209,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black carrier vest
+  name: "чёрный разгрузочный бронежилет"
   parent: ClothingNeckBase
   id: civ13_accessory_black_carrier_vest
-  description: A kevlar vest with pouches, it is black.
+  description: "Кевларовый жилет с подсумками. Чёрного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/pcarrier_black.rsi
@@ -4370,10 +4233,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: heavy carrier vest
+  name: "тяжёлый разгрузочный жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_heavy_carrier_vest
-  description: A tan carrier vest for holding various items.
+  description: "Вместительный жилет песочного цвета для разного снаряжения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/thickcarrier.rsi
@@ -4394,10 +4257,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black kevlar vest
+  name: "чёрный кевларовый жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_black_kevlar_vest
-  description: Standard kevlar, can stop low caliber bullets. This one is black.
+  description: "Стандартный кевларовый жилет, способный остановить малокалиберные пули."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/kevlarvest.rsi
@@ -4418,10 +4281,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: civilian kevlar vest
+  name: "гражданский кевларовый жилет"
   parent: ClothingNeckBase
   id: civ13_accessory_civilian_kevlar_vest
-  description: A black kevlar vest for commercial use.
+  description: "Чёрный защитный жилет для гражданского использования."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/civilianvest.rsi
@@ -4441,10 +4304,10 @@
       cost: 10
       time: 21
 - type: entity
-  name: Press kevlar vest
+  name: "бронежилет прессы"
   parent: ClothingNeckBase
   id: civ13_accessory_Press_kevlar_vest
-  description: A blue kevlar vest, with 'PRESS' written across the chest.
+  description: "Синий кевларовый жилет с надписью «PRESS» на груди."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/press_kevlarvest.rsi
@@ -4465,10 +4328,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: baily vest
+  name: "жилет охраны «Бейли»"
   parent: ClothingNeckBase
   id: civ13_accessory_baily_vest
-  description: A vest used by baily security units.
+  description: "Защитный жилет сотрудников службы безопасности «Бейли»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
@@ -4482,10 +4345,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: IOG heavy vest B-7
+  name: "тяжёлый жилет ИОГ B-7"
   parent: ClothingNeckBase
   id: civ13_accessory_IOG_heavy_vest_B_7
-  description: A heavy suit made of strong materials.
+  description: "Тяжёлый защитный жилет из прочных материалов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
@@ -4499,10 +4362,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Breastplate body-armor
+  name: "стальная кираса"
   parent: ClothingNeckBase
   id: civ13_accessory_Breastplate_body_armor
-  description: Wearable armor made of steel sheets.
+  description: "Носимый доспех из стальных пластин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/modern_platearmor.rsi
@@ -4524,10 +4387,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Light breastplate body-armor
+  name: "лёгкая стальная кираса"
   parent: ClothingNeckBase
   id: civ13_accessory_Light_breastplate_body_armor
-  description: Wearable light armor made of steel sheets.
+  description: "Лёгкий нагрудный доспех из стальных пластин."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/modern_armorvest.rsi
@@ -4549,10 +4412,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Lead breastplate body-armor
+  name: "свинцовая кираса"
   parent: ClothingNeckBase
   id: civ13_accessory_Lead_breastplate_body_armor
-  description: Wearable breastplate armor made out of steel sheets and lead.
+  description: "Нагрудный доспех из стальных пластин и свинца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
@@ -4574,10 +4437,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: White Sash
+  name: "белая перевязь"
   parent: ClothingNeckBase
   id: civ13_accessory_White_Sash
-  description: A white sash, used by the Japanese White Sash Brigade.
+  description: "Белая перевязь японской бригады «Белая перевязь»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/sash.rsi
@@ -4591,10 +4454,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: neck ruffle
+  name: "воротник-жабо"
   parent: ClothingNeckBase
   id: civ13_accessory_neck_ruffle
-  description: A ruffle neck collar made of soft material.
+  description: "Мягкий пышный воротник вокруг шеи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
@@ -4608,10 +4471,10 @@
       material: Cloth
       time: 3
 - type: entity
-  name: suspenders
+  name: "подтяжки"
   parent: ClothingNeckBase
   id: civ13_accessory_suspenders
-  description: Leather suspenders.
+  description: "Кожаные подтяжки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
@@ -4625,10 +4488,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: dark suspenders
+  name: "тёмные подтяжки"
   parent: ClothingNeckBase
   id: civ13_accessory_dark_suspenders
-  description: Dark leather suspenders.
+  description: "Подтяжки из тёмной кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
@@ -4642,10 +4505,10 @@
       material: Leather
       time: 7
 - type: entity
-  name: Japanese pilot harness
+  name: "привязные ремни японского лётчика"
   parent: ClothingNeckBase
   id: civ13_accessory_Japanese_pilot_harness
-  description: A harness made to strap someone to a plane.
+  description: "Ремни, которыми лётчик пристёгивается в самолёте."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/ties/jap_harn.rsi

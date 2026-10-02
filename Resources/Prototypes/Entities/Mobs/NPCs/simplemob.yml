@@ -118,10 +118,10 @@
     - type: FloatingVisuals
 
 - type: entity
-  name: animal remains
+  name: "останки животного"
   parent: BaseItem
   id: AnimalRemains
-  description: The remains of a long dead animal.
+  description: "То, что осталось от давно погибшего животного."
   components:
     - type: Sprite
       sprite: Civ14/Objects/tribal.rsi

@@ -1,8 +1,8 @@
 - type: entity
-  name: pen
+  name: "ручка"
   parent: BaseItem
   id: Pen
-  description: A dark ink pen.
+  description: "Ручка с тёмными чернилами."
   components:
     - type: Sprite
       sprite: Objects/Misc/pens.rsi
@@ -46,10 +46,10 @@
 #TODO: I want the luxury pen to write a cool font like Merriweather in the future.
 
 - type: entity
-  name: luxury pen
+  name: "роскошная ручка"
   parent: Pen
   id: LuxuryPen
-  description: A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
+  description: "Дорогая ручка для тех, кто умеет справляться с огромными стопками документов."
   components:
     - type: Sprite
       state: luxury_pen

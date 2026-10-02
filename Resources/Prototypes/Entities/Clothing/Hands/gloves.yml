@@ -146,8 +146,8 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesNitrile
-  name: nitrile gloves
-  description: High-quality nitrile gloves. Expensive medical PPE.
+  name: "нитриловые перчатки"
+  description: "Качественные нитриловые перчатки для медицинских работников."
   components:
     - type: Sprite
       sprite: Clothing/Hands/Gloves/nitrile.rsi
@@ -301,8 +301,8 @@
 - type: entity
   parent: ClothingHandsButcherable
   id: ClothingHandsGlovesFingerless
-  name: fingerless gloves
-  description: Plain black gloves without fingertips for the hard working.
+  name: "перчатки без пальцев"
+  description: "Простые чёрные перчатки с открытыми пальцами для тех, кто работает руками."
   components:
     - type: Sprite
       sprite: Clothing/Hands/Gloves/fingerless.rsi

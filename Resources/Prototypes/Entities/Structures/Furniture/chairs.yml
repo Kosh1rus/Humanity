@@ -96,7 +96,7 @@
       anchored: true
 
 - type: entity
-  name: chair
+  name: "стул"
   id: Chair
   parent: ChairBase
   components:
@@ -107,7 +107,7 @@
       node: chair
 
 - type: entity
-  name: chair
+  name: "стул"
   id: ChairGreyscale
   parent: Chair
   suffix: White
@@ -116,10 +116,10 @@
       state: chair-greyscale
 
 - type: entity
-  name: stool
+  name: "табурет"
   id: Stool
   parent: UnanchoredChairBase
-  description: Apply butt.
+  description: "Для сидения."
   components:
     - type: Sprite
       sprite: Civ14/Objects/bed_chair.rsi
@@ -129,7 +129,7 @@
       node: stool
 
 - type: entity
-  name: bar stool
+  name: "барный стул"
   id: StoolBar
   parent: StoolBase
   components:
@@ -173,10 +173,10 @@
       node: chairOfficeDark
 
 - type: entity
-  name: comfy chair
+  name: "удобное кресло"
   id: ComfyChair
   parent: ChairBase
-  description: It looks comfy.
+  description: "Выглядит уютно."
   components:
     - type: Sprite
       state: comfy
@@ -197,7 +197,7 @@
       node: chairPilotSeat
 
 - type: entity
-  name: wooden chair
+  name: "деревянный стул"
   id: ChairWood
   parent: UnanchoredChairBase
   components:
@@ -323,8 +323,8 @@
 - type: entity
   parent: [SeatBase, BaseDeployFoldable]
   id: ChairFolding
-  name: folding chair
-  description: If you carry six of these you become the coolest kid at church.
+  name: "складной стул"
+  description: "Возьмите с собой шесть таких — и станете самым подготовленным гостем на любом собрании."
   components:
     - type: Rotatable
     - type: Sprite

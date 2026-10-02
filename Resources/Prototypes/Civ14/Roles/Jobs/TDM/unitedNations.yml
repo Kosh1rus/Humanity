@@ -2,7 +2,7 @@
   id: UnitedNationsRifleman
   name: job-name-civ-unitednations-rifleman
   faction: UnitedNations
-  originalName: Rifleman
+  originalName: Стрелок
   description: job-description-civ-unitednations-rifleman
   playTimeTracker: JobUnitedNationsRifleman
   startingGear: UnitedNationsRiflemanGear
@@ -70,7 +70,7 @@
   id: UnitedNationsMedic
   name: job-name-civ-unitednations-medic
   faction: UnitedNations
-  originalName: Medic
+  originalName: Медик
   description: job-description-civ-unitednations-medic
   playTimeTracker: JobUnitedNationsMedic
   startingGear: UnitedNationsMedicGear

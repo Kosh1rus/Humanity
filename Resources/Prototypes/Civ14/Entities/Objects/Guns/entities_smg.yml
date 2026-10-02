@@ -62,11 +62,11 @@
       zeroVisible: true
 
 - type: entity
-  name: MP 40
+  name: "пистолет-пулемёт MP 40"
   suffix: SMG
   parent: BaseGunCivSMG
   id: civ13_smg_mp40
-  description: Iconic German submachinegun with an underfolding stock, chambered in 9mm Luger.
+  description: "Знаменитый немецкий пистолет-пулемёт со складным прикладом под патрон 9 мм Парабеллум."
   components:
     - type: STWeight
       self: 4
@@ -153,11 +153,11 @@
               - civ13_caliber_a762x25
 
 - type: entity
-  name: PPSh-41
+  name: "пистолет-пулемёт ППШ-41"
   suffix: SMG
   parent: BaseGunCivSMG
   id: civ13_smg_ppsh
-  description: Soviet submachinegun typically equipped with drum magazines. Chambered in 7.62x25mm Tokarev.
+  description: "Советский пистолет-пулемёт под патрон 7,62 × 25 мм Токарева. Часто оснащён барабанным магазином."
   components:
     - type: STWeight
       self: 4.5

@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStorageItem
   id: DiceBag
-  name: bag of dice
-  description: Contains all the luck you'll ever need.
+  name: "мешочек с костями"
+  description: "Вся удача, какая вам понадобится, лежит внутри."
   components:
     - type: StorageFill
       contents:

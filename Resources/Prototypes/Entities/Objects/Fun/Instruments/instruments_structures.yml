@@ -1,8 +1,8 @@
 ﻿- type: entity
-  name: piano
+  name: "пианино"
   parent: BasePlaceableInstrumentRotatable
   id: PianoInstrument
-  description: Play Needles Piano Now.
+  description: "Сыграйте что-нибудь на пианино."
   components:
   - type: Instrument
     program: 1

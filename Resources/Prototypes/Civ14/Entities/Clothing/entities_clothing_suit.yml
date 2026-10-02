@@ -1,8 +1,8 @@
 - type: entity
-  name: preacher's robe
+  name: "ряса проповедника"
   parent: ClothingOuterBase
   id: civ13_suit_preachers_robe
-  description: Typical priest robe.
+  description: "Обычное облачение священнослужителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/chaplain_hoodie.rsi
@@ -25,10 +25,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: contestant jacket
+  name: "куртка участника"
   parent: ClothingOuterBase
   id: civ13_suit_contestant_jacket
-  description: A simple green jumpsuit jacket.
+  description: "Простая зелёная куртка от спортивного комбинезона."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/squid_player.rsi
@@ -51,10 +51,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black vest
+  name: "чёрный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_black_vest
-  description: A simple black vest.
+  description: "Простой чёрный жилет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/rebel_vest.rsi
@@ -77,10 +77,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: DRA officer jacket
+  name: "куртка офицера ДРА"
   parent: ClothingOuterBase
   id: civ13_suit_DRA_officer_jacket
-  description: A military jacket worn by DRA officers.
+  description: "Военная куртка офицера армии Демократической Республики Афганистан."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dra_officer.rsi
@@ -103,10 +103,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: afghanka coat
+  name: "зимняя «афганка»"
   parent: ClothingOuterBase
   id: civ13_suit_afghanka_coat
-  description: A soviet winter jacket issued and developped in the early 80's.
+  description: "Советская зимняя куртка образца начала 1980-х годов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/winter_afghanka.rsi
@@ -128,10 +128,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cafr afghanka coat
+  name: "«афганка» в камуфляже КАФР"
   parent: ClothingOuterBase
   id: civ13_suit_cafr_afghanka_coat
-  description: An Afghanka coat made with the CAFR camouflage pattern.
+  description: "Куртка «афганка» с камуфляжным рисунком КАФР."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/cafr_pattern_afghanka.rsi
@@ -153,10 +153,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: forensics jacket
+  name: "куртка криминалиста"
   parent: ClothingOuterBase
   id: civ13_suit_forensics_jacket
-  description: A forensic department jacket.
+  description: "Служебная куртка криминалистического отдела."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/forensics.rsi
@@ -179,10 +179,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: police bulletproof vest
+  name: "полицейский бронежилет"
   parent: ClothingOuterBase
   id: civ13_suit_police_bulletproof_vest
-  description: A police vest (Level III).
+  description: "Полицейский бронежилет III класса защиты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/policevest.rsi
@@ -205,12 +205,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black primitive pelt coat
+  name: "чёрная первобытная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_black_primitive_pelt_coat
-  description: >-
-    A makeshift black pelt coat made from fur skins, worn to protect early man
-    from the elements.
+  description: "Грубая чёрная шуба из звериных шкур. Защищает от непогоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
@@ -235,10 +233,10 @@
       material: Leather
       time: 13
 - type: entity
-  name: haori jacket
+  name: "куртка хаори"
   parent: ClothingOuterBase
   id: civ13_suit_haori_jacket
-  description: A simple jacket worn over a haori outfit.
+  description: "Простая накидка в японском стиле."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/haori_jacket_custom.rsi
@@ -262,12 +260,10 @@
       time: 8
 
 - type: entity
-  name: Abashiri Haori
+  name: "хаори Абасири, корпус 1"
   parent: ClothingOuterBase
   id: civ13_suit_Abashiri_Haori
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing1 on its back.
+  description: "Куртка хаори с надписью «Корпус 1» на спине."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/haori_jacket1.rsi
@@ -290,12 +286,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Abashiri Haori
+  name: "хаори Абасири, корпус 2"
   parent: ClothingOuterBase
   id: civ13_suit_Abashiri_Haori_1
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing 2 on its back.
+  description: "Куртка хаори с надписью «Корпус 2» на спине."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/haori_jacket2.rsi
@@ -318,12 +312,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Abashiri Haori
+  name: "хаори Абасири, корпус 3"
   parent: ClothingOuterBase
   id: civ13_suit_Abashiri_Haori_1_2
-  description: >-
-    A simple haori jacket usually worn over a haori outfit. This one is
-    designated with Wing 3 on its back.
+  description: "Куртка хаори с надписью «Корпус 3» на спине."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/haori_jacket3.rsi
@@ -346,10 +338,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black suit
+  name: "чёрный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_black_suit
-  description: A formal black suit.
+  description: "Строгий чёрный костюм."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/black_suit.rsi
@@ -372,10 +364,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: dark black suit
+  name: "угольно-чёрный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_dark_black_suit
-  description: A very black formal suit.
+  description: "Строгий костюм глубокого чёрного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/really_black_suit.rsi
@@ -390,10 +382,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: charcoal suit
+  name: "тёмно-серый костюм"
   parent: ClothingOuterBase
   id: civ13_suit_charcoal_suit
-  description: A formal charcoal grey suit.
+  description: "Строгий костюм угольно-серого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/charcoal_suit.rsi
@@ -408,10 +400,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: navy suit
+  name: "тёмно-синий костюм"
   parent: ClothingOuterBase
   id: civ13_suit_navy_suit
-  description: A formal navy blue suit.
+  description: "Строгий тёмно-синий костюм."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/navy_suit.rsi
@@ -426,10 +418,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: checkered suit
+  name: "клетчатый костюм"
   parent: ClothingOuterBase
   id: civ13_suit_checkered_suit
-  description: A formal grey checkered suit.
+  description: "Строгий серый костюм в клетку."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/checkered_suit.rsi
@@ -444,10 +436,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: burgundy suit
+  name: "бордовый костюм"
   parent: ClothingOuterBase
   id: civ13_suit_burgundy_suit
-  description: A formal burgundy colored suit.
+  description: "Строгий бордовый костюм."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/burgundy_suit.rsi
@@ -462,10 +454,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: white labcoat
+  name: "белый лабораторный халат"
   parent: ClothingOuterBase
   id: civ13_suit_white_labcoat
-  description: A white labcoat.
+  description: "Белый халат для лабораторной работы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/labcoat.rsi
@@ -480,10 +472,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: surgery apron
+  name: "хирургический фартук"
   parent: ClothingOuterBase
   id: civ13_suit_surgery_apron
-  description: A blue plastic surgery apron.
+  description: "Синий пластиковый фартук для операций."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/surgical.rsi
@@ -497,10 +489,10 @@
       cost: 8
       time: 14
 - type: entity
-  name: coveralls
+  name: "синий рабочий комбинезон"
   parent: ClothingOuterBase
   id: civ13_suit_coveralls
-  description: A blue pair of coveralls, protects against heat.
+  description: "Рабочий комбинезон из термостойкой ткани."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/coveralls.rsi
@@ -515,10 +507,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black jacket
+  name: "чёрная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_black_jacket
-  description: A long black jacket.
+  description: "Длинная чёрная куртка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/piratejacket1.rsi
@@ -533,10 +525,10 @@
       material: Cloth
       time: 11
 - type: entity
-  name: fancy brown jacket
+  name: "нарядная коричневая куртка"
   parent: ClothingOuterBase
   id: civ13_suit_fancy_brown_jacket
-  description: A fancy jacket. This one is brown.
+  description: "Нарядная куртка коричневого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/piratejacket2.rsi
@@ -551,10 +543,10 @@
       material: Cloth
       time: 18
 - type: entity
-  name: blue vest
+  name: "синий жилет"
   parent: ClothingOuterBase
   id: civ13_suit_blue_vest
-  description: A sleeveless vest. This one is blue.
+  description: "Синий жилет без рукавов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/piratejacket3.rsi
@@ -569,10 +561,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: black vest
+  name: "чёрный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_black_vest_1
-  description: A sleeveless vest. This one is black.
+  description: "Чёрный жилет без рукавов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/piratejacket4.rsi
@@ -587,10 +579,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: fancy red jacket
+  name: "нарядная красная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_fancy_red_jacket
-  description: A fancy jacket. This one is red.
+  description: "Нарядная куртка красного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/piratejacket5.rsi
@@ -605,12 +597,10 @@
       material: Cloth
       time: 18
 - type: entity
-  name: royal navy captain jacket
+  name: "мундир капитана британского флота"
   parent: ClothingOuterBase
   id: civ13_suit_royal_navy_captain_jacket
-  description: >-
-    A standard captain jacket of the royal navy. Blue with golden buttons, white
-    laces and golden cuffs.
+  description: "Синий мундир капитана Королевского флота с золотыми пуговицами, белым шитьём и золотыми обшлагами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/british_captain.rsi
@@ -625,10 +615,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: royal navy officer jacket
+  name: "мундир офицера британского флота"
   parent: ClothingOuterBase
   id: civ13_suit_royal_navy_officer_jacket
-  description: A standard officer jacket of the royal navy. Blue with golden buttons.
+  description: "Синий офицерский мундир Королевского флота с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/british_officer.rsi
@@ -643,10 +633,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: british red jacket
+  name: "британский красный мундир"
   parent: ClothingOuterBase
   id: civ13_suit_british_red_jacket
-  description: The british redcoat, used by the british army and marines.
+  description: "Красный мундир солдата британской армии или морской пехоты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/british_soldier_jacket.rsi
@@ -661,12 +651,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese captain jacket
+  name: "мундир капитана португальского флота"
   parent: ClothingOuterBase
   id: civ13_suit_portuguese_captain_jacket
-  description: >-
-    A standard captain jacket of the portuguese navy. Blue with golden buttons,
-    white laces and golden cuffs.
+  description: "Синий капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/portuguese_captain.rsi
@@ -681,10 +669,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese officer jacket
+  name: "мундир офицера португальского флота"
   parent: ClothingOuterBase
   id: civ13_suit_portuguese_officer_jacket
-  description: A standard officer jacket of the portuguese navy. Blue with golden buttons.
+  description: "Синий офицерский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/portuguese_officer.rsi
@@ -699,12 +687,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish captain jacket
+  name: "мундир капитана испанского флота"
   parent: ClothingOuterBase
   id: civ13_suit_spanish_captain_jacket
-  description: >-
-    A standard Captain jacket of the spanish navy. Yellow with golden buttons,
-    white laces and golden cuffs.
+  description: "Жёлтый капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/spanish_captain.rsi
@@ -719,10 +705,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish officer jacket
+  name: "мундир офицера испанского флота"
   parent: ClothingOuterBase
   id: civ13_suit_spanish_officer_jacket
-  description: A standard Officer jacket of the spanish navy. Yellow with golden buttons.
+  description: "Жёлтый офицерский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
@@ -737,10 +723,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish soldier jacket
+  name: "мундир испанского солдата"
   parent: ClothingOuterBase
   id: civ13_suit_spanish_soldier_jacket
-  description: A standard jacket of the spanish army. Yellow with red trimming.
+  description: "Жёлтый мундир испанской армии с красной отделкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/spanish_army.rsi
@@ -755,12 +741,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french captain jacket
+  name: "мундир капитана французского флота"
   parent: ClothingOuterBase
   id: civ13_suit_french_captain_jacket
-  description: >-
-    A standard captain jacket of the french navy. White with golden buttons,
-    blue laces and golden cuffs.
+  description: "Белый капитанский мундир с золотыми пуговицами, синим шитьём и золотыми обшлагами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/french_captain.rsi
@@ -775,10 +759,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french officer jacket
+  name: "мундир офицера французского флота"
   parent: ClothingOuterBase
   id: civ13_suit_french_officer_jacket
-  description: A standard officer jacket of the french navy. White with golden buttons.
+  description: "Белый офицерский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/french_officer.rsi
@@ -793,12 +777,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: united provinces captain jacket
+  name: "мундир капитана флота Соединённых провинций"
   parent: ClothingOuterBase
   id: civ13_suit_united_provinces_captain_jacket
-  description: >-
-    A standard captain jacket of the united provinces navy. Orange with golden
-    buttons, white laces and golden cuffs.
+  description: "Оранжевый капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dutch_captain.rsi
@@ -813,12 +795,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: united provinces officer jacket
+  name: "мундир офицера флота Соединённых провинций"
   parent: ClothingOuterBase
   id: civ13_suit_united_provinces_officer_jacket
-  description: >-
-    A standard officer jacket of the united provinces navy. Orange with golden
-    buttons.
+  description: "Оранжевый офицерский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dutch_officer.rsi
@@ -833,12 +813,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: united provinces army jacket
+  name: "мундир армии Соединённых провинций"
   parent: ClothingOuterBase
   id: civ13_suit_united_provinces_army_jacket
-  description: >-
-    A standard army jacket of the united provinces army. Orange with golden
-    buttons.
+  description: "Оранжевый армейский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dutch_army.rsi
@@ -853,10 +831,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: spanish army jacket
+  name: "мундир испанской армии"
   parent: ClothingOuterBase
   id: civ13_suit_spanish_army_jacket
-  description: A standard army jacket of the spanish Army. Yellow with golden buttons.
+  description: "Жёлтый армейский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
@@ -871,10 +849,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: portuguese army jacket
+  name: "мундир португальской армии"
   parent: ClothingOuterBase
   id: civ13_suit_portuguese_army_jacket
-  description: A standard army jacket of the portuguese Army. Green with golden buttons.
+  description: "Зелёный армейский мундир с золотыми пуговицами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/portuguese_army.rsi
@@ -889,10 +867,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: french army jacket
+  name: "мундир французской армии"
   parent: ClothingOuterBase
   id: civ13_suit_french_army_jacket
-  description: A standard army jacket of the french army. White with blue trimmings.
+  description: "Белый армейский мундир с синей отделкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/french_army.rsi
@@ -907,10 +885,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: british army jacket
+  name: "мундир британской армии"
   parent: ClothingOuterBase
   id: civ13_suit_british_army_jacket
-  description: A standard army jacket of the british army. Red and white.
+  description: "Красно-белый мундир британского солдата."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/british_officer.rsi
@@ -925,10 +903,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: victorian tailcoat
+  name: "викторианский фрак"
   parent: ClothingOuterBase
   id: civ13_suit_victorian_tailcoat
-  description: Also known as a butler suit.
+  description: "Строгий фрак в духе викторианской эпохи. Подойдёт дворецкому."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/victorian_tailcoat.rsi
@@ -943,10 +921,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: leather overcoat
+  name: "кожаное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_leather_overcoat
-  description: A long leather overcoat.
+  description: "Длинное пальто из кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/leather_overcoat.rsi
@@ -961,10 +939,10 @@
       material: Leather
       time: 12
 - type: entity
-  name: black leather overcoat
+  name: "чёрное кожаное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_black_leather_overcoat
-  description: A long black leather overcoat.
+  description: "Длинное чёрное пальто из кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/black_leather_overcoat.rsi
@@ -979,10 +957,10 @@
       material: Leather
       time: 12
 - type: entity
-  name: black vest
+  name: "чёрный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_black_vest_1_2
-  description: A simple black vest.
+  description: "Простой чёрный жилет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/blackvest.rsi
@@ -997,10 +975,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: olive vest
+  name: "оливковый жилет"
   parent: ClothingOuterBase
   id: civ13_suit_olive_vest
-  description: A simple olive vest.
+  description: "Простой жилет оливкового цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/olivevest.rsi
@@ -1015,10 +993,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: blue vest
+  name: "синий жилет"
   parent: ClothingOuterBase
   id: civ13_suit_blue_vest_1
-  description: A simple blue vest.
+  description: "Простой синий жилет."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bluevest.rsi
@@ -1033,10 +1011,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: cream short jacket
+  name: "короткая кремовая куртка"
   parent: ClothingOuterBase
   id: civ13_suit_cream_short_jacket
-  description: A cream colored short jacket.
+  description: "Короткая куртка кремового цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/texas.rsi
@@ -1052,10 +1030,10 @@
       time: 20
 
 - type: entity
-  name: plague doctor suit
+  name: "костюм чумного доктора"
   parent: ClothingOuterBase
   id: civ13_suit_plague_doctor_suit
-  description: Used by plague doctors. Only adds to the mystery behind their methods.
+  description: "Одежда чумного доктора лишь прибавляет загадочности его методам."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/plaguedoctor.rsi
@@ -1070,12 +1048,10 @@
       material: Cloth
       time: 12
 - type: entity
-  name: regal ermine cape
+  name: "королевская горностаевая мантия"
   parent: ClothingOuterBase
   id: civ13_suit_regal_ermine_cape
-  description: >-
-    A large cape finely decked in stylized fur pattern often used to denote the
-    most prominent members amongst noble circles.
+  description: "Широкая мантия с узором под мех горностая. Знак высокого положения при дворе."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/regal_cape.rsi
@@ -1090,12 +1066,10 @@
       material: Leather
       time: 22
 - type: entity
-  name: steppe shaman wool coat
+  name: "шерстяное пальто степного шамана"
   parent: ClothingOuterBase
   id: civ13_suit_steppe_shaman_wool_coat
-  description: >-
-    A colorful woolen coat, used by shamans to wrap warm whilst performing
-    rituals on the open steppe.
+  description: "Пёстрое шерстяное пальто согревает шамана во время обрядов под открытым небом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/steppe_shaman_wool_coat.rsi
@@ -1109,12 +1083,10 @@
       cost: 6
       time: 14
 - type: entity
-  name: motorist jacket
+  name: "куртка автомобилиста"
   parent: ClothingOuterBase
   id: civ13_suit_motorist_jacket
-  description: >-
-    A jacket often worn by enthusiasts of vehicles, speed and the smell of
-    burning rubber.
+  description: "Для тех, кто любит скорость, машины и запах жжёной резины."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/motorist_jacket.rsi
@@ -1134,10 +1106,10 @@
       cost: 6
       time: 11
 - type: entity
-  name: Russian Federal Forces winter jacket
+  name: "зимняя куртка российских войск"
   parent: ClothingOuterBase
   id: civ13_suit_Russian_Federal_Forces_winter_jacket
-  description: A winter jacket used by the Russian Federal Forces in VSR93 camo.
+  description: "Зимняя военная куртка в камуфляже ВСР-93."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/rus_winter_vsr93.rsi
@@ -1158,12 +1130,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: punk jacket
+  name: "панковская куртка"
   parent: ClothingOuterBase
   id: civ13_suit_punk_jacket
-  description: >-
-    A loose jacket often worn by counter-cultural types, commonly additional
-    inscriptions can be found on the back.
+  description: "Свободная куртка с надписями на спине, любимая бунтарями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/punk_vest.rsi
@@ -1184,10 +1154,10 @@
       material: Leather
       time: 11
 - type: entity
-  name: high visibility jacket
+  name: "сигнальная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_high_visibility_jacket
-  description: A yellow high visibility jacket.
+  description: "Ярко-жёлтая куртка, заметная издалека."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/high_vis_jacket_yellow.rsi
@@ -1202,10 +1172,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: paramedic jacket
+  name: "куртка парамедика"
   parent: ClothingOuterBase
   id: civ13_suit_paramedic_jacket
-  description: ""
+  description: "Служебная куртка сотрудника скорой помощи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/paramedic_jacket.rsi
@@ -1220,10 +1190,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: track suit
+  name: "спортивный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_track_suit
-  description: A sporty track suit.
+  description: "Удобный костюм для занятий спортом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/tracksuit.rsi
@@ -1239,13 +1209,10 @@
       time: 5
 
 - type: entity
-  name: commissar jacket
+  name: "куртка комиссара"
   parent: ClothingOuterBase
   id: civ13_suit_commissar_jacket
-  description: >-
-    A red jacket belonging to overzealous leaders of large squadrons of
-    infantry. The authority this grants means rejecting orders will by no means
-    be acceptable...
+  description: "Красная куртка сурового командира пехоты. Его приказы лучше выполнять без споров."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/commissar.rsi
@@ -1260,12 +1227,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: inquisitorial jacket
+  name: "куртка инквизитора"
   parent: ClothingOuterBase
   id: civ13_suit_inquisitorial_jacket
-  description: >-
-    A black jacket with red arm stripes belonging to expert investigators of
-    intrigue and heresy. By all means nessecary...
+  description: "Чёрная куртка с красными полосами на рукавах. Её носят следователи, охотящиеся за еретиками и заговорщиками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/commissar.rsi
@@ -1280,10 +1245,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: inquisitorial jacket
+  name: "куртка инквизитора"
   parent: ClothingOuterBase
   id: civ13_suit_inquisitorial_jacket_1
-  description: ""
+  description: "Чёрная служебная куртка инквизитора."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/inqcape_alt.rsi
@@ -1298,10 +1263,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: elven warlock robe
+  name: "мантия эльфийского чародея"
   parent: ClothingOuterBase
   id: civ13_suit_elven_warlock_robe
-  description: A long robe worn by mystic leaders of the elven race.
+  description: "Длинная мантия таинственного эльфийского предводителя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/elf_warlock.rsi
@@ -1316,12 +1281,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: elven harlequin jacket
+  name: "куртка эльфийского арлекина"
   parent: ClothingOuterBase
   id: civ13_suit_elven_harlequin_jacket
-  description: >-
-    A flamboyant jacket worn by roaming troupes of deadly elven assassins with
-    theatrical motifs.
+  description: "Яркая театральная куртка странствующего эльфийского убийцы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/elf_harlequin.rsi
@@ -1336,10 +1299,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: poncho
+  name: "пончо"
   parent: ClothingOuterBase
   id: civ13_suit_poncho
-  description: A simple cloth poncho.
+  description: "Простое пончо из ткани."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customponcho.rsi
@@ -1354,10 +1317,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: hoodie
+  name: "худи"
   parent: ClothingOuterBase
   id: civ13_suit_hoodie
-  description: A simple comfy cloth hoodie.
+  description: "Простое удобное худи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customhoodie.rsi
@@ -1372,10 +1335,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: cloth jacket
+  name: "матерчатая куртка"
   parent: ClothingOuterBase
   id: civ13_suit_cloth_jacket
-  description: A simple cloth jacket.
+  description: "Простая куртка из ткани."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customjacket.rsi
@@ -1390,10 +1353,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: suit blazer
+  name: "пиджак"
   parent: ClothingOuterBase
   id: civ13_suit_suit_blazer
-  description: A simple cloth blazer.
+  description: "Простой матерчатый пиджак."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customblazer.rsi
@@ -1408,10 +1371,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: colonial coat
+  name: "колониальное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_colonial_coat
-  description: A colonial coat of the XVIIIth century.
+  description: "Пальто образца XVIII века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customcolonialcoat_full.rsi
@@ -1426,10 +1389,10 @@
       material: Cloth
       time: 12
 - type: entity
-  name: colonial jacket
+  name: "колониальная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_colonial_jacket
-  description: A colonial jacket of the XVIIIth century.
+  description: "Куртка образца XVIII века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customcolonial_full.rsi
@@ -1444,10 +1407,10 @@
       material: Cloth
       time: 9
 - type: entity
-  name: track suit
+  name: "спортивный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_track_suit_1
-  description: A sporty track suit.
+  description: "Удобный костюм для занятий спортом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/customtracksuit.rsi
@@ -1462,10 +1425,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wise tutor robes
+  name: "одеяние мудрого наставника"
   parent: ClothingOuterBase
   id: civ13_suit_wise_tutor_robes
-  description: Robes commonly worn by wise tutors.
+  description: "Такое одеяние носят опытные наставники."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/wise_tutor_robe.rsi
@@ -1486,10 +1449,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: arrogant student robes
+  name: "одеяние заносчивого ученика"
   parent: ClothingOuterBase
   id: civ13_suit_arrogant_student_robes
-  description: Robes commonly worn by spiteful students.
+  description: "Одеяние ученика с нелёгким характером."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/arrogant_student_robe.rsi
@@ -1510,10 +1473,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fur coat
+  name: "меховая шуба"
   parent: ClothingOuterBase
   id: civ13_suit_fur_coat
-  description: A thick fur coat, great for the winter.
+  description: "Густой мех хорошо согревает зимой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket1.rsi
@@ -1535,12 +1498,10 @@
       material: Leather
       time: 15
 - type: entity
-  name: brown primitive pelt coat
+  name: "коричневая первобытная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_brown_primitive_pelt_coat
-  description: >-
-    A makeshift brown pelt coat made from fur skins, worn to protect early man
-    from the elements.
+  description: "Грубая коричневая шуба из звериных шкур. Защищает от непогоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
@@ -1565,12 +1526,10 @@
       material: Leather
       time: 13
 - type: entity
-  name: white primitive pelt coat
+  name: "белая первобытная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_white_primitive_pelt_coat
-  description: >-
-    A makeshift white pelt coat made from fur skins, worn to protect early man
-    from the elements.
+  description: "Грубая белая шуба из звериных шкур. Защищает от непогоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
@@ -1595,12 +1554,10 @@
       material: Leather
       time: 13
 - type: entity
-  name: grey primitive pelt coat
+  name: "серая первобытная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_grey_primitive_pelt_coat
-  description: >-
-    A makeshift grey pelt coat made from fur skins, worn to protect early man
-    from the elements.
+  description: "Грубая серая шуба из звериных шкур. Защищает от непогоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
@@ -1625,10 +1582,10 @@
       material: Leather
       time: 13
 - type: entity
-  name: human skin coat
+  name: "пальто из человеческой кожи"
   parent: ClothingOuterBase
   id: civ13_suit_human_skin_coat
-  description: A coat made of human skin. Spooky...
+  description: "Сшито из человеческой кожи. Жутковато..."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket5.rsi
@@ -1650,10 +1607,10 @@
       material: Leather
       time: 15
 - type: entity
-  name: M05 snow pattern coat
+  name: "зимнее пальто M05"
   parent: ClothingOuterBase
   id: civ13_suit_M05_snow_pattern_coat
-  description: A coat in Finnish M05 snow pattern.
+  description: "Пальто в финском снежном камуфляже M05."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket7.rsi
@@ -1675,10 +1632,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Ukrainian winter camo coat
+  name: "пальто в украинском зимнем камуфляже"
   parent: ClothingOuterBase
   id: civ13_suit_Ukrainian_winter_camo_coat
-  description: A coat in Ukrainian winter pattern.
+  description: "Пальто в зимней камуфляжной расцветке украинской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket8.rsi
@@ -1700,10 +1657,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Klyaksa camo coat
+  name: "пальто в камуфляже «Клякса»"
   parent: ClothingOuterBase
   id: civ13_suit_Klyaksa_camo_coat
-  description: A coat in Russian 'Klyaksa' snow pattern.
+  description: "Пальто в российском зимнем камуфляже «Клякса»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket10.rsi
@@ -1725,10 +1682,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Schneetarn camo coat
+  name: "пальто в камуфляже Schneetarn"
   parent: ClothingOuterBase
   id: civ13_suit_Schneetarn_camo_coat
-  description: A coat in German Schneetarn pattern.
+  description: "Пальто в немецком снежном камуфляже Schneetarn."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket9.rsi
@@ -1750,10 +1707,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: orc fur coat
+  name: "шуба из меха орка"
   parent: ClothingOuterBase
   id: civ13_suit_orc_fur_coat
-  description: A thick dark green fur coat, made from disgusting orc pelts.
+  description: "Толстая тёмно-зелёная шуба из неприятных на вид орочьих шкур."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fur_jacket6.rsi
@@ -1775,10 +1732,10 @@
       material: Leather
       time: 15
 - type: entity
-  name: dark green winter coat
+  name: "тёмно-зелёное зимнее пальто"
   parent: ClothingOuterBase
   id: civ13_suit_dark_green_winter_coat
-  description: An army-style coat, in olive drab.
+  description: "Армейское пальто тёмно-оливкового цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/modern_winter.rsi
@@ -1800,10 +1757,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red jacket
+  name: "красная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_red_jacket
-  description: A red jacket from the 80s.
+  description: "Красная куртка в стиле восьмидесятых."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/jacket80s.rsi
@@ -1825,10 +1782,10 @@
       time: 11
 
 - type: entity
-  name: american coat
+  name: "американское зимнее пальто"
   parent: ClothingOuterBase
   id: civ13_suit_american_coat
-  description: An american winter coat.
+  description: "Тёплое пальто американского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/us_coat_korea.rsi
@@ -1850,10 +1807,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: bizarre dark blue coat
+  name: "необычное тёмно-синее пальто"
   parent: ClothingOuterBase
   id: civ13_suit_bizarre_dark_blue_coat
-  description: A very stylish coat.
+  description: "Очень стильное пальто."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bizarre_coat.rsi
@@ -1875,10 +1832,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Cheka leather coat
+  name: "кожаное пальто чекиста"
   parent: ClothingOuterBase
   id: civ13_suit_Cheka_leather_coat
-  description: A shiny black leather coat used by Cheka agents.
+  description: "Блестящее чёрное кожаное пальто сотрудника ЧК."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/leathercoat_c.rsi
@@ -1899,10 +1856,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Black cherkesska coat
+  name: "чёрная черкеска"
   parent: ClothingOuterBase
   id: civ13_suit_Black_cherkesska_coat
-  description: A traditional Kuban Cossak coat.
+  description: "Традиционная черкеска кубанского казака."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/kuban_cossak.rsi
@@ -1923,10 +1880,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet coat
+  name: "советская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_Soviet_coat
-  description: An early Red Army coat.
+  description: "Шинель Красной армии раннего образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
@@ -1947,10 +1904,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese coat
+  name: "шинель японской армии"
   parent: ClothingOuterBase
   id: civ13_suit_Japanese_coat
-  description: An Imperial Japanese Army coat.
+  description: "Шинель военнослужащего Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
@@ -1971,10 +1928,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: priest sleev
+  name: "священническое облачение"
   parent: ClothingOuterBase
   id: civ13_suit_priest_sleev
-  description: A holy coat worn by a priest.
+  description: "Священное одеяние служителя церкви."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/priestwhite.rsi
@@ -1995,10 +1952,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese Coat
+  name: "японская армейская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_Japanese_Coat
-  description: A japanese army coat.
+  description: "Шинель военнослужащего японской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
@@ -2019,10 +1976,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Brown trench coat
+  name: "коричневый тренч"
   parent: ClothingOuterBase
   id: civ13_suit_Brown_trench_coat
-  description: A long coat to keep you clean and dry.
+  description: "Длинный плащ, защищающий одежду от грязи и дождя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
@@ -2043,10 +2000,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian Coat
+  name: "шинель российской армии"
   parent: ClothingOuterBase
   id: civ13_suit_Russian_Coat
-  description: A russian army coat.
+  description: "Военная шинель российского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
@@ -2067,10 +2024,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Russian officer coat.
+  name: "шинель российского офицера"
   parent: ClothingOuterBase
   id: civ13_suit_Russian_officer_coat.
-  description: A Russian Army officer coat. Worn by officers, acknowledge their rank.
+  description: "Офицерская шинель российской армии. Сразу видно, кто старший по званию."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/rusoffcoat.rsi
@@ -2091,10 +2048,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: brown winter coat
+  name: "коричневое зимнее пальто"
   parent: ClothingOuterBase
   id: civ13_suit_brown_winter_coat
-  description: A thick winter coat.
+  description: "Плотное пальто для холодной погоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/winter_coat.rsi
@@ -2109,10 +2066,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black peacoat
+  name: "чёрный бушлат"
   parent: ClothingOuterBase
   id: civ13_suit_black_peacoat
-  description: A no nonsense black peacoat
+  description: "Тёплый чёрный бушлат без лишних украшений."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/victorian_peacoat.rsi
@@ -2126,10 +2083,10 @@
       cost: 7
       time: 11
 - type: entity
-  name: fur coat
+  name: "меховая шуба"
   parent: ClothingOuterBase
   id: civ13_suit_fur_coat_1
-  description: A thick fur coat, great for the winter.
+  description: "Густой мех хорошо согревает зимой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/kozhanka.rsi
@@ -2150,10 +2107,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy fur coat
+  name: "роскошная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_fancy_fur_coat
-  description: A fancy and expensive fur coat.
+  description: "Дорогая и нарядная меховая шуба."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fancy_fur_coat.rsi
@@ -2168,10 +2125,10 @@
       material: Leather
       time: 20
 - type: entity
-  name: overlord robe
+  name: "мантия повелителя"
   parent: ClothingOuterBase
   id: civ13_suit_overlord_robe
-  description: An extremely elegant robe worn by powerful undead.
+  description: "Необыкновенно изящная мантия могущественной нежити."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/overlord_coat.rsi
@@ -2186,10 +2143,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: monk robes
+  name: "монашеская ряса"
   parent: ClothingOuterBase
   id: civ13_suit_monk_robes
-  description: Robes commonly worn by monks, warm in the winters.
+  description: "Ряса монаха. Хорошо согревает зимой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/monk_robes.rsi
@@ -2210,10 +2167,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: fine clothing
+  name: "нарядная меховая одежда"
   parent: ClothingOuterBase
   id: civ13_suit_fine_clothing
-  description: A fine fur jacket and shirt, for the better off people.
+  description: "Добротная меховая куртка и рубаха для зажиточного человека."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fine_clothes.rsi
@@ -2228,10 +2185,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: lifejacket
+  name: "синий спасательный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_lifejacket
-  description: A blue lifejacket, to improve survival on sea.
+  description: "Помогает удержаться на воде."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sealvest_blue.rsi
@@ -2252,10 +2209,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: firefighter coat
+  name: "куртка пожарного"
   parent: ClothingOuterBase
   id: civ13_suit_firefighter_coat
-  description: A coat used by firefighters. Offers heat protection on the torso and arms.
+  description: "Защищает туловище и руки от сильного жара."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/firefighter.rsi
@@ -2270,10 +2227,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: biker jacket
+  name: "байкерская куртка"
   parent: ClothingOuterBase
   id: civ13_suit_biker_jacket
-  description: A black jacket, favoured by the bold and recreational thrill seekers.
+  description: "Чёрная куртка для тех, кто любит скорость и риск."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/biker.rsi
@@ -2288,12 +2245,10 @@
       material: Leather
       time: 11
 - type: entity
-  name: lizard scale jacket
+  name: "куртка из чешуи ящерицы"
   parent: ClothingOuterBase
   id: civ13_suit_lizard_scale_jacket
-  description: >-
-    A sleek lizard scale jacket, bold and impression-setting like the people who
-    wear it. `Too cool for S-s-s-school'.
+  description: "Лихая куртка из чешуи ящерицы. С-с-слишком круто для школы!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/lizard_jacket.rsi
@@ -2308,12 +2263,10 @@
       material: Leather
       time: 11
 - type: entity
-  name: alligator scale jacket
+  name: "куртка из кожи аллигатора"
   parent: ClothingOuterBase
   id: civ13_suit_alligator_scale_jacket
-  description: >-
-    A sleek alligator scale jacket, bold and impression-setting like the people
-    who wear it. 'See-ya later alligator'.
+  description: "Эффектная куртка из кожи аллигатора. Увидимся позже, аллигатор!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gator_jacket.rsi
@@ -2328,10 +2281,10 @@
       material: Leather
       time: 11
 - type: entity
-  name: Japanese sand-colored jacket
+  name: "песочная куртка японской армии"
   parent: ClothingOuterBase
   id: civ13_suit_Japanese_sand_colored_jacket
-  description: An Imperial Japanese Army sand-colored jacket.
+  description: "Куртка песочного цвета Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
@@ -2352,10 +2305,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese rain-coat
+  name: "дождевик японской армии"
   parent: ClothingOuterBase
   id: civ13_suit_Japanese_rain_coat
-  description: An Imperial Japanese Army rain-coat.
+  description: "Плащ от дождя военнослужащего Императорской армии Японии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/jap_raincoat.rsi
@@ -2376,10 +2329,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Japanese pilot coat
+  name: "куртка японского лётчика"
   parent: ClothingOuterBase
   id: civ13_suit_Japanese_pilot_coat
-  description: A Japanese air-force kamikaze jacket.
+  description: "Куртка пилота японской авиации времён войны."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/jappilotcoat.rsi
@@ -2400,10 +2353,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: American coat
+  name: "шинель армии США"
   parent: ClothingOuterBase
   id: civ13_suit_American_coat
-  description: A US army coat.
+  description: "Военная шинель американского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/us_coat.rsi
@@ -2418,10 +2371,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: German parka
+  name: "немецкая парка"
   parent: ClothingOuterBase
   id: civ13_suit_German_parka
-  description: A german parka, worn by soldaten in the Wehrmacht.
+  description: "Тёплая парка солдата вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gerparka.rsi
@@ -2442,10 +2395,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: winter ghillie suit
+  name: "зимний маскировочный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_winter_ghillie_suit
-  description: A camo winter ghillie suit.
+  description: "Зимний костюм «гилли», помогающий скрыться на снегу."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ghillie_winter.rsi
@@ -2466,10 +2419,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Grey parka
+  name: "серая парка"
   parent: ClothingOuterBase
   id: civ13_suit_Grey_parka
-  description: A grey parka, good for warmth in the winters.
+  description: "Тёплая серая парка для зимы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gerparka.rsi
@@ -2490,10 +2443,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: German officer coat
+  name: "шинель немецкого офицера"
   parent: ClothingOuterBase
   id: civ13_suit_German_officer_coat
-  description: A German officer's coat, worn by officers in the Wehrmacht.
+  description: "Шинель офицера вермахта."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ger_offcoat.rsi
@@ -2514,12 +2467,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SS parka
+  name: "парка СС"
   parent: ClothingOuterBase
   id: civ13_suit_SS_parka
-  description: >-
-    A german 'SS' parka, in 1944 Erbsenmuster dot-camo, worn by soldaten in the
-    Schutzstaffel.
+  description: "Немецкая парка с пятнистым камуфляжем Erbsenmuster образца 1944 года."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sssmock.rsi
@@ -2540,10 +2491,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet coat
+  name: "советская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_Soviet_coat_1
-  description: A soviet trenchcoat, worn by krasnoarmeyets in the Red Army.
+  description: "Длинная шинель красноармейца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
@@ -2564,10 +2515,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: soviet winter coat
+  name: "тёмно-жёлтая советская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_soviet_winter_coat
-  description: A traditional Soviet coat, in dark yellow.
+  description: "Традиционная советская зимняя шинель тёмно-жёлтого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gulagguard.rsi
@@ -2588,10 +2539,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet winter coat
+  name: "светло-голубая советская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_Soviet_winter_coat
-  description: A traditional Soviet coat, in light blue.
+  description: "Традиционная советская зимняя шинель светло-голубого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gulagprisoner1.rsi
@@ -2612,10 +2563,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet officer coat
+  name: "шинель советского офицера"
   parent: ClothingOuterBase
   id: civ13_suit_Soviet_officer_coat
-  description: A soviet trenchcoat, worn by officers in the Red Army.
+  description: "Длинная шинель офицера Красной армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sov_offcoat.rsi
@@ -2636,10 +2587,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: modern coat
+  name: "современное шерстяное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_modern_coat
-  description: A standard coat made from wool.
+  description: "Обычное пальто из шерсти."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/moderncoat.rsi
@@ -2659,10 +2610,10 @@
       cost: 4
       time: 7
 - type: entity
-  name: black coat
+  name: "нарядное чёрное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_black_coat
-  description: A fancy coat made from wool.
+  description: "Элегантное шерстяное пальто чёрного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/woolcoat.rsi
@@ -2683,10 +2634,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fancy  coat
+  name: "роскошное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_fancy__coat
-  description: A expensive coat made from wool and leather.
+  description: "Дорогое пальто из шерсти и кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/expensivecoat.rsi
@@ -2707,10 +2658,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: service jacket
+  name: "форменная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_service_jacket
-  description: A standard military jacket.
+  description: "Стандартная армейская куртка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/servicejacket.rsi
@@ -2730,10 +2681,10 @@
       cost: 3
       time: 7
 - type: entity
-  name: brown bomber's jacket
+  name: "коричневая лётная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_brown_bombers_jacket
-  description: A brown jacket meant for high-altitude temperatures.
+  description: "Куртка для полётов на большой высоте, защищающая от холода."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bomberjacket.rsi
@@ -2753,10 +2704,10 @@
       cost: 4
       time: 7
 - type: entity
-  name: black bomber's jacket
+  name: "чёрная лётная куртка"
   parent: ClothingOuterBase
   id: civ13_suit_black_bombers_jacket
-  description: A black jacket meant for high-altitude temperatures.
+  description: "Куртка для полётов на большой высоте, защищающая от холода."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/blackbomberjacket.rsi
@@ -2776,10 +2727,10 @@
       cost: 4
       time: 7
 - type: entity
-  name: German coat
+  name: "немецкая шинель"
   parent: ClothingOuterBase
   id: civ13_suit_German_coat
-  description: A German coat.
+  description: "Военная шинель немецкого образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/germtrench.rsi
@@ -2800,10 +2751,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: French trench coat
+  name: "французский тренч"
   parent: ClothingOuterBase
   id: civ13_suit_French_trench_coat
-  description: A French trench coat, it rhymes!
+  description: "Длинный французский плащ для дождливой погоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/frenchtrench.rsi
@@ -2824,10 +2775,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: British coat
+  name: "британская шинель"
   parent: ClothingOuterBase
   id: civ13_suit_British_coat
-  description: A British coat.
+  description: "Военная шинель британского образца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/britishtrench.rsi
@@ -2848,10 +2799,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: royal coat
+  name: "королевское пальто"
   parent: ClothingOuterBase
   id: civ13_suit_royal_coat
-  description: A royal coat used for royal people.
+  description: "Пальто, достойное монарха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/royalcoat.rsi
@@ -2872,10 +2823,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black leather long coat
+  name: "длинное чёрное кожаное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_black_leather_long_coat
-  description: A long black leather coat.
+  description: "Длинное пальто из чёрной кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/leathercoat_black.rsi
@@ -2890,10 +2841,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: modern brown coat
+  name: "современное коричневое пальто"
   parent: ClothingOuterBase
   id: civ13_suit_modern_brown_coat
-  description: A modern long brown coat.
+  description: "Длинное коричневое пальто современного покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/mlongcoat_brown.rsi
@@ -2908,10 +2859,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: modern black coat
+  name: "современное чёрное пальто"
   parent: ClothingOuterBase
   id: civ13_suit_modern_black_coat
-  description: A modern long black coat.
+  description: "Длинное чёрное пальто современного покроя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/mlongcoat_black.rsi
@@ -2926,10 +2877,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: gentleman coat
+  name: "пальто джентльмена"
   parent: ClothingOuterBase
   id: civ13_suit_gentleman_coat
-  description: An elegant black coat.
+  description: "Элегантное чёрное пальто."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gentlemancoat.rsi
@@ -2944,10 +2895,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: hazard vest
+  name: "сигнальный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_hazard_vest
-  description: A vest used for high visibility and reflectivity.
+  description: "Светоотражающий жилет, хорошо заметный издалека."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hazard.rsi
@@ -2962,10 +2913,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: lifejacket
+  name: "жёлтый спасательный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_lifejacket_1
-  description: A yellow lifejacket, to improve survival on sea.
+  description: "Помогает удержаться на воде."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sealvest_yellow.rsi
@@ -2987,10 +2938,10 @@
       time: 5
 
 - type: entity
-  name: seal lifevest
+  name: "спасательный жилет тюленя"
   parent: ClothingOuterBase
   id: civ13_suit_seal_lifevest
-  description: A vest used for keeping the seals afloat during training among other things.
+  description: "Помогает тюленям держаться на воде во время тренировок."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sealvest.rsi
@@ -3005,10 +2956,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: FBI jacket
+  name: "куртка ФБР"
   parent: ClothingOuterBase
   id: civ13_suit_FBI_jacket
-  description: A secret FBI jacket perhaps.
+  description: "Служебная куртка сотрудника ФБР. Или это прикрытие?"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/fbi2.rsi
@@ -3023,10 +2974,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: ATF jacket
+  name: "куртка ATF"
   parent: ClothingOuterBase
   id: civ13_suit_ATF_jacket
-  description: An ATF jacket, standard issue for ATF agents.
+  description: "Стандартная куртка агента ATF."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/atf.rsi
@@ -3041,10 +2992,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: DEA jacket
+  name: "куртка DEA"
   parent: ClothingOuterBase
   id: civ13_suit_DEA_jacket
-  description: A DEA jacket, standard issue for DEA agents.
+  description: "Стандартная куртка агента DEA."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/dea.rsi
@@ -3059,10 +3010,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: olive drab jacket
+  name: "оливковая куртка армии США"
   parent: ClothingOuterBase
   id: civ13_suit_olive_drab_jacket
-  description: The standard us army olive drab jacket of the mid-20th century.
+  description: "Стандартная куртка американской армии середины XX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/us_jacket.rsi
@@ -3077,10 +3028,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: ghillie suit
+  name: "маскировочный костюм «гилли»"
   parent: ClothingOuterBase
   id: civ13_suit_ghillie_suit
-  description: A camo ghillie suit.
+  description: "Костюм, помогающий сливаться с местностью."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/ghillie.rsi
@@ -3101,12 +3052,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: chest length apron
+  name: "фартук до груди"
   parent: ClothingOuterBase
   id: civ13_suit_chest_length_apron
-  description: >-
-    A white apron that covers up to the chest, the ruffles are popular with the
-    french.
+  description: "Белый фартук с оборками, закрывающий грудь."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/closechest_apron_f.rsi
@@ -3121,12 +3070,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: waist length apron
+  name: "фартук до пояса"
   parent: ClothingOuterBase
   id: civ13_suit_waist_length_apron
-  description: >-
-    A white apron that covers up to the waist, the ruffles are popular with the
-    french.
+  description: "Белый фартук с оборками, закрывающий одежду до пояса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/openchest_apron_f.rsi
@@ -3141,10 +3088,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: a classic chef's apron.
+  name: "поварской фартук"
   parent: ClothingOuterBase
   id: civ13_suit_a_classic_chefs_apron.
-  description: A basic, dull, white chef's apron.
+  description: "Простой белый фартук повара."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/apronchef.rsi
@@ -3159,10 +3106,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Texas Fried Chicken apron
+  name: "фартук Texas Fried Chicken"
   parent: ClothingOuterBase
   id: civ13_suit_Texas_Fried_Chicken_apron
-  description: A cloth apron. It reads TFC.
+  description: "Матерчатый фартук с буквами TFC."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/aprontfc.rsi
@@ -3177,10 +3124,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue hawaiian shirt.
+  name: "синяя гавайская рубашка"
   parent: ClothingOuterBase
   id: civ13_suit_blue_hawaiian_shirt.
-  description: A brightly patterned and gaudy hawaiian shirt. It has a blue hue
+  description: "Пёстрая и вызывающая гавайская рубашка с синим оттенком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hawaiian_blue.rsi
@@ -3195,10 +3142,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: orange hawaiian shirt.
+  name: "оранжевая гавайская рубашка"
   parent: ClothingOuterBase
   id: civ13_suit_orange_hawaiian_shirt.
-  description: A brightly patterned and gaudy hawaiian shirt. It has a orange hue
+  description: "Пёстрая и вызывающая гавайская рубашка с оранжевым оттенком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hawaiian_orange.rsi
@@ -3213,10 +3160,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: purple hawaiian shirt.
+  name: "фиолетовая гавайская рубашка"
   parent: ClothingOuterBase
   id: civ13_suit_purple_hawaiian_shirt.
-  description: A brightly patterned and gaudy hawaiian shirt. It has a purple hue
+  description: "Пёстрая и вызывающая гавайская рубашка с фиолетовым оттенком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hawaiian_purple.rsi
@@ -3231,10 +3178,10 @@
       material: Cloth
       time: 10
 - type: entity
-  name: purple pimp jacket.
+  name: "фиолетовая куртка сутенёра"
   parent: ClothingOuterBase
   id: civ13_suit_purple_pimp_jacket.
-  description: A brightly colored purple button up coat for gangsters.
+  description: "Яркая фиолетовая куртка на пуговицах в гангстерском стиле."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/pimpcoat.rsi
@@ -3249,10 +3196,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Blugoslavian Jacket.
+  name: "куртка армии Блюгославии"
   parent: ClothingOuterBase
   id: civ13_suit_Blugoslavian_Jacket.
-  description: A standard issue combat jacket of the blugo army.
+  description: "Стандартная боевая куртка блюгославской армии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bcj.rsi
@@ -3267,12 +3214,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Blugoslavian Flak Jacket.
+  name: "противоосколочный жилет Блюгославии"
   parent: ClothingOuterBase
   id: civ13_suit_Blugoslavian_Flak_Jacket.
-  description: >-
-    A Blugo Jacket, feels pretty heavy and is probably stuffed with a mix of
-    kevlar and canvas
+  description: "Тяжёлый жилет из кевлара и плотной ткани."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/bcj.rsi
@@ -3287,12 +3232,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: full body gorilla outfit
+  name: "костюм гориллы"
   parent: ClothingOuterBase
   id: civ13_suit_full_body_gorilla_outfit
-  description: >-
-    A lifelike full body gorilla suit-outfit, ideal for costume parties and
-    pranksters.
+  description: "Правдоподобный костюм гориллы в полный рост. Подойдёт для вечеринки или розыгрыша."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/gorilla_suit.rsi
@@ -3308,10 +3251,10 @@
       time: 15
 
 - type: entity
-  name: Matagi Vest
+  name: "жилет матаги"
   parent: ClothingOuterBase
   id: civ13_suit_Matagi_Vest
-  description: A warm fur lined vest made out of leather.
+  description: "Тёплый кожаный жилет с меховой подкладкой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/japvest.rsi
@@ -3334,10 +3277,10 @@
       time: 5
 
 - type: entity
-  name: red cape
+  name: "красный плащ-накидка"
   parent: ClothingOuterBase
   id: civ13_suit_red_cape
-  description: A long red cape.
+  description: "Длинная красная накидка."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/redcape.rsi
@@ -3353,12 +3296,10 @@
       time: 5
 
 - type: entity
-  name: yellow NBC suit
+  name: "жёлтый защитный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_yellow_NBC_suit
-  description: >-
-    A yellow coloured NBC suit, made protect against biological, chemical and
-    nuclear threats.
+  description: "Защищает от химических и биологических угроз и радиоактивных частиц."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/nbc.rsi
@@ -3377,12 +3318,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: olive drab NBC suit
+  name: "оливковый защитный костюм"
   parent: ClothingOuterBase
   id: civ13_suit_olive_drab_NBC_suit
-  description: >-
-    An olive drab coloured NBC suit, made protect against biological, chemical
-    and nuclear threats.
+  description: "Защищает от химических и биологических угроз и радиоактивных частиц."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/nbc2.rsi
@@ -3401,10 +3340,10 @@
       material: Cloth
       time: 20
 - type: entity
-  name: firefighting suit
+  name: "костюм пожарного"
   parent: ClothingOuterBase
   id: civ13_suit_firefighting_suit
-  description: A suit primarily intended to protect against fire.
+  description: "Защитный костюм для работы рядом с огнём."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/nbc2.rsi
@@ -3425,12 +3364,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: hazmat suit
+  name: "защитный костюм химзащиты"
   parent: ClothingOuterBase
   id: civ13_suit_hazmat_suit
-  description: >-
-    A bright hazard protection suit, made to protect against biological,
-    chemical and nuclear threats.
+  description: "Яркий костюм для защиты от химических и биологических угроз и радиоактивных частиц."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/hazmat_suit.rsi
@@ -3449,12 +3386,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NBC poncho
+  name: "защитное пончо"
   parent: ClothingOuterBase
   id: civ13_suit_NBC_poncho
-  description: >-
-    A NBC poncho,very light and easy to put on, made to protect against
-    biological, chemical and nuclear threats.
+  description: "Лёгкое пончо, которое быстро надевается и защищает от химических и биологических угроз и радиоактивных частиц."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/nbcponcho.rsi
@@ -3475,12 +3410,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: astronaut suit
+  name: "скафандр"
   parent: ClothingOuterBase
   id: civ13_suit_astronaut_suit
-  description: >-
-    A grey space suit, made protect to against low pressure, temperature and
-    radioactive threats.
+  description: "Серый скафандр для защиты от низкого давления, экстремальных температур и радиации."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/astronaut.rsi
@@ -3493,10 +3426,10 @@
           Radiation: 0.05
 
 - type: entity
-  name: lifejacket
+  name: "красный спасательный жилет"
   parent: ClothingOuterBase
   id: civ13_suit_lifejacket_1_2
-  description: A red lifejacket, to improve survival on sea.
+  description: "Помогает удержаться на воде."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/sealvest.rsi
@@ -3517,12 +3450,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: primitive pelt coat
+  name: "первобытная шуба"
   parent: ClothingOuterBase
   id: civ13_suit_primitive_pelt_coat
-  description: >-
-    A makeshift pelt coat made from fur skins, worn to protect early man from
-    the elements.
+  description: "Грубая шуба из звериных шкур. Защищает от непогоды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
@@ -3548,12 +3479,10 @@
       time: 13
 
 - type: entity
-  name: mbata pelt vest
+  name: "меховой жилет мбата"
   parent: ClothingOuterBase
   id: civ13_suit_mbata_pelt_vest
-  description: >-
-    A shoulder vest made from big cat pelt, worn ceremonially & military dress
-    by the zulu.
+  description: "Парадный наплечный жилет зулусского воина из шкуры крупной кошки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/suits/zulu_mbata.rsi

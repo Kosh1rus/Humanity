@@ -3,8 +3,8 @@
   id: GulagPrisonerGerman
   name: job-name-civ-gulag-prisoner-german
   faction: GulagPrisonerGerman
-  originalName: Nemetskiy plennik
-  description: temp description
+  originalName: Немецкий заключённый
+  description: job-description-civ-gulag-prisoner
   startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerGerman
   special:
@@ -21,8 +21,8 @@
   id: GulagPrisonerUkrainian
   name: job-name-civ-gulag-prisoner-ukrainian
   faction: GulagPrisonerUkrainian
-  originalName: Ukrainskiy plennik
-  description: temp description
+  originalName: Украинский заключённый
+  description: job-description-civ-gulag-prisoner
   startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerUkrainian
   special:
@@ -39,8 +39,8 @@
   id: GulagPrisonerPolish
   name: job-name-civ-gulag-prisoner-polish
   faction: GulagPrisonerPolish
-  originalName: Polskiy plennik
-  description: temp description
+  originalName: Польский заключённый
+  description: job-description-civ-gulag-prisoner
   startingGear: GulagPrisonerGear
   playTimeTracker: JobGulagPrisonerPolish
   special:

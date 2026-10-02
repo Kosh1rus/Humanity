@@ -69,7 +69,7 @@
 
 - type: entity
   id: MetalDoor
-  name: metal door
+  name: "металлическая дверь"
   parent: BaseMaterialDoorNavMap
   components:
     - type: Construction
@@ -78,9 +78,9 @@
 
 - type: entity
   id: WoodDoor
-  name: wooden door
+  name: "деревянная дверь"
   parent: BaseMaterialDoorNavMap
-  description: A door, where will it lead?
+  description: "Дверь. Интересно, куда она ведёт?"
   components:
     - type: Sprite
       sprite: Structures/Doors/MineralDoors/wood_door.rsi
@@ -114,9 +114,9 @@
 
 - type: entity
   id: PaperDoor
-  name: paper door
+  name: "бумажная дверь"
   parent: BaseMaterialDoorNavMap
-  description: A door, where will it lead?
+  description: "Дверь. Интересно, куда она ведёт?"
   components:
     - type: Sprite
       sprite: Structures/Doors/MineralDoors/paper_door.rsi
@@ -181,9 +181,9 @@
 
 - type: entity
   id: SilverDoor
-  name: silver door
+  name: "серебряная дверь"
   parent: BaseMaterialDoorNavMap
-  description: A door, where will it lead?
+  description: "Дверь. Интересно, куда она ведёт?"
   components:
     - type: Sprite
       sprite: Structures/Doors/MineralDoors/silver_door.rsi

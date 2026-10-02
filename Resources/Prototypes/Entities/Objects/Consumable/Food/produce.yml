@@ -41,8 +41,8 @@
 # Subclasses
 
 - type: entity
-  name: wheat bushel
-  description: Sigh... wheat... a-grain?
+  name: "сноп пшеницы"
+  description: "Пшеница... опять зерно?"
   id: WheatBushel
   parent: ProduceBase
   components:
@@ -707,10 +707,10 @@
         Taco: Lime
 
 - type: entity
-  name: orange
+  name: "апельсин"
   parent: FoodLemon
   id: FoodOrange
-  description: Healthy, very orange.
+  description: "Полезный фрукт. Очень оранжевый."
   components:
     - type: FlavorProfile
       flavors:
@@ -1088,10 +1088,10 @@
         - Vegetable
 
 - type: entity
-  name: apple
+  name: "яблоко"
   parent: FoodProduceBase
   id: FoodApple
-  description: It's a little piece of Eden.
+  description: "Маленький кусочек Эдема."
   components:
     - type: FlavorProfile
       flavors:
@@ -2087,10 +2087,10 @@
         Burger: KoibeanBurger
 
 - type: entity
-  name: watermelon
+  name: "арбуз"
   parent: [FoodProduceBase, ItemHeftyBase]
   id: FoodWatermelon
-  description: Round green object that you can slice and eat.
+  description: "Круглый зелёный плод, который можно нарезать и съесть."
   components:
     - type: STWeight
       self: 1

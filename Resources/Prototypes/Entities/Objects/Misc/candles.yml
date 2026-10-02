@@ -1,8 +1,8 @@
 - type: entity
-  name: candle
+  name: "свеча"
   parent: BaseItem
   id: Candle
-  description: A thin wick threaded through fat.
+  description: "Тонкий фитиль, залитый воском."
   components:
     - type: Tag
       tags:
@@ -291,7 +291,7 @@
       power: 10
 
 - type: entity
-  name: magic red candle
+  name: "волшебная красная свеча"
   parent: CandleInfinite
   id: CandleRedInfinite
   components:
@@ -311,7 +311,7 @@
             color: "#a12349"
 
 - type: entity
-  name: magic blue candle
+  name: "волшебная синяя свеча"
   parent: CandleInfinite
   id: CandleBlueInfinite
   components:

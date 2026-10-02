@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseFlag
   id: WallFlagWhite
-  name: white flag
-  description: A wall mounted flag.
+  name: белый флаг
+  description: Флаг, закреплённый на стене.
   components:
     - type: Sprite
       sprite: Civ14/Objects/decals.rsi
@@ -10,8 +10,8 @@
 
 - type: entity
   id: civ13_wallflag_green
-  name: green banner
-  description: A green linen banner.
+  name: зелёное знамя
+  description: Зелёное льняное знамя.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -19,8 +19,8 @@
 
 - type: entity
   id: civ13_wallflag_red
-  name: red banner
-  description: A red linen banner.
+  name: красное знамя
+  description: Красное льняное знамя.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -28,8 +28,8 @@
 
 - type: entity
   id: civ13_wallflag_red2
-  name: red banner
-  description: A red linen banner, with golden trims.
+  name: красное знамя
+  description: Красное льняное знамя с золотой каймой.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -37,8 +37,8 @@
 
 - type: entity
   id: civ13_wallflag_blue
-  name: blue banner
-  description: A blue linen banner.
+  name: синее знамя
+  description: Синее льняное знамя.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -46,8 +46,8 @@
 
 - type: entity
   id: civ13_wallflag_reich
-  name: Reich Flag
-  description: A Reich flag for glory.
+  name: флаг рейха
+  description: Флаг рейха, вывешенный во славу державы.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -55,8 +55,8 @@
 
 - type: entity
   id: civ13_wallflag_gb_imperial
-  name: Extra-Galactic Empire Flag
-  description: An Imperial Flag for the Extra-Galactic Empire.
+  name: флаг Внегалактической империи
+  description: Имперский флаг Внегалактической империи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -64,8 +64,8 @@
 
 - type: entity
   id: civ13_wallflag_gb_rebel
-  name: Alliance to Restore the Democracy Flag
-  description: A Rebellious flag for the Alliance.
+  name: флаг Альянса за восстановление демократии
+  description: Знамя повстанцев Альянса.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -73,8 +73,8 @@
 
 - type: entity
   id: civ13_wallflag_gb_pysker
-  name: Pysker Order Flag
-  description: A blue and white flag for the ancient order of pyskers.
+  name: флаг ордена псайкеров
+  description: Сине-белый флаг древнего ордена псайкеров.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -82,8 +82,8 @@
 
 - type: entity
   id: civ13_wallflag_gb_cis
-  name: Confederacy of Issolationist Star-Systems Flag
-  description: A bright blue and white with a circular emblem.
+  name: флаг Конфедерации изоляционистских звёздных систем
+  description: Яркий сине-белый флаг с круглой эмблемой.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -91,8 +91,8 @@
 
 - type: entity
   id: civ13_wallflag_russia
-  name: Russian flag
-  description: A flag of Russsia.
+  name: флаг России
+  description: Флаг России.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -100,8 +100,8 @@
 
 - type: entity
   id: civ13_wallflag_brazil_empire
-  name: Empire of Brazil flag
-  description: The flag of the Empire of Brazil.
+  name: флаг Бразильской империи
+  description: Флаг Бразильской империи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -109,8 +109,8 @@
 
 - type: entity
   id: civ13_wallflag_russia_kornilov
-  name: Kornilov Shock Regiment flag
-  description: A flag of the infamous regiment of the Volunteer Army.
+  name: флаг Корниловского ударного полка
+  description: Флаг печально известного полка Добровольческой армии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -118,8 +118,8 @@
 
 - type: entity
   id: civ13_wallflag_sov_navy
-  name: Soviet Navy flag
-  description: The flag of the naval service branch of the Soviet Armed Forces.
+  name: флаг ВМФ СССР
+  description: Флаг Военно-морского флота СССР.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -127,8 +127,8 @@
 
 - type: entity
   id: civ13_wallflag_russia_rsfsr
-  name: RSFSR flag
-  description: A flag of the Russian Soviet Federative Socialist Republic.
+  name: флаг РСФСР
+  description: Флаг Российской Советской Федеративной Социалистической Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -136,8 +136,8 @@
 
 - type: entity
   id: civ13_wallflag_usa
-  name: USA flag
-  description: The star-spangled banner.
+  name: флаг США
+  description: Звёздно-полосатый флаг.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -145,8 +145,8 @@
 
 - type: entity
   id: civ13_wallflag_blue2
-  name: blue banner
-  description: A blue linen banner, with golden trims.
+  name: синее знамя
+  description: Синее льняное знамя с золотой каймой.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -154,8 +154,8 @@
 
 - type: entity
   id: civ13_wallflag_templar1
-  name: templar banner
-  description: A white banner with the red cross of the templars in the middle.
+  name: знамя тамплиеров
+  description: Белое знамя с красным крестом тамплиеров в центре.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -163,8 +163,8 @@
 
 - type: entity
   id: civ13_wallflag_templar2
-  name: templar banner
-  description: A white banner with the red cross of the templars in the middle.
+  name: знамя тамплиеров
+  description: Белое знамя с красным крестом тамплиеров в центре.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -172,8 +172,8 @@
 
 - type: entity
   id: civ13_wallflag_jihad1
-  name: black islamic flag
-  description: A black flag with Allah written in Arabic.
+  name: чёрный исламский флаг
+  description: Чёрный флаг с именем Аллаха, написанным по-арабски.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -181,8 +181,8 @@
 
 - type: entity
   id: civ13_wallflag_jihad2
-  name: green islamic flag
-  description: A green flag with Allah written in Arabic.
+  name: зелёный исламский флаг
+  description: Зелёный флаг с именем Аллаха, написанным по-арабски.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -190,8 +190,8 @@
 
 - type: entity
   id: civ13_wallflag_jihad3
-  name: red islamic banner
-  description: A red banner with three moons.
+  name: красное исламское знамя
+  description: Красное знамя с тремя полумесяцами.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -199,8 +199,8 @@
 
 - type: entity
   id: civ13_wallflag_jihad4
-  name: green islamic banner
-  description: A green banner with the shadada.
+  name: зелёное исламское знамя
+  description: Зелёное знамя с шахадой.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -208,8 +208,8 @@
 
 - type: entity
   id: civ13_wallflag_taliban
-  name: taliban flag
-  description: A white flag of the Taliban.
+  name: флаг «Талибана»
+  description: Белый флаг движения «Талибан».
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -217,8 +217,8 @@
 
 - type: entity
   id: civ13_wallflag_isis
-  name: ISIS flag
-  description: A black flag of the ISIS.
+  name: флаг ИГИЛ
+  description: Чёрный флаг ИГИЛ.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -226,8 +226,8 @@
 
 - type: entity
   id: civ13_wallflag_chechen
-  name: chechen flag
-  description: The Chechen Separatist flag.
+  name: флаг чеченских сепаратистов
+  description: Флаг чеченских сепаратистов.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -235,8 +235,8 @@
 
 - type: entity
   id: civ13_wallflag_ireland
-  name: irish flag
-  description: The Irish Republic flag.
+  name: флаг Ирландии
+  description: Флаг Ирландской Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -244,8 +244,8 @@
 
 - type: entity
   id: civ13_wallflag_gadsen
-  name: Gadsen flag
-  description: The classic Gadsen flag.
+  name: флаг Гадсдена
+  description: Классический флаг Гадсдена.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -253,10 +253,9 @@
 
 - type: entity
   id: civ13_wallflag_medical
-  name: Medical flag
+  name: медицинский флаг
   description: >-
-    A flag with the universally recognized symbol for medicine and humanitarian
-    aid.
+    Флаг с международным символом медицины и гуманитарной помощи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -264,8 +263,8 @@
 
 - type: entity
   id: civ13_wallflag_medical_crescent
-  name: Red crescent flag
-  description: A flag with the crescent emblem for medicine and humanitarian aid.
+  name: флаг Красного Полумесяца
+  description: Флаг с эмблемой полумесяца, символом медицинской и гуманитарной помощи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -273,8 +272,8 @@
 
 - type: entity
   id: civ13_wallflag_medical_crystal
-  name: Medical crystal flag
-  description: A flag with the crystal symbol for medicine and humaniarian aid.
+  name: флаг Красного Кристалла
+  description: Флаг с эмблемой кристалла, символом медицинской и гуманитарной помощи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -282,8 +281,8 @@
 
 - type: entity
   id: civ13_wallflag_japanese
-  name: Imperial Japanese flag
-  description: A flag with the imperial Japanese rising sun.
+  name: флаг императорской Японии
+  description: Флаг с восходящим солнцем императорской Японии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -291,8 +290,8 @@
 
 - type: entity
   id: civ13_wallflag_german_modern
-  name: German flag
-  description: A horizontal tricolour flag of the German Republic.
+  name: флаг Германии
+  description: Горизонтальный триколор Федеративной Республики Германии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -300,8 +299,8 @@
 
 - type: entity
   id: civ13_wallflag_chinese
-  name: Republic of China flag
-  description: A flag with the republic of China design.
+  name: флаг Китайской Республики
+  description: Флаг Китайской Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -309,8 +308,8 @@
 
 - type: entity
   id: civ13_wallflag_chinese_prc
-  name: People's Republic of China flag
-  description: A flag with the PRC design.
+  name: флаг КНР
+  description: Флаг Китайской Народной Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -318,8 +317,8 @@
 
 - type: entity
   id: civ13_wallflag_mongolia
-  name: Mongolian State flag
-  description: A flag of the state of Mongolia.
+  name: флаг Монголии
+  description: Государственный флаг Монголии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -327,8 +326,8 @@
 
 - type: entity
   id: civ13_wallflag_mongolia_communist
-  name: Mongolian People's Republic flag
-  description: A flag of the Mongolian People's Republic.
+  name: флаг Монгольской Народной Республики
+  description: Флаг Монгольской Народной Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -336,8 +335,8 @@
 
 - type: entity
   id: civ13_wallflag_french
-  name: French flag
-  description: A flag with the tricolour french flag.
+  name: флаг Франции
+  description: Французский триколор.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -345,8 +344,8 @@
 
 - type: entity
   id: civ13_wallflag_denmark
-  name: Danish flag
-  description: A flag with the red and white dannebrog.
+  name: флаг Дании
+  description: Красно-белый Даннеброг.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -354,8 +353,8 @@
 
 - type: entity
   id: civ13_wallflag_german
-  name: German Empire flag
-  description: A horizontal tricolour flag of the German Empire.
+  name: флаг Германской империи
+  description: Горизонтальный триколор Германской империи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -363,8 +362,8 @@
 
 - type: entity
   id: civ13_wallflag_german_east
-  name: East German flag
-  description: A horizontal tricolour flag of the German Democratic Republic.
+  name: флаг ГДР
+  description: Горизонтальный триколор Германской Демократической Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -372,8 +371,8 @@
 
 - type: entity
   id: civ13_wallflag_uk
-  name: United Kingdom flag
-  description: A flag of the United Kingdom.
+  name: флаг Великобритании
+  description: Флаг Соединённого Королевства.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -381,8 +380,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine
-  name: Ukrainian flag
-  description: A flag of Ukraine.
+  name: флаг Украины
+  description: Флаг Украины.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -390,8 +389,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_upa
-  name: flag of the UPA
-  description: The flag of the Ukrainian Insurgent Army called UPA.
+  name: флаг УПА
+  description: Флаг Украинской повстанческой армии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -399,10 +398,9 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_makhno
-  name: Makhnovsti flag
+  name: флаг махновцев
   description: >-
-    A flag of the Revolutionary Insurgent Army of Ukraine. Also known as the
-    Black Army or Makhnovsti.
+    Флаг Революционной повстанческой армии Украины, известной также как Чёрная армия или махновцы.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -410,8 +408,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_azov
-  name: flag of the Azov regiment
-  description: The flag of the infamous Azov regiment of the Ukrainian National Guard.
+  name: флаг полка «Азов»
+  description: Флаг печально известного полка «Азов» Национальной гвардии Украины.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -419,8 +417,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_rightsector
-  name: flag of the Right Sector
-  description: The flag of the Ukrainian far-right paramilitary movement.
+  name: флаг «Правого сектора»
+  description: Флаг украинского ультраправого военизированного движения.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -428,8 +426,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_dnr
-  name: flag of the Donetsk People's Republic
-  description: The flag of the self-proclaimed state of the Donetsk People's Republic
+  name: флаг ДНР
+  description: Флаг самопровозглашённой Донецкой Народной Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -437,8 +435,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_lnr
-  name: flag of the Luhansk People's Republic
-  description: The flag of the self-proclaimed state of the Luhansk People's Republic
+  name: флаг ЛНР
+  description: Флаг самопровозглашённой Луганской Народной Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -446,8 +444,8 @@
 
 - type: entity
   id: civ13_wallflag_ukraine_afu
-  name: AFU flag
-  description: The flag of the Armed Forces of Ukraine.
+  name: флаг ВСУ
+  description: Флаг Вооружённых сил Украины.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -455,8 +453,8 @@
 
 - type: entity
   id: civ13_wallflag_doncossack
-  name: Don Cossack Host flag
-  description: A flag of the Don cossacks.
+  name: флаг Донского казачьего войска
+  description: Флаг донских казаков.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -464,8 +462,8 @@
 
 - type: entity
   id: civ13_wallflag_terekcossack
-  name: Terek Cossack Host flag
-  description: A flag of the Terek cossacks.
+  name: флаг Терского казачьего войска
+  description: Флаг терских казаков.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -473,8 +471,8 @@
 
 - type: entity
   id: civ13_wallflag_poland
-  name: Polish flag
-  description: A flag of Poland.
+  name: флаг Польши
+  description: Флаг Польши.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -482,8 +480,8 @@
 
 - type: entity
   id: civ13_wallflag_vietnam
-  name: North Vietnam flag
-  description: The North Vietnamese flag.
+  name: флаг Северного Вьетнама
+  description: Флаг Северного Вьетнама.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -491,8 +489,8 @@
 
 - type: entity
   id: civ13_wallflag_vietcong
-  name: Viet Cong flag
-  description: The blue and red flag of the Viet Cong forces.
+  name: флаг Вьетконга
+  description: Сине-красный флаг сил Вьетконга.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -500,8 +498,8 @@
 
 - type: entity
   id: civ13_wallflag_usa_union
-  name: Union flag
-  description: The red, white and blue flag flying above ranks of blue-clad troops.
+  name: флаг Союза
+  description: Красно-бело-синий флаг, под которым шли солдаты в синей форме.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -509,8 +507,8 @@
 
 - type: entity
   id: civ13_wallflag_usa_confed
-  name: Confederate flag
-  description: The flag of the Confederate States.
+  name: флаг Конфедерации
+  description: Флаг Конфедеративных Штатов Америки.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -518,8 +516,8 @@
 
 - type: entity
   id: civ13_wallflag_texas
-  name: Texan flag
-  description: The flag of the state of Texas.
+  name: флаг Техаса
+  description: Флаг штата Техас.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -527,8 +525,8 @@
 
 - type: entity
   id: civ13_wallflag_hungary_sov
-  name: Hungarian People's Republic flag
-  description: The flag of the Hungarian People's Republic.
+  name: флаг Венгерской Народной Республики
+  description: Флаг Венгерской Народной Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -536,8 +534,8 @@
 
 - type: entity
   id: civ13_wallflag_sov_vdv
-  name: Soviet VDV flag
-  description: The flag of the Soviet Airborne Forces.
+  name: флаг ВДВ СССР
+  description: Флаг советских воздушно-десантных войск.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -545,8 +543,8 @@
 
 - type: entity
   id: civ13_wallflag_sov_air
-  name: Soviet Air Forces flag
-  description: The flag of the Soviet Air Forces.
+  name: флаг ВВС СССР
+  description: Флаг Военно-воздушных сил СССР.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -554,8 +552,8 @@
 
 - type: entity
   id: civ13_wallflag_sov_border
-  name: Soviet Border Troops flag
-  description: The flag of the Soviet Border Troops.
+  name: флаг пограничных войск СССР
+  description: Флаг советских пограничных войск.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -563,8 +561,8 @@
 
 - type: entity
   id: civ13_wallflag_sov
-  name: Soviet Union flag
-  description: The flag of the Soviet Union.
+  name: флаг СССР
+  description: Флаг Советского Союза.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -572,8 +570,8 @@
 
 - type: entity
   id: civ13_wallflag_nazi
-  name: Third Reich flag
-  description: The red, white and black flag of the Third Reich.
+  name: флаг Третьего рейха
+  description: Красно-бело-чёрный флаг Третьего рейха.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -581,8 +579,8 @@
 
 - type: entity
   id: civ13_wallflag_israel
-  name: Israel flag
-  description: The white and blue flag of Israel, with the 6 pointed star in the middle.
+  name: флаг Израиля
+  description: Бело-синий флаг Израиля с шестиконечной звездой в центре.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -590,8 +588,8 @@
 
 - type: entity
   id: civ13_wallflag_un
-  name: UN flag
-  description: The flag of the United Nations.
+  name: флаг ООН
+  description: Флаг Организации Объединённых Наций.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -599,8 +597,8 @@
 
 - type: entity
   id: civ13_wallflag_dutch
-  name: Dutch flag
-  description: The flag of Netherlands.
+  name: флаг Нидерландов
+  description: Флаг Нидерландов.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -608,8 +606,8 @@
 
 - type: entity
   id: civ13_wallflag_dutch_old
-  name: Prince's flag
-  description: The Dutch flag.
+  name: флаг принца Оранского
+  description: Исторический нидерландский флаг.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -617,8 +615,8 @@
 
 - type: entity
   id: civ13_wallflag_chetnik
-  name: Chetnik flag
-  description: A Chetnik flag.
+  name: флаг четников
+  description: Флаг четников.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -626,8 +624,8 @@
 
 - type: entity
   id: civ13_wallflag_yugoslavia
-  name: Yugoslavian flag
-  description: The flag of Yugoslavia.
+  name: флаг Югославии
+  description: Флаг Югославии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -635,8 +633,8 @@
 
 - type: entity
   id: civ13_wallflag_yugoslavia_partisan
-  name: Yugoslavian flag
-  description: The flag of Yugoslavian partisans.
+  name: флаг Югославии
+  description: Флаг югославских партизан.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -644,8 +642,8 @@
 
 - type: entity
   id: civ13_wallflag_gns
-  name: GNS flag
-  description: The flag of the Goverment of National Salvation.
+  name: флаг Правительства национального спасения
+  description: Флаг Правительства национального спасения Сербии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -653,8 +651,8 @@
 
 - type: entity
   id: civ13_wallflag_australia
-  name: Australian flag
-  description: The flag of Australia.
+  name: флаг Австралии
+  description: Флаг Австралии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -662,8 +660,8 @@
 
 - type: entity
   id: civ13_wallflag_canada
-  name: Canadian flag
-  description: The flag of Canada.
+  name: флаг Канады
+  description: Флаг Канады.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -671,8 +669,8 @@
 
 - type: entity
   id: civ13_wallflag_hezbollah
-  name: Hezbollah flag
-  description: The yellow and green flag of the Shia Hezbollah organization.
+  name: флаг «Хезболлы»
+  description: Жёлто-зелёный флаг шиитской организации «Хезболла».
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -680,8 +678,8 @@
 
 - type: entity
   id: civ13_wallflag_philippine
-  name: Filipino flag
-  description: The flag of the Philippines.
+  name: флаг Филиппин
+  description: Флаг Филиппин.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -689,8 +687,8 @@
 
 - type: entity
   id: civ13_wallflag_philippine_war
-  name: Filipino flag
-  description: The flag of the Philippines. Flipped for wartime.
+  name: флаг Филиппин
+  description: Флаг Филиппин. Перевёрнутое полотнище означает состояние войны.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -698,8 +696,8 @@
 
 - type: entity
   id: civ13_wallflag_pirate
-  name: Pirate flag
-  description: The black pirate flag, with a skull in the middle.
+  name: пиратский флаг
+  description: Чёрный пиратский флаг с черепом в центре.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -707,8 +705,8 @@
 
 - type: entity
   id: civ13_wallflag_firstcav
-  name: 1st Cavalry Division flag
-  description: Flag of the United States Army 1st Cavalry Division.
+  name: флаг 1-й кавалерийской дивизии
+  description: Флаг 1-й кавалерийской дивизии армии США.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -716,8 +714,8 @@
 
 - type: entity
   id: civ13_wallflag_cuba
-  name: Cuban flag
-  description: The Cuban flag.
+  name: флаг Кубы
+  description: Флаг Кубы.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -725,8 +723,8 @@
 
 - type: entity
   id: civ13_wallflag_colombia
-  name: Colombian flag
-  description: The flag of Colombia.
+  name: флаг Колумбии
+  description: Флаг Колумбии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -734,8 +732,8 @@
 
 - type: entity
   id: civ13_wallflag_colombia_farc
-  name: FARC flag
-  description: The flag of the Revolutionary Armed Forces of Columbia.
+  name: флаг ФАРК
+  description: Флаг Революционных вооружённых сил Колумбии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -743,8 +741,8 @@
 
 - type: entity
   id: civ13_wallflag_mexico
-  name: Mexican flag
-  description: The flag of Mexico.
+  name: флаг Мексики
+  description: Флаг Мексики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -752,8 +750,8 @@
 
 - type: entity
   id: civ13_wallflag_brazil
-  name: Brazilian flag
-  description: The flag of Brazil.
+  name: флаг Бразилии
+  description: Флаг Бразилии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -761,8 +759,8 @@
 
 - type: entity
   id: civ13_wallflag_paraguay
-  name: Paraguayan flag
-  description: The flag of Paraguay.
+  name: флаг Парагвая
+  description: Флаг Парагвая.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -770,8 +768,8 @@
 
 - type: entity
   id: civ13_wallflag_argentina
-  name: Argentinian flag
-  description: The flag of Argentina.
+  name: флаг Аргентины
+  description: Флаг Аргентины.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -779,8 +777,8 @@
 
 - type: entity
   id: civ13_wallflag_venezuela
-  name: Venezuelan flag
-  description: The flag of Venezuela.
+  name: флаг Венесуэлы
+  description: Флаг Венесуэлы.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -788,8 +786,8 @@
 
 - type: entity
   id: civ13_wallflag_peru
-  name: Peruvian flag
-  description: The flag of Peru.
+  name: флаг Перу
+  description: Флаг Перу.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -797,8 +795,8 @@
 
 - type: entity
   id: civ13_wallflag_bolivia
-  name: Bolivian flag
-  description: The flag of Bolivia.
+  name: флаг Боливии
+  description: Флаг Боливии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -806,8 +804,8 @@
 
 - type: entity
   id: civ13_wallflag_chile
-  name: Chilean flag
-  description: The flag of Chile.
+  name: флаг Чили
+  description: Флаг Чили.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -815,8 +813,8 @@
 
 - type: entity
   id: civ13_wallflag_afghan_dra
-  name: DRA flag
-  description: The Democratic Republic of Afghanistan flag.
+  name: флаг ДРА
+  description: Флаг Демократической Республики Афганистан.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -824,8 +822,8 @@
 
 - type: entity
   id: civ13_wallflag_iran
-  name: Iranian flag
-  description: The Iranian flag.
+  name: флаг Ирана
+  description: Флаг Ирана.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -833,8 +831,8 @@
 
 - type: entity
   id: civ13_wallflag_iraq
-  name: Iraqui flag
-  description: The flag of Iraq.
+  name: флаг Ирака
+  description: Флаг Ирака.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -842,8 +840,8 @@
 
 - type: entity
   id: civ13_wallflag_syria
-  name: Syrian Arab Republic flag
-  description: The flag of the Syrian Arab Republic.
+  name: флаг Сирии
+  description: Флаг Сирийской Арабской Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -851,8 +849,8 @@
 
 - type: entity
   id: civ13_wallflag_fsa
-  name: FSA flag
-  description: The flag of the Free Syrian Army.
+  name: флаг Свободной сирийской армии
+  description: Флаг Свободной сирийской армии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -860,8 +858,8 @@
 
 - type: entity
   id: civ13_wallflag_turkey
-  name: Turkish flag
-  description: The flag of Turkey.
+  name: флаг Турции
+  description: Флаг Турции.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -869,8 +867,8 @@
 
 - type: entity
   id: civ13_wallflag_kurdistan
-  name: Kurdish flag
-  description: The flag of Kurdistan.
+  name: курдский флаг
+  description: Флаг Курдистана.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -878,8 +876,8 @@
 
 - type: entity
   id: civ13_wallflag_georgia
-  name: Georgian flag
-  description: The flag of Georgia.
+  name: флаг Грузии
+  description: Флаг Грузии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -887,8 +885,8 @@
 
 - type: entity
   id: civ13_wallflag_india
-  name: Indian flag
-  description: The flag of India.
+  name: флаг Индии
+  description: Флаг Индии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -896,8 +894,8 @@
 
 - type: entity
   id: civ13_wallflag_pakistan
-  name: Pakistani flag
-  description: The flag of Pakistan.
+  name: флаг Пакистана
+  description: Флаг Пакистана.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -905,8 +903,8 @@
 
 - type: entity
   id: civ13_wallflag_italy
-  name: Italian flag
-  description: The Italian flag.
+  name: флаг Италии
+  description: Флаг Италии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -914,8 +912,8 @@
 
 - type: entity
   id: civ13_wallflag_finland
-  name: Finnish flag
-  description: The flag of Finland.
+  name: флаг Финляндии
+  description: Флаг Финляндии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -923,8 +921,8 @@
 
 - type: entity
   id: civ13_wallflag_nigeria
-  name: Nigerian flag
-  description: The flag of Nigeria.
+  name: флаг Нигерии
+  description: Флаг Нигерии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -932,8 +930,8 @@
 
 - type: entity
   id: civ13_wallflag_ethiopia
-  name: Ethiopian flag
-  description: The flag of Ethiopia.
+  name: флаг Эфиопии
+  description: Флаг Эфиопии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -941,8 +939,8 @@
 
 - type: entity
   id: civ13_wallflag_armenia
-  name: Armenian flag
-  description: The flag of Armenia.
+  name: флаг Армении
+  description: Флаг Армении.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -950,8 +948,8 @@
 
 - type: entity
   id: civ13_wallflag_azerbaijan
-  name: Azerbaijani flag
-  description: The flag of the Republic of Azerbaijan.
+  name: флаг Азербайджана
+  description: Флаг Азербайджанской Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -959,8 +957,8 @@
 
 - type: entity
   id: civ13_wallflag_bosnia
-  name: Bosnian flag
-  description: The flag of Bosnia.
+  name: флаг Боснии
+  description: Флаг Боснии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -968,8 +966,8 @@
 
 - type: entity
   id: civ13_wallflag_kosovo
-  name: Kosovo flag
-  description: The flag of Kosovo.
+  name: флаг Косово
+  description: Флаг Косово.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -977,8 +975,8 @@
 
 - type: entity
   id: civ13_wallflag_albania
-  name: Albanian flag
-  description: The flag of Albania.
+  name: флаг Албании
+  description: Флаг Албании.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -986,8 +984,8 @@
 
 - type: entity
   id: civ13_wallflag_serbia
-  name: Serbian flag
-  description: The flag of Serbia.
+  name: флаг Сербии
+  description: Флаг Сербии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -995,8 +993,8 @@
 
 - type: entity
   id: civ13_wallflag_romania
-  name: Romanian flag
-  description: The flag of Romania.
+  name: флаг Румынии
+  description: Флаг Румынии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1004,8 +1002,8 @@
 
 - type: entity
   id: civ13_wallflag_romania_socialist
-  name: RSR flag
-  description: The flag of the Socialist Republic of Romania.
+  name: флаг СРР
+  description: Флаг Социалистической Республики Румынии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1013,8 +1011,8 @@
 
 - type: entity
   id: civ13_wallflag_moldova
-  name: Moldovan flag
-  description: The flag of the Republic of Moldova.
+  name: флаг Молдавии
+  description: Флаг Республики Молдова.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1022,8 +1020,8 @@
 
 - type: entity
   id: civ13_wallflag_moldova_transnistria
-  name: Transnistrian flag
-  description: The flag of the Pridnestrovian Moldavian Republic.
+  name: флаг Приднестровья
+  description: Флаг Приднестровской Молдавской Республики.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1031,8 +1029,8 @@
 
 - type: entity
   id: civ13_wallflag_czech
-  name: Czechoslovakian flag
-  description: The flag of Czechoslovakia.
+  name: флаг Чехословакии
+  description: Флаг Чехословакии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1040,8 +1038,8 @@
 
 - type: entity
   id: civ13_wallflag_hungary
-  name: Hungarian flag
-  description: The flag of Hungary.
+  name: флаг Венгрии
+  description: Флаг Венгрии.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1049,8 +1047,8 @@
 
 - type: entity
   id: civ13_wallflag_warpact
-  name: WARPACT flag
-  description: The flag of the Wasrsaw Pact.
+  name: флаг Варшавского договора
+  description: Флаг Организации Варшавского договора.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1065,8 +1063,8 @@
 
 - type: entity
   id: civ13_wallflag_nato
-  name: NATO flag
-  description: The flag of North Atlantic Treaty Organization.
+  name: флаг НАТО
+  description: Флаг Организации Североатлантического договора.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1074,8 +1072,8 @@
 
 - type: entity
   id: civ13_wallflag_redmenia
-  name: Redmenian flag
-  description: The flag of the Empire of Redmenia.
+  name: флаг Редмении
+  description: Флаг Редменийской империи.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1083,8 +1081,8 @@
 
 - type: entity
   id: civ13_wallflag_blugoslavia
-  name: Blugoslavian flag
-  description: The flag of the Republic of Blugoslavia.
+  name: флаг Блугославии
+  description: Флаг Республики Блугославия.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1092,8 +1090,8 @@
 
 - type: entity
   id: civ13_wallflag_yellandia
-  name: Yellandian flag
-  description: The flag of the Federation of Yellandia.
+  name: флаг Йелландии
+  description: Флаг Федерации Йелландия.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1101,8 +1099,8 @@
 
 - type: entity
   id: civ13_wallflag_greenistan
-  name: Greenistani flag
-  description: The flag of the People's Republic of Greenistan.
+  name: флаг Гринистана
+  description: Флаг Народной Республики Гринистан.
   parent: WallFlagWhite
   components:
     - type: Sprite
@@ -1110,8 +1108,8 @@
 
 - type: entity
   id: civ13_wallflag_arstotzka
-  name: Arstotzkan flag
-  description: Glory to Arstotzka!
+  name: флаг Арстоцки
+  description: Слава Арстоцке!
   parent: WallFlagWhite
   components:
     - type: Sprite

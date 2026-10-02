@@ -1,8 +1,8 @@
 - type: entity
-  name: gloves
+  name: "перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_gloves
-  description: A pair of gloves, they don't look special in any way.
+  description: "Обычная пара перчаток."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -24,10 +24,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white fur gloves
+  name: "белые меховые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_white_fur_gloves
-  description: ""
+  description: "Тёплые перчатки из белого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
@@ -49,10 +49,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: orange gloves
+  name: "оранжевые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_orange_gloves
-  description: ""
+  description: "Яркие оранжевые перчатки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/orange.rsi
@@ -74,10 +74,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: goalkeeper gloves
+  name: "вратарские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_goalkeeper_gloves
-  description: ""
+  description: "Перчатки для защиты рук вратаря."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -99,10 +99,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: goalkeeper gloves
+  name: "вратарские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_goalkeeper_gloves_1
-  description: ""
+  description: "Перчатки для защиты рук вратаря."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -124,10 +124,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: purple gloves
+  name: "фиолетовые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_purple_gloves
-  description: ""
+  description: "Фиолетовые перчатки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/purple.rsi
@@ -149,10 +149,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: grey fur gloves
+  name: "серые меховые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_grey_fur_gloves
-  description: ""
+  description: "Тёплые перчатки из серого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/greyfur.rsi
@@ -174,10 +174,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: light brown gloves
+  name: "светло-коричневые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_light_brown_gloves
-  description: ""
+  description: "Перчатки светло-коричневого цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/lightbrown.rsi
@@ -199,10 +199,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: brown fur gloves
+  name: "коричневые меховые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_brown_fur_gloves
-  description: ""
+  description: "Тёплые перчатки из коричневого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/brownfur.rsi
@@ -224,10 +224,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: red leather gloves
+  name: "красные кожаные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_red_leather_gloves
-  description: A pair of gloves, They look fancy and expensive.
+  description: "Дорогие на вид перчатки из красной кожи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/luxglove.rsi
@@ -249,10 +249,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: pink colored gloves
+  name: "розовые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_pink_colored_gloves
-  description: A pair of gloves, They look fancy.
+  description: "Нарядные розовые перчатки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/luxglove1.rsi
@@ -274,10 +274,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: watch
+  name: "наручные часы"
   parent: ClothingHandsBase
   id: civ13_gloves_watch
-  description: A watch you wear on your hand.
+  description: "Обычные часы, которые носят на запястье."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/watch.rsi
@@ -299,10 +299,10 @@
       material: Steel
       time: 20
 - type: entity
-  name: expensive watch
+  name: "дорогие наручные часы"
   parent: ClothingHandsBase
   id: civ13_gloves_expensive_watch
-  description: A watch you wear on your hand. Looks quite expensive.
+  description: "Наручные часы, которые явно стоят немало."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/specialwatch.rsi
@@ -324,10 +324,10 @@
       material: Silver
       time: 20
 - type: entity
-  name: gold watch
+  name: "позолоченные часы"
   parent: ClothingHandsBase
   id: civ13_gloves_gold_watch
-  description: A watch you wear on your hand. This one is plated in gold.
+  description: "Наручные часы с позолоченным корпусом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/goldwatch.rsi
@@ -349,10 +349,10 @@
       material: Gold
       time: 20
 - type: entity
-  name: silver ring
+  name: "серебряное кольцо"
   parent: ClothingHandsBase
   id: civ13_gloves_silver_ring
-  description: A shiny silver ring. Looks expensive.
+  description: "Блестящее серебряное кольцо. Выглядит дорогим."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/silver_ring.rsi
@@ -374,10 +374,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: captain's gloves
+  name: "капитанские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_captains_gloves
-  description: Regal blue gloves, with a nice gold trim. Swanky.
+  description: "Синие перчатки с золотой отделкой. Очень представительные."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/captain.rsi
@@ -399,10 +399,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black gloves
+  name: "чёрные рабочие перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_black_gloves
-  description: These work gloves are thick and fire-resistant.
+  description: "Толстые рабочие перчатки, устойчивые к огню."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/black.rsi
@@ -424,10 +424,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: leather gloves
+  name: "кожаные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_leather_gloves
-  description: These leather gloves are cold and fire-resistant.
+  description: "Кожаные перчатки защищают от холода и огня."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/leather.rsi
@@ -449,10 +449,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: black fur gloves
+  name: "чёрные меховые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_black_fur_gloves
-  description: ""
+  description: "Тёплые перчатки из чёрного меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
@@ -474,10 +474,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: human skin gloves
+  name: "перчатки из человеческой кожи"
   parent: ClothingHandsBase
   id: civ13_gloves_human_skin_gloves
-  description: Gloves made of human skin. Barbaric.
+  description: "Перчатки из человеческой кожи. Варварство."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/pinkfur.rsi
@@ -499,10 +499,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: orcish gauntlets
+  name: "оркские латные рукавицы"
   parent: ClothingHandsBase
   id: civ13_gloves_orcish_gauntlets
-  description: A pair of orcish armored gauntlets.
+  description: "Бронированные рукавицы орков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/ork_gauntlet.rsi
@@ -523,10 +523,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fire-resistant gloves
+  name: "огнестойкие перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_fire_resistant_gloves
-  description: ""
+  description: "Перчатки для защиты рук от жара и огня."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/firefighter.rsi
@@ -548,10 +548,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: combat gloves
+  name: "боевые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_combat_gloves
-  description: These tactical gloves are somewhat fire and impact resistant.
+  description: "Тактические перчатки, отчасти защищающие от огня и ударов."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/black.rsi
@@ -573,10 +573,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: swat gloves
+  name: "перчатки спецназа"
   parent: ClothingHandsBase
   id: civ13_gloves_swat_gloves
-  description: Combat gloves used by swat officers.
+  description: "Боевые перчатки сотрудников спецназа."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/swat.rsi
@@ -598,10 +598,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Officer gloves
+  name: "офицерские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_Officer_gloves
-  description: Shiny black gloves used by officers to keep their hands clean.
+  description: "Блестящие чёрные перчатки, в которых офицеру легко сохранить руки чистыми."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/swat.rsi
@@ -623,10 +623,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: gold plated gloves
+  name: "позолоченные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_gold_plated_gloves
-  description: Gold plated gloves. These look expensive.
+  description: "Позолоченные перчатки. Выглядят очень дорогими."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/salamon.rsi
@@ -648,12 +648,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: botanist's leather gloves
+  name: "кожаные перчатки ботаника"
   parent: ClothingHandsBase
   id: civ13_gloves_botanists_leather_gloves
-  description: >-
-    These leather work gloves protect against thorns, barbs, prickles, spikes
-    and other harmful objects of floral origin.
+  description: "Рабочие перчатки, защищающие от шипов, колючек и других неприятных сюрпризов растений."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/leather.rsi
@@ -675,10 +673,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: oven mittens
+  name: "кухонные рукавицы"
   parent: ClothingHandsBase
   id: civ13_gloves_oven_mittens
-  description: Thick padded gloves worn to protect the hands from heat retrieving food.
+  description: "Плотные рукавицы для работы с горячей посудой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/oven_mitts.rsi
@@ -700,10 +698,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: cavalry gloves
+  name: "кавалерийские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_cavalry_gloves
-  description: Gloves worn by union cavalry and other military personel.
+  description: "Перчатки, которые носят кавалеристы и другие военные."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/union_gloves.rsi
@@ -725,10 +723,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: boxing gloves
+  name: "боксёрские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_boxing_gloves
-  description: Because you really needed another excuse to punch your crewmates.
+  description: "Как будто вам нужен ещё один повод подраться с товарищами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/boxing.rsi
@@ -750,10 +748,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: latex gloves
+  name: "латексные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_latex_gloves
-  description: Sterile gloves.
+  description: "Стерильные латексные перчатки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -773,10 +771,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NBC gloves
+  name: "перчатки химзащиты"
   parent: ClothingHandsBase
   id: civ13_gloves_NBC_gloves
-  description: Sterile gloves which also protect you from ambient radiation.
+  description: "Стерильные перчатки, которые также защищают от окружающей радиации."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/latex.rsi
@@ -797,10 +795,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: nitrile gloves
+  name: "нитриловые перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_nitrile_gloves
-  description: Sterile gloves.
+  description: "Стерильные нитриловые перчатки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/blue.rsi
@@ -820,10 +818,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: plastoid gloves
+  name: "пластоидные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_plastoid_gloves
-  description: A pair of plastoid gloves.
+  description: "Пара перчаток из пластоида."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/replicant_gloves.rsi
@@ -844,10 +842,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: very black gloves
+  name: "непроглядно-чёрные перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_very_black_gloves
-  description: A pair of void black gloves.
+  description: "Перчатки чернее пустоты."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/veryblack.rsi
@@ -868,10 +866,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: specialist leather gloves
+  name: "кожаные перчатки специалиста"
   parent: ClothingHandsBase
   id: civ13_gloves_specialist_leather_gloves
-  description: ""
+  description: "Добротные кожаные перчатки специалиста."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/toughguy.rsi
@@ -892,10 +890,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: creed gauntlets
+  name: "латные рукавицы Кредо"
   parent: ClothingHandsBase
   id: civ13_gloves_creed_gauntlets
-  description: A pair of armored creed gauntlets with a hidden blade.
+  description: "Бронированные рукавицы Кредо со скрытым клинком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/ac_gauntlets.rsi
@@ -917,10 +915,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fingerless black gloves
+  name: "чёрные перчатки без пальцев"
   parent: ClothingHandsBase
   id: civ13_gloves_fingerless_black_gloves
-  description: ""
+  description: "Чёрные перчатки с открытыми пальцами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
@@ -942,10 +940,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: hand wraps
+  name: "обмотки для рук"
   parent: ClothingHandsBase
   id: civ13_gloves_hand_wraps
-  description: ""
+  description: "Полосы ткани, которыми обматывают руки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/ncr_handwraps.rsi
@@ -967,10 +965,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: legionaire hand wraps
+  name: "обмотки легионера"
   parent: ClothingHandsBase
   id: civ13_gloves_legionaire_hand_wraps
-  description: ""
+  description: "Обмотки для рук, которые носят легионеры."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/legion_handwraps.rsi
@@ -992,10 +990,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: fingerless combat gloves
+  name: "боевые перчатки без пальцев"
   parent: ClothingHandsBase
   id: civ13_gloves_fingerless_combat_gloves
-  description: ""
+  description: "Тактические перчатки с открытыми пальцами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
@@ -1017,10 +1015,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: armored gauntlets
+  name: "латные рукавицы"
   parent: ClothingHandsBase
   id: civ13_gloves_armored_gauntlets
-  description: A pair of armored iron gauntlets.
+  description: "Железные рукавицы для защиты кистей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/gauntlet.rsi
@@ -1041,10 +1039,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: kote gauntlets
+  name: "рукавицы котэ"
   parent: ClothingHandsBase
   id: civ13_gloves_kote_gauntlets
-  description: A pair of armored iron bracer guards of japanese origin.
+  description: "Японская защита предплечий с железными пластинами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/kote.rsi
@@ -1065,10 +1063,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dwemmer gauntlets
+  name: "двемерские латные рукавицы"
   parent: ClothingHandsBase
   id: civ13_gloves_dwemmer_gauntlets
-  description: A pair of armored dwemmer bracer guards of dwemmer origin.
+  description: "Защита предплечий из двемерского металла."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/dwoves.rsi
@@ -1089,10 +1087,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black motorist gloves
+  name: "чёрные водительские перчатки"
   parent: ClothingHandsBase
   id: civ13_gloves_black_motorist_gloves
-  description: ""
+  description: "Чёрные перчатки для вождения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/gloves/motorist.rsi

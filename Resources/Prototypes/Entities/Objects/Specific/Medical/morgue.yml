@@ -114,8 +114,8 @@
 - type: entity
   parent: BaseItem
   id: Ash
-  name: ash
-  description: This used to be something, but now it's not.
+  name: "пепел"
+  description: "Когда-то это было чем-то другим."
   components:
     - type: STWeight
       self: 0.75

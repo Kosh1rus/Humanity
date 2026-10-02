@@ -1,8 +1,8 @@
 - type: entity
   parent: StructureDecorativeBase
   id: StructureDecorativeMachines
-  name: military radio
-  description: A military radio.
+  name: армейская радиостанция
+  description: Армейская радиостанция.
   suffix: decorative
   abstract: true
   components:
@@ -23,8 +23,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadio
-  name: military radio
-  description: A military radio.
+  name: армейская радиостанция
+  description: Армейская радиостанция.
   suffix: decorative
   components:
     - type: Sprite
@@ -35,8 +35,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadioTransmitter
-  name: radio transmitter
-  description: A powerful radio transmitter.
+  name: радиопередатчик
+  description: Мощный радиопередатчик.
   suffix: decorative
   components:
     - type: Sprite
@@ -47,8 +47,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRecorder
-  name: recorder
-  description: A tape recorder.
+  name: магнитофон
+  description: Кассетный магнитофон.
   suffix: decorative
   components:
     - type: Sprite
@@ -59,8 +59,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeMachine
-  name: machine
-  description: Some sort of machine. Not sure what this does.
+  name: машина
+  description: Какая-то машина. Трудно сказать, для чего она нужна.
   suffix: decorative
   components:
     - type: Sprite
@@ -71,8 +71,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeFOB
-  name: FOB transmitter
-  description: A transmitter for a FOB command post.
+  name: передатчик полевого штаба
+  description: Передатчик для передового командного пункта.
   suffix: decorative
   components:
     - type: Sprite
@@ -82,8 +82,8 @@
 - type: entity
   parent: StructureDecorativeFOB
   id: StructureDecorativeFOBFlipped
-  name: FOB transmitter
-  description: A transmitter for a FOB command post.
+  name: передатчик полевого штаба
+  description: Передатчик для передового командного пункта.
   suffix: decorative
   components:
     - type: Sprite
@@ -94,8 +94,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeSupplyCrate
-  name: supply crate
-  description: A crate of assorted supplies.
+  name: ящик с припасами
+  description: Ящик с разнообразными припасами.
   suffix: decorative
   components:
     - type: Sprite
@@ -105,8 +105,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadiator
-  name: radiator
-  description: An old radiator.
+  name: радиатор отопления
+  description: Старый радиатор отопления.
   suffix: decorative
   components:
     - type: Sprite
@@ -116,8 +116,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeBathtube
-  name: bathtub
-  description: An old bathtub.
+  name: ванна
+  description: Старая ванна.
   suffix: decorative
   components:
     - type: Sprite
@@ -128,8 +128,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeWashingMachine
-  name: washing machine
-  description: An old washing machine.
+  name: стиральная машина
+  description: Старая стиральная машина.
   suffix: decorative
   components:
     - type: Sprite
@@ -140,8 +140,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeStove
-  name: stove
-  description: An old gas stove.
+  name: плита
+  description: Старая газовая плита.
   suffix: decorative
   components:
     - type: Sprite
@@ -152,8 +152,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeTV
-  name: TV
-  description: An old TV.
+  name: телевизор
+  description: Старый телевизор.
   suffix: decorative
   components:
     - type: Sprite
@@ -164,8 +164,8 @@
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeCashRegister
-  name: cash register
-  description: A standard cash register.
+  name: кассовый аппарат
+  description: Обычный кассовый аппарат.
   suffix: decorative
   components:
     - type: Sprite

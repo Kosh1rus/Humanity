@@ -2,7 +2,7 @@
   id: SovietCWCaptain
   name: job-name-civ-sovietcw-cpt
   faction: SovietCW
-  originalName: Kapitan
+  originalName: Капитан
   description: job-description-civ-sovietcw-cpt
   playTimeTracker: JobSovietCWCaptain
   requirements:
@@ -47,7 +47,7 @@
 
 - type: job
   id: SovietCWSergeant
-  originalName: Serzhant
+  originalName: Сержант
   name: job-name-civ-sovietcw-sgt
   faction: SovietCW
   description: job-description-civ-sovietcw-sgt
@@ -101,7 +101,7 @@
   id: SovietCWRifleman
   name: job-name-civ-sovietcw-rifleman
   faction: SovietCW
-  originalName: Strelok
+  originalName: Стрелок
   description: job-description-civ-sovietcw-rifleman
   playTimeTracker: JobSovietCWRifleman
   startingGear: SovietCWRiflemanGear
@@ -165,7 +165,7 @@
   id: SovietCWMachinegunner
   name: job-name-civ-sovietcw-machinegunner
   faction: SovietCW
-  originalName: Pulemyotchik
+  originalName: Пулемётчик
   description: job-description-civ-sovietcw-machinegunner
   playTimeTracker: JobSovietCWMachinegunner
   startingGear: SovietCWMachinegunnerGear
@@ -234,7 +234,7 @@
   id: SovietCWMedic
   name: job-name-civ-sovietcw-medic
   faction: SovietCW
-  originalName: Vrach
+  originalName: Врач
   description: job-description-civ-sovietcw-medic
   playTimeTracker: JobSovietCWMedic
   startingGear: SovietCWMedicGear

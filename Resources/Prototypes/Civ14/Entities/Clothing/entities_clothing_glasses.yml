@@ -1,8 +1,8 @@
 - type: entity
-  name: eyepatch
+  name: "повязка на глаз"
   parent: ClothingEyesGlasses
   id: civ13_glasses_eyepatch
-  description: Yarr.
+  description: "Йо-хо-хо!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/eyepatch.rsi
@@ -24,10 +24,10 @@
       material: Cloth
       time: 6
 - type: entity
-  name: monocle
+  name: "монокль"
   parent: ClothingEyesGlasses
   id: civ13_glasses_monocle
-  description: Such a dapper eyepiece!
+  description: "Изысканный оптический аксессуар."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/monocle.rsi
@@ -49,10 +49,10 @@
       material: Iron
       time: 11
 - type: entity
-  name: Prescription Glasses
+  name: "очки с диоптриями"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Prescription_Glasses
-  description: Made by Nerd. Co.
+  description: "Изготовлены компанией «Ботан и Ко»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/glasses.rsi
@@ -73,10 +73,10 @@
       cost: 6
       time: 12
 - type: entity
-  name: Prescription Glasses
+  name: "очки с диоптриями"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Prescription_Glasses_1
-  description: Made by Uncool. Co.
+  description: "Изготовлены компанией «Не круто и Ко»."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/hipster_glasses.rsi
@@ -98,10 +98,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Green Glasses
+  name: "зелёные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Green_Glasses
-  description: Forest green glasses, like the kind you'd wear when hatching a nasty scheme.
+  description: "Очки цвета лесной зелени. В таких наверняка удобно строить коварные планы."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/gglasses.rsi
@@ -122,12 +122,10 @@
       cost: 6
       time: 12
 - type: entity
-  name: sunglasses
+  name: "солнцезащитные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_sunglasses
-  description: >-
-    Strangely ancient technology used to help provide rudimentary eye cover.
-    Enhanced lenses blocks deadly sun rays.
+  description: "Старинное приспособление для защиты глаз. Улучшенные линзы задерживают опасное солнечное излучение."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/sun.rsi
@@ -148,10 +146,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: blindfold
+  name: "повязка на глаза"
   parent: ClothingEyesGlasses
   id: civ13_glasses_blindfold
-  description: Covers the eyes, preventing sight.
+  description: "Полностью закрывает глаза и лишает зрения."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/blindfold.rsi
@@ -173,12 +171,10 @@
       material: Cloth
       time: 6
 - type: entity
-  name: large sunglasses
+  name: "большие солнцезащитные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_large_sunglasses
-  description: >-
-    Strangely ancient technology used to help provide rudimentary eye cover.
-    Enhanced shielding blocks many flashes.
+  description: "Крупные очки с усиленной защитой от ярких вспышек."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/bigsunglasses.rsi
@@ -199,10 +195,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: red vintage glasses
+  name: "красные винтажные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_red_vintage_glasses
-  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  description: "Очки в духе шестидесятых. Самое то для модника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/redlense.rsi
@@ -224,10 +220,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue vintage glasses
+  name: "синие винтажные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_blue_vintage_glasses
-  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  description: "Очки в духе шестидесятых. Самое то для модника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/bluelense.rsi
@@ -249,10 +245,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: green vintage glasses
+  name: "зелёные винтажные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_green_vintage_glasses
-  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  description: "Очки в духе шестидесятых. Самое то для модника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/greenlense.rsi
@@ -274,10 +270,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: yellow vintage glasses
+  name: "жёлтые винтажные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_yellow_vintage_glasses
-  description: A pair of glasses that look like they're from the 60's, Groovy BAY'BE.
+  description: "Очки в духе шестидесятых. Самое то для модника."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/yellowlense.rsi
@@ -299,12 +295,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: univisor red
+  name: "красный моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_red
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_r.rsi
@@ -325,12 +319,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: univisor cyan
+  name: "голубой моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_cyan
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_c.rsi
@@ -351,12 +343,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: univisor green
+  name: "зелёный моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_green
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_g.rsi
@@ -377,12 +367,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: univisor yellow
+  name: "жёлтый моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_yellow
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_y.rsi
@@ -403,12 +391,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: univisor white
+  name: "белый моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_white
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_w.rsi
@@ -429,12 +415,10 @@
       cost: 2
       time: 9
 - type: entity
-  name: univisor flashy
+  name: "яркий моновизор"
   parent: ClothingEyesGlasses
   id: civ13_glasses_univisor_flashy
-  description: >-
-    A uni lense visor that look like they're from the 80's, Looks a bit
-    futuristic.
+  description: "Броский визор с одной сплошной линзой в стиле восьмидесятых."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/univisor_flashy.rsi
@@ -455,10 +439,10 @@
       cost: 3
       time: 9
 - type: entity
-  name: goggles
+  name: "защитные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_goggles
-  description: Standard combat goggles.
+  description: "Стандартные боевые защитные очки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
@@ -480,10 +464,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Ballistic goggles
+  name: "баллистические очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Ballistic_goggles
-  description: Standard ballistic combat goggles, they protect your eyes from shrapnel.
+  description: "Боевые очки, защищающие глаза от осколков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
@@ -505,10 +489,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Pilot goggles
+  name: "лётные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Pilot_goggles
-  description: Early 20th century pilot goggles.
+  description: "Лётные очки образца начала XX века."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/biker.rsi
@@ -530,12 +514,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: Night Vision Goggles
+  name: "очки ночного видения"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Night_Vision_Goggles
-  description: >-
-    Enhances vision in low-light conditions, allowing you to see clearly in the
-    dark.
+  description: "Улучшают зрение при слабом освещении и позволяют видеть в темноте."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/nvg_off.rsi
@@ -557,10 +539,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Thermal Vision Goggles
+  name: "тепловизионные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Thermal_Vision_Goggles
-  description: Greatly enhances vision of thermal objects.
+  description: "Позволяют хорошо различать источники тепла."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
@@ -582,12 +564,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Modern Thermal Vision Goggles
+  name: "современные тепловизионные очки"
   parent: ClothingEyesGlasses
   id: civ13_glasses_Modern_Thermal_Vision_Goggles
-  description: >-
-    Modern Set of thermal vision goggles which also allow you to see in the
-    dark.
+  description: "Современные тепловизионные очки, позволяющие также видеть в темноте."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi

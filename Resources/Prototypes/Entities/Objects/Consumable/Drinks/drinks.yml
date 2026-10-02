@@ -85,8 +85,8 @@
 
 # Transformable container - normal glass
 - type: entity
-  name: metamorphic glass
-  description: A metamorphic glass that automagically turns into a glass appropriate for the drink within. There's a sanded off patent number on the bottom.
+  name: "метаморфный стакан"
+  description: "Сам собой принимает форму бокала, подходящего налитому напитку. На дне стёрт номер патента."
   parent: DrinkGlassBase
   id: DrinkGlass
   components:
@@ -1954,8 +1954,8 @@
 - type: entity
   parent: DrinkGlassBase
   id: DrinkTeapot
-  name: teapot  # short and stout
-  description: An elegant teapot. It simply oozes class.
+  name: "чайник"
+  description: "Изящный чайник. В нём чувствуется настоящий стиль."
   components:
   - type: SolutionContainerManager
     solutions:

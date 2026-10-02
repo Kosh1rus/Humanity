@@ -1,8 +1,8 @@
 - type: entity
-  name: bed
+  name: "кровать"
   id: Bed
   parent: BaseStructure
-  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  description: "На ней можно лежать, спать или закрепить пациента. Отдых здесь очень медленно восстанавливает здоровье."
   components:
     - type: HealOnBuckle
       damage:
@@ -64,8 +64,8 @@
 - type: entity
   parent: Bed
   id: MedicalBed
-  name: medical bed
-  description: A hospital bed for patients to recover in. Resting here provides fairly slow healing.
+  name: "медицинская кровать"
+  description: "Больничная кровать для восстановления пациента. Отдых здесь понемногу восстанавливает здоровье."
   components:
     - type: Sprite
       sprite: Structures/Furniture/furniture.rsi
@@ -158,8 +158,8 @@
 - type: entity
   parent: Bed
   id: PsychBed
-  name: psychologist bed
-  description: An upholstered bed for the psychological care of patients.
+  name: "кушетка психолога"
+  description: "Мягкая кушетка для психологических консультаций."
   components:
     - type: Sprite
       sprite: Structures/Furniture/furniture.rsi

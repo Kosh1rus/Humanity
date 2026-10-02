@@ -63,10 +63,10 @@
       state: Burnt
 
 - type: entity
-  name: match box
+  name: "коробок спичек"
   parent: [SmallboxItem, BaseBagOpenClose]
   id: Matchbox
-  description: A small box of Almost But Not Quite Plasma Premium Matches.
+  description: "Небольшой коробок первоклассных спичек «Почти плазма»."
   components:
     - type: EmitSoundOnLand
       sound:

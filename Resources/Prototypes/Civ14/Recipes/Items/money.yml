@@ -1,11 +1,11 @@
 - type: construction
-  name: silver coins
+  name: "серебряные монеты"
   id: SilverCoins
   graph: SilverCoins
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: The basic unit of money, 10 coins equals one ingot of silver.
+  description: "Основная денежная единица. Десять монет равны одному серебряному слитку."
   icon: { sprite: Civ14/Objects/money.rsi, state: coin_silver_new_10 }
   objectType: Item
   agemin: 0

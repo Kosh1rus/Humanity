@@ -842,10 +842,10 @@
               Quantity: 1
 
 - type: entity
-  name: grilled cheese sandwich
+  name: "горячий бутерброд с сыром"
   parent: FoodBakedBase
   id: FoodBakedGrilledCheeseSandwich
-  description: Bread and cheese toasted with butter, perfect for a chilly day in space.
+  description: "Поджаренный хлеб с сыром и маслом. То, что нужно в холодный день на станции."
   components:
     - type: FlavorProfile
       flavors:

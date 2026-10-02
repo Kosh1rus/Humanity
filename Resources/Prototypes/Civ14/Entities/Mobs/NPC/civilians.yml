@@ -1,5 +1,6 @@
 - type: entity
-  name: civilian
+  name: "мирный житель"
+  description: "Обычный житель этих мест."
   parent: BaseMobHuman
   id: MobCivilian
   suffix: AI NPC

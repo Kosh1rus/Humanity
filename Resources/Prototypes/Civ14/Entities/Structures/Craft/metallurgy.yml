@@ -1,8 +1,8 @@
 - type: entity
   id: StoneKiln
-  name: stone kiln
+  name: каменная плавильня
   parent: OreProcessor
-  description: Used for smelting ore to produce metals.
+  description: В ней переплавляют руду в металл.
   components:
     - type: Sprite
       sprite: Civ14/Objects/metallurgy.rsi
@@ -91,9 +91,9 @@
 # bloomery
 - type: entity
   id: Bloomery
-  name: bloomery
+  name: сыродутный горн
   parent: OreProcessor
-  description: Used for smelting iron ore.
+  description: В нём выплавляют железо из руды.
   components:
     - type: Sprite
       sprite: Civ14/Objects/metallurgy.rsi

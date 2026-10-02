@@ -1,8 +1,8 @@
 - type: entity
   id: OperatingTable
   parent: Bed
-  name: operating table
-  description: Special medical table for surgery. This one just seems to be a useless prop, though.
+  name: "операционный стол"
+  description: "Специальный стол для хирургических операций. Правда, этот, похоже, стоит здесь только для вида."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/optable.rsi

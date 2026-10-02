@@ -1,8 +1,8 @@
 - type: entity
   id: DoctorsHandbook
   parent: BaseItem
-  name: "doctor's handbook"
-  description: A medical guidebook that helps you diagnose patients.
+  name: "справочник врача"
+  description: "Медицинский справочник, помогающий ставить диагноз."
   components:
     - type: Sprite
       sprite: Civ14/Objects/library.rsi
@@ -22,13 +22,13 @@
       agemax: 8
 
 - type: construction
-  name: "doctor's handbook"
+  name: "справочник врача"
   id: DoctorsHandbook
   graph: DoctorsHandbook
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: A medical guidebook that helps you diagnose patients.
+  description: "Медицинский справочник, помогающий ставить диагноз."
   icon: { sprite: Civ14/Objects/library.rsi, state: bookmed }
   objectType: Item
   agemin: 0

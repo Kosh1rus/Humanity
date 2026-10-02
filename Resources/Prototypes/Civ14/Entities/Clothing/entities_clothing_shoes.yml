@@ -1,8 +1,8 @@
 - type: entity
-  name: shoes
+  name: "туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_shoes
-  description: A pair of shoes.
+  description: "Обычная пара туфель."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/white.rsi
@@ -17,10 +17,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: white fur boots
+  name: "белые меховые сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_white_fur_boots
-  description: Dense fur boots.
+  description: "Плотные тёплые сапоги из белого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur4.rsi
@@ -43,10 +43,10 @@
       time: 8
 
 - type: entity
-  name: brown fur boots
+  name: "коричневые меховые сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_brown_fur_boots
-  description: Dense fur boots.
+  description: "Плотные тёплые сапоги из коричневого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur1.rsi
@@ -68,10 +68,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: red shoes
+  name: "красные туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_red_shoes
-  description: Stylish red shoes.
+  description: "Стильные красные туфли."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/red.rsi
@@ -86,10 +86,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: orange shoes
+  name: "оранжевые туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_orange_shoes
-  description: ""
+  description: "Яркие оранжевые туфли."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/orange.rsi
@@ -104,10 +104,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: jackboots
+  name: "сапоги с высоким голенищем"
   parent: ClothingShoesBase
   id: civ13_shoes_jackboots
-  description: Military-style boots designed for combat or rugged environments.
+  description: "Армейские сапоги для боя и передвижения по пересечённой местности."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
@@ -129,10 +129,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Soviet sapogi boots
+  name: "советские сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_Soviet_sapogi_boots
-  description: Jackboots of Soviet origin. Also known as 'Yuftevyje sapogi'.
+  description: "Крепкие советские юфтевые сапоги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
@@ -154,12 +154,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: workboots
+  name: "рабочие ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_workboots
-  description: >-
-    A pair of steel-toed work boots designed for use in industrial settings.
-    Safety first.
+  description: "Ботинки со стальными подносками для работы на производстве. Безопасность прежде всего."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/workboots.rsi
@@ -181,10 +179,10 @@
       time: 8
 
 - type: entity
-  name: black fur boots
+  name: "чёрные меховые сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_black_fur_boots
-  description: Dense fur boots.
+  description: "Плотные тёплые сапоги из чёрного меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur3.rsi
@@ -206,10 +204,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: military boots
+  name: "военные ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_military_boots
-  description: When you want to turn up the heat.
+  description: "Прочные ботинки для жаркой схватки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -231,10 +229,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: wrapped boots
+  name: "ботинки с обмотками"
   parent: ClothingShoesBase
   id: civ13_shoes_wrapped_boots
-  description: ""
+  description: "Простые ботинки с обмотками на голенях."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
@@ -249,10 +247,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: NCR wrapped boots
+  name: "ботинки НКР с обмотками"
   parent: ClothingShoesBase
   id: civ13_shoes_NCR_wrapped_boots
-  description: ""
+  description: "Армейские ботинки НКР с обмотками на голенях."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
@@ -274,10 +272,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Legionaire armored boots
+  name: "бронированные сапоги легионера"
   parent: ClothingShoesBase
   id: civ13_shoes_Legionaire_armored_boots
-  description: Black boots with armored plating attached.
+  description: "Чёрные сапоги с защитными пластинами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
@@ -299,10 +297,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Leather boots
+  name: "кожаные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_Leather_boots
-  description: A pair of hob-nailed leather boots.
+  description: "Кожаные сапоги, подбитые гвоздями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
@@ -317,10 +315,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Black leather boots
+  name: "чёрные кожаные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_Black_leather_boots
-  description: A pair of hob-nailed leather boots.
+  description: "Чёрные кожаные сапоги, подбитые гвоздями."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
@@ -335,10 +333,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: SWAT boots
+  name: "ботинки спецназа"
   parent: ClothingShoesBase
   id: civ13_shoes_SWAT_boots
-  description: When you want to turn up the heat.
+  description: "Прочные ботинки для самых опасных операций."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -360,10 +358,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: combat boots
+  name: "боевые ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_combat_boots
-  description: When you REALLY want to turn up the heat
+  description: "Тяжёлые ботинки для настоящего боя."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/swat.rsi
@@ -385,10 +383,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: IOG boots
+  name: "боевые ботинки ИОГ"
   parent: ClothingShoesBase
   id: civ13_shoes_IOG_boots
-  description: When you REALLY want to turn up the heat.
+  description: "Тяжёлые армейские ботинки ИОГ."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/iogboot.rsi
@@ -410,10 +408,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sandals
+  name: "деревянные сандалии"
   parent: ClothingShoesBase
   id: civ13_shoes_sandals
-  description: A pair of rather plain, wooden sandals.
+  description: "Простые деревянные сандалии."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sandals.rsi
@@ -426,10 +424,10 @@
       material: WoodPlank
       time: 4
 - type: entity
-  name: leather shoes
+  name: "кожаные туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_leather_shoes
-  description: A sturdy pair of leather shoes.
+  description: "Прочная пара кожаных туфель."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/leather.rsi
@@ -444,10 +442,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: magic shoes
+  name: "волшебные туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_magic_shoes
-  description: A pair of magic, black shoes.
+  description: "Чёрные туфли с магическими свойствами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/black.rsi
@@ -463,10 +461,10 @@
       time: 5
 
 - type: entity
-  name: laceup shoes
+  name: "туфли на шнуровке"
   parent: ClothingShoesBase
   id: civ13_shoes_laceup_shoes
-  description: The height of fashion, and they're pre-polished!
+  description: "Парадные туфли, уже начищенные до блеска."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/laceups.rsi
@@ -481,10 +479,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: grey fur boots
+  name: "серые меховые сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_grey_fur_boots
-  description: Dense fur boots.
+  description: "Плотные тёплые сапоги из серого меха."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur2.rsi
@@ -506,10 +504,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: alligator scale laceup shoes
+  name: "туфли из кожи аллигатора"
   parent: ClothingShoesBase
   id: civ13_shoes_alligator_scale_laceup_shoes
-  description: The height of luxurious footwear, and they're pre-polished!
+  description: "Роскошные туфли на шнуровке, уже начищенные до блеска."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
@@ -524,10 +522,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: chad shoes
+  name: "туфли красавчика"
   parent: ClothingShoesBase
   id: civ13_shoes_chad_shoes
-  description: Ouch!
+  description: "Ай!"
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/chad.rsi
@@ -542,10 +540,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: flip-flops
+  name: "сланцы"
   parent: ClothingShoesBase
   id: civ13_shoes_flip_flops
-  description: Brazilian style flip-flops.
+  description: "Пляжные сланцы в бразильском стиле."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
@@ -560,10 +558,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: plastoid boots
+  name: "пластоидные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_plastoid_boots
-  description: A pair of plastoid boots.
+  description: "Пара сапог из пластоида."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/white.rsi
@@ -585,10 +583,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: red plastoid boots
+  name: "красные пластоидные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_red_plastoid_boots
-  description: A pair of red plastoid boots.
+  description: "Пара красных сапог из пластоида."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/redboots.rsi
@@ -610,10 +608,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: blue plastoid boots
+  name: "синие пластоидные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_blue_plastoid_boots
-  description: A pair of blue plastoid boots.
+  description: "Пара синих сапог из пластоида."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
@@ -635,10 +633,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: sandals
+  name: "кожаные сандалии"
   parent: ClothingShoesBase
   id: civ13_shoes_sandals_1
-  description: Basic leather sandals, going up to the knee.
+  description: "Простые кожаные сандалии с ремнями до колена."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/roman.rsi
@@ -651,10 +649,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: aztec sandals
+  name: "ацтекские сандалии"
   parent: ClothingShoesBase
   id: civ13_shoes_aztec_sandals
-  description: Basic leather sandals, hailing from the jungles.
+  description: "Простые кожаные сандалии родом из джунглей."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/aztec_sandals.rsi
@@ -667,10 +665,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: fur boots
+  name: "меховые сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_fur_boots
-  description: Dense fur boots.
+  description: "Плотные тёплые меховые сапоги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur1.rsi
@@ -692,10 +690,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: human skin boots
+  name: "сапоги из человеческой кожи"
   parent: ClothingShoesBase
   id: civ13_shoes_human_skin_boots
-  description: Human skin boots.
+  description: "Сапоги из человеческой кожи. Лучше не думать об этом."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/fur5.rsi
@@ -717,10 +715,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: orcish sabatons
+  name: "оркские сабатоны"
   parent: ClothingShoesBase
   id: civ13_shoes_orcish_sabatons
-  description: A pair of orc plated armored boots.
+  description: "Тяжёлые бронированные сапоги орков."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
@@ -742,12 +740,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: specialist boots
+  name: "ботинки специалиста"
   parent: ClothingShoesBase
   id: civ13_shoes_specialist_boots
-  description: >-
-    A well made and importantly quiet treading pair of army-issue leather
-    boots..
+  description: "Добротные армейские кожаные ботинки с тихой подошвой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/toughguy.rsi
@@ -769,10 +765,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: creed boots
+  name: "ботинки Кредо"
   parent: ClothingShoesBase
   id: civ13_shoes_creed_boots
-  description: A pair of leather boots worn by the creed.
+  description: "Кожаные ботинки, которые носят члены Кредо."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
@@ -794,10 +790,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Winter wrapped boots
+  name: "зимние ботинки с обмотками"
   parent: ClothingShoesBase
   id: civ13_shoes_Winter_wrapped_boots
-  description: A pair of simple, thin leather boots. Covers up to the lower leg.
+  description: "Простые тонкие кожаные ботинки с защитой голени."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/japboots.rsi
@@ -819,10 +815,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black boots
+  name: "чёрные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_black_boots
-  description: Classic black boots.
+  description: "Классические чёрные сапоги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
@@ -843,10 +839,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: leather boots
+  name: "кожаные сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_leather_boots
-  description: Classic leather boots.
+  description: "Классические кожаные сапоги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
@@ -867,10 +863,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: winter boots
+  name: "зимние сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_winter_boots
-  description: Classic winter boots.
+  description: "Классические зимние сапоги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
@@ -892,10 +888,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black puttee boots
+  name: "чёрные сапоги с обмотками"
   parent: ClothingShoesBase
   id: civ13_shoes_black_puttee_boots
-  description: Classic black boots with white puttees.
+  description: "Классические чёрные сапоги с белыми обмотками."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
@@ -916,10 +912,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: infantry shoes
+  name: "пехотные ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_infantry_shoes
-  description: Low black infantry shoes.
+  description: "Низкие чёрные ботинки пехотинца."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
@@ -942,10 +938,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: black sailor boots
+  name: "чёрные матросские сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_black_sailor_boots
-  description: Classic black sailor boots.
+  description: "Классические чёрные сапоги матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
@@ -966,10 +962,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: leather sailor boots
+  name: "кожаные матросские сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_leather_sailor_boots
-  description: Classic leather sailor boots.
+  description: "Классические кожаные сапоги матроса."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
@@ -991,10 +987,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: military boots
+  name: "песочные военные ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_military_boots_tan
-  description: Classic tan military boots.
+  description: "Классические армейские ботинки песочного цвета."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/usmc.rsi
@@ -1016,10 +1012,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: black riding boots
+  name: "чёрные сапоги для верховой езды"
   parent: ClothingShoesBase
   id: civ13_shoes_black_riding_boots
-  description: Black leather boots with spurs, perfect for riding.
+  description: "Чёрные кожаные сапоги со шпорами. Идеальны для верховой езды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
@@ -1041,10 +1037,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: alligator scale riding boots
+  name: "сапоги для верховой езды из кожи аллигатора"
   parent: ClothingShoesBase
   id: civ13_shoes_alligator_scale_riding_boots
-  description: Alligator scale patterned boots with spurs, perfect for riding in style.
+  description: "Нарядные сапоги из кожи аллигатора со шпорами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
@@ -1066,10 +1062,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: lizard scale riding boots
+  name: "сапоги для верховой езды из кожи ящерицы"
   parent: ClothingShoesBase
   id: civ13_shoes_lizard_scale_riding_boots
-  description: lizard scale patterned boots with spurs, perfect for riding in style.
+  description: "Нарядные сапоги из кожи ящерицы со шпорами."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
@@ -1091,10 +1087,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: leather riding boots
+  name: "кожаные сапоги для верховой езды"
   parent: ClothingShoesBase
   id: civ13_shoes_leather_riding_boots
-  description: Leather boots with spurs, perfect for riding.
+  description: "Кожаные сапоги со шпорами. Идеальны для верховой езды."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
@@ -1116,10 +1112,10 @@
       material: Leather
       time: 5
 - type: entity
-  name: alligator scale ankle boots
+  name: "полусапожки из кожи аллигатора"
   parent: ClothingShoesBase
   id: civ13_shoes_alligator_scale_ankle_boots
-  description: Classy alligator scale ankle-length boots, a certain statement for fashion.
+  description: "Элегантные полусапожки из кожи аллигатора для тех, кто любит выделяться."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
@@ -1141,10 +1137,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: leather shoes
+  name: "кожаные туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_leather_shoes_1
-  description: A pair of simple, thin leather shoes. Covers up to the ankle.
+  description: "Простые тонкие кожаные туфли до щиколотки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/medieval.rsi
@@ -1165,10 +1161,10 @@
       material: Leather
       time: 8
 - type: entity
-  name: arabic leather shoes
+  name: "арабские кожаные туфли"
   parent: ClothingShoesBase
   id: civ13_shoes_arabic_leather_shoes
-  description: A pair of simple, thin leather shoes. Loose at the tip.
+  description: "Простые тонкие кожаные туфли с просторным носком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/arab.rsi
@@ -1189,12 +1185,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: emirate leather shoes
+  name: "кожаные туфли эмирата"
   parent: ClothingShoesBase
   id: civ13_shoes_emirate_leather_shoes
-  description: >-
-    A pair of simple, arabic style leather shoes. Extra padded & loose at the
-    tip.
+  description: "Простые кожаные туфли арабского покроя с мягкой подкладкой и просторным носком."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/emir.rsi
@@ -1215,10 +1209,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: Sabatons
+  name: "сабатоны"
   parent: ClothingShoesBase
   id: civ13_shoes_Sabatons
-  description: A pair of plated armored boots.
+  description: "Латные башмаки, защищающие ноги."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/knight.rsi
@@ -1238,12 +1232,10 @@
       material: Steel
       time: 5
 - type: entity
-  name: steppe wool shoe
+  name: "степные шерстяные башмаки"
   parent: ClothingShoesBase
   id: civ13_shoes_steppe_wool_shoe
-  description: >-
-    A pair of insulated rough woolen shoes for keeping feet warm on the open
-    steppe.
+  description: "Грубые утеплённые башмаки для холода открытой степи."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/steppe_wool_shoes.rsi
@@ -1263,10 +1255,10 @@
       cost: 3
       time: 8
 - type: entity
-  name: geta sandals
+  name: "сандалии гэта"
   parent: ClothingShoesBase
   id: civ13_shoes_geta_sandals
-  description: A pair of simple, wood sandals. Keeps you elevated off he ground slightly.
+  description: "Простые деревянные сандалии, слегка приподнимающие ноги над землёй."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/geta.rsi
@@ -1280,10 +1272,10 @@
       material: WoodPlank
       time: 4
 - type: entity
-  name: tsuranuki
+  name: "цурануки"
   parent: ClothingShoesBase
   id: civ13_shoes_tsuranuki
-  description: A pair of plated shin guards & shoes of japanese origin.
+  description: "Японская обувь с латной защитой голеней."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
@@ -1305,10 +1297,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: dwemmer boots
+  name: "двемерские сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_dwemmer_boots
-  description: A pair of plated boots made of dwemmer metal.
+  description: "Латные сапоги из двемерского металла."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/dwoots.rsi
@@ -1330,10 +1322,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: courier sneakers
+  name: "кроссовки курьера"
   parent: ClothingShoesBase
   id: civ13_shoes_courier_sneakers
-  description: A pair of simple, thin grey sneakers.
+  description: "Простые тонкие серые кроссовки."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
@@ -1355,10 +1347,10 @@
       material: Cloth
       time: 8
 - type: entity
-  name: punk boots
+  name: "панковские сапоги"
   parent: ClothingShoesBase
   id: civ13_shoes_punk_boots
-  description: A pair of stylized high leather boots for kicking the snot out of 'The Man'.
+  description: "Высокие кожаные сапоги для тех, кому надоело терпеть власть имущих."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/punk.rsi
@@ -1380,10 +1372,10 @@
       material: Leather
       time: 11
 - type: entity
-  name: lizard scale ankle boots
+  name: "полусапожки из кожи ящерицы"
   parent: ClothingShoesBase
   id: civ13_shoes_lizard_scale_ankle_boots
-  description: Classy lizard scale ankle-length boots, a certain statement for fashion.
+  description: "Элегантные полусапожки из кожи ящерицы для тех, кто любит выделяться."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
@@ -1398,10 +1390,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: lizard scale laceup shoes
+  name: "туфли из кожи ящерицы"
   parent: ClothingShoesBase
   id: civ13_shoes_lizard_scale_laceup_shoes
-  description: The height of luxurious footwear, and they're pre-polished!
+  description: "Роскошные туфли на шнуровке, уже начищенные до блеска."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
@@ -1416,10 +1408,10 @@
       material: Leather
       time: 6
 - type: entity
-  name: Brown boots
+  name: "коричневые армейские ботинки"
   parent: ClothingShoesBase
   id: civ13_shoes_Brown_boots
-  description: Combat boots made of brown leather with a toe cap and rubber sole.
+  description: "Боевые ботинки из коричневой кожи со стальным подноском и резиновой подошвой."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
@@ -1440,13 +1432,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: Brown boots with leggings
+  name: "коричневые армейские ботинки с крагами"
   parent: ClothingShoesBase
   id: civ13_shoes_Brown_boots_with_leggings
-  description: >-
-    These combat boots are crafted from durable brown leather, featuring a toe
-    cap and rubber sole. They come complete with protective leggings, providing
-    extra coverage and support for the wearer's legs.
+  description: "Прочные коричневые ботинки со стальным подноском, резиновой подошвой и защитными крагами для голеней."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/brownboots_us_ww2_alt.rsi
@@ -1467,10 +1456,10 @@
       material: Cloth
       time: 5
 - type: entity
-  name: football trainers
+  name: "футбольные кроссовки"
   parent: ClothingShoesBase
   id: civ13_shoes_football_trainers
-  description: A pair of football trainers.
+  description: "Пара кроссовок для футбола."
   components:
     - type: Sprite
       sprite: Civ14/Clothing/exported/shoes/football.rsi

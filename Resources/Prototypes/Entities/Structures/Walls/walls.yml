@@ -1393,7 +1393,7 @@
 - type: entity
   parent: WallCobblebrick
   id: WallBasaltCobblebrick
-  name: basalt brick wall
+  name: "стена из базальтового кирпича"
   components:
     - type: Sprite
       sprite: Structures/Walls/cobblebrick_basalt.rsi

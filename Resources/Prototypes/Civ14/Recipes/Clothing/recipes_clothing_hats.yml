@@ -1,11 +1,11 @@
 - type: construction
-  name: ushanka
+  name: "ушанка"
   id: civ13_head_ushanka
   graph: civ13_head_ushanka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A warm ushanka, often worn by citizens and soldiers in cold climates.
+  description: "Тёплая шапка для жителей и солдат холодных краёв."
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_plain_up.rsi
     state: icon
@@ -27,13 +27,13 @@
     entity: civ13_head_ushanka
 
 - type: construction
-  name: leather helmet
+  name: "кожаный шлем"
   id: civ13_head_leather_helmet
   graph: civ13_head_leather_helmet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple leather helmet.
+  description: "Простой шлем из кожи."
   icon:
     sprite: Civ14/Clothing/exported/hats/leatherhelmet.rsi
     state: icon
@@ -54,14 +54,13 @@
   - node: end
     entity: civ13_head_leather_helmet
 - type: construction
-  name: hatchigane headband
+  name: "налобник хатигэнэ"
   id: civ13_head_hatchigane_headband
   graph: civ13_head_hatchigane_headband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A armored leather headband of japanese design, it wears away petty
-    attacks but will not withstand heavy blows.
+  description: "Укреплённый кожаный налобник японского образца. Защитит от лёгкого удара, но не выдержит сильного."
   icon:
     sprite: Civ14/Clothing/exported/hats/hatchigane.rsi
     state: icon
@@ -83,14 +82,13 @@
     entity: civ13_head_hatchigane_headband
 
 - type: construction
-  name: yellow ninja headband
+  name: "жёлтый налобник ниндзя"
   id: civ13_head_yellow_ninja_headband
   graph: civ13_head_yellow_ninja_headband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A armored leather headband of japanese design, wearing it makes you
-    feel faster and the urge to flail your arms behind you as you run.
+  description: "Укреплённый кожаный налобник японского образца. В нём так и хочется бежать, отведя руки назад."
   icon:
     sprite: Civ14/Clothing/exported/hats/yellow_ninja.rsi
     state: icon
@@ -111,13 +109,13 @@
   - node: end
     entity: civ13_head_yellow_ninja_headband
 - type: construction
-  name: VDV beret
+  name: "берет ВДВ"
   id: civ13_head_VDV_beret
   graph: civ13_head_VDV_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A beret worn by the Russian Airborne Forces.
+  description: "Берет российских воздушно-десантных войск."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv_modern.rsi
     state: icon
@@ -139,13 +137,13 @@
     entity: civ13_head_VDV_beret
 
 - type: construction
-  name: viet pith helmet
+  name: "вьетнамский пробковый шлем"
   id: civ13_head_viet_pith_helmet
   graph: civ13_head_viet_pith_helmet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A pith helmet used by the vietnamese.
+  description: "Лёгкий пробковый шлем вьетнамского образца."
   icon:
     sprite: Civ14/Clothing/exported/hats/viet_pith.rsi
     state: icon
@@ -166,13 +164,13 @@
   - node: end
     entity: civ13_head_viet_pith_helmet
 - type: construction
-  name: white hard hat
+  name: "белая строительная каска"
   id: civ13_head_white_hard_hat
   graph: civ13_head_white_hard_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white hard hat used by the workers.
+  description: "Белая защитная каска рабочего."
   icon:
     sprite: Civ14/Clothing/exported/hats/hardhat_white.rsi
     state: icon
@@ -193,13 +191,13 @@
   - node: end
     entity: civ13_head_white_hard_hat
 - type: construction
-  name: yellow cap
+  name: "жёлтая кепка"
   id: civ13_head_yellow_cap
   graph: civ13_head_yellow_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A yellow cap.
+  description: "Обычная жёлтая кепка."
   icon:
     sprite: Civ14/Clothing/exported/hats/yellowcap.rsi
     state: icon
@@ -220,13 +218,13 @@
   - node: end
     entity: civ13_head_yellow_cap
 - type: construction
-  name: orange hard hat
+  name: "оранжевая строительная каска"
   id: civ13_head_orange_hard_hat
   graph: civ13_head_orange_hard_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An orange hard hat used by the workers.
+  description: "Оранжевая защитная каска рабочего."
   icon:
     sprite: Civ14/Clothing/exported/hats/hardhat_orange.rsi
     state: icon
@@ -247,13 +245,13 @@
   - node: end
     entity: civ13_head_orange_hard_hat
 - type: construction
-  name: iron pickelhaube
+  name: "железная пикельхельма"
   id: civ13_head_iron_pickelhaube
   graph: civ13_head_iron_pickelhaube
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A typical pointed helmet.
+  description: "Остроконечный железный шлем."
   icon:
     sprite: Civ14/Clothing/exported/hats/pickelhaube.rsi
     state: icon
@@ -274,13 +272,13 @@
   - node: end
     entity: civ13_head_iron_pickelhaube
 - type: construction
-  name: M1915 Stahlhelm
+  name: "стальной шлем M1915"
   id: civ13_head_M1915_Stahlhelm
   graph: civ13_head_M1915_Stahlhelm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An iconic German Stahlhelm, widely used by soldiers in battle.
+  description: "Узнаваемый немецкий стальной шлем, широко применявшийся в бою."
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm_old.rsi
     state: icon
@@ -301,13 +299,13 @@
   - node: end
     entity: civ13_head_M1915_Stahlhelm
 - type: construction
-  name: iron brodie
+  name: "железный шлем Броди"
   id: civ13_head_iron_brodie
   graph: civ13_head_iron_brodie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A typical rounded helmet.
+  description: "Стальной шлем с широкими полями и округлой тульей."
   icon:
     sprite: Civ14/Clothing/exported/hats/brodie.rsi
     state: icon
@@ -328,13 +326,13 @@
   - node: end
     entity: civ13_head_iron_brodie
 - type: construction
-  name: white papakha
+  name: "белая папаха"
   id: civ13_head_white_papakha
   graph: civ13_head_white_papakha
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A traditional caucasus hat.
+  description: "Традиционный кавказский головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha_white.rsi
     state: icon
@@ -356,14 +354,13 @@
     entity: civ13_head_white_papakha
 
 - type: construction
-  name: sheriff's department cap
+  name: "кепка департамента шерифа"
   id: civ13_head_sheriffs_department_cap
   graph: civ13_head_sheriffs_department_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A baseball cap worn by the LEOs of the town's Sheriff Department. Black
-    version.
+  description: "Чёрная кепка сотрудника городского департамента шерифа."
   icon:
     sprite: Civ14/Clothing/exported/hats/sd_cap_black.rsi
     state: icon
@@ -385,13 +382,13 @@
     entity: civ13_head_sheriffs_department_cap
 
 - type: construction
-  name: NCR Officer Beret
+  name: "офицерский берет НКР"
   id: civ13_head_NCR_Officer_Beret
   graph: civ13_head_NCR_Officer_Beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green camo beret with a capbadge of the NCR's 2 headed bear.
+  description: "Зелёный камуфляжный берет с эмблемой двуглавого медведя НКР."
   icon:
     sprite: Civ14/Clothing/exported/hats/ncr_beret.rsi
     state: icon
@@ -412,13 +409,13 @@
   - node: end
     entity: civ13_head_NCR_Officer_Beret
 - type: construction
-  name: Legionaire Cap
+  name: "шапка легионера"
   id: civ13_head_Legionaire_Cap
   graph: civ13_head_Legionaire_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A rather thin leather cap with ear protection.
+  description: "Тонкая кожаная шапка с защитой ушей."
   icon:
     sprite: Civ14/Clothing/exported/hats/legionaire.rsi
     state: icon
@@ -439,14 +436,13 @@
   - node: end
     entity: civ13_head_Legionaire_Cap
 - type: construction
-  name: leather infantry cap
+  name: "кожаная пехотная шапка"
   id: civ13_head_leather_infantry_cap
   graph: civ13_head_leather_infantry_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A protective leather cap often worn by soldiers of early era modern
-    warfare.
+  description: "Защитная кожаная шапка пехотинца раннего Нового времени."
   icon:
     sprite: Civ14/Clothing/exported/hats/nap_lea_infantry_cap.rsi
     state: icon
@@ -467,14 +463,13 @@
   - node: end
     entity: civ13_head_leather_infantry_cap
 - type: construction
-  name: brown bear pelt hat
+  name: "шапка из бурой медвежьей шкуры"
   id: civ13_head_brown_bear_pelt_hat
   graph: civ13_head_brown_bear_pelt_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A menacing brown bear pelt headcover, to show your enemies how dangerous
-    you are.
+  description: "Грозный головной убор из шкуры бурого медведя: враги сразу поймут, с кем имеют дело."
   icon:
     sprite: Civ14/Clothing/exported/hats/brownbearpelt.rsi
     state: icon
@@ -495,13 +490,13 @@
   - node: end
     entity: civ13_head_brown_bear_pelt_hat
 - type: construction
-  name: blue cap
+  name: "синяя кепка"
   id: civ13_head_blue_cap
   graph: civ13_head_blue_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A blue cap.
+  description: "Обычная синяя кепка."
   icon:
     sprite: Civ14/Clothing/exported/hats/bluecap.rsi
     state: icon
@@ -522,13 +517,13 @@
   - node: end
     entity: civ13_head_blue_cap
 - type: construction
-  name: red cap
+  name: "красная кепка"
   id: civ13_head_red_cap
   graph: civ13_head_red_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red cap.
+  description: "Обычная красная кепка."
   icon:
     sprite: Civ14/Clothing/exported/hats/redcap.rsi
     state: icon
@@ -549,14 +544,13 @@
   - node: end
     entity: civ13_head_red_cap
 - type: construction
-  name: commisar hat
+  name: "фуражка комиссара"
   id: civ13_head_commisar_hat
   graph: civ13_head_commisar_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A protective leather cap often worn by squadron commanders of a grimdark
-    future.
+  description: "Защитная кожаная фуражка командира мрачного будущего."
   icon:
     sprite: Civ14/Clothing/exported/hats/commissar.rsi
     state: icon
@@ -577,14 +571,13 @@
   - node: end
     entity: civ13_head_commisar_hat
 - type: construction
-  name: satsuma infantry hat
+  name: "пехотная шапка Сацумы"
   id: civ13_head_satsuma_infantry_hat
   graph: civ13_head_satsuma_infantry_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A pointed black hat often worn by soldiers of imperial japan's satsuma
-    era.
+  description: "Чёрная остроконечная шапка солдата японского княжества Сацума."
   icon:
     sprite: Civ14/Clothing/exported/hats/nap_satsuma.rsi
     state: icon
@@ -605,14 +598,13 @@
   - node: end
     entity: civ13_head_satsuma_infantry_hat
 - type: construction
-  name: black napoleonic bearskin hat
+  name: "чёрная гренадерская шапка"
   id: civ13_head_black_napoleonic_bearskin_hat
   graph: civ13_head_black_napoleonic_bearskin_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A decorative parade hat felted from bear skin and bronze. Often worn
-    by napoleonic grenadiers.
+  description: "Парадный головной убор наполеоновского гренадера из медвежьего меха и бронзовых украшений."
   icon:
     sprite: Civ14/Clothing/exported/hats/nap_bearskin_hat.rsi
     state: icon
@@ -633,13 +625,13 @@
   - node: end
     entity: civ13_head_black_napoleonic_bearskin_hat
 - type: construction
-  name: gold crown
+  name: "золотая корона"
   id: civ13_head_gold_crown
   graph: civ13_head_gold_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown of gold. Fancy.
+  description: "Роскошная корона из золота."
   icon:
     sprite: Civ14/Clothing/exported/hats/gold_crown.rsi
     state: icon
@@ -660,13 +652,13 @@
   - node: end
     entity: civ13_head_gold_crown
 - type: construction
-  name: silver crown
+  name: "серебряная корона"
   id: civ13_head_silver_crown
   graph: civ13_head_silver_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown of silver. Fancy.
+  description: "Роскошная корона из серебра."
   icon:
     sprite: Civ14/Clothing/exported/hats/silver_crown.rsi
     state: icon
@@ -687,13 +679,13 @@
   - node: end
     entity: civ13_head_silver_crown
 - type: construction
-  name: inlaid gold crown
+  name: "золотая корона с бриллиантом"
   id: civ13_head_inlaid_gold_crown
   graph: civ13_head_inlaid_gold_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown of gold, with a diamond in it. Extra Fancy.
+  description: "Золотая корона с бриллиантом. Ещё роскошнее обычной."
   icon:
     sprite: Civ14/Clothing/exported/hats/gold_crown_diamond.rsi
     state: icon
@@ -714,13 +706,13 @@
   - node: end
     entity: civ13_head_inlaid_gold_crown
 - type: construction
-  name: inlaid silver crown
+  name: "серебряная корона с бриллиантом"
   id: civ13_head_inlaid_silver_crown
   graph: civ13_head_inlaid_silver_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown of silver, with a diamond in it. Extra Fancy.
+  description: "Серебряная корона с бриллиантом. Ещё роскошнее обычной."
   icon:
     sprite: Civ14/Clothing/exported/hats/silver_crown_diamond.rsi
     state: icon
@@ -741,13 +733,13 @@
   - node: end
     entity: civ13_head_inlaid_silver_crown
 - type: construction
-  name: brown padded head-cap
+  name: "коричневый стёганый подшлемник"
   id: civ13_head_brown_padded_head_cap
   graph: civ13_head_brown_padded_head_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A padded brown coif, applies practical if modest protection.
+  description: "Мягкий стёганый подшлемник. Защита скромная, но полезная."
   icon:
     sprite: Civ14/Clothing/exported/hats/brown_eisenbruck.rsi
     state: icon
@@ -768,13 +760,13 @@
   - node: end
     entity: civ13_head_brown_padded_head_cap
 - type: construction
-  name: grey padded head-cap
+  name: "серый стёганый подшлемник"
   id: civ13_head_grey_padded_head_cap
   graph: civ13_head_grey_padded_head_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A padded grey coif, applies practical if modest protection.
+  description: "Мягкий стёганый подшлемник. Защита скромная, но полезная."
   icon:
     sprite: Civ14/Clothing/exported/hats/grey_eisenbruck.rsi
     state: icon
@@ -795,13 +787,13 @@
   - node: end
     entity: civ13_head_grey_padded_head_cap
 - type: construction
-  name: ratty old padded head-cap
+  name: "старый стёганый подшлемник"
   id: civ13_head_ratty_old_padded_head_cap
   graph: civ13_head_ratty_old_padded_head_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A ratty, old padded coif, its color faded but remains protective.
+  description: "Потрёпанный и выцветший подшлемник всё ещё защищает голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/aged_eisenbruck.rsi
     state: icon
@@ -822,14 +814,13 @@
   - node: end
     entity: civ13_head_ratty_old_padded_head_cap
 - type: construction
-  name: italian sallet
+  name: "итальянский салад"
   id: civ13_head_italian_sallet
   graph: civ13_head_italian_sallet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A very protective helmet used by archers and crossbowmen in the 15th
-    century throughout europe.
+  description: "Прочный шлем, каким в Европе XV века пользовались лучники и арбалетчики."
   icon:
     sprite: Civ14/Clothing/exported/hats/italian_sallet_o.rsi
     state: icon
@@ -850,14 +841,13 @@
   - node: end
     entity: civ13_head_italian_sallet
 - type: construction
-  name: german sallet
+  name: "немецкий салад"
   id: civ13_head_german_sallet
   graph: civ13_head_german_sallet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A very protective helmet used by archers and crossbowmen in the 15th
-    century throughout europe.
+  description: "Прочный шлем, каким в Европе XV века пользовались лучники и арбалетчики."
   icon:
     sprite: Civ14/Clothing/exported/hats/german_sallet_o.rsi
     state: icon
@@ -878,14 +868,13 @@
   - node: end
     entity: civ13_head_german_sallet
 - type: construction
-  name: burgundian sallet
+  name: "бургундский салад"
   id: civ13_head_burgundian_sallet
   graph: civ13_head_burgundian_sallet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A very protective helmet used by archers and crossbowmen in the 15th
-    century throughout europe, providing moderate protection.
+  description: "Шлем европейских лучников и арбалетчиков XV века. Даёт умеренную защиту."
   icon:
     sprite: Civ14/Clothing/exported/hats/burg_sallet_o.rsi
     state: icon
@@ -906,14 +895,13 @@
   - node: end
     entity: civ13_head_burgundian_sallet
 - type: construction
-  name: hounskull bascinet
+  name: "бацинет с забралом «собачья морда»"
   id: civ13_head_hounskull_bascinet
   graph: civ13_head_hounskull_bascinet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bascinet helmet with a large outward faceguard; used by knights &
-    heavy infantry in the 14th century.
+  description: "Бацинет с выступающим забралом, каким в XIV веке пользовались рыцари и тяжёлая пехота."
   icon:
     sprite: Civ14/Clothing/exported/hats/bascinet_o.rsi
     state: icon
@@ -934,14 +922,13 @@
   - node: end
     entity: civ13_head_hounskull_bascinet
 - type: construction
-  name: royal mamluk conical helmet
+  name: "царский мамлюкский шлем"
   id: civ13_head_royal_mamluk_conical_helmet
   graph: civ13_head_royal_mamluk_conical_helmet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A royally decorated gold plated conical helmet, with nose and ear protection
-    in mamluk style. It is wrapped in chainmail.
+  description: "Позолоченный конический шлем в мамлюкском стиле с защитой носа и ушей и кольчужной бармицей."
   icon:
     sprite: Civ14/Clothing/exported/hats/mamluk_king.rsi
     state: icon
@@ -962,14 +949,13 @@
   - node: end
     entity: civ13_head_royal_mamluk_conical_helmet
 - type: construction
-  name: royal viking helmet
+  name: "королевский шлем викинга"
   id: civ13_head_royal_viking_helmet_1
   graph: civ13_head_royal_viking_helmet_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A royally decorated gold rounded valkyrie helmet, it is protective
-    and adorned with wings
+  description: "Украшенный золотом округлый шлем с крыльями. Хорошо защищает голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/valkyrie_queen.rsi
     state: icon
@@ -990,14 +976,13 @@
   - node: end
     entity: civ13_head_royal_viking_helmet_1
 - type: construction
-  name: leather samurai helmet
+  name: "кожаный шлем самурая"
   id: civ13_head_leather_samurai_helmet
   graph: civ13_head_leather_samurai_helmet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A thick leather helmet of japanese origin. Typically worn by petty
-    guards and light infantry.
+  description: "Прочный кожаный шлем японского образца. Его носили стражники и лёгкая пехота."
   icon:
     sprite: Civ14/Clothing/exported/hats/samurai_guard3.rsi
     state: icon
@@ -1018,13 +1003,13 @@
   - node: end
     entity: civ13_head_leather_samurai_helmet
 - type: construction
-  name: leather skullcap helmet
+  name: "кожаный шлем с заклёпками"
   id: civ13_head_leather_skullcap_helmet
   graph: civ13_head_leather_skullcap_helmet
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A iron studded leather helmet. Often used by raiders or bands of mercenaries.
+  description: "Кожаный шлем с железными заклёпками. Такими часто пользуются налётчики и наёмники."
   icon:
     sprite: Civ14/Clothing/exported/hats/leather_skullcap_helmet.rsi
     state: icon
@@ -1045,14 +1030,13 @@
   - node: end
     entity: civ13_head_leather_skullcap_helmet
 - type: construction
-  name: jingasa
+  name: "дзингаса"
   id: civ13_head_jingasa
   graph: civ13_head_jingasa
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A thick leather and straw hat of japanese origin. Typically worn by
-    ranged combatant samurai.
+  description: "Японская шляпа из толстой кожи и соломы. Её часто носили воины с дальнобойным оружием."
   icon:
     sprite: Civ14/Clothing/exported/hats/jingasa.rsi
     state: icon
@@ -1073,13 +1057,13 @@
   - node: end
     entity: civ13_head_jingasa
 - type: construction
-  name: kasa
+  name: "каса"
   id: civ13_head_kasa
   graph: civ13_head_kasa
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A thick straw hat of japanese origin. Typically worn by travelers.
+  description: "Толстая японская соломенная шляпа для путешествий."
   icon:
     sprite: Civ14/Clothing/exported/hats/kasa.rsi
     state: icon
@@ -1100,13 +1084,13 @@
   - node: end
     entity: civ13_head_kasa
 - type: construction
-  name: orc beserker helm
+  name: "шлем орка-берсерка"
   id: civ13_head_orc_beserker_helm
   graph: civ13_head_orc_beserker_helm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Orc make good helmet!
+  description: "Орк сделал хороший шлем!"
   icon:
     sprite: Civ14/Clothing/exported/hats/beserkerhelmet.rsi
     state: icon
@@ -1127,13 +1111,13 @@
   - node: end
     entity: civ13_head_orc_beserker_helm
 - type: construction
-  name: orc spearman helm
+  name: "шлем орка-копейщика"
   id: civ13_head_orc_spearman_helm
   graph: civ13_head_orc_spearman_helm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Orc make good helmet!
+  description: "Орк сделал хороший шлем!"
   icon:
     sprite: Civ14/Clothing/exported/hats/spearmanhelmet.rsi
     state: icon
@@ -1154,13 +1138,13 @@
   - node: end
     entity: civ13_head_orc_spearman_helm
 - type: construction
-  name: orc captain helm
+  name: "шлем орочьего капитана"
   id: civ13_head_orc_captain_helm
   graph: civ13_head_orc_captain_helm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Orc make good helmet!
+  description: "Орк сделал хороший шлем!"
   icon:
     sprite: Civ14/Clothing/exported/hats/captainhelmet.rsi
     state: icon
@@ -1181,13 +1165,13 @@
   - node: end
     entity: civ13_head_orc_captain_helm
 - type: construction
-  name: orc grunt helm
+  name: "шлем орка-воина"
   id: civ13_head_orc_grunt_helm
   graph: civ13_head_orc_grunt_helm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Orc make good helmet!
+  description: "Орк сделал хороший шлем!"
   icon:
     sprite: Civ14/Clothing/exported/hats/grunthelmet.rsi
     state: icon
@@ -1208,13 +1192,13 @@
   - node: end
     entity: civ13_head_orc_grunt_helm
 - type: construction
-  name: Leather pickelhaube
+  name: "кожаная пикельхельма"
   id: civ13_head_Leather_pickelhaube
   graph: civ13_head_Leather_pickelhaube
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A typical pointed helmet.
+  description: "Остроконечный кожаный шлем."
   icon:
     sprite: Civ14/Clothing/exported/hats/pickelhaube2.rsi
     state: icon
@@ -1235,13 +1219,13 @@
   - node: end
     entity: civ13_head_Leather_pickelhaube
 - type: construction
-  name: pirate bandana
+  name: "пиратская бандана"
   id: civ13_head_pirate_bandana
   graph: civ13_head_pirate_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Yarr.
+  description: "Йо-хо-хо!"
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana.rsi
     state: icon
@@ -1262,13 +1246,13 @@
   - node: end
     entity: civ13_head_pirate_bandana
 - type: construction
-  name: german stahlhelm
+  name: "немецкая каска «Штальхельм»"
   id: civ13_head_german_stahlhelm
   graph: civ13_head_german_stahlhelm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: The typical rounded steel helmet of the Wehrmacht
+  description: "Стандартная округлая стальная каска вермахта."
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm.rsi
     state: icon
@@ -1289,13 +1273,13 @@
   - node: end
     entity: civ13_head_german_stahlhelm
 - type: construction
-  name: Fallschirmjager stahlhelm
+  name: "каска немецкого десантника"
   id: civ13_head_Fallschirmjager_stahlhelm
   graph: civ13_head_Fallschirmjager_stahlhelm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A fallschirmjager helmet.
+  description: "Стальная каска бойца немецких парашютных войск."
   icon:
     sprite: Civ14/Clothing/exported/hats/stahlhelm_para.rsi
     state: icon
@@ -1316,14 +1300,13 @@
   - node: end
     entity: civ13_head_Fallschirmjager_stahlhelm
 - type: construction
-  name: german medic stahlhelm
+  name: "каска немецкого санитара"
   id: civ13_head_german_medic_stahlhelm
   graph: civ13_head_german_medic_stahlhelm
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: The typical rounded steel helmet of the Wehrmacht, this one belonging
-    to a medic.
+  description: "Стальная каска вермахта с медицинскими знаками."
   icon:
     sprite: Civ14/Clothing/exported/hats/gerhelm_medic.rsi
     state: icon
@@ -1344,14 +1327,13 @@
   - node: end
     entity: civ13_head_german_medic_stahlhelm
 - type: construction
-  name: german stahlhelm
+  name: "каска военной полиции вермахта"
   id: civ13_head_german_stahlhelm_1
   graph: civ13_head_german_stahlhelm_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: The typical rounded steel helmet of the Wehrmacht, this one specifically
-    for MP's.
+  description: "Округлая стальная каска с отличительными знаками военной полиции."
   icon:
     sprite: Civ14/Clothing/exported/hats/gerhelm_mp.rsi
     state: icon
@@ -1372,14 +1354,13 @@
   - node: end
     entity: civ13_head_german_stahlhelm_1
 - type: construction
-  name: chef's hat
+  name: "поварской колпак"
   id: civ13_head_chefs_hat
   graph: civ13_head_chefs_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's a hat used by chefs to keep hair out of your food. Judging by
-    the food in the mess, they don't work.
+  description: "Не даёт волосам попадать в еду. Глядя на обед, трудно поверить, что помогает."
   icon:
     sprite: Civ14/Clothing/exported/hats/chefhat.rsi
     state: icon
@@ -1400,13 +1381,13 @@
   - node: end
     entity: civ13_head_chefs_hat
 - type: construction
-  name: captain's hat
+  name: "капитанская фуражка"
   id: civ13_head_captains_hat
   graph: civ13_head_captains_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's good being the king.
+  description: "Быть капитаном приятно."
   icon:
     sprite: Civ14/Clothing/exported/hats/captain.rsi
     state: icon
@@ -1427,13 +1408,13 @@
   - node: end
     entity: civ13_head_captains_hat
 - type: construction
-  name: cap
+  name: "кепка с козырьком"
   id: civ13_head_cap
   graph: civ13_head_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A generic visored cap.
+  description: "Самая обычная кепка."
   icon:
     sprite: Civ14/Clothing/exported/hats/blackcap.rsi
     state: icon
@@ -1454,13 +1435,13 @@
   - node: end
     entity: civ13_head_cap
 - type: construction
-  name: preacher's hood
+  name: "капюшон проповедника"
   id: civ13_head_preachers_hood
   graph: civ13_head_preachers_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's hood that covers the head.
+  description: "Капюшон, закрывающий голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/chaplain_hood.rsi
     state: icon
@@ -1481,13 +1462,13 @@
   - node: end
     entity: civ13_head_preachers_hood
 - type: construction
-  name: hair flower pin
+  name: "цветочная заколка"
   id: civ13_head_hair_flower_pin
   graph: civ13_head_hair_flower_pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Smells nice.
+  description: "Приятно пахнет."
   icon:
     sprite: Civ14/Clothing/exported/hats/hairflower.rsi
     state: icon
@@ -1508,13 +1489,13 @@
   - node: end
     entity: civ13_head_hair_flower_pin
 - type: construction
-  name: powdered wig
+  name: "напудренный парик"
   id: civ13_head_powdered_wig
   graph: civ13_head_powdered_wig
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A powdered wig.
+  description: "Парик, щедро посыпанный пудрой."
   icon:
     sprite: Civ14/Clothing/exported/hats/pwig.rsi
     state: icon
@@ -1535,13 +1516,13 @@
   - node: end
     entity: civ13_head_powdered_wig
 - type: construction
-  name: top-hat
+  name: "цилиндр"
   id: civ13_head_top_hat
   graph: civ13_head_top_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's an amish looking hat.
+  description: "Высокая шляпа старомодного вида."
   icon:
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
     state: icon
@@ -1562,13 +1543,13 @@
   - node: end
     entity: civ13_head_top_hat
 - type: construction
-  name: pimp-hat
+  name: "шляпа сутенёра"
   id: civ13_head_pimp_hat
   graph: civ13_head_pimp_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's a gangster hat.
+  description: "Броская шляпа в гангстерском стиле."
   icon:
     sprite: Civ14/Clothing/exported/hats/pimp_hat.rsi
     state: icon
@@ -1589,13 +1570,13 @@
   - node: end
     entity: civ13_head_pimp_hat
 - type: construction
-  name: flat cap
+  name: "плоская кепка"
   id: civ13_head_flat_cap
   graph: civ13_head_flat_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's an common cap.
+  description: "Простая кепка с плоским верхом."
   icon:
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
     state: icon
@@ -1616,13 +1597,13 @@
   - node: end
     entity: civ13_head_flat_cap
 - type: construction
-  name: flat cap
+  name: "плоская кепка с лезвиями"
   id: civ13_head_flat_cap_1
   graph: civ13_head_flat_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's an common cap. Has razor blades in it.
+  description: "Обычная с виду кепка. Внутри спрятаны бритвенные лезвия."
   icon:
     sprite: Civ14/Clothing/exported/hats/peakyblindercap.rsi
     state: icon
@@ -1643,13 +1624,13 @@
   - node: end
     entity: civ13_head_flat_cap_1
 - type: construction
-  name: pirate hat
+  name: "пиратская шляпа"
   id: civ13_head_pirate_hat
   graph: civ13_head_pirate_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Yarr.
+  description: "Йо-хо-хо!"
   icon:
     sprite: Civ14/Clothing/exported/hats/pirate.rsi
     state: icon
@@ -1670,13 +1651,13 @@
   - node: end
     entity: civ13_head_pirate_hat
 - type: construction
-  name: specialist bandana
+  name: "бандана ветерана"
   id: civ13_head_specialist_bandana
   graph: civ13_head_specialist_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red bandana, the preferred headwear of seasoned jungle fighters.
+  description: "Красная бандана бывалого бойца, привыкшего к боям в джунглях."
   icon:
     sprite: Civ14/Clothing/exported/hats/toughguy.rsi
     state: icon
@@ -1697,13 +1678,13 @@
   - node: end
     entity: civ13_head_specialist_bandana
 - type: construction
-  name: olive bandana
+  name: "оливковая бандана"
   id: civ13_head_olive_bandana
   graph: civ13_head_olive_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An olive bandana.
+  description: "Бандана оливкового цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_olive.rsi
     state: icon
@@ -1724,13 +1705,13 @@
   - node: end
     entity: civ13_head_olive_bandana
 - type: construction
-  name: feather trilby
+  name: "трилби с пером"
   id: civ13_head_feather_trilby
   graph: civ13_head_feather_trilby
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A sharp, stylish hat with a feather.
+  description: "Элегантная шляпа с пером."
   icon:
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
     state: icon
@@ -1751,13 +1732,13 @@
   - node: end
     entity: civ13_head_feather_trilby
 - type: construction
-  name: fez
+  name: "феска"
   id: civ13_head_fez
   graph: civ13_head_fez
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: You should wear a fez. Fezzes are cool.
+  description: "Феска вам к лицу. Фески — это стильно."
   icon:
     sprite: Civ14/Clothing/exported/hats/fez.rsi
     state: icon
@@ -1778,13 +1759,13 @@
   - node: end
     entity: civ13_head_fez
 - type: construction
-  name: bearpelt headcover
+  name: "медвежья шкура на голову"
   id: civ13_head_bearpelt_headcover
   graph: civ13_head_bearpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bear pelt turned into a headcover.
+  description: "Медвежья шкура, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/bearpelt.rsi
     state: icon
@@ -1805,14 +1786,13 @@
   - node: end
     entity: civ13_head_bearpelt_headcover
 - type: construction
-  name: natural philosopher's wig
+  name: "парик натурфилософа"
   id: civ13_head_natural_philosophers_wig
   graph: civ13_head_natural_philosophers_wig
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A stylish monstrosity unearthed from Earth's Renaissance period. With
-    this most distinguish'd wig, you'll be ready for your next soiree!
+  description: "Пышный парик в духе Возрождения. С таким и на учёный спор, и на светский приём."
   icon:
     sprite: Civ14/Clothing/exported/hats/philosopher_wig.rsi
     state: icon
@@ -1833,13 +1813,13 @@
   - node: end
     entity: civ13_head_natural_philosophers_wig
 - type: construction
-  name: orange bandana
+  name: "оранжевая бандана"
   id: civ13_head_orange_bandana
   graph: civ13_head_orange_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An orange piece of cloth, worn on the head.
+  description: "Оранжевый платок, повязанный на голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/orange_bandana.rsi
     state: icon
@@ -1860,13 +1840,13 @@
   - node: end
     entity: civ13_head_orange_bandana
 - type: construction
-  name: dunce cap
+  name: "колпак дурака"
   id: civ13_head_dunce_cap
   graph: civ13_head_dunce_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A pointed white cap often worn by dummies who should feel ashamed.
+  description: "Белый остроконечный колпак для тех, кому пора задуматься о своём поведении."
   icon:
     sprite: Civ14/Clothing/exported/hats/dunce_cap.rsi
     state: icon
@@ -1887,13 +1867,13 @@
   - node: end
     entity: civ13_head_dunce_cap
 - type: construction
-  name: beanie
+  name: "вязаная шапка"
   id: civ13_head_beanie
   graph: civ13_head_beanie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A warm winter beanie.
+  description: "Тёплая зимняя шапка."
   icon:
     sprite: Civ14/Clothing/exported/hats/custom_beanie.rsi
     state: icon
@@ -1914,13 +1894,13 @@
   - node: end
     entity: civ13_head_beanie
 - type: construction
-  name: beret
+  name: "берет"
   id: civ13_head_beret
   graph: civ13_head_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple cloth beret.
+  description: "Простой матерчатый берет."
   icon:
     sprite: Civ14/Clothing/exported/hats/customberet_hat.rsi
     state: icon
@@ -1941,13 +1921,13 @@
   - node: end
     entity: civ13_head_beret
 - type: construction
-  name: bandana
+  name: "бандана"
   id: civ13_head_bandana
   graph: civ13_head_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple cloth bandana.
+  description: "Простая матерчатая бандана."
   icon:
     sprite: Civ14/Clothing/exported/hats/custombandana_hat.rsi
     state: icon
@@ -1968,13 +1948,13 @@
   - node: end
     entity: civ13_head_bandana
 - type: construction
-  name: noble hat
+  name: "дворянская шляпа"
   id: civ13_head_noble_hat
   graph: civ13_head_noble_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A fancy noble hat.
+  description: "Роскошная шляпа знатного человека."
   icon:
     sprite: Civ14/Clothing/exported/hats/customnoblehat_hat.rsi
     state: icon
@@ -1995,13 +1975,13 @@
   - node: end
     entity: civ13_head_noble_hat
 - type: construction
-  name: wool_hood
+  name: "шерстяной капюшон"
   id: civ13_head_wool_hood
   graph: civ13_head_wool_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wool hood.
+  description: "Капюшон из шерстяной ткани."
   icon:
     sprite: Civ14/Clothing/exported/hats/wool_hood.rsi
     state: icon
@@ -2022,13 +2002,13 @@
   - node: end
     entity: civ13_head_wool_hood
 - type: construction
-  name: Drill hat
+  name: "шляпа строевого инструктора"
   id: civ13_head_Drill_hat
   graph: civ13_head_Drill_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: The hat of a drill sergeant sir yes sir!!
+  description: "Шляпа сурового инструктора. Так точно, сэр!"
   icon:
     sprite: Civ14/Clothing/exported/hats/drill_hat.rsi
     state: icon
@@ -2049,13 +2029,13 @@
   - node: end
     entity: civ13_head_Drill_hat
 - type: construction
-  name: taqiyah
+  name: "такия"
   id: civ13_head_taqiyah
   graph: civ13_head_taqiyah
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A short, rounded skullcap usually worn for religious purposes.
+  description: "Небольшая круглая шапочка, которую часто носят по религиозным причинам."
   icon:
     sprite: Civ14/Clothing/exported/hats/taqiyah.rsi
     state: icon
@@ -2076,13 +2056,13 @@
   - node: end
     entity: civ13_head_taqiyah
 - type: construction
-  name: hijab
+  name: "хиджаб"
   id: civ13_head_hijab
   graph: civ13_head_hijab
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A veil which is wrapped to cover the head and chest.
+  description: "Платок, закрывающий голову и грудь."
   icon:
     sprite: Civ14/Clothing/exported/hats/hijab.rsi
     state: icon
@@ -2103,13 +2083,13 @@
   - node: end
     entity: civ13_head_hijab
 - type: construction
-  name: kippa
+  name: "кипа"
   id: civ13_head_kippa
   graph: civ13_head_kippa
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A small, brimless cap.
+  description: "Небольшая шапочка без полей."
   icon:
     sprite: Civ14/Clothing/exported/hats/kippa.rsi
     state: icon
@@ -2130,13 +2110,13 @@
   - node: end
     entity: civ13_head_kippa
 - type: construction
-  name: purple bandana
+  name: "фиолетовая бандана"
   id: civ13_head_purple_bandana
   graph: civ13_head_purple_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A purple bandana tied in the front.
+  description: "Фиолетовая бандана, завязанная спереди."
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_ballas1.rsi
     state: icon
@@ -2157,13 +2137,13 @@
   - node: end
     entity: civ13_head_purple_bandana
 - type: construction
-  name: green bandana
+  name: "зелёная бандана"
   id: civ13_head_green_bandana
   graph: civ13_head_green_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green bandana tied in the front.
+  description: "Зелёная бандана, завязанная спереди."
   icon:
     sprite: Civ14/Clothing/exported/hats/bandana_grove.rsi
     state: icon
@@ -2184,13 +2164,13 @@
   - node: end
     entity: civ13_head_green_bandana
 - type: construction
-  name: imperial naval officer cap
+  name: "фуражка имперского флотского офицера"
   id: civ13_head_imperial_naval_officer_cap
   graph: civ13_head_imperial_naval_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting green cap.
+  description: "Плотно сидящая зелёная фуражка."
   icon:
     sprite: Civ14/Clothing/exported/hats/repofficer_navcaptain.rsi
     state: icon
@@ -2211,14 +2191,13 @@
   - node: end
     entity: civ13_head_imperial_naval_officer_cap
 - type: construction
-  name: imperial black field cap
+  name: "чёрная имперская полевая фуражка"
   id: civ13_head_imperial_black_field_cap
   graph: civ13_head_imperial_black_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting black cap worn by Stormtrooper CORPS Officers, Naval
-    Lieutenants, and Technicians.
+  description: "Чёрная фуражка офицеров штурмового корпуса, флотских лейтенантов и техников."
   icon:
     sprite: Civ14/Clothing/exported/hats/impofficer_stormofficer.rsi
     state: icon
@@ -2239,13 +2218,13 @@
   - node: end
     entity: civ13_head_imperial_black_field_cap
 - type: construction
-  name: republic naval officer cap
+  name: "фуражка республиканского флотского офицера"
   id: civ13_head_republic_naval_officer_cap
   graph: civ13_head_republic_naval_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting green cap.
+  description: "Плотно сидящая зелёная фуражка."
   icon:
     sprite: Civ14/Clothing/exported/hats/repnavalcaptain_cap.rsi
     state: icon
@@ -2266,13 +2245,13 @@
   - node: end
     entity: civ13_head_republic_naval_officer_cap
 - type: construction
-  name: republic naval ensign cap
+  name: "фуражка республиканского мичмана"
   id: civ13_head_republic_naval_ensign_cap
   graph: civ13_head_republic_naval_ensign_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting blue grey cap.
+  description: "Плотно сидящая серо-голубая фуражка."
   icon:
     sprite: Civ14/Clothing/exported/hats/repensign_cap.rsi
     state: icon
@@ -2293,13 +2272,13 @@
   - node: end
     entity: civ13_head_republic_naval_ensign_cap
 - type: construction
-  name: republic medical officer cap
+  name: "фуражка республиканского военврача"
   id: civ13_head_republic_medical_officer_cap
   graph: civ13_head_republic_medical_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting grey cap.
+  description: "Плотно сидящая серая фуражка."
   icon:
     sprite: Civ14/Clothing/exported/hats/repmedicalofficer_cap.rsi
     state: icon
@@ -2320,13 +2299,13 @@
   - node: end
     entity: civ13_head_republic_medical_officer_cap
 - type: construction
-  name: imperial officer cap
+  name: "фуражка имперского офицера"
   id: civ13_head_imperial_officer_cap
   graph: civ13_head_imperial_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tight fitting grey cap.
+  description: "Плотно сидящая серая фуражка."
   icon:
     sprite: Civ14/Clothing/exported/hats/impofficer_stormofficer.rsi
     state: icon
@@ -2347,13 +2326,13 @@
   - node: end
     entity: civ13_head_imperial_officer_cap
 - type: construction
-  name: caubeen
+  name: "каубин"
   id: civ13_head_caubeen
   graph: civ13_head_caubeen
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: an Irish beret, typically in dark green color.
+  description: "Тёмно-зелёный берет ирландского образца."
   icon:
     sprite: Civ14/Clothing/exported/hats/caubeen.rsi
     state: icon
@@ -2374,13 +2353,13 @@
   - node: end
     entity: civ13_head_caubeen
 - type: construction
-  name: ainu bandana
+  name: "бандана айнов"
   id: civ13_head_ainu_bandana
   graph: civ13_head_ainu_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bandana with intricate patterns.
+  description: "Бандана со сложным традиционным узором."
   icon:
     sprite: Civ14/Clothing/exported/hats/ainu.rsi
     state: icon
@@ -2401,13 +2380,13 @@
   - node: end
     entity: civ13_head_ainu_bandana
 - type: construction
-  name: toxotai hat
+  name: "шляпа токсотов"
   id: civ13_head_toxotai_hat
   graph: civ13_head_toxotai_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim hat, used by the toxotai.
+  description: "Широкополая шляпа древнегреческого лучника."
   icon:
     sprite: Civ14/Clothing/exported/hats/toxotai.rsi
     state: icon
@@ -2428,13 +2407,13 @@
   - node: end
     entity: civ13_head_toxotai_hat
 - type: construction
-  name: black egyptian headdress
+  name: "чёрный египетский головной платок"
   id: civ13_head_black_egyptian_headdress
   graph: civ13_head_black_egyptian_headdress
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plain sun-protective linen headdress, despite its black stripes.
+  description: "Льняной головной платок с чёрными полосами, защищающий от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_black.rsi
     state: icon
@@ -2455,13 +2434,13 @@
   - node: end
     entity: civ13_head_black_egyptian_headdress
 - type: construction
-  name: blue egyptian headdress
+  name: "синий египетский головной платок"
   id: civ13_head_blue_egyptian_headdress
   graph: civ13_head_blue_egyptian_headdress
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plain sun-protective blue linen headdress.
+  description: "Синий льняной головной платок, защищающий от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_blue.rsi
     state: icon
@@ -2482,13 +2461,13 @@
   - node: end
     entity: civ13_head_blue_egyptian_headdress
 - type: construction
-  name: red egyptian headdress
+  name: "красный египетский головной платок"
   id: civ13_head_red_egyptian_headdress
   graph: civ13_head_red_egyptian_headdress
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A plain sun-protective red linen headdress.
+  description: "Красный льняной головной платок, защищающий от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/egyptian_headdress_red.rsi
     state: icon
@@ -2510,13 +2489,13 @@
     entity: civ13_head_red_egyptian_headdress
 
 - type: construction
-  name: double crown
+  name: "двуцветная корона"
   id: civ13_head_double_crown
   graph: civ13_head_double_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A double-coloured cloth crown.
+  description: "Матерчатая корона двух цветов."
   icon:
     sprite: Civ14/Clothing/exported/hats/doublecrown.rsi
     state: icon
@@ -2537,14 +2516,13 @@
   - node: end
     entity: civ13_head_double_crown
 - type: construction
-  name: hedjet crown
+  name: "корона хеджет"
   id: civ13_head_hedjet_crown
   graph: civ13_head_hedjet_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A egyptian crown made from cloth. It is often worn by pharoahs ruling
-    over the floodplains.
+  description: "Белая тканевая корона египетского правителя Верхнего Египта."
   icon:
     sprite: Civ14/Clothing/exported/hats/hedjet.rsi
     state: icon
@@ -2565,14 +2543,13 @@
   - node: end
     entity: civ13_head_hedjet_crown
 - type: construction
-  name: deshret crown
+  name: "корона дешрет"
   id: civ13_head_deshret_crown
   graph: civ13_head_deshret_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red egyptian crown made from cloth. It is often worn by pharoahs
-    ruling over desert dunes.
+  description: "Красная тканевая корона египетского правителя Нижнего Египта."
   icon:
     sprite: Civ14/Clothing/exported/hats/deshret.rsi
     state: icon
@@ -2593,14 +2570,13 @@
   - node: end
     entity: civ13_head_deshret_crown
 - type: construction
-  name: pschent crown
+  name: "корона пшент"
   id: civ13_head_pschent_crown
   graph: civ13_head_pschent_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A combined red and white egyptian crown made from cloth. Combined of
-    deshret & hedjet; it represents divine authority over their domain.
+  description: "Красно-белая египетская корона, объединяющая хеджет и дешрет. Символ власти над всей страной."
   icon:
     sprite: Civ14/Clothing/exported/hats/pschent.rsi
     state: icon
@@ -2621,13 +2597,13 @@
   - node: end
     entity: civ13_head_pschent_crown
 - type: construction
-  name: laurel crown
+  name: "лавровый венок"
   id: civ13_head_laurel_crown
   graph: civ13_head_laurel_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown made of laurel.
+  description: "Венок из лавровых листьев."
   icon:
     sprite: Civ14/Clothing/exported/hats/laurelcrown.rsi
     state: icon
@@ -2648,13 +2624,13 @@
   - node: end
     entity: civ13_head_laurel_crown
 - type: construction
-  name: gold laurel crown
+  name: "золотой лавровый венок"
   id: civ13_head_gold_laurel_crown
   graph: civ13_head_gold_laurel_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown made of gold, imitating a laurel crown.
+  description: "Золотой венок, повторяющий форму лаврового."
   icon:
     sprite: Civ14/Clothing/exported/hats/laurelcrown_gold.rsi
     state: icon
@@ -2675,13 +2651,13 @@
   - node: end
     entity: civ13_head_gold_laurel_crown
 - type: construction
-  name: fiendish headdress
+  name: "зловещий головной убор"
   id: civ13_head_fiendish_headdress
   graph: civ13_head_fiendish_headdress
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A menacing headdress, preferred by cults & covens.
+  description: "Угрожающий убор, любимый культами и тайными сообществами."
   icon:
     sprite: Civ14/Clothing/exported/hats/fiendish.rsi
     state: icon
@@ -2702,14 +2678,13 @@
   - node: end
     entity: civ13_head_fiendish_headdress
 - type: construction
-  name: semitic cap
+  name: "еврейская опознавательная шапка"
   id: civ13_head_semitic_cap
   graph: civ13_head_semitic_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A yellow knob-headed hat applied to denote jews amongst themselves
-    and those ruling over them.
+  description: "Жёлтая шапка с выступом, которой в некоторые эпохи заставляли отличаться евреев."
   icon:
     sprite: Civ14/Clothing/exported/hats/semitic_cap.rsi
     state: icon
@@ -2730,13 +2705,13 @@
   - node: end
     entity: civ13_head_semitic_cap
 - type: construction
-  name: wolfpelt headcover
+  name: "волчья шкура на голову"
   id: civ13_head_wolfpelt_headcover
   graph: civ13_head_wolfpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wolf pelt turned into a headcover.
+  description: "Волчья шкура, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/wolfpelt.rsi
     state: icon
@@ -2757,13 +2732,13 @@
   - node: end
     entity: civ13_head_wolfpelt_headcover
 - type: construction
-  name: pantherpelt headcover
+  name: "шкура пантеры на голову"
   id: civ13_head_pantherpelt_headcover
   graph: civ13_head_pantherpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A panther pelt turned into a headcover.
+  description: "Шкура пантеры, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/pantherpelt.rsi
     state: icon
@@ -2784,13 +2759,13 @@
   - node: end
     entity: civ13_head_pantherpelt_headcover
 - type: construction
-  name: lionpelt headcover
+  name: "львиная шкура на голову"
   id: civ13_head_lionpelt_headcover
   graph: civ13_head_lionpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A lion pelt turned into a headcover.
+  description: "Львиная шкура, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/lionpelt.rsi
     state: icon
@@ -2811,13 +2786,13 @@
   - node: end
     entity: civ13_head_lionpelt_headcover
 - type: construction
-  name: alligator pelt headcover
+  name: "шкура аллигатора на голову"
   id: civ13_head_alligator_pelt_headcover
   graph: civ13_head_alligator_pelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A alligator pelt turned into a headcover.
+  description: "Шкура аллигатора, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/gatorpelt.rsi
     state: icon
@@ -2838,13 +2813,13 @@
   - node: end
     entity: civ13_head_alligator_pelt_headcover
 - type: construction
-  name: foxpelt headcover
+  name: "лисья шкура на голову"
   id: civ13_head_foxpelt_headcover
   graph: civ13_head_foxpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A fox pelt turned into a headcover.
+  description: "Лисья шкура, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/foxpelt.rsi
     state: icon
@@ -2865,14 +2840,13 @@
   - node: end
     entity: civ13_head_foxpelt_headcover
 - type: construction
-  name: sheep-pelt headcover
+  name: "овечья шкура на голову"
   id: civ13_head_sheep_pelt_headcover
   graph: civ13_head_sheep_pelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A sheep pelt turned into a headcover. The thick wool helps keep the
-    cold off your body.
+  description: "Густая шерсть овечьей шкуры хорошо защищает от холода."
   icon:
     sprite: Civ14/Clothing/exported/hats/sheeppelt.rsi
     state: icon
@@ -2893,14 +2867,13 @@
   - node: end
     entity: civ13_head_sheep_pelt_headcover
 - type: construction
-  name: goatpelt headcover
+  name: "козья шкура на голову"
   id: civ13_head_goatpelt_headcover
   graph: civ13_head_goatpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A goat pelt turned into a headcover. The light loose fur helps keep
-    the sun's rays off your body.
+  description: "Лёгкий козий мех укрывает голову от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/goatpelt.rsi
     state: icon
@@ -2921,14 +2894,13 @@
   - node: end
     entity: civ13_head_goatpelt_headcover
 - type: construction
-  name: bisonpelt headcover
+  name: "шкура бизона на голову"
   id: civ13_head_bisonpelt_headcover
   graph: civ13_head_bisonpelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A bison pelt turned into a headcover. The thick matted fur keeps the
-    cold off your body; the horns are just for show.
+  description: "Густой мех греет в холод. Рога здесь только для вида."
   icon:
     sprite: Civ14/Clothing/exported/hats/bisonpelt.rsi
     state: icon
@@ -2949,14 +2921,13 @@
   - node: end
     entity: civ13_head_bisonpelt_headcover
 - type: construction
-  name: atef crown
+  name: "корона атеф"
   id: civ13_head_atef_crown
   graph: civ13_head_atef_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white egyptian crown made from cloth adorned with plumes of feathers.
-    The preferred crown of egyptian dieties.
+  description: "Белая египетская корона из ткани, украшенная перьями. Убор, который приписывали богам."
   icon:
     sprite: Civ14/Clothing/exported/hats/deshret.rsi
     state: icon
@@ -2977,13 +2948,13 @@
   - node: end
     entity: civ13_head_atef_crown
 - type: construction
-  name: sheriff's stratton hat
+  name: "шляпа шерифа «Стрэттон»"
   id: civ13_head_sheriffs_stratton_hat
   graph: civ13_head_sheriffs_stratton_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A stratton hat worn by the LEOs of the town's Sheriff Department.
+  description: "Широкополая служебная шляпа городского департамента шерифа."
   icon:
     sprite: Civ14/Clothing/exported/hats/sd_sheriffhat.rsi
     state: icon
@@ -3004,13 +2975,13 @@
   - node: end
     entity: civ13_head_sheriffs_stratton_hat
 - type: construction
-  name: sheriff's department cap
+  name: "кепка департамента шерифа"
   id: civ13_head_sheriffs_department_cap_1
   graph: civ13_head_sheriffs_department_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A baseball cap worn by the LEOs of the town's Sheriff Department.
+  description: "Кепка сотрудника городского департамента шерифа."
   icon:
     sprite: Civ14/Clothing/exported/hats/sd_cap.rsi
     state: icon
@@ -3031,13 +3002,13 @@
   - node: end
     entity: civ13_head_sheriffs_department_cap_1
 - type: construction
-  name: police cap
+  name: "полицейская фуражка"
   id: civ13_head_police_cap
   graph: civ13_head_police_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A blue cap often worn by members of the police and security guards.
+  description: "Синяя фуражка полицейского или охранника."
   icon:
     sprite: Civ14/Clothing/exported/hats/traffic_cop.rsi
     state: icon
@@ -3058,13 +3029,13 @@
   - node: end
     entity: civ13_head_police_cap
 - type: construction
-  name: red beret
+  name: "красный берет"
   id: civ13_head_red_beret
   graph: civ13_head_red_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red beret.
+  description: "Красный берет."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_red.rsi
     state: icon
@@ -3085,13 +3056,13 @@
   - node: end
     entity: civ13_head_red_beret
 - type: construction
-  name: black beret
+  name: "чёрный берет"
   id: civ13_head_black_beret
   graph: civ13_head_black_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black military beret.
+  description: "Чёрный армейский берет."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_black.rsi
     state: icon
@@ -3112,13 +3083,13 @@
   - node: end
     entity: civ13_head_black_beret
 - type: construction
-  name: green beret
+  name: "зелёный берет"
   id: civ13_head_green_beret
   graph: civ13_head_green_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green beret with golden insignia.
+  description: "Зелёный берет с золотым знаком отличия."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_green_insig.rsi
     state: icon
@@ -3139,13 +3110,13 @@
   - node: end
     entity: civ13_head_green_beret
 - type: construction
-  name: green beret
+  name: "зелёный берет"
   id: civ13_head_green_beret_1
   graph: civ13_head_green_beret_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green beret.
+  description: "Простой зелёный берет."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_green.rsi
     state: icon
@@ -3166,13 +3137,13 @@
   - node: end
     entity: civ13_head_green_beret_1
 - type: construction
-  name: UN beret
+  name: "берет ООН"
   id: civ13_head_UN_beret
   graph: civ13_head_UN_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A blue UN beret.
+  description: "Синий берет миротворца ООН."
   icon:
     sprite: Civ14/Clothing/exported/hats/unitednations_beret.rsi
     state: icon
@@ -3193,13 +3164,13 @@
   - node: end
     entity: civ13_head_UN_beret
 - type: construction
-  name: ghillie headcover
+  name: "маскировочный капюшон"
   id: civ13_head_ghillie_headcover
   graph: civ13_head_ghillie_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headcover for a ghillie suit.
+  description: "Капюшон к маскировочному костюму «гилли»."
   icon:
     sprite: Civ14/Clothing/exported/hats/ghillie.rsi
     state: icon
@@ -3220,13 +3191,13 @@
   - node: end
     entity: civ13_head_ghillie_headcover
 - type: construction
-  name: black boonie
+  name: "чёрная панама"
   id: civ13_head_black_boonie
   graph: civ13_head_black_boonie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim, soft jungle hat.
+  description: "Мягкая широкополая панама для джунглей."
   icon:
     sprite: Civ14/Clothing/exported/hats/black_boonie.rsi
     state: icon
@@ -3247,13 +3218,13 @@
   - node: end
     entity: civ13_head_black_boonie
 - type: construction
-  name: khaki boonie
+  name: "панама цвета хаки"
   id: civ13_head_khaki_boonie
   graph: civ13_head_khaki_boonie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim, soft jungle hat.
+  description: "Мягкая широкополая панама для джунглей."
   icon:
     sprite: Civ14/Clothing/exported/hats/khaki_boonie.rsi
     state: icon
@@ -3274,13 +3245,13 @@
   - node: end
     entity: civ13_head_khaki_boonie
 - type: construction
-  name: olive green boonie
+  name: "оливковая панама"
   id: civ13_head_olive_green_boonie
   graph: civ13_head_olive_green_boonie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim, soft jungle hat.
+  description: "Мягкая широкополая панама для джунглей."
   icon:
     sprite: Civ14/Clothing/exported/hats/og107_boonie.rsi
     state: icon
@@ -3301,13 +3272,13 @@
   - node: end
     entity: civ13_head_olive_green_boonie
 - type: construction
-  name: cadpat tilly
+  name: "панама CADPAT"
   id: civ13_head_cadpat_tilly
   graph: civ13_head_cadpat_tilly
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim, soft sun hat.
+  description: "Мягкая широкополая панама с камуфляжем CADPAT."
   icon:
     sprite: Civ14/Clothing/exported/hats/tilly_cadpat.rsi
     state: icon
@@ -3328,13 +3299,13 @@
   - node: end
     entity: civ13_head_cadpat_tilly
 - type: construction
-  name: rice hat
+  name: "шляпа рисовода"
   id: civ13_head_rice_hat
   graph: civ13_head_rice_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim, rice farmer hat.
+  description: "Широкополая шляпа для работы на рисовом поле."
   icon:
     sprite: Civ14/Clothing/exported/hats/rice_hat.rsi
     state: icon
@@ -3355,13 +3326,13 @@
   - node: end
     entity: civ13_head_rice_hat
 - type: construction
-  name: chinese ushanka
+  name: "китайская ушанка"
   id: civ13_head_chinese_ushanka
   graph: civ13_head_chinese_ushanka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A chinese ushanka, used by soldiers in the chinese army.
+  description: "Ушанка военнослужащего китайской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/chinese_ushanka_up.rsi
     state: icon
@@ -3382,13 +3353,13 @@
   - node: end
     entity: civ13_head_chinese_ushanka
 - type: construction
-  name: NVA cap
+  name: "полевая кепка офицера Северного Вьетнама"
   id: civ13_head_NVA_cap
   graph: civ13_head_NVA_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A field cap with the markings of an NVA officer.
+  description: "Полевая кепка со знаками офицера Северо-вьетнамской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/nva_off_cap.rsi
     state: icon
@@ -3409,13 +3380,13 @@
   - node: end
     entity: civ13_head_NVA_cap
 - type: construction
-  name: soviet ushanka
+  name: "советская ушанка"
   id: civ13_head_soviet_ushanka
   graph: civ13_head_soviet_ushanka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A soviet ushanka, used by soldiers in the Red Army.
+  description: "Ушанка, которую носят бойцы Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_new_up.rsi
     state: icon
@@ -3436,13 +3407,13 @@
   - node: end
     entity: civ13_head_soviet_ushanka
 - type: construction
-  name: NKVD cap
+  name: "фуражка НКВД"
   id: civ13_head_NKVD_cap
   graph: civ13_head_NKVD_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by members of the NKVD.
+  description: "Фуражка сотрудника НКВД."
   icon:
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
     state: icon
@@ -3463,13 +3434,13 @@
   - node: end
     entity: civ13_head_NKVD_cap
 - type: construction
-  name: KGB cap
+  name: "фуражка КГБ"
   id: civ13_head_KGB_cap
   graph: civ13_head_KGB_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by KGB.
+  description: "Фуражка сотрудника КГБ."
   icon:
     sprite: Civ14/Clothing/exported/hats/nkvd_cap.rsi
     state: icon
@@ -3490,13 +3461,13 @@
   - node: end
     entity: civ13_head_KGB_cap
 - type: construction
-  name: US sailor hat
+  name: "матросская бескозырка США"
   id: civ13_head_US_sailor_hat
   graph: civ13_head_US_sailor_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat worn by American sailors.
+  description: "Головной убор американского матроса."
   icon:
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
     state: icon
@@ -3517,13 +3488,13 @@
   - node: end
     entity: civ13_head_US_sailor_hat
 - type: construction
-  name: Blugoslavian sailor hat
+  name: "бескозырка Блюгославии"
   id: civ13_head_Blugoslavian_sailor_hat
   graph: civ13_head_Blugoslavian_sailor_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat worn by sailors of the Blugoslavian Naval Force.
+  description: "Бескозырка моряка блюгославского флота."
   icon:
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
     state: icon
@@ -3544,13 +3515,13 @@
   - node: end
     entity: civ13_head_Blugoslavian_sailor_hat
 - type: construction
-  name: Redmenian sailor hat
+  name: "бескозырка Редмении"
   id: civ13_head_Redmenian_sailor_hat
   graph: civ13_head_Redmenian_sailor_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat worn by sailors of the Imperial Redmenian Navy.
+  description: "Бескозырка моряка имперского флота Редмении."
   icon:
     sprite: Civ14/Clothing/exported/hats/sailor_hat.rsi
     state: icon
@@ -3571,13 +3542,13 @@
   - node: end
     entity: civ13_head_Redmenian_sailor_hat
 - type: construction
-  name: Japanese Cap
+  name: "японская солдатская кепка"
   id: civ13_head_Japanese_Cap
   graph: civ13_head_Japanese_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Japanese soldiers.
+  description: "Кепка военнослужащего японской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap.rsi
     state: icon
@@ -3598,13 +3569,13 @@
   - node: end
     entity: civ13_head_Japanese_Cap
 - type: construction
-  name: Japanese Officer Cap
+  name: "японская офицерская фуражка"
   id: civ13_head_Japanese_Officer_Cap
   graph: civ13_head_Japanese_Officer_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by japanese officers.
+  description: "Фуражка офицера японской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/japoffcap.rsi
     state: icon
@@ -3625,13 +3596,13 @@
   - node: end
     entity: civ13_head_Japanese_Officer_Cap
 - type: construction
-  name: Japanese naval officer cap
+  name: "фуражка японского флотского офицера"
   id: civ13_head_Japanese_naval_officer_cap
   graph: civ13_head_Japanese_naval_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Japanese officers in their navy.
+  description: "Фуражка офицера военно-морского флота Японии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy_officer.rsi
     state: icon
@@ -3652,13 +3623,13 @@
   - node: end
     entity: civ13_head_Japanese_naval_officer_cap
 - type: construction
-  name: Japanese petty officer cap
+  name: "фуражка японского старшины"
   id: civ13_head_Japanese_petty_officer_cap
   graph: civ13_head_Japanese_petty_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Japanese petty officers in their navy.
+  description: "Фуражка старшины японского флота."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_navy.rsi
     state: icon
@@ -3679,13 +3650,13 @@
   - node: end
     entity: civ13_head_Japanese_petty_officer_cap
 - type: construction
-  name: Japanese sailor cap
+  name: "японская матросская бескозырка"
   id: civ13_head_Japanese_sailor_cap
   graph: civ13_head_Japanese_sailor_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Japanese sailors.
+  description: "Головной убор японского матроса."
   icon:
     sprite: Civ14/Clothing/exported/hats/japanese_sailor_hat.rsi
     state: icon
@@ -3706,14 +3677,13 @@
   - node: end
     entity: civ13_head_Japanese_sailor_cap
 - type: construction
-  name: Japanese cap
+  name: "кепка японской морской пехоты"
   id: civ13_head_Japanese_cap
   graph: civ13_head_Japanese_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Imperial Japanese Army, especially those bearing
-    the rank of SNLF.
+  description: "Кепка бойца специальных морских десантных сил Японии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_japcap_snlf.rsi
     state: icon
@@ -3734,13 +3704,13 @@
   - node: end
     entity: civ13_head_Japanese_cap
 - type: construction
-  name: Japanese headband
+  name: "повязка японского солдата"
   id: civ13_head_Japanese_headband
   graph: civ13_head_Japanese_headband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headband worn by Japanese soldiers.
+  description: "Налобная повязка японского военнослужащего."
   icon:
     sprite: Civ14/Clothing/exported/hats/japbandana.rsi
     state: icon
@@ -3761,13 +3731,13 @@
   - node: end
     entity: civ13_head_Japanese_headband
 - type: construction
-  name: Japanese pilot cap
+  name: "шапка японского лётчика"
   id: civ13_head_Japanese_pilot_cap
   graph: civ13_head_Japanese_pilot_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Japanese pilots.
+  description: "Шапка пилота японской авиации."
   icon:
     sprite: Civ14/Clothing/exported/hats/jappilotcap.rsi
     state: icon
@@ -3788,13 +3758,13 @@
   - node: end
     entity: civ13_head_Japanese_pilot_cap
 - type: construction
-  name: Kenpeitai MP cap
+  name: "фуражка кэмпэйтай"
   id: civ13_head_Kenpeitai_MP_cap
   graph: civ13_head_Kenpeitai_MP_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the military police corps of the Imperial Japanese Army.
+  description: "Фуражка японской военной полиции."
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap_mp.rsi
     state: icon
@@ -3815,13 +3785,13 @@
   - node: end
     entity: civ13_head_Kenpeitai_MP_cap
 - type: construction
-  name: Japanese winter cap
+  name: "зимняя шапка японского солдата"
   id: civ13_head_Japanese_winter_cap
   graph: civ13_head_Japanese_winter_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A Japanese winter cap, worn by soldiers in the Imperial Japanese Army.
+  description: "Зимняя шапка военнослужащего японской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/japwinter_up.rsi
     state: icon
@@ -3842,13 +3812,13 @@
   - node: end
     entity: civ13_head_Japanese_winter_cap
 - type: construction
-  name: British officer cap
+  name: "британская офицерская фуражка"
   id: civ13_head_British_officer_cap
   graph: civ13_head_British_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by British officers.
+  description: "Фуражка офицера британской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer.rsi
     state: icon
@@ -3869,13 +3839,13 @@
   - node: end
     entity: civ13_head_British_officer_cap
 - type: construction
-  name: British officer cap
+  name: "британская тропическая офицерская фуражка"
   id: civ13_head_British_officer_cap_1
   graph: civ13_head_British_officer_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by British officers, this one being a tropical green.
+  description: "Зелёная тропическая фуражка офицера британской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_officer_tropical.rsi
     state: icon
@@ -3896,13 +3866,13 @@
   - node: end
     entity: civ13_head_British_officer_cap_1
 - type: construction
-  name: British hat
+  name: "британская полевая шляпа"
   id: civ13_head_British_hat
   graph: civ13_head_British_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A brown hat sometimes worn by the British.
+  description: "Коричневая шляпа британского военнослужащего."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_aussie.rsi
     state: icon
@@ -3923,13 +3893,13 @@
   - node: end
     entity: civ13_head_British_hat
 - type: construction
-  name: tropical british hat
+  name: "британская тропическая шляпа"
   id: civ13_head_tropical_british_hat
   graph: civ13_head_tropical_british_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A khaki hat worn by the British Army in tropical climates.
+  description: "Шляпа цвета хаки для службы в тропиках."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_tropical.rsi
     state: icon
@@ -3950,13 +3920,13 @@
   - node: end
     entity: civ13_head_tropical_british_hat
 - type: construction
-  name: British beret
+  name: "британский берет"
   id: civ13_head_British_beret
   graph: civ13_head_British_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A khaki beret worn by the British Army.
+  description: "Берет цвета хаки британской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ww2_british_beret.rsi
     state: icon
@@ -3977,13 +3947,13 @@
   - node: end
     entity: civ13_head_British_beret
 - type: construction
-  name: Chinese cap
+  name: "кепка китайской Красной армии"
   id: civ13_head_Chinese_cap
   graph: civ13_head_Chinese_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Chinese Red Army.
+  description: "Кепка бойца китайской Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_china.rsi
     state: icon
@@ -4004,13 +3974,13 @@
   - node: end
     entity: civ13_head_Chinese_cap
 - type: construction
-  name: Chinese cap
+  name: "кепка китайской Красной армии"
   id: civ13_head_Chinese_cap_1
   graph: civ13_head_Chinese_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Chinese Red Army.
+  description: "Кепка бойца китайской Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_china2.rsi
     state: icon
@@ -4031,13 +4001,13 @@
   - node: end
     entity: civ13_head_Chinese_cap_1
 - type: construction
-  name: Chinese Red Army cap
+  name: "кепка китайской Красной армии"
   id: civ13_head_Chinese_Red_Army_cap
   graph: civ13_head_Chinese_Red_Army_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Chinese Red Army.
+  description: "Кепка бойца китайской Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/cra_cap.rsi
     state: icon
@@ -4058,13 +4028,13 @@
   - node: end
     entity: civ13_head_Chinese_Red_Army_cap
 - type: construction
-  name: US nco cap
+  name: "фуражка сержанта армии США"
   id: civ13_head_US_nco_cap
   graph: civ13_head_US_nco_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by American NCO's.
+  description: "Фуражка американского младшего командира."
   icon:
     sprite: Civ14/Clothing/exported/hats/usnco_cap.rsi
     state: icon
@@ -4085,13 +4055,13 @@
   - node: end
     entity: civ13_head_US_nco_cap
 - type: construction
-  name: US tanker cap
+  name: "шлем танкиста армии США"
   id: civ13_head_US_tanker_cap
   graph: civ13_head_US_tanker_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by American tankers.
+  description: "Головной убор американского танкиста."
   icon:
     sprite: Civ14/Clothing/exported/hats/ustanker.rsi
     state: icon
@@ -4112,13 +4082,13 @@
   - node: end
     entity: civ13_head_US_tanker_cap
 - type: construction
-  name: German tanker headset
+  name: "немецкий танковый шлемофон"
   id: civ13_head_German_tanker_headset
   graph: civ13_head_German_tanker_headset
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and radio headset worn by German tank crewmen of the Wehrmacht.
+  description: "Шлемофон с радиогарнитурой экипажа танка вермахта."
   icon:
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
     state: icon
@@ -4139,13 +4109,13 @@
   - node: end
     entity: civ13_head_German_tanker_headset
 - type: construction
-  name: Italian tanker headset
+  name: "итальянский танковый шлемофон"
   id: civ13_head_Italian_tanker_headset
   graph: civ13_head_Italian_tanker_headset
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and radio headset worn by Italian tank crewmen.
+  description: "Шлемофон с радиогарнитурой итальянского танкиста."
   icon:
     sprite: Civ14/Clothing/exported/hats/gertanker.rsi
     state: icon
@@ -4166,13 +4136,13 @@
   - node: end
     entity: civ13_head_Italian_tanker_headset
 - type: construction
-  name: Soviet tanker cap
+  name: "советский танковый шлемофон"
   id: civ13_head_Soviet_tanker_cap
   graph: civ13_head_Soviet_tanker_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Soviet tank crewmen.
+  description: "Головной убор танкиста Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/sovtanker.rsi
     state: icon
@@ -4193,13 +4163,13 @@
   - node: end
     entity: civ13_head_Soviet_tanker_cap
 - type: construction
-  name: German officer cap
+  name: "фуражка немецкого офицера"
   id: civ13_head_German_officer_cap
   graph: civ13_head_German_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by German officers the Wehrmacht.
+  description: "Фуражка офицера вермахта."
   icon:
     sprite: Civ14/Clothing/exported/hats/ger_officercap.rsi
     state: icon
@@ -4220,13 +4190,13 @@
   - node: end
     entity: civ13_head_German_officer_cap
 - type: construction
-  name: German panzer officer cap
+  name: "фуражка офицера танковых войск вермахта"
   id: civ13_head_German_panzer_officer_cap
   graph: civ13_head_German_panzer_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by German officers the tank corps of the Wehrmacht.
+  description: "Фуражка офицера немецких танковых войск."
   icon:
     sprite: Civ14/Clothing/exported/hats/ger_officercap_tanker.rsi
     state: icon
@@ -4247,13 +4217,13 @@
   - node: end
     entity: civ13_head_German_panzer_officer_cap
 - type: construction
-  name: soviet officer cap
+  name: "фуражка советского офицера"
   id: civ13_head_soviet_officer_cap
   graph: civ13_head_soviet_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by soviet officers the red army.
+  description: "Фуражка офицера Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/sov_officercap.rsi
     state: icon
@@ -4274,13 +4244,13 @@
   - node: end
     entity: civ13_head_soviet_officer_cap
 - type: construction
-  name: soviet pilotka
+  name: "советская пилотка"
   id: civ13_head_soviet_pilotka
   graph: civ13_head_soviet_pilotka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by soviet soldiers of the red army.
+  description: "Пилотка бойца Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/sovpilotka.rsi
     state: icon
@@ -4301,13 +4271,13 @@
   - node: end
     entity: civ13_head_soviet_pilotka
 - type: construction
-  name: soviet ushanka
+  name: "советская ушанка"
   id: civ13_head_soviet_ushanka_1
   graph: civ13_head_soviet_ushanka_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A soviet ushanka, used by soldiers in the red army.
+  description: "Ушанка, которую носят бойцы Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ushanka_up.rsi
     state: icon
@@ -4328,13 +4298,13 @@
   - node: end
     entity: civ13_head_soviet_ushanka_1
 - type: construction
-  name: SS cap
+  name: "фуражка офицера СС"
   id: civ13_head_SS_cap
   graph: civ13_head_SS_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by officers in the Schutzstaffel.
+  description: "Фуражка офицера СС."
   icon:
     sprite: Civ14/Clothing/exported/hats/sscap.rsi
     state: icon
@@ -4355,13 +4325,13 @@
   - node: end
     entity: civ13_head_SS_cap
 - type: construction
-  name: German field cap
+  name: "немецкая полевая кепка"
   id: civ13_head_German_field_cap
   graph: civ13_head_German_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by German Wehrmacht.
+  description: "Полевая кепка солдата вермахта."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap1.rsi
     state: icon
@@ -4382,13 +4352,13 @@
   - node: end
     entity: civ13_head_German_field_cap
 - type: construction
-  name: soviet field cap
+  name: "советская полевая кепка"
   id: civ13_head_soviet_field_cap
   graph: civ13_head_soviet_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by soviets in the red army.
+  description: "Полевая кепка бойца Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap2.rsi
     state: icon
@@ -4409,13 +4379,13 @@
   - node: end
     entity: civ13_head_soviet_field_cap
 - type: construction
-  name: UPA field cap
+  name: "полевая кепка УПА"
   id: civ13_head_UPA_field_cap
   graph: civ13_head_UPA_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya.
+  description: "Полевая кепка бойца Украинской повстанческой армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_cap.rsi
     state: icon
@@ -4436,13 +4406,13 @@
   - node: end
     entity: civ13_head_UPA_field_cap
 - type: construction
-  name: UPA pilotka
+  name: "пилотка УПА"
   id: civ13_head_UPA_pilotka
   graph: civ13_head_UPA_pilotka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A pilotka and worn by the Ukrayins'ka Povstans'ka Armiya.
+  description: "Пилотка бойца Украинской повстанческой армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/upapilotka.rsi
     state: icon
@@ -4463,13 +4433,13 @@
   - node: end
     entity: civ13_head_UPA_pilotka
 - type: construction
-  name: UPA officer cap
+  name: "фуражка младшего командира УПА"
   id: civ13_head_UPA_officer_cap
   graph: civ13_head_UPA_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya NCO's.
+  description: "Фуражка младшего командира Украинской повстанческой армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_off.rsi
     state: icon
@@ -4490,13 +4460,13 @@
   - node: end
     entity: civ13_head_UPA_officer_cap
 - type: construction
-  name: UPA officer cap
+  name: "офицерская фуражка УПА"
   id: civ13_head_UPA_officer_cap_1
   graph: civ13_head_UPA_officer_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap and worn by the Ukrayins'ka Povstans'ka Armiya Officers.
+  description: "Фуражка офицера Украинской повстанческой армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/upa_commander.rsi
     state: icon
@@ -4517,13 +4487,13 @@
   - node: end
     entity: civ13_head_UPA_officer_cap_1
 - type: construction
-  name: soviet officer cap
+  name: "фуражка советского офицера"
   id: civ13_head_soviet_officer_cap_1
   graph: civ13_head_soviet_officer_cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Soviet officers.
+  description: "Фуражка офицера Красной армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/sov_officercap2.rsi
     state: icon
@@ -4544,13 +4514,13 @@
   - node: end
     entity: civ13_head_soviet_officer_cap_1
 - type: construction
-  name: cafr officer cap
+  name: "офицерская фуражка КАФР"
   id: civ13_head_cafr_officer_cap
   graph: civ13_head_cafr_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by CAFR officers.
+  description: "Фуражка офицера КАФР."
   icon:
     sprite: Civ14/Clothing/exported/hats/cafr_officercap.rsi
     state: icon
@@ -4571,13 +4541,13 @@
   - node: end
     entity: civ13_head_cafr_officer_cap
 - type: construction
-  name: Afghanka field cap
+  name: "полевая кепка «афганка»"
   id: civ13_head_Afghanka_field_cap
   graph: civ13_head_Afghanka_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A field cap issued to Soviet forces in the 1980s.
+  description: "Полевая кепка советской армии образца 1980-х годов."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_afghanka.rsi
     state: icon
@@ -4598,13 +4568,13 @@
   - node: end
     entity: civ13_head_Afghanka_field_cap
 - type: construction
-  name: VDV beret
+  name: "берет ВДВ"
   id: civ13_head_VDV_beret_1
   graph: civ13_head_VDV_beret_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A beret worn by the Soviet and Russian Airborne Forces.
+  description: "Берет советских и российских воздушно-десантных войск."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
     state: icon
@@ -4625,13 +4595,13 @@
   - node: end
     entity: civ13_head_VDV_beret_1
 - type: construction
-  name: Spetznaz beret
+  name: "берет спецназа"
   id: civ13_head_Spetznaz_beret
   graph: civ13_head_Spetznaz_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A beret worn by the Spetznaz.
+  description: "Берет бойца подразделения специального назначения."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
     state: icon
@@ -4652,13 +4622,13 @@
   - node: end
     entity: civ13_head_Spetznaz_beret
 - type: construction
-  name: Blugoslavian beret
+  name: "блюгославский берет"
   id: civ13_head_Blugoslavian_beret
   graph: civ13_head_Blugoslavian_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A beret worn by Blugoslavian Officers.
+  description: "Берет офицера армии Блюгославии."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_vdv.rsi
     state: icon
@@ -4679,13 +4649,13 @@
   - node: end
     entity: civ13_head_Blugoslavian_beret
 - type: construction
-  name: Redmenian beret
+  name: "редменийский берет"
   id: civ13_head_Redmenian_beret
   graph: civ13_head_Redmenian_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A beret worn by Redmenian Officers.
+  description: "Берет офицера редменийской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/beret_rus_spez.rsi
     state: icon
@@ -4706,13 +4676,13 @@
   - node: end
     entity: civ13_head_Redmenian_beret
 - type: construction
-  name: Blugoslavian navy cap
+  name: "фуражка флота Блюгославии"
   id: civ13_head_Blugoslavian_navy_cap
   graph: civ13_head_Blugoslavian_navy_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Blugoslavian Officers of the Blugoslavian Naval Force.
+  description: "Фуражка офицера военно-морских сил Блюгославии."
   icon:
     sprite: Civ14/Clothing/exported/hats/blugoslavia_cap.rsi
     state: icon
@@ -4733,13 +4703,13 @@
   - node: end
     entity: civ13_head_Blugoslavian_navy_cap
 - type: construction
-  name: Redmenian navy cap
+  name: "фуражка флота Редмении"
   id: civ13_head_Redmenian_navy_cap
   graph: civ13_head_Redmenian_navy_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Redmenian Officers of the Imperial Redmenian Navy.
+  description: "Фуражка офицера имперского флота Редмении."
   icon:
     sprite: Civ14/Clothing/exported/hats/redmenia_cap.rsi
     state: icon
@@ -4760,13 +4730,13 @@
   - node: end
     entity: civ13_head_Redmenian_navy_cap
 - type: construction
-  name: olive drab bandana
+  name: "оливковая бандана"
   id: civ13_head_olive_drab_bandana
   graph: civ13_head_olive_drab_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An olive drab coloured bandana.
+  description: "Бандана тёмно-оливкового цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/commando_bandana.rsi
     state: icon
@@ -4787,14 +4757,13 @@
   - node: end
     entity: civ13_head_olive_drab_bandana
 - type: construction
-  name: yellow NBC hood
+  name: "жёлтый защитный капюшон"
   id: civ13_head_yellow_NBC_hood
   graph: civ13_head_yellow_NBC_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A yellow coloured NBC hood, made protect against biological, chemical
-    and nuclear threats.
+  description: "Защищает голову от химических и биологических угроз и радиоактивных частиц."
   icon:
     sprite: Civ14/Clothing/exported/hats/nbc.rsi
     state: icon
@@ -4815,14 +4784,13 @@
   - node: end
     entity: civ13_head_yellow_NBC_hood
 - type: construction
-  name: olive drab NBC hood
+  name: "оливковый защитный капюшон"
   id: civ13_head_olive_drab_NBC_hood
   graph: civ13_head_olive_drab_NBC_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An olive drab coloured NBC hood, made protect against biological, chemical
-    and nuclear threats.
+  description: "Защищает голову от химических и биологических угроз и радиоактивных частиц."
   icon:
     sprite: Civ14/Clothing/exported/hats/nbc2.rsi
     state: icon
@@ -4843,13 +4811,13 @@
   - node: end
     entity: civ13_head_olive_drab_NBC_hood
 - type: construction
-  name: firefighting hood
+  name: "капюшон пожарного"
   id: civ13_head_firefighting_hood
   graph: civ13_head_firefighting_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A suit primarily intended to protect against fire.
+  description: "Защищает голову от огня и жара."
   icon:
     sprite: Civ14/Clothing/exported/hats/nbc2.rsi
     state: icon
@@ -4870,13 +4838,13 @@
   - node: end
     entity: civ13_head_firefighting_hood
 - type: construction
-  name: Chinese Red Guard cap
+  name: "кепка китайского хунвэйбина"
   id: civ13_head_Chinese_Red_Guard_cap
   graph: civ13_head_Chinese_Red_Guard_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Chinese Red guard.
+  description: "Кепка бойца китайской Красной гвардии."
   icon:
     sprite: Civ14/Clothing/exported/hats/redguardcap.rsi
     state: icon
@@ -4897,13 +4865,13 @@
   - node: end
     entity: civ13_head_Chinese_Red_Guard_cap
 - type: construction
-  name: bizarre dark blue hat
+  name: "странная тёмно-синяя шляпа"
   id: civ13_head_bizarre_dark_blue_hat
   graph: civ13_head_bizarre_dark_blue_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark blue hat worn by troublemakers.
+  description: "Тёмно-синяя шляпа, которую любят смутьяны."
   icon:
     sprite: Civ14/Clothing/exported/hats/bizarre_hat.rsi
     state: icon
@@ -4924,13 +4892,13 @@
   - node: end
     entity: civ13_head_bizarre_dark_blue_hat
 - type: construction
-  name: white surgical cap
+  name: "белая хирургическая шапочка"
   id: civ13_head_white_surgical_cap
   graph: civ13_head_white_surgical_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white sterile surgical cap.
+  description: "Стерильная белая шапочка для операций."
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_white.rsi
     state: icon
@@ -4951,13 +4919,13 @@
   - node: end
     entity: civ13_head_white_surgical_cap
 - type: construction
-  name: dark green surgical cap
+  name: "тёмно-зелёная хирургическая шапочка"
   id: civ13_head_dark_green_surgical_cap
   graph: civ13_head_dark_green_surgical_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark green sterile surgical cap.
+  description: "Стерильная хирургическая шапочка тёмно-зелёного цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_darkgreen.rsi
     state: icon
@@ -4978,13 +4946,13 @@
   - node: end
     entity: civ13_head_dark_green_surgical_cap
 - type: construction
-  name: light green surgical cap
+  name: "светло-зелёная хирургическая шапочка"
   id: civ13_head_light_green_surgical_cap
   graph: civ13_head_light_green_surgical_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A light green sterile surgical cap.
+  description: "Стерильная шапочка светло-зелёного цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_lightgreen.rsi
     state: icon
@@ -5005,13 +4973,13 @@
   - node: end
     entity: civ13_head_light_green_surgical_cap
 - type: construction
-  name: navy surgical cap
+  name: "тёмно-синяя хирургическая шапочка"
   id: civ13_head_navy_surgical_cap
   graph: civ13_head_navy_surgical_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A navy sterile surgical cap.
+  description: "Стерильная шапочка тёмно-синего цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/surgcap_navy.rsi
     state: icon
@@ -5032,13 +5000,13 @@
   - node: end
     entity: civ13_head_navy_surgical_cap
 - type: construction
-  name: creed hood
+  name: "капюшон кредо"
   id: civ13_head_creed_hood
   graph: civ13_head_creed_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: It's hood that covers the head.
+  description: "Капюшон, закрывающий голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/ac_hood.rsi
     state: icon
@@ -5059,13 +5027,13 @@
   - node: end
     entity: civ13_head_creed_hood
 - type: construction
-  name: Abashiri Guard Cap
+  name: "фуражка охранника Абасири"
   id: civ13_head_Abashiri_Guard_Cap
   graph: civ13_head_Abashiri_Guard_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Abashiri Guards.
+  description: "Фуражка сотрудника охраны Абасири."
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard.rsi
     state: icon
@@ -5086,13 +5054,13 @@
   - node: end
     entity: civ13_head_Abashiri_Guard_Cap
 - type: construction
-  name: Abashiri Head Guard Cap
+  name: "фуражка старшего охранника Абасири"
   id: civ13_head_Abashiri_Head_Guard_Cap
   graph: civ13_head_Abashiri_Head_Guard_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Abashiri Head Guard.
+  description: "Фуражка начальника охраны Абасири."
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
     state: icon
@@ -5113,13 +5081,13 @@
   - node: end
     entity: civ13_head_Abashiri_Head_Guard_Cap
 - type: construction
-  name: Abashiri Warden Cap
+  name: "фуражка начальника тюрьмы Абасири"
   id: civ13_head_Abashiri_Warden_Cap
   graph: civ13_head_Abashiri_Warden_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Abashiri Warden.
+  description: "Фуражка начальника тюрьмы Абасири."
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_guard_head.rsi
     state: icon
@@ -5140,13 +5108,13 @@
   - node: end
     entity: civ13_head_Abashiri_Warden_Cap
 - type: construction
-  name: Kasa
+  name: "тюремная соломенная шляпа"
   id: civ13_head_Kasa
   graph: civ13_head_Kasa
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A straw hat that obscures inmate's view, as well as their faces.
+  description: "Закрывает заключённому лицо и ограничивает обзор."
   icon:
     sprite: Civ14/Clothing/exported/hats/abashiri_kasa.rsi
     state: icon
@@ -5167,13 +5135,13 @@
   - node: end
     entity: civ13_head_Kasa
 - type: construction
-  name: Japanese Cap
+  name: "японская солдатская кепка"
   id: civ13_head_Japanese_Cap_1
   graph: civ13_head_Japanese_Cap_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by japanese soldiers.
+  description: "Кепка военнослужащего японской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/japcap2.rsi
     state: icon
@@ -5194,13 +5162,13 @@
   - node: end
     entity: civ13_head_Japanese_Cap_1
 - type: construction
-  name: Russian Cap
+  name: "российская солдатская кепка"
   id: civ13_head_Russian_Cap
   graph: civ13_head_Russian_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by russian soldiers.
+  description: "Кепка военнослужащего российской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/ruscap.rsi
     state: icon
@@ -5221,13 +5189,13 @@
   - node: end
     entity: civ13_head_Russian_Cap
 - type: construction
-  name: Russian Officer Cap
+  name: "фуражка российского офицера"
   id: civ13_head_Russian_Officer_Cap
   graph: civ13_head_Russian_Officer_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by russian army officers.
+  description: "Фуражка офицера российской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/rusoffcap.rsi
     state: icon
@@ -5248,13 +5216,13 @@
   - node: end
     entity: civ13_head_Russian_Officer_Cap
 - type: construction
-  name: top hat
+  name: "высокий цилиндр"
   id: civ13_head_top_hat_1
   graph: civ13_head_top_hat_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A high top hat.
+  description: "Высокая шляпа-цилиндр."
   icon:
     sprite: Civ14/Clothing/exported/hats/tophat.rsi
     state: icon
@@ -5275,13 +5243,13 @@
   - node: end
     entity: civ13_head_top_hat_1
 - type: construction
-  name: brown flat cap
+  name: "коричневая плоская кепка"
   id: civ13_head_brown_flat_cap
   graph: civ13_head_brown_flat_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A common flat cap, in brown.
+  description: "Обычная плоская кепка коричневого цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap1.rsi
     state: icon
@@ -5302,13 +5270,13 @@
   - node: end
     entity: civ13_head_brown_flat_cap
 - type: construction
-  name: blue flat cap
+  name: "синяя плоская кепка"
   id: civ13_head_blue_flat_cap
   graph: civ13_head_blue_flat_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A common flat cap, in blue.
+  description: "Обычная плоская кепка синего цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap2.rsi
     state: icon
@@ -5329,13 +5297,13 @@
   - node: end
     entity: civ13_head_blue_flat_cap
 - type: construction
-  name: grey flat cap
+  name: "серая плоская кепка"
   id: civ13_head_grey_flat_cap
   graph: civ13_head_grey_flat_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A common flat cap, in grey.
+  description: "Обычная плоская кепка серого цвета."
   icon:
     sprite: Civ14/Clothing/exported/hats/flatcap3.rsi
     state: icon
@@ -5356,13 +5324,13 @@
   - node: end
     entity: civ13_head_grey_flat_cap
 - type: construction
-  name: fedora hat
+  name: "федора"
   id: civ13_head_fedora_hat
   graph: civ13_head_fedora_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brim hat.
+  description: "Шляпа с широкими полями."
   icon:
     sprite: Civ14/Clothing/exported/hats/fedora.rsi
     state: icon
@@ -5383,13 +5351,13 @@
   - node: end
     entity: civ13_head_fedora_hat
 - type: construction
-  name: Cheka cap
+  name: "кепка чекиста"
   id: civ13_head_Cheka_cap
   graph: civ13_head_Cheka_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black leather cap worn by Cheka agents.
+  description: "Чёрная кожаная кепка сотрудника ЧК."
   icon:
     sprite: Civ14/Clothing/exported/hats/cheka.rsi
     state: icon
@@ -5410,13 +5378,13 @@
   - node: end
     entity: civ13_head_Cheka_cap
 - type: construction
-  name: papakha
+  name: "папаха"
   id: civ13_head_papakha
   graph: civ13_head_papakha
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A traditional caucasus hat.
+  description: "Традиционный кавказский головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha.rsi
     state: icon
@@ -5437,13 +5405,13 @@
   - node: end
     entity: civ13_head_papakha
 - type: construction
-  name: Kuban papakha
+  name: "кубанская папаха"
   id: civ13_head_Kuban_papakha
   graph: civ13_head_Kuban_papakha
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A traditional Kuban Cossak papakha, black with a red crown.
+  description: "Традиционная чёрная папаха кубанских казаков с красным верхом."
   icon:
     sprite: Civ14/Clothing/exported/hats/papakha_kuban.rsi
     state: icon
@@ -5464,13 +5432,13 @@
   - node: end
     entity: civ13_head_Kuban_papakha
 - type: construction
-  name: budenovka
+  name: "будёновка"
   id: civ13_head_budenovka
   graph: civ13_head_budenovka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A Soviet budenovka hat.
+  description: "Остроконечная суконная шапка красноармейца."
   icon:
     sprite: Civ14/Clothing/exported/hats/budenovka.rsi
     state: icon
@@ -5491,13 +5459,13 @@
   - node: end
     entity: civ13_head_budenovka
 - type: construction
-  name: German cap
+  name: "немецкая солдатская кепка"
   id: civ13_head_German_cap
   graph: civ13_head_German_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap sometimes worn by German soldiers.
+  description: "Кепка военнослужащего немецкой армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/germcap2.rsi
     state: icon
@@ -5518,13 +5486,13 @@
   - node: end
     entity: civ13_head_German_cap
 - type: construction
-  name: French kepi
+  name: "французское кепи"
   id: civ13_head_French_kepi
   graph: civ13_head_French_kepi
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A flat circular cap worn by French soldiers.
+  description: "Кепи с плоским круглым верхом, какое носят французские солдаты."
   icon:
     sprite: Civ14/Clothing/exported/hats/frenchcap.rsi
     state: icon
@@ -5545,13 +5513,13 @@
   - node: end
     entity: civ13_head_French_kepi
 - type: construction
-  name: British cap
+  name: "британская солдатская кепка"
   id: civ13_head_British_cap
   graph: civ13_head_British_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A classic British cap, commonly worn by British soldiers.
+  description: "Классическая кепка британского военнослужащего."
   icon:
     sprite: Civ14/Clothing/exported/hats/brittcap.rsi
     state: icon
@@ -5572,13 +5540,13 @@
   - node: end
     entity: civ13_head_British_cap
 - type: construction
-  name: Filipino Officer Cap
+  name: "фуражка филиппинского офицера"
   id: civ13_head_Filipino_Officer_Cap
   graph: civ13_head_Filipino_Officer_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by Filipino Officers of the Philippine Republic Army.
+  description: "Фуражка офицера армии Филиппинской республики."
   icon:
     sprite: Civ14/Clothing/exported/hats/fil_off_cap.rsi
     state: icon
@@ -5599,14 +5567,13 @@
   - node: end
     entity: civ13_head_Filipino_Officer_Cap
 - type: construction
-  name: Baliwag
+  name: "шляпа «Баливаг»"
   id: civ13_head_Baliwag
   graph: civ13_head_Baliwag
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A common hat worn by the spanish and filipinos, this one bearing the
-    mark of the Philippine Republic Army.
+  description: "Распространённая среди испанцев и филиппинцев шляпа со знаком армии Филиппинской республики."
   icon:
     sprite: Civ14/Clothing/exported/hats/baliwag.rsi
     state: icon
@@ -5627,13 +5594,13 @@
   - node: end
     entity: civ13_head_Baliwag
 - type: construction
-  name: US Army Hat
+  name: "тропическая шляпа армии США"
   id: civ13_head_US_Army_Hat
   graph: civ13_head_US_Army_Hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat worn by enlisted men of the US Army in tropical climates.
+  description: "Шляпа американского солдата для службы в тропиках."
   icon:
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
     state: icon
@@ -5654,13 +5621,13 @@
   - node: end
     entity: civ13_head_US_Army_Hat
 - type: construction
-  name: cowboy hat
+  name: "ковбойская шляпа"
   id: civ13_head_cowboy_hat
   graph: civ13_head_cowboy_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat worn by stylish rural people.
+  description: "Стильная шляпа сельского жителя."
   icon:
     sprite: Civ14/Clothing/exported/hats/us_fp_hat.rsi
     state: icon
@@ -5681,13 +5648,13 @@
   - node: end
     entity: civ13_head_cowboy_hat
 - type: construction
-  name: NCR 1st Recon Beret
+  name: "берет Первой разведки НКР"
   id: civ13_head_NCR_1st_Recon_Beret
   graph: civ13_head_NCR_1st_Recon_Beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red beret with a capbadge of the NCR's 1st Recon.
+  description: "Красный берет со знаком разведывательного подразделения НКР."
   icon:
     sprite: Civ14/Clothing/exported/hats/ncr_beret_recon.rsi
     state: icon
@@ -5708,13 +5675,13 @@
   - node: end
     entity: civ13_head_NCR_1st_Recon_Beret
 - type: construction
-  name: fur hat
+  name: "меховая шапка"
   id: civ13_head_fur_hat
   graph: civ13_head_fur_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat made of fur.
+  description: "Шапка из меха."
   icon:
     sprite: Civ14/Clothing/exported/hats/furhat_hat.rsi
     state: icon
@@ -5735,14 +5702,13 @@
   - node: end
     entity: civ13_head_fur_hat
 - type: construction
-  name: bisonhead fur hat
+  name: "меховая шапка из шкуры бизона"
   id: civ13_head_bisonhead_fur_hat
   graph: civ13_head_bisonhead_fur_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat made of bison fur with little decorative horns and a fur lined
-    interior.
+  description: "Тёплая шапка из меха бизона с декоративными рожками."
   icon:
     sprite: Civ14/Clothing/exported/hats/bison_fur_hat.rsi
     state: icon
@@ -5763,13 +5729,13 @@
   - node: end
     entity: civ13_head_bisonhead_fur_hat
 - type: construction
-  name: fur cap
+  name: "меховая кепка"
   id: civ13_head_fur_cap
   graph: civ13_head_fur_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap made of fur.
+  description: "Кепка из меха."
   icon:
     sprite: Civ14/Clothing/exported/hats/furcap_hat.rsi
     state: icon
@@ -5790,13 +5756,13 @@
   - node: end
     entity: civ13_head_fur_cap
 - type: construction
-  name: roundcap
+  name: "круглая кожаная шапка"
   id: civ13_head_roundcap
   graph: civ13_head_roundcap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap made of leather.
+  description: "Круглая шапка из кожи."
   icon:
     sprite: Civ14/Clothing/exported/hats/roundcap_hat.rsi
     state: icon
@@ -5817,13 +5783,13 @@
   - node: end
     entity: civ13_head_roundcap
 - type: construction
-  name: kerchief
+  name: "косынка"
   id: civ13_head_kerchief
   graph: civ13_head_kerchief
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A kerchief, worn by women over the hair.
+  description: "Платок, которым повязывают волосы."
   icon:
     sprite: Civ14/Clothing/exported/hats/kerchief.rsi
     state: icon
@@ -5844,13 +5810,13 @@
   - node: end
     entity: civ13_head_kerchief
 - type: construction
-  name: red sailor beret
+  name: "красный матросский берет"
   id: civ13_head_red_sailor_beret
   graph: civ13_head_red_sailor_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red beret.
+  description: "Красный берет моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/redberet.rsi
     state: icon
@@ -5871,13 +5837,13 @@
   - node: end
     entity: civ13_head_red_sailor_beret
 - type: construction
-  name: blue sailor beret
+  name: "синий матросский берет"
   id: civ13_head_blue_sailor_beret
   graph: civ13_head_blue_sailor_beret
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A blue beret.
+  description: "Синий берет моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/blueberet.rsi
     state: icon
@@ -5898,13 +5864,13 @@
   - node: end
     entity: civ13_head_blue_sailor_beret
 - type: construction
-  name: tarred hat
+  name: "просмолённая матросская шляпа"
   id: civ13_head_tarred_hat
   graph: civ13_head_tarred_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A tarred hat, commonly used by sailors.
+  description: "Непромокаемая просмолённая шляпа моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/tarred_hat.rsi
     state: icon
@@ -5925,13 +5891,13 @@
   - node: end
     entity: civ13_head_tarred_hat
 - type: construction
-  name: straw hat
+  name: "соломенная шляпа"
   id: civ13_head_straw_hat
   graph: civ13_head_straw_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A straw hat, commonly used by sailors.
+  description: "Соломенная шляпа, любимая моряками."
   icon:
     sprite: Civ14/Clothing/exported/hats/boater_hat.rsi
     state: icon
@@ -5952,13 +5918,13 @@
   - node: end
     entity: civ13_head_straw_hat
 - type: construction
-  name: black tricorne
+  name: "чёрная треуголка"
   id: civ13_head_black_tricorne
   graph: civ13_head_black_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black tricorne. In fashion.
+  description: "Модная чёрная треуголка."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_black.rsi
     state: icon
@@ -5979,13 +5945,13 @@
   - node: end
     entity: civ13_head_black_tricorne
 - type: construction
-  name: capotain
+  name: "капотен"
   id: civ13_head_capotain
   graph: civ13_head_capotain
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black capotain, high fashion amongst the courts of nobilty.
+  description: "Высокая чёрная шляпа, модная при дворянских дворах."
   icon:
     sprite: Civ14/Clothing/exported/hats/capotain.rsi
     state: icon
@@ -6006,13 +5972,13 @@
   - node: end
     entity: civ13_head_capotain
 - type: construction
-  name: capotain
+  name: "капотен странника"
   id: civ13_head_capotain_1
   graph: civ13_head_capotain_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A stylized capotain, often worn by transient pilgrims.
+  description: "Высокая шляпа странствующего паломника."
   icon:
     sprite: Civ14/Clothing/exported/hats/pilgrim.rsi
     state: icon
@@ -6033,13 +5999,13 @@
   - node: end
     entity: civ13_head_capotain_1
 - type: construction
-  name: Pirate hat
+  name: "пиратская шляпа"
   id: civ13_head_Pirate_hat
   graph: civ13_head_Pirate_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Шляпа настоящего морского разбойника."
   icon:
     sprite: Civ14/Clothing/exported/hats/piratehat.rsi
     state: icon
@@ -6060,13 +6026,13 @@
   - node: end
     entity: civ13_head_Pirate_hat
 - type: construction
-  name: bandana
+  name: "бандана"
   id: civ13_head_bandana_1
   graph: civ13_head_bandana_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Простой платок на голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/piratebandana1.rsi
     state: icon
@@ -6087,13 +6053,13 @@
   - node: end
     entity: civ13_head_bandana_1
 - type: construction
-  name: royal navy tricorne
+  name: "треуголка британского флота"
   id: civ13_head_royal_navy_tricorne
   graph: civ13_head_royal_navy_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A blue tricorne, used by the british royal navy.
+  description: "Синяя треуголка моряка Королевского флота."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british.rsi
     state: icon
@@ -6114,13 +6080,13 @@
   - node: end
     entity: civ13_head_royal_navy_tricorne
 - type: construction
-  name: british Army tricorne
+  name: "треуголка британской армии"
   id: civ13_head_british_Army_tricorne
   graph: civ13_head_british_Army_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red tricorne, used by the british army.
+  description: "Красная треуголка британского солдата."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british2.rsi
     state: icon
@@ -6141,13 +6107,13 @@
   - node: end
     entity: civ13_head_british_Army_tricorne
 - type: construction
-  name: black bicorne
+  name: "чёрная двууголка"
   id: civ13_head_black_bicorne
   graph: civ13_head_black_bicorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black bicorne, commonly used by the armed forces.
+  description: "Чёрная двууголка военного образца."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_british_soldier.rsi
     state: icon
@@ -6168,13 +6134,13 @@
   - node: end
     entity: civ13_head_black_bicorne
 - type: construction
-  name: british feathered hat
+  name: "британская двууголка с пером"
   id: civ13_head_british_feathered_hat
   graph: civ13_head_british_feathered_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered black bicorne, used by the british light infantry.
+  description: "Чёрная двууголка с пером, какую носят британские лёгкие пехотинцы."
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_br.rsi
     state: icon
@@ -6195,13 +6161,13 @@
   - node: end
     entity: civ13_head_british_feathered_hat
 - type: construction
-  name: portuguese navy tricorne
+  name: "треуголка португальского флота"
   id: civ13_head_portuguese_navy_tricorne
   graph: civ13_head_portuguese_navy_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green tricorne, used by the Portuguese Navy.
+  description: "Зелёная треуголка португальского моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
     state: icon
@@ -6222,13 +6188,13 @@
   - node: end
     entity: civ13_head_portuguese_navy_tricorne
 - type: construction
-  name: portuguese feathered hat
+  name: "португальская двууголка с пером"
   id: civ13_head_portuguese_feathered_hat
   graph: civ13_head_portuguese_feathered_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered black bicorne, used by the portuguese light infantry.
+  description: "Чёрная двууголка с пером, какую носят португальские лёгкие пехотинцы."
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_pt.rsi
     state: icon
@@ -6249,13 +6215,13 @@
   - node: end
     entity: civ13_head_portuguese_feathered_hat
 - type: construction
-  name: portuguese army tricorne
+  name: "треуголка португальской армии"
   id: civ13_head_portuguese_army_tricorne
   graph: civ13_head_portuguese_army_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A green tricorne, used by the portuguese army
+  description: "Зелёная треуголка португальского солдата."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_portuguese.rsi
     state: icon
@@ -6276,13 +6242,13 @@
   - node: end
     entity: civ13_head_portuguese_army_tricorne
 - type: construction
-  name: spanish navy tricorne
+  name: "треуголка испанского флота"
   id: civ13_head_spanish_navy_tricorne
   graph: civ13_head_spanish_navy_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A yellow tricorne, used by the spanish navy.
+  description: "Жёлтая треуголка испанского моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
     state: icon
@@ -6303,13 +6269,13 @@
   - node: end
     entity: civ13_head_spanish_navy_tricorne
 - type: construction
-  name: spanish army tricorne
+  name: "треуголка испанской армии"
   id: civ13_head_spanish_army_tricorne
   graph: civ13_head_spanish_army_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A yellow tricorne, used by the spanish army.
+  description: "Жёлтая треуголка испанского солдата."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_spanish.rsi
     state: icon
@@ -6330,13 +6296,13 @@
   - node: end
     entity: civ13_head_spanish_army_tricorne
 - type: construction
-  name: french navy tricorne
+  name: "треуголка французского флота"
   id: civ13_head_french_navy_tricorne
   graph: civ13_head_french_navy_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white and blue tricorne, used by the french navy.
+  description: "Бело-синяя треуголка французского моряка."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
     state: icon
@@ -6357,13 +6323,13 @@
   - node: end
     entity: civ13_head_french_navy_tricorne
 - type: construction
-  name: french army tricorne
+  name: "треуголка французской армии"
   id: civ13_head_french_army_tricorne
   graph: civ13_head_french_army_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white and blue tricorne, used by the french army.
+  description: "Бело-синяя треуголка французского солдата."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_french.rsi
     state: icon
@@ -6384,13 +6350,13 @@
   - node: end
     entity: civ13_head_french_army_tricorne
 - type: construction
-  name: french feathered hat
+  name: "французская двууголка с пером"
   id: civ13_head_french_feathered_hat
   graph: civ13_head_french_feathered_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered black bicorne, used by the french light infantry.
+  description: "Чёрная двууголка с пером, какую носят французские лёгкие пехотинцы."
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_fr.rsi
     state: icon
@@ -6411,13 +6377,13 @@
   - node: end
     entity: civ13_head_french_feathered_hat
 - type: construction
-  name: united provinces navy tricorne
+  name: "треуголка флота Соединённых провинций"
   id: civ13_head_united_provinces_navy_tricorne
   graph: civ13_head_united_provinces_navy_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An orange tricorne, used by the united provinces navy.
+  description: "Оранжевая треуголка моряка Соединённых провинций."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
     state: icon
@@ -6438,13 +6404,13 @@
   - node: end
     entity: civ13_head_united_provinces_navy_tricorne
 - type: construction
-  name: united Provinces feathered hat
+  name: "двууголка Соединённых провинций с пером"
   id: civ13_head_united_Provinces_feathered_hat
   graph: civ13_head_united_Provinces_feathered_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered black bicorne, used by the united provinces light infantry.
+  description: "Чёрная двууголка с пером, какую носят лёгкие пехотинцы Соединённых провинций."
   icon:
     sprite: Civ14/Clothing/exported/hats/chasseur_nl.rsi
     state: icon
@@ -6465,13 +6431,13 @@
   - node: end
     entity: civ13_head_united_Provinces_feathered_hat
 - type: construction
-  name: united Provinces Army tricorne
+  name: "треуголка армии Соединённых провинций"
   id: civ13_head_united_Provinces_Army_tricorne
   graph: civ13_head_united_Provinces_Army_tricorne
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An orange tricorne, used by the dutch united provinces army.
+  description: "Оранжевая треуголка солдата Соединённых провинций."
   icon:
     sprite: Civ14/Clothing/exported/hats/tricorne_dutch.rsi
     state: icon
@@ -6492,13 +6458,13 @@
   - node: end
     entity: civ13_head_united_Provinces_Army_tricorne
 - type: construction
-  name: nurse hat
+  name: "шапочка медсестры"
   id: civ13_head_nurse_hat
   graph: civ13_head_nurse_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A white nurse hat, symbolic of care and empathy.
+  description: "Белая шапочка, символ заботы о пациентах."
   icon:
     sprite: Civ14/Clothing/exported/hats/nursehat.rsi
     state: icon
@@ -6519,13 +6485,13 @@
   - node: end
     entity: civ13_head_nurse_hat
 - type: construction
-  name: bowler hat
+  name: "котелок"
   id: civ13_head_bowler_hat
   graph: civ13_head_bowler_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A round bowler hat.
+  description: "Круглая шляпа-котелок."
   icon:
     sprite: Civ14/Clothing/exported/hats/bowler_hat.rsi
     state: icon
@@ -6546,13 +6512,13 @@
   - node: end
     entity: civ13_head_bowler_hat
 - type: construction
-  name: cowboy hat
+  name: "кожаная ковбойская шляпа"
   id: civ13_head_cowboy_hat_1
   graph: civ13_head_cowboy_hat_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A curved leather hat.
+  description: "Кожаная шляпа с загнутыми полями."
   icon:
     sprite: Civ14/Clothing/exported/hats/cowboy.rsi
     state: icon
@@ -6573,13 +6539,13 @@
   - node: end
     entity: civ13_head_cowboy_hat_1
 - type: construction
-  name: dark cowboy hat
+  name: "тёмная ковбойская шляпа"
   id: civ13_head_dark_cowboy_hat
   graph: civ13_head_dark_cowboy_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A grayish, curved leather hat.
+  description: "Сероватая кожаная шляпа с загнутыми полями."
   icon:
     sprite: Civ14/Clothing/exported/hats/cowboy2.rsi
     state: icon
@@ -6600,14 +6566,13 @@
   - node: end
     entity: civ13_head_dark_cowboy_hat
 - type: construction
-  name: vaquero hat
+  name: "шляпа вакеро"
   id: civ13_head_vaquero_hat
   graph: civ13_head_vaquero_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A wide brimmed hat with a feather in the top, favored by mexican cowboys.
-    The wide brim helps keep the sun off the wearer's face.
+  description: "Широкополая шляпа мексиканского ковбоя с пером. Защищает лицо от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/vaquerohat.rsi
     state: icon
@@ -6628,14 +6593,13 @@
   - node: end
     entity: civ13_head_vaquero_hat
 - type: construction
-  name: bandit hat
+  name: "шляпа бандита"
   id: civ13_head_bandit_hat
   graph: civ13_head_bandit_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark and long brimmed cowboy hat with a grim presence. Despite the
-    dark colors, it helps keep the sun off the wearer's face.
+  description: "Тёмная ковбойская шляпа с широкими полями и зловещим видом. Хорошо защищает от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/bandit.rsi
     state: icon
@@ -6656,13 +6620,13 @@
   - node: end
     entity: civ13_head_bandit_hat
 - type: construction
-  name: dark union hat
+  name: "тёмная шляпа солдата Союза"
   id: civ13_head_dark_union_hat
   graph: civ13_head_dark_union_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark, slouched leather hat worn commonly by union soldiers.
+  description: "Тёмная поношенная кожаная шляпа солдата армии Союза."
   icon:
     sprite: Civ14/Clothing/exported/hats/union_hat.rsi
     state: icon
@@ -6683,13 +6647,13 @@
   - node: end
     entity: civ13_head_dark_union_hat
 - type: construction
-  name: light union hat
+  name: "светлая шляпа солдата Союза"
   id: civ13_head_light_union_hat
   graph: civ13_head_light_union_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A light, slouched leather hat worn commonly by union soldiers.
+  description: "Светлая поношенная кожаная шляпа солдата армии Союза."
   icon:
     sprite: Civ14/Clothing/exported/hats/union_hat2.rsi
     state: icon
@@ -6710,13 +6674,13 @@
   - node: end
     entity: civ13_head_light_union_hat
 - type: construction
-  name: grey confederate hat
+  name: "серая шляпа конфедерата"
   id: civ13_head_grey_confederate_hat
   graph: civ13_head_grey_confederate_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A grey, slouched leather hat worn commonly by confederate soldiers.
+  description: "Серая поношенная кожаная шляпа солдата Конфедерации."
   icon:
     sprite: Civ14/Clothing/exported/hats/confederate_hat.rsi
     state: icon
@@ -6737,13 +6701,13 @@
   - node: end
     entity: civ13_head_grey_confederate_hat
 - type: construction
-  name: union Cap
+  name: "кепка солдата Союза"
   id: civ13_head_union_Cap
   graph: civ13_head_union_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by union soldiers.
+  description: "Кепка военнослужащего армии Союза."
   icon:
     sprite: Civ14/Clothing/exported/hats/union_cap.rsi
     state: icon
@@ -6764,13 +6728,13 @@
   - node: end
     entity: civ13_head_union_Cap
 - type: construction
-  name: confederate cap
+  name: "кепка конфедерата"
   id: civ13_head_confederate_cap
   graph: civ13_head_confederate_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by confederate soldiers.
+  description: "Кепка солдата Конфедерации."
   icon:
     sprite: Civ14/Clothing/exported/hats/confederate_cap.rsi
     state: icon
@@ -6791,13 +6755,13 @@
   - node: end
     entity: civ13_head_confederate_cap
 - type: construction
-  name: sombrero
+  name: "сомбреро"
   id: civ13_head_sombrero
   graph: civ13_head_sombrero
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Ay caramba! The wide brim helps keep the sun off the wearer's face
+  description: "Ай, карамба! Широкие поля защищают лицо от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/sombrero.rsi
     state: icon
@@ -6818,14 +6782,13 @@
   - node: end
     entity: civ13_head_sombrero
 - type: construction
-  name: white ten gallon hat
+  name: "белая шляпа «десять галлонов»"
   id: civ13_head_white_ten_gallon_hat
   graph: civ13_head_white_ten_gallon_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: Hat of choice of made-men and those aspiring to wealth & greatness.
-    Its white wide brim helps keep the sun off wearer's face.
+  description: "Широкополая белая шляпа человека, который добился успеха или мечтает о нём. Защищает от солнца."
   icon:
     sprite: Civ14/Clothing/exported/hats/ten_gallon_hat_white.rsi
     state: icon
@@ -6846,13 +6809,13 @@
   - node: end
     entity: civ13_head_white_ten_gallon_hat
 - type: construction
-  name: artisan hat
+  name: "шляпа ремесленника"
   id: civ13_head_artisan_hat
   graph: civ13_head_artisan_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A large artisan hat.
+  description: "Большая шляпа ремесленника."
   icon:
     sprite: Civ14/Clothing/exported/hats/artisan.rsi
     state: icon
@@ -6873,13 +6836,13 @@
   - node: end
     entity: civ13_head_artisan_hat
 - type: construction
-  name: feathered hat
+  name: "шляпа с пером"
   id: civ13_head_feathered_hat
   graph: civ13_head_feathered_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered hat.
+  description: "Шляпа, украшенная пером."
   icon:
     sprite: Civ14/Clothing/exported/hats/feathered_hat.rsi
     state: icon
@@ -6900,13 +6863,13 @@
   - node: end
     entity: civ13_head_feathered_hat
 - type: construction
-  name: count hat
+  name: "графская шляпа"
   id: civ13_head_count_hat
   graph: civ13_head_count_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A fancy, feathered hat.
+  description: "Роскошная шляпа с пером."
   icon:
     sprite: Civ14/Clothing/exported/hats/medieval_count_hat.rsi
     state: icon
@@ -6927,13 +6890,13 @@
   - node: end
     entity: civ13_head_count_hat
 - type: construction
-  name: cavalier hat
+  name: "кавалерская шляпа"
   id: civ13_head_cavalier_hat
   graph: civ13_head_cavalier_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A free willled and fanciful leather feathered hat.
+  description: "Лихо украшенная перьями кожаная шляпа."
   icon:
     sprite: Civ14/Clothing/exported/hats/cavalier.rsi
     state: icon
@@ -6954,13 +6917,13 @@
   - node: end
     entity: civ13_head_cavalier_hat
 - type: construction
-  name: brown noble hat
+  name: "коричневая шапка дворянина"
   id: civ13_head_brown_noble_hat
   graph: civ13_head_brown_noble_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Коричневая средневековая шапка."
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat1.rsi
     state: icon
@@ -6981,13 +6944,13 @@
   - node: end
     entity: civ13_head_brown_noble_hat
 - type: construction
-  name: black noble hat
+  name: "чёрная шапка дворянина"
   id: civ13_head_black_noble_hat
   graph: civ13_head_black_noble_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: ""
+  description: "Чёрная средневековая шапка."
   icon:
     sprite: Civ14/Clothing/exported/hats/noblehat2.rsi
     state: icon
@@ -7008,14 +6971,13 @@
   - node: end
     entity: civ13_head_black_noble_hat
 - type: construction
-  name: phrigian hat
+  name: "фригийский колпак"
   id: civ13_head_phrigian_hat
   graph: civ13_head_phrigian_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A knob ended hat of the ancient phrigian design. Often worn by merchants
-    or peasants of jewish descent.
+  description: "Колпак с загнутой верхушкой древнего фасона. Такой носят торговцы и крестьяне."
   icon:
     sprite: Civ14/Clothing/exported/hats/phrigian_hat.rsi
     state: icon
@@ -7036,14 +6998,13 @@
   - node: end
     entity: civ13_head_phrigian_hat
 - type: construction
-  name: doge hat
+  name: "шапка дожа"
   id: civ13_head_doge_hat
   graph: civ13_head_doge_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A ornate knob ended hat banded in gold of the ancient phrigian design.
-    Often worn by republic rulers over many petty merchantile aristocrats.
+  description: "Богато украшенная шапка с золотой окантовкой, достойная правителя торговой республики."
   icon:
     sprite: Civ14/Clothing/exported/hats/doge.rsi
     state: icon
@@ -7064,14 +7025,13 @@
   - node: end
     entity: civ13_head_doge_hat
 - type: construction
-  name: long black hooded cape
+  name: "длинный чёрный плащ с капюшоном"
   id: civ13_head_long_black_hooded_cape
   graph: civ13_head_long_black_hooded_cape
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A long black hooded cape. Often worn those wishing to conceal themselves
-    in the shadows.
+  description: "Помогает скрыться в тени и не привлекать внимания."
   icon:
     sprite: Civ14/Clothing/exported/hats/black_cape.rsi
     state: icon
@@ -7092,14 +7052,13 @@
   - node: end
     entity: civ13_head_long_black_hooded_cape
 - type: construction
-  name: plague doctor hat
+  name: "шляпа чумного доктора"
   id: civ13_head_plague_doctor_hat
   graph: civ13_head_plague_doctor_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A a short brimmed black hat. Often worn by plague doctors to cut a
-    discreet figure in the streets between visitations.
+  description: "Чёрная шляпа с короткими полями. Позволяет чумному доктору выглядеть сдержанно между вызовами."
   icon:
     sprite: Civ14/Clothing/exported/hats/plaguedoctor.rsi
     state: icon
@@ -7120,14 +7079,13 @@
   - node: end
     entity: civ13_head_plague_doctor_hat
 - type: construction
-  name: nun hood
+  name: "капюшон монахини"
   id: civ13_head_nun_hood
   graph: civ13_head_nun_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A typical nun hood. Made in such a way to indicate commitment, like
-    that found in marriage to the faith.
+  description: "Скромный головной убор, подчёркивающий посвящение себя вере."
   icon:
     sprite: Civ14/Clothing/exported/hats/nun_hood.rsi
     state: icon
@@ -7148,13 +7106,13 @@
   - node: end
     entity: civ13_head_nun_hood
 - type: construction
-  name: turban
+  name: "тюрбан"
   id: civ13_head_turban
   graph: civ13_head_turban
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A colored, light fabric turban.
+  description: "Лёгкий тюрбан из цветной ткани."
   icon:
     sprite: Civ14/Clothing/exported/hats/turban1.rsi
     state: icon
@@ -7175,13 +7133,13 @@
   - node: end
     entity: civ13_head_turban
 - type: construction
-  name: white turban
+  name: "белый тюрбан"
   id: civ13_head_white_turban
   graph: civ13_head_white_turban
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple white turban.
+  description: "Простой тюрбан из белой ткани."
   icon:
     sprite: Civ14/Clothing/exported/hats/turban_w.rsi
     state: icon
@@ -7202,13 +7160,13 @@
   - node: end
     entity: civ13_head_white_turban
 - type: construction
-  name: grand turban
+  name: "пышный тюрбан"
   id: civ13_head_grand_turban
   graph: civ13_head_grand_turban
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A large turban often worn by figures of importance..
+  description: "Большой тюрбан, какой носят важные люди."
   icon:
     sprite: Civ14/Clothing/exported/hats/sultan.rsi
     state: icon
@@ -7229,13 +7187,13 @@
   - node: end
     entity: civ13_head_grand_turban
 - type: construction
-  name: toadstool hat
+  name: "шляпа-гриб"
   id: civ13_head_toadstool_hat
   graph: civ13_head_toadstool_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: The princess is in another castle.
+  description: "Принцесса в другом замке."
   icon:
     sprite: Civ14/Clothing/exported/hats/toadstool.rsi
     state: icon
@@ -7256,13 +7214,13 @@
   - node: end
     entity: civ13_head_toadstool_hat
 - type: construction
-  name: keffiyeh
+  name: "куфия"
   id: civ13_head_keffiyeh
   graph: civ13_head_keffiyeh
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headdress fashioned from a scarf with a checkered pattern.
+  description: "Клетчатый платок, повязанный на голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/keffiyeh_black.rsi
     state: icon
@@ -7283,13 +7241,13 @@
   - node: end
     entity: civ13_head_keffiyeh
 - type: construction
-  name: pakol
+  name: "паколь"
   id: civ13_head_pakol
   graph: civ13_head_pakol
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A soft round-topped men's cap made of wool.
+  description: "Мягкая мужская шерстяная шапка с круглым верхом."
   icon:
     sprite: Civ14/Clothing/exported/hats/pakol_rose.rsi
     state: icon
@@ -7310,13 +7268,13 @@
   - node: end
     entity: civ13_head_pakol
 - type: construction
-  name: mayan headdress
+  name: "убор майя"
   id: civ13_head_mayan_headdress
   graph: civ13_head_mayan_headdress
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A mayan style headdress.
+  description: "Головной убор в стиле древних майя."
   icon:
     sprite: Civ14/Clothing/exported/hats/mayan_headdress.rsi
     state: icon
@@ -7337,14 +7295,13 @@
   - node: end
     entity: civ13_head_mayan_headdress
 - type: construction
-  name: steppe shaman wool hat
+  name: "шерстяная шапка степного шамана"
   id: civ13_head_steppe_shaman_wool_hat
   graph: civ13_head_steppe_shaman_wool_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dyed red wool hat of steppe nomad design. Often worn by shamans to
-    protect themselves from the elements on the steppe whilst performing rituals
+  description: "Красная шерстяная шапка кочевников. Защищает шамана от непогоды во время обрядов в степи."
   icon:
     sprite: Civ14/Clothing/exported/hats/steppe_shaman_wool_hat.rsi
     state: icon
@@ -7365,13 +7322,13 @@
   - node: end
     entity: civ13_head_steppe_shaman_wool_hat
 - type: construction
-  name: gat hat
+  name: "гат"
   id: civ13_head_gat_hat
   graph: civ13_head_gat_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A traditional korean hat.
+  description: "Традиционная корейская шляпа."
   icon:
     sprite: Civ14/Clothing/exported/hats/gat.rsi
     state: icon
@@ -7392,13 +7349,13 @@
   - node: end
     entity: civ13_head_gat_hat
 - type: construction
-  name: Russian Federal Forces service cap
+  name: "служебная фуражка российских войск"
   id: civ13_head_Russian_Federal_Forces_service_cap
   graph: civ13_head_Russian_Federal_Forces_service_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A cap worn by the Russian Federal Army.
+  description: "Фуражка военнослужащего российской армии."
   icon:
     sprite: Civ14/Clothing/exported/hats/fieldcap_rus_fed.rsi
     state: icon
@@ -7419,13 +7376,13 @@
   - node: end
     entity: civ13_head_Russian_Federal_Forces_service_cap
 - type: construction
-  name: black bandana
+  name: "чёрная бандана"
   id: civ13_head_black_bandana
   graph: civ13_head_black_bandana
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A light black piece of cloth worn wrapped around the head.
+  description: "Лёгкая чёрная ткань, повязанная вокруг головы."
   icon:
     sprite: Civ14/Clothing/exported/hats/black_bandana.rsi
     state: icon
@@ -7446,14 +7403,13 @@
   - node: end
     entity: civ13_head_black_bandana
 - type: construction
-  name: black shemagh
+  name: "чёрный шемаг"
   id: civ13_head_black_shemagh
   graph: civ13_head_black_shemagh
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A light black piece of cloth worn loosely wrapped around the head,
-    typical of middle-east countries.
+  description: "Лёгкий чёрный платок, свободно повязанный на голове. Распространён на Ближнем Востоке."
   icon:
     sprite: Civ14/Clothing/exported/hats/black_shemagh.rsi
     state: icon
@@ -7474,13 +7430,13 @@
   - node: end
     entity: civ13_head_black_shemagh
 - type: construction
-  name: TFC Cap
+  name: "кепка TFC"
   id: civ13_head_TFC_Cap
   graph: civ13_head_TFC_Cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red Texas Fried Chicken cap.
+  description: "Красная кепка сети Texas Fried Chicken."
   icon:
     sprite: Civ14/Clothing/exported/hats/tfc.rsi
     state: icon
@@ -7501,13 +7457,13 @@
   - node: end
     entity: civ13_head_TFC_Cap
 - type: construction
-  name: MAGA hat
+  name: "кепка MAGA"
   id: civ13_head_MAGA_hat
   graph: civ13_head_MAGA_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A red hat with "Make America Great Again" on the front.
+  description: "Красная кепка с надписью «Сделаем Америку снова великой»."
   icon:
     sprite: Civ14/Clothing/exported/hats/maga.rsi
     state: icon
@@ -7528,13 +7484,13 @@
   - node: end
     entity: civ13_head_MAGA_hat
 - type: construction
-  name: FBI hat
+  name: "кепка ФБР"
   id: civ13_head_FBI_hat
   graph: civ13_head_FBI_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A black hat with FBI in white letters in the front.
+  description: "Чёрная кепка с белыми буквами FBI спереди."
   icon:
     sprite: Civ14/Clothing/exported/hats/fbi.rsi
     state: icon
@@ -7555,13 +7511,13 @@
   - node: end
     entity: civ13_head_FBI_hat
 - type: construction
-  name: ATF hat
+  name: "кепка ATF"
   id: civ13_head_ATF_hat
   graph: civ13_head_ATF_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark navy hat with ATF in yellow letters in the front.
+  description: "Тёмно-синяя кепка с жёлтыми буквами ATF спереди."
   icon:
     sprite: Civ14/Clothing/exported/hats/atf.rsi
     state: icon
@@ -7582,13 +7538,13 @@
   - node: end
     entity: civ13_head_ATF_hat
 - type: construction
-  name: DEA hat
+  name: "кепка DEA"
   id: civ13_head_DEA_hat
   graph: civ13_head_DEA_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A dark navy hat with DEA in yellow letters in the front.
+  description: "Тёмно-синяя кепка с жёлтыми буквами DEA спереди."
   icon:
     sprite: Civ14/Clothing/exported/hats/dea.rsi
     state: icon
@@ -7609,13 +7565,13 @@
   - node: end
     entity: civ13_head_DEA_hat
 - type: construction
-  name: ACU field cap
+  name: "полевая кепка ACU"
   id: civ13_head_ACU_field_cap
   graph: civ13_head_ACU_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An ACU pattern field cap, standard issue for the Ukrainian Ground Forces
+  description: "Кепка в камуфляже ACU, штатный головной убор сухопутных войск Украины."
   icon:
     sprite: Civ14/Clothing/exported/hats/ukraine_cap.rsi
     state: icon
@@ -7636,13 +7592,13 @@
   - node: end
     entity: civ13_head_ACU_field_cap
 - type: construction
-  name: USEC field cap
+  name: "полевая кепка USEC"
   id: civ13_head_USEC_field_cap
   graph: civ13_head_USEC_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An USEC pattern field cap, standard issue for USEC PMCs
+  description: "Камуфляжная кепка бойца ЧВК USEC."
   icon:
     sprite: Civ14/Clothing/exported/hats/usec_cap.rsi
     state: icon
@@ -7663,13 +7619,13 @@
   - node: end
     entity: civ13_head_USEC_field_cap
 - type: construction
-  name: BEAR field cap
+  name: "полевая кепка BEAR"
   id: civ13_head_BEAR_field_cap
   graph: civ13_head_BEAR_field_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A BEAR pattern field cap, standard issue for BEAR PMCs
+  description: "Камуфляжная кепка бойца ЧВК BEAR."
   icon:
     sprite: Civ14/Clothing/exported/hats/bear_cap.rsi
     state: icon
@@ -7690,13 +7646,13 @@
   - node: end
     entity: civ13_head_BEAR_field_cap
 - type: construction
-  name: black beanie
+  name: "чёрная вязаная шапка"
   id: civ13_head_black_beanie
   graph: civ13_head_black_beanie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A woolcloth black skull cap.
+  description: "Чёрная шапка из шерстяной ткани."
   icon:
     sprite: Civ14/Clothing/exported/hats/black_beanie.rsi
     state: icon
@@ -7717,14 +7673,13 @@
   - node: end
     entity: civ13_head_black_beanie
 - type: construction
-  name: umghele headband
+  name: "повязка умгеле"
   id: civ13_head_umghele_headband
   graph: civ13_head_umghele_headband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headband made from big cat pelt, worn ceremonially & military dress
-    by the zulu.
+  description: "Парадная повязка зулусского воина из шкуры крупной кошки."
   icon:
     sprite: Civ14/Clothing/exported/hats/zulu_umghele.rsi
     state: icon
@@ -7745,13 +7700,13 @@
   - node: end
     entity: civ13_head_umghele_headband
 - type: construction
-  name: leaf head covering
+  name: "убор из листьев"
   id: civ13_head_leaf_head_covering
   graph: civ13_head_leaf_head_covering
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A simple batch of leaves dampened down as rudimentary headwear.
+  description: "Пучок влажных листьев, которым прикрывают голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/leaf_hat.rsi
     state: icon
@@ -7772,13 +7727,13 @@
   - node: end
     entity: civ13_head_leaf_head_covering
 - type: construction
-  name: leaf crown
+  name: "венок из листьев"
   id: civ13_head_leaf_crown
   graph: civ13_head_leaf_crown
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A crown assembled out of leaves, fastened with a leather strap.
+  description: "Листья, собранные в венок и скреплённые кожаным ремешком."
   icon:
     sprite: Civ14/Clothing/exported/hats/leaf_crown.rsi
     state: icon
@@ -7799,14 +7754,13 @@
   - node: end
     entity: civ13_head_leaf_crown
 - type: construction
-  name: star platinum headband
+  name: "повязка «Стар Платинум»"
   id: civ13_head_star_platinum_headband
   graph: civ13_head_star_platinum_headband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A spiritually infused headband that lets your hair flow wildly in the
-    wind, you feel as if you could punch endlessly.
+  description: "Повязка, пропитанная духовной силой. Волосы развеваются на ветру, а руки будто готовы наносить удары без конца."
   icon:
     sprite: Civ14/Clothing/exported/hats/star_platinum.rsi
     state: icon
@@ -7827,13 +7781,13 @@
   - node: end
     entity: civ13_head_star_platinum_headband
 - type: construction
-  name: chief hat
+  name: "головной убор вождя"
   id: civ13_head_chief_hat
   graph: civ13_head_chief_hat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A hat made with with straw and feathers. Worn by tribal leaders.
+  description: "Убор из соломы и перьев, который носят племенные вожди."
   icon:
     sprite: Civ14/Clothing/exported/hats/chief_hat.rsi
     state: icon
@@ -7854,13 +7808,13 @@
   - node: end
     entity: civ13_head_chief_hat
 - type: construction
-  name: lizard pelt headcover
+  name: "шкура ящерицы на голову"
   id: civ13_head_lizard_pelt_headcover
   graph: civ13_head_lizard_pelt_headcover
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A lizard pelt turned into a headcover.
+  description: "Шкура ящерицы, превращённая в головной убор."
   icon:
     sprite: Civ14/Clothing/exported/hats/lizardpelt.rsi
     state: icon
@@ -7881,13 +7835,13 @@
   - node: end
     entity: civ13_head_lizard_pelt_headcover
 - type: construction
-  name: mystic hood
+  name: "капюшон мистика"
   id: civ13_head_mystic_hood
   graph: civ13_head_mystic_hood
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A ominous cream hood, it conceals the face almost fully.
+  description: "Зловещий светлый капюшон почти полностью скрывает лицо."
   icon:
     sprite: Civ14/Clothing/exported/hats/mystic.rsi
     state: icon
@@ -7908,13 +7862,13 @@
   - node: end
     entity: civ13_head_mystic_hood
 - type: construction
-  name: officer cap
+  name: "офицерская фуражка"
   id: civ13_head_officer_cap
   graph: civ13_head_officer_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: An officer cap.
+  description: "Фуражка офицера."
   icon:
     sprite: Civ14/Clothing/exported/hats/customcap.rsi
     state: icon
@@ -7935,13 +7889,13 @@
   - node: end
     entity: civ13_head_officer_cap
 - type: construction
-  name: keffiyeh
+  name: "куфия"
   id: civ13_head_keffiyeh_1
   graph: civ13_head_keffiyeh_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headdress fashioned from a scarf with a checkered pattern.
+  description: "Клетчатый платок, повязанный на голову."
   icon:
     sprite: Civ14/Clothing/exported/hats/keffiyeh_custom.rsi
     state: icon
@@ -7962,13 +7916,13 @@
   - node: end
     entity: civ13_head_keffiyeh_1
 - type: construction
-  name: feathered cap
+  name: "кепка с пером"
   id: civ13_head_feathered_cap
   graph: civ13_head_feathered_cap
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A feathered cap.
+  description: "Кепка, украшенная пером."
   icon:
     sprite: Civ14/Clothing/exported/hats/custfeathercap_hat.rsi
     state: icon
@@ -7989,13 +7943,13 @@
   - node: end
     entity: civ13_head_feathered_cap
 - type: construction
-  name: hennin
+  name: "эннен"
   id: civ13_head_hennin
   graph: civ13_head_hennin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: A headdress fashioned from cloth with a nice lining.
+  description: "Тканевый головной убор с красивой подкладкой."
   icon:
     sprite: Civ14/Clothing/exported/hats/custom_hennin.rsi
     state: icon

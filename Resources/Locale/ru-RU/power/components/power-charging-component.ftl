@@ -1,0 +1,26 @@
+
+power-charge-window-status = Статус:
+power-charge-window-power-on = Включён
+power-charge-window-power-off = Выключен
+power-charge-window-eta-value = { TOSTRING($left, "m\\:ss") }
+
+power-charge-window-power = Питание:
+
+power-charge-window-eta = Оставшееся время:
+
+power-charge-window-charge = Заряд:
+
+
+power-charge-window-status-fully-charged = Полностью заряжен
+
+power-charge-window-status-off = Выключен
+
+power-charge-window-status-charging = Заряжается
+
+power-charge-window-status-discharging = Разряжается
+
+
+power-charge-window-power-label = { $draw } / { $max } Вт
+
+
+power-charge-window-eta-none = Н/Д

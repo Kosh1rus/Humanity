@@ -1,8 +1,8 @@
 - type: entity
   id: LockerBooze
   parent: LockerBase
-  name: booze storage
-  description: This is where the bartender keeps the booze.
+  name: "шкаф со спиртным"
+  description: "Здесь бармен хранит выпивку."
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -179,7 +179,7 @@
 - type: entity
   id: LockerFreezer
   parent: LockerFreezerBase
-  name: freezer
+  name: "морозильник"
   suffix: Kitchen, Locked
   components:
   - type: AccessReader

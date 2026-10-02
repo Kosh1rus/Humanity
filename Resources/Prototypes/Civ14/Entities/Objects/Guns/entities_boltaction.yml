@@ -289,10 +289,10 @@
           - civ13_caliber_a792x94
 
 - type: entity
-  name: Mosin M1891
+  name: "винтовка Мосина образца 1891 года"
   parent: BaseWeaponBoltAction
   id: civ13_boltaction_Mosin
-  description: Russian bolt-action rifle chambered in 7.62x54mmR cartridges.
+  description: "Российская винтовка с продольно-скользящим затвором под патрон 7,62 × 54 мм R."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mosin.rsi
@@ -312,12 +312,10 @@
           - civ13_caliber_a762x54
 
 - type: entity
-  name: Mosin M91/30
+  name: "винтовка Мосина образца 1891/30 года"
   parent: civ13_boltaction_Mosin
   id: civ13_boltaction_Mosin_30
-  description: >-
-    A modernized version of the original M1891. Bolt-action rifle chambered in
-    7.62x54mmR cartridges.
+  description: "Модернизированная винтовка Мосина с продольно-скользящим затвором под патрон 7,62 × 54 мм R."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/mosin30.rsi
@@ -340,10 +338,10 @@
           - civ13_caliber_a762x54
 
 - type: entity
-  name: Mosin-Nagant "Obrez"
+  name: "обрез винтовки Мосина"
   parent: civ13_boltaction_Mosin
   id: civ13_boltaction_Mosin_Nagant_Obrez
-  description: A makeshift sawn-off Mosin "pistol", chambered in 7.62x54mmR cartridges.
+  description: "Самодельный обрез винтовки Мосина под патрон 7,62 × 54 мм R."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/obrez.rsi
@@ -683,12 +681,10 @@
       # Other stats inherited from Gewehr 98
 
 - type: entity
-  name: Karabiner 98k
+  name: "карабин 98k"
   parent: civ13_boltaction_Gewehr_98
   id: civ13_boltaction_Karabiner_98k
-  description: >-
-    A shortened, modernized carabine version of the Gewehr 98, chambered in
-    7.92x57mm Mauser ammunition.
+  description: "Укороченная и модернизированная версия винтовки Gewehr 98 под патрон 7,92 × 57 мм Mauser."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/Guns/kar98k.rsi

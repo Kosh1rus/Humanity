@@ -158,8 +158,8 @@
 - type: entity
   id: Table
   parent: TableBase
-  name: table
-  description: A square piece of metal standing on four metal legs.
+  name: "стол"
+  description: "Квадратная металлическая столешница на четырёх металлических ножках."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/generic.rsi
@@ -249,8 +249,8 @@
 - type: entity
   id: TableGlass
   parent: TableBase
-  name: glass table
-  description: A square piece of glass, standing on four metal legs.
+  name: "стеклянный стол"
+  description: "Квадратная стеклянная столешница на четырёх металлических ножках."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/glass.rsi
@@ -417,8 +417,8 @@
 - type: entity
   id: TableBrass
   parent: TableBase
-  name: brass table
-  description: A shiny, corrosion resistant brass table. Steampunk!
+  name: "латунный стол"
+  description: "Блестящий стол из стойкой к коррозии латуни. Настоящий стимпанк!"
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/brass.rsi
@@ -460,8 +460,8 @@
 - type: entity
   id: TableWood
   parent: TableBase
-  name: wood table
-  description: Do not apply fire to this. Rumour says it burns easily.
+  name: "деревянный стол"
+  description: "Держите огонь подальше. Говорят, он легко загорается."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/wood.rsi
@@ -509,8 +509,8 @@
 - type: entity
   id: TableCarpet
   parent: TableBase
-  name: gambling table
-  description: Play em' cowboy.
+  name: "игорный стол"
+  description: "Ну что, ковбой, сыграем?"
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/carpet.rsi
@@ -552,8 +552,8 @@
 - type: entity
   id: TableStone
   parent: TableBase
-  name: stone table
-  description: Literally the sturdiest thing you have ever seen.
+  name: "каменный стол"
+  description: "Пожалуй, прочнее стола вы ещё не видели."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/stone.rsi
@@ -814,8 +814,8 @@
 - type: entity
   id: TableCounterWood
   parent: CounterBase
-  name: wood counter
-  description: Do not apply fire to this. Rumour says it burns easily.
+  name: "деревянная стойка"
+  description: "Держите огонь подальше. Говорят, она легко загорается."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/counterwood.rsi
@@ -860,8 +860,8 @@
 - type: entity
   id: TableCounterMetal
   parent: CounterBase
-  name: metal counter
-  description: Looks like a good place to put a drink down.
+  name: "металлическая стойка"
+  description: "Отличное место, чтобы поставить напиток."
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/countermetal.rsi

@@ -71,8 +71,8 @@
 - type: entity
   parent: DrinkCanBaseFull
   id: DrinkColaCan
-  name: Space Cola can
-  description: A sweet, carbonated soft drink.
+  name: "банка «Космоколы»"
+  description: "Сладкий газированный напиток."
   components:
     - type: SolutionContainerManager
       solutions:

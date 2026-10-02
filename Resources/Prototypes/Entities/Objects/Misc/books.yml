@@ -200,8 +200,8 @@
 - type: entity
   id: BookHowToSurvive
   parent: BaseGuidebook
-  name: how to survive
-  description: Ironically the author of this book is dead.
+  name: "«Как выжить»"
+  description: "По иронии судьбы автор этой книги уже мёртв."
   components:
     - type: Sprite
       layers:

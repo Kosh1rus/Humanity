@@ -13,13 +13,13 @@
       entity: StoneKiln
 
 - type: construction
-  name: stone kiln
+  name: "каменная плавильня"
   id: StoneKiln
   graph: StoneKiln
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: Used for smelting ore to produce metals.
+  description: "В ней переплавляют руду в металл."
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: stone_kiln }
   objectType: Structure
   agemin: 0
@@ -44,13 +44,13 @@
       entity: Bloomery
 
 - type: construction
-  name: bloomery
+  name: "сыродутный горн"
   id: Bloomery
   graph: Bloomery
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: Used for smelting iron.
+  description: "В нём выплавляют железо из руды."
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: bloomery }
   objectType: Structure
   agemin: 1
@@ -75,13 +75,13 @@
       entity: AnvilStone
 
 - type: construction
-  name: stone anvil
+  name: "каменная наковальня"
   id: AnvilStone
   graph: AnvilStone
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: A metalworking tool to produce weapons and armours.
+  description: "Рабочее место кузнеца для изготовления оружия и доспехов."
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: stone_anvil }
   objectType: Structure
   agemin: 0
@@ -106,13 +106,13 @@
       entity: AnvilIron
 
 - type: construction
-  name: iron anvil
+  name: "железная наковальня"
   id: AnvilIron
   graph: AnvilIron
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: A metalworking tool to produce weapons and armours.
+  description: "Рабочее место кузнеца для изготовления оружия и доспехов."
   icon: { sprite: Civ14/Objects/metallurgy.rsi, state: iron_anvil }
   objectType: Structure
   agemin: 2

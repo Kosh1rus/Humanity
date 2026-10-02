@@ -83,7 +83,7 @@
           Quantity: 500
 
 - type: entity
-  name: wide sink
+  name: "широкая раковина"
   id: SinkWide
   parent: Sink
   components:

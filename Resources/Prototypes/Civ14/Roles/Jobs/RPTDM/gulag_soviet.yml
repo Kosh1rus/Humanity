@@ -2,7 +2,7 @@
   id: GulagSovietCaptain
   name: job-name-civ-gulag-soviet-cpt
   faction: GulagSoviet
-  originalName: Kapitan
+  originalName: Капитан
   description: job-description-civ-gulag-soviet-cpt
   playTimeTracker: JobGulagSovietCaptain
   requirements:
@@ -43,7 +43,7 @@
 # Sergeant
 - type: job
   id: GulagSovietSergeant
-  originalName: Serzhant
+  originalName: Сержант
   name: job-name-civ-gulag-soviet-sgt
   faction: GulagSoviet
   description: job-description-civ-gulag-soviet-sgt
@@ -95,7 +95,7 @@
   id: GulagSovietGuard
   name: job-name-civ-gulag-soviet-guard
   faction: GulagSoviet
-  originalName: Karaul
+  originalName: Караульный
   description: job-description-civ-gulag-soviet-guard
   playTimeTracker: JobGulagSovietGuard
   startingGear: GulagSovietGuardGear

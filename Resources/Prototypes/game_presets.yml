@@ -59,7 +59,7 @@
     - gulag14
   name: gulag14
   showInVote: true
-  description: description for gulag temp
+  description: gulag14-description
   rules:
     - RespawnDeadRuleTDMFixed
     - RandomWeatherRuleNightSnow

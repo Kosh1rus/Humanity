@@ -54,10 +54,10 @@
 # Tastes like fries, salt.
 
 - type: entity
-  name: cheesy fries
+  name: "картофель фри с сыром"
   parent: FoodMealBase
   id: FoodMealFriesCheesy
-  description: Fries. Covered in cheese. Duh.
+  description: "Картошка фри, покрытая сыром. Что тут объяснять?"
   components:
   - type: FlavorProfile
     flavors:

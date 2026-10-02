@@ -1,9 +1,9 @@
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: BaseStructure
   abstract: true
   id: WildPlantBase
-  description: A small patch of wild crop, its irregular leaves hinting at a hidden blend of cultivated varieties, yet it thrives untamed in nature.
+  description: Небольшая заросль дикого растения. По неровным листьям видно сходство с культурными сортами, хотя здесь оно растёт само по себе.
   suffix: Structure
   components:
     - type: Fixtures
@@ -25,7 +25,7 @@
               acts: ["Destruction"]
 
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: WildPlantBase
   id: WildPlantPotato
   components:
@@ -50,7 +50,7 @@
       maxAmount: 1
 
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: WildPlantBase
   id: WildPlantCorn
   components:
@@ -75,7 +75,7 @@
       maxAmount: 1
 
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: WildPlantBase
   id: WildPlantRice
   components:
@@ -100,7 +100,7 @@
       maxAmount: 1
 
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: WildPlantBase
   id: WildPlantWheat
   components:
@@ -125,7 +125,7 @@
       maxAmount: 1
 
 - type: entity
-  name: wild plant
+  name: дикорастущее растение
   parent: WildPlantBase
   id: WildPlantHemp
   components:
@@ -150,7 +150,7 @@
       maxAmount: 1
 
 - type: entity
-  name: healing plant
+  name: целебное растение
   parent: WildPlantBase
   id: WildPlantHealing
   components:
@@ -172,7 +172,7 @@
       maxAmount: 3
 
 - type: entity
-  name: wild yarrow
+  name: дикий тысячелистник
   parent: WildPlantBase
   id: WildPlantYarrow
   components:
@@ -197,7 +197,7 @@
       maxAmount: 2
 
 - type: entity
-  name: wild milk thistle
+  name: дикая расторопша
   parent: WildPlantBase
   id: WildPlantMilkThistle
   components:
@@ -222,7 +222,7 @@
       maxAmount: 2
 
 - type: entity
-  name: wild elderflower
+  name: дикая бузина
   parent: WildPlantBase
   id: WildPlantElderflower
   components:
@@ -247,7 +247,7 @@
       maxAmount: 2
 
 - type: entity
-  name: wild comfrey
+  name: дикий окопник
   parent: WildPlantBase
   id: WildPlantComfrey
   components:
@@ -272,7 +272,7 @@
       maxAmount: 2
 
 - type: entity
-  name: wild poppy
+  name: дикий мак
   parent: WildPlantBase
   id: WildPlantPoppy
   components:
@@ -297,7 +297,7 @@
       maxAmount: 2
 
 - type: entity
-  name: wild aloe vera
+  name: дикое алоэ вера
   parent: WildPlantBase
   id: WildPlantAloe
   components:

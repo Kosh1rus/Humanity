@@ -123,10 +123,10 @@
 
 # Janicart
 - type: entity
-  name: janitorial trolley
+  name: "тележка уборщика"
   id: JanitorialTrolley
   parent: [BaseStructureDynamic, StructureWheeled]
-  description: This is the alpha and omega of sanitation.
+  description: "Начало и конец любой уборки."
   components:
     - type: Sprite
       noRot: true

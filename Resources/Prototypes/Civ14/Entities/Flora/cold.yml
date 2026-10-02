@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseTree
   id: TreePine
-  name: pinetree
-  description: Yep, it's a tree.
+  name: "сосна"
+  description: "Да, это дерево."
   components:
     - type: Sprite
       sprite: Civ14/Flora/pinetrees.rsi
@@ -26,8 +26,8 @@
 - type: entity
   parent: TreePine
   id: TreePineSnow
-  name: snowy pinetree
-  description: Yep, it's a tree.
+  name: "заснеженная сосна"
+  description: "Обычная сосна, покрытая снегом."
   components:
     - type: Sprite
       sprite: Civ14/Flora/pinetrees_snow.rsi
@@ -52,8 +52,8 @@
 - type: entity
   parent: TreeTemperate
   id: TreeTemperateSnow
-  name: snowy tree
-  description: Yep, it's a tree.
+  name: "заснеженное дерево"
+  description: "Да, это дерево. Под снегом."
   components:
     - type: Sprite
       sprite: Civ14/Flora/bigtrees_winter.rsi

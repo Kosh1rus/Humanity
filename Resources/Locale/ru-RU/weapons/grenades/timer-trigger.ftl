@@ -1,0 +1,10 @@
+verb-trigger-timer-set = {$time} сек.
+verb-trigger-timer-set-current = {$time} сек. (сейчас)
+verb-trigger-timer-cycle = Изменить задержку
+examine-trigger-timer = Таймер установлен на {$time} сек.
+popup-trigger-timer-set = Таймер установлен на {$time} сек.
+verb-start-detonation = Запустить детонацию
+verb-toggle-start-on-stick = Переключить автоматический запуск
+popup-start-on-stick-off = Устройство больше не будет запускаться автоматически при установке.
+popup-start-on-stick-on = Устройство будет запускаться автоматически при установке.
+trigger-activated = Вы активируете {THE($device)}.

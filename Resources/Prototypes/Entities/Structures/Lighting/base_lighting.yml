@@ -6,8 +6,8 @@
 #Basic lights
 - type: entity
   id: AlwaysPoweredWallLight
-  name: light
-  description: "An always powered light."
+  name: "светильник"
+  description: "Светит даже без питания."
   suffix: Always powered
   components:
   - type: MeleeSound
@@ -247,8 +247,8 @@
 
 #Small lights
 - type: entity
-  name: small light
-  description: "An always powered light."
+  name: "маленький светильник"
+  description: "Светит даже без питания."
   id: SmallLight
   suffix: Always Powered
   parent: AlwaysPoweredWallLight

@@ -1,7 +1,7 @@
 - type: entity
   id: ActionSpiderWeb
-  name: Spider Web
-  description: Spawns a web that slows your prey down.
+  name: Сплести паутину
+  description: Создать паутину, которая замедлит добычу.
   components:
   - type: InstantAction
     icon: Interface/Actions/web.png
@@ -10,8 +10,8 @@
 
 - type: entity
   id: ActionSericulture
-  name: Weave silk
-  description: Weave a bit of silk for use in arts and crafts.
+  name: Выпрясть шёлк
+  description: Выпрясть немного шёлка для поделок.
   components:
   - type: InstantAction
     icon: Interface/Actions/web.png

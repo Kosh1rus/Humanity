@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: ActionToggleInternals
-  name: Toggle Internals
-  description: Breathe from the equipped gas tank. Also requires equipped breath mask.
+  name: Переключить подачу воздуха
+  description: Дышать из надетого баллона. Также нужна надетая дыхательная маска.
   components:
   - type: InstantAction
     icon:

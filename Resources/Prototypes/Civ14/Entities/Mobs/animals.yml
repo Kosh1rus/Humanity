@@ -1,8 +1,8 @@
 - type: entity
-  name: deer buck
+  name: "олень-самец"
   parent: [SimpleMobBase, MobCombat]
   id: MobDeerBuck
-  description: A large deer. Will fight back!
+  description: "Крупный олень. Может дать отпор!"
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -59,7 +59,8 @@
     - type: Puller
       needsHands: false
 - type: entity
-  name: deer doe
+  name: "олениха"
+  description: "Самка оленя."
   parent: MobDeerBuck
   id: MobDeerDoe
   components:
@@ -84,10 +85,10 @@
           Base: deer_f_dead
 
 - type: entity
-  name: rabbit
+  name: "кролик"
   parent: SimpleMobBase
   id: MobRabbit
-  description: Squeak!
+  description: "Писк!"
   components:
     - type: Sprite
       drawdepth: SmallMobs
@@ -199,10 +200,10 @@
     - type: NonSpreaderZombie
 
 - type: entity
-  name: black rabbit
+  name: "чёрный кролик"
   parent: MobRabbit
   id: MobRabbitBlack
-  description: Squeak!
+  description: "Писк!"
   components:
     - type: Sprite
       drawdepth: SmallMobs
@@ -219,10 +220,10 @@
         Dead:
           Base: rabbitblack_dead
 - type: entity
-  name: white rabbit
+  name: "белый кролик"
   parent: MobRabbit
   id: MobRabbitWhite
-  description: Squeak!
+  description: "Писк!"
   components:
     - type: Sprite
       drawdepth: SmallMobs

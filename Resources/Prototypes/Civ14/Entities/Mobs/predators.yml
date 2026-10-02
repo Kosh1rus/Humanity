@@ -1,10 +1,10 @@
 - type: entity
-  name: brown bear
+  name: "бурый медведь"
   parent:
     - SimpleMobBase
     - MobCombat
   id: MobBrownBear
-  description: Do not poke.
+  description: "Лучше его не трогать."
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -58,12 +58,12 @@
         task: SimpleHostileCompound
 
 - type: entity
-  name: grey wolf
+  name: "серый волк"
   parent:
     - SimpleMobBase
     - MobCombat
   id: MobGreyWolf
-  description: It's not a dog. IT'S NOT A DOG!
+  description: "Это не собака. ТОЧНО НЕ СОБАКА!"
   components:
     - type: Sprite
       drawdepth: Mobs
@@ -135,12 +135,12 @@
       speechVerb: LargeMob
 
 - type: entity
-  name: sabertooth tiger
+  name: "саблезубый тигр"
   parent:
     - SimpleMobBase
     - MobCombat
   id: MobSabertooth
-  description: An ancient tiger with protuding fangs. Better stay clear.
+  description: "Древний хищник с огромными клыками. Лучше держаться подальше."
   components:
     - type: Sprite
       drawdepth: Mobs

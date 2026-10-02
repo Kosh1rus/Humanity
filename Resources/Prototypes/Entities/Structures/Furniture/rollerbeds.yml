@@ -85,9 +85,9 @@
 
 - type: entity
   id: CheapRollerBed
-  name: rollerbed
+  name: "каталка"
   parent: RollerBed
-  description: A rollerbed. Used to carry patients around.
+  description: "На ней перевозят пациентов."
   components:
     - type: Item
       heldPrefix: cheap_rollerbed

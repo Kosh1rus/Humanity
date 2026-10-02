@@ -1,8 +1,8 @@
 - type: entity
   id: Cigarette
   parent: BaseCigar
-  name: cigarette
-  description: A roll of tobacco and nicotine.
+  name: "сигарета"
+  description: "Свёрток табака с никотином."
   components:
     - type: Sprite
       sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi

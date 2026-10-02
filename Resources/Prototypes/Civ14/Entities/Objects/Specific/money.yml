@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: SilverCoins
-  name: silver coins
-  description: The basic unit of money, 10 coins equals one ingot of silver.
+  name: "серебряные монеты"
+  description: "Основная денежная единица. Десять монет равны одному серебряному слитку."
   components:
     - type: Cash
     - type: Item

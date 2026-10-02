@@ -89,10 +89,10 @@
       price: 30
 
 - type: entity
-  name: wrench
+  name: "гаечный ключ"
   parent: BaseItem
   id: Wrench
-  description: "A common tool for assembly and disassembly. Remember: lefty latchy, righty removey."
+  description: "Обычный инструмент для сборки и разборки. Помните: влево затянуть, вправо ослабить."
   components:
     - type: EmitSoundOnLand
       sound:
@@ -457,10 +457,10 @@
 
 #Other
 - type: entity
-  name: shovel
+  name: "лопата"
   parent: BaseItem
   id: Shovel
-  description: A large tool for digging and moving dirt.
+  description: "Большой инструмент для копания и переброски земли."
   components:
     - type: Sprite
       sprite: Objects/Tools/shovel.rsi

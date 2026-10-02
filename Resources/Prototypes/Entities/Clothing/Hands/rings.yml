@@ -22,8 +22,8 @@
 - type: entity
   parent: [ RingBase, GoldRingBase ]
   id: GoldRingDiamond
-  name: gold diamond ring
-  description: Made from ethically mined space diamonds.
+  name: "золотое кольцо с бриллиантом"
+  description: "Украшено космическими алмазами, добытыми с соблюдением всех этических норм."
   components:
   - type: Sprite
     layers:
