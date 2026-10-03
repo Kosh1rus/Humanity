@@ -15,6 +15,7 @@ public sealed class HumanityGroundOverlay(IEntityManager entities) : GridOverlay
     private readonly SharedTransformSystem _transforms = entities.System<SharedTransformSystem>();
     private readonly WeatherSystem _weather = entities.System<WeatherSystem>();
     private readonly Vector2[] _points = new Vector2[6];
+    private readonly Vector2[] _leafPoints = new Vector2[4];
 
     protected override void Draw(in OverlayDrawArgs args)
     {
@@ -65,8 +66,81 @@ public sealed class HumanityGroundOverlay(IEntityManager entities) : GridOverlay
                 handle.DrawLine(center + new Vector2(-radius * 0.3f, 0.03f), center + new Vector2(radius * 0.2f, 0.03f),
                     new Color(0.52f, 0.57f, 0.55f, 0.15f));
         }
-        if (!research.IsTDM)
+        if (research.IsTDM)
         {
+            var scars = entities.EntityQueryEnumerator<BattleScarComponent, TransformComponent>();
+            while (scars.MoveNext(out _, out var scar, out var scarTransform))
+            {
+                var world = _transforms.GetWorldPosition(scarTransform);
+                if (scarTransform.GridUid != Grid.Owner || !args.WorldAABB.Enlarged(scar.Radius).Contains(world))
+                    continue;
+                var center = Vector2.Transform(world, _transforms.GetInvWorldMatrix(Grid.Owner));
+                var seed = unchecked((uint) scar.Seed);
+                if (!scar.Rubble)
+                {
+                    continue;
+                }
+                for (var debris = 0; debris < 12; debris++)
+                {
+                    seed ^= seed << 13;
+                    seed ^= seed >> 17;
+                    seed ^= seed << 5;
+                    var angle = (seed & 1023) * MathF.Tau / 1024;
+                    var distance = scar.Radius * (0.6f + ((seed >> 10) & 255) / 255f * 0.7f);
+                    var spot = center + new Vector2(MathF.Cos(angle), MathF.Sin(angle)) * distance;
+                    var size = 0.06f + (seed % 5) * 0.012f;
+                    _leafPoints[0] = spot + new Vector2(-size, -size * 0.4f);
+                    _leafPoints[1] = spot + new Vector2(-size * 0.7f, size * 0.5f);
+                    _leafPoints[2] = spot + new Vector2(size * 0.8f, size * 0.25f);
+                    _leafPoints[3] = spot + new Vector2(size, -size * 0.4f);
+                    handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, _leafPoints,
+                        new Color(0.49f, 0.43f, 0.32f, 0.7f));
+                }
+            }
+        }
+        else
+        {
+            var foliage = entities.EntityQueryEnumerator<FoliageAtmosphereComponent, TransformComponent>();
+            while (foliage.MoveNext(out _, out var plant, out var plantTransform))
+            {
+                var world = _transforms.GetWorldPosition(plantTransform);
+                if (plantTransform.GridUid != Grid.Owner || !args.WorldAABB.Contains(world))
+                    continue;
+                var center = Vector2.Transform(world, _transforms.GetInvWorldMatrix(Grid.Owner));
+                var radius = plant.ShedLeaves ? 0.24f : 0.15f;
+                for (var i = 0; i < points.Length; i++)
+                {
+                    var angle = i * MathF.Tau / points.Length;
+                    points[i] = center + new Vector2(MathF.Cos(angle), MathF.Sin(angle) * 0.45f) * radius;
+                }
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, points, new Color(0.075f, 0.07f, 0.045f, 0.25f));
+                if (!plant.ShedLeaves || !plant.Enabled)
+                    continue;
+                var seed = unchecked((uint) ((int) (center.X * 32) * 73856093 ^ (int) (center.Y * 32) * 19349663));
+                for (var leaf = 0; leaf < 7; leaf++)
+                {
+                    seed ^= seed << 13;
+                    seed ^= seed >> 17;
+                    seed ^= seed << 5;
+                    var angle = (seed & 1023) * MathF.Tau / 1024;
+                    var distance = 0.25f + ((seed >> 10) & 255) / 255f * 0.85f;
+                    var spot = center + new Vector2(MathF.Cos(angle), MathF.Sin(angle)) * distance;
+                    var local = new EntityCoordinates(Grid.Owner, spot);
+                    if (!_map.TryGetTileRef(Grid.Owner, Grid.Comp, local, out var leafTile) ||
+                        !_tiles[leafTile.Tile.TypeId].ID.Contains("Grass", StringComparison.Ordinal))
+                        continue;
+                    var direction = new Vector2(MathF.Cos(angle + 0.9f), MathF.Sin(angle + 0.9f)) * 0.055f;
+                    var side = new Vector2(-direction.Y, direction.X) * 0.45f;
+                    _leafPoints[0] = spot - direction;
+                    _leafPoints[1] = spot + side;
+                    _leafPoints[2] = spot + direction;
+                    _leafPoints[3] = spot - side;
+                    var color = (seed & 1) == 0
+                        ? new Color(0.43f, 0.34f, 0.16f, 0.48f)
+                        : new Color(0.47f, 0.46f, 0.22f, 0.4f);
+                    handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, _leafPoints, color);
+                }
+            }
             var camps = entities.EntityQueryEnumerator<NomadCampFootprintComponent, TransformComponent>();
             while (camps.MoveNext(out var uid, out var camp, out var campTransform))
             {
@@ -78,14 +152,25 @@ public sealed class HumanityGroundOverlay(IEntityManager entities) : GridOverlay
                 var center = Vector2.Transform(_transforms.GetWorldPosition(campTransform), _transforms.GetInvWorldMatrix(Grid.Owner));
                 for (var ring = 0; ring < 3; ring++)
                 {
-                    var radius = camp.Radius * (1f - ring * 0.2f);
+                    var radius = camp.Radius * (0.6f + camp.Wear * 0.65f) * (1f - ring * 0.2f);
                     for (var i = 0; i < points.Length; i++)
                     {
                         var angle = i * MathF.Tau / points.Length;
                         points[i] = center + new Vector2(MathF.Cos(angle), MathF.Sin(angle) * 0.75f) * radius;
                     }
-                    var color = camp.Charred ? new Color(0.13f, 0.10f, 0.07f, 0.10f) : new Color(0.34f, 0.27f, 0.15f, 0.10f);
+                    var alpha = 0.045f + camp.Wear * 0.085f;
+                    var color = camp.Charred ? new Color(0.13f, 0.10f, 0.07f, alpha) : new Color(0.34f, 0.27f, 0.15f, alpha);
                     handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, points, color);
+                }
+                if (camp.Charred)
+                {
+                    var ash = new Color(0.2f, 0.18f, 0.15f, 0.45f);
+                    for (var i = 0; i < 5; i++)
+                    {
+                        var angle = i * 2.4f + uid.GetHashCode() % 17;
+                        var point = center + new Vector2(MathF.Cos(angle), MathF.Sin(angle)) * camp.Radius * 0.55f;
+                        handle.DrawLine(point, point + new Vector2(0.065f, 0.025f), ash);
+                    }
                 }
             }
         }

@@ -8,6 +8,11 @@ namespace Content.Server.Gatherable.Components;
 [Access(typeof(GatherableSystem))]
 public sealed partial class GatherableComponent : Component
 {
+    [DataField]
+    public float GatherTime;
+
+    public bool Gathering;
+
     /// <summary>
     ///     Whitelist for specifying the kind of tools can be used on a resource
     ///     Supports multiple tags.

@@ -53,7 +53,7 @@ public sealed class TurfSystem : EntitySystem
 
         var intersectionArea = 0f;
         var fixtureQuery = GetEntityQuery<FixturesComponent>();
-        foreach (var ent in _entityLookup.GetEntitiesIntersecting(gridUid, worldBox, LookupFlags.Dynamic | LookupFlags.Static))
+        foreach (var ent in _entityLookup.GetEntitiesIntersecting(gridUid, worldBox.CalcBoundingBox(), LookupFlags.Dynamic | LookupFlags.Static))
         {
             if (!fixtureQuery.TryGetComponent(ent, out var fixtures))
                 continue;

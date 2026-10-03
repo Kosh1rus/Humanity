@@ -5,6 +5,16 @@
   description: Рабочее место для опытов. Возьмите нужный материал в руку и используйте его на столе. Осмотрите стол, чтобы узнать требования и общий прогресс цивилизации.
   components:
     - type: NomadResearchTable
+    - type: IconSmooth
+      enabled: false
+      mode: NoSprite
+    - type: Sprite
+      layers:
+      - state: full
+      - sprite: Civ14/Weapons/stone_hammer.rsi
+        state: stone_hammer
+        scale: 0.35,0.35
+        offset: -0.2,0.08
     - type: NomadCampFootprint
       radius: 0.8
     - type: Construction
@@ -34,13 +44,45 @@
   graph:
     - node: start
       edges:
-        - to: end
+        - to: frame
           steps:
             - material: WoodPlank
               amount: 8
               doAfter: 8
+    - node: frame
+      entity: HumanityResearchFrame
+      edges:
+        - to: end
+          steps:
             - material: Stone
               amount: 5
               doAfter: 4
     - node: end
       entity: HumanityResearchTable
+
+- type: entity
+  id: HumanityResearchFrame
+  parent: CounterWoodFrame
+  name: каркас стола исследований
+  description: Осталось подготовить каменные инструменты.
+  components:
+    - type: Sprite
+      color: "#BC986FFF"
+    - type: Construction
+      graph: HumanityResearchTable
+      node: frame
+    - type: Destructible
+      thresholds:
+      - trigger: !type:DamageTrigger
+          damage: 40
+        behaviors:
+        - !type:PlaySoundBehavior
+          sound:
+            collection: WoodDestroy
+        - !type:SpawnEntitiesBehavior
+          spawn:
+            MaterialWoodPlank1:
+              min: 4
+              max: 4
+        - !type:DoActsBehavior
+          acts: [ Destruction ]

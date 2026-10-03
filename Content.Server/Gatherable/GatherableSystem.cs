@@ -4,6 +4,8 @@ using Content.Shared.Interaction;
 using Content.Shared.Tag;
 using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Whitelist;
+using Content.Shared.DoAfter;
+using Content.Shared.Humanity.Visuals;
 using Robust.Server.GameObjects;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
@@ -20,6 +22,7 @@ public sealed partial class GatherableSystem : EntitySystem
     [Dependency] private readonly TagSystem _tagSystem = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
+    [Dependency] private readonly SharedDoAfterSystem _doAfter = default!;
 
     public override void Initialize()
     {
@@ -27,6 +30,7 @@ public sealed partial class GatherableSystem : EntitySystem
 
         SubscribeLocalEvent<GatherableComponent, ActivateInWorldEvent>(OnActivate);
         SubscribeLocalEvent<GatherableComponent, AttackedEvent>(OnAttacked);
+        SubscribeLocalEvent<GatherableComponent, NomadGatherDoAfterEvent>(OnGatherComplete);
         InitializeProjectile();
     }
 
@@ -46,13 +50,43 @@ public sealed partial class GatherableSystem : EntitySystem
         if (_whitelistSystem.IsWhitelistFailOrNull(gatherable.Comp.ToolWhitelist, args.User))
             return;
 
-        Gather(gatherable, args.User);
+        if (gatherable.Comp.Gathering)
+        {
+            args.Handled = true;
+            return;
+        }
+        if (gatherable.Comp.GatherTime <= 0)
+            Gather(gatherable, args.User);
+        else
+        {
+            var action = new DoAfterArgs(EntityManager, args.User, gatherable.Comp.GatherTime,
+                new NomadGatherDoAfterEvent(), gatherable.Owner, target: gatherable.Owner)
+            {
+                BreakOnMove = true,
+                BreakOnDamage = true,
+                NeedHand = true,
+            };
+            gatherable.Comp.Gathering = _doAfter.TryStartDoAfter(action);
+            if (gatherable.Comp.Gathering)
+                EntityManager.System<Content.Server.Humanity.Visuals.NomadLandscapeSystem>()
+                    .Emit(gatherable.Owner, NomadWorkEffect.Shake);
+        }
         args.Handled = true;
+    }
+
+    private void OnGatherComplete(EntityUid uid, GatherableComponent component, ref NomadGatherDoAfterEvent args)
+    {
+        component.Gathering = false;
+        if (args.Handled || args.Cancelled || EntityManager.IsQueuedForDeletion(uid) ||
+            _whitelistSystem.IsWhitelistFailOrNull(component.ToolWhitelist, args.Args.User))
+            return;
+        args.Handled = true;
+        Gather(uid, args.Args.User, component);
     }
 
     public void Gather(EntityUid gatheredUid, EntityUid? gatherer = null, GatherableComponent? component = null)
     {
-        if (!Resolve(gatheredUid, ref component))
+        if (!Resolve(gatheredUid, ref component) || EntityManager.IsQueuedForDeletion(gatheredUid))
             return;
 
         if (TryComp<SoundOnGatherComponent>(gatheredUid, out var soundComp))

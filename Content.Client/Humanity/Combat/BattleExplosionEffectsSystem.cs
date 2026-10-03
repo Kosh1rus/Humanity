@@ -3,6 +3,7 @@ using Content.Shared.Explosion.Components;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Shared.Map;
+using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using Content.Client.Humanity.Visuals;
 
@@ -14,6 +15,8 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
     [Dependency] private readonly IMapManager _maps = default!;
     [Dependency] private readonly TransformSystem _transforms = default!;
     [Dependency] private readonly IOverlayManager _overlays = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
+    [Dependency] private readonly ITileDefinitionManager _tiles = default!;
 
     public override void Initialize()
     {
@@ -39,6 +42,15 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
         var wave = Spawn(null, explosion.Epicenter);
         AddComp<BattleExplosionWaveComponent>(wave).MaxRadius = Math.Clamp(explosion.Intensity.Count, 2, 8);
         var count = Math.Clamp(explosion.Intensity.Count * 2, 8, 16);
+        var dirt = false;
+        if (_maps.TryFindGridAt(explosion.Epicenter, out var grid, out MapGridComponent? gridComp) &&
+            _map.TryGetTileRef(grid, gridComp, new EntityCoordinates(grid,
+                Vector2.Transform(explosion.Epicenter.Position, _transforms.GetInvWorldMatrix(grid))), out var tile))
+        {
+            var id = _tiles[tile.Tile.TypeId].ID;
+            dirt = id.Contains("Dirt", StringComparison.Ordinal) || id.Contains("Grass", StringComparison.Ordinal) ||
+                id.Contains("Sand", StringComparison.Ordinal);
+        }
         for (var i = 0; i < count; i++)
         {
             var angle = _random.NextFloat() * MathF.Tau;
@@ -48,7 +60,7 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
             particle.Velocity = direction * _random.NextFloat(0.4f, 0.8f);
             particle.Lifetime = _random.NextFloat(4f, 6f);
             particle.Growth = 0.25f;
-            particle.Tint = new Color(0.36f, 0.35f, 0.33f, 0.85f);
+            particle.Tint = dirt ? new Color(0.40f, 0.32f, 0.23f, 0.8f) : new Color(0.36f, 0.35f, 0.33f, 0.85f);
         }
         Spawn("EffectSparks", explosion.Epicenter);
     }

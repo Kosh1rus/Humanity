@@ -1,5 +1,5 @@
 - type: entity
-  name: construction ghost
+  name: план постройки
   id: constructionghost
   categories: [HideSpawnMenu]
   components:

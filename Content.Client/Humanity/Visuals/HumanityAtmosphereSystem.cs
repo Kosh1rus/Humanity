@@ -20,6 +20,7 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
     [Dependency] private readonly PointLightSystem _lights = default!;
     private float _elapsed;
     private float _time;
+    private readonly Dictionary<EntityUid, (float Base, float Applied)> _fireEnergy = new();
 
     public override void Initialize()
     {
@@ -27,12 +28,19 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
         _overlays.AddOverlay(new HumanityAtmosphereOverlay());
         SubscribeAllEvent<ImpactEffectEvent>(OnImpact);
         SubscribeAllEvent<StoneDustEvent>(OnStoneDust);
+        SubscribeLocalEvent<FireAtmosphereComponent, ComponentShutdown>(OnFireShutdown);
     }
 
     public override void Shutdown()
     {
         _overlays.RemoveOverlay<HumanityAtmosphereOverlay>();
+        _fireEnergy.Clear();
         base.Shutdown();
+    }
+
+    private void OnFireShutdown(EntityUid uid, FireAtmosphereComponent component, ref ComponentShutdown args)
+    {
+        _fireEnergy.Remove(uid);
     }
 
     private void OnStoneDust(StoneDustEvent ev)
@@ -130,12 +138,21 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
         var fires = EntityQueryEnumerator<FireAtmosphereComponent, PointLightComponent, TransformComponent>();
         while (fires.MoveNext(out var uid, out _, out var light, out var transform))
         {
-            if (!light.Enabled || transform.MapUid != playerTransform.MapUid ||
+            if (!light.Enabled)
+            {
+                _fireEnergy.Remove(uid);
+                continue;
+            }
+            if (transform.MapUid != playerTransform.MapUid ||
                 Vector2.DistanceSquared(_transforms.GetWorldPosition(transform), position) > 144f)
                 continue;
+            if (!_fireEnergy.TryGetValue(uid, out var energy) || MathF.Abs(light.Energy - energy.Applied) > 0.001f)
+                energy = (light.Energy, light.Energy);
             var phase = uid.GetHashCode();
-            _lights.SetEnergy(uid, 3.2f + 0.14f * MathF.Sin(_time * 5.1f + phase)
-                + 0.07f * MathF.Sin(_time * 8.7f + phase), light);
+            var applied = energy.Base * (1f + 0.045f * MathF.Sin(_time * 5.1f + phase)
+                + 0.022f * MathF.Sin(_time * 8.7f + phase));
+            _lights.SetEnergy(uid, applied, light);
+            _fireEnergy[uid] = (energy.Base, applied);
         }
     }
 }

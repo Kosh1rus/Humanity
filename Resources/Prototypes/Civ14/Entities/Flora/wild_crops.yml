@@ -6,6 +6,17 @@
   description: Небольшая заросль дикого растения. По неровным листьям видно сходство с культурными сортами, хотя здесь оно растёт само по себе.
   suffix: Structure
   components:
+    - type: Gatherable
+      gatherTime: 0.45
+      gatherOffset: 0.18
+      toolWhitelist:
+        components: [ Hands ]
+    - type: SoundOnGather
+      sound:
+        path: /Audio/Effects/plant_rustle.ogg
+        params:
+          volume: -7
+          variation: 0.15
     - type: Clickable
       bounds:
         all: "-0.42,-0.48,0.42,0.4"

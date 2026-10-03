@@ -2,6 +2,7 @@ uniform highp float wind_phase;
 uniform highp float wind_speed;
 uniform highp float wind_strength;
 uniform highp float brush_strength;
+uniform highp float work_strength;
 
 void vertex() {
     highp vec2 root = (modelMatrix * vec3(aPos, 1.0)).xy;
@@ -11,9 +12,11 @@ void vertex() {
     highp float canopy = tCoord2.y;
     highp float bend = (gust * 0.06 + flutter * 0.012) * canopy * wind_strength;
     bend += brush_strength * canopy * 0.1;
+    bend += work_strength * canopy * 0.07;
     VERTEX += (projectionMatrix * viewMatrix * modelMatrix * vec3(bend, 0.0, 0.0)).xy;
 }
 
 void fragment() {
     COLOR = zTexture(UV);
+    COLOR.rgb = mix(COLOR.rgb, COLOR.rgb * 1.12 + vec3(0.015, 0.014, 0.004), 0.45);
 }

@@ -1,0 +1,24 @@
+- type: entity
+  id: HumanityBattleCrater
+  name: воронка
+  description: Неглубокая яма от взрыва. В неё можно заползти.
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: Humanity/Effects/crater.rsi
+    state: crater
+    drawdepth: FloorObjects
+    noRot: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      crater:
+        shape: !type:PhysShapeCircle
+          radius: 0.55
+        hard: false
+        layer: [LowImpassable]
+  - type: BattleScar

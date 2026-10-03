@@ -7,7 +7,7 @@
 
 - type: stack
   id: WoodPlank
-  name: wood plank
+  name: доски
   icon: { sprite: /Textures/Objects/Materials/materials.rsi, state: logs }
   spawn: MaterialWoodPlank1
   maxCount: 30

@@ -1,0 +1,64 @@
+- type: entity
+  id: HumanityForestStump
+  parent: BaseTree
+  name: пень
+  description: Остаток старого дерева.
+  components:
+  - type: Sprite
+    sprite: Civ14/Flora/bigtrees_dead.rsi
+    state: tree_stump
+    offset: 0,0.75
+    drawdepth: SmallObjects
+  - type: InteractionOutline
+  - type: TreeBranches
+    currentBranches: 0
+    maxBranches: 0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+        hard: false
+        density: 1000
+        layer: [LowImpassable]
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [Destruction]
+
+- type: entity
+  id: HumanityForestStumpPine
+  parent: HumanityForestStump
+  components:
+  - type: Sprite
+    sprite: Civ14/Flora/pinetrees.rsi
+    state: stump
+    offset: 0,1.25
+
+- type: entity
+  id: HumanityShoreGrass
+  parent: HumanityWildShrubBase
+  name: камыш
+  description: Можно собрать стебли.
+  components:
+  - type: Sprite
+    sprite: Humanity/Flora/reeds.rsi
+    state: reeds
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityShoreGrassThin
+  parent: HumanityShoreGrass
+  components:
+  - type: Sprite
+    scale: 0.75,0.85

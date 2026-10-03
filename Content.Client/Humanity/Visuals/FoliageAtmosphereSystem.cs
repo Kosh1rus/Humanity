@@ -18,6 +18,8 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     [Dependency] private readonly IOverlayManager _overlays = default!;
     private readonly Dictionary<EntityUid, ShaderInstance> _shaders = new();
     private readonly HashSet<EntityUid> _brushed = new();
+    private readonly Dictionary<EntityUid, float> _work = new();
+    private readonly List<EntityUid> _workKeys = new();
     internal readonly List<FallingLeaf> Leaves = new();
     private float _elapsed;
 
@@ -49,6 +51,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
         shader.SetParameter("wind_speed", _random.NextFloat(0.65f, 1.15f));
         shader.SetParameter("wind_strength", _random.NextFloat(0.35f, 1.05f));
         shader.SetParameter("brush_strength", 0f);
+        shader.SetParameter("work_strength", 0f);
         sprite.LayerSetShader(0, shader, "HumanityFoliage");
         if (_shaders.Remove(uid, out var old))
             old.Dispose();
@@ -60,6 +63,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
         if (_shaders.Remove(uid, out var shader))
             shader.Dispose();
         _brushed.Remove(uid);
+        _work.Remove(uid);
     }
 
     public override void Shutdown()
@@ -70,6 +74,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
             shader.Dispose();
         _shaders.Clear();
         _brushed.Clear();
+        _work.Clear();
         Leaves.Clear();
         base.Shutdown();
     }
@@ -77,6 +82,20 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
+        _workKeys.Clear();
+        _workKeys.AddRange(_work.Keys);
+        foreach (var uid in _workKeys)
+        {
+            var age = _work[uid] + frameTime;
+            if (!_shaders.TryGetValue(uid, out var shader))
+            {
+                _work.Remove(uid);
+                continue;
+            }
+            shader.SetParameter("work_strength", age < 0.55f ? MathF.Sin(age * 38f) * (1f - age / 0.55f) : 0f);
+            if (age >= 0.55f) _work.Remove(uid);
+            else _work[uid] = age;
+        }
         if (_players.LocalEntity is { } local)
         {
             var localTransform = Transform(local);
@@ -129,6 +148,17 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
             });
             if (++emitted >= 2 || Leaves.Count >= 20)
                 break;
+        }
+    }
+
+    public void ShakeAt(MapCoordinates origin)
+    {
+        foreach (var uid in _shaders.Keys)
+        {
+            if (!TryComp<TransformComponent>(uid, out var transform) || transform.MapID != origin.MapId)
+                continue;
+            if (Vector2.DistanceSquared(_transforms.GetWorldPosition(transform), origin.Position) < 0.36f)
+                _work[uid] = 0;
         }
     }
 }

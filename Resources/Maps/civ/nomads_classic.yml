@@ -5,7 +5,7 @@ meta:
   forkId: ''
   forkVersion: ''
   time: 03/23/2025 18:21:23
-  entityCount: 24579
+  entityCount: 24835
 maps:
 - 1
 grids:
@@ -132361,3 +132361,1331 @@ entities:
     - type: Transform
       parent: 2
       pos: 141.3066167,238.5168782
+
+- proto: HumanityShoreGrass
+  entities:
+  - uid: 24580
+    components:
+    - type: Transform
+      parent: 2
+      pos: 137.5,79.5
+  - uid: 24584
+    components:
+    - type: Transform
+      parent: 2
+      pos: 181.5,247.5
+  - uid: 24586
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,113.5
+  - uid: 24588
+    components:
+    - type: Transform
+      parent: 2
+      pos: 205.5,117.5
+  - uid: 24590
+    components:
+    - type: Transform
+      parent: 2
+      pos: 35.5,134.5
+  - uid: 24593
+    components:
+    - type: Transform
+      parent: 2
+      pos: 201.5,101.5
+  - uid: 24594
+    components:
+    - type: Transform
+      parent: 2
+      pos: 203.5,108.5
+  - uid: 24595
+    components:
+    - type: Transform
+      parent: 2
+      pos: 88.5,113.5
+  - uid: 24599
+    components:
+    - type: Transform
+      parent: 2
+      pos: 135.5,72.5
+  - uid: 24600
+    components:
+    - type: Transform
+      parent: 2
+      pos: 199.5,95.5
+  - uid: 24602
+    components:
+    - type: Transform
+      parent: 2
+      pos: 86.5,107.5
+  - uid: 24604
+    components:
+    - type: Transform
+      parent: 2
+      pos: 37.5,140.5
+  - uid: 24607
+    components:
+    - type: Transform
+      parent: 2
+      pos: 1.5,3.5
+  - uid: 24609
+    components:
+    - type: Transform
+      parent: 2
+      pos: 205.5,124.5
+  - uid: 24611
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,128.5
+  - uid: 24613
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,135.5
+  - uid: 24615
+    components:
+    - type: Transform
+      parent: 2
+      pos: 133.5,81.5
+  - uid: 24618
+    components:
+    - type: Transform
+      parent: 2
+      pos: 41.5,139.5
+  - uid: 24621
+    components:
+    - type: Transform
+      parent: 2
+      pos: 131.5,73.5
+  - uid: 24624
+    components:
+    - type: Transform
+      parent: 2
+      pos: 82.5,110.5
+  - uid: 24626
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,134.5
+  - uid: 24628
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.5,83.5
+  - uid: 24629
+    components:
+    - type: Transform
+      parent: 2
+      pos: 184.5,230.5
+  - uid: 24631
+    components:
+    - type: Transform
+      parent: 2
+      pos: 144.5,77.5
+  - uid: 24634
+    components:
+    - type: Transform
+      parent: 2
+      pos: 141.5,69.5
+  - uid: 24635
+    components:
+    - type: Transform
+      parent: 2
+      pos: 43.5,133.5
+  - uid: 24636
+    components:
+    - type: Transform
+      parent: 2
+      pos: 193.5,104.5
+  - uid: 24638
+    components:
+    - type: Transform
+      parent: 2
+      pos: 30.5,141.5
+  - uid: 24640
+    components:
+    - type: Transform
+      parent: 2
+      pos: 194.5,110.5
+  - uid: 24641
+    components:
+    - type: Transform
+      parent: 2
+      pos: 185.5,226.5
+  - uid: 24642
+    components:
+    - type: Transform
+      parent: 2
+      pos: 189.5,96.5
+  - uid: 24644
+    components:
+    - type: Transform
+      parent: 2
+      pos: 145.5,68.5
+  - uid: 24647
+    components:
+    - type: Transform
+      parent: 2
+      pos: 39.5,134.5
+  - uid: 24648
+    components:
+    - type: Transform
+      parent: 2
+      pos: 193.5,86.5
+  - uid: 24650
+    components:
+    - type: Transform
+      parent: 2
+      pos: 182.5,241.5
+  - uid: 24652
+    components:
+    - type: Transform
+      parent: 2
+      pos: 183.5,237.5
+  - uid: 24654
+    components:
+    - type: Transform
+      parent: 2
+      pos: 196.5,91.5
+  - uid: 24655
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,100.5
+  - uid: 24657
+    components:
+    - type: Transform
+      parent: 2
+      pos: 50.5,136.5
+  - uid: 24661
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,229.5
+  - uid: 24663
+    components:
+    - type: Transform
+      parent: 2
+      pos: 122.5,79.5
+  - uid: 24664
+    components:
+    - type: Transform
+      parent: 2
+      pos: 124.5,86.5
+  - uid: 24668
+    components:
+    - type: Transform
+      parent: 2
+      pos: 183.5,89.5
+  - uid: 24669
+    components:
+    - type: Transform
+      parent: 2
+      pos: 48.5,131.5
+  - uid: 24670
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,233.5
+  - uid: 24672
+    components:
+    - type: Transform
+      parent: 2
+      pos: 179.5,74.5
+  - uid: 24673
+    components:
+    - type: Transform
+      parent: 2
+      pos: 192.5,223.5
+  - uid: 24675
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.5,240.5
+  - uid: 24677
+    components:
+    - type: Transform
+      parent: 2
+      pos: 175.5,72.5
+  - uid: 24678
+    components:
+    - type: Transform
+      parent: 2
+      pos: 128.5,84.5
+  - uid: 24681
+    components:
+    - type: Transform
+      parent: 2
+      pos: 46.5,138.5
+  - uid: 24683
+    components:
+    - type: Transform
+      parent: 2
+      pos: 186.5,92.5
+  - uid: 24684
+    components:
+    - type: Transform
+      parent: 2
+      pos: 189.5,244.5
+  - uid: 24687
+    components:
+    - type: Transform
+      parent: 2
+      pos: 176.5,83.5
+  - uid: 24688
+    components:
+    - type: Transform
+      parent: 2
+      pos: 118.5,82.5
+
+- proto: HumanityShoreGrassThin
+  entities:
+  - uid: 24581
+    components:
+    - type: Transform
+      parent: 2
+      pos: 138.5,79.5
+  - uid: 24582
+    components:
+    - type: Transform
+      parent: 2
+      pos: 137.5,80.5
+  - uid: 24583
+    components:
+    - type: Transform
+      parent: 2
+      pos: 136.5,80.5
+  - uid: 24585
+    components:
+    - type: Transform
+      parent: 2
+      pos: 181.5,248.5
+  - uid: 24587
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,114.5
+  - uid: 24589
+    components:
+    - type: Transform
+      parent: 2
+      pos: 205.5,118.5
+  - uid: 24591
+    components:
+    - type: Transform
+      parent: 2
+      pos: 36.5,134.5
+  - uid: 24592
+    components:
+    - type: Transform
+      parent: 2
+      pos: 34.5,135.5
+  - uid: 24596
+    components:
+    - type: Transform
+      parent: 2
+      pos: 89.5,113.5
+  - uid: 24597
+    components:
+    - type: Transform
+      parent: 2
+      pos: 88.5,114.5
+  - uid: 24598
+    components:
+    - type: Transform
+      parent: 2
+      pos: 87.5,114.5
+  - uid: 24601
+    components:
+    - type: Transform
+      parent: 2
+      pos: 199.5,96.5
+  - uid: 24603
+    components:
+    - type: Transform
+      parent: 2
+      pos: 85.5,108.5
+  - uid: 24605
+    components:
+    - type: Transform
+      parent: 2
+      pos: 38.5,140.5
+  - uid: 24606
+    components:
+    - type: Transform
+      parent: 2
+      pos: 36.5,141.5
+  - uid: 24608
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,3.5
+  - uid: 24610
+    components:
+    - type: Transform
+      parent: 2
+      pos: 205.5,125.5
+  - uid: 24612
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,129.5
+  - uid: 24614
+    components:
+    - type: Transform
+      parent: 2
+      pos: 32.5,135.5
+  - uid: 24616
+    components:
+    - type: Transform
+      parent: 2
+      pos: 134.5,81.5
+  - uid: 24617
+    components:
+    - type: Transform
+      parent: 2
+      pos: 132.5,82.5
+  - uid: 24619
+    components:
+    - type: Transform
+      parent: 2
+      pos: 42.5,139.5
+  - uid: 24620
+    components:
+    - type: Transform
+      parent: 2
+      pos: 40.5,140.5
+  - uid: 24622
+    components:
+    - type: Transform
+      parent: 2
+      pos: 132.5,73.5
+  - uid: 24623
+    components:
+    - type: Transform
+      parent: 2
+      pos: 130.5,74.5
+  - uid: 24625
+    components:
+    - type: Transform
+      parent: 2
+      pos: 81.5,111.5
+  - uid: 24627
+    components:
+    - type: Transform
+      parent: 2
+      pos: 204.5,135.5
+  - uid: 24630
+    components:
+    - type: Transform
+      parent: 2
+      pos: 184.5,231.5
+  - uid: 24632
+    components:
+    - type: Transform
+      parent: 2
+      pos: 145.5,77.5
+  - uid: 24633
+    components:
+    - type: Transform
+      parent: 2
+      pos: 143.5,78.5
+  - uid: 24637
+    components:
+    - type: Transform
+      parent: 2
+      pos: 193.5,105.5
+  - uid: 24639
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,141.5
+  - uid: 24643
+    components:
+    - type: Transform
+      parent: 2
+      pos: 189.5,97.5
+  - uid: 24645
+    components:
+    - type: Transform
+      parent: 2
+      pos: 146.5,68.5
+  - uid: 24646
+    components:
+    - type: Transform
+      parent: 2
+      pos: 144.5,69.5
+  - uid: 24649
+    components:
+    - type: Transform
+      parent: 2
+      pos: 193.5,87.5
+  - uid: 24651
+    components:
+    - type: Transform
+      parent: 2
+      pos: 182.5,242.5
+  - uid: 24653
+    components:
+    - type: Transform
+      parent: 2
+      pos: 183.5,238.5
+  - uid: 24656
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,101.5
+  - uid: 24658
+    components:
+    - type: Transform
+      parent: 2
+      pos: 51.5,136.5
+  - uid: 24659
+    components:
+    - type: Transform
+      parent: 2
+      pos: 50.5,137.5
+  - uid: 24660
+    components:
+    - type: Transform
+      parent: 2
+      pos: 49.5,137.5
+  - uid: 24662
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,230.5
+  - uid: 24665
+    components:
+    - type: Transform
+      parent: 2
+      pos: 125.5,86.5
+  - uid: 24666
+    components:
+    - type: Transform
+      parent: 2
+      pos: 124.5,87.5
+  - uid: 24667
+    components:
+    - type: Transform
+      parent: 2
+      pos: 123.5,87.5
+  - uid: 24671
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,234.5
+  - uid: 24674
+    components:
+    - type: Transform
+      parent: 2
+      pos: 192.5,224.5
+  - uid: 24676
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.5,241.5
+  - uid: 24679
+    components:
+    - type: Transform
+      parent: 2
+      pos: 129.5,84.5
+  - uid: 24680
+    components:
+    - type: Transform
+      parent: 2
+      pos: 127.5,85.5
+  - uid: 24682
+    components:
+    - type: Transform
+      parent: 2
+      pos: 47.5,138.5
+  - uid: 24685
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.5,244.5
+  - uid: 24686
+    components:
+    - type: Transform
+      parent: 2
+      pos: 189.5,245.5
+
+- proto: HumanityForestStumpPine
+  entities:
+  - uid: 24689
+    components:
+    - type: Transform
+      parent: 2
+      pos: 248.5,56.5
+  - uid: 24692
+    components:
+    - type: Transform
+      parent: 2
+      pos: 65.5,23.5
+  - uid: 24695
+    components:
+    - type: Transform
+      parent: 2
+      pos: 110.5,194.5
+  - uid: 24698
+    components:
+    - type: Transform
+      parent: 2
+      pos: 78.5,71.5
+  - uid: 24701
+    components:
+    - type: Transform
+      parent: 2
+      pos: 28.5,103.5
+  - uid: 24704
+    components:
+    - type: Transform
+      parent: 2
+      pos: 60.5,7.5
+  - uid: 24707
+    components:
+    - type: Transform
+      parent: 2
+      pos: 25.5,85.5
+  - uid: 24710
+    components:
+    - type: Transform
+      parent: 2
+      pos: 62.5,250.5
+  - uid: 24713
+    components:
+    - type: Transform
+      parent: 2
+      pos: 224.5,194.5
+  - uid: 24716
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,112.5
+  - uid: 24719
+    components:
+    - type: Transform
+      parent: 2
+      pos: 65.5,21.5
+  - uid: 24722
+    components:
+    - type: Transform
+      parent: 2
+      pos: 223.5,169.5
+
+- proto: HumanityForestStump
+  entities:
+  - uid: 24690
+    components:
+    - type: Transform
+      parent: 2
+      pos: 121.5,23.5
+  - uid: 24691
+    components:
+    - type: Transform
+      parent: 2
+      pos: 53.5,199.5
+  - uid: 24693
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,124.5
+  - uid: 24694
+    components:
+    - type: Transform
+      parent: 2
+      pos: 28.5,105.5
+  - uid: 24696
+    components:
+    - type: Transform
+      parent: 2
+      pos: 8.5,28.5
+  - uid: 24697
+    components:
+    - type: Transform
+      parent: 2
+      pos: 125.5,32.5
+  - uid: 24699
+    components:
+    - type: Transform
+      parent: 2
+      pos: 214.5,150.5
+  - uid: 24700
+    components:
+    - type: Transform
+      parent: 2
+      pos: 248.5,54.5
+  - uid: 24702
+    components:
+    - type: Transform
+      parent: 2
+      pos: 110.5,192.5
+  - uid: 24703
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,112.5
+  - uid: 24705
+    components:
+    - type: Transform
+      parent: 2
+      pos: 72.5,44.5
+  - uid: 24706
+    components:
+    - type: Transform
+      parent: 2
+      pos: 6.5,28.5
+  - uid: 24708
+    components:
+    - type: Transform
+      parent: 2
+      pos: 99.5,145.5
+  - uid: 24709
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,124.5
+  - uid: 24711
+    components:
+    - type: Transform
+      parent: 2
+      pos: 196.5,71.5
+  - uid: 24712
+    components:
+    - type: Transform
+      parent: 2
+      pos: 212.5,150.5
+  - uid: 24714
+    components:
+    - type: Transform
+      parent: 2
+      pos: 66.5,239.5
+  - uid: 24715
+    components:
+    - type: Transform
+      parent: 2
+      pos: 152.5,130.5
+  - uid: 24717
+    components:
+    - type: Transform
+      parent: 2
+      pos: 112.5,200.5
+  - uid: 24718
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,114.5
+  - uid: 24720
+    components:
+    - type: Transform
+      parent: 2
+      pos: 112.5,202.5
+  - uid: 24721
+    components:
+    - type: Transform
+      parent: 2
+      pos: 31.5,122.5
+  - uid: 24723
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,75.5
+  - uid: 24724
+    components:
+    - type: Transform
+      parent: 2
+      pos: 216.5,140.5
+
+- proto: FloraRockSolid
+  entities:
+  - uid: 24725
+    components:
+    - type: Transform
+      parent: 2
+      pos: 61.5,4.5
+  - uid: 24726
+    components:
+    - type: Transform
+      parent: 2
+      pos: 57.5,3.5
+  - uid: 24727
+    components:
+    - type: Transform
+      parent: 2
+      pos: 13.5,56.5
+  - uid: 24728
+    components:
+    - type: Transform
+      parent: 2
+      pos: 37.5,128.5
+  - uid: 24729
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,127.5
+  - uid: 24730
+    components:
+    - type: Transform
+      parent: 2
+      pos: 225.5,193.5
+  - uid: 24731
+    components:
+    - type: Transform
+      parent: 2
+      pos: 221.5,192.5
+  - uid: 24732
+    components:
+    - type: Transform
+      parent: 2
+      pos: 165.5,173.5
+  - uid: 24733
+    components:
+    - type: Transform
+      parent: 2
+      pos: 161.5,172.5
+  - uid: 24734
+    components:
+    - type: Transform
+      parent: 2
+      pos: 106.5,206.5
+  - uid: 24735
+    components:
+    - type: Transform
+      parent: 2
+      pos: 102.5,205.5
+  - uid: 24736
+    components:
+    - type: Transform
+      parent: 2
+      pos: 139.5,103.5
+  - uid: 24737
+    components:
+    - type: Transform
+      parent: 2
+      pos: 135.5,102.5
+  - uid: 24738
+    components:
+    - type: Transform
+      parent: 2
+      pos: 200.5,64.5
+  - uid: 24739
+    components:
+    - type: Transform
+      parent: 2
+      pos: 120.5,250.5
+  - uid: 24740
+    components:
+    - type: Transform
+      parent: 2
+      pos: 108.5,203.5
+  - uid: 24741
+    components:
+    - type: Transform
+      parent: 2
+      pos: 104.5,202.5
+
+- proto: WildPlantPoppy
+  entities:
+  - uid: 24742
+    components:
+    - type: Transform
+      parent: 2
+      pos: 72.5,49.5
+  - uid: 24743
+    components:
+    - type: Transform
+      parent: 2
+      pos: 70.5,50.5
+  - uid: 24744
+    components:
+    - type: Transform
+      parent: 2
+      pos: 71.5,48.5
+  - uid: 24746
+    components:
+    - type: Transform
+      parent: 2
+      pos: 155.5,143.5
+  - uid: 24747
+    components:
+    - type: Transform
+      parent: 2
+      pos: 153.5,144.5
+  - uid: 24748
+    components:
+    - type: Transform
+      parent: 2
+      pos: 154.5,142.5
+  - uid: 24785
+    components:
+    - type: Transform
+      parent: 2
+      pos: 184.5,42.5
+  - uid: 24786
+    components:
+    - type: Transform
+      parent: 2
+      pos: 182.5,43.5
+  - uid: 24787
+    components:
+    - type: Transform
+      parent: 2
+      pos: 183.5,41.5
+
+- proto: WildPlantWheat
+  entities:
+  - uid: 24745
+    components:
+    - type: Transform
+      parent: 2
+      pos: 17.5,64.5
+  - uid: 24774
+    components:
+    - type: Transform
+      parent: 2
+      pos: 14.5,37.5
+  - uid: 24788
+    components:
+    - type: Transform
+      parent: 2
+      pos: 91.5,134.5
+  - uid: 24789
+    components:
+    - type: Transform
+      parent: 2
+      pos: 89.5,135.5
+  - uid: 24790
+    components:
+    - type: Transform
+      parent: 2
+      pos: 90.5,133.5
+  - uid: 24815
+    components:
+    - type: Transform
+      parent: 2
+      pos: 209.5,113.5
+  - uid: 24816
+    components:
+    - type: Transform
+      parent: 2
+      pos: 210.5,111.5
+  - uid: 24832
+    components:
+    - type: Transform
+      parent: 2
+      pos: 207.5,141.5
+  - uid: 24833
+    components:
+    - type: Transform
+      parent: 2
+      pos: 206.5,140.5
+
+- proto: WildPlantPotato
+  entities:
+  - uid: 24749
+    components:
+    - type: Transform
+      parent: 2
+      pos: 214.5,146.5
+  - uid: 24750
+    components:
+    - type: Transform
+      parent: 2
+      pos: 212.5,147.5
+  - uid: 24751
+    components:
+    - type: Transform
+      parent: 2
+      pos: 213.5,145.5
+  - uid: 24795
+    components:
+    - type: Transform
+      parent: 2
+      pos: 116.5,196.5
+  - uid: 24796
+    components:
+    - type: Transform
+      parent: 2
+      pos: 114.5,197.5
+  - uid: 24797
+    components:
+    - type: Transform
+      parent: 2
+      pos: 115.5,195.5
+  - uid: 24805
+    components:
+    - type: Transform
+      parent: 2
+      pos: 33.5,123.5
+  - uid: 24806
+    components:
+    - type: Transform
+      parent: 2
+      pos: 34.5,121.5
+  - uid: 24824
+    components:
+    - type: Transform
+      parent: 2
+      pos: 159.5,126.5
+  - uid: 24825
+    components:
+    - type: Transform
+      parent: 2
+      pos: 157.5,127.5
+  - uid: 24826
+    components:
+    - type: Transform
+      parent: 2
+      pos: 158.5,125.5
+  - uid: 24830
+    components:
+    - type: Transform
+      parent: 2
+      pos: 10.5,244.5
+  - uid: 24831
+    components:
+    - type: Transform
+      parent: 2
+      pos: 11.5,242.5
+
+- proto: WildPlantYarrow
+  entities:
+  - uid: 24752
+    components:
+    - type: Transform
+      parent: 2
+      pos: 94.5,135.5
+  - uid: 24753
+    components:
+    - type: Transform
+      parent: 2
+      pos: 92.5,136.5
+  - uid: 24754
+    components:
+    - type: Transform
+      parent: 2
+      pos: 93.5,134.5
+  - uid: 24755
+    components:
+    - type: Transform
+      parent: 2
+      pos: 11.5,35.5
+  - uid: 24756
+    components:
+    - type: Transform
+      parent: 2
+      pos: 9.5,36.5
+  - uid: 24757
+    components:
+    - type: Transform
+      parent: 2
+      pos: 10.5,34.5
+  - uid: 24761
+    components:
+    - type: Transform
+      parent: 2
+      pos: 4.5,231.5
+  - uid: 24762
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,232.5
+  - uid: 24763
+    components:
+    - type: Transform
+      parent: 2
+      pos: 3.5,230.5
+
+- proto: WildPlantMilkThistle
+  entities:
+  - uid: 24758
+    components:
+    - type: Transform
+      parent: 2
+      pos: 220.5,169.5
+  - uid: 24759
+    components:
+    - type: Transform
+      parent: 2
+      pos: 218.5,170.5
+  - uid: 24760
+    components:
+    - type: Transform
+      parent: 2
+      pos: 219.5,168.5
+  - uid: 24791
+    components:
+    - type: Transform
+      parent: 2
+      pos: 157.5,161.5
+  - uid: 24792
+    components:
+    - type: Transform
+      parent: 2
+      pos: 156.5,160.5
+
+- proto: WildPlantRice
+  entities:
+  - uid: 24764
+    components:
+    - type: Transform
+      parent: 2
+      pos: 192.5,57.5
+  - uid: 24765
+    components:
+    - type: Transform
+      parent: 2
+      pos: 190.5,58.5
+  - uid: 24766
+    components:
+    - type: Transform
+      parent: 2
+      pos: 191.5,56.5
+  - uid: 24775
+    components:
+    - type: Transform
+      parent: 2
+      pos: 75.5,75.5
+  - uid: 24776
+    components:
+    - type: Transform
+      parent: 2
+      pos: 73.5,76.5
+  - uid: 24777
+    components:
+    - type: Transform
+      parent: 2
+      pos: 74.5,74.5
+  - uid: 24827
+    components:
+    - type: Transform
+      parent: 2
+      pos: 158.5,129.5
+  - uid: 24828
+    components:
+    - type: Transform
+      parent: 2
+      pos: 156.5,130.5
+  - uid: 24829
+    components:
+    - type: Transform
+      parent: 2
+      pos: 157.5,128.5
+
+- proto: WildPlantComfrey
+  entities:
+  - uid: 24767
+    components:
+    - type: Transform
+      parent: 2
+      pos: 233.5,214.5
+  - uid: 24768
+    components:
+    - type: Transform
+      parent: 2
+      pos: 231.5,215.5
+  - uid: 24778
+    components:
+    - type: Transform
+      parent: 2
+      pos: 4.5,244.5
+  - uid: 24779
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,245.5
+  - uid: 24780
+    components:
+    - type: Transform
+      parent: 2
+      pos: 3.5,243.5
+  - uid: 24781
+    components:
+    - type: Transform
+      parent: 2
+      pos: 120.5,27.5
+  - uid: 24782
+    components:
+    - type: Transform
+      parent: 2
+      pos: 119.5,26.5
+  - uid: 24793
+    components:
+    - type: Transform
+      parent: 2
+      pos: 78.5,67.5
+  - uid: 24794
+    components:
+    - type: Transform
+      parent: 2
+      pos: 79.5,65.5
+  - uid: 24810
+    components:
+    - type: Transform
+      parent: 2
+      pos: 73.5,33.5
+  - uid: 24811
+    components:
+    - type: Transform
+      parent: 2
+      pos: 72.5,32.5
+
+- proto: WildPlantHemp
+  entities:
+  - uid: 24769
+    components:
+    - type: Transform
+      parent: 2
+      pos: 180.5,247.5
+  - uid: 24770
+    components:
+    - type: Transform
+      parent: 2
+      pos: 178.5,248.5
+  - uid: 24771
+    components:
+    - type: Transform
+      parent: 2
+      pos: 179.5,246.5
+  - uid: 24800
+    components:
+    - type: Transform
+      parent: 2
+      pos: 220.5,191.5
+  - uid: 24801
+    components:
+    - type: Transform
+      parent: 2
+      pos: 218.5,192.5
+  - uid: 24802
+    components:
+    - type: Transform
+      parent: 2
+      pos: 219.5,190.5
+  - uid: 24807
+    components:
+    - type: Transform
+      parent: 2
+      pos: 23.5,105.5
+  - uid: 24808
+    components:
+    - type: Transform
+      parent: 2
+      pos: 21.5,106.5
+  - uid: 24809
+    components:
+    - type: Transform
+      parent: 2
+      pos: 22.5,104.5
+  - uid: 24817
+    components:
+    - type: Transform
+      parent: 2
+      pos: 64.5,231.5
+  - uid: 24818
+    components:
+    - type: Transform
+      parent: 2
+      pos: 62.5,232.5
+
+- proto: WildPlantAloe
+  entities:
+  - uid: 24772
+    components:
+    - type: Transform
+      parent: 2
+      pos: 71.5,41.5
+  - uid: 24773
+    components:
+    - type: Transform
+      parent: 2
+      pos: 129.5,250.5
+  - uid: 24812
+    components:
+    - type: Transform
+      parent: 2
+      pos: 117.5,198.5
+  - uid: 24813
+    components:
+    - type: Transform
+      parent: 2
+      pos: 115.5,199.5
+  - uid: 24814
+    components:
+    - type: Transform
+      parent: 2
+      pos: 116.5,197.5
+  - uid: 24819
+    components:
+    - type: Transform
+      parent: 2
+      pos: 212.5,120.5
+  - uid: 24820
+    components:
+    - type: Transform
+      parent: 2
+      pos: 213.5,118.5
+
+- proto: WildPlantCorn
+  entities:
+  - uid: 24783
+    components:
+    - type: Transform
+      parent: 2
+      pos: 92.5,123.5
+  - uid: 24784
+    components:
+    - type: Transform
+      parent: 2
+      pos: 93.5,121.5
+  - uid: 24803
+    components:
+    - type: Transform
+      parent: 2
+      pos: 157.5,153.5
+  - uid: 24804
+    components:
+    - type: Transform
+      parent: 2
+      pos: 158.5,151.5
+
+- proto: WildPlantElderflower
+  entities:
+  - uid: 24798
+    components:
+    - type: Transform
+      parent: 2
+      pos: 128.5,48.5
+  - uid: 24799
+    components:
+    - type: Transform
+      parent: 2
+      pos: 127.5,47.5
+  - uid: 24821
+    components:
+    - type: Transform
+      parent: 2
+      pos: 232.5,190.5
+  - uid: 24822
+    components:
+    - type: Transform
+      parent: 2
+      pos: 230.5,191.5
+  - uid: 24823
+    components:
+    - type: Transform
+      parent: 2
+      pos: 231.5,189.5
+  - uid: 24834
+    components:
+    - type: Transform
+      parent: 2
+      pos: 17.5,88.5
+  - uid: 24835
+    components:
+    - type: Transform
+      parent: 2
+      pos: 18.5,86.5

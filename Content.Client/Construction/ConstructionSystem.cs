@@ -215,7 +215,7 @@ namespace Content.Client.Construction
             EntityManager.GetComponent<TransformComponent>(ghost.Value).LocalRotation = dir.ToAngle();
             _ghosts.Add(comp.GhostId, ghost.Value);
             var sprite = EntityManager.GetComponent<SpriteComponent>(ghost.Value);
-            sprite.Color = new Color(48, 255, 48, 128);
+            sprite.Color = new Color(0.65f, 0.94f, 0.78f, 0.45f);
 
             for (int i = 0; i < prototype.Layers.Count; i++)
             {
@@ -253,6 +253,14 @@ namespace Content.Client.Construction
             }
 
             return true;
+        }
+
+        public bool CanPlacePreview(ConstructionPrototype prototype, EntityCoordinates loc, Direction dir)
+        {
+            return loc.IsValid(EntityManager) && _playerManager.LocalEntity is { } user &&
+                !GhostPresent(loc) && CheckConstructionConditions(prototype, loc, dir, user) &&
+                _examineSystem.InRangeUnOccluded(user, loc, 20f,
+                    predicate: GetPredicate(prototype.CanBuildInImpassable, _transformSystem.ToMapCoordinates(loc)));
         }
 
         /// <summary>

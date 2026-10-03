@@ -10,6 +10,8 @@ namespace Content.Client.Construction
     {
         private readonly ConstructionSystem _constructionSystem;
         private readonly ConstructionPrototype? _prototype;
+        public bool CanPlacePreview(EntityCoordinates coordinates) => _prototype != null &&
+            _constructionSystem.CanPlacePreview(_prototype, coordinates, Manager.Direction);
 
         public override bool CanRotate { get; }
 

@@ -1,0 +1,9 @@
+- files: ["birds.ogg"]
+  license: "CC0-1.0"
+  copyright: "Ambient Bird Sounds by isaiah658; seamless loop crossfade added"
+  source: "https://opengameart.org/content/ambient-bird-sounds"
+
+- files: ["crickets.ogg"]
+  license: "CC-BY-3.0"
+  copyright: "Crickets by dklon; converted to Ogg Vorbis with a seamless loop crossfade"
+  source: "https://opengameart.org/content/crickets"

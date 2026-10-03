@@ -8,6 +8,7 @@ public enum NomadWorkEffect : byte
     Leaves,
     Wood,
     Building,
+    Shake,
 }
 
 [Serializable, NetSerializable]

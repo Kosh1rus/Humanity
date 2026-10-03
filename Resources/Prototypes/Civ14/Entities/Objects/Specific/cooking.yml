@@ -55,6 +55,7 @@
         beakerSlot: !type:ContainerSlot
         inputContainer: !type:Container
     - type: Construction
+      graph: KitchenMill
       node: end
       agemin: 0
       agemax: 8
@@ -108,6 +109,7 @@
       guides:
         - FoodRecipes
     - type: Construction
+      graph: KitchenCampfire
       node: end
       agemin: 0
       agemax: 8

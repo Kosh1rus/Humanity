@@ -154,16 +154,48 @@
   graph:
   - node: start
     edges:
-    - to: end
+    - to: frame
       steps:
       - material: WoodPlank
         amount: 4
         doAfter: 4
+  - node: frame
+    entity: HumanityHideRackFrame
+    edges:
+    - to: end
+      steps:
       - material: Leather
         amount: 2
         doAfter: 2
   - node: end
     entity: HumanityHideRack
+
+- type: entity
+  id: HumanityHideRackFrame
+  parent: CounterWoodFrame
+  name: каркас стойки для шкур
+  description: Нужно закрепить кожаные ремни.
+  components:
+  - type: Sprite
+    color: "#BC986FFF"
+  - type: Construction
+    graph: HumanityHideRack
+    node: frame
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          MaterialWoodPlank1:
+            min: 2
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
 
 - type: constructionGraph
   id: HumanityClayJar

@@ -18,6 +18,7 @@ public sealed class NomadLandscapeSystem : EntitySystem
     [Dependency] private readonly ITileDefinitionManager _tiles = default!;
     [Dependency] private readonly IRobustRandom _random = default!;
     [Dependency] private readonly HumanityAtmosphereSystem _atmosphere = default!;
+    [Dependency] private readonly FoliageAtmosphereSystem _foliage = default!;
     private readonly Dictionary<EntityUid, MapCoordinates> _positions = new();
     internal readonly List<LandscapeMark> Marks = new();
     private readonly HashSet<(EntityUid Grid, Vector2i Tile)> _water = new();
@@ -79,6 +80,9 @@ public sealed class NomadLandscapeSystem : EntitySystem
         if (Deleted(coordinates.EntityId))
             return;
         var origin = _transforms.ToMapCoordinates(coordinates);
+        _foliage.ShakeAt(origin);
+        if (ev.Effect == NomadWorkEffect.Shake)
+            return;
         if (ev.Effect == NomadWorkEffect.Building)
             _atmosphere.EmitWorkDust(origin);
         for (var i = 0; i < 8; i++)
