@@ -42,7 +42,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         _lastCacheClear = _gameTiming.CurTime;
 
         // Schedule the announcement for 15 seconds later
-        var announcementMessage = $"Подготовка — {component.GracewallDuration.TotalMinutes:F0} мин. Проход закрыт.";
+        var announcementMessage = "До начала боя три минуты.";
         Timer.Spawn(TimeSpan.FromSeconds(15), () =>
         {
             if (GameTicker.IsGameRuleActive(uid, gameRule) && component.GracewallActive)

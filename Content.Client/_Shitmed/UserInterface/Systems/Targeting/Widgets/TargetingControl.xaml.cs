@@ -18,6 +18,8 @@ public sealed partial class TargetingControl : UIWidget
 {
     private readonly TargetingUIController _controller;
     private readonly Dictionary<TargetBodyPart, TextureButton> _bodyPartControls;
+    private TargetBodyPart? _activeBodyPart;
+    private TargetBodyPart? _hoveredBodyPart;
 
     public TargetingControl()
     {
@@ -44,7 +46,17 @@ public sealed partial class TargetingControl : UIWidget
         {
             bodyPartButton.Value.MouseFilter = MouseFilterMode.Stop;
             bodyPartButton.Value.OnPressed += _ => SetActiveBodyPart(bodyPartButton.Key);
-
+            bodyPartButton.Value.OnMouseEntered += _ =>
+            {
+                _hoveredBodyPart = bodyPartButton.Key;
+                UpdateHighlights();
+            };
+            bodyPartButton.Value.OnMouseExited += _ =>
+            {
+                if (_hoveredBodyPart == bodyPartButton.Key)
+                    _hoveredBodyPart = null;
+                UpdateHighlights();
+            };
         }
         UpdateDoll();
     }
@@ -53,8 +65,22 @@ public sealed partial class TargetingControl : UIWidget
 
     public void SetBodyPartsVisible(TargetBodyPart bodyPart)
     {
+        _activeBodyPart = bodyPart;
+        UpdateHighlights();
+    }
+
+    private void UpdateHighlights()
+    {
         foreach (var bodyPartButton in _bodyPartControls)
-            bodyPartButton.Value.Children.First().Visible = bodyPartButton.Key == bodyPart;
+        {
+            var overlay = (TextureRect) bodyPartButton.Value.Children.First();
+            var selected = bodyPartButton.Key == _activeBodyPart;
+            var hovered = bodyPartButton.Key == _hoveredBodyPart;
+            overlay.Visible = selected || hovered;
+            overlay.ModulateSelfOverride = hovered
+                ? Color.FromHex("#FFE08A")
+                : Color.FromHex("#FF7760");
+        }
     }
 
     private void UpdateDoll()
@@ -62,6 +88,7 @@ public sealed partial class TargetingControl : UIWidget
         var texture = Theme.ResolveTexture("target_doll");
         TargetDoll.Texture = texture;
         HumanityTargetingLayout.Apply(texture, _bodyPartControls);
+        UpdateHighlights();
     }
 
     protected override void OnThemeUpdated() => UpdateDoll();

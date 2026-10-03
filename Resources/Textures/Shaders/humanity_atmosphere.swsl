@@ -44,8 +44,13 @@ void fragment() {
     highp float luminance = dot(scene.rgb, vec3(0.2126, 0.7152, 0.0722));
     highp vec3 graded = mix(vec3(luminance), scene.rgb, saturation);
     graded *= vec3(1.0 + warmth, 1.0, 1.0 - warmth);
+    if (fog_strength <= 0.0) {
+        COLOR = vec4(clamp(graded, 0.0, 1.0), 1.0);
+        return;
+    }
     highp vec2 world = world_origin + coord.x * world_axis_x + coord.y * world_axis_y;
-    highp vec2 drift = vec2(fog_time * 0.18, fog_time * 0.05);
+    highp vec2 drift = vec2(fog_time * 0.28 + sin(fog_time * 0.12) * 0.6,
+        fog_time * 0.06 + sin(fog_time * 0.08) * 0.4);
     highp vec2 flowing = world - drift;
     highp float clearing = 1.0;
     highp float piled = 0.0;
@@ -64,10 +69,10 @@ void fragment() {
             piled += ring * 0.1;
         }
     }
-    highp vec2 curl = vec2(cloud(flowing * 0.07 + fog_time * 0.006),
-        cloud(flowing * 0.07 + vec2(23.0, 7.0) - fog_time * 0.004)) - vec2(0.5);
+    highp vec2 curl = vec2(cloud(flowing * 0.07 + fog_time * 0.012),
+        cloud(flowing * 0.07 + vec2(23.0, 7.0) - fog_time * 0.008)) - vec2(0.5);
     highp float mist = cloud((flowing + curl * 1.4) * vec2(0.06, 0.2));
-    highp float wisps = cloud(flowing * vec2(0.15, 0.3) - drift * 0.04 + vec2(17.0, 9.0));
+    highp float wisps = cloud(world * vec2(0.15, 0.3) - vec2(fog_time * 0.075, fog_time * 0.023) + vec2(17.0, 9.0));
     mist = smoothstep(0.24, 0.8, mist * 0.7 + wisps * 0.3);
     mist = pow(mist, 1.8);
     highp float outdoors = 1.0 - smoothstep(0.08, 0.92, roofCoverage(coord));

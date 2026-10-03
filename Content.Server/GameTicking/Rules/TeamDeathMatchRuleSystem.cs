@@ -48,7 +48,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             }
         }
         if (component.RoundDuration > 0)
-            _chat.DispatchGlobalAnnouncement("Захват точки. Бой — 45 мин. Подкрепления — каждые 2 мин.", "Штаб", false, null, Color.Yellow);
+            _chat.DispatchGlobalAnnouncement("Задача - захватить центр карты. Подкрепления будут каждые 2 минуты, а сам бой длится 45 минут.", "Штаб", false, null, Color.Yellow);
     }
 
     public override void Update(float frameTime)

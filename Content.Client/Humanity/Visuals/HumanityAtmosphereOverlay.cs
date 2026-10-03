@@ -56,9 +56,10 @@ public sealed class HumanityAtmosphereOverlay : Overlay
     {
         if (ScreenTexture == null)
             return;
-        DrawRoofMask(args);
+        if (_worldWar)
+            DrawRoofMask(args);
         _shader.SetParameter("SCREEN_TEXTURE", ScreenTexture);
-        _shader.SetParameter("ROOF_MASK", _roofMask!.Texture);
+        _shader.SetParameter("ROOF_MASK", _worldWar ? _roofMask!.Texture : ScreenTexture);
         var origin = args.Viewport.LocalToWorld(new Vector2(0, args.Viewport.Size.Y)).Position;
         _shader.SetParameter("world_origin", origin);
         _shader.SetParameter("world_axis_x", args.Viewport.LocalToWorld((Vector2) args.Viewport.Size).Position - origin);
@@ -68,7 +69,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
         _shader.SetParameter("blast_positions", _blastPositions);
         _shader.SetParameter("blast_radii", _blastRadii);
         _shader.SetParameter("blast_ages", _blastAges);
-        _shader.SetParameter("fog_strength", _worldWar ? 0.22f : 0.18f);
+        _shader.SetParameter("fog_strength", _worldWar ? 0.22f : 0f);
         _shader.SetParameter("saturation", _worldWar ? 0.94f : 1.02f);
         _shader.SetParameter("warmth", _worldWar ? -0.008f : 0.008f);
         var handle = args.WorldHandle;
@@ -79,7 +80,8 @@ public sealed class HumanityAtmosphereOverlay : Overlay
 
     public void Disperse(MapCoordinates coordinates, float radius)
     {
-        if (!_entities.HasComponent<CivResearchComponent>(_maps.GetMapEntityId(coordinates.MapId)))
+        if (!_entities.TryGetComponent(_maps.GetMapEntityId(coordinates.MapId), out CivResearchComponent? research) ||
+            !research.IsTDM)
             return;
         if (_blasts.Count >= _blastAges.Length)
             _blasts.RemoveAt(0);
