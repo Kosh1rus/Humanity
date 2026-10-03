@@ -80,11 +80,12 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
         }
     }
 
+    public void EmitWorkDust(MapCoordinates coordinates) => Dust(coordinates, 4);
+
     public override void Update(float frameTime)
     {
         base.Update(frameTime);
         _elapsed += frameTime;
-        _time += frameTime;
         if (_elapsed < 0.25f)
             return;
         _elapsed = 0;
@@ -99,7 +100,6 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
             if (!light.Enabled || transform.MapUid != playerTransform.MapUid ||
                 Vector2.DistanceSquared(_transforms.GetWorldPosition(transform), playerPosition) > 144f)
                 continue;
-            _lights.SetEnergy(uid, 3.2f + 0.18f * MathF.Sin(_time * 7.1f + uid.GetHashCode()), light);
             if (++count > 8 || !_random.Prob(0.35f))
                 continue;
             var coordinates = _transforms.GetMapCoordinates(uid).Offset(new Vector2(0, 0.3f));
@@ -112,10 +112,30 @@ public sealed class HumanityAtmosphereSystem : EntitySystem
                 continue;
             var smoke = Spawn("HumanitySmallDust", coordinates);
             var particle = AddComp<BattleExplosionParticleComponent>(smoke);
-            particle.Velocity = new Vector2(0.12f, 0.35f);
+            particle.Velocity = new Vector2(0.12f + MathF.Sin(_time * 0.17f) * 0.07f, 0.35f);
             particle.Lifetime = 2.5f;
             particle.Growth = 0.12f;
             particle.Tint = new Color(0.57f, 0.56f, 0.53f, 0.24f);
+        }
+    }
+
+    public override void FrameUpdate(float frameTime)
+    {
+        base.FrameUpdate(frameTime);
+        _time += frameTime;
+        if (_players.LocalEntity is not { } player)
+            return;
+        var playerTransform = Transform(player);
+        var position = _transforms.GetWorldPosition(playerTransform);
+        var fires = EntityQueryEnumerator<FireAtmosphereComponent, PointLightComponent, TransformComponent>();
+        while (fires.MoveNext(out var uid, out _, out var light, out var transform))
+        {
+            if (!light.Enabled || transform.MapUid != playerTransform.MapUid ||
+                Vector2.DistanceSquared(_transforms.GetWorldPosition(transform), position) > 144f)
+                continue;
+            var phase = uid.GetHashCode();
+            _lights.SetEnergy(uid, 3.2f + 0.14f * MathF.Sin(_time * 5.1f + phase)
+                + 0.07f * MathF.Sin(_time * 8.7f + phase), light);
         }
     }
 }

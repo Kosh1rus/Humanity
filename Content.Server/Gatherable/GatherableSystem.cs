@@ -60,14 +60,16 @@ public sealed partial class GatherableSystem : EntitySystem
             _audio.PlayPvs(soundComp.Sound, Transform(gatheredUid).Coordinates);
         }
 
-        // Complete the gathering process
+        var pos = _transform.GetMapCoordinates(gatheredUid);
+        var effect = TryComp<Content.Shared.Humanity.Visuals.FoliageAtmosphereComponent>(gatheredUid, out var foliage) && foliage.ShedLeaves
+            ? Content.Shared.Humanity.Visuals.NomadWorkEffect.Wood
+            : Content.Shared.Humanity.Visuals.NomadWorkEffect.Leaves;
+        EntityManager.System<Content.Server.Humanity.Visuals.NomadLandscapeSystem>().Emit(gatheredUid, effect);
         _destructible.DestroyEntity(gatheredUid);
 
         // Spawn the loot!
         if (component.Loot == null)
             return;
-
-        var pos = _transform.GetMapCoordinates(gatheredUid);
 
         foreach (var (tag, table) in component.Loot)
         {

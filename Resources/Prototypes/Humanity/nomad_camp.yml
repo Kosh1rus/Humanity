@@ -1,0 +1,194 @@
+- type: entity
+  id: HumanityWovenBasket
+  parent: BaseStorageItem
+  name: плетёная корзина
+  description: Для трав, припасов и мелочей.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/Storage/storage.rsi
+    state: produce_basket
+  - type: Item
+    size: Large
+  - type: Storage
+    grid:
+    - 0,0,3,2
+    maxItemSize: Small
+  - type: Construction
+    graph: HumanityWovenBasket
+    node: end
+
+- type: entity
+  id: HumanityHideRack
+  parent: BaseStructure
+  name: стойка для шкур
+  description: Деревянная стойка. Сверху можно разложить шкуры и припасы.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/structures.rsi
+    state: drying_rack_full
+    drawdepth: SmallObjects
+  - type: InteractionOutline
+  - type: NomadCampFootprint
+  - type: PlaceableSurface
+  - type: ItemPlacer
+    maxEntities: 3
+  - type: Construction
+    graph: HumanityHideRack
+    node: end
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 80
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ Destruction ]
+
+- type: entity
+  id: HumanityClayJar
+  parent: BaseStorageItem
+  name: глиняный горшок
+  description: Небольшой горшок для хранения припасов.
+  components:
+  - type: Sprite
+    sprite: Civ14/Structures/claystuff.rsi
+    state: claypot1
+  - type: Item
+    size: Large
+  - type: Storage
+    grid:
+    - 0,0,2,2
+    maxItemSize: Small
+  - type: Construction
+    graph: HumanityClayJar
+    node: end
+
+- type: entity
+  id: HumanityMetalPot
+  parent: HumanityClayJar
+  name: железный котелок
+  description: Прочный котелок для хранения припасов.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/kitchen.rsi
+    state: empty_pot
+  - type: Construction
+    graph: HumanityMetalPot
+    node: end
+
+- type: construction
+  id: HumanityWovenBasket
+  name: плетёная корзина
+  description: Для припасов и мелочей.
+  graph: HumanityWovenBasket
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: produce_basket }
+  objectType: Item
+  agemin: 0
+  agemax: 8
+
+- type: construction
+  id: HumanityHideRack
+  name: стойка для шкур
+  description: Подставка для шкур и припасов.
+  graph: HumanityHideRack
+  startNode: start
+  targetNode: end
+  category: construction-category-furniture
+  icon: { sprite: Civ14/Objects/structures.rsi, state: drying_rack_full }
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+  - !type:TileNotBlocked
+  agemin: 0
+  agemax: 8
+
+- type: construction
+  id: HumanityClayJar
+  name: глиняный горшок
+  description: Для хранения припасов.
+  graph: HumanityClayJar
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  icon: { sprite: Civ14/Structures/claystuff.rsi, state: claypot1 }
+  objectType: Item
+  agemin: 1
+  agemax: 8
+
+- type: construction
+  id: HumanityMetalPot
+  name: железный котелок
+  description: Прочный котелок для припасов.
+  graph: HumanityMetalPot
+  startNode: start
+  targetNode: end
+  category: construction-category-misc
+  icon: { sprite: Civ14/Objects/kitchen.rsi, state: empty_pot }
+  objectType: Item
+  agemin: 2
+  agemax: 8
+
+- type: constructionGraph
+  id: HumanityWovenBasket
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Straw
+        amount: 5
+        doAfter: 4
+  - node: end
+    entity: HumanityWovenBasket
+
+- type: constructionGraph
+  id: HumanityHideRack
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: WoodPlank
+        amount: 4
+        doAfter: 4
+      - material: Leather
+        amount: 2
+        doAfter: 2
+  - node: end
+    entity: HumanityHideRack
+
+- type: constructionGraph
+  id: HumanityClayJar
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Clay
+        amount: 4
+        doAfter: 5
+  - node: end
+    entity: HumanityClayJar
+
+- type: constructionGraph
+  id: HumanityMetalPot
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: end
+      steps:
+      - material: Iron
+        amount: 3
+        doAfter: 5
+  - node: end
+    entity: HumanityMetalPot

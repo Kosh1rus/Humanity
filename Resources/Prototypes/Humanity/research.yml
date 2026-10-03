@@ -5,6 +5,8 @@
   description: Рабочее место для опытов. Возьмите нужный материал в руку и используйте его на столе. Осмотрите стол, чтобы узнать требования и общий прогресс цивилизации.
   components:
     - type: NomadResearchTable
+    - type: NomadCampFootprint
+      radius: 0.8
     - type: Construction
       graph: HumanityResearchTable
       node: end

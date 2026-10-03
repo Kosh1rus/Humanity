@@ -1,0 +1,435 @@
+- type: entity
+  id: HumanityWildShrubBase
+  parent: WildPlantBase
+  abstract: true
+  name: дикий куст
+  description: Можно собрать ветки пустой рукой.
+  components:
+  - type: Sprite
+    sprite: Civ14/Flora/bushes_temperate.rsi
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.35,-0.4,0.35,0.4"
+        hard: false
+  - type: Gatherable
+    toolWhitelist:
+      components:
+      - Hands
+    loot:
+      All: HumanityWildShrubHarvest
+
+- type: entityLootTable
+  id: HumanityWildShrubHarvest
+  entries:
+  - id: LeafedStick
+    amount: 1
+    maxAmount: 1
+
+- type: entityLootTable
+  id: HumanityWildGrassHarvest
+  entries:
+  - id: MaterialStraw1
+    amount: 1
+    maxAmount: 1
+
+- type: entity
+  id: HumanityWildShrub1
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush1
+
+- type: entity
+  id: HumanityWildShrub2
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush2
+
+- type: entity
+  id: HumanityWildShrub3
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush3
+
+- type: entity
+  id: HumanityWildShrub4
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush4
+
+- type: entity
+  id: HumanityWildShrub5
+  parent: HumanityWildShrubBase
+  name: полевые цветы
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush5
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub6
+  parent: HumanityWildShrubBase
+  name: полевые цветы
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush6
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub7
+  parent: HumanityWildShrubBase
+  name: полевые цветы
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush7
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub8
+  parent: HumanityWildShrubBase
+  name: полевые цветы
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush8
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub9
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush9
+
+- type: entity
+  id: HumanityWildShrub10
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush10
+
+- type: entity
+  id: HumanityWildShrub11
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush11
+
+- type: entity
+  id: HumanityWildShrub12
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush12
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub13
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush13
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub14
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush14
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub15
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush15
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub16
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush16
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub17
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush17
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub18
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush18
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub19
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush19
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub20
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush20
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub21
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush21
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub22
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush22
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub23
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush23
+
+- type: entity
+  id: HumanityWildShrub24
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush24
+
+- type: entity
+  id: HumanityWildShrub25
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush25
+
+- type: entity
+  id: HumanityWildShrub26
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush26
+
+- type: entity
+  id: HumanityWildShrub27
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush27
+
+- type: entity
+  id: HumanityWildShrub28
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush28
+
+- type: entity
+  id: HumanityWildShrub29
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush29
+
+- type: entity
+  id: HumanityWildShrub30
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush30
+
+- type: entity
+  id: HumanityWildShrub31
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush31
+
+- type: entity
+  id: HumanityWildShrub32
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush32
+
+- type: entity
+  id: HumanityWildShrub33
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush33
+
+- type: entity
+  id: HumanityWildShrub34
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush34
+
+- type: entity
+  id: HumanityWildShrub35
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush35
+
+- type: entity
+  id: HumanityWildShrub36
+  parent: HumanityWildShrubBase
+  components:
+  - type: Sprite
+    state: smallbush36
+
+- type: entity
+  id: HumanityWildShrub37
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush37
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub38
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush38
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub39
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush39
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub40
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush40
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub41
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush41
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+
+- type: entity
+  id: HumanityWildShrub42
+  parent: HumanityWildShrubBase
+  name: дикая трава
+  description: Можно собрать стебли пустой рукой.
+  components:
+  - type: Sprite
+    state: smallbush42
+  - type: Gatherable
+    loot:
+      All: HumanityWildGrassHarvest
+

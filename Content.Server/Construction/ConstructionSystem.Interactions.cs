@@ -160,6 +160,9 @@ namespace Content.Server.Construction
             // Handle step should never handle the interaction during validation.
             DebugTools.Assert(!validation);
 
+            EntityManager.System<Content.Server.Humanity.Visuals.NomadLandscapeSystem>()
+                .Emit(uid, Content.Shared.Humanity.Visuals.NomadWorkEffect.Building);
+
             // We increase the step index, meaning we move to the next step!
             construction.StepIndex++;
 

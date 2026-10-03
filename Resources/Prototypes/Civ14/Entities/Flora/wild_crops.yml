@@ -6,6 +6,15 @@
   description: Небольшая заросль дикого растения. По неровным листьям видно сходство с культурными сортами, хотя здесь оно растёт само по себе.
   suffix: Structure
   components:
+    - type: Clickable
+      bounds:
+        all: "-0.42,-0.48,0.42,0.4"
+    - type: InteractionOutline
+    - type: Sprite
+      drawdepth: SmallObjects
+      noRot: true
+    - type: FoliageAtmosphere
+      shedLeaves: false
     - type: Fixtures
       fixtures:
         fix1:
@@ -30,8 +39,8 @@
   id: WildPlantPotato
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/potato.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: potato
     - type: Gatherable
       toolWhitelist:
         components:
@@ -55,8 +64,8 @@
   id: WildPlantCorn
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/corn.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: corn
     - type: Gatherable
       toolWhitelist:
         components:
@@ -80,8 +89,8 @@
   id: WildPlantRice
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/rice.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: rice
     - type: Gatherable
       toolWhitelist:
         components:
@@ -105,8 +114,8 @@
   id: WildPlantWheat
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/wheat.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: wheat
     - type: Gatherable
       toolWhitelist:
         components:
@@ -130,8 +139,8 @@
   id: WildPlantHemp
   components:
     - type: Sprite
-      sprite: Civ14/Objects/Farming/hemp.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: hemp
     - type: Gatherable
       toolWhitelist:
         components:
@@ -155,8 +164,8 @@
   id: WildPlantHealing
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/aloe.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: healing
     - type: Gatherable
       toolWhitelist:
         components:
@@ -177,8 +186,8 @@
   id: WildPlantYarrow
   components:
     - type: Sprite
-      sprite: Civ14/Objects/Farming/yarrow.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: yarrow
     - type: Gatherable
       toolWhitelist:
         components:
@@ -202,8 +211,8 @@
   id: WildPlantMilkThistle
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: milk_thistle
     - type: Gatherable
       toolWhitelist:
         components:
@@ -227,8 +236,8 @@
   id: WildPlantElderflower
   components:
     - type: Sprite
-      sprite: Civ14/Objects/Farming/elderflower.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: elderflower
     - type: Gatherable
       toolWhitelist:
         components:
@@ -252,8 +261,8 @@
   id: WildPlantComfrey
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: comfrey
     - type: Gatherable
       toolWhitelist:
         components:
@@ -277,8 +286,8 @@
   id: WildPlantPoppy
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/poppy.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: poppy
     - type: Gatherable
       toolWhitelist:
         components:
@@ -302,8 +311,8 @@
   id: WildPlantAloe
   components:
     - type: Sprite
-      sprite: Objects/Specific/Hydroponics/aloe.rsi
-      state: harvest
+      sprite: Humanity/Flora/wild_plants.rsi
+      state: aloe
     - type: Gatherable
       toolWhitelist:
         components:

@@ -17,6 +17,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     [Dependency] private readonly TransformSystem _transforms = default!;
     [Dependency] private readonly IOverlayManager _overlays = default!;
     private readonly Dictionary<EntityUid, ShaderInstance> _shaders = new();
+    private readonly HashSet<EntityUid> _brushed = new();
     internal readonly List<FallingLeaf> Leaves = new();
     private float _elapsed;
 
@@ -47,6 +48,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
         shader.SetParameter("wind_phase", _random.NextFloat(0, MathF.Tau));
         shader.SetParameter("wind_speed", _random.NextFloat(0.65f, 1.15f));
         shader.SetParameter("wind_strength", _random.NextFloat(0.35f, 1.05f));
+        shader.SetParameter("brush_strength", 0f);
         sprite.LayerSetShader(0, shader, "HumanityFoliage");
         if (_shaders.Remove(uid, out var old))
             old.Dispose();
@@ -57,6 +59,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     {
         if (_shaders.Remove(uid, out var shader))
             shader.Dispose();
+        _brushed.Remove(uid);
     }
 
     public override void Shutdown()
@@ -66,6 +69,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
         foreach (var shader in _shaders.Values)
             shader.Dispose();
         _shaders.Clear();
+        _brushed.Clear();
         Leaves.Clear();
         base.Shutdown();
     }
@@ -73,6 +77,26 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
+        if (_players.LocalEntity is { } local)
+        {
+            var localTransform = Transform(local);
+            var localPosition = _transforms.GetWorldPosition(localTransform);
+            foreach (var (uid, shader) in _shaders)
+            {
+                if (!TryComp<TransformComponent>(uid, out var xform) || xform.MapUid != localTransform.MapUid)
+                    continue;
+                var delta = localPosition - _transforms.GetWorldPosition(xform);
+                if (delta.LengthSquared() > 0.49f)
+                {
+                    if (_brushed.Remove(uid))
+                        shader.SetParameter("brush_strength", 0f);
+                    continue;
+                }
+                var brush = Math.Clamp(1f - delta.Length() / 0.7f, 0, 1) * Math.Clamp(-delta.X * 2f, -1f, 1f);
+                shader.SetParameter("brush_strength", brush);
+                _brushed.Add(uid);
+            }
+        }
         for (var i = Leaves.Count - 1; i >= 0; i--)
         {
             Leaves[i].Age += frameTime;
