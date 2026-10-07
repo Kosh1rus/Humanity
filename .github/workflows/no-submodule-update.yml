@@ -1,14 +1,33 @@
-name: No submodule update checker
+name: Validate engine revision
 
 on:
   pull_request:
     paths:
       - 'RobustToolbox'
+      - '.gitmodules'
+      - '.github/workflows/no-submodule-update.yml'
+
+permissions:
+  contents: read
 
 jobs:
-  this_aint_right:
-    name: Submodule update in pr found
+  engine-revision:
+    name: Validate pinned RobustToolbox revision
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
-      - name: Fail
-        run: exit 1
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          submodules: true
+          persist-credentials: false
+
+      - name: Check engine revision
+        shell: bash
+        run: |
+          set -euo pipefail
+          expected="$(git ls-tree HEAD RobustToolbox | awk '$1 == "160000" && $2 == "commit" {print $3}')"
+          test -n "$expected"
+          actual="$(git -C RobustToolbox rev-parse HEAD)"
+          test "$actual" = "$expected"
+          printf 'RobustToolbox revision verified: %s\n' "$actual"
