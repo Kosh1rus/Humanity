@@ -5,11 +5,11 @@ using Robust.Shared.Physics.Events;
 
 namespace Content.Shared._RMC14.Projectiles.Penetration;
 
-public sealed class RMCPenetratingProjectileSystem : EntitySystem
+public sealed partial class RMCPenetratingProjectileSystem : EntitySystem
 {
     private const int HardCollisionGroup = (int)(CollisionGroup.HighImpassable | CollisionGroup.Impassable);
 
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<RMCPenetratingProjectileComponent, MapInitEvent>(OnMapInit);
@@ -46,7 +46,6 @@ public sealed class RMCPenetratingProjectileSystem : EntitySystem
     {
         if (ent.Comp.HitTargets.Contains(args.Target))
         {
-            args.Handled = true;
             return;
         }
 
@@ -117,4 +116,3 @@ public sealed class RMCPenetratingProjectileSystem : EntitySystem
 /// </summary>
 [ByRefEvent]
 public record struct AfterProjectileHitEvent(Entity<ProjectileComponent> Projectile, EntityUid Target);
-

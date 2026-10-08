@@ -1,8 +1,8 @@
 - type: entity
   id: OperatingTable
   parent: Bed
-  name: "операционный стол"
-  description: "Специальный стол для хирургических операций. Правда, этот, похоже, стоит здесь только для вида."
+  name: операционный стол
+  description: Специальный стол для хирургических операций. Правда, этот, похоже, стоит здесь только для вида.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/optable.rsi
@@ -11,3 +11,4 @@
   - type: Icon
     sprite: Structures/Furniture/Tables/optable.rsi
     state: operating_table
+  - type: AmbientMusicMarkerMedical

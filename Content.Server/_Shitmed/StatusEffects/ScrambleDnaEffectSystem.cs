@@ -5,7 +5,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Server.Forensics;
+using Content.Shared.Forensics.Systems;
 using Content.Server.Humanoid;
 using Content.Shared._Shitmed.StatusEffects;
 using Content.Shared.Forensics;
@@ -16,12 +16,12 @@ using Content.Shared.Forensics.Components;
 
 namespace Content.Server._Shitmed.StatusEffects;
 
-public sealed class ScrambleDnaEffectSystem : EntitySystem
+public sealed partial class ScrambleDnaEffectSystem : EntitySystem
 {
-    [Dependency] private readonly HumanoidAppearanceSystem _humanoidAppearance = default!;
-    [Dependency] private readonly ForensicsSystem _forensicsSystem = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private HumanoidAppearanceSystem _humanoidAppearance = default!;
+    [Dependency] private ForensicsSystem _forensicsSystem = default!;
+    [Dependency] private MetaDataSystem _metaData = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<ScrambleDnaEffectComponent, ComponentInit>(OnInit);

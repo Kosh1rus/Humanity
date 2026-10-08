@@ -1,102 +1,90 @@
-# Ripley
-
 - type: entity
   id: RipleyCentralElectronics
   parent: BaseElectronics
   name: ripley central control module
   description: The electrical control center for the ripley mech.
   components:
-    - type: Item
-      storedRotation: 0
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: mainboard
-    - type: Tag
-      tags:
-        - RipleyCentralControlModule
-
+  - type: Item
+    storedRotation: 0
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: mainboard
+  - type: Tag
+    tags:
+    - RipleyCentralControlModule
 - type: entity
   id: RipleyPeripheralsElectronics
   parent: BaseElectronics
   name: ripley peripherals control module
   description: The electrical peripherals control for the ripley mech.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: id_mod
-    - type: Tag
-      tags:
-        - RipleyPeripheralsControlModule
-
-# H.O.N.K.
-
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: id_mod
+  - type: Tag
+    tags:
+    - RipleyPeripheralsControlModule
 - type: entity
   id: HonkerCentralElectronics
   parent: BaseElectronics
   name: H.O.N.K. central control module
   description: The electrical control center for the H.O.N.K. mech.
   components:
-    - type: Item
-      storedRotation: 0
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: mainboard
-    - type: Tag
-      tags:
-        - HonkerCentralControlModule
-
+  - type: Item
+    storedRotation: 0
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: mainboard
+  - type: Tag
+    tags:
+    - HonkerCentralControlModule
 - type: entity
   id: HonkerPeripheralsElectronics
   parent: BaseElectronics
   name: H.O.N.K. peripherals control module
   description: The electrical peripherals control for the H.O.N.K. mech.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: id_mod
-    - type: Tag
-      tags:
-        - HonkerPeripheralsControlModule
-
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: id_mod
+  - type: Tag
+    tags:
+    - HonkerPeripheralsControlModule
 - type: entity
   id: HonkerTargetingElectronics
   parent: BaseElectronics
   name: H.O.N.K. weapon control and targeting module
   description: The electrical targeting control for the H.O.N.K. mech.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: id_mod
-    - type: Tag
-      tags:
-        - HonkerTargetingControlModule
-
-# HAMTR
-
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: id_mod
+  - type: Tag
+    tags:
+    - HonkerTargetingControlModule
 - type: entity
   id: HamtrCentralElectronics
   parent: BaseElectronics
   name: HAMTR central control module
   description: The electrical control center for the HAMTR mech.
   components:
-    - type: Item
-      storedRotation: 0
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: mainboard
-    - type: Tag
-      tags:
-        - HamtrCentralControlModule
-
+  - type: Item
+    storedRotation: 0
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: mainboard
+  - type: Tag
+    tags:
+    - HamtrCentralControlModule
 - type: entity
   id: HamtrPeripheralsElectronics
   parent: BaseElectronics
   name: HAMTR peripherals control module
   description: The electrical peripherals control for the HAMTR mech.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: id_mod
-    - type: Tag
-      tags:
-        - HamtrPeripheralsControlModule
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: id_mod
+  - type: Tag
+    tags:
+    - HamtrPeripheralsControlModule

@@ -5,9 +5,9 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Localizations
 {
-    public sealed class ContentLocalizationManager
+    public sealed partial class ContentLocalizationManager
     {
-        [Dependency] private readonly ILocalizationManager _loc = default!;
+        [Dependency] private ILocalizationManager _loc = default!;
 
         private const string Culture = "ru-RU";
 
@@ -37,6 +37,7 @@ namespace Content.Shared.Localizations
                 _loc.AddFunction(loadedCulture, "PRESSURE", FormatPressure);
                 _loc.AddFunction(loadedCulture, "POWERWATTS", FormatPowerWatts);
                 _loc.AddFunction(loadedCulture, "POWERJOULES", FormatPowerJoules);
+                _loc.AddFunction(loadedCulture, "ENERGYWATTHOURS", FormatEnergyWattHours);
                 _loc.AddFunction(loadedCulture, "UNITS", FormatUnits);
                 _loc.AddFunction(loadedCulture, "TOSTRING", args => FormatToString(loadedCulture, args));
                 _loc.AddFunction(loadedCulture, "LOC", FormatLoc);
@@ -55,7 +56,7 @@ namespace Content.Shared.Localizations
              */
             _loc.AddFunction(cultureEn, "MAKEPLURAL", FormatMakePlural);
             _loc.AddFunction(cultureEn, "MANY", FormatMany);
-            _loc.SetFallbackCluture(cultureEn);
+            _loc.SetFallbackCulture(cultureEn);
             _loc.SetCulture(culture);
         }
 
@@ -211,10 +212,16 @@ namespace Content.Shared.Localizations
             return new LocValueString(obj?.ToString() ?? "");
         }
 
-        private static ILocValue FormatUnitsGeneric(LocArgs args, string mode)
+        private static ILocValue FormatUnitsGeneric(
+            LocArgs args,
+            string mode,
+            Func<double, double>? transformValue = null)
         {
             const int maxPlaces = 5; // Matches amount in _lib.ftl
             var pressure = ((LocValueNumber) args.Args[0]).Value;
+
+            if (transformValue != null)
+                pressure = transformValue(pressure);
 
             var places = 0;
             while (pressure > 1000 && places < maxPlaces)
@@ -239,6 +246,13 @@ namespace Content.Shared.Localizations
         private static ILocValue FormatPowerJoules(LocArgs args)
         {
             return FormatUnitsGeneric(args, "zzzz-fmt-power-joules");
+        }
+
+        private static ILocValue FormatEnergyWattHours(LocArgs args)
+        {
+            const double joulesToWattHours = 1.0 / 3600;
+
+            return FormatUnitsGeneric(args, "zzzz-fmt-energy-watt-hours", joules => joules * joulesToWattHours);
         }
 
         private static ILocValue FormatUnits(LocArgs args)

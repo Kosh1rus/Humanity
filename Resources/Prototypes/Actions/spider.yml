@@ -1,19 +1,26 @@
 - type: entity
+  parent: BaseAction
   id: ActionSpiderWeb
   name: Сплести паутину
   description: Создать паутину, которая замедлит добычу.
   components:
-  - type: InstantAction
-    icon: Interface/Actions/web.png
-    event: !type:SpiderWebActionEvent
+  - type: Action
     useDelay: 25
-
+  - type: Sprite
+    layers:
+    - texture: Interface/Actions/web.png
+  - type: InstantAction
+    event: !type:SpiderWebActionEvent ''
 - type: entity
+  parent: BaseAction
   id: ActionSericulture
   name: Выпрясть шёлк
   description: Выпрясть немного шёлка для поделок.
   components:
-  - type: InstantAction
-    icon: Interface/Actions/web.png
-    event: !type:SericultureActionEvent
+  - type: Action
     useDelay: 1
+  - type: Sprite
+    layers:
+    - texture: Interface/Actions/web.png
+  - type: InstantAction
+    event: !type:SericultureActionEvent ''

@@ -194,8 +194,8 @@
     node: end
 - type: construction
   id: HumanitySteelForge
-  name: СЃС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅС‹Р№ РіРѕСЂРЅ
-  description: РџРµСЂРµСЂР°Р±Р°С‚С‹РІР°РµС‚ Р¶РµР»РµР·Рѕ Рё СѓРіРѕР»СЊ РІ СЃС‚Р°Р»СЊ. РЈРіРѕР»СЊ РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РІ РєР°РјРµРЅРЅРѕР№ РїР»Р°РІРёР»СЊРЅРµ РёР· РґСЂРµРІРµСЃРёРЅС‹.
+  name: humanity-construction-HumanitySteelForge-name
+  description: humanity-construction-HumanitySteelForge-description
   graph: HumanitySteelForge
   startNode: start
   targetNode: end
@@ -249,8 +249,8 @@
     node: end
 - type: construction
   id: HumanityIndustrialWorkshop
-  name: РјРµС…Р°РЅРёС‡РµСЃРєР°СЏ РјР°СЃС‚РµСЂСЃРєР°СЏ
-  description: РџСЂРѕРёР·РІРѕРґРёС‚ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Рё РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ. РќРѕРІС‹Рµ РёР·РґРµР»РёСЏ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ РїРѕ РјРµСЂРµ СЃРјРµРЅС‹ СЌРїРѕС….
+  name: humanity-construction-HumanityIndustrialWorkshop-name
+  description: humanity-construction-HumanityIndustrialWorkshop-description
   graph: HumanityIndustrialWorkshop
   startNode: start
   targetNode: end

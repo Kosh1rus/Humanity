@@ -1,86 +1,42 @@
-# Anything human specific (e.g. UI, input) goes under MobHuman
 - type: entity
   parent: BaseMobSpeciesOrganic
   id: BaseMobHuman
   name: Urist McHands
   abstract: true
   components:
-    - type: Hunger
-      starvationDamage:
-        types:
-          Poison: 0.0166
-    - type: Icon # It will not have an icon in the adminspawn menu without this. Body parts seem fine for whatever reason.
-      sprite: Mobs/Species/Human/parts.rsi
-      state: full
-    - type: Thirst
-      thirstDamage:
-        types:
-          Poison: 0.0166
-    - type: RotInto
-      entity: HumanRemains
-      stage: 2
-    - type: Butcherable
-      butcheringType: Spike
-      spawned:
-        - id: FoodMeatHuman
-          amount: 5
-    - type: HumanoidAppearance
-      species: Human
-      hideLayersOnEquip:
-        - Hair
-        - Snout
-    - type: ShowAntagIcons
-    - type: ShowSyndicateIcons
-    - type: SleepZone
-    - type: LookZoom #civ14
-    - type: EyeCursorOffset #civ14
-      maxOffset: 4
-      pvsIncrease: 0.4
-    - type: Inventory
-      femaleDisplacements:
-        jumpsuit:
-          sizeMaps:
-            32:
-              sprite: Mobs/Species/Human/displacement.rsi
-              state: jumpsuit-female
-
-- type: entity
-  parent: BaseSpeciesDummy
-  id: MobHumanDummy
-  categories: [HideSpawnMenu]
-  components:
-    - type: Inventory
-      femaleDisplacements:
-        jumpsuit:
-          sizeMaps:
-            32:
-              sprite: Mobs/Species/Human/displacement.rsi
-              state: jumpsuit-female
-- type: entity
-  name: "человеческие останки"
-  parent: BaseItem
-  id: HumanRemains
-  description: "Всё, что осталось от несчастного человека."
-  components:
-    - type: Sprite
-      sprite: Civ14/Objects/tribal.rsi
-      state: remains1
-      layers:
-        - state: remains1
-          map: ["random"]
-    - type: RandomSprite
-      available:
-        - random:
-            remains1: ""
-            remains2: ""
-            remains3: ""
-            remains4: ""
-            remains5: ""
-            remains6: ""
-    - type: STWeight
-      self: 8
-    - type: Item
-      size: Huge
-    - type: Tag
-      tags:
-        - Trash
+  - type: Icon
+    sprite: Mobs/Species/Human/parts.rsi
+    state: full
+  - type: RotInto
+    entity: HumanRemains
+    stage: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatHuman
+      amount: 5
+  - type: HumanoidAppearance
+    species: Human
+    hideLayersOnEquip:
+    - Hair
+    - Snout
+  - type: ShowAntagIcons
+  - type: ShowSyndicateIcons
+  - type: SleepZone
+  - type: LookZoom
+  - type: EyeCursorOffset
+    maxOffset: 4
+    pvsIncrease: 0.4
+  - type: Inventory
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: NormalSatiationHunger
+      Thirst:
+        prototype: NormalSatiationThirst

@@ -7,7 +7,6 @@ armor-reduction-value = - [color=yellow]{$type}[/color] damage reduced by [color
 armor-damage-type-blunt = Blunt
 armor-damage-type-slash = Slash
 armor-damage-type-piercing = Piercing
-armor-damage-type-arrow = Arrow
 armor-damage-type-heat = Heat
 armor-damage-type-radiation = Radiation
 armor-damage-type-caustic = Caustic

@@ -1125,16 +1125,16 @@
             "name": "yen_200"
         },
         {
-            "name": "yen_100\u002B"
+            "name": "yen_100+"
         },
         {
-            "name": "yen_200\u002B"
+            "name": "yen_200+"
         },
         {
             "name": "yen_500"
         },
         {
-            "name": "yen_500\u002B"
+            "name": "yen_500+"
         },
         {
             "name": "fernleaf1"
@@ -1186,16 +1186,16 @@
             "name": "septim_200"
         },
         {
-            "name": "septim_100\u002B"
+            "name": "septim_100+"
         },
         {
-            "name": "septim_200\u002B"
+            "name": "septim_200+"
         },
         {
             "name": "septim_500"
         },
         {
-            "name": "septim_500\u002B"
+            "name": "septim_500+"
         },
         {
             "name": "lockpick"
@@ -1275,7 +1275,16 @@
             "name": "nrod"
         },
         {
-            "name": ""
+            "name": "unused-blank"
+        },
+        {
+            "name": "50dollar_2"
+        },
+        {
+            "name": "dollarc"
+        },
+        {
+            "name": "type89"
         }
     ]
 }

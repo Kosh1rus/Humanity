@@ -1,8 +1,5 @@
-using Robust.Shared.Serialization;
-
 namespace Content.Shared._Stalker.Characteristics;
 
-[Serializable, NetSerializable]
 public struct Characteristic
 {
     public readonly CharacteristicPrototype Proto;

@@ -1,14 +1,10 @@
 - type: entity
-  parent: BaseSign
+  parent: BaseSignWeak
   id: PaintingBase
   abstract: true
   components:
-  - type: WallMount
-    arc: 360
   - type: Sprite
-    drawdepth: WallMountedItems
     sprite: Structures/Wallmounts/paintings.rsi
-
 - type: entity
   parent: PaintingBase
   id: PaintingEmpty
@@ -17,7 +13,6 @@
   components:
   - type: Sprite
     state: painting0
-
 - type: entity
   parent: PaintingBase
   id: PaintingMoony
@@ -26,7 +21,6 @@
   components:
   - type: Sprite
     state: painting1
-
 - type: entity
   parent: PaintingBase
   id: PaintingPersistenceOfMemory
@@ -35,7 +29,6 @@
   components:
   - type: Sprite
     state: painting2
-
 - type: entity
   parent: PaintingBase
   id: PaintingTheSonOfMan
@@ -44,7 +37,6 @@
   components:
   - type: Sprite
     state: painting3
-
 - type: entity
   parent: PaintingBase
   id: PaintingTheKiss
@@ -53,7 +45,6 @@
   components:
   - type: Sprite
     state: painting4
-
 - type: entity
   parent: PaintingBase
   id: PaintingTheScream
@@ -62,7 +53,6 @@
   components:
   - type: Sprite
     state: painting5
-
 - type: entity
   parent: PaintingBase
   id: PaintingTheGreatWave
@@ -71,16 +61,14 @@
   components:
   - type: Sprite
     state: painting6
-
 - type: entity
   parent: PaintingBase
   id: PaintingCafeTerraceAtNight
-  name: "«Ночная терраса кафе»"
-  description: "На картине изображена оживлённая ночная сцена у кафе."
+  name: «Ночная терраса кафе»
+  description: На картине изображена оживлённая ночная сцена у кафе.
   components:
   - type: Sprite
     state: painting7
-
 - type: entity
   parent: PaintingBase
   id: PaintingNightHawks
@@ -89,16 +77,14 @@
   components:
   - type: Sprite
     state: painting8
-
 - type: entity
   parent: PaintingBase
   id: PaintingSkeletonCigarette
-  name: "«Череп с горящей сигаретой»"
-  description: "Импрессионистский портрет скелета с тлеющей сигаретой между зубами."
+  name: «Череп с горящей сигаретой»
+  description: Импрессионистский портрет скелета с тлеющей сигаретой между зубами.
   components:
   - type: Sprite
     state: painting9
-
 - type: entity
   parent: PaintingBase
   id: PaintingSkeletonBoof
@@ -107,7 +93,6 @@
   components:
   - type: Sprite
     state: painting10
-
 - type: entity
   parent: PaintingBase
   id: PaintingPrayerHands
@@ -116,25 +101,22 @@
   components:
   - type: Sprite
     state: painting11
-
 - type: entity
   parent: PaintingBase
   id: PaintingOldGuitarist
-  name: "«Старый гитарист»"
-  description: "На картине худой пожилой мужчина прижимает к себе гитару. Его лицо измождено."
+  name: «Старый гитарист»
+  description: На картине худой пожилой мужчина прижимает к себе гитару. Его лицо измождено.
   components:
   - type: Sprite
     state: painting12
-
 - type: entity
   parent: PaintingBase
   id: PaintingOlympia
-  name: "«Олимпия»"
-  description: "На картине обнажённая женщина лежит на кровати, а служанка ухаживает за ней."
+  name: «Олимпия»
+  description: На картине обнажённая женщина лежит на кровати, а служанка ухаживает за ней.
   components:
   - type: Sprite
     state: painting13
-
 - type: entity
   parent: PaintingBase
   id: PaintingSaturn
@@ -143,7 +125,6 @@
   components:
   - type: Sprite
     state: painting14
-
 - type: entity
   parent: PaintingBase
   id: PaintingSleepingGypsy
@@ -152,16 +133,14 @@
   components:
   - type: Sprite
     state: painting15
-
 - type: entity
   parent: PaintingBase
   id: PaintingRedBlueYellow
-  name: "«Композиция с красным, синим и жёлтым»"
-  description: "Картина состоит из прямоугольников, закрашенных чистыми цветами."
+  name: «Композиция с красным, синим и жёлтым»
+  description: Картина состоит из прямоугольников, закрашенных чистыми цветами.
   components:
   - type: Sprite
     state: painting16
-
 - type: entity
   parent: PaintingBase
   id: PaintingAmogusTriptych
@@ -170,16 +149,14 @@
   components:
   - type: Sprite
     state: painting17
-
 - type: entity
   parent: PaintingBase
   id: PaintingHelloWorld
-  name: "«Привет, мир»"
-  description: "Множество разноцветных квадратов складываются в странный узор. Может, это что-то означает?"
+  name: «Привет, мир»
+  description: Множество разноцветных квадратов складываются в странный узор. Может, это что-то означает?
   components:
   - type: Sprite
     state: painting18
-
 - type: entity
   parent: PaintingBase
   id: PaintingSadClown
@@ -187,4 +164,4 @@
   description: This painting is a sad clown! It sparks joy.
   components:
   - type: Sprite
-    state: painting19  
+    state: painting19

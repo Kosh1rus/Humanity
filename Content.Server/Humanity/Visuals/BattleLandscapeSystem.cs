@@ -12,11 +12,11 @@ using Robust.Shared.Physics.Systems;
 
 namespace Content.Server.Humanity.Visuals;
 
-public sealed class BattleLandscapeSystem : EntitySystem
+public sealed partial class BattleLandscapeSystem : EntitySystem
 {
-    [Dependency] private readonly IMapManager _maps = default!;
-    [Dependency] private readonly SharedTransformSystem _transforms = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private SharedMapSystem _maps = default!;
+    [Dependency] private SharedTransformSystem _transforms = default!;
+    [Dependency] private IRobustRandom _random = default!;
     private readonly HashSet<EntityUid> _explosions = new();
     private readonly Dictionary<EntityUid, Queue<EntityUid>> _scars = new();
 
@@ -35,7 +35,7 @@ public sealed class BattleLandscapeSystem : EntitySystem
     {
         if (!_maps.MapExists(origin.MapId))
             return;
-        var map = _maps.GetMapEntityId(origin.MapId);
+        var map = _maps.GetMap(origin.MapId);
         if (!TryComp<CivResearchComponent>(map, out var research) || !research.IsTDM ||
             !_maps.TryFindGridAt(origin, out var grid, out _))
             return;

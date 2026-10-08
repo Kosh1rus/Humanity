@@ -5,7 +5,7 @@ namespace Content.Server._Stalker.Weight;
 
 public sealed partial class STWeightSystem : EntitySystem
 {
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
+    [Dependency] private MovementSpeedModifierSystem _movementSpeedModifier = default!;
 
     public override void Initialize()
     {
@@ -33,7 +33,7 @@ public sealed partial class STWeightSystem : EntitySystem
     {
         weight.Comp.MovementSpeedModifier = modifier;
 
-        _movementSpeedModifier.RefreshMovementSpeedModifiers(weight);
+        _movementSpeedModifier.RefreshMovementSpeedModifiers(weight.Owner);
     }
 
     private void SetInsideWeight(Entity<STWeightComponent> weight, float inside)
@@ -50,7 +50,7 @@ public sealed partial class STWeightSystem : EntitySystem
 
     private void UpdateWeight(Entity<STWeightComponent> weight)
     {
-        if (!TryComp<TransformComponent>(weight, out var transform))
+        if (!TryComp(weight, out TransformComponent? transform))
             return;
 
         var newInside = 0f;

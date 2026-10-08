@@ -9,13 +9,14 @@ using Robust.Shared.Random;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class FoliageAtmosphereSystem : EntitySystem
+public sealed partial class FoliageAtmosphereSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IPrototypeManager _prototypes = default!;
-    [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly TransformSystem _transforms = default!;
-    [Dependency] private readonly IOverlayManager _overlays = default!;
+    private static readonly ProtoId<ShaderPrototype> FoliageShader = "HumanityFoliage";
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private IPlayerManager _players = default!;
+    [Dependency] private TransformSystem _transforms = default!;
+    [Dependency] private IOverlayManager _overlays = default!;
     private readonly Dictionary<EntityUid, ShaderInstance> _shaders = new();
     private readonly HashSet<EntityUid> _brushed = new();
     private readonly Dictionary<EntityUid, float> _work = new();
@@ -46,7 +47,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     {
         if (!component.Enabled || !TryComp<SpriteComponent>(uid, out var sprite))
             return;
-        var shader = _prototypes.Index<ShaderPrototype>("HumanityFoliage").InstanceUnique();
+        var shader = _prototypes.Index(FoliageShader).InstanceUnique();
         shader.SetParameter("wind_phase", _random.NextFloat(0, MathF.Tau));
         shader.SetParameter("wind_speed", _random.NextFloat(0.65f, 1.15f));
         shader.SetParameter("wind_strength", _random.NextFloat(0.35f, 1.05f));
@@ -102,7 +103,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
             var localPosition = _transforms.GetWorldPosition(localTransform);
             foreach (var (uid, shader) in _shaders)
             {
-                if (!TryComp<TransformComponent>(uid, out var xform) || xform.MapUid != localTransform.MapUid)
+                if (!TryComp(uid, out TransformComponent? xform) || xform.MapUid != localTransform.MapUid)
                     continue;
                 var delta = localPosition - _transforms.GetWorldPosition(xform);
                 if (delta.LengthSquared() > 0.49f)
@@ -155,7 +156,7 @@ public sealed class FoliageAtmosphereSystem : EntitySystem
     {
         foreach (var uid in _shaders.Keys)
         {
-            if (!TryComp<TransformComponent>(uid, out var transform) || transform.MapID != origin.MapId)
+            if (!TryComp(uid, out TransformComponent? transform) || transform.MapID != origin.MapId)
                 continue;
             if (Vector2.DistanceSquared(_transforms.GetWorldPosition(transform), origin.Position) < 0.36f)
                 _work[uid] = 0;

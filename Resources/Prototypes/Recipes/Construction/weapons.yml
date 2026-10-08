@@ -1,62 +1,165 @@
 - type: construction
-  name: makeshift bola
-  id: Bola
-  graph: Bola
-  startNode: start
-  targetNode: bola
+  abstract: true
+  id: BaseWeapon
   category: construction-category-weapons
-  description: A simple weapon for tripping someone at a distance.
-  icon: { sprite: Objects/Weapons/Throwable/bola.rsi, state: icon }
   objectType: Item
-
 - type: construction
-  name: wooden buckler
-  id: WoodenBuckler
-  graph: WoodenBuckler
-  startNode: start
-  targetNode: woodenBuckler
-  category: construction-category-weapons
-  description: A simple round wooden shield.
-  icon: { sprite: Civ14/Objects/weapons.rsi, state: buckler }
-  objectType: Item
+  parent: BaseWeapon
+  id: BladedFlatcapGrey
+  graph: BladedFlatcapGrey
+  targetNode: icon
+  hide: true
+- type: construction
+  parent: BladedFlatcapGrey
+  id: BladedFlatcapBrown
+  graph: BladedFlatcapBrown
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: Shiv
+  graph: Shiv
+  targetNode: icon
+  hide: true
+- type: construction
+  parent: Shiv
+  id: ReinforcedShiv
+  graph: ReinforcedShiv
+  hide: true
+- type: construction
+  parent: Shiv
+  id: PlasmaShiv
+  graph: PlasmaShiv
+  hide: true
+- type: construction
+  parent: Shiv
+  id: UraniumShiv
+  graph: UraniumShiv
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: Spear
+  graph: Spear
+  targetNode: spear
+  hide: true
+- type: construction
+  parent: Spear
+  id: SpearReinforced
+  graph: SpearReinforced
+  hide: true
+- type: construction
+  parent: Spear
+  id: SpearPlasma
+  graph: SpearPlasma
+  hide: true
+- type: construction
+  parent: Spear
+  id: SpearUranium
+  graph: SpearUranium
+  hide: true
+- type: construction
+  parent: Spear
+  id: SpearSharkMinnow
+  graph: SpearSharkMinnow
+- type: construction
+  parent: Spear
+  id: SpearBone
+  graph: SpearBone
   agemin: 0
   agemax: 8
-
+  description: humanity-construction-SpearBone-description
 - type: construction
-  name: blue wooden buckler
+  parent: BaseWeapon
+  id: Bola
+  graph: Bola
+  targetNode: bola
+- type: construction
+  parent: BaseWeapon
+  id: WoodenBuckler
+  graph: WoodenBuckler
+  targetNode: woodenBuckler
+  agemin: 0
+  agemax: 8
+  description: humanity-construction-WoodenBuckler-description
+- type: construction
+  parent: BaseWeapon
+  id: CardShield
+  graph: CardShield
+  targetNode: cardShield
+- type: construction
+  parent: BaseWeapon
+  id: MakeshiftShield
+  graph: MakeshiftShield
+  targetNode: makeshiftShield
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: ImprovisedArrow
+  graph: ImprovisedArrow
+  targetNode: ImprovisedArrow
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: ImprovisedArrowCarp
+  graph: ImprovisedArrowCarp
+  targetNode: ImprovisedArrowCarp
+- type: construction
+  parent: BaseWeapon
+  id: ImprovisedArrowPlasma
+  graph: ImprovisedArrowPlasma
+  targetNode: ImprovisedArrowPlasma
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: ImprovisedArrowUranium
+  graph: ImprovisedArrowUranium
+  targetNode: ImprovisedArrowUranium
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: CardArrow
+  graph: CardArrow
+  targetNode: CardArrow
+- type: construction
+  parent: BaseWeapon
+  id: ImprovisedBow
+  graph: ImprovisedBow
+  targetNode: ImprovisedBow
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: ClothingHandsKnuckleDustersBrass
+  graph: ClothingHandsKnuckleDustersBrass
+  targetNode: icon
+- type: construction
+  parent: BaseWeapon
+  id: CardSword
+  graph: CardSword
+  targetNode: cardSword
+- type: construction
+  name: humanity-construction-WoodenBucklerBlue-name
   id: WoodenBucklerBlue
   graph: WoodenBuckler
   startNode: start
   targetNode: woodenBucklerBlue
   category: construction-category-weapons
-  description: A simple round wooden shield. This one is painted blue.
-  icon: { sprite: Civ14/Weapons/blue_buckler.rsi, state: icon }
+  description: humanity-construction-WoodenBucklerBlue-description
+  icon:
+    sprite: Civ14/Weapons/blue_buckler.rsi
+    state: icon
   objectType: Item
   agemin: 0
   agemax: 8
-
 - type: construction
-  name: red wooden buckler
+  name: humanity-construction-WoodenBucklerRed-name
   id: WoodenBucklerRed
   graph: WoodenBuckler
   startNode: start
   targetNode: woodenBucklerRed
   category: construction-category-weapons
-  description: A simple round wooden shield. This one is painted red.
-  icon: { sprite: Civ14/Weapons/red_buckler.rsi, state: icon }
-  objectType: Item
-  agemin: 0
-  agemax: 8
-
-- type: construction
-  name: bone spear
-  id: SpearBone
-  graph: SpearBone
-  startNode: start
-  targetNode: spear
-  category: construction-category-weapons
-  description: A spear topped with sharpened bone.
-  icon: { sprite: Civ14/Objects/StoneAge/spear.rsi, state: icon }
+  description: humanity-construction-WoodenBucklerRed-description
+  icon:
+    sprite: Civ14/Weapons/red_buckler.rsi
+    state: icon
   objectType: Item
   agemin: 0
   agemax: 8

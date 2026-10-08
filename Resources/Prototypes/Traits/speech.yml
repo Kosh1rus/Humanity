@@ -1,7 +1,3 @@
-# If you add a new trait, make sure to add the corresponding component to the whitelist in \Resources\Prototypes\Entities\Mobs\Player\clone.yml so it gets copied to clones correctly!
-
-# Free
-
 - type: trait
   id: Accentless
   name: trait-accentless-name
@@ -14,10 +10,7 @@
     - type: LizardAccent
     - type: MothAccent
     - type: ReplacementAccent
-      accent: dwarf
-
-# 1 Cost
-
+      accent: scottish
 - type: trait
   id: SouthernAccent
   name: trait-southern-name
@@ -26,26 +19,6 @@
   cost: 1
   components:
   - type: SouthernAccent
-
-- type: trait
-  id: PirateAccent
-  name: trait-pirate-accent-name
-  description: trait-pirate-accent-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: PirateAccent
-
-- type: trait
-  id: CowboyAccent
-  name: trait-cowboy-name
-  description: trait-cowboy-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ReplacementAccent
-    accent: cowboy
-
 - type: trait
   id: GermanAccent
   name: trait-german-name
@@ -54,17 +27,6 @@
   cost: 1
   components:
   - type: GermanAccent
-
-- type: trait
-  id: ItalianAccent
-  name: trait-italian-name
-  description: trait-italian-desc
-  category: SpeechTraits
-  cost: 1
-  components:
-  - type: ReplacementAccent
-    accent: italian
-
 - type: trait
   id: FrenchAccent
   name: trait-french-name
@@ -73,7 +35,6 @@
   cost: 1
   components:
   - type: FrenchAccent
-
 - type: trait
   id: SpanishAccent
   name: trait-spanish-name
@@ -82,7 +43,6 @@
   cost: 1
   components:
   - type: SpanishAccent
-
 - type: trait
   id: Liar
   name: trait-liar-name
@@ -92,9 +52,15 @@
   components:
   - type: ReplacementAccent
     accent: liar
-
-# 2 Cost
-
+- type: trait
+  id: ScottishAccent
+  name: trait-scottish-name
+  description: trait-scottish-desc
+  category: SpeechTraits
+  cost: 1
+  components:
+  - type: ReplacementAccent
+    accent: scottish
 - type: trait
   id: SocialAnxiety
   name: trait-socialanxiety-name
@@ -107,7 +73,6 @@
     fourRandomProb: 0
     threeRandomProb: 0
     cutRandomProb: 0
-
 - type: trait
   id: FrontalLisp
   name: trait-frontal-lisp-name

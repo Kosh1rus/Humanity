@@ -5,13 +5,48 @@
   name: syndicate reinforcement radio
   description: Call in a syndicate agent of questionable quality, instantly! Only basic equipment provided.
   components:
-    - type: Sprite
-      sprite: Objects/Devices/communication.rsi
-      layers:
-        - state: old-radio
-    - type: UserInterface
-      interfaces:
-        enum.GhostRoleRadioUiKey.Key:
-          type: GhostRoleRadioBoundUserInterface
-    - type: ActivatableUI
-      key: enum.GhostRoleRadioUiKey.Key
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: old-radio
+  - type: UserInterface
+    interfaces:
+      enum.GhostRoleRadioUiKey.Key:
+        type: GhostRoleRadioBoundUserInterface
+  - type: ActivatableUI
+    key: enum.GhostRoleRadioUiKey.Key
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioSyndicateNukeops
+  name: nuclear operative radio
+  description: Call in a nuclear operative of questionable quality, instantly! Basic nukeop equipment provided.
+  suffix: NukeOps
+  components:
+  - type: GhostRole
+    name: ghost-role-information-nukeop-reinforcement-name
+    description: ghost-role-information-nukeop-reinforcement-description
+    rules: ghost-role-information-nukeop-reinforcement-rules
+    mindRoles:
+    - MindRoleNukeopsReinforcement
+    raffle:
+      settings: default
+  - type: GhostRoleMobSpawner
+    prototype: MobHumanSyndicateAgentNukeops
+- type: entity
+  parent: ReinforcementRadio
+  id: ReinforcementRadioSyndicateCyborgAssault
+  name: syndicate assault cyborg reinforcement radio
+  description: Call in a well armed assault cyborg, instantly!
+  suffix: NukeOps
+  components:
+  - type: GhostRole
+    name: ghost-role-information-syndicate-cyborg-assault-name
+    description: ghost-role-information-syndicate-cyborg-description
+    rules: ghost-role-information-silicon-rules
+    mindRoles:
+    - MindRoleGhostRoleSilicon
+    raffle:
+      settings: default
+    job: Borg
+  - type: GhostRoleMobSpawner
+    prototype: PlayerBorgSyndicateAssaultBattery

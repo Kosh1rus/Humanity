@@ -14,14 +14,14 @@ using Robust.Shared.Player;
 
 namespace Content.Server.Humanity.Research;
 
-public sealed class NomadResearchSystem : EntitySystem
+public sealed partial class NomadResearchSystem : EntitySystem
 {
-    [Dependency] private readonly IMapManager _maps = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedStackSystem _stacks = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private SharedMapSystem _maps = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private SharedStackSystem _stacks = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private ChatSystem _chat = default!;
     private float _elapsed;
 
     public override void Initialize()
@@ -56,7 +56,7 @@ public sealed class NomadResearchSystem : EntitySystem
 
     private bool TryResearch(EntityUid uid, out EntityUid map, out CivResearchComponent research)
     {
-        map = _maps.GetMapEntityId(Transform(uid).MapID);
+        map = _maps.GetMap(Transform(uid).MapID);
         return TryComp(map, out research!);
     }
 
@@ -122,7 +122,7 @@ public sealed class NomadResearchSystem : EntitySystem
         var experiment = NomadResearch.Experiment(args.Age);
         if (TerminatingOrDeleted(material) || EntityManager.IsQueuedForDeletion(material) || !_hands.IsHolding(args.Args.User, material) ||
             !TryComp<StackComponent>(material, out var stack) || stack.StackTypeId != experiment.Stack ||
-            !_stacks.Use(material, experiment.Count, stack))
+            !_stacks.TryUse((material, stack), experiment.Count))
             return;
 
         var points = research.Advance(table.ResearchPoints, manual: true);

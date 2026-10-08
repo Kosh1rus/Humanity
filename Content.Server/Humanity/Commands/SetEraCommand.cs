@@ -8,10 +8,9 @@ using Robust.Shared.Map;
 namespace Content.Server.Humanity.Commands;
 
 [AdminCommand(AdminFlags.Server)]
-public sealed class SetEraCommand : IConsoleCommand
+public sealed partial class SetEraCommand : IConsoleCommand
 {
-    [Dependency] private readonly IEntityManager _entities = default!;
-    [Dependency] private readonly IMapManager _maps = default!;
+    [Dependency] private IEntityManager _entities = default!;
 
     public string Command => "setera";
     public string Description => "Меняет эпоху цивилизации на выбранной карте.";
@@ -24,6 +23,7 @@ public sealed class SetEraCommand : IConsoleCommand
 
     public void Execute(IConsoleShell shell, string argStr, string[] args)
     {
+        var maps = _entities.System<SharedMapSystem>();
         if (args.Length is < 1 or > 2 || !int.TryParse(args[0], out var age) || age is < 0 or > 8)
         {
             shell.WriteError(Help);
@@ -50,13 +50,13 @@ public sealed class SetEraCommand : IConsoleCommand
             return;
         }
 
-        if (!_maps.MapExists(mapId))
+        if (!maps.MapExists(mapId))
         {
             shell.WriteError("Такой карты нет.");
             return;
         }
 
-        if (!_entities.System<NomadResearchSystem>().TrySetAge(_maps.GetMapEntityId(mapId), age))
+        if (!_entities.System<NomadResearchSystem>().TrySetAge(maps.GetMap(mapId), age))
         {
             shell.WriteError("На этой карте эпоха недоступна: нет развития цивилизации, включён TDM или ограничен уровень исследований.");
             return;

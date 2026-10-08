@@ -38,9 +38,7 @@ entities:
       ambientLightColor: '#EEE2CBFF'
     - type: Map
       mapPaused: true
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
     - type: CivFactions
@@ -1099,7 +1097,6 @@ entities:
       enabled: true
     - type: BecomesStation
       id: Nomads
-    - type: Weather
     - type: WeatherNomads
       enabledWeathers:
       - Rain

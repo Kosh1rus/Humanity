@@ -1,0 +1,51 @@
+- type: tile
+  id: FloorConcrete
+  parent: BaseStationTile
+  name: tiles-concrete-tile
+  sprite: /Textures/Tiles/Planet/Concrete/concrete.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemConcrete
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorConcreteMono
+  parent: BaseStationTile
+  name: tiles-concrete-slab
+  sprite: /Textures/Tiles/Planet/Concrete/concrete_mono.png
+  variants: 4
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemConcreteMono
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorConcreteSmooth
+  parent: BaseStationTile
+  name: tiles-concrete-smooth
+  sprite: /Textures/Tiles/Planet/Concrete/concrete_smooth.png
+  variants: 4
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemConcreteSmooth
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000

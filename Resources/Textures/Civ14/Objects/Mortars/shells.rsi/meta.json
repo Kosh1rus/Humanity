@@ -1,14 +1,26 @@
-﻿{
-  "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprites taken from civ13",
-  "size": {
-    "x": 32,
-    "y": 32
-  },
-  "states": [
-    {
-      "name": "mortar_ammo_he"
-    }
-  ]
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Sprites taken from civ13",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "mortar_ammo_he"
+        },
+        {
+            "name": "mortar_ammo (1)"
+        },
+        {
+            "name": "mortar_ammo (2)"
+        },
+        {
+            "name": "mortar_ammo (4)"
+        },
+        {
+            "name": "mortar_ammo (5)"
+        }
+    ]
 }

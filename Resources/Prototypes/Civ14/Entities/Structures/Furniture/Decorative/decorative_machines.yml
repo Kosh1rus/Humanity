@@ -6,20 +6,22 @@
   suffix: decorative
   abstract: true
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/device.rsi
-      state: modern_intercom
-    - type: Damageable
-      damageModifierSet: Metallic
-      damageContainer: StructuralInorganic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 180
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/device.rsi
+    state: modern_intercom
+  - type: Damageable
+    damageModifierSet: Metallic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 180
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: Injurable
+    damageContainer: StructuralInorganic
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadio
@@ -27,11 +29,10 @@
   description: Армейская радиостанция.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/device.rsi
-      state: modern_intercom
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/device.rsi
+    state: modern_intercom
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadioTransmitter
@@ -39,11 +40,10 @@
   description: Мощный радиопередатчик.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/device.rsi
-      state: radio_transmitter
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/device.rsi
+    state: radio_transmitter
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRecorder
@@ -51,11 +51,10 @@
   description: Кассетный магнитофон.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/device.rsi
-      state: recorder_on
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/device.rsi
+    state: recorder_on
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeMachine
@@ -63,11 +62,10 @@
   description: Какая-то машина. Трудно сказать, для чего она нужна.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/device.rsi
-      state: machine_on
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/device.rsi
+    state: machine_on
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeFOB
@@ -75,10 +73,10 @@
   description: Передатчик для передового командного пункта.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/obj32x64.rsi
-      state: fob
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/obj32x64.rsi
+    state: fob
 - type: entity
   parent: StructureDecorativeFOB
   id: StructureDecorativeFOBFlipped
@@ -86,11 +84,10 @@
   description: Передатчик для передового командного пункта.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/obj32x64.rsi
-      state: fob_flipped
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/obj32x64.rsi
+    state: fob_flipped
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeSupplyCrate
@@ -98,10 +95,10 @@
   description: Ящик с разнообразными припасами.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/junk.rsi
-      state: supply_crate
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/junk.rsi
+    state: supply_crate
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeRadiator
@@ -109,10 +106,10 @@
   description: Старый радиатор отопления.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: false
-      sprite: Civ14/Objects/junk.rsi
-      state: radiator
+  - type: Sprite
+    noRot: false
+    sprite: Civ14/Objects/junk.rsi
+    state: radiator
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeBathtube
@@ -120,11 +117,10 @@
   description: Старая ванна.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/junk.rsi
-      state: bathtub
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/junk.rsi
+    state: bathtub
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeWashingMachine
@@ -132,11 +128,10 @@
   description: Старая стиральная машина.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/modern_structures.rsi
-      state: washing_machine_4
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/modern_structures.rsi
+    state: washing_machine_4
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeStove
@@ -144,11 +139,10 @@
   description: Старая газовая плита.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/modern_structures.rsi
-      state: stove
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/modern_structures.rsi
+    state: stove
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeTV
@@ -156,11 +150,10 @@
   description: Старый телевизор.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/modern_structures.rsi
-      state: TV
-
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/modern_structures.rsi
+    state: TV
 - type: entity
   parent: StructureDecorativeMachines
   id: StructureDecorativeCashRegister
@@ -168,16 +161,16 @@
   description: Обычный кассовый аппарат.
   suffix: decorative
   components:
-    - type: Sprite
-      noRot: true
-      sprite: Civ14/Objects/modern_structures.rsi
-      state: cash_register
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.2,-0.2,0.2,0.2"
-          hard: false
-          density: 30
-          mask:
-            - ItemMask
+  - type: Sprite
+    noRot: true
+    sprite: Civ14/Objects/modern_structures.rsi
+    state: cash_register
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.2,-0.2,0.2,0.2
+        hard: false
+        density: 30
+        mask:
+        - ItemMask

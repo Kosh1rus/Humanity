@@ -11,10 +11,10 @@ namespace Content.Server.Overlays
     /// Server-side system for managing faction and squad icon assignments.
     /// Inherits core logic from SharedFactionIconsSystem.
     /// </summary>
-    public sealed class FactionIconsSystem : SharedFactionIconsSystem
+    public sealed partial class FactionIconsSystem : SharedFactionIconsSystem
     {
-        [Dependency] private readonly IRobustRandom _random = default!;
-        [Dependency] private readonly EntityManager _entityManager = default!;
+        [Dependency] private IRobustRandom _random = default!;
+        [Dependency] private EntityManager _entityManager = default!;
 
         public override void Initialize()
         {
@@ -232,4 +232,3 @@ namespace Content.Server.Overlays
         }
     }
 }
-

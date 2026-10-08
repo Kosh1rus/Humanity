@@ -12,11 +12,11 @@ namespace Content.Server.Farming;
 
 public sealed partial class DiggingSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileManager = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private ITileDefinitionManager _tileManager = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     // Maps digging state
     private readonly Dictionary<string, string> _digProgression = new()
@@ -47,7 +47,7 @@ public sealed partial class DiggingSystem : EntitySystem
         if (!gridUid.HasValue || !TryComp<MapGridComponent>(gridUid.Value, out var grid))
             return;
 
-        var snapPos = grid.TileIndicesFor(clickLocation);
+        var snapPos = _map.TileIndicesFor(gridUid.Value, grid, clickLocation);
         var tileRef = _map.GetTileRef(gridUid.Value, grid, snapPos);
         var tileDef = (ContentTileDefinition)_tileManager[tileRef.Tile.TypeId];
 
@@ -98,7 +98,7 @@ public sealed partial class DiggingSystem : EntitySystem
         var nextTile = _tileManager[nextTileId];
         _map.SetTile(gridUid, grid, snapPos, new Tile(nextTile.TileId));
 
-        var coordinates = grid.GridTileToLocal(snapPos);
+        var coordinates = _map.GridTileToLocal(gridUid, grid, snapPos);
         var result = "MaterialDirt1";
         if (tileDef.ID == "FloorSand")
         {

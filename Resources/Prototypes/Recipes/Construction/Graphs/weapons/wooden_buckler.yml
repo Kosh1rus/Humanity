@@ -1,29 +1,27 @@
-﻿- type: constructionGraph
+- type: constructionGraph
   id: WoodenBuckler
   start: start
   graph:
-    - node: start
-      edges:
-        - to: woodenBuckler
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 2
-
-        - to: woodenBucklerRed
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 2
-
-        - to: woodenBucklerBlue
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 2
-    - node: woodenBuckler
-      entity: WoodenBuckler
-    - node: woodenBucklerBlue
-      entity: WoodenBucklerBlue
-    - node: woodenBucklerRed
-      entity: WoodenBucklerRed
+  - node: start
+    edges:
+    - to: woodenBuckler
+      steps:
+      - material: WoodPlank
+        amount: 5
+        doAfter: 2
+    - to: woodenBucklerRed
+      steps:
+      - material: WoodPlank
+        amount: 5
+        doAfter: 2
+    - to: woodenBucklerBlue
+      steps:
+      - material: WoodPlank
+        amount: 5
+        doAfter: 2
+  - node: woodenBuckler
+    entity: WoodenBuckler
+  - node: woodenBucklerBlue
+    entity: WoodenBucklerBlue
+  - node: woodenBucklerRed
+    entity: WoodenBucklerRed

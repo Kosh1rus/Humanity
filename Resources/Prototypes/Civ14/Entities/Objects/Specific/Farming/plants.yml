@@ -1,118 +1,433 @@
-- type: seed
-  id: HealingHerbs
-  name: healing herbs
-  noun: seeds-noun-seeds
-  displayName: healing herbs
-  plantRsi: Objects/Specific/Hydroponics/aloe.rsi
-  packetPrototype: HealingHerbsSeedsCiv
-  productPrototypes:
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedwheat
+  name: пшеница
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/wheat.rsi
+  - type: PlantData
+    name: humanity-plant-wheat
+    noun: seeds-noun-seeds
+    packetPrototype: WheatSeedsCiv
+    productPrototypes:
+    - WheatBushel
+    - WheatSeedsCiv
+  - type: Plant
+    lifespan: 25
+    maturation: 6
+    production: 3
+    yield: 2
+    potency: 5
+  - type: PlantGrowth
+    nutrientConsumption: 0.4
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 20
+        potencyDivisor: 20
+      Flour:
+        min: 5
+        max: 20
+        potencyDivisor: 20
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedbarley
+  name: ячмень
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/barley.rsi
+  - type: PlantData
+    name: humanity-plant-barley
+    noun: seeds-noun-seeds
+    packetPrototype: BarleySeedsCiv
+    productPrototypes:
+    - BarleyBushel
+    - BarleySeedsCiv
+  - type: Plant
+    lifespan: 25
+    maturation: 6
+    production: 3
+    yield: 2
+    potency: 5
+  - type: PlantGrowth
+    nutrientConsumption: 0.4
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 20
+        potencyDivisor: 20
+      BarleyFlour:
+        min: 5
+        max: 20
+        potencyDivisor: 20
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedcorn
+  name: кукуруза
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/corn.rsi
+  - type: PlantData
+    name: humanity-plant-corn
+    noun: seeds-noun-seeds
+    packetPrototype: CornSeedsCiv
+    productPrototypes:
+    - FoodCorn
+    - CornSeedsCiv
+  - type: Plant
+    lifespan: 25
+    maturation: 8
+    production: 6
+    yield: 2
+    potency: 20
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 10
+        potencyDivisor: 20
+      Cornmeal:
+        min: 5
+        max: 15
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedrice
+  name: рис
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/rice.rsi
+  - type: PlantData
+    name: humanity-plant-rice
+    noun: seeds-noun-seeds
+    packetPrototype: RiceSeedsCiv
+    productPrototypes:
+    - RiceBushel
+    - RiceSeedsCiv
+  - type: Plant
+    lifespan: 25
+    maturation: 6
+    production: 3
+    yield: 2
+    potency: 5
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 0.6
+    nutrientConsumption: 0.4
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 20
+        potencyDivisor: 20
+      Rice:
+        min: 5
+        max: 20
+        potencyDivisor: 20
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedpotato
+  name: картофель
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/potato.rsi
+  - type: PlantData
+    name: humanity-plant-potato
+    noun: seeds-noun-seeds
+    packetPrototype: PotatoSeedsCiv
+    productPrototypes:
+    - FoodPotato
+    - PotatoSeedsCiv
+  - type: Plant
+    lifespan: 30
+    maturation: 10
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Vitamin:
+        min: 1
+        max: 4
+        potencyDivisor: 25
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedhemp
+  name: конопля
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/Farming/hemp.rsi
+  - type: PlantData
+    name: humanity-plant-hemp
+    noun: seeds-noun-seeds
+    packetPrototype: HempSeedsCiv
+    productPrototypes:
+    - MaterialRope1
+    - HempSeedsCiv
+  - type: Plant
+    lifespan: 25
+    maturation: 6
+    production: 3
+    yield: 2
+    potency: 5
+  - type: PlantGrowth
+    nutrientConsumption: 0.4
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 5
+        potencyDivisor: 20
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedHealingHerbs
+  name: лечебные травы
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/aloe.rsi
+  - type: PlantData
+    name: humanity-plant-healingherbs
+    noun: seeds-noun-seeds
+    packetPrototype: HealingHerbsSeedsCiv
+    productPrototypes:
     - HealingHerbs
     - HealingHerbsSeedsCiv
-  lifespan: 25
-  maturation: 10
-  production: 3
-  yield: 2
-  potency: 10
-  growthStages: 5
-  waterConsumption: 0.60
-  chemicals:
-    Dermaline:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-    Bicaridine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-
-- type: seed
-  id: ComfreyHerbs
-  name: comfrey
-  noun: seeds-noun-seeds
-  displayName: comfrey
-  plantRsi: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
-  packetPrototype: ComfreySeedsCiv
-  productPrototypes:
+  - type: Plant
+    lifespan: 25
+    maturation: 10
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Dermaline:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Bicaridine:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedComfreyHerbs
+  name: окопник
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
+  - type: PlantData
+    name: humanity-plant-comfreyherbs
+    noun: seeds-noun-seeds
+    packetPrototype: ComfreySeedsCiv
+    productPrototypes:
     - ComfreyHealingHerbs
     - ComfreySeedsCiv
-  lifespan: 20
-  maturation: 8
-  production: 3
-  yield: 2
-  potency: 10
-  growthStages: 4
-  waterConsumption: 0.60
-  chemicals:
-    Bruizine:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-
-- type: seed
-  id: YarrowHerbs
-  name: yarrow
-  noun: seeds-noun-seeds
-  displayName: yarrow
-  plantRsi: Civ14/Objects/Farming/yarrow.rsi
-  packetPrototype: YarrowSeedsCiv
-  productPrototypes:
+  - type: Plant
+    lifespan: 20
+    maturation: 8
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 4
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Bruizine:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedYarrowHerbs
+  name: тысячелистник
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/Farming/yarrow.rsi
+  - type: PlantData
+    name: humanity-plant-yarrowherbs
+    noun: seeds-noun-seeds
+    packetPrototype: YarrowSeedsCiv
+    productPrototypes:
     - YarrowHealingHerbs
     - YarrowSeedsCiv
-  lifespan: 20
-  maturation: 8
-  production: 3
-  yield: 2
-  potency: 10
-  growthStages: 5
-  waterConsumption: 0.60
-  chemicals:
-    TranexamicAcid:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-
-- type: seed
-  id: ElderflowerHerbs
-  name: elderflower
-  noun: seeds-noun-seeds
-  displayName: elderflower
-  plantRsi: Civ14/Objects/Farming/elderflower.rsi
-  packetPrototype: ElderflowerSeedsCiv
-  productPrototypes:
+  - type: Plant
+    lifespan: 20
+    maturation: 8
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      TranexamicAcid:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedElderflowerHerbs
+  name: бузина
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/Farming/elderflower.rsi
+  - type: PlantData
+    name: humanity-plant-elderflowerherbs
+    noun: seeds-noun-seeds
+    packetPrototype: ElderflowerSeedsCiv
+    productPrototypes:
     - ElderflowerHealingHerbs
     - ElderflowerSeedsCiv
-  lifespan: 22
-  maturation: 10
-  production: 3
-  yield: 2
-  potency: 10
-  growthStages: 5
-  waterConsumption: 0.60
-  chemicals:
-    Dexalin:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
-
-- type: seed
-  id: MilkThistleHerbs
-  name: milk thistle
-  noun: seeds-noun-seeds
-  displayName: milk thistle
-  plantRsi: Objects/Specific/Hydroponics/galaxythistle.rsi
-  packetPrototype: MilkThistleSeedsCiv
-  productPrototypes:
+  - type: Plant
+    lifespan: 22
+    maturation: 10
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Dexalin:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedMilkThistleHerbs
+  name: расторопша
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
+  - type: PlantData
+    name: humanity-plant-milkthistleherbs
+    noun: seeds-noun-seeds
+    packetPrototype: MilkThistleSeedsCiv
+    productPrototypes:
     - MilkThistleHealingHerbs
     - MilkThistleSeedsCiv
-  lifespan: 15
-  maturation: 6
-  production: 3
-  yield: 2
-  potency: 10
-  growthStages: 3
-  waterConsumption: 0.60
-  chemicals:
-    Dylovene:
-      Min: 1
-      Max: 10
-      PotencyDivisor: 10
+  - type: Plant
+    lifespan: 15
+    maturation: 6
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Dylovene:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedaloe
+  name: алоэ
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/aloe.rsi
+  - type: PlantData
+    name: humanity-plant-aloe
+    noun: seeds-noun-seeds
+    packetPrototype: AloeSeedsCiv
+    productPrototypes:
+    - FoodAloe
+    - AloeSeeds
+  - type: Plant
+    lifespan: 25
+    maturation: 10
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 5
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Aloe:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+      Dermaline:
+        min: 1
+        max: 10
+        potencyDivisor: 10
+- type: entity
+  parent: BasePlant
+  id: HumanityCultivatedpoppy
+  name: мак
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/poppy.rsi
+  - type: PlantData
+    name: humanity-plant-poppy
+    noun: seeds-noun-seeds
+    packetPrototype: PoppySeedsCiv
+    productPrototypes:
+    - FoodPoppy
+    - PoppySeeds
+  - type: Plant
+    lifespan: 25
+    maturation: 10
+    production: 3
+    yield: 2
+    potency: 10
+    growthStages: 3
+  - type: PlantGrowth
+    waterConsumption: 0.6
+  - type: PlantChemicals
+    chemicals:
+      Nutriment:
+        min: 1
+        max: 2
+        potencyDivisor: 50
+      Bicaridine:
+        min: 1
+        max: 20
+        potencyDivisor: 5

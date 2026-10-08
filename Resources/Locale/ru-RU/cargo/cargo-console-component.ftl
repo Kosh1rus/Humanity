@@ -70,4 +70,3 @@ cargo-shuttle-console-shuttle-not-found = Не найден
 cargo-shuttle-console-organics = На шаттле обнаружены органические формы жизни
 
 cargo-no-shuttle = Грузовой шаттл не найден!
-

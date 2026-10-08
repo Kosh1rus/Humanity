@@ -1,131 +1,133 @@
-# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_meal.yml
-# Base
-
 - type: entity
-  parent: FoodInjectableBase
-  id: FoodNoodlesBase
   abstract: true
+  parent:
+  - SolutionSmall
+  - FoodInjectableBase
+  id: FoodNoodlesBase
   description: Now that's a nice pasta!
   components:
   - type: Item
-    storedRotation: -90
+    shape:
+    - 0,0,1,0
   - type: Sprite
     sprite: Objects/Consumable/Food/noodles.rsi
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 25
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 20
-
-# Noodles
-
-- type: entity
-  name: boiled spaghetti
-  parent: FoodNoodlesBase
-  id: FoodNoodlesBoiled
-  description: A plain dish of noodles, this needs more ingredients.
-  components:
-  - type: FlavorProfile
-    flavors:
-      - pasta
-  - type: Sprite
-    state: boiled
-# Tastes like pasta.
-
-- type: entity
-  name: spaghetti
-  parent: FoodNoodlesBase
-  id: FoodNoodles
-  description: Spaghetti and crushed tomatoes. Just like your abusive father used to make!
-  components:
-  - type: FlavorProfile
-    flavors:
-      - pasta
-      - tomato
-  - type: Sprite
-    state: tomato
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 30
   - type: Tag
     tags:
-    - Fruit
-# Tastes like pasta, tomato.
-
+    - FinishedMeal
 - type: entity
-  name: copypasta
   parent: FoodNoodlesBase
+  id: FoodNoodlesBoiled
+  name: boiled spaghetti
+  description: A plain dish of noodles, this needs more ingredients.
+  components:
+  - type: Item
+    storedOffset: 0,-4
+  - type: FlavorProfile
+    flavors:
+    - pasta
+  - type: Sprite
+    state: boiled
+- type: entity
+  parent: FoodNoodlesBase
+  id: FoodNoodles
+  name: spaghetti
+  description: Spaghetti and crushed tomatoes. Just like your abusive father used to make!
+  components:
+  - type: Item
+    storedOffset: 0,-4
+  - type: FlavorProfile
+    flavors:
+    - pasta
+    - tomato
+  - type: Sprite
+    state: tomato
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 45
+      - ReagentId: Vitamin
+        Quantity: 5
+  - type: Tag
+    tags:
+    - FinishedMeal
+    - Fruit
+- type: entity
+  parent:
+  - SolutionNormal
+  - FoodNoodlesBase
   id: FoodNoodlesCopy
+  name: copypasta
   description: You probably shouldn't try this, you always hear people talking about how bad it is...
   components:
-  - type: Food
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: Edible
     trash:
     - FoodPlateSmall
     - FoodPlateSmall
   - type: FlavorProfile
     flavors:
-      - copypasta
+    - copypasta
   - type: Sprite
     state: copypasta
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 25
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 12
-        - ReagentId: Vitamin
-          Quantity: 8
-# Tastes like pasta, bad humor.
-
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 90
+      - ReagentId: Vitamin
+        Quantity: 10
 - type: entity
-  name: "спагетти с фрикадельками"
   parent: FoodNoodlesBase
   id: FoodNoodlesMeatball
-  description: "Вот это я понимаю — фрикаделька!"
+  name: спагетти с фрикадельками
+  description: Вот это я понимаю — фрикаделька!
   components:
+  - type: Item
+    storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - meaty
+    - pasta
+    - meaty
   - type: Sprite
     state: meatball
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Vitamin
-          Quantity: 4
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 40
+      - ReagentId: Protein
+        Quantity: 5
   - type: Tag
     tags:
+    - FinishedMeal
     - Meat
-# Tastes like pasta, meat.
-
 - type: entity
-  name: spesslaw
   parent: FoodNoodlesBase
   id: FoodNoodlesSpesslaw
+  name: spesslaw
   description: A lawyer's favourite.
   components:
+  - type: Item
+    storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - meaty
+    - pasta
+    - meaty
   - type: Sprite
     state: spesslaw
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Vitamin
-          Quantity: 6
-# Tastes like pasta, meat.
-
+  - type: Tag
+    tags:
+    - FinishedMeal
+    - Meat
 - type: entity
   name: chow mein
   parent: FoodNoodlesBase
@@ -134,42 +136,40 @@
   components:
   - type: FlavorProfile
     flavors:
-      - pasta
-      - oily
-      - eggplant
-      - carrot
+    - pasta
+    - oily
+    - eggplant
+    - carrot
   - type: Sprite
     state: chowmein
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 7
-        - ReagentId: Vitamin
-          Quantity: 6
-# Tastes like pasta, tomato.
-
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 45
+      - ReagentId: Vitamin
+        Quantity: 12
+  - type: Tag
+    tags:
+    - FinishedMeal
 - type: entity
-  name: butter noodles
   parent: FoodNoodlesBase
   id: FoodNoodlesButter
+  name: butter noodles
   description: Noodles covered in savory butter. Simple and slippery, but delicious.
   components:
+  - type: Item
+    storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - butter
+    - pasta
+    - butter
   - type: Sprite
     state: butter
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Vitamin
-          Quantity: 1
-# Tastes like pasta, butter.
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 30
+      - ReagentId: Butter
+        Quantity: 5

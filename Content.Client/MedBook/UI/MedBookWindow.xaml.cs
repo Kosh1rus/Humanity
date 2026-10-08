@@ -40,7 +40,7 @@ namespace Content.Client.MedBook.UI
         public event Action<TargetBodyPart?, EntityUid>? OnBodyPartSelected;
         private EntityUid _spriteViewEntity;
 
-        [ValidatePrototypeId<EntityPrototype>]
+
         private readonly EntProtoId _bodyView = "AlertSpriteView";
 
         private readonly Dictionary<TargetBodyPart, TextureButton> _bodyPartControls;
@@ -209,10 +209,10 @@ namespace Content.Client.MedBook.UI
             // Damage Groups
 
             var damageSortedGroups =
-                damageable.DamagePerGroup.OrderByDescending(damage => damage.Value)
-                    .ToDictionary(x => x.Key, x => x.Value);
+                _entityManager.System<DamageableSystem>().GetDamagePerGroup((isPart ? part!.Value : _target.Value, damageable)).OrderByDescending(damage => damage.Value)
+                    .ToDictionary(x => x.Key.Id, x => x.Value);
 
-            IReadOnlyDictionary<string, FixedPoint2> damagePerType = damageable.Damage.DamageDict;
+            IReadOnlyDictionary<string, FixedPoint2> damagePerType = _entityManager.System<DamageableSystem>().GetPositiveDamage((isPart ? part!.Value : _target.Value, damageable)).DamageDict.ToDictionary(x => x.Key.Id, x => x.Value);
 
             DrawDiagnosticGroups(damageSortedGroups, damagePerType);
         }

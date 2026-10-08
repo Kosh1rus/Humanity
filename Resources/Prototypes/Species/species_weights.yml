@@ -1,5 +1,8 @@
-#default species weights used for randomly selected species
 - type: weightedRandomSpecies
   id: SpeciesWeights
   weights:
     Human: 1
+    Moth: 4
+    Dwarf: 2
+    Vox: 1
+    Vulpkanin: 4

@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Moth
-  name: "moth"
+  name: moth
   root: torso
   slots:
     head:

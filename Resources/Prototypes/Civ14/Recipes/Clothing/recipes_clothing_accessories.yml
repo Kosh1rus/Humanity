@@ -1,11 +1,11 @@
 - type: construction
-  name: "нарукавная повязка"
+  name: humanity-construction-civ13_accessory_armband-name
   id: civ13_accessory_armband
   graph: civ13_accessory_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая матерчатая повязка на рукав."
+  description: humanity-construction-civ13_accessory_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customarmband.rsi
     state: icon
@@ -26,13 +26,13 @@
   - node: end
     entity: civ13_accessory_armband
 - type: construction
-  name: "бронежилет «Дейфилд»"
+  name: humanity-construction-civ13_accessory_Dayfield_body_armor-name
   id: civ13_accessory_Dayfield_body_armor
   graph: civ13_accessory_Dayfield_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Британский бронежилет из стальных пластин."
+  description: humanity-construction-civ13_accessory_Dayfield_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/modern_dayfield.rsi
     state: icon
@@ -53,13 +53,13 @@
   - node: end
     entity: civ13_accessory_Dayfield_body_armor
 - type: construction
-  name: "жёлтая нарукавная повязка"
+  name: humanity-construction-civ13_accessory_yellow_armband-name
   id: civ13_accessory_yellow_armband
   graph: civ13_accessory_yellow_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядная жёлтая повязка на рукав."
+  description: humanity-construction-civ13_accessory_yellow_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/spanish.rsi
     state: icon
@@ -80,13 +80,13 @@
   - node: end
     entity: civ13_accessory_yellow_armband
 - type: construction
-  name: "повязка испанского республиканца"
+  name: humanity-construction-civ13_accessory_Spanish_Republican_armband-name
   id: civ13_accessory_Spanish_Republican_armband
   graph: civ13_accessory_Spanish_Republican_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарукавная повязка сторонника Испанской республики."
+  description: humanity-construction-civ13_accessory_Spanish_Republican_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/spanishrep.rsi
     state: icon
@@ -107,13 +107,13 @@
   - node: end
     entity: civ13_accessory_Spanish_Republican_armband
 - type: construction
-  name: "французский разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_French_webbing_vest-name
   id: civ13_accessory_French_webbing_vest
   graph: civ13_accessory_French_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузочный жилет французского образца."
+  description: humanity-construction-civ13_accessory_French_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/french_vest.rsi
     state: icon
@@ -134,13 +134,13 @@
   - node: end
     entity: civ13_accessory_French_webbing_vest
 - type: construction
-  name: "повязка ООН"
+  name: humanity-construction-civ13_accessory_UN_armband-name
   id: civ13_accessory_UN_armband
   graph: civ13_accessory_UN_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синяя нарукавная повязка с символикой ООН."
+  description: humanity-construction-civ13_accessory_UN_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/un.rsi
     state: icon
@@ -161,13 +161,13 @@
   - node: end
     entity: civ13_accessory_UN_armband
 - type: construction
-  name: "зелёная нарукавная повязка"
+  name: humanity-construction-civ13_accessory_green_armband-name
   id: civ13_accessory_green_armband
   graph: civ13_accessory_green_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядная зелёная повязка на рукав."
+  description: humanity-construction-civ13_accessory_green_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/portuguese.rsi
     state: icon
@@ -188,13 +188,13 @@
   - node: end
     entity: civ13_accessory_green_armband
 - type: construction
-  name: "оранжевая нарукавная повязка"
+  name: humanity-construction-civ13_accessory_orange_armband-name
   id: civ13_accessory_orange_armband
   graph: civ13_accessory_orange_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядная оранжевая повязка на рукав."
+  description: humanity-construction-civ13_accessory_orange_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/dutch.rsi
     state: icon
@@ -215,13 +215,13 @@
   - node: end
     entity: civ13_accessory_orange_armband
 - type: construction
-  name: "польская нарукавная повязка"
+  name: humanity-construction-civ13_accessory_polish_armband-name
   id: civ13_accessory_polish_armband
   graph: civ13_accessory_polish_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Повязка с польской символикой."
+  description: humanity-construction-civ13_accessory_polish_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/polisharmband.rsi
     state: icon
@@ -242,13 +242,13 @@
   - node: end
     entity: civ13_accessory_polish_armband
 - type: construction
-  name: "красная повязка «Вагнер»"
+  name: humanity-construction-civ13_accessory_red_wagner_armband-name
   id: civ13_accessory_red_wagner_armband
   graph: civ13_accessory_red_wagner_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарукавная повязка бойца ЧВК «Вагнер»."
+  description: humanity-construction-civ13_accessory_red_wagner_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/wagred.rsi
     state: icon
@@ -269,13 +269,13 @@
   - node: end
     entity: civ13_accessory_red_wagner_armband
 - type: construction
-  name: "железный браслет"
+  name: humanity-construction-civ13_accessory_iron_arm_bangle-name
   id: civ13_accessory_iron_arm_bangle
   graph: civ13_accessory_iron_arm_bangle
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Железный браслет, который носят на предплечье."
+  description: humanity-construction-civ13_accessory_iron_arm_bangle-description
   icon:
     sprite: Civ14/Clothing/exported/ties/iron_arm.rsi
     state: icon
@@ -296,13 +296,13 @@
   - node: end
     entity: civ13_accessory_iron_arm_bangle
 - type: construction
-  name: "золотая лента «За общественный порядок»"
+  name: humanity-construction-civ13_accessory_golden_Public_Order_ribbon-name
   id: civ13_accessory_golden_Public_Order_ribbon
   graph: civ13_accessory_golden_Public_Order_ribbon
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда отличившимся сотрудникам правоохранительных органов."
+  description: humanity-construction-civ13_accessory_golden_Public_Order_ribbon-description
   icon:
     sprite: Civ14/Clothing/exported/badges/police_gold.rsi
     state: icon
@@ -323,13 +323,13 @@
   - node: end
     entity: civ13_accessory_golden_Public_Order_ribbon
 - type: construction
-  name: "серебряная лента «За общественный порядок»"
+  name: humanity-construction-civ13_accessory_silver_Public_Order_ribbon-name
   id: civ13_accessory_silver_Public_Order_ribbon
   graph: civ13_accessory_silver_Public_Order_ribbon
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда отличившимся сотрудникам правоохранительных органов."
+  description: humanity-construction-civ13_accessory_silver_Public_Order_ribbon-description
   icon:
     sprite: Civ14/Clothing/exported/badges/police_silver.rsi
     state: icon
@@ -350,13 +350,13 @@
   - node: end
     entity: civ13_accessory_silver_Public_Order_ribbon
 - type: construction
-  name: "медный браслет"
+  name: humanity-construction-civ13_accessory_copper_arm_bangle-name
   id: civ13_accessory_copper_arm_bangle
   graph: civ13_accessory_copper_arm_bangle
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Медный браслет, который носят на предплечье."
+  description: humanity-construction-civ13_accessory_copper_arm_bangle-description
   icon:
     sprite: Civ14/Clothing/exported/ties/copper_arm.rsi
     state: icon
@@ -377,13 +377,13 @@
   - node: end
     entity: civ13_accessory_copper_arm_bangle
 - type: construction
-  name: "бронзовая лента «За общественный порядок»"
+  name: humanity-construction-civ13_accessory_bronze_Public_Order_ribbon-name
   id: civ13_accessory_bronze_Public_Order_ribbon
   graph: civ13_accessory_bronze_Public_Order_ribbon
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда отличившимся сотрудникам правоохранительных органов."
+  description: humanity-construction-civ13_accessory_bronze_Public_Order_ribbon-description
   icon:
     sprite: Civ14/Clothing/exported/badges/police_bronze.rsi
     state: icon
@@ -404,13 +404,13 @@
   - node: end
     entity: civ13_accessory_bronze_Public_Order_ribbon
 - type: construction
-  name: "звезда шерифа"
+  name: humanity-construction-civ13_accessory_Sheriff_Star-name
   id: civ13_accessory_Sheriff_Star
   graph: civ13_accessory_Sheriff_Star
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Золотая звезда городского шерифа."
+  description: humanity-construction-civ13_accessory_Sheriff_Star-description
   icon:
     sprite: Civ14/Clothing/exported/ties/sheriff.rsi
     state: icon
@@ -431,13 +431,13 @@
   - node: end
     entity: civ13_accessory_Sheriff_Star
 - type: construction
-  name: "повязка помощника шерифа"
+  name: humanity-construction-civ13_accessory_deputy_armband-name
   id: civ13_accessory_deputy_armband
   graph: civ13_accessory_deputy_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтая нарукавная повязка, по которой узнают помощников шерифа."
+  description: humanity-construction-civ13_accessory_deputy_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/spanish.rsi
     state: icon
@@ -458,13 +458,13 @@
   - node: end
     entity: civ13_accessory_deputy_armband
 - type: construction
-  name: "полицейский жетон"
+  name: humanity-construction-civ13_accessory_police_badge-name
   id: civ13_accessory_police_badge
   graph: civ13_accessory_police_badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жетон в форме звезды с выгравированным именем офицера."
+  description: humanity-construction-civ13_accessory_police_badge-description
   icon:
     sprite: Civ14/Clothing/exported/ties/sheriff.rsi
     state: icon
@@ -485,13 +485,13 @@
   - node: end
     entity: civ13_accessory_police_badge
 - type: construction
-  name: "красная нарукавная повязка"
+  name: humanity-construction-civ13_accessory_red_armband-name
   id: civ13_accessory_red_armband
   graph: civ13_accessory_red_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красная повязка на рукав."
+  description: humanity-construction-civ13_accessory_red_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/red.rsi
     state: icon
@@ -512,13 +512,13 @@
   - node: end
     entity: civ13_accessory_red_armband
 - type: construction
-  name: "синяя нарукавная повязка"
+  name: humanity-construction-civ13_accessory_blue_armband-name
   id: civ13_accessory_blue_armband
   graph: civ13_accessory_blue_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синяя повязка на рукав."
+  description: humanity-construction-civ13_accessory_blue_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/french.rsi
     state: icon
@@ -539,13 +539,13 @@
   - node: end
     entity: civ13_accessory_blue_armband
 - type: construction
-  name: "лёгкий чёрный панцирь"
+  name: humanity-construction-civ13_accessory_Light_black_breastplate_body_armor-name
   id: civ13_accessory_Light_black_breastplate_body_armor
   graph: civ13_accessory_Light_black_breastplate_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий нагрудный доспех из стальных пластин."
+  description: humanity-construction-civ13_accessory_Light_black_breastplate_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
     state: icon
@@ -566,13 +566,13 @@
   - node: end
     entity: civ13_accessory_Light_black_breastplate_body_armor
 - type: construction
-  name: "синий галстук"
+  name: humanity-construction-civ13_accessory_blue_tie-name
   id: civ13_accessory_blue_tie
   graph: civ13_accessory_blue_tie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычный синий галстук."
+  description: humanity-construction-civ13_accessory_blue_tie-description
   icon:
     sprite: Civ14/Clothing/exported/ties/blue_tie.rsi
     state: icon
@@ -593,13 +593,13 @@
   - node: end
     entity: civ13_accessory_blue_tie
 - type: construction
-  name: "синий флотский шарф"
+  name: humanity-construction-civ13_accessory_blue_scarf-name
   id: civ13_accessory_blue_scarf
   graph: civ13_accessory_blue_scarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий шарф моряков королевского флота."
+  description: humanity-construction-civ13_accessory_blue_scarf-description
   icon:
     sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
     state: icon
@@ -620,13 +620,13 @@
   - node: end
     entity: civ13_accessory_blue_scarf
 - type: construction
-  name: "синий хлопковый шарф"
+  name: humanity-construction-civ13_accessory_blue_scarf_1-name
   id: civ13_accessory_blue_scarf_1
   graph: civ13_accessory_blue_scarf_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий шарф из синего хлопка."
+  description: humanity-construction-civ13_accessory_blue_scarf_1-description
   icon:
     sprite: Civ14/Clothing/exported/ties/british_scarf.rsi
     state: icon
@@ -647,13 +647,13 @@
   - node: end
     entity: civ13_accessory_blue_scarf_1
 - type: construction
-  name: "серый хлопковый шарф"
+  name: humanity-construction-civ13_accessory_grey_scarf-name
   id: civ13_accessory_grey_scarf
   graph: civ13_accessory_grey_scarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий шарф из серого хлопка."
+  description: humanity-construction-civ13_accessory_grey_scarf-description
   icon:
     sprite: Civ14/Clothing/exported/ties/grey_scarf.rsi
     state: icon
@@ -674,13 +674,13 @@
   - node: end
     entity: civ13_accessory_grey_scarf
 - type: construction
-  name: "красный хлопковый шарф"
+  name: humanity-construction-civ13_accessory_red_scarf-name
   id: civ13_accessory_red_scarf
   graph: civ13_accessory_red_scarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий шарф из красного хлопка."
+  description: humanity-construction-civ13_accessory_red_scarf-description
   icon:
     sprite: Civ14/Clothing/exported/ties/red_scarf.rsi
     state: icon
@@ -701,13 +701,13 @@
   - node: end
     entity: civ13_accessory_red_scarf
 - type: construction
-  name: "жёлтый хлопковый шарф"
+  name: humanity-construction-civ13_accessory_yellow_scarf-name
   id: civ13_accessory_yellow_scarf
   graph: civ13_accessory_yellow_scarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий шарф из жёлтого хлопка."
+  description: humanity-construction-civ13_accessory_yellow_scarf-description
   icon:
     sprite: Civ14/Clothing/exported/ties/yellow_scarf.rsi
     state: icon
@@ -728,13 +728,13 @@
   - node: end
     entity: civ13_accessory_yellow_scarf
 - type: construction
-  name: "наручи с шипами"
+  name: humanity-construction-civ13_accessory_spiked_bracers-name
   id: civ13_accessory_spiked_bracers
   graph: civ13_accessory_spiked_bracers
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара наручей с шипами в духе панк-моды."
+  description: humanity-construction-civ13_accessory_spiked_bracers-description
   icon:
     sprite: Civ14/Clothing/exported/ties/spiked_bracers.rsi
     state: icon
@@ -755,13 +755,13 @@
   - node: end
     entity: civ13_accessory_spiked_bracers
 - type: construction
-  name: "золотые украшения коренных жителей"
+  name: humanity-construction-civ13_accessory_indian_accessories_1_2-name
   id: civ13_accessory_indian_accessories_1_2
   graph: civ13_accessory_indian_accessories_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Золотые ожерелья коренных народов Америки."
+  description: humanity-construction-civ13_accessory_indian_accessories_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indian2.rsi
     state: icon
@@ -782,13 +782,13 @@
   - node: end
     entity: civ13_accessory_indian_accessories_1_2
 - type: construction
-  name: "боевая раскраска шамана"
+  name: humanity-construction-civ13_accessory_indian_shaman_bodypaint-name
   id: civ13_accessory_indian_shaman_bodypaint
   graph: civ13_accessory_indian_shaman_bodypaint
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красно-белая раскраска, которую носят шаманы коренных народов Америки."
+  description: humanity-construction-civ13_accessory_indian_shaman_bodypaint-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indianshaman.rsi
     state: icon
@@ -809,13 +809,13 @@
   - node: end
     entity: civ13_accessory_indian_shaman_bodypaint
 - type: construction
-  name: "красная боевая раскраска"
+  name: humanity-construction-civ13_accessory_red_indian_acessories-name
   id: civ13_accessory_red_indian_acessories
   graph: civ13_accessory_red_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красная краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_red_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indianr.rsi
     state: icon
@@ -836,13 +836,13 @@
   - node: end
     entity: civ13_accessory_red_indian_acessories
 - type: construction
-  name: "зелёная боевая раскраска"
+  name: humanity-construction-civ13_accessory_green_indian_acessories-name
   id: civ13_accessory_green_indian_acessories
   graph: civ13_accessory_green_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёная краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_green_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indiang.rsi
     state: icon
@@ -863,13 +863,13 @@
   - node: end
     entity: civ13_accessory_green_indian_acessories
 - type: construction
-  name: "синяя боевая раскраска"
+  name: humanity-construction-civ13_accessory_blue_indian_acessories-name
   id: civ13_accessory_blue_indian_acessories
   graph: civ13_accessory_blue_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синяя краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_blue_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indianb.rsi
     state: icon
@@ -890,13 +890,13 @@
   - node: end
     entity: civ13_accessory_blue_indian_acessories
 - type: construction
-  name: "жёлтая боевая раскраска"
+  name: humanity-construction-civ13_accessory_yellow_indian_acessories-name
   id: civ13_accessory_yellow_indian_acessories
   graph: civ13_accessory_yellow_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтая краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_yellow_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indiany.rsi
     state: icon
@@ -917,13 +917,13 @@
   - node: end
     entity: civ13_accessory_yellow_indian_acessories
 - type: construction
-  name: "белая боевая раскраска"
+  name: humanity-construction-civ13_accessory_white_indian_acessories-name
   id: civ13_accessory_white_indian_acessories
   graph: civ13_accessory_white_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белая краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_white_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indianw.rsi
     state: icon
@@ -944,13 +944,13 @@
   - node: end
     entity: civ13_accessory_white_indian_acessories
 - type: construction
-  name: "чёрная боевая раскраска"
+  name: humanity-construction-civ13_accessory_black_indian_acessories-name
   id: civ13_accessory_black_indian_acessories
   graph: civ13_accessory_black_indian_acessories
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрная краска для лица и ожерелья коренных жителей."
+  description: humanity-construction-civ13_accessory_black_indian_acessories-description
   icon:
     sprite: Civ14/Clothing/exported/ties/indianbl.rsi
     state: icon
@@ -971,13 +971,13 @@
   - node: end
     entity: civ13_accessory_black_indian_acessories
 - type: construction
-  name: "костяной талисман"
+  name: humanity-construction-civ13_accessory_bone_talisman-name
   id: civ13_accessory_bone_talisman
   graph: civ13_accessory_bone_talisman
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Талисман из кости."
+  description: humanity-construction-civ13_accessory_bone_talisman-description
   icon:
     sprite: Civ14/Clothing/exported/ties/talisman.rsi
     state: icon
@@ -998,13 +998,13 @@
   - node: end
     entity: civ13_accessory_bone_talisman
 - type: construction
-  name: "повязка Красного Креста"
+  name: humanity-construction-civ13_accessory_red_cross_armband-name
   id: civ13_accessory_red_cross_armband
   graph: civ13_accessory_red_cross_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белая нарукавная повязка с красным крестом."
+  description: humanity-construction-civ13_accessory_red_cross_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/redcross.rsi
     state: icon
@@ -1025,13 +1025,13 @@
   - node: end
     entity: civ13_accessory_red_cross_armband
 - type: construction
-  name: "повязка НСДАП"
+  name: humanity-construction-civ13_accessory_NSDAP_armband-name
   id: civ13_accessory_NSDAP_armband
   graph: civ13_accessory_NSDAP_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красная нарукавная повязка со свастикой."
+  description: humanity-construction-civ13_accessory_NSDAP_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/nsdap.rsi
     state: icon
@@ -1052,13 +1052,13 @@
   - node: end
     entity: civ13_accessory_NSDAP_armband
 - type: construction
-  name: "повязка кэмпэйтай"
+  name: humanity-construction-civ13_accessory_Kenpeitai_armband-name
   id: civ13_accessory_Kenpeitai_armband
   graph: civ13_accessory_Kenpeitai_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белая нарукавная повязка с красными японскими иероглифами."
+  description: humanity-construction-civ13_accessory_Kenpeitai_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/japanesemp.rsi
     state: icon
@@ -1079,13 +1079,13 @@
   - node: end
     entity: civ13_accessory_Kenpeitai_armband
 - type: construction
-  name: "повязка военной полиции"
+  name: humanity-construction-civ13_accessory_military_police_armband-name
   id: civ13_accessory_military_police_armband
   graph: civ13_accessory_military_police_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрная повязка с буквами MP."
+  description: humanity-construction-civ13_accessory_military_police_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/usmp.rsi
     state: icon
@@ -1106,13 +1106,13 @@
   - node: end
     entity: civ13_accessory_military_police_armband
 - type: construction
-  name: "повязка фольксштурма"
+  name: humanity-construction-civ13_accessory_Volkssturm_armband-name
   id: civ13_accessory_Volkssturm_armband
   graph: civ13_accessory_Volkssturm_armband
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красно-бело-чёрная нарукавная повязка фольксштурма."
+  description: humanity-construction-civ13_accessory_Volkssturm_armband-description
   icon:
     sprite: Civ14/Clothing/exported/ties/volkssturm.rsi
     state: icon
@@ -1133,13 +1133,13 @@
   - node: end
     entity: civ13_accessory_Volkssturm_armband
 - type: construction
-  name: "кошачьи уши и хвост"
+  name: humanity-construction-civ13_accessory_cat_tail_and_ears-name
   id: civ13_accessory_cat_tail_and_ears
   graph: civ13_accessory_cat_tail_and_ears
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пушистые аксессуары для любителей кошек."
+  description: humanity-construction-civ13_accessory_cat_tail_and_ears-description
   icon:
     sprite: Civ14/Clothing/exported/ties/kitty.rsi
     state: icon
@@ -1160,13 +1160,13 @@
   - node: end
     entity: civ13_accessory_cat_tail_and_ears
 - type: construction
-  name: "шарф"
+  name: humanity-construction-civ13_accessory_scarf-name
   id: civ13_accessory_scarf
   graph: civ13_accessory_scarf
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой матерчатый шарф."
+  description: humanity-construction-civ13_accessory_scarf-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customscarf.rsi
     state: icon
@@ -1187,13 +1187,13 @@
   - node: end
     entity: civ13_accessory_scarf
 - type: construction
-  name: "перевязь"
+  name: humanity-construction-civ13_accessory_sash-name
   id: civ13_accessory_sash
   graph: civ13_accessory_sash
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Широкая матерчатая перевязь."
+  description: humanity-construction-civ13_accessory_sash-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customsash.rsi
     state: icon
@@ -1214,13 +1214,13 @@
   - node: end
     entity: civ13_accessory_sash
 - type: construction
-  name: "табар"
+  name: humanity-construction-civ13_accessory_tabard-name
   id: civ13_accessory_tabard
   graph: civ13_accessory_tabard
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая накидка без рукавов, которую носят поверх одежды."
+  description: humanity-construction-civ13_accessory_tabard-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customtabard.rsi
     state: icon
@@ -1241,13 +1241,13 @@
   - node: end
     entity: civ13_accessory_tabard
 - type: construction
-  name: "фартук"
+  name: humanity-construction-civ13_accessory_apron-name
   id: civ13_accessory_apron
   graph: civ13_accessory_apron
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой матерчатый фартук."
+  description: humanity-construction-civ13_accessory_apron-description
   icon:
     sprite: Civ14/Clothing/exported/ties/apron.rsi
     state: icon
@@ -1268,13 +1268,13 @@
   - node: end
     entity: civ13_accessory_apron
 - type: construction
-  name: "священнический воротник"
+  name: humanity-construction-civ13_accessory_priest_band-name
   id: civ13_accessory_priest_band
   graph: civ13_accessory_priest_band
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Отличительный воротник священнослужителя."
+  description: humanity-construction-civ13_accessory_priest_band-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customizable_priest_band.rsi
     state: icon
@@ -1295,13 +1295,13 @@
   - node: end
     entity: civ13_accessory_priest_band
 - type: construction
-  name: "плащ-накидка"
+  name: humanity-construction-civ13_accessory_cape-name
   id: civ13_accessory_cape
   graph: civ13_accessory_cape
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая матерчатая накидка."
+  description: humanity-construction-civ13_accessory_cape-description
   icon:
     sprite: Civ14/Clothing/exported/ties/customcape.rsi
     state: icon
@@ -1322,13 +1322,13 @@
   - node: end
     entity: civ13_accessory_cape
 - type: construction
-  name: "чёрный галстук"
+  name: humanity-construction-civ13_accessory_black_tie-name
   id: civ13_accessory_black_tie
   graph: civ13_accessory_black_tie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычный чёрный галстук."
+  description: humanity-construction-civ13_accessory_black_tie-description
   icon:
     sprite: Civ14/Clothing/exported/ties/black_tie.rsi
     state: icon
@@ -1349,13 +1349,13 @@
   - node: end
     entity: civ13_accessory_black_tie
 - type: construction
-  name: "чёрная бабочка"
+  name: humanity-construction-civ13_accessory_black_bowtie-name
   id: civ13_accessory_black_bowtie
   graph: civ13_accessory_black_bowtie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрный галстук-бабочка."
+  description: humanity-construction-civ13_accessory_black_bowtie-description
   icon:
     sprite: Civ14/Clothing/exported/ties/black_bowtie.rsi
     state: icon
@@ -1376,13 +1376,13 @@
   - node: end
     entity: civ13_accessory_black_bowtie
 - type: construction
-  name: "нашивка меткого стрелка"
+  name: humanity-construction-civ13_accessory_marksman_patch-name
   id: civ13_accessory_marksman_patch
   graph: civ13_accessory_marksman_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка со знаком меткого стрелка. Обычно её носят опытные бойцы."
+  description: humanity-construction-civ13_accessory_marksman_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/patch_marksman.rsi
     state: icon
@@ -1403,13 +1403,13 @@
   - node: end
     entity: civ13_accessory_marksman_patch
 - type: construction
-  name: "нашивка «Россия»"
+  name: humanity-construction-civ13_accessory_Russia_patch-name
   id: civ13_accessory_Russia_patch
   graph: civ13_accessory_Russia_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка с российским флагом."
+  description: humanity-construction-civ13_accessory_Russia_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/patch_russia.rsi
     state: icon
@@ -1430,13 +1430,13 @@
   - node: end
     entity: civ13_accessory_Russia_patch
 - type: construction
-  name: "нашивка группы «Альфа»"
+  name: humanity-construction-civ13_accessory_Spetsgruppa_A_patch-name
   id: civ13_accessory_Spetsgruppa_A_patch
   graph: civ13_accessory_Spetsgruppa_A_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка подразделения специального назначения «Альфа»."
+  description: humanity-construction-civ13_accessory_Spetsgruppa_A_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/patch_spets.rsi
     state: icon
@@ -1457,13 +1457,13 @@
   - node: end
     entity: civ13_accessory_Spetsgruppa_A_patch
 - type: construction
-  name: "нашивка SWAT"
+  name: humanity-construction-civ13_accessory_SWAT_patch-name
   id: civ13_accessory_SWAT_patch
   graph: civ13_accessory_SWAT_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка бойца полицейского спецназа SWAT."
+  description: humanity-construction-civ13_accessory_SWAT_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/swat.rsi
     state: icon
@@ -1484,13 +1484,13 @@
   - node: end
     entity: civ13_accessory_SWAT_patch
 - type: construction
-  name: "нашивка спецназа"
+  name: humanity-construction-civ13_accessory_special_forces_patch-name
   id: civ13_accessory_special_forces_patch
   graph: civ13_accessory_special_forces_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка бойца подразделения специального назначения."
+  description: humanity-construction-civ13_accessory_special_forces_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/patch_specialforces.rsi
     state: icon
@@ -1511,13 +1511,13 @@
   - node: end
     entity: civ13_accessory_special_forces_patch
 - type: construction
-  name: "нашивка «Охрана»"
+  name: humanity-construction-civ13_accessory_SECURITY-name
   id: civ13_accessory_SECURITY
   graph: civ13_accessory_SECURITY
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нашивка сотрудника службы безопасности."
+  description: humanity-construction-civ13_accessory_SECURITY-description
   icon:
     sprite: Civ14/Clothing/exported/ties/policetag.rsi
     state: icon
@@ -1538,13 +1538,13 @@
   - node: end
     entity: civ13_accessory_SECURITY
 - type: construction
-  name: "одиночный наплечник"
+  name: humanity-construction-civ13_accessory_Standard_Single_Pauldron_-name
   id: civ13_accessory_Standard_Single_Pauldron_
   graph: civ13_accessory_Standard_Single_Pauldron_
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защитная накладка на одно плечо из пластоида."
+  description: humanity-construction-civ13_accessory_Standard_Single_Pauldron_-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pauldron_s.rsi
     state: icon
@@ -1565,13 +1565,13 @@
   - node: end
     entity: civ13_accessory_Standard_Single_Pauldron_
 - type: construction
-  name: "зелёный бронежилет PASGT"
+  name: humanity-construction-civ13_accessory_green_PASGT_body_armor-name
   id: civ13_accessory_green_PASGT_body_armor
   graph: civ13_accessory_green_PASGT_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёный бронежилет, способный остановить большинство пистолетных пуль."
+  description: humanity-construction-civ13_accessory_green_PASGT_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_green.rsi
     state: icon
@@ -1592,13 +1592,13 @@
   - node: end
     entity: civ13_accessory_green_PASGT_body_armor
 - type: construction
-  name: "красный галстук"
+  name: humanity-construction-civ13_accessory_red_tie-name
   id: civ13_accessory_red_tie
   graph: civ13_accessory_red_tie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычный красный галстук."
+  description: humanity-construction-civ13_accessory_red_tie-description
   icon:
     sprite: Civ14/Clothing/exported/ties/red_tie.rsi
     state: icon
@@ -1619,13 +1619,13 @@
   - node: end
     entity: civ13_accessory_red_tie
 - type: construction
-  name: "двойной наплечник"
+  name: humanity-construction-civ13_accessory_Standard_Double_Pauldron_-name
   id: civ13_accessory_Standard_Double_Pauldron_
   graph: civ13_accessory_Standard_Double_Pauldron_
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защитные накладки из пластоида на оба плеча."
+  description: humanity-construction-civ13_accessory_Standard_Double_Pauldron_-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pauldron_d.rsi
     state: icon
@@ -1646,13 +1646,13 @@
   - node: end
     entity: civ13_accessory_Standard_Double_Pauldron_
 - type: construction
-  name: "носимая табличка"
+  name: humanity-construction-civ13_accessory_wearable_sign-name
   id: civ13_accessory_wearable_sign
   graph: civ13_accessory_wearable_sign
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Деревянная табличка на верёвке. Носится поверх одежды."
+  description: humanity-construction-civ13_accessory_wearable_sign-description
   icon:
     sprite: Civ14/Clothing/exported/ties/wearable_sign.rsi
     state: icon
@@ -1673,13 +1673,13 @@
   - node: end
     entity: civ13_accessory_wearable_sign
 - type: construction
-  name: "знак боевого медика"
+  name: humanity-construction-civ13_accessory_Combat_Medical_Badge-name
   id: civ13_accessory_Combat_Medical_Badge
   graph: civ13_accessory_Combat_Medical_Badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда за выдающуюся медицинскую помощь во время боя."
+  description: humanity-construction-civ13_accessory_Combat_Medical_Badge-description
   icon:
     sprite: Civ14/Clothing/exported/badges/combat_medical_badge.rsi
     state: icon
@@ -1700,13 +1700,13 @@
   - node: end
     entity: civ13_accessory_Combat_Medical_Badge
 - type: construction
-  name: "немецкий разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_German_webbing_vest-name
   id: civ13_accessory_German_webbing_vest
   graph: civ13_accessory_German_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузочный жилет немецкого образца."
+  description: humanity-construction-civ13_accessory_German_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -1727,13 +1727,13 @@
   - node: end
     entity: civ13_accessory_German_webbing_vest
 - type: construction
-  name: "разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_Webbing_vest-name
   id: civ13_accessory_Webbing_vest
   graph: civ13_accessory_Webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Два прочных кожаных ремня с подсумками для патронов и гранат. Помогает бойцу нести всё необходимое."
+  description: humanity-construction-civ13_accessory_Webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -1754,13 +1754,13 @@
   - node: end
     entity: civ13_accessory_Webbing_vest
 - type: construction
-  name: "Железный крест I класса"
+  name: humanity-construction-civ13_accessory_Iron_Cross-name
   id: civ13_accessory_Iron_Cross
   graph: civ13_accessory_Iron_Cross
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда «Железный крест» I класса."
+  description: humanity-construction-civ13_accessory_Iron_Cross-description
   icon:
     sprite: Civ14/Clothing/exported/badges/EK_1st.rsi
     state: icon
@@ -1781,13 +1781,13 @@
   - node: end
     entity: civ13_accessory_Iron_Cross
 - type: construction
-  name: "Железный крест II класса"
+  name: humanity-construction-civ13_accessory_Iron_Cross_1-name
   id: civ13_accessory_Iron_Cross_1
   graph: civ13_accessory_Iron_Cross_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда «Железный крест» II класса."
+  description: humanity-construction-civ13_accessory_Iron_Cross_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/EK_2nd.rsi
     state: icon
@@ -1808,13 +1808,13 @@
   - node: end
     entity: civ13_accessory_Iron_Cross_1
 - type: construction
-  name: "Большой Железный крест"
+  name: humanity-construction-civ13_accessory_Great_Iron_Cross-name
   id: civ13_accessory_Great_Iron_Cross
   graph: civ13_accessory_Great_Iron_Cross
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Высшая степень награды «Железный крест»."
+  description: humanity-construction-civ13_accessory_Great_Iron_Cross-description
   icon:
     sprite: Civ14/Clothing/exported/badges/GEK.rsi
     state: icon
@@ -1835,13 +1835,13 @@
   - node: end
     entity: civ13_accessory_Great_Iron_Cross
 - type: construction
-  name: "Рыцарский крест Железного креста"
+  name: humanity-construction-civ13_accessory_Knight_Iron_Cross-name
   id: civ13_accessory_Knight_Iron_Cross
   graph: civ13_accessory_Knight_Iron_Cross
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Рыцарский крест Железного креста."
+  description: humanity-construction-civ13_accessory_Knight_Iron_Cross-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Knight_EK.rsi
     state: icon
@@ -1862,13 +1862,13 @@
   - node: end
     entity: civ13_accessory_Knight_Iron_Cross
 - type: construction
-  name: "Рыцарский крест с дубовыми листьями"
+  name: humanity-construction-civ13_accessory_Knight_Iron_Cross_1-name
   id: civ13_accessory_Knight_Iron_Cross_1
   graph: civ13_accessory_Knight_Iron_Cross_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Рыцарский крест с дубовыми листьями."
+  description: humanity-construction-civ13_accessory_Knight_Iron_Cross_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Knight_EK_oaken.rsi
     state: icon
@@ -1889,13 +1889,13 @@
   - node: end
     entity: civ13_accessory_Knight_Iron_Cross_1
 - type: construction
-  name: "Рыцарский крест с золотыми дубовыми листьями"
+  name: humanity-construction-civ13_accessory_Knight_Iron_Cross_1_2-name
   id: civ13_accessory_Knight_Iron_Cross_1_2
   graph: civ13_accessory_Knight_Iron_Cross_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Рыцарский крест с золотыми дубовыми листьями."
+  description: humanity-construction-civ13_accessory_Knight_Iron_Cross_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/badges/knight_EK_gold_oaken.rsi
     state: icon
@@ -1916,13 +1916,13 @@
   - node: end
     entity: civ13_accessory_Knight_Iron_Cross_1_2
 - type: construction
-  name: "медаль за выслугу лет"
+  name: humanity-construction-civ13_accessory_Long_Service_Medal-name
   id: civ13_accessory_Long_Service_Medal
   graph: civ13_accessory_Long_Service_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда за долгую службу в вермахте."
+  description: humanity-construction-civ13_accessory_Long_Service_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/wehrmacht_long_service.rsi
     state: icon
@@ -1943,13 +1943,13 @@
   - node: end
     entity: civ13_accessory_Long_Service_Medal
 - type: construction
-  name: "медаль «За Восточную кампанию»"
+  name: humanity-construction-civ13_accessory_Eastern_Front_Medal-name
   id: civ13_accessory_Eastern_Front_Medal
   graph: civ13_accessory_Eastern_Front_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда вермахта участникам кампании на Восточном фронте."
+  description: humanity-construction-civ13_accessory_Eastern_Front_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/eastern_front.rsi
     state: icon
@@ -1970,13 +1970,13 @@
   - node: end
     entity: civ13_accessory_Eastern_Front_Medal
 - type: construction
-  name: "штурмовой знак"
+  name: humanity-construction-civ13_accessory_Assault_Badge-name
   id: civ13_accessory_Assault_Badge
   graph: civ13_accessory_Assault_Badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда за участие в пехотных атаках."
+  description: humanity-construction-civ13_accessory_Assault_Badge-description
   icon:
     sprite: Civ14/Clothing/exported/badges/assault_badge.rsi
     state: icon
@@ -1997,13 +1997,13 @@
   - node: end
     entity: civ13_accessory_Assault_Badge
 - type: construction
-  name: "знак «За уничтожение танка»"
+  name: humanity-construction-civ13_accessory_Tank_Destruction_Badge-name
   id: civ13_accessory_Tank_Destruction_Badge
   graph: civ13_accessory_Tank_Destruction_Badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда бойцу, уничтожившему вражеский танк."
+  description: humanity-construction-civ13_accessory_Tank_Destruction_Badge-description
   icon:
     sprite: Civ14/Clothing/exported/badges/silver_tank_destruction.rsi
     state: icon
@@ -2024,13 +2024,13 @@
   - node: end
     entity: civ13_accessory_Tank_Destruction_Badge
 - type: construction
-  name: "знак «За уничтожение танка»"
+  name: humanity-construction-civ13_accessory_Tank_Destruction_Badge_1-name
   id: civ13_accessory_Tank_Destruction_Badge_1
   graph: civ13_accessory_Tank_Destruction_Badge_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда бойцу, уничтожившему вражеский танк."
+  description: humanity-construction-civ13_accessory_Tank_Destruction_Badge_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/golden_tank_destruction.rsi
     state: icon
@@ -2051,13 +2051,13 @@
   - node: end
     entity: civ13_accessory_Tank_Destruction_Badge_1
 - type: construction
-  name: "чёрный знак «За ранение»"
+  name: humanity-construction-civ13_accessory_Wounded_Badge-name
   id: civ13_accessory_Wounded_Badge
   graph: civ13_accessory_Wounded_Badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрный знак бойца, получившего ранение на службе."
+  description: humanity-construction-civ13_accessory_Wounded_Badge-description
   icon:
     sprite: Civ14/Clothing/exported/badges/black_wound.rsi
     state: icon
@@ -2078,13 +2078,13 @@
   - node: end
     entity: civ13_accessory_Wounded_Badge
 - type: construction
-  name: "серебряный знак «За ранение»"
+  name: humanity-construction-civ13_accessory_Wounded_Badge_1-name
   id: civ13_accessory_Wounded_Badge_1
   graph: civ13_accessory_Wounded_Badge_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Серебряный знак бойца, получившего ранение на службе."
+  description: humanity-construction-civ13_accessory_Wounded_Badge_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/silver_wound.rsi
     state: icon
@@ -2105,13 +2105,13 @@
   - node: end
     entity: civ13_accessory_Wounded_Badge_1
 - type: construction
-  name: "золотой знак «За ранение»"
+  name: humanity-construction-civ13_accessory_Wounded_Badge_1_2-name
   id: civ13_accessory_Wounded_Badge_1_2
   graph: civ13_accessory_Wounded_Badge_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Золотой знак бойца, получившего ранение на службе."
+  description: humanity-construction-civ13_accessory_Wounded_Badge_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/badges/gold_wound.rsi
     state: icon
@@ -2132,13 +2132,13 @@
   - node: end
     entity: civ13_accessory_Wounded_Badge_1_2
 - type: construction
-  name: "нагрудный орёл вермахта"
+  name: humanity-construction-civ13_accessory_Wehrmacht_Sadler-name
   id: civ13_accessory_Wehrmacht_Sadler
   graph: civ13_accessory_Wehrmacht_Sadler
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с орлом — символом вермахта."
+  description: humanity-construction-civ13_accessory_Wehrmacht_Sadler-description
   icon:
     sprite: Civ14/Clothing/exported/badges/wehrmacht_sadler.rsi
     state: icon
@@ -2159,13 +2159,13 @@
   - node: end
     entity: civ13_accessory_Wehrmacht_Sadler
 - type: construction
-  name: "нагрудный орёл СС"
+  name: humanity-construction-civ13_accessory_SS_Sadler-name
   id: civ13_accessory_SS_Sadler
   graph: civ13_accessory_SS_Sadler
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с орлом — символом СС."
+  description: humanity-construction-civ13_accessory_SS_Sadler-description
   icon:
     sprite: Civ14/Clothing/exported/badges/ss_wehrmacht_sadler.rsi
     state: icon
@@ -2186,13 +2186,13 @@
   - node: end
     entity: civ13_accessory_SS_Sadler
 - type: construction
-  name: "значок СС"
+  name: humanity-construction-civ13_accessory_SS_pin-name
   id: civ13_accessory_SS_pin
   graph: civ13_accessory_SS_pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с символикой СС."
+  description: humanity-construction-civ13_accessory_SS_pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/ss_pin.rsi
     state: icon
@@ -2213,13 +2213,13 @@
   - node: end
     entity: civ13_accessory_SS_pin
 - type: construction
-  name: "значок НСДАП"
+  name: humanity-construction-civ13_accessory_NSDAP_pin-name
   id: civ13_accessory_NSDAP_pin
   graph: civ13_accessory_NSDAP_pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с символикой Третьего рейха."
+  description: humanity-construction-civ13_accessory_NSDAP_pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/nazi_pin.rsi
     state: icon
@@ -2240,13 +2240,13 @@
   - node: end
     entity: civ13_accessory_NSDAP_pin
 - type: construction
-  name: "значок «Мёртвая голова»"
+  name: humanity-construction-civ13_accessory_Totenkopf_pin-name
   id: civ13_accessory_Totenkopf_pin
   graph: civ13_accessory_Totenkopf_pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с символикой подразделений СС «Мёртвая голова»."
+  description: humanity-construction-civ13_accessory_Totenkopf_pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/totenkopf.rsi
     state: icon
@@ -2267,13 +2267,13 @@
   - node: end
     entity: civ13_accessory_Totenkopf_pin
 - type: construction
-  name: "значок НСДАП"
+  name: humanity-construction-civ13_accessory_NSDAP_pin_1-name
   id: civ13_accessory_NSDAP_pin_1
   graph: civ13_accessory_NSDAP_pin_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с символикой НСДАП."
+  description: humanity-construction-civ13_accessory_NSDAP_pin_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/nsdap.rsi
     state: icon
@@ -2294,13 +2294,13 @@
   - node: end
     entity: civ13_accessory_NSDAP_pin_1
 - type: construction
-  name: "медаль «За войну в Восточной Азии»"
+  name: humanity-construction-civ13_accessory_East_Asia_War_medal-name
   id: civ13_accessory_East_Asia_War_medal
   graph: civ13_accessory_East_Asia_War_medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда участникам боёв на Тихоокеанском театре военных действий."
+  description: humanity-construction-civ13_accessory_East_Asia_War_medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/east_asia_war.rsi
     state: icon
@@ -2321,13 +2321,13 @@
   - node: end
     entity: civ13_accessory_East_Asia_War_medal
 - type: construction
-  name: "медаль «За инцидент в Китае»"
+  name: humanity-construction-civ13_accessory_China_Incident_medal-name
   id: civ13_accessory_China_Incident_medal
   graph: civ13_accessory_China_Incident_medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда участникам боёв в Китае и Маньчжурии в 1931–1937 годах."
+  description: humanity-construction-civ13_accessory_China_Incident_medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/china_incident1931.rsi
     state: icon
@@ -2348,13 +2348,13 @@
   - node: end
     entity: civ13_accessory_China_Incident_medal
 - type: construction
-  name: "медаль «За инцидент в Китае»"
+  name: humanity-construction-civ13_accessory_China_Incident_medal_1-name
   id: civ13_accessory_China_Incident_medal_1
   graph: civ13_accessory_China_Incident_medal_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда участникам боёв в Китае в 1937–1945 годах."
+  description: humanity-construction-civ13_accessory_China_Incident_medal_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/china_incident1937.rsi
     state: icon
@@ -2375,13 +2375,13 @@
   - node: end
     entity: civ13_accessory_China_Incident_medal_1
 - type: construction
-  name: "орден Восходящего солнца"
+  name: humanity-construction-civ13_accessory_Order_of_the_Rising_Sun-name
   id: civ13_accessory_Order_of_the_Rising_Sun
   graph: civ13_accessory_Order_of_the_Rising_Sun
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Японская награда за выдающиеся заслуги на войне."
+  description: humanity-construction-civ13_accessory_Order_of_the_Rising_Sun-description
   icon:
     sprite: Civ14/Clothing/exported/badges/order_rising_sun.rsi
     state: icon
@@ -2402,13 +2402,13 @@
   - node: end
     entity: civ13_accessory_Order_of_the_Rising_Sun
 - type: construction
-  name: "значок депутата Верховного Совета СССР"
+  name: humanity-construction-civ13_accessory_Supreme_Soviet_of_the_Soviet_Union-name
   id: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
   graph: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок с советским флагом, указывающий на членство в Верховном Совете СССР."
+  description: humanity-construction-civ13_accessory_Supreme_Soviet_of_the_Soviet_Union-description
   icon:
     sprite: Civ14/Clothing/exported/badges/delegate_supreme_soviet.rsi
     state: icon
@@ -2429,13 +2429,13 @@
   - node: end
     entity: civ13_accessory_Supreme_Soviet_of_the_Soviet_Union
 - type: construction
-  name: "значок НКВД"
+  name: humanity-construction-civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin-name
   id: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
   graph: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак принадлежности к Народному комиссариату внутренних дел СССР."
+  description: humanity-construction-civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/nkvd.rsi
     state: icon
@@ -2456,13 +2456,13 @@
   - node: end
     entity: civ13_accessory_Peoples_Commissariat_of_Internal_Affairs_Pin
 - type: construction
-  name: "медаль Героя Советского Союза"
+  name: humanity-construction-civ13_accessory_Hero_of_the_Soviet_Union_Medal-name
   id: civ13_accessory_Hero_of_the_Soviet_Union_Medal
   graph: civ13_accessory_Hero_of_the_Soviet_Union_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда за героический подвиг на службе Советскому государству и обществу."
+  description: humanity-construction-civ13_accessory_Hero_of_the_Soviet_Union_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Hero of the Soviet Union.rsi
     state: icon
@@ -2483,13 +2483,13 @@
   - node: end
     entity: civ13_accessory_Hero_of_the_Soviet_Union_Medal
 - type: construction
-  name: "орден Красной Звезды"
+  name: humanity-construction-civ13_accessory_Order_of_the_Red_Star_Medal-name
   id: civ13_accessory_Order_of_the_Red_Star_Medal
   graph: civ13_accessory_Order_of_the_Red_Star_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советский орден за военные заслуги. Им награждали военнослужащих, сотрудников органов безопасности, воинские части и организации."
+  description: humanity-construction-civ13_accessory_Order_of_the_Red_Star_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Order of the Red Star.rsi
     state: icon
@@ -2510,13 +2510,13 @@
   - node: end
     entity: civ13_accessory_Order_of_the_Red_Star_Medal
 - type: construction
-  name: "медаль «За оборону Сталинграда»"
+  name: humanity-construction-civ13_accessory_For_the_Defence_of_Stalingrad_Medal-name
   id: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
   graph: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда защитникам Сталинграда во время Великой Отечественной войны."
+  description: humanity-construction-civ13_accessory_For_the_Defence_of_Stalingrad_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/For the Defence of Stalingrad.rsi
     state: icon
@@ -2537,13 +2537,13 @@
   - node: end
     entity: civ13_accessory_For_the_Defence_of_Stalingrad_Medal
 - type: construction
-  name: "медаль «За оборону Ленинграда»"
+  name: humanity-construction-civ13_accessory_For_the_Defence_of_Leningrad_Medal-name
   id: civ13_accessory_For_the_Defence_of_Leningrad_Medal
   graph: civ13_accessory_For_the_Defence_of_Leningrad_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Награда защитникам Ленинграда во время Великой Отечественной войны."
+  description: humanity-construction-civ13_accessory_For_the_Defence_of_Leningrad_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/For the Defence of Leningrad.rsi
     state: icon
@@ -2564,13 +2564,13 @@
   - node: end
     entity: civ13_accessory_For_the_Defence_of_Leningrad_Medal
 - type: construction
-  name: "гвардейский знак"
+  name: humanity-construction-civ13_accessory_Guards_Unit_Badge-name
   id: civ13_accessory_Guards_Unit_Badge
   graph: civ13_accessory_Guards_Unit_Badge
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак военнослужащего гвардейской части."
+  description: humanity-construction-civ13_accessory_Guards_Unit_Badge-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Guards Unit Badge.rsi
     state: icon
@@ -2591,13 +2591,13 @@
   - node: end
     entity: civ13_accessory_Guards_Unit_Badge
 - type: construction
-  name: "итальянский разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_Italian_webbing_vest-name
   id: civ13_accessory_Italian_webbing_vest
   graph: civ13_accessory_Italian_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузочный жилет итальянского образца."
+  description: humanity-construction-civ13_accessory_Italian_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -2618,13 +2618,13 @@
   - node: end
     entity: civ13_accessory_Italian_webbing_vest
 - type: construction
-  name: "значок Фашистской партии Италии"
+  name: humanity-construction-civ13_accessory_Fascist_Party_Pin-name
   id: civ13_accessory_Fascist_Party_Pin
   graph: civ13_accessory_Fascist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Партийный значок члена итальянской Фашистской партии."
+  description: humanity-construction-civ13_accessory_Fascist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Fascist pin.rsi
     state: icon
@@ -2645,13 +2645,13 @@
   - node: end
     entity: civ13_accessory_Fascist_Party_Pin
 - type: construction
-  name: "колониальный орден Звезды Италии, офицер"
+  name: humanity-construction-civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal-name
   id: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
   graph: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Орден офицерской степени за службу в колониях Королевства Италия."
+  description: humanity-construction-civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Officer's Colonial Order of the Star of Italy.rsi
     state: icon
@@ -2672,13 +2672,13 @@
   - node: end
     entity: civ13_accessory_Officers_Colonial_Order_of_the_Star_of_Italy_Medal
 - type: construction
-  name: "колониальный орден Звезды Италии, кавалер"
+  name: humanity-construction-civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal-name
   id: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
   graph: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Орден кавалерской степени за службу в колониях Королевства Италия."
+  description: humanity-construction-civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal-description
   icon:
     sprite: Civ14/Clothing/exported/badges/Knight's Colonial Order of the Star of Italy.rsi
     state: icon
@@ -2699,13 +2699,13 @@
   - node: end
     entity: civ13_accessory_Knights_Colonial_Order_of_the_Star_of_Italy_Medal
 - type: construction
-  name: "значок коммунистической партии"
+  name: humanity-construction-civ13_accessory_Communist_Party_Pin-name
   id: civ13_accessory_Communist_Party_Pin
   graph: civ13_accessory_Communist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника коммунизма."
+  description: humanity-construction-civ13_accessory_Communist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/communist_party_pin.rsi
     state: icon
@@ -2726,13 +2726,13 @@
   - node: end
     entity: civ13_accessory_Communist_Party_Pin
 - type: construction
-  name: "значок анархо-коммунистов"
+  name: humanity-construction-civ13_accessory_Anarcho_communist_Party_Pin-name
   id: civ13_accessory_Anarcho_communist_Party_Pin
   graph: civ13_accessory_Anarcho_communist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника анархо-коммунизма."
+  description: humanity-construction-civ13_accessory_Anarcho_communist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/ancom_party_pin.rsi
     state: icon
@@ -2753,13 +2753,13 @@
   - node: end
     entity: civ13_accessory_Anarcho_communist_Party_Pin
 - type: construction
-  name: "значок анархистов"
+  name: humanity-construction-civ13_accessory_Anarchist_Party_Pin-name
   id: civ13_accessory_Anarchist_Party_Pin
   graph: civ13_accessory_Anarchist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника анархизма."
+  description: humanity-construction-civ13_accessory_Anarchist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/anarchist_party_pin.rsi
     state: icon
@@ -2780,13 +2780,13 @@
   - node: end
     entity: civ13_accessory_Anarchist_Party_Pin
 - type: construction
-  name: "значок монархистов"
+  name: humanity-construction-civ13_accessory_Monarchist_Party_Pin-name
   id: civ13_accessory_Monarchist_Party_Pin
   graph: civ13_accessory_Monarchist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника монархии."
+  description: humanity-construction-civ13_accessory_Monarchist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/monarchist_party_pin.rsi
     state: icon
@@ -2807,13 +2807,13 @@
   - node: end
     entity: civ13_accessory_Monarchist_Party_Pin
 - type: construction
-  name: "значок республиканцев"
+  name: humanity-construction-civ13_accessory_Republican_Party_Pin-name
   id: civ13_accessory_Republican_Party_Pin
   graph: civ13_accessory_Republican_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника республики."
+  description: humanity-construction-civ13_accessory_Republican_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/republicanist_party_pin.rsi
     state: icon
@@ -2834,13 +2834,13 @@
   - node: end
     entity: civ13_accessory_Republican_Party_Pin
 - type: construction
-  name: "значок фашистов"
+  name: humanity-construction-civ13_accessory_Fascist_Party_Pin_1-name
   id: civ13_accessory_Fascist_Party_Pin_1
   graph: civ13_accessory_Fascist_Party_Pin_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника фашизма."
+  description: humanity-construction-civ13_accessory_Fascist_Party_Pin_1-description
   icon:
     sprite: Civ14/Clothing/exported/badges/fascist_party_pin.rsi
     state: icon
@@ -2861,13 +2861,13 @@
   - node: end
     entity: civ13_accessory_Fascist_Party_Pin_1
 - type: construction
-  name: "значок национал-социалистов"
+  name: humanity-construction-civ13_accessory_National_socialist_Party_Pin-name
   id: civ13_accessory_National_socialist_Party_Pin
   graph: civ13_accessory_National_socialist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника национал-социализма."
+  description: humanity-construction-civ13_accessory_National_socialist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/nazi_party_pin.rsi
     state: icon
@@ -2888,13 +2888,13 @@
   - node: end
     entity: civ13_accessory_National_socialist_Party_Pin
 - type: construction
-  name: "значок минархистов"
+  name: humanity-construction-civ13_accessory_Minarchist_Party_Pin-name
   id: civ13_accessory_Minarchist_Party_Pin
   graph: civ13_accessory_Minarchist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника минимального государства."
+  description: humanity-construction-civ13_accessory_Minarchist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/minarchist_party_pin.rsi
     state: icon
@@ -2915,13 +2915,13 @@
   - node: end
     entity: civ13_accessory_Minarchist_Party_Pin
 - type: construction
-  name: "значок анархо-капиталистов"
+  name: humanity-construction-civ13_accessory_Anarcho_capitalist_Party_Pin-name
   id: civ13_accessory_Anarcho_capitalist_Party_Pin
   graph: civ13_accessory_Anarcho_capitalist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника анархо-капитализма."
+  description: humanity-construction-civ13_accessory_Anarcho_capitalist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/ancap_party_pin.rsi
     state: icon
@@ -2942,13 +2942,13 @@
   - node: end
     entity: civ13_accessory_Anarcho_capitalist_Party_Pin
 - type: construction
-  name: "значок либертарианцев"
+  name: humanity-construction-civ13_accessory_Libertarian_Party_Pin-name
   id: civ13_accessory_Libertarian_Party_Pin
   graph: civ13_accessory_Libertarian_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника либертарианства."
+  description: humanity-construction-civ13_accessory_Libertarian_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/libertarian_party_pin.rsi
     state: icon
@@ -2969,13 +2969,13 @@
   - node: end
     entity: civ13_accessory_Libertarian_Party_Pin
 - type: construction
-  name: "значок Фронта мусульманских студентов"
+  name: humanity-construction-civ13_accessory_MSF_Party_Pin-name
   id: civ13_accessory_MSF_Party_Pin
   graph: civ13_accessory_MSF_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок сторонника Фронта мусульманских студентов."
+  description: humanity-construction-civ13_accessory_MSF_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/msf_flag_pin.rsi
     state: icon
@@ -2996,13 +2996,13 @@
   - node: end
     entity: civ13_accessory_MSF_Party_Pin
 - type: construction
-  name: "значок либералов"
+  name: humanity-construction-civ13_accessory_Liberal_Party_Pin-name
   id: civ13_accessory_Liberal_Party_Pin
   graph: civ13_accessory_Liberal_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника либерализма."
+  description: humanity-construction-civ13_accessory_Liberal_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/liberal_party_pin.rsi
     state: icon
@@ -3023,13 +3023,13 @@
   - node: end
     entity: civ13_accessory_Liberal_Party_Pin
 - type: construction
-  name: "значок анархо-либералов"
+  name: humanity-construction-civ13_accessory_Anarcho_liberal_Party_Pin-name
   id: civ13_accessory_Anarcho_liberal_Party_Pin
   graph: civ13_accessory_Anarcho_liberal_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника анархо-либерализма."
+  description: humanity-construction-civ13_accessory_Anarcho_liberal_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/anlib_party_pin.rsi
     state: icon
@@ -3050,13 +3050,13 @@
   - node: end
     entity: civ13_accessory_Anarcho_liberal_Party_Pin
 - type: construction
-  name: "значок анархо-примитивистов"
+  name: humanity-construction-civ13_accessory_Anarcho_primitist_Party_Pin-name
   id: civ13_accessory_Anarcho_primitist_Party_Pin
   graph: civ13_accessory_Anarcho_primitist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника анархо-примитивизма."
+  description: humanity-construction-civ13_accessory_Anarcho_primitist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/anprim_party_pin.rsi
     state: icon
@@ -3077,13 +3077,13 @@
   - node: end
     entity: civ13_accessory_Anarcho_primitist_Party_Pin
 - type: construction
-  name: "значок защитников природы"
+  name: humanity-construction-civ13_accessory_Evironmentalist_Party_Pin-name
   id: civ13_accessory_Evironmentalist_Party_Pin
   graph: civ13_accessory_Evironmentalist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника охраны окружающей среды."
+  description: humanity-construction-civ13_accessory_Evironmentalist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/environmentalist_party_pin.rsi
     state: icon
@@ -3104,13 +3104,13 @@
   - node: end
     entity: civ13_accessory_Evironmentalist_Party_Pin
 - type: construction
-  name: "значок христианской партии"
+  name: humanity-construction-civ13_accessory_Christian_Party_Pin-name
   id: civ13_accessory_Christian_Party_Pin
   graph: civ13_accessory_Christian_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника христианской партии."
+  description: humanity-construction-civ13_accessory_Christian_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/christian_party_pin.rsi
     state: icon
@@ -3131,13 +3131,13 @@
   - node: end
     entity: civ13_accessory_Christian_Party_Pin
 - type: construction
-  name: "значок «Братьев-мусульман»"
+  name: humanity-construction-civ13_accessory_Muslim_Brotherhood_Party_Pin-name
   id: civ13_accessory_Muslim_Brotherhood_Party_Pin
   graph: civ13_accessory_Muslim_Brotherhood_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника движения «Братья-мусульмане»."
+  description: humanity-construction-civ13_accessory_Muslim_Brotherhood_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/muslim_brotherhood_party_pin.rsi
     state: icon
@@ -3158,13 +3158,13 @@
   - node: end
     entity: civ13_accessory_Muslim_Brotherhood_Party_Pin
 - type: construction
-  name: "значок консерваторов"
+  name: humanity-construction-civ13_accessory_Conservative_Party_Pin-name
   id: civ13_accessory_Conservative_Party_Pin
   graph: civ13_accessory_Conservative_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника консерватизма."
+  description: humanity-construction-civ13_accessory_Conservative_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/conservative_party_pin.rsi
     state: icon
@@ -3185,13 +3185,13 @@
   - node: end
     entity: civ13_accessory_Conservative_Party_Pin
 - type: construction
-  name: "значок националистов"
+  name: humanity-construction-civ13_accessory_Nationalist_Party_Pin-name
   id: civ13_accessory_Nationalist_Party_Pin
   graph: civ13_accessory_Nationalist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника национализма."
+  description: humanity-construction-civ13_accessory_Nationalist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/nationalist_party_pin.rsi
     state: icon
@@ -3212,13 +3212,13 @@
   - node: end
     entity: civ13_accessory_Nationalist_Party_Pin
 - type: construction
-  name: "значок эгалитаристов"
+  name: humanity-construction-civ13_accessory_Egalitarian_Party_Pin-name
   id: civ13_accessory_Egalitarian_Party_Pin
   graph: civ13_accessory_Egalitarian_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника равноправия."
+  description: humanity-construction-civ13_accessory_Egalitarian_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/egalitarian_party_pin.rsi
     state: icon
@@ -3239,13 +3239,13 @@
   - node: end
     entity: civ13_accessory_Egalitarian_Party_Pin
 - type: construction
-  name: "значок глобалистов"
+  name: humanity-construction-civ13_accessory_Globalist_Party_Pin-name
   id: civ13_accessory_Globalist_Party_Pin
   graph: civ13_accessory_Globalist_Party_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Политический значок сторонника глобализма."
+  description: humanity-construction-civ13_accessory_Globalist_Party_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/globalist_flag_pin.rsi
     state: icon
@@ -3266,13 +3266,13 @@
   - node: end
     entity: civ13_accessory_Globalist_Party_Pin
 - type: construction
-  name: "значок союза фермеров"
+  name: humanity-construction-civ13_accessory_Farmers_Union_Pin-name
   id: civ13_accessory_Farmers_Union_Pin
   graph: civ13_accessory_Farmers_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права фермеров."
+  description: humanity-construction-civ13_accessory_Farmers_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/farmers_union_pin.rsi
     state: icon
@@ -3293,13 +3293,13 @@
   - node: end
     entity: civ13_accessory_Farmers_Union_Pin
 - type: construction
-  name: "значок профсоюза шахтёров"
+  name: humanity-construction-civ13_accessory_Miners_Union_Pin-name
   id: civ13_accessory_Miners_Union_Pin
   graph: civ13_accessory_Miners_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права шахтёров."
+  description: humanity-construction-civ13_accessory_Miners_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/miners_union_pin.rsi
     state: icon
@@ -3320,13 +3320,13 @@
   - node: end
     entity: civ13_accessory_Miners_Union_Pin
 - type: construction
-  name: "значок союза фабричных рабочих"
+  name: humanity-construction-civ13_accessory_Factory_Workers_Union_Pin-name
   id: civ13_accessory_Factory_Workers_Union_Pin
   graph: civ13_accessory_Factory_Workers_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права фабричных рабочих."
+  description: humanity-construction-civ13_accessory_Factory_Workers_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/factory_workers_union_pin.rsi
     state: icon
@@ -3347,13 +3347,13 @@
   - node: end
     entity: civ13_accessory_Factory_Workers_Union_Pin
 - type: construction
-  name: "значок профсоюза рабочих"
+  name: humanity-construction-civ13_accessory_Labour_Workers_Union_Pin-name
   id: civ13_accessory_Labour_Workers_Union_Pin
   graph: civ13_accessory_Labour_Workers_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права рабочих."
+  description: humanity-construction-civ13_accessory_Labour_Workers_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/workers_union_pin.rsi
     state: icon
@@ -3374,13 +3374,13 @@
   - node: end
     entity: civ13_accessory_Labour_Workers_Union_Pin
 - type: construction
-  name: "значок гильдии медработников"
+  name: humanity-construction-civ13_accessory_Medical_Workers_Guild_Pin-name
   id: civ13_accessory_Medical_Workers_Guild_Pin
   graph: civ13_accessory_Medical_Workers_Guild_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок объединения, защищающего интересы медицинских работников."
+  description: humanity-construction-civ13_accessory_Medical_Workers_Guild_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/medics_guild_pin.rsi
     state: icon
@@ -3401,13 +3401,13 @@
   - node: end
     entity: civ13_accessory_Medical_Workers_Guild_Pin
 - type: construction
-  name: "значок союза офисных работников"
+  name: humanity-construction-civ13_accessory_Office_Workers_Union_Pin-name
   id: civ13_accessory_Office_Workers_Union_Pin
   graph: civ13_accessory_Office_Workers_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права офисных работников."
+  description: humanity-construction-civ13_accessory_Office_Workers_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/corporate_pin.rsi
     state: icon
@@ -3428,13 +3428,13 @@
   - node: end
     entity: civ13_accessory_Office_Workers_Union_Pin
 - type: construction
-  name: "значок работников сферы услуг"
+  name: humanity-construction-civ13_accessory_Hospitality_Pin-name
   id: civ13_accessory_Hospitality_Pin
   graph: civ13_accessory_Hospitality_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок сторонника прав работников сферы услуг."
+  description: humanity-construction-civ13_accessory_Hospitality_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/aristocratic_league_pin.rsi
     state: icon
@@ -3455,13 +3455,13 @@
   - node: end
     entity: civ13_accessory_Hospitality_Pin
 - type: construction
-  name: "значок профсоюза лесорубов"
+  name: humanity-construction-civ13_accessory_Lumberjacks_Union_Pin-name
   id: civ13_accessory_Lumberjacks_Union_Pin
   graph: civ13_accessory_Lumberjacks_Union_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок участника объединения, защищающего права лесорубов."
+  description: humanity-construction-civ13_accessory_Lumberjacks_Union_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/lumberjacks_union_pin.rsi
     state: icon
@@ -3482,13 +3482,13 @@
   - node: end
     entity: civ13_accessory_Lumberjacks_Union_Pin
 - type: construction
-  name: "значок гильдии торговцев"
+  name: humanity-construction-civ13_accessory_Merchants_Guild_Pin-name
   id: civ13_accessory_Merchants_Guild_Pin
   graph: civ13_accessory_Merchants_Guild_Pin
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Значок объединения, защищающего интересы торговцев."
+  description: humanity-construction-civ13_accessory_Merchants_Guild_Pin-description
   icon:
     sprite: Civ14/Clothing/exported/badges/zionist_party_pin.rsi
     state: icon
@@ -3509,13 +3509,13 @@
   - node: end
     entity: civ13_accessory_Merchants_Guild_Pin
 - type: construction
-  name: "погоны капитана"
+  name: humanity-construction-civ13_accessory_Kapitan_rank_epaulettes-name
   id: civ13_accessory_Kapitan_rank_epaulettes
   graph: civ13_accessory_Kapitan_rank_epaulettes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Погоны со знаком звания «капитан»."
+  description: humanity-construction-civ13_accessory_Kapitan_rank_epaulettes-description
   icon:
     sprite: Civ14/Clothing/exported/ties/fp_cpt.rsi
     state: icon
@@ -3536,13 +3536,13 @@
   - node: end
     entity: civ13_accessory_Kapitan_rank_epaulettes
 - type: construction
-  name: "погоны лейтенанта"
+  name: humanity-construction-civ13_accessory_Tenyente_rank_epaulettes-name
   id: civ13_accessory_Tenyente_rank_epaulettes
   graph: civ13_accessory_Tenyente_rank_epaulettes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Погоны со знаком звания «лейтенант»."
+  description: humanity-construction-civ13_accessory_Tenyente_rank_epaulettes-description
   icon:
     sprite: Civ14/Clothing/exported/ties/fp_lt.rsi
     state: icon
@@ -3563,13 +3563,13 @@
   - node: end
     entity: civ13_accessory_Tenyente_rank_epaulettes
 - type: construction
-  name: "нашивка сержанта"
+  name: humanity-construction-civ13_accessory_Sarhente_rank_patch-name
   id: civ13_accessory_Sarhente_rank_patch
   graph: civ13_accessory_Sarhente_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарукавная нашивка со знаком звания «сержант»."
+  description: humanity-construction-civ13_accessory_Sarhente_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/fp_sgt.rsi
     state: icon
@@ -3590,13 +3590,13 @@
   - node: end
     entity: civ13_accessory_Sarhente_rank_patch
 - type: construction
-  name: "нашивка капрала"
+  name: humanity-construction-civ13_accessory_Kabo_rank_patch-name
   id: civ13_accessory_Kabo_rank_patch
   graph: civ13_accessory_Kabo_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарукавная нашивка со знаком звания «капрал»."
+  description: humanity-construction-civ13_accessory_Kabo_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/fp_cpl.rsi
     state: icon
@@ -3617,13 +3617,13 @@
   - node: end
     entity: civ13_accessory_Kabo_rank_patch
 - type: construction
-  name: "нашивка нито-хэй"
+  name: humanity-construction-civ13_accessory_Nitohei_rank_patch-name
   id: civ13_accessory_Nitohei_rank_patch
   graph: civ13_accessory_Nitohei_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак рядового 2-го класса для воротника мундира."
+  description: humanity-construction-civ13_accessory_Nitohei_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_nitohei.rsi
     state: icon
@@ -3644,13 +3644,13 @@
   - node: end
     entity: civ13_accessory_Nitohei_rank_patch
 - type: construction
-  name: "нашивка итто-хэй"
+  name: humanity-construction-civ13_accessory_Ittohei_rank_patch-name
   id: civ13_accessory_Ittohei_rank_patch
   graph: civ13_accessory_Ittohei_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак рядового 1-го класса для воротника мундира."
+  description: humanity-construction-civ13_accessory_Ittohei_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_ittohei.rsi
     state: icon
@@ -3671,13 +3671,13 @@
   - node: end
     entity: civ13_accessory_Ittohei_rank_patch
 - type: construction
-  name: "нашивка дзёто-хэй"
+  name: humanity-construction-civ13_accessory_Jotohei_rank_patch-name
   id: civ13_accessory_Jotohei_rank_patch
   graph: civ13_accessory_Jotohei_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак старшего рядового для воротника мундира."
+  description: humanity-construction-civ13_accessory_Jotohei_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_jotohei.rsi
     state: icon
@@ -3698,13 +3698,13 @@
   - node: end
     entity: civ13_accessory_Jotohei_rank_patch
 - type: construction
-  name: "нашивка гунсо"
+  name: humanity-construction-civ13_accessory_Gunso_rank_patch-name
   id: civ13_accessory_Gunso_rank_patch
   graph: civ13_accessory_Gunso_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак сержанта для воротника мундира."
+  description: humanity-construction-civ13_accessory_Gunso_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_gunso.rsi
     state: icon
@@ -3725,13 +3725,13 @@
   - node: end
     entity: civ13_accessory_Gunso_rank_patch
 - type: construction
-  name: "нашивка сёи"
+  name: humanity-construction-civ13_accessory_Shoi_rank_patch-name
   id: civ13_accessory_Shoi_rank_patch
   graph: civ13_accessory_Shoi_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак младшего лейтенанта для воротника мундира."
+  description: humanity-construction-civ13_accessory_Shoi_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_2lt.rsi
     state: icon
@@ -3752,13 +3752,13 @@
   - node: end
     entity: civ13_accessory_Shoi_rank_patch
 - type: construction
-  name: "нашивка тюи"
+  name: humanity-construction-civ13_accessory_Chui_rank_patch-name
   id: civ13_accessory_Chui_rank_patch
   graph: civ13_accessory_Chui_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак лейтенанта для воротника мундира."
+  description: humanity-construction-civ13_accessory_Chui_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_1lt.rsi
     state: icon
@@ -3779,13 +3779,13 @@
   - node: end
     entity: civ13_accessory_Chui_rank_patch
 - type: construction
-  name: "нашивка тайи"
+  name: humanity-construction-civ13_accessory_Tai_i_rank_patch-name
   id: civ13_accessory_Tai_i_rank_patch
   graph: civ13_accessory_Tai_i_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак капитана для воротника мундира."
+  description: humanity-construction-civ13_accessory_Tai_i_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_taii.rsi
     state: icon
@@ -3806,13 +3806,13 @@
   - node: end
     entity: civ13_accessory_Tai_i_rank_patch
 - type: construction
-  name: "нашивка шютце"
+  name: humanity-construction-civ13_accessory_Schutze_rank_patch-name
   id: civ13_accessory_Schutze_rank_patch
   graph: civ13_accessory_Schutze_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак рядового для воротника мундира."
+  description: humanity-construction-civ13_accessory_Schutze_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_schtz.rsi
     state: icon
@@ -3833,13 +3833,13 @@
   - node: end
     entity: civ13_accessory_Schutze_rank_patch
 - type: construction
-  name: "нашивка обершютце"
+  name: humanity-construction-civ13_accessory_Oberschutze_rank_patch-name
   id: civ13_accessory_Oberschutze_rank_patch
   graph: civ13_accessory_Oberschutze_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак старшего рядового для воротника мундира."
+  description: humanity-construction-civ13_accessory_Oberschutze_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_obrschtz.rsi
     state: icon
@@ -3860,13 +3860,13 @@
   - node: end
     entity: civ13_accessory_Oberschutze_rank_patch
 - type: construction
-  name: "нашивка ефрейтора"
+  name: humanity-construction-civ13_accessory_Gefreiter_rank_patch-name
   id: civ13_accessory_Gefreiter_rank_patch
   graph: civ13_accessory_Gefreiter_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак ефрейтора для воротника мундира."
+  description: humanity-construction-civ13_accessory_Gefreiter_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_gftr.rsi
     state: icon
@@ -3887,13 +3887,13 @@
   - node: end
     entity: civ13_accessory_Gefreiter_rank_patch
 - type: construction
-  name: "нашивка обер-ефрейтора"
+  name: humanity-construction-civ13_accessory_Obergefreiter_rank_patch-name
   id: civ13_accessory_Obergefreiter_rank_patch
   graph: civ13_accessory_Obergefreiter_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак старшего ефрейтора для воротника мундира."
+  description: humanity-construction-civ13_accessory_Obergefreiter_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_obrgftr.rsi
     state: icon
@@ -3914,13 +3914,13 @@
   - node: end
     entity: civ13_accessory_Obergefreiter_rank_patch
 - type: construction
-  name: "нашивка унтер-офицера"
+  name: humanity-construction-civ13_accessory_Unteroffizier_rank_patch-name
   id: civ13_accessory_Unteroffizier_rank_patch
   graph: civ13_accessory_Unteroffizier_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак унтер-офицера для воротника мундира."
+  description: humanity-construction-civ13_accessory_Unteroffizier_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
     state: icon
@@ -3941,13 +3941,13 @@
   - node: end
     entity: civ13_accessory_Unteroffizier_rank_patch
 - type: construction
-  name: "нашивка обер-лейтенанта"
+  name: humanity-construction-civ13_accessory_Ober_Leutnant_rank_patch-name
   id: civ13_accessory_Ober_Leutnant_rank_patch
   graph: civ13_accessory_Ober_Leutnant_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак старшего лейтенанта для воротника мундира."
+  description: humanity-construction-civ13_accessory_Ober_Leutnant_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
     state: icon
@@ -3968,13 +3968,13 @@
   - node: end
     entity: civ13_accessory_Ober_Leutnant_rank_patch
 - type: construction
-  name: "нашивка гауптмана"
+  name: humanity-construction-civ13_accessory_Hauptmann_rank_patch-name
   id: civ13_accessory_Hauptmann_rank_patch
   graph: civ13_accessory_Hauptmann_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак капитана для воротника мундира."
+  description: humanity-construction-civ13_accessory_Hauptmann_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
     state: icon
@@ -3995,13 +3995,13 @@
   - node: end
     entity: civ13_accessory_Hauptmann_rank_patch
 - type: construction
-  name: "нашивка унтерштурмфюрера"
+  name: humanity-construction-civ13_accessory_Untersturmfuhrer_rank_patch-name
   id: civ13_accessory_Untersturmfuhrer_rank_patch
   graph: civ13_accessory_Untersturmfuhrer_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак младшего лейтенанта СС для воротника мундира."
+  description: humanity-construction-civ13_accessory_Untersturmfuhrer_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_2lt.rsi
     state: icon
@@ -4022,13 +4022,13 @@
   - node: end
     entity: civ13_accessory_Untersturmfuhrer_rank_patch
 - type: construction
-  name: "нашивка шарфюрера"
+  name: humanity-construction-civ13_accessory_Scharfuhrer_rank_patch-name
   id: civ13_accessory_Scharfuhrer_rank_patch
   graph: civ13_accessory_Scharfuhrer_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак сержанта СС для воротника мундира."
+  description: humanity-construction-civ13_accessory_Scharfuhrer_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_grppnfher.rsi
     state: icon
@@ -4049,13 +4049,13 @@
   - node: end
     entity: civ13_accessory_Scharfuhrer_rank_patch
 - type: construction
-  name: "нашивка оберштурмфюрера"
+  name: humanity-construction-civ13_accessory_Obersturmfuhrer_rank_patch-name
   id: civ13_accessory_Obersturmfuhrer_rank_patch
   graph: civ13_accessory_Obersturmfuhrer_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак старшего лейтенанта СС для воротника мундира."
+  description: humanity-construction-civ13_accessory_Obersturmfuhrer_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_1lt.rsi
     state: icon
@@ -4076,13 +4076,13 @@
   - node: end
     entity: civ13_accessory_Obersturmfuhrer_rank_patch
 - type: construction
-  name: "нашивка гауптштурмфюрера"
+  name: humanity-construction-civ13_accessory_Hauptsturmfuhrer_rank_patch-name
   id: civ13_accessory_Hauptsturmfuhrer_rank_patch
   graph: civ13_accessory_Hauptsturmfuhrer_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знак капитана СС для воротника мундира."
+  description: humanity-construction-civ13_accessory_Hauptsturmfuhrer_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/germ_hptmn.rsi
     state: icon
@@ -4103,13 +4103,13 @@
   - node: end
     entity: civ13_accessory_Hauptsturmfuhrer_rank_patch
 - type: construction
-  name: "нашивки хорунжего"
+  name: humanity-construction-civ13_accessory_Khorunzhyj_rank_patches-name
   id: civ13_accessory_Khorunzhyj_rank_patches
   graph: civ13_accessory_Khorunzhyj_rank_patches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Знаки офицерского звания «хорунжий»."
+  description: humanity-construction-civ13_accessory_Khorunzhyj_rank_patches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/upa_lt.rsi
     state: icon
@@ -4130,13 +4130,13 @@
   - node: end
     entity: civ13_accessory_Khorunzhyj_rank_patches
 - type: construction
-  name: "нашивка вистуна"
+  name: humanity-construction-civ13_accessory_Vistun_rank_patch-name
   id: civ13_accessory_Vistun_rank_patch
   graph: civ13_accessory_Vistun_rank_patch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарукавная нашивка со знаком сержантского звания."
+  description: humanity-construction-civ13_accessory_Vistun_rank_patch-description
   icon:
     sprite: Civ14/Clothing/exported/ties/upa_sgt.rsi
     state: icon
@@ -4157,13 +4157,13 @@
   - node: end
     entity: civ13_accessory_Vistun_rank_patch
 - type: construction
-  name: "плечевая кобура"
+  name: humanity-construction-civ13_accessory_shoulder_holster-name
   id: civ13_accessory_shoulder_holster
   graph: civ13_accessory_shoulder_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кобура для пистолета, которую носят под мышкой."
+  description: humanity-construction-civ13_accessory_shoulder_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/holster.rsi
     state: icon
@@ -4184,13 +4184,13 @@
   - node: end
     entity: civ13_accessory_shoulder_holster
 - type: construction
-  name: "подмышечная кобура"
+  name: humanity-construction-civ13_accessory_armpit_holster-name
   id: civ13_accessory_armpit_holster
   graph: civ13_accessory_armpit_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Потёртая кобура для скрытого ношения пистолета."
+  description: humanity-construction-civ13_accessory_armpit_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/holster.rsi
     state: icon
@@ -4211,13 +4211,13 @@
   - node: end
     entity: civ13_accessory_armpit_holster
 - type: construction
-  name: "поясная кобура"
+  name: humanity-construction-civ13_accessory_waist_holster-name
   id: civ13_accessory_waist_holster
   graph: civ13_accessory_waist_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кобура для пистолета из дорогой кожи."
+  description: humanity-construction-civ13_accessory_waist_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/holster.rsi
     state: icon
@@ -4238,13 +4238,13 @@
   - node: end
     entity: civ13_accessory_waist_holster
 - type: construction
-  name: "нагрудная кобура"
+  name: humanity-construction-civ13_accessory_chest_holster-name
   id: civ13_accessory_chest_holster
   graph: civ13_accessory_chest_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кобура для пистолета с ремнями вокруг груди."
+  description: humanity-construction-civ13_accessory_chest_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/waist_holster.rsi
     state: icon
@@ -4265,13 +4265,13 @@
   - node: end
     entity: civ13_accessory_chest_holster
 - type: construction
-  name: "набедренная кобура"
+  name: humanity-construction-civ13_accessory_hip_holster-name
   id: civ13_accessory_hip_holster
   graph: civ13_accessory_hip_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кобура для пистолета, закреплённая низко на бедре."
+  description: humanity-construction-civ13_accessory_hip_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/holster_hip.rsi
     state: icon
@@ -4292,13 +4292,13 @@
   - node: end
     entity: civ13_accessory_hip_holster
 - type: construction
-  name: "двойная набедренная кобура"
+  name: humanity-construction-civ13_accessory_double_hip_holster-name
   id: civ13_accessory_double_hip_holster
   graph: civ13_accessory_double_hip_holster
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара кобур для пистолетов, закреплённых низко на бёдрах."
+  description: humanity-construction-civ13_accessory_double_hip_holster-description
   icon:
     sprite: Civ14/Clothing/exported/ties/holster_hip2.rsi
     state: icon
@@ -4319,13 +4319,13 @@
   - node: end
     entity: civ13_accessory_double_hip_holster
 - type: construction
-  name: "набедренная кобура"
+  name: humanity-construction-civ13_accessory_hip_holster_1-name
   id: civ13_accessory_hip_holster_1
   graph: civ13_accessory_hip_holster_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кобура для пистолета, закреплённая низко на бедре."
+  description: humanity-construction-civ13_accessory_hip_holster_1-description
   icon:
     sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     state: icon
@@ -4346,13 +4346,13 @@
   - node: end
     entity: civ13_accessory_hip_holster_1
 - type: construction
-  name: "кама репликанта"
+  name: humanity-construction-civ13_accessory_replicant_kama-name
   id: civ13_accessory_replicant_kama
   graph: civ13_accessory_replicant_kama
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защитная юбка-кама со встроенной набедренной кобурой."
+  description: humanity-construction-civ13_accessory_replicant_kama-description
   icon:
     sprite: Civ14/Clothing/exported/ties/replicant_kama.rsi
     state: icon
@@ -4373,13 +4373,13 @@
   - node: end
     entity: civ13_accessory_replicant_kama
 - type: construction
-  name: "серебряный медальон"
+  name: humanity-construction-civ13_accessory_silver_locket-name
   id: civ13_accessory_silver_locket
   graph: civ13_accessory_silver_locket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Овальный медальон из серебра на тонкой прочной цепочке. Края украшены изящной гравировкой, а гладкая крышка ждёт собственный узор. Внутри есть место для фотографии и потайное отделение, которое открывается лёгким нажатием."
+  description: humanity-construction-civ13_accessory_silver_locket-description
   icon:
     sprite: Civ14/Clothing/exported/ties/locket.rsi
     state: icon
@@ -4400,13 +4400,13 @@
   - node: end
     entity: civ13_accessory_silver_locket
 - type: construction
-  name: "разгрузочное снаряжение"
+  name: humanity-construction-civ13_accessory_load_bearing_equipment-name
   id: civ13_accessory_load_bearing_equipment
   graph: civ13_accessory_load_bearing_equipment
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Помогает переносить вещи, когда рук уже не хватает."
+  description: humanity-construction-civ13_accessory_load_bearing_equipment-description
   icon:
     sprite: Civ14/Clothing/exported/ties/webbing.rsi
     state: icon
@@ -4427,13 +4427,13 @@
   - node: end
     entity: civ13_accessory_load_bearing_equipment
 - type: construction
-  name: "ножны для короткого меча"
+  name: humanity-construction-civ13_accessory_short_sword_sheath-name
   id: civ13_accessory_short_sword_sheath
   graph: civ13_accessory_short_sword_sheath
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные ножны подходящей длины для короткого меча."
+  description: humanity-construction-civ13_accessory_short_sword_sheath-description
   icon:
     sprite: Civ14/Clothing/exported/ties/short_sheath.rsi
     state: icon
@@ -4454,13 +4454,13 @@
   - node: end
     entity: civ13_accessory_short_sword_sheath
 - type: construction
-  name: "ножны для длинного меча"
+  name: humanity-construction-civ13_accessory_long_sword_sheath-name
   id: civ13_accessory_long_sword_sheath
   graph: civ13_accessory_long_sword_sheath
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большие кожаные ножны. Подойдут для большинства длинных мечей."
+  description: humanity-construction-civ13_accessory_long_sword_sheath-description
   icon:
     sprite: Civ14/Clothing/exported/ties/longsword_sheath.rsi
     state: icon
@@ -4481,13 +4481,13 @@
   - node: end
     entity: civ13_accessory_long_sword_sheath
 - type: construction
-  name: "ножны для катаны"
+  name: humanity-construction-civ13_accessory_katana_sheath-name
   id: civ13_accessory_katana_sheath
   graph: civ13_accessory_katana_sheath
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные ножны для катаны."
+  description: humanity-construction-civ13_accessory_katana_sheath-description
   icon:
     sprite: Civ14/Clothing/exported/ties/katana_sheath.rsi
     state: icon
@@ -4508,13 +4508,13 @@
   - node: end
     entity: civ13_accessory_katana_sheath
 - type: construction
-  name: "ножны для дайсё"
+  name: humanity-construction-civ13_accessory_daisho_sheaths-name
   id: civ13_accessory_daisho_sheaths
   graph: civ13_accessory_daisho_sheaths
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара кожаных ножен для двух мечей из комплекта дайсё."
+  description: humanity-construction-civ13_accessory_daisho_sheaths-description
   icon:
     sprite: Civ14/Clothing/exported/ties/daisho_sheath.rsi
     state: icon
@@ -4535,13 +4535,13 @@
   - node: end
     entity: civ13_accessory_daisho_sheaths
 - type: construction
-  name: "ножны для меча"
+  name: humanity-construction-civ13_accessory_sword_sheath-name
   id: civ13_accessory_sword_sheath
   graph: civ13_accessory_sword_sheath
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные ножны для меча средней длины."
+  description: humanity-construction-civ13_accessory_sword_sheath-description
   icon:
     sprite: Civ14/Clothing/exported/ties/longer_sheath.rsi
     state: icon
@@ -4562,13 +4562,13 @@
   - node: end
     entity: civ13_accessory_sword_sheath
 - type: construction
-  name: "ножны для ножа"
+  name: humanity-construction-civ13_accessory_knife_sheath-name
   id: civ13_accessory_knife_sheath
   graph: civ13_accessory_knife_sheath
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные ножны для ножа."
+  description: humanity-construction-civ13_accessory_knife_sheath-description
   icon:
     sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
     state: icon
@@ -4589,13 +4589,13 @@
   - node: end
     entity: civ13_accessory_knife_sheath
 - type: construction
-  name: "поясная петля"
+  name: humanity-construction-civ13_accessory_belt_loop-name
   id: civ13_accessory_belt_loop
   graph: civ13_accessory_belt_loop
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Петля для пояса. На неё можно подвесить что-нибудь полезное."
+  description: humanity-construction-civ13_accessory_belt_loop-description
   icon:
     sprite: Civ14/Clothing/exported/ties/knifeholster.rsi
     state: icon
@@ -4616,13 +4616,13 @@
   - node: end
     entity: civ13_accessory_belt_loop
 - type: construction
-  name: "служебный пояс"
+  name: humanity-construction-civ13_accessory_duty_rig-name
   id: civ13_accessory_duty_rig
   graph: civ13_accessory_duty_rig
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пояс с петлями и чехлами для служебного снаряжения."
+  description: humanity-construction-civ13_accessory_duty_rig-description
   icon:
     sprite: Civ14/Clothing/exported/ties/tacholster.rsi
     state: icon
@@ -4643,13 +4643,13 @@
   - node: end
     entity: civ13_accessory_duty_rig
 - type: construction
-  name: "подсумки"
+  name: humanity-construction-civ13_accessory_loose_pouches-name
   id: civ13_accessory_loose_pouches
   graph: civ13_accessory_loose_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара подсумков, из которых удобно быстро доставать снаряжение."
+  description: humanity-construction-civ13_accessory_loose_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
     state: icon
@@ -4670,13 +4670,13 @@
   - node: end
     entity: civ13_accessory_loose_pouches
 - type: construction
-  name: "перевязь для метательного оружия"
+  name: humanity-construction-civ13_accessory_thrown_weapon_bandolier-name
   id: civ13_accessory_thrown_weapon_bandolier
   graph: civ13_accessory_thrown_weapon_bandolier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные чехлы на ремнях позволяют быстро доставать метательное оружие."
+  description: humanity-construction-civ13_accessory_thrown_weapon_bandolier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/bandolier.rsi
     state: icon
@@ -4697,13 +4697,13 @@
   - node: end
     entity: civ13_accessory_thrown_weapon_bandolier
 - type: construction
-  name: "патронташ"
+  name: humanity-construction-civ13_accessory_bandolier-name
   id: civ13_accessory_bandolier
   graph: civ13_accessory_bandolier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Два кожаных ремня с небольшими подсумками для патронов."
+  description: humanity-construction-civ13_accessory_bandolier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/bandolier.rsi
     state: icon
@@ -4724,13 +4724,13 @@
   - node: end
     entity: civ13_accessory_bandolier
 - type: construction
-  name: "зелёная нагрудная разгрузка"
+  name: humanity-construction-civ13_accessory_green_chest_webbing-name
   id: civ13_accessory_green_chest_webbing
   graph: civ13_accessory_green_chest_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёная разгрузка с тремя подсумками среднего размера."
+  description: humanity-construction-civ13_accessory_green_chest_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/green_webbing.rsi
     state: icon
@@ -4751,13 +4751,13 @@
   - node: end
     entity: civ13_accessory_green_chest_webbing
 - type: construction
-  name: "подсумки НФО"
+  name: humanity-construction-civ13_accessory_NLF_small_pouches-name
   id: civ13_accessory_NLF_small_pouches
   graph: civ13_accessory_NLF_small_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёная нагрудная разгрузка с несколькими небольшими подсумками."
+  description: humanity-construction-civ13_accessory_NLF_small_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/nlfchestrig_v2.rsi
     state: icon
@@ -4778,13 +4778,13 @@
   - node: end
     entity: civ13_accessory_NLF_small_pouches
 - type: construction
-  name: "нагрудная разгрузка НФО"
+  name: humanity-construction-civ13_accessory_NLF_chestrig-name
   id: civ13_accessory_NLF_chestrig
   graph: civ13_accessory_NLF_chestrig
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёная разгрузка с тремя средними и двумя малыми подсумками."
+  description: humanity-construction-civ13_accessory_NLF_chestrig-description
   icon:
     sprite: Civ14/Clothing/exported/ties/nlfchestrig_v1.rsi
     state: icon
@@ -4805,13 +4805,13 @@
   - node: end
     entity: civ13_accessory_NLF_chestrig
 - type: construction
-  name: "нагрудная разгрузка хаки"
+  name: humanity-construction-civ13_accessory_khaki_chest_webbing-name
   id: civ13_accessory_khaki_chest_webbing
   graph: civ13_accessory_khaki_chest_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузка цвета хаки с тремя подсумками среднего размера."
+  description: humanity-construction-civ13_accessory_khaki_chest_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/khaki_webbing.rsi
     state: icon
@@ -4832,13 +4832,13 @@
   - node: end
     entity: civ13_accessory_khaki_chest_webbing
 - type: construction
-  name: "чёрные подсумки"
+  name: humanity-construction-civ13_accessory_black_pouches-name
   id: civ13_accessory_black_pouches
   graph: civ13_accessory_black_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Подсумки для магазинов."
+  description: humanity-construction-civ13_accessory_black_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/black_pouches.rsi
     state: icon
@@ -4859,13 +4859,13 @@
   - node: end
     entity: civ13_accessory_black_pouches
 - type: construction
-  name: "большие чёрные подсумки"
+  name: humanity-construction-civ13_accessory_large_black_pouches-name
   id: civ13_accessory_large_black_pouches
   graph: civ13_accessory_large_black_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Вместительные подсумки для магазинов."
+  description: humanity-construction-civ13_accessory_large_black_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/largepouches.rsi
     state: icon
@@ -4886,13 +4886,13 @@
   - node: end
     entity: civ13_accessory_large_black_pouches
 - type: construction
-  name: "большие песочные подсумки"
+  name: humanity-construction-civ13_accessory_large_tan_pouches-name
   id: civ13_accessory_large_tan_pouches
   graph: civ13_accessory_large_tan_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Вместительные подсумки для магазинов."
+  description: humanity-construction-civ13_accessory_large_tan_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/largepouches_tan.rsi
     state: icon
@@ -4913,13 +4913,13 @@
   - node: end
     entity: civ13_accessory_large_tan_pouches
 - type: construction
-  name: "песочные подсумки"
+  name: humanity-construction-civ13_accessory_tan_pouches-name
   id: civ13_accessory_tan_pouches
   graph: civ13_accessory_tan_pouches
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Подсумки для магазинов."
+  description: humanity-construction-civ13_accessory_tan_pouches-description
   icon:
     sprite: Civ14/Clothing/exported/ties/tan_pouches.rsi
     state: icon
@@ -4940,13 +4940,13 @@
   - node: end
     entity: civ13_accessory_tan_pouches
 - type: construction
-  name: "песочная боевая рубаха"
+  name: humanity-construction-civ13_accessory_tan_UBAC-name
   id: civ13_accessory_tan_UBAC
   graph: civ13_accessory_tan_UBAC
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Песочного цвета."
+  description: humanity-construction-civ13_accessory_tan_UBAC-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_tan.rsi
     state: icon
@@ -4967,13 +4967,13 @@
   - node: end
     entity: civ13_accessory_tan_UBAC
 - type: construction
-  name: "зелёная боевая рубаха"
+  name: humanity-construction-civ13_accessory_green_UBAC-name
   id: civ13_accessory_green_UBAC
   graph: civ13_accessory_green_UBAC
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Зелёного цвета."
+  description: humanity-construction-civ13_accessory_green_UBAC-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_green.rsi
     state: icon
@@ -4994,13 +4994,13 @@
   - node: end
     entity: civ13_accessory_green_UBAC
 - type: construction
-  name: "чёрная боевая рубаха"
+  name: humanity-construction-civ13_accessory_black_UBAC-name
   id: civ13_accessory_black_UBAC
   graph: civ13_accessory_black_UBAC
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Облегающая рубаха с камуфляжными рукавами для ношения под снаряжением. Чёрного цвета."
+  description: humanity-construction-civ13_accessory_black_UBAC-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ubac_black.rsi
     state: icon
@@ -5021,13 +5021,13 @@
   - node: end
     entity: civ13_accessory_black_UBAC
 - type: construction
-  name: "серый свитер"
+  name: humanity-construction-civ13_accessory_grey_sweater-name
   id: civ13_accessory_grey_sweater
   graph: civ13_accessory_grey_sweater
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Мягкий серый свитер, в котором удобно и тепло."
+  description: humanity-construction-civ13_accessory_grey_sweater-description
   icon:
     sprite: Civ14/Clothing/exported/ties/sweater.rsi
     state: icon
@@ -5048,13 +5048,13 @@
   - node: end
     entity: civ13_accessory_grey_sweater
 - type: construction
-  name: "лёгкая разгрузка"
+  name: humanity-construction-civ13_accessory_light_webbing-name
   id: civ13_accessory_light_webbing
   graph: civ13_accessory_light_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Вмещает меньше обычной разгрузки, зато не мешает быстро двигаться."
+  description: humanity-construction-civ13_accessory_light_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -5075,13 +5075,13 @@
   - node: end
     entity: civ13_accessory_light_webbing
 - type: construction
-  name: "лёгкая китайская разгрузка"
+  name: humanity-construction-civ13_accessory_Chinese_light_webbing-name
   id: civ13_accessory_Chinese_light_webbing
   graph: civ13_accessory_Chinese_light_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкая разгрузка китайского образца."
+  description: humanity-construction-civ13_accessory_Chinese_light_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -5102,13 +5102,13 @@
   - node: end
     entity: civ13_accessory_Chinese_light_webbing
 - type: construction
-  name: "разгрузка армии США"
+  name: humanity-construction-civ13_accessory_US_Army_webbing-name
   id: civ13_accessory_US_Army_webbing
   graph: civ13_accessory_US_Army_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большая разгрузка с несколькими маленькими карманами."
+  description: humanity-construction-civ13_accessory_US_Army_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/us_vest.rsi
     state: icon
@@ -5129,13 +5129,13 @@
   - node: end
     entity: civ13_accessory_US_Army_webbing
 - type: construction
-  name: "патронташ армии США"
+  name: humanity-construction-civ13_accessory_US_Army_bandolier-name
   id: civ13_accessory_US_Army_bandolier
   graph: civ13_accessory_US_Army_bandolier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большой хлопковый патронташ с несколькими маленькими подсумками."
+  description: humanity-construction-civ13_accessory_US_Army_bandolier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/us_bandolier.rsi
     state: icon
@@ -5156,13 +5156,13 @@
   - node: end
     entity: civ13_accessory_US_Army_bandolier
 - type: construction
-  name: "патронташ для дробовика"
+  name: humanity-construction-civ13_accessory_shotgun_bandolier-name
   id: civ13_accessory_shotgun_bandolier
   graph: civ13_accessory_shotgun_bandolier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Патронташ с ячейками для ружейных патронов."
+  description: humanity-construction-civ13_accessory_shotgun_bandolier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/shotgun_bandolier.rsi
     state: icon
@@ -5183,13 +5183,13 @@
   - node: end
     entity: civ13_accessory_shotgun_bandolier
 - type: construction
-  name: "жилет M79 армии США"
+  name: humanity-construction-civ13_accessory_US_Army_M79_Vest-name
   id: civ13_accessory_US_Army_M79_Vest
   graph: civ13_accessory_US_Army_M79_Vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большая разгрузка с несколькими маленькими карманами."
+  description: humanity-construction-civ13_accessory_US_Army_M79_Vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     state: icon
@@ -5210,13 +5210,13 @@
   - node: end
     entity: civ13_accessory_US_Army_M79_Vest
 - type: construction
-  name: "разгрузка гранатомётчика"
+  name: humanity-construction-civ13_accessory_Grenadier_Webbing-name
   id: civ13_accessory_Grenadier_Webbing
   graph: civ13_accessory_Grenadier_Webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большая разгрузка с несколькими маленькими карманами."
+  description: humanity-construction-civ13_accessory_Grenadier_Webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     state: icon
@@ -5237,13 +5237,13 @@
   - node: end
     entity: civ13_accessory_Grenadier_Webbing
 - type: construction
-  name: "разгрузка гранатомётчика"
+  name: humanity-construction-civ13_accessory_Grenadier_Webbing_1-name
   id: civ13_accessory_Grenadier_Webbing_1
   graph: civ13_accessory_Grenadier_Webbing_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большая разгрузка с несколькими маленькими карманами."
+  description: humanity-construction-civ13_accessory_Grenadier_Webbing_1-description
   icon:
     sprite: Civ14/Clothing/exported/ties/m79_vest.rsi
     state: icon
@@ -5264,13 +5264,13 @@
   - node: end
     entity: civ13_accessory_Grenadier_Webbing_1
 - type: construction
-  name: "походная разгрузка"
+  name: humanity-construction-civ13_accessory_survival_webbing-name
   id: civ13_accessory_survival_webbing
   graph: civ13_accessory_survival_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёные нагрудные и набедренные подсумки для пистолета, магазинов и снаряжения выживальщика."
+  description: humanity-construction-civ13_accessory_survival_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/survival_webbing.rsi
     state: icon
@@ -5291,13 +5291,13 @@
   - node: end
     entity: civ13_accessory_survival_webbing
 - type: construction
-  name: "патронташ Русской императорской армии"
+  name: humanity-construction-civ13_accessory_Imperial_Russian_Army_bandolier-name
   id: civ13_accessory_Imperial_Russian_Army_bandolier
   graph: civ13_accessory_Imperial_Russian_Army_bandolier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большой кожаный патронташ с шестью подсумками для патронных обойм."
+  description: humanity-construction-civ13_accessory_Imperial_Russian_Army_bandolier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ru_band.rsi
     state: icon
@@ -5318,13 +5318,13 @@
   - node: end
     entity: civ13_accessory_Imperial_Russian_Army_bandolier
 - type: construction
-  name: "филиппинская разгрузка"
+  name: humanity-construction-civ13_accessory_filipino_webbing-name
   id: civ13_accessory_filipino_webbing
   graph: civ13_accessory_filipino_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Восемь подсумков из чёрной кожи."
+  description: humanity-construction-civ13_accessory_filipino_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/fp_webbing.rsi
     state: icon
@@ -5345,13 +5345,13 @@
   - node: end
     entity: civ13_accessory_filipino_webbing
 - type: construction
-  name: "патронная разгрузка"
+  name: humanity-construction-civ13_accessory_cartridge_rigging-name
   id: civ13_accessory_cartridge_rigging
   graph: civ13_accessory_cartridge_rigging
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Подсумки для патронов и чехол для штыка."
+  description: humanity-construction-civ13_accessory_cartridge_rigging-description
   icon:
     sprite: Civ14/Clothing/exported/ties/civil_war.rsi
     state: icon
@@ -5372,13 +5372,13 @@
   - node: end
     entity: civ13_accessory_cartridge_rigging
 - type: construction
-  name: "тактический жилет КВС"
+  name: humanity-construction-civ13_accessory_CAF_Tacvest-name
   id: civ13_accessory_CAF_Tacvest
   graph: civ13_accessory_CAF_Tacvest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Большая разгрузка с несколькими подсумками."
+  description: humanity-construction-civ13_accessory_CAF_Tacvest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/caf_tacvest.rsi
     state: icon
@@ -5399,13 +5399,13 @@
   - node: end
     entity: civ13_accessory_CAF_Tacvest
 - type: construction
-  name: "кожаный разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_Leather_webbing_vest-name
   id: civ13_accessory_Leather_webbing_vest
   graph: civ13_accessory_Leather_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузочный жилет из кожи."
+  description: humanity-construction-civ13_accessory_Leather_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/british_vest.rsi
     state: icon
@@ -5426,13 +5426,13 @@
   - node: end
     entity: civ13_accessory_Leather_webbing_vest
 - type: construction
-  name: "греческий разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_Greek_webbing_vest-name
   id: civ13_accessory_Greek_webbing_vest
   graph: civ13_accessory_Greek_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузочный жилет греческого образца."
+  description: humanity-construction-civ13_accessory_Greek_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/german_vest.rsi
     state: icon
@@ -5453,13 +5453,13 @@
   - node: end
     entity: civ13_accessory_Greek_webbing_vest
 - type: construction
-  name: "российский разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_Russian_webbing_vest-name
   id: civ13_accessory_Russian_webbing_vest
   graph: civ13_accessory_Russian_webbing_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузка с четырьмя зелёными полиэстеровыми подсумками."
+  description: humanity-construction-civ13_accessory_Russian_webbing_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/russian_vest.rsi
     state: icon
@@ -5480,13 +5480,13 @@
   - node: end
     entity: civ13_accessory_Russian_webbing_vest
 - type: construction
-  name: "американская разгрузка"
+  name: humanity-construction-civ13_accessory_US_webbing-name
   id: civ13_accessory_US_webbing
   graph: civ13_accessory_US_webbing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Разгрузка из парусины цвета хаки с десятью подсумками для боеприпасов и снаряжения."
+  description: humanity-construction-civ13_accessory_US_webbing-description
   icon:
     sprite: Civ14/Clothing/exported/ties/us_webbing.rsi
     state: icon
@@ -5507,13 +5507,13 @@
   - node: end
     entity: civ13_accessory_US_webbing
 - type: construction
-  name: "стетоскоп"
+  name: humanity-construction-civ13_accessory_stethoscope-name
   id: civ13_accessory_stethoscope
   graph: civ13_accessory_stethoscope
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Медицинский прибор, позволяющий слушать работу сердца и лёгких."
+  description: humanity-construction-civ13_accessory_stethoscope-description
   icon:
     sprite: Civ14/Clothing/exported/ties/stethoscope.rsi
     state: icon
@@ -5534,13 +5534,13 @@
   - node: end
     entity: civ13_accessory_stethoscope
 - type: construction
-  name: "бронежилет ТАТБА-7"
+  name: humanity-construction-civ13_accessory_TATBA_7_vest-name
   id: civ13_accessory_TATBA_7_vest
   graph: civ13_accessory_TATBA_7_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий китайский бронежилет с одной установленной бронепластиной."
+  description: humanity-construction-civ13_accessory_TATBA_7_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/tatba.rsi
     state: icon
@@ -5561,13 +5561,13 @@
   - node: end
     entity: civ13_accessory_TATBA_7_vest
 - type: construction
-  name: "бронежилет 6Б3"
+  name: humanity-construction-civ13_accessory_6B3_body_armor-name
   id: civ13_accessory_6B3_body_armor
   graph: civ13_accessory_6B3_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советский бронежилет, поступивший на вооружение в середине 1980-х годов."
+  description: humanity-construction-civ13_accessory_6B3_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b3.rsi
     state: icon
@@ -5588,13 +5588,13 @@
   - node: end
     entity: civ13_accessory_6B3_body_armor
 - type: construction
-  name: "бронежилет 6Б3 в зелёном камуфляже"
+  name: humanity-construction-civ13_accessory_6B3_green_camo_body_armor-name
   id: civ13_accessory_6B3_green_camo_body_armor
   graph: civ13_accessory_6B3_green_camo_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советский бронежилет 6Б3 в зелёном камуфляже."
+  description: humanity-construction-civ13_accessory_6B3_green_camo_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b3cam.rsi
     state: icon
@@ -5615,13 +5615,13 @@
   - node: end
     entity: civ13_accessory_6B3_green_camo_body_armor
 - type: construction
-  name: "бронежилет 6Б2"
+  name: humanity-construction-civ13_accessory_6B2_body_armor-name
   id: civ13_accessory_6B2_body_armor
   graph: civ13_accessory_6B2_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советский бронежилет, принятый на вооружение в начале 1980-х годов."
+  description: humanity-construction-civ13_accessory_6B2_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b2.rsi
     state: icon
@@ -5642,13 +5642,13 @@
   - node: end
     entity: civ13_accessory_6B2_body_armor
 - type: construction
-  name: "бронежилет 6Б5"
+  name: humanity-construction-civ13_accessory_6B5_body_armor-name
   id: civ13_accessory_6B5_body_armor
   graph: civ13_accessory_6B5_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советский бронежилет, поступивший на вооружение в конце 1980-х годов."
+  description: humanity-construction-civ13_accessory_6B5_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b5.rsi
     state: icon
@@ -5669,13 +5669,13 @@
   - node: end
     entity: civ13_accessory_6B5_body_armor
 - type: construction
-  name: "бронежилет N34-B"
+  name: humanity-construction-civ13_accessory_N34_B_body_armor-name
   id: civ13_accessory_N34_B_body_armor
   graph: civ13_accessory_N34_B_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современный бронежилет Блюгославии образца 2023 года. Сделан из кевлара и имеет карманы для бронепластин."
+  description: humanity-construction-civ13_accessory_N34_B_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/n34bm.rsi
     state: icon
@@ -5696,13 +5696,13 @@
   - node: end
     entity: civ13_accessory_N34_B_body_armor
 - type: construction
-  name: "медицинский бронежилет N34-BM"
+  name: humanity-construction-civ13_accessory_N34_BM_body_armor-name
   id: civ13_accessory_N34_BM_body_armor
   graph: civ13_accessory_N34_BM_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Блюгославский бронежилет для медиков с белым крестом на спине."
+  description: humanity-construction-civ13_accessory_N34_BM_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/n34bmm.rsi
     state: icon
@@ -5723,13 +5723,13 @@
   - node: end
     entity: civ13_accessory_N34_BM_body_armor
 - type: construction
-  name: "чёрный бронежилет Interceptor"
+  name: humanity-construction-civ13_accessory_black_Interceptor_Body_Armor-name
   id: civ13_accessory_black_Interceptor_Body_Armor
   graph: civ13_accessory_black_Interceptor_Body_Armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Способен остановить даже некоторые винтовочные пули. Для лучшей защиты можно установить бронепластины."
+  description: humanity-construction-civ13_accessory_black_Interceptor_Body_Armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_black.rsi
     state: icon
@@ -5750,13 +5750,13 @@
   - node: end
     entity: civ13_accessory_black_Interceptor_Body_Armor
 - type: construction
-  name: "бронежилет Interceptor в расцветке UCP"
+  name: humanity-construction-civ13_accessory_UCP_Interceptor_Body_Armor-name
   id: civ13_accessory_UCP_Interceptor_Body_Armor
   graph: civ13_accessory_UCP_Interceptor_Body_Armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Способен остановить некоторые винтовочные пули. Бронепластины усиливают защиту. Окрашен в универсальный камуфляж UCP."
+  description: humanity-construction-civ13_accessory_UCP_Interceptor_Body_Armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_ucp.rsi
     state: icon
@@ -5777,13 +5777,13 @@
   - node: end
     entity: civ13_accessory_UCP_Interceptor_Body_Armor
 - type: construction
-  name: "бронежилет Interceptor в расцветке OCP"
+  name: humanity-construction-civ13_accessory_OCP_Interceptor_Body_Armor-name
   id: civ13_accessory_OCP_Interceptor_Body_Armor
   graph: civ13_accessory_OCP_Interceptor_Body_Armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Способен остановить некоторые винтовочные пули. Бронепластины усиливают защиту. Окрашен в камуфляж OCP."
+  description: humanity-construction-civ13_accessory_OCP_Interceptor_Body_Armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/iba_ocp.rsi
     state: icon
@@ -5804,13 +5804,13 @@
   - node: end
     entity: civ13_accessory_OCP_Interceptor_Body_Armor
 - type: construction
-  name: "песочный плитник"
+  name: humanity-construction-civ13_accessory_tan_plate_carrier-name
   id: civ13_accessory_tan_plate_carrier
   graph: civ13_accessory_tan_plate_carrier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плитоносец с креплениями для магазинов и подсумков. Песочного цвета."
+  description: humanity-construction-civ13_accessory_tan_plate_carrier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/platecarrier_tan.rsi
     state: icon
@@ -5831,13 +5831,13 @@
   - node: end
     entity: civ13_accessory_tan_plate_carrier
 - type: construction
-  name: "оливковый плитник"
+  name: humanity-construction-civ13_accessory_olive_plate_carrier-name
   id: civ13_accessory_olive_plate_carrier
   graph: civ13_accessory_olive_plate_carrier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плитоносец с креплениями для магазинов и подсумков. Оливкового цвета."
+  description: humanity-construction-civ13_accessory_olive_plate_carrier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/platecarrier_green.rsi
     state: icon
@@ -5858,13 +5858,13 @@
   - node: end
     entity: civ13_accessory_olive_plate_carrier
 - type: construction
-  name: "чёрный плитник"
+  name: humanity-construction-civ13_accessory_black_plate_carrier-name
   id: civ13_accessory_black_plate_carrier
   graph: civ13_accessory_black_plate_carrier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плитоносец с креплениями для магазинов и подсумков. Чёрного цвета."
+  description: humanity-construction-civ13_accessory_black_plate_carrier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/platecarrier_black.rsi
     state: icon
@@ -5885,13 +5885,13 @@
   - node: end
     entity: civ13_accessory_black_plate_carrier
 - type: construction
-  name: "плитник UARM"
+  name: humanity-construction-civ13_accessory_UARM_plate_carrier-name
   id: civ13_accessory_UARM_plate_carrier
   graph: civ13_accessory_UARM_plate_carrier
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плитоносец UARM с креплениями для магазинов и подсумков."
+  description: humanity-construction-civ13_accessory_UARM_plate_carrier-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ukraine_armor.rsi
     state: icon
@@ -5912,13 +5912,13 @@
   - node: end
     entity: civ13_accessory_UARM_plate_carrier
 - type: construction
-  name: "бронежилет 6Б45"
+  name: humanity-construction-civ13_accessory_6B45_body_armor-name
   id: civ13_accessory_6B45_body_armor
   graph: civ13_accessory_6B45_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современный российский бронежилет."
+  description: humanity-construction-civ13_accessory_6B45_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b45.rsi
     state: icon
@@ -5939,13 +5939,13 @@
   - node: end
     entity: civ13_accessory_6B45_body_armor
 - type: construction
-  name: "расширенный бронежилет 6Б45"
+  name: humanity-construction-civ13_accessory_6B45_extended_body_armor-name
   id: civ13_accessory_6B45_extended_body_armor
   graph: civ13_accessory_6B45_extended_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современный российский бронежилет с дополнительной защитой."
+  description: humanity-construction-civ13_accessory_6B45_extended_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b45_ext.rsi
     state: icon
@@ -5966,13 +5966,13 @@
   - node: end
     entity: civ13_accessory_6B45_extended_body_armor
 - type: construction
-  name: "бронежилет 6Б46"
+  name: humanity-construction-civ13_accessory_6B46_body_armor-name
   id: civ13_accessory_6B46_body_armor
   graph: civ13_accessory_6B46_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Облегчённый российский бронежилет для десантников и экипажей боевых машин."
+  description: humanity-construction-civ13_accessory_6B46_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b46.rsi
     state: icon
@@ -5993,13 +5993,13 @@
   - node: end
     entity: civ13_accessory_6B46_body_armor
 - type: construction
-  name: "противоосколочный жилет M-1952"
+  name: humanity-construction-civ13_accessory_M_1952_Flak_Jacket-name
   id: civ13_accessory_M_1952_Flak_Jacket
   graph: civ13_accessory_M_1952_Flak_Jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает от осколков и лёгких попаданий, но мало поможет против крупнокалиберного оружия."
+  description: humanity-construction-civ13_accessory_M_1952_Flak_Jacket-description
   icon:
     sprite: Civ14/Clothing/exported/ties/flakjacket.rsi
     state: icon
@@ -6020,13 +6020,13 @@
   - node: end
     entity: civ13_accessory_M_1952_Flak_Jacket
 - type: construction
-  name: "противоосколочный жилет M-1969"
+  name: humanity-construction-civ13_accessory_M_1969_Flak_Jacket-name
   id: civ13_accessory_M_1969_Flak_Jacket
   graph: civ13_accessory_M_1969_Flak_Jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает шею и корпус от осколков и лёгких попаданий, но мало поможет против крупнокалиберного оружия."
+  description: humanity-construction-civ13_accessory_M_1969_Flak_Jacket-description
   icon:
     sprite: Civ14/Clothing/exported/ties/flakjacket1969.rsi
     state: icon
@@ -6047,13 +6047,13 @@
   - node: end
     entity: civ13_accessory_M_1969_Flak_Jacket
 - type: construction
-  name: "бронежилет 6Б1"
+  name: humanity-construction-civ13_accessory_6B1_vest-name
   id: civ13_accessory_6B1_vest
   graph: civ13_accessory_6B1_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает от осколков и малокалиберных пуль. Против крупного калибра почти бесполезен."
+  description: humanity-construction-civ13_accessory_6B1_vest-description
   icon:
     sprite: Civ14/Clothing/exported/ties/6b1.rsi
     state: icon
@@ -6074,13 +6074,13 @@
   - node: end
     entity: civ13_accessory_6B1_vest
 - type: construction
-  name: "бронежилет PASGT в лесном камуфляже"
+  name: humanity-construction-civ13_accessory_woodland_PASGT_body_armor-name
   id: civ13_accessory_woodland_PASGT_body_armor
   graph: civ13_accessory_woodland_PASGT_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронежилет в американском лесном камуфляже, способный остановить большинство пистолетных пуль."
+  description: humanity-construction-civ13_accessory_woodland_PASGT_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_woodland.rsi
     state: icon
@@ -6101,13 +6101,13 @@
   - node: end
     entity: civ13_accessory_woodland_PASGT_body_armor
 - type: construction
-  name: "бронежилет PASGT цвета хаки"
+  name: humanity-construction-civ13_accessory_khaki_PASGT_body_armor-name
   id: civ13_accessory_khaki_PASGT_body_armor
   graph: civ13_accessory_khaki_PASGT_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронежилет цвета хаки, способный остановить большинство пистолетных пуль."
+  description: humanity-construction-civ13_accessory_khaki_PASGT_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_khaki.rsi
     state: icon
@@ -6128,13 +6128,13 @@
   - node: end
     entity: civ13_accessory_khaki_PASGT_body_armor
 - type: construction
-  name: "бронежилет PASGT в зимнем камуфляже"
+  name: humanity-construction-civ13_accessory_blizzard_PASGT_body_armor-name
   id: civ13_accessory_blizzard_PASGT_body_armor
   graph: civ13_accessory_blizzard_PASGT_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронежилет в снежной расцветке, способный остановить большинство пистолетных пуль."
+  description: humanity-construction-civ13_accessory_blizzard_PASGT_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/pasgt_blizzard.rsi
     state: icon
@@ -6155,13 +6155,13 @@
   - node: end
     entity: civ13_accessory_blizzard_PASGT_body_armor
 - type: construction
-  name: "бронежилет RB-23"
+  name: humanity-construction-civ13_accessory_RB_23_body_armor-name
   id: civ13_accessory_RB_23_body_armor
   graph: civ13_accessory_RB_23_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современный бронежилет редменийского производства."
+  description: humanity-construction-civ13_accessory_RB_23_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/rb23.rsi
     state: icon
@@ -6182,13 +6182,13 @@
   - node: end
     entity: civ13_accessory_RB_23_body_armor
 - type: construction
-  name: "зелёный бронежилет «Масада»"
+  name: humanity-construction-civ13_accessory_Masada_body_armor-name
   id: civ13_accessory_Masada_body_armor
   graph: civ13_accessory_Masada_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Израильский бронежилет, способный остановить большинство пистолетных пуль."
+  description: humanity-construction-civ13_accessory_Masada_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/greenkevlarvest.rsi
     state: icon
@@ -6209,13 +6209,13 @@
   - node: end
     entity: civ13_accessory_Masada_body_armor
 - type: construction
-  name: "кольчуга"
+  name: humanity-construction-civ13_accessory_chainmail-name
   id: civ13_accessory_chainmail
   graph: civ13_accessory_chainmail
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Доспех из множества соединённых металлических колец."
+  description: humanity-construction-civ13_accessory_chainmail-description
   icon:
     sprite: Civ14/Clothing/exported/suits/chainmail.rsi
     state: icon
@@ -6236,13 +6236,13 @@
   - node: end
     entity: civ13_accessory_chainmail
 - type: construction
-  name: "наколенники"
+  name: humanity-construction-civ13_accessory_knee_protections-name
   id: civ13_accessory_knee_protections
   graph: civ13_accessory_knee_protections
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дополнительно защищают колени и ноги."
+  description: humanity-construction-civ13_accessory_knee_protections-description
   icon:
     sprite: Civ14/Clothing/exported/ties/knee_protections.rsi
     state: icon
@@ -6263,13 +6263,13 @@
   - node: end
     entity: civ13_accessory_knee_protections
 - type: construction
-  name: "поножи"
+  name: humanity-construction-civ13_accessory_leg_guards-name
   id: civ13_accessory_leg_guards
   graph: civ13_accessory_leg_guards
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дополнительно защищают ноги."
+  description: humanity-construction-civ13_accessory_leg_guards-description
   icon:
     sprite: Civ14/Clothing/exported/ties/legguards.rsi
     state: icon
@@ -6290,13 +6290,13 @@
   - node: end
     entity: civ13_accessory_leg_guards
 - type: construction
-  name: "налокотники"
+  name: humanity-construction-civ13_accessory_elbow_protections-name
   id: civ13_accessory_elbow_protections
   graph: civ13_accessory_elbow_protections
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дополнительно защищают локти и руки."
+  description: humanity-construction-civ13_accessory_elbow_protections-description
   icon:
     sprite: Civ14/Clothing/exported/ties/elbow_protections.rsi
     state: icon
@@ -6317,13 +6317,13 @@
   - node: end
     entity: civ13_accessory_elbow_protections
 - type: construction
-  name: "наручи"
+  name: humanity-construction-civ13_accessory_arm_guards-name
   id: civ13_accessory_arm_guards
   graph: civ13_accessory_arm_guards
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дополнительно защищают руки."
+  description: humanity-construction-civ13_accessory_arm_guards-description
   icon:
     sprite: Civ14/Clothing/exported/ties/armguards.rsi
     state: icon
@@ -6344,13 +6344,13 @@
   - node: end
     entity: civ13_accessory_arm_guards
 - type: construction
-  name: "песочный разгрузочный бронежилет"
+  name: humanity-construction-civ13_accessory_tan_carrier_vest-name
   id: civ13_accessory_tan_carrier_vest
   graph: civ13_accessory_tan_carrier_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кевларовый жилет с подсумками. Песочного цвета."
+  description: humanity-construction-civ13_accessory_tan_carrier_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/pcarrier_tan.rsi
     state: icon
@@ -6371,13 +6371,13 @@
   - node: end
     entity: civ13_accessory_tan_carrier_vest
 - type: construction
-  name: "чёрный разгрузочный бронежилет"
+  name: humanity-construction-civ13_accessory_black_carrier_vest-name
   id: civ13_accessory_black_carrier_vest
   graph: civ13_accessory_black_carrier_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кевларовый жилет с подсумками. Чёрного цвета."
+  description: humanity-construction-civ13_accessory_black_carrier_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/pcarrier_black.rsi
     state: icon
@@ -6398,13 +6398,13 @@
   - node: end
     entity: civ13_accessory_black_carrier_vest
 - type: construction
-  name: "тяжёлый разгрузочный жилет"
+  name: humanity-construction-civ13_accessory_heavy_carrier_vest-name
   id: civ13_accessory_heavy_carrier_vest
   graph: civ13_accessory_heavy_carrier_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Вместительный жилет песочного цвета для разного снаряжения."
+  description: humanity-construction-civ13_accessory_heavy_carrier_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/thickcarrier.rsi
     state: icon
@@ -6425,13 +6425,13 @@
   - node: end
     entity: civ13_accessory_heavy_carrier_vest
 - type: construction
-  name: "чёрный кевларовый жилет"
+  name: humanity-construction-civ13_accessory_black_kevlar_vest-name
   id: civ13_accessory_black_kevlar_vest
   graph: civ13_accessory_black_kevlar_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартный кевларовый жилет, способный остановить малокалиберные пули."
+  description: humanity-construction-civ13_accessory_black_kevlar_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/kevlarvest.rsi
     state: icon
@@ -6452,13 +6452,13 @@
   - node: end
     entity: civ13_accessory_black_kevlar_vest
 - type: construction
-  name: "гражданский кевларовый жилет"
+  name: humanity-construction-civ13_accessory_civilian_kevlar_vest-name
   id: civ13_accessory_civilian_kevlar_vest
   graph: civ13_accessory_civilian_kevlar_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрный защитный жилет для гражданского использования."
+  description: humanity-construction-civ13_accessory_civilian_kevlar_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/civilianvest.rsi
     state: icon
@@ -6479,13 +6479,13 @@
   - node: end
     entity: civ13_accessory_civilian_kevlar_vest
 - type: construction
-  name: "бронежилет прессы"
+  name: humanity-construction-civ13_accessory_Press_kevlar_vest-name
   id: civ13_accessory_Press_kevlar_vest
   graph: civ13_accessory_Press_kevlar_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий кевларовый жилет с надписью «PRESS» на груди."
+  description: humanity-construction-civ13_accessory_Press_kevlar_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/press_kevlarvest.rsi
     state: icon
@@ -6506,13 +6506,13 @@
   - node: end
     entity: civ13_accessory_Press_kevlar_vest
 - type: construction
-  name: "жилет охраны «Бейли»"
+  name: humanity-construction-civ13_accessory_baily_vest-name
   id: civ13_accessory_baily_vest
   graph: civ13_accessory_baily_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защитный жилет сотрудников службы безопасности «Бейли»."
+  description: humanity-construction-civ13_accessory_baily_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/bailyvest.rsi
     state: icon
@@ -6533,13 +6533,13 @@
   - node: end
     entity: civ13_accessory_baily_vest
 - type: construction
-  name: "тяжёлый жилет ИОГ B-7"
+  name: humanity-construction-civ13_accessory_IOG_heavy_vest_B_7-name
   id: civ13_accessory_IOG_heavy_vest_B_7
   graph: civ13_accessory_IOG_heavy_vest_B_7
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый защитный жилет из прочных материалов."
+  description: humanity-construction-civ13_accessory_IOG_heavy_vest_B_7-description
   icon:
     sprite: Civ14/Clothing/exported/suits/iogsuit.rsi
     state: icon
@@ -6560,13 +6560,13 @@
   - node: end
     entity: civ13_accessory_IOG_heavy_vest_B_7
 - type: construction
-  name: "стальная кираса"
+  name: humanity-construction-civ13_accessory_Breastplate_body_armor-name
   id: civ13_accessory_Breastplate_body_armor
   graph: civ13_accessory_Breastplate_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Носимый доспех из стальных пластин."
+  description: humanity-construction-civ13_accessory_Breastplate_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/modern_platearmor.rsi
     state: icon
@@ -6587,13 +6587,13 @@
   - node: end
     entity: civ13_accessory_Breastplate_body_armor
 - type: construction
-  name: "лёгкая стальная кираса"
+  name: humanity-construction-civ13_accessory_Light_breastplate_body_armor-name
   id: civ13_accessory_Light_breastplate_body_armor
   graph: civ13_accessory_Light_breastplate_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий нагрудный доспех из стальных пластин."
+  description: humanity-construction-civ13_accessory_Light_breastplate_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/modern_armorvest.rsi
     state: icon
@@ -6614,13 +6614,13 @@
   - node: end
     entity: civ13_accessory_Light_breastplate_body_armor
 - type: construction
-  name: "свинцовая кираса"
+  name: humanity-construction-civ13_accessory_Lead_breastplate_body_armor-name
   id: civ13_accessory_Lead_breastplate_body_armor
   graph: civ13_accessory_Lead_breastplate_body_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нагрудный доспех из стальных пластин и свинца."
+  description: humanity-construction-civ13_accessory_Lead_breastplate_body_armor-description
   icon:
     sprite: Civ14/Clothing/exported/ties/modern_blackvest.rsi
     state: icon
@@ -6641,13 +6641,13 @@
   - node: end
     entity: civ13_accessory_Lead_breastplate_body_armor
 - type: construction
-  name: "белая перевязь"
+  name: humanity-construction-civ13_accessory_White_Sash-name
   id: civ13_accessory_White_Sash
   graph: civ13_accessory_White_Sash
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белая перевязь японской бригады «Белая перевязь»."
+  description: humanity-construction-civ13_accessory_White_Sash-description
   icon:
     sprite: Civ14/Clothing/exported/ties/sash.rsi
     state: icon
@@ -6668,13 +6668,13 @@
   - node: end
     entity: civ13_accessory_White_Sash
 - type: construction
-  name: "воротник-жабо"
+  name: humanity-construction-civ13_accessory_neck_ruffle-name
   id: civ13_accessory_neck_ruffle
   graph: civ13_accessory_neck_ruffle
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Мягкий пышный воротник вокруг шеи."
+  description: humanity-construction-civ13_accessory_neck_ruffle-description
   icon:
     sprite: Civ14/Clothing/exported/ties/ruffle_neck.rsi
     state: icon
@@ -6695,13 +6695,13 @@
   - node: end
     entity: civ13_accessory_neck_ruffle
 - type: construction
-  name: "подтяжки"
+  name: humanity-construction-civ13_accessory_suspenders-name
   id: civ13_accessory_suspenders
   graph: civ13_accessory_suspenders
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные подтяжки."
+  description: humanity-construction-civ13_accessory_suspenders-description
   icon:
     sprite: Civ14/Clothing/exported/ties/suspenders1.rsi
     state: icon
@@ -6722,13 +6722,13 @@
   - node: end
     entity: civ13_accessory_suspenders
 - type: construction
-  name: "тёмные подтяжки"
+  name: humanity-construction-civ13_accessory_dark_suspenders-name
   id: civ13_accessory_dark_suspenders
   graph: civ13_accessory_dark_suspenders
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Подтяжки из тёмной кожи."
+  description: humanity-construction-civ13_accessory_dark_suspenders-description
   icon:
     sprite: Civ14/Clothing/exported/ties/suspenders2.rsi
     state: icon
@@ -6749,13 +6749,13 @@
   - node: end
     entity: civ13_accessory_dark_suspenders
 - type: construction
-  name: "привязные ремни японского лётчика"
+  name: humanity-construction-civ13_accessory_Japanese_pilot_harness-name
   id: civ13_accessory_Japanese_pilot_harness
   graph: civ13_accessory_Japanese_pilot_harness
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Ремни, которыми лётчик пристёгивается в самолёте."
+  description: humanity-construction-civ13_accessory_Japanese_pilot_harness-description
   icon:
     sprite: Civ14/Clothing/exported/ties/jap_harn.rsi
     state: icon

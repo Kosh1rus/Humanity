@@ -17,11 +17,10 @@ namespace Content.Server.Weather;
 /// <summary>
 /// System responsible for emitting heat to nearby tiles when a light source is active.
 /// </summary>
-public sealed class HeatEmitterSystem : EntitySystem
+public sealed partial class HeatEmitterSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
-    [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private AtmosphereSystem _atmosphere = default!;
 
     private float _lastUpdateTime;
 
@@ -55,12 +54,10 @@ public sealed class HeatEmitterSystem : EntitySystem
             if (gridUid == null || !TryComp<MapGridComponent>(gridUid.Value, out var grid))
                 continue;
 
-            var position = transform.Coordinates;
-            var tileIndices = grid.WorldToTile(position.Position);
 
             var tileMixture = _atmosphere.GetContainingMixture(uid, true);
 
-            if (tileMixture != null && tileMixture.Temperature != null)
+            if (tileMixture != null)
             {
                 var currentTemp = tileMixture.Temperature;
 

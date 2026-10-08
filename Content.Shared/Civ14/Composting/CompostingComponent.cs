@@ -1,6 +1,5 @@
 using Robust.Shared.GameObjects;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
 using System.Collections.Generic;
 using Content.Shared.Tag;
 
@@ -12,7 +11,7 @@ public sealed partial class CompostingComponent : Component
     /// <summary>
     /// List of tags allowed for composting (e.g., "Fruit", "Egg", "Meat").
     /// </summary>
-    [DataField("whitelist", customTypeSerializer: typeof(PrototypeIdListSerializer<TagPrototype>))]
+    [DataField("whitelist")]
     public List<string> Whitelist = new();
 
     /// <summary>

@@ -1,28 +1,28 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 96,
-    "y": 96
-  },
-  "states": [
-    {
-      "name": "",
-      "delays": [
-        [
-          0.120000005,
-          0.120000005,
-          0.120000005,
-          0.120000005
-        ]
-      ]
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 96,
+        "y": 96
     },
-    {
-      "name": "cable_h"
-    },
-    {
-      "name": "cable_v"
-    }
-  ]
+    "states": [
+        {
+            "name": "unused-blank",
+            "delays": [
+                [
+                    0.120000005,
+                    0.120000005,
+                    0.120000005,
+                    0.120000005
+                ]
+            ]
+        },
+        {
+            "name": "cable_h"
+        },
+        {
+            "name": "cable_v"
+        }
+    ]
 }

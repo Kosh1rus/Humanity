@@ -20,23 +20,20 @@ namespace Content.Server.Weather;
 /// <summary>
 /// System responsible for managing dynamic weather changes and temperature adjustments for exposed tiles in a grid.
 /// </summary>
-public sealed class WeatherNomadsSystem : EntitySystem
+public sealed partial class WeatherNomadsSystem : EntitySystem
 {
     // Dependencies injected via IoC
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly SharedWeatherSystem _weatherSystem = default!;
-    [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
-    [Dependency] private readonly SharedRoofSystem _roofSystem = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileDefManager = default!;
-    [Dependency] private readonly SharedMapSystem _mapSystem = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private SharedWeatherSystem _weatherSystem = default!;
+    [Dependency] private SharedMapSystem _mapManager = default!;
+    [Dependency] private SharedRoofSystem _roofSystem = default!;
+    [Dependency] private ITileDefinitionManager _tileDefManager = default!;
+    [Dependency] private ChatSystem _chat = default!;
 
     /// <summary>
     /// Structure representing properties of a weather type.
     /// </summary>
-    private class WeatherType
+    private sealed class WeatherType
     {
         public string? PrototypeId { get; set; } // ID of the weather prototype, null for "Clear"
         public int Weight { get; set; }          // Weight for weather transition order (unused now, kept for compatibility)
@@ -293,7 +290,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
                 nomads.NextSeasonChange = _timing.CurTime + TimeSpan.FromMinutes(GetRandomSeasonDuration(nomads));
                 Dirty(uid, nomads);
                 _chat.DispatchGlobalAnnouncement($"Новый сезон: {GetSeasonName(nomads.CurrentSeason)}.", null, false, null, null);
-                Log.Debug($"Season changed from {oldSeason} to {nomads.CurrentSeason} for entity {uid}, triggering UpdateTileWeathers");
                 UpdateTileWeathers(uid, nomads);
             }
 
@@ -307,7 +303,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
             nomads.CurrentPrecipitation = GetNextPrecipitation(nomads.CurrentPrecipitation);
             nomads.NextSwitchTime = _timing.CurTime + TimeSpan.FromMinutes(GetRandomPrecipitationDuration(nomads));
             Dirty(uid, nomads);
-            Log.Debug($"Precipitation changed from {oldPrecipitation} to {nomads.CurrentPrecipitation} for entity {uid}, triggering UpdateTileWeathers");
             UpdateTileWeathers(uid, nomads);
         }
     }
@@ -318,7 +313,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
     /// </summary>
     private void UpdateTileWeathers(EntityUid uid, WeatherNomadsComponent nomads)
     {
-        Log.Debug($"Starting UpdateTileWeathers for entity {uid}, season: {nomads.CurrentSeason}");
         var mapId = Transform(uid).MapID;
         var gridUid = GetGridUidForMap(mapId);
         if (gridUid == null)
@@ -326,7 +320,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
             Log.Warning($"No grid found for map {mapId}");
             return;
         }
-        Log.Debug($"Grid found for map {mapId}: {gridUid}");
 
         if (!TryComp<MapGridComponent>(gridUid.Value, out var grid))
         {
@@ -348,7 +341,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
             Log.Warning($"No transformation rules defined for season {nomads.CurrentSeason}");
             transformationRules = (TileTransformations: new Dictionary<string, string>(), EntityTransformations: new Dictionary<string, string>());
         }
-        Log.Debug($"Transformation rules retrieved for season {nomads.CurrentSeason}: {transformationRules.TileTransformations.Count} tile rules, {transformationRules.EntityTransformations.Count} entity rules");
 
         var tileTransformationDictionary = transformationRules.TileTransformations;
         var entityTransformationDictionary = transformationRules.EntityTransformations;
@@ -356,10 +348,9 @@ public sealed class WeatherNomadsSystem : EntitySystem
         // Apply tile transformations only if there are rules defined
         if (tileTransformationDictionary.Count > 0)
         {
-            Log.Debug($"Processing {gridAtmosphere.Tiles.Count} tiles for transformation in season {nomads.CurrentSeason}");
             foreach (var tile in gridAtmosphere.Tiles.Values)
             {
-                var tileRef = grid.GetTileRef(tile.GridIndices);
+                var tileRef = _mapManager.GetTileRef(gridUid.Value, grid, tile.GridIndices);
                 if (tileRef.Tile.IsEmpty)
                 {
                     continue; // Skip empty tiles
@@ -374,8 +365,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
                     }
                     var newTileDefinition = _tileDefManager[transformedTileName];
                     var newTile = new Tile(newTileDefinition.TileId);
-                    grid.SetTile(tileRef.GridIndices, newTile);
-                    Log.Debug($"Transformed tile at {tileRef.GridIndices} from {tileDef.ID} to {transformedTileName} for season {nomads.CurrentSeason}");
+                    _mapManager.SetTile(gridUid.Value, grid, tileRef.GridIndices, newTile);
                 }
 
                 // Get biome from tile definition
@@ -397,14 +387,12 @@ public sealed class WeatherNomadsSystem : EntitySystem
         }
         else
         {
-            Log.Debug($"No tile transformations defined for season {nomads.CurrentSeason}, processing {gridAtmosphere.Tiles.Count} tiles for weather effects only");
             // If no tile transformations, just apply weather effects
             foreach (var tile in gridAtmosphere.Tiles.Values)
             {
-                var tileRef = grid.GetTileRef(tile.GridIndices);
+                var tileRef = _mapManager.GetTileRef(gridUid.Value, grid, tile.GridIndices);
                 if (tileRef.Tile.IsEmpty)
                 {
-                    Log.Debug($"Skipping empty tile at {tileRef.GridIndices}");
                     continue; // Skip empty tiles
                 }
 
@@ -430,12 +418,10 @@ public sealed class WeatherNomadsSystem : EntitySystem
         // Apply entity transformations only if there are rules defined
         if (entityTransformationDictionary.Count > 0)
         {
-            Log.Debug($"Calling TransformEntitiesOnGrid for {entityTransformationDictionary.Count} entity transformation rules in season {nomads.CurrentSeason}");
             TransformEntitiesOnGrid(gridUid.Value, nomads, entityTransformationDictionary);
         }
         else
         {
-            Log.Debug($"No entity transformations defined for season {nomads.CurrentSeason}, skipping TransformEntitiesOnGrid");
         }
     }
 
@@ -467,15 +453,9 @@ public sealed class WeatherNomadsSystem : EntitySystem
 
         // Apply weather visuals globally
         var mapId = Transform(gridUid).MapID;
-        if (!string.IsNullOrEmpty(weatherData.PrototypeId) &&
-            _prototypeManager.TryIndex<WeatherPrototype>(weatherData.PrototypeId, out var proto))
-        {
-            _weatherSystem.SetWeather(mapId, proto, null);
-        }
-        else
-        {
-            _weatherSystem.SetWeather(mapId, null, null);
-        }
+        EntProtoId? visual = string.IsNullOrEmpty(weatherData.PrototypeId) || weatherData.PrototypeId == "Clear"
+            ? (EntProtoId?) null : new EntProtoId("Weather" + weatherData.PrototypeId);
+        _weatherSystem.TrySetWeather(mapId, visual, out _);
 
         // Adjust temperature
         var temperature = (float)(weatherData.MinTemperature +
@@ -497,23 +477,19 @@ public sealed class WeatherNomadsSystem : EntitySystem
     {
         if (TryComp<MapGridComponent>(gridUid, out var gridComp))
         {
-            Log.Debug($"TransformEntitiesOnGrid: MapGridComponent found for grid {gridUid}");
-            var anchoredEntities = EntityQuery<TransformComponent>()
+            var anchoredEntities = EntityQuery<TransformComponent>(includePaused: true)
                 .Where(t => t.GridUid == gridUid && t.Anchored)
                 .Select(t => t.Owner)
                 .ToList();
-            Log.Debug($"Found {anchoredEntities.Count} anchored entities on grid {gridUid}");
 
             foreach (var entity in anchoredEntities)
             {
-                if (!TryComp<MetaDataComponent>(entity, out var metaData))
+                if (!TryComp(entity, out MetaDataComponent? metaData))
                 {
-                    Log.Debug($"Entity {entity} has no MetaDataComponent");
                     continue;
                 }
                 if (metaData.EntityPrototype == null)
                 {
-                    Log.Debug($"Entity {entity} has no EntityPrototype");
                     continue;
                 }
                 if (!entityTransformationDictionary.TryGetValue(metaData.EntityPrototype.ID, out var transformedEntityPrototypeId))
@@ -531,7 +507,6 @@ public sealed class WeatherNomadsSystem : EntitySystem
 
                 QueueDel(entity);
                 var newEntity = Spawn(transformedEntityPrototypeId, entityCoordinates);
-                Log.Debug($"Transformed entity {entity} to {newEntity} at {entityCoordinates} for season {nomads.CurrentSeason}");
             }
         }
         else
@@ -588,7 +563,7 @@ public sealed class WeatherNomadsSystem : EntitySystem
         if (!tileDef.Weather)
             return false;
 
-        var anchoredEntities = _mapSystem.GetAnchoredEntitiesEnumerator(gridUid, grid, tileRef.GridIndices);
+        var anchoredEntities = _mapManager.GetAnchoredEntitiesEnumerator(gridUid, grid, tileRef.GridIndices);
         while (anchoredEntities.MoveNext(out var ent))
         {
             if (HasComp<BlockWeatherComponent>(ent.Value))

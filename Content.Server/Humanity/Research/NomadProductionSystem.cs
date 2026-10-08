@@ -8,10 +8,10 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server.Humanity.Research;
 
-public sealed class NomadProductionSystem : EntitySystem
+public sealed partial class NomadProductionSystem : EntitySystem
 {
-    [Dependency] private readonly IPrototypeManager _prototypes = default!;
-    [Dependency] private readonly LatheSystem _lathes = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private LatheSystem _lathes = default!;
     private float _elapsed;
     private readonly Dictionary<EntityUid, int> _ages = new();
 
@@ -23,7 +23,7 @@ public sealed class NomadProductionSystem : EntitySystem
 
     private void OnRecipes(EntityUid uid, NomadEraLatheComponent component, LatheGetRecipesEvent args)
     {
-        if (args.getUnavailable)
+        if (args.GetUnavailable)
             return;
         if (!TryComp<CivResearchComponent>(Transform(uid).MapUid, out var research) || research.IsTDM)
             return;

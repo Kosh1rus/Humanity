@@ -1,24 +1,24 @@
 {
-  "version": 1,
-  "license": "AGPLv3",
-  "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
-  "size": {
-    "x": 64,
-    "y": 128
-  },
-  "states": [
-    {
-      "name": "",
-      "delays": [
-        [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1
-        ]
-      ]
-    }
-  ]
+    "version": 1,
+    "license": "AGPLv3",
+    "copyright": "Taken from Civilization 13 https://github.com/civ13/civ13",
+    "size": {
+        "x": 64,
+        "y": 128
+    },
+    "states": [
+        {
+            "name": "unused-blank",
+            "delays": [
+                [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            ]
+        }
+    ]
 }

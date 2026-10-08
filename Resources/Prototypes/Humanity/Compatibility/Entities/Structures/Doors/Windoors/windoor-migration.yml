@@ -1,0 +1,112 @@
+- type: entity
+  parent: Windoor
+  id: WindoorSyndicateLocked
+  suffix: Syndicate, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsSyndicateAgent
+- type: entity
+  parent: Windoor
+  id: WindoorServiceLocked
+  suffix: Service, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsService
+  - type: Wires
+    layoutId: AirlockService
+- type: entity
+  parent: Windoor
+  id: WindoorNukeopLocked
+  suffix: Nukeop, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsNukeop
+- type: entity
+  parent: WindoorServiceLocked
+  id: WindoorKitchenLocked
+  suffix: Kitchen, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsKitchen
+- type: entity
+  parent: WindoorServiceLocked
+  id: WindoorJanitorLocked
+  suffix: Janitor, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsJanitor
+- type: entity
+  parent: Windoor
+  id: WindoorChapelLocked
+  suffix: Chapel, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsChapel
+- type: entity
+  parent: WindoorServiceLocked
+  id: WindoorBarLocked
+  suffix: Bar, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsBar
+- type: entity
+  parent: WindoorUranium
+  id: UraniumWindoorSyndicateLocked
+  suffix: Syndicate, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsSyndicateAgent
+- type: entity
+  parent: WindoorUranium
+  id: UraniumWindoorNukeopLocked
+  suffix: Nukeop, Locked, Uranium
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsNukeop
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorSyndicateLocked
+  suffix: Syndicate, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsSyndicateAgent
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorNukeopLocked
+  suffix: Nukeop, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsNukeop
+- type: entity
+  parent: WindoorPlasma
+  id: PlasmaWindoorJanitorLocked
+  suffix: Janitor, Locked, Plasma
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsJanitor
+  - type: Wires
+    layoutId: AirlockService

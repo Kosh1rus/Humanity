@@ -86,3 +86,7 @@ gun-speedloader-empty = Спидлоадер пуст
 
 gun-clumsy = Оружие взрывается прямо перед вашим лицом!
 gun-set-fire-mode = Режим стрельбы: {$mode}
+gun-set-fire-mode-examine = Режим огня: [color=yellow]{$mode}[/color].
+gun-set-fire-mode-popup = Выбран режим: {$mode}
+examine-gun-spread-modifier-reduction = Разброс уменьшен на [color=yellow]{$percentage}%[/color].
+examine-gun-spread-modifier-increase = Разброс увеличен на [color=yellow]{$percentage}%[/color].

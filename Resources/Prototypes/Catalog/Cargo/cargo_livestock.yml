@@ -7,7 +7,6 @@
   cost: 7000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockButterfly
   icon:
@@ -17,7 +16,6 @@
   cost: 4400
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockCat
   icon:
@@ -27,7 +25,6 @@
   cost: 1200
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockChicken
   icon:
@@ -37,7 +34,6 @@
   cost: 4000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockCrab
   icon:
@@ -47,7 +43,6 @@
   cost: 3000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockDuck
   icon:
@@ -57,7 +52,6 @@
   cost: 4000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockCorgi
   icon:
@@ -67,7 +61,6 @@
   cost: 1200
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockPupCorgi
   icon:
@@ -77,7 +70,6 @@
   cost: 1200
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockCow
   icon:
@@ -87,7 +79,6 @@
   cost: 3200
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockGoat
   icon:
@@ -97,7 +88,6 @@
   cost: 1200
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockGoose
   icon:
@@ -107,7 +97,6 @@
   cost: 2100
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockGorilla
   icon:
@@ -117,27 +106,42 @@
   cost: 1100
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockMonkeyCube
   icon:
     sprite: Objects/Misc/monkeycube.rsi
     state: box
-  product: CrateNPCMonkeyCube
+  product: MonkeyCubeBox
+  container:
+    entity: WrappedParcel
+    containerId: contents
   cost: 2000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockKoboldCube
   icon:
     sprite: Objects/Misc/monkeycube.rsi
     state: box_kobold
-  product: CrateNPCKoboldCube
+  product: KoboldCubeBox
+  container:
+    entity: WrappedParcel
+    containerId: contents
   cost: 2000
   category: cargoproduct-category-name-livestock
   group: market
-
+- type: cargoProduct
+  id: LivestockSlimeCube
+  icon:
+    sprite: Objects/Misc/monkeycube.rsi
+    state: box_slime
+  product: SlimeCubeBox
+  container:
+    entity: WrappedParcel
+    containerId: contents
+  cost: 2000
+  category: cargoproduct-category-name-livestock
+  group: market
 - type: cargoProduct
   id: LivestockMouse
   icon:
@@ -147,17 +151,15 @@
   cost: 4400
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockParrot
   icon:
-    sprite: Mobs/Animals/parrot.rsi
+    sprite: Mobs/Animals/parrot/parrot.rsi
     state: parrot
   product: CrateNPCParrot
   cost: 3000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockPenguin
   icon:
@@ -167,7 +169,6 @@
   cost: 2100
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockPig
   icon:
@@ -177,7 +178,15 @@
   cost: 1100
   category: cargoproduct-category-name-livestock
   group: market
-
+- type: cargoProduct
+  id: LivestockSheep
+  icon:
+    sprite: Mobs/Animals/sheep.rsi
+    state: icon
+  product: CrateNPCSheep
+  cost: 1300
+  category: cargoproduct-category-name-livestock
+  group: market
 - type: cargoProduct
   id: LivestockSnake
   icon:
@@ -187,7 +196,6 @@
   cost: 3000
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockHamster
   icon:
@@ -197,7 +205,6 @@
   cost: 2800
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockLizard
   icon:
@@ -207,7 +214,6 @@
   cost: 1100
   category: cargoproduct-category-name-livestock
   group: market
-
 - type: cargoProduct
   id: LivestockKangaroo
   icon:

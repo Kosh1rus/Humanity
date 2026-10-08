@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Slimes
-  name: "slimes"
+  name: slimes
   root: torso
   slots:
     torso:

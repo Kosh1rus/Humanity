@@ -12,11 +12,11 @@ namespace Content.Server.Farming
 {
     public sealed partial class SharedPloughingSystem : EntitySystem
     {
-        [Dependency] private readonly SharedTransformSystem _transform = default!;
-        [Dependency] private readonly SharedMapSystem _map = default!;
-        [Dependency] private readonly ITileDefinitionManager _tileManager = default!;
-        [Dependency] private readonly DoAfterSystem _doAfter = default!;
-        [Dependency] private readonly SharedPopupSystem _popup = default!;
+        [Dependency] private SharedTransformSystem _transform = default!;
+        [Dependency] private SharedMapSystem _map = default!;
+        [Dependency] private ITileDefinitionManager _tileManager = default!;
+        [Dependency] private DoAfterSystem _doAfter = default!;
+        [Dependency] private SharedPopupSystem _popup = default!;
 
         public override void Initialize()
         {
@@ -62,7 +62,7 @@ namespace Content.Server.Farming
             }
 
             // Get tile coords
-            var snapPos = grid.TileIndicesFor(clickLocation);
+            var snapPos = _map.TileIndicesFor(gridUid.Value, grid, clickLocation);
             var tileRef = _map.GetTileRef(gridUid.Value, grid, snapPos);
             var tileDef = (ContentTileDefinition)_tileManager[tileRef.Tile.TypeId];
 
@@ -111,7 +111,7 @@ namespace Content.Server.Farming
                 return;
 
             var snapPos = args.SnapPos;
-            var coordinates = grid.GridTileToLocal(snapPos);
+            var coordinates = _map.GridTileToLocal(gridUid, grid, snapPos);
 
             if (args.ActionType == PloughActionType.Plough)
             {

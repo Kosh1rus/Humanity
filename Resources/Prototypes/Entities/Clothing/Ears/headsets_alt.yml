@@ -1,11 +1,49 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: ClothingHeadset
   id: ClothingHeadsetAlt
   name: headset
   description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
-    - type: Sprite
-      state: icon_alt
-    - type: Clothing
-      equippedPrefix: alt
+  - type: Sprite
+    state: icon_alt
+  - type: Clothing
+    equippedPrefix: alt
+- type: entity
+  parent:
+  - ClothingHeadsetAlt
+  - BaseCommandContraband
+  id: ClothingHeadsetAltMedical
+  name: chief medical officer's over-ear headset
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyMedical
+      - EncryptionKeyCommand
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/medical.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/medical.rsi
+  - type: StealTarget
+    stealGroup:
+    - ClothingHeadsetAltMedical
+- type: entity
+  parent:
+  - ClothingHeadsetAlt
+  - BaseMagicalContraband
+  id: ClothingHeadsetAltWizard
+  name: wizard's over-ear headset
+  components:
+  - type: Headset
+  - type: EncryptionKeyHolder
+    keySlots: 5
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/wizard.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/wizard.rsi

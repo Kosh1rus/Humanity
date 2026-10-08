@@ -30,14 +30,12 @@ using Robust.Shared.Timing;
 namespace Content.Client.UserInterface.Systems.Faction;
 
 [UsedImplicitly]
-public sealed class FactionUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>
+public sealed partial class FactionUIController : UIController, IOnStateEntered<GameplayState>, IOnStateExited<GameplayState>
 {
-    [Dependency] private readonly IEntityManager _ent = default!;
-    [Dependency] private readonly ILogManager _logMan = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
-    [Dependency] private readonly IClientConsoleHost _consoleHost = default!;
-    [Dependency] private readonly IClientNetManager _netManager = default!;
+    [Dependency] private IEntityManager _ent = default!;
+    [Dependency] private ILogManager _logMan = default!;
+    [Dependency] private IPlayerManager _player = default!;
+    [Dependency] private IClientConsoleHost _consoleHost = default!;
     private PopupSystem? _popupSystem;
 
     // Store the command instance to manage its registration lifecycle

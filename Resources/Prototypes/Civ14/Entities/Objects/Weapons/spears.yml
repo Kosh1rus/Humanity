@@ -157,15 +157,13 @@
       node: end
 
 - type: construction
-  name: копьё ассегай
+  name: humanity-construction-civ13_spear_assagai-name
   id: civ13_spear_assagai
   graph: civ13_spear_assagai
   startNode: start
   targetNode: end
   category: weapons
-  description: >-
-    Длинное деревянное копьё с острым железным наконечником. Излюбленное
-    оружие воинов зулусского народа.
+  description: humanity-construction-civ13_spear_assagai-description
   icon:
     sprite: Civ14/Weapons/assagai.rsi
     state: icon
@@ -187,13 +185,13 @@
     - node: end
       entity: civ13_spear_assagai
 - type: construction
-  name: копьё дору
+  name: humanity-construction-civ13_spear_dory-name
   id: civ13_spear_dory
   graph: civ13_spear_dory
   startNode: start
   targetNode: end
   category: weapons
-  description: Двухметровое копьё, которым пользовались древнегреческие воины.
+  description: humanity-construction-civ13_spear_dory-description
   icon:
     sprite: Civ14/Weapons/dory.rsi
     state: icon
@@ -215,13 +213,13 @@
     - node: end
       entity: civ13_spear_dory
 - type: construction
-  name: сарисса
+  name: humanity-construction-civ13_spear_sarissa-name
   id: civ13_spear_sarissa
   graph: civ13_spear_sarissa
   startNode: start
   targetNode: end
   category: weapons
-  description: Пятиметровое копьё воинов фаланги.
+  description: humanity-construction-civ13_spear_sarissa-description
   icon:
     sprite: Civ14/Weapons/sarissa.rsi
     state: icon
@@ -244,13 +242,13 @@
       entity: civ13_spear_sarissa
 
 - type: construction
-  name: пика
+  name: humanity-construction-civ13_spear_pike-name
   id: civ13_spear_pike
   graph: civ13_spear_pike
   startNode: start
   targetNode: end
   category: weapons
-  description: Длинное копьё.
+  description: humanity-construction-civ13_spear_pike-description
   icon:
     sprite: Civ14/Weapons/pike.rsi
     state: icon
@@ -272,15 +270,13 @@
     - node: end
       entity: civ13_spear_pike
 - type: construction
-  name: нагината
+  name: humanity-construction-civ13_spear_naginata-name
   id: civ13_spear_naginata
   graph: civ13_spear_naginata
   startNode: start
   targetNode: end
   category: weapons
-  description: >-
-    Деревянное древко с клинком на конце. Подойдёт, чтобы проучить того,
-    кто оскорбил вашего господина.
+  description: humanity-construction-civ13_spear_naginata-description
   icon:
     sprite: Civ14/Weapons/naginata.rsi
     state: icon
@@ -302,13 +298,13 @@
     - node: end
       entity: civ13_spear_naginata
 - type: construction
-  name: алебарда
+  name: humanity-construction-civ13_spear_halberd-name
   id: civ13_spear_halberd
   graph: civ13_spear_halberd
   startNode: start
   targetNode: end
   category: weapons
-  description: Древковое оружие с топорным лезвием и остриём.
+  description: humanity-construction-civ13_spear_halberd-description
   icon:
     sprite: Civ14/Weapons/halberd.rsi
     state: icon

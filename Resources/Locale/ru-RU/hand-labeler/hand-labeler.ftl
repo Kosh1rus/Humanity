@@ -8,4 +8,3 @@ hand-labeler-add-label-text = Нанести надпись
 
 
 hand-labeler-current-text-label = Этикетка:
-

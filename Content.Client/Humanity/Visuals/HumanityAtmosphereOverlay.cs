@@ -12,13 +12,13 @@ using Robust.Shared.Graphics;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class HumanityAtmosphereOverlay : Overlay
+public sealed partial class HumanityAtmosphereOverlay : Overlay
 {
-    [Dependency] private readonly IEntityManager _entities = default!;
-    [Dependency] private readonly IPrototypeManager _prototypes = default!;
-    [Dependency] private readonly IClyde _clyde = default!;
-    [Dependency] private readonly IMapManager _maps = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
+    private static readonly ProtoId<ShaderPrototype> AtmosphereShader = "HumanityAtmosphere";
+    [Dependency] private IEntityManager _entities = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private IClyde _clyde = default!;
+    [Dependency] private IGameTiming _timing = default!;
     private readonly ShaderInstance _shader;
     private readonly SharedMapSystem _map;
     private readonly SharedTransformSystem _transforms;
@@ -37,7 +37,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
     public HumanityAtmosphereOverlay()
     {
         IoCManager.InjectDependencies(this);
-        _shader = _prototypes.Index<ShaderPrototype>("HumanityAtmosphere").InstanceUnique();
+        _shader = _prototypes.Index(AtmosphereShader).InstanceUnique();
         _map = _entities.System<SharedMapSystem>();
         _transforms = _entities.System<SharedTransformSystem>();
         _weather = _entities.System<WeatherSystem>();
@@ -46,7 +46,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
 
     protected override bool BeforeDraw(in OverlayDrawArgs args)
     {
-        if (!_entities.TryGetComponent(_maps.GetMapEntityId(args.MapId), out CivResearchComponent? research))
+        if (!_entities.TryGetComponent(_map.GetMap(args.MapId), out CivResearchComponent? research))
             return false;
         _worldWar = research.IsTDM;
         return true;
@@ -80,7 +80,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
 
     public void Disperse(MapCoordinates coordinates, float radius)
     {
-        if (!_entities.TryGetComponent(_maps.GetMapEntityId(coordinates.MapId), out CivResearchComponent? research) ||
+        if (!_entities.TryGetComponent(_map.GetMap(coordinates.MapId), out CivResearchComponent? research) ||
             !research.IsTDM)
             return;
         if (_blasts.Count >= _blastAges.Length)
@@ -91,7 +91,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
     private void UpdateBlasts(MapId map)
     {
         _blasts.RemoveAll(blast => (_timing.RealTime - blast.Started).TotalSeconds >= 8 ||
-            !_maps.MapExists(blast.Coordinates.MapId));
+            !_map.MapExists(blast.Coordinates.MapId));
         Array.Fill(_blastAges, -1f);
         var index = 0;
         foreach (var blast in _blasts)
@@ -115,7 +115,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
                 new TextureSampleParameters { Filter = true }, name: "humanity-fog-roofs");
         }
         _grids.Clear();
-        _maps.FindGridsIntersecting(args.MapId, args.WorldAABB, ref _grids);
+        _map.FindGridsIntersecting(args.MapId, args.WorldAABB, ref _grids);
         var handle = args.WorldHandle;
         var bounds = args.WorldAABB;
         var invMatrix = args.Viewport.GetWorldToLocalMatrix();
@@ -128,7 +128,7 @@ public sealed class HumanityAtmosphereOverlay : Overlay
                 _entities.TryGetComponent(grid.Owner, out RoofComponent? roof);
                 foreach (var tile in _map.GetTilesIntersecting(grid.Owner, grid, bounds))
                 {
-                    if (_weather.CanWeatherAffect(grid.Owner, grid, tile, roof))
+                    if (_weather.CanWeatherAffect((grid.Owner, grid.Comp, roof), tile))
                         continue;
                     handle.DrawRect(new Box2(tile.GridIndices * grid.Comp.TileSize,
                         (tile.GridIndices + Vector2i.One) * grid.Comp.TileSize), Color.White);

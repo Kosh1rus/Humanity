@@ -46,6 +46,10 @@
         {
             "name": "nebelwerfer",
             "directions": 4
+        },
+        {
+            "name": "feldkanone18X",
+            "directions": 4
         }
     ]
 }

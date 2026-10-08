@@ -1,11 +1,11 @@
 - type: construction
-  name: "деревянная вывеска"
+  name: humanity-construction-SignCustom-name
   id: SignCustom
   graph: SignCustom
   startNode: start
   targetNode: end
   category: construction-category-furniture
-  description: "Деревянную вывеску можно расписать кистью."
+  description: humanity-construction-SignCustom-description
   icon: { sprite: "Civ14/Objects/decals.rsi", state: woodsign2 }
   objectType: Structure
   agemin: 0

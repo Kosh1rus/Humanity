@@ -1,4 +1,4 @@
-﻿changecvar-simple-debug_test_cvar = Does nothing.
+changecvar-simple-debug_test_cvar = Does nothing.
 changecvar-full-debug_test_cvar = Just a simple testing cvar. Does nothing.
 
 changecvar-simple-events_enabled = Controls if the game should run station events.
@@ -27,3 +27,7 @@ changecvar-simple-playtest_reagent_heal_modifier = Multiplier affecting reagent 
 changecvar-full-playtest_reagent_heal_modifier = Multiplier affecting all healing done by reagents.
 changecvar-simple-playtest_explosion_damage_modifier = Multiplier affecting explosion damage.
 changecvar-full-playtest_explosion_damage_modifier = Multiplier affecting all damage dealt by explosives.
+changecvar-simple-playtest_stamina_damage_modifier = Multiplier affecting stamina damage.
+changecvar-full-playtest_stamina_damage_modifier = Multiplier affecting all stamina damage dealt.
+changecvar-simple-playtest_mob_damage_modifier = Multiplier affecting all damage dealt to mobs.
+changecvar-full-playtest_mob_damage_modifier = Multiplier affecting all damage dealt to entities with MobStateComponent.

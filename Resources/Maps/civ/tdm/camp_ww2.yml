@@ -33,9 +33,7 @@ entities:
       ambientLightColor: '#D8E0E4FF'
     - type: Map
       mapPaused: True
-    - type: PhysicsMap
     - type: GridTree
-    - type: MovedGrids
     - type: Broadphase
     - type: OccluderTree
     - type: CivResearch
@@ -208,7 +206,6 @@ entities:
     - type: Shuttle
     - type: SunShadow
     - type: GridPathfinding
-    - type: Weather
       weather: {}
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier

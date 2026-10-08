@@ -71,4 +71,3 @@ network-configurator-examine-switch-modes = Нажмите { $key } чтобы �
 
 network-configurator-item-status-label = Режим: { $mode }
     Переключить: { $keybinding }
-

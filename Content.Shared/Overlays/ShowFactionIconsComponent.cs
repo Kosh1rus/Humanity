@@ -1,6 +1,5 @@
 using Content.Shared.StatusIcon;
 using Robust.Shared.GameStates;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Overlays;
 
@@ -14,12 +13,12 @@ public sealed partial class ShowFactionIconsComponent : Component
     /// <summary>
     /// The faction icon to display
     /// </summary>
-    [DataField("factionIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>)), AutoNetworkedField]
+    [DataField("factionIcon"), AutoNetworkedField]
     public string FactionIcon { get; set; } = "HostileFaction";
     /// <summary>
     /// The job icon to display (if any)
     /// </summary>
-    [DataField("jobIcon", customTypeSerializer: typeof(PrototypeIdSerializer<JobIconPrototype>)), AutoNetworkedField]
+    [DataField("jobIcon"), AutoNetworkedField]
     public string JobIcon { get; set; } = "JobIconSoldier";
     /// <summary>
     /// If this role is part of one of the squads
@@ -29,7 +28,7 @@ public sealed partial class ShowFactionIconsComponent : Component
     /// <summary>
     /// The specific squad icon (e.g., "JobIconSquadAlphaSergeant") assigned by the server.
     /// </summary>
-    [DataField("squadIcon", customTypeSerializer: typeof(PrototypeIdSerializer<JobIconPrototype>)), AutoNetworkedField]
+    [DataField("squadIcon"), AutoNetworkedField]
     public string? SquadIcon { get; set; }
 
     /// <summary>

@@ -19,15 +19,15 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.GameTicking.Rules;
 
-public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRuleComponent>
+public sealed partial class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRuleComponent>
 {
-    [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly KillTrackingSystem _kills = default!;
-    [Dependency] private readonly FactionIconsSystem _factionIcons = default!;
-    [Dependency] private readonly RoundEndSystem _roundEnd = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly AlertsSystem _alerts = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!;
+    [Dependency] private IPlayerManager _players = default!;
+    [Dependency] private KillTrackingSystem _kills = default!;
+    [Dependency] private FactionIconsSystem _factionIcons = default!;
+    [Dependency] private RoundEndSystem _roundEnd = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private AlertsSystem _alerts = default!;
+    [Dependency] private MovementSpeedModifierSystem _movement = default!;
 
     public override void Initialize()
     {
@@ -48,7 +48,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             }
         }
         if (component.RoundDuration > 0)
-            _chat.DispatchGlobalAnnouncement("Задача - захватить центр карты. Подкрепления будут каждые 2 минуты, а сам бой длится 45 минут.", "Штаб", false, null, Color.Yellow);
+            _chat.DispatchGlobalAnnouncement("Р—Р°РґР°С‡Р° - Р·Р°С…РІР°С‚РёС‚СЊ С†РµРЅС‚СЂ РєР°СЂС‚С‹. РџРѕРґРєСЂРµРїР»РµРЅРёСЏ Р±СѓРґСѓС‚ РєР°Р¶РґС‹Рµ 2 РјРёРЅСѓС‚С‹, Р° СЃР°Рј Р±РѕР№ РґР»РёС‚СЃСЏ 45 РјРёРЅСѓС‚.", "РЁС‚Р°Р±", false, null, Color.Yellow);
     }
 
     public override void Update(float frameTime)
@@ -59,7 +59,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var match, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule) || match.RoundDuration <= 0 || match.TimedOut)
+            if (!GameTicker.IsGameRuleActive((uid, rule)) || match.RoundDuration <= 0 || match.TimedOut)
                 continue;
             match.Elapsed += frameTime;
             if (match.Elapsed < match.RoundDuration)
@@ -68,9 +68,9 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
             match.WinnerTeam = match.Team1Kills > match.Team2Kills ? match.Team1 :
                 match.Team2Kills > match.Team1Kills ? match.Team2 : "";
             var message = match.WinnerTeam == ""
-                ? "Время боя истекло. Равный счёт — ничья."
-                : $"Время боя истекло. По числу убийств противника побеждает {BattleFactionNames.Get(match.WinnerTeam)}.";
-            _chat.DispatchGlobalAnnouncement(message, "Штаб", false, null, Color.Yellow);
+                ? "Р’СЂРµРјСЏ Р±РѕСЏ РёСЃС‚РµРєР»Рѕ. Р Р°РІРЅС‹Р№ СЃС‡С‘С‚ вЂ” РЅРёС‡СЊСЏ."
+                : $"Р’СЂРµРјСЏ Р±РѕСЏ РёСЃС‚РµРєР»Рѕ. РџРѕ С‡РёСЃР»Сѓ СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° РїРѕР±РµР¶РґР°РµС‚ {BattleFactionNames.Get(match.WinnerTeam)}.";
+            _chat.DispatchGlobalAnnouncement(message, "РЁС‚Р°Р±", false, null, Color.Yellow);
             _roundEnd.EndRound();
             return;
         }
@@ -81,7 +81,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var match, out var rule))
         {
-            if (GameTicker.IsGameRuleActive(uid, rule))
+            if (GameTicker.IsGameRuleActive((uid, rule)))
                 match.WinnerTeam = faction;
         }
     }
@@ -91,7 +91,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         var nutritionRules = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
         while (nutritionRules.MoveNext(out var ruleUid, out var nutritionRule, out var gameRule))
         {
-            if (!nutritionRule.DisableNutrition || !GameTicker.IsGameRuleAdded(ruleUid, gameRule))
+            if (!nutritionRule.DisableNutrition || !GameTicker.IsGameRuleAdded((ruleUid, gameRule)))
                 continue;
             DisableNutrition(args.Mob);
             break;
@@ -104,7 +104,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var match, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
             if (match.Team1 == "")
                 match.Team1 = team;
@@ -124,12 +124,9 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
 
     private void DisableNutrition(EntityUid body)
     {
-        RemComp<HungerComponent>(body);
-        if (TryComp<ThirstComponent>(body, out var thirst))
-        {
-            _alerts.ClearAlertCategory(body, thirst.ThirstyCategory);
-            RemComp<ThirstComponent>(body);
-        }
+        RemComp<Content.Shared.Nutrition.Components.SatiationComponent>(body);
+        _alerts.ClearAlertCategory(body, "Hunger");
+        _alerts.ClearAlertCategory(body, "Thirst");
         _movement.RefreshMovementSpeedModifiers(body);
     }
 
@@ -149,7 +146,7 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         var query = EntityQueryEnumerator<TeamDeathMatchRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var match, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
             var victimTeam = GetTeam(args.Entity, match);
             if (victimTeam == "")
@@ -203,21 +200,22 @@ public sealed class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathMatchRule
         }
     }
 
-    protected override void AppendRoundEndText(EntityUid uid, TeamDeathMatchRuleComponent match, GameRuleComponent rule, ref RoundEndTextAppendEvent args)
+    protected override void AppendRoundEndText(Entity<TeamDeathMatchRuleComponent> rule, ref RoundEndTextAppendEvent args)
     {
+        var match = rule.Comp;
         if (match.WinnerTeam != "")
-            args.AddLine($"Победитель: [color=lime]{BattleFactionNames.Get(match.WinnerTeam)}[/color].");
+            args.AddLine($"РџРѕР±РµРґРёС‚РµР»СЊ: [color=lime]{BattleFactionNames.Get(match.WinnerTeam)}[/color].");
         else if (match.TimedOut)
-            args.AddLine("Бой завершён вничью.");
-        args.AddLine($"{BattleFactionNames.Get(match.Team1)}: убийств противника — {match.Team1Kills}, смертей — {match.Team1Deaths}.");
-        args.AddLine($"{BattleFactionNames.Get(match.Team2)}: убийств противника — {match.Team2Kills}, смертей — {match.Team2Deaths}.");
+            args.AddLine("Р‘РѕР№ Р·Р°РІРµСЂС€С‘РЅ РІРЅРёС‡СЊСЋ.");
+        args.AddLine($"{BattleFactionNames.Get(match.Team1)}: СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° вЂ” {match.Team1Kills}, СЃРјРµСЂС‚РµР№ вЂ” {match.Team1Deaths}.");
+        args.AddLine($"{BattleFactionNames.Get(match.Team2)}: СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° вЂ” {match.Team2Kills}, СЃРјРµСЂС‚РµР№ вЂ” {match.Team2Deaths}.");
         args.AddLine("");
-        args.AddLine("[color=yellow]Статистика игроков[/color]");
+        args.AddLine("[color=yellow]РЎС‚Р°С‚РёСЃС‚РёРєР° РёРіСЂРѕРєРѕРІ[/color]");
         foreach (var team in new[] { match.Team1, match.Team2 })
         {
             args.AddLine($"[color=cyan]{BattleFactionNames.Get(team)}[/color]:");
             foreach (var player in match.KDRatio.Values.Where(player => player.Team == team).OrderByDescending(player => player.KDRatio).ThenByDescending(player => player.Kills))
-                args.AddLine($"  {FormattedMessage.EscapeText(player.Name)}: убийств — {player.Kills}, смертей — {player.Deaths}, К/С — {player.KDRatio:F2}.");
+                args.AddLine($"  {FormattedMessage.EscapeText(player.Name)}: СѓР±РёР№СЃС‚РІ вЂ” {player.Kills}, СЃРјРµСЂС‚РµР№ вЂ” {player.Deaths}, Рљ/РЎ вЂ” {player.KDRatio:F2}.");
         }
     }
 }

@@ -2,48 +2,71 @@
   abstract: true
   id: BaseStationNanotrasen
   components:
-    - type: NpcFactionMember
-      factions:
-        - Nomads
-
+  - type: NpcFactionMember
+    factions:
+    - Nomads
+- type: entity
+  id: StandardNanotrasenStation
+  parent:
+  - BaseStation
+  - BaseStationNews
+  - BaseStationCargo
+  - BaseStationJobsSpawning
+  - BaseStationRecords
+  - BaseStationArrivals
+  - BaseStationShuttles
+  - BaseStationCentcomm
+  - BaseStationEvacuation
+  - BaseStationAlertLevels
+  - BaseStationMagnet
+  - BaseStationExpeditions
+  - BaseStationSalvageJobs
+  - BaseStationSiliconLawCrewsimov
+  - BaseStationAllEventsEligible
+  - BaseStationNanotrasen
+  - BaseStationDeliveries
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: Transform
 - type: entity
   id: StandardStationArena
   parent:
-    - BaseStation
-    - BaseStationJobsSpawning
-    - BaseStationRecords
-    - BaseStationNanotrasen
-  categories: [HideSpawnMenu]
+  - BaseStation
+  - BaseStationJobsSpawning
+  - BaseStationRecords
+  - BaseStationNanotrasen
+  categories:
+  - HideSpawnMenu
   components:
-    - type: Transform
-
+  - type: Transform
 - type: entity
   id: StandardStationTDM
   parent:
-    - BaseStation
-    - BaseStationJobsSpawning
-    - BaseStationRecords
-  categories: [HideSpawnMenu]
+  - BaseStation
+  - BaseStationJobsSpawning
+  - BaseStationRecords
+  categories:
+  - HideSpawnMenu
   components:
-    - type: Transform
-    - type: NpcFactionMember
-      factions:
-        - France
-        - England
-        - Soviet
-        - Germany
-        - US
-
+  - type: Transform
+  - type: NpcFactionMember
+    factions:
+    - France
+    - England
+    - Soviet
+    - Germany
+    - US
 - type: entity
   id: StandardStationGulag
   parent:
-    - BaseStation
-    - BaseStationJobsSpawning
-    - BaseStationRecords
+  - BaseStation
+  - BaseStationJobsSpawning
+  - BaseStationRecords
   components:
-    - type: NpcFactionMember
-      factions:
-        - GulagSoviet
-        - GulagPrisonerGerman
-        - GulagPrisonerUkrainian
-        - GulagPrisonerPolish
+  - type: NpcFactionMember
+    factions:
+    - GulagSoviet
+    - GulagPrisonerGerman
+    - GulagPrisonerUkrainian
+    - GulagPrisonerPolish

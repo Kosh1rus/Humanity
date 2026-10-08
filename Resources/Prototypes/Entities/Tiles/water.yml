@@ -1,149 +1,179 @@
 - type: entity
+  parent: SolutionTile
   id: FloorWaterEntity
-  name: "вода"
-  description: "Похоже на неглубокую пресную воду."
+  name: вода
+  description: Похоже на неглубокую пресную воду.
   placement:
     mode: SnapgridCenter
     snap:
-      - Wall
+    - Wall
   components:
-    - type: NomadWaterSurface
-    - type: FloorOccluder
-    - type: Transform
-      anchored: true
-    - type: SyncSprite
-    - type: Clickable
-    - type: Sprite
-      sprite: Tiles/Planet/water_shores.rsi
-      drawdepth: BelowFloor
-      layers:
-        - state: full
-    - type: SolutionContainerManager
-      solutions:
-        pool:
-          maxVol: 9999999 #.inf seems to break the whole yaml file, but would definitely be preferable.
-          reagents:
-            - ReagentId: Water
-              Quantity: 9999999
-    - type: SolutionRegeneration
-      solution: tank
-      generated:
-        reagents:
-          - ReagentId: Water
-            Quantity: 100
-    - type: DrainableSolution
-      solution: pool
-    - type: SpeedModifierContacts
-      walkSpeedModifier: 0.5
-      sprintSpeedModifier: 0.5
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
-          layer:
-            - SlipLayer
-          mask:
-            - ItemMask
-          density: 1000
-          hard: false
-    - type: FootstepModifier
-      footstepSoundCollection:
-        collection: FootstepWater
-        params:
-          volume: 8
-    - type: StepTrigger
-      requiredTriggeredSpeed: 0
-      intersectRatio: 0.1
-      blacklist:
-        tags:
-          - Catwalk
-    - type: TileEntityEffect
-      effects:
-        - !type:ExtinguishReaction
-    - type: IconSmooth
-      key: floor
-      base: water
-    - type: Tag
+  - type: Transform
+    anchored: true
+  - type: SyncSprite
+  - type: Clickable
+  - type: Sprite
+    sprite: Tiles/TileEntities/liquid-water.rsi
+    drawdepth: BelowFloor
+  - type: Solution
+    id: pool
+    solution:
+      reagents:
+      - ReagentId: Water
+        Quantity: 7680
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 100
+  - type: DrainableSolution
+    solution: pool
+  - type: SpeedModifierContacts
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.5,-0.5,0.5,0.5
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepWater
+      params:
+        volume: 8
+  - type: StepTrigger
+    requiredTriggeredSpeed: 0
+    intersectRatio: 0.1
+    blacklist:
       tags:
-        - Water
+      - Catwalk
+  - type: TileEntityEffect
+    effects:
+    - !type:Extinguish ''
+  - type: IconSmooth
+    key: water
+    states:
+    - !type:CornerSpriteSmoothing
+      mask:
+      - water
+      - walls
+      base: water
+    base: water
+  - type: PlacementReplacement
+    key: tileOverlay
+  - type: NomadWaterSurface
+  - type: Tag
+    tags:
+    - Water
+- type: entity
+  parent: FloorWaterEntity
+  id: FloorSwimmingPoolEntity
+  name: swimming pool
+  description: Refreshing and relaxing!
+  components:
+  - type: FloorOccluder
+  - type: Sprite
+    sprite: Tiles/TileEntities/swimming-pool.rsi
+  - type: IconSmooth
+    key: pool
+    states:
+    - !type:CornerSpriteSmoothing
+      mask:
+      - pool
+      base: water
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.25,-0.25,0.25,0.25
+        layer:
+        - SlipLayer
+        mask:
+        - ItemMask
+        density: 1000
+        hard: false
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterDeepEntity
-  name: "глубокая вода"
-  description: "Пресная вода. Похоже, здесь глубоко."
+  name: глубокая вода
+  description: Пресная вода. Похоже, здесь глубоко.
   components:
-    - type: Sprite
-      sprite: Tiles/Planet/water_deep.rsi
-      drawdepth: BelowFloor
-      layers:
-        - state: full
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-    - type: Tag
-      tags:
-        - Water
-        - Bridgeable
+  - type: Sprite
+    sprite: Tiles/Planet/water_deep.rsi
+    drawdepth: BelowFloor
+    layers:
+    - state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.5,-0.5,0.5,0.5
+        density: 100
+        hard: true
+        mask:
+        - LowImpassable
+        - MidImpassable
+        layer:
+        - LowImpassable
+        - MidImpassable
+  - type: Tag
+    tags:
+    - Water
+    - Bridgeable
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterDeepSaltEntity
-  name: "глубокая солёная вода"
-  description: "Солёная вода. Похоже, здесь глубоко."
+  name: глубокая солёная вода
+  description: Солёная вода. Похоже, здесь глубоко.
   components:
-    - type: Sprite
-      sprite: Tiles/Planet/saltwater_deep.rsi
-      drawdepth: BelowFloor
-      layers:
-        - state: full
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
-          density: 100
-          hard: true
-          mask:
-            - LowImpassable
-            - MidImpassable
-          layer:
-            - LowImpassable
-            - MidImpassable
-    - type: Tag
-      tags:
-        - Water
+  - type: Sprite
+    sprite: Tiles/Planet/saltwater_deep.rsi
+    drawdepth: BelowFloor
+    layers:
+    - state: full
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.5,-0.5,0.5,0.5
+        density: 100
+        hard: true
+        mask:
+        - LowImpassable
+        - MidImpassable
+        layer:
+        - LowImpassable
+        - MidImpassable
+  - type: Tag
+    tags:
+    - Water
 - type: entity
   parent: FloorWaterEntity
   id: FloorWaterSaltEntity
-  name: "мелководье с солёной водой"
-  description: "Неглубокая солёная вода."
+  name: мелководье с солёной водой
+  description: Неглубокая солёная вода.
   components:
-    - type: Sprite
-      sprite: Tiles/Planet/saltwater_shallow.rsi
-      drawdepth: BelowFloor
-      layers:
-        - state: full
-
+  - type: Sprite
+    sprite: Tiles/Planet/saltwater_shallow.rsi
+    drawdepth: BelowFloor
+    layers:
+    - state: full
 - type: entity
   id: FloorWaterSwampEntity
   parent: FloorWaterEntity
-  name: "болотная вода"
-  description: "Неглубокая болотная вода. Пить её, пожалуй, не стоит."
+  name: болотная вода
+  description: Неглубокая болотная вода. Пить её, пожалуй, не стоит.
   components:
-    - type: Sprite
-      sprite: Tiles/Planet/swamp.rsi
-      drawdepth: BelowFloor
-      layers:
-        - state: full
+  - type: Sprite
+    sprite: Tiles/Planet/swamp.rsi
+    drawdepth: BelowFloor
+    layers:
+    - state: full

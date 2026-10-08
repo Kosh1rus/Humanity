@@ -1,6 +1,13 @@
 - type: gameMapPool
   id: DefaultMapPool
   maps:
-    - Nomads
-    - CampWW2
-    - Opushka
+  - Bagel
+  - Box
+  - Elkridge
+  - Marathon
+  - Packed
+  - Plasma
+  - Exo
+  - Snowball
+  - Sushi
+  - Tram2

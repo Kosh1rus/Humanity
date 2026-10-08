@@ -59,4 +59,3 @@ ion-storm-law-crew-must-eat = ТОЛЬКО ТЕ, КТО ЕСТ {$adjective} {$fo
 ion-storm-law-harm = ПРИЧИНЯЙТЕ ВРЕД: {$who}. НЕ ПОЗВОЛЯЙТЕ ИЗБЕЖАТЬ ВРЕДА ИЗ-ЗА ВАШЕГО БЕЗДЕЙСТВИЯ
 ion-storm-law-protect = НЕ ПРИЧИНЯЙТЕ ВРЕД: {$who}. НЕ ДОПУСКАЙТЕ ВРЕДА ИЗ-ЗА ВАШЕГО БЕЗДЕЙСТВИЯ
 ion-storm-law-concept-verb = {$concept} — {$verb}; ЦЕЛЬ: {$subjects}
-

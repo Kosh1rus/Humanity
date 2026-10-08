@@ -1,131 +1,127 @@
-# Base
-
 - type: entity
-  parent: [FoodInjectableBase, ItemHeftyBase]
+  parent:
+  - SolutionVeryTiny
+  - FoodInjectableBase
+  - ItemHeftyBase
   id: FoodEggBase
   description: An egg!
   abstract: true
   components:
-    - type: Tag
-      tags:
-        - Egg
-        - Meat
-    - type: Food
-      trash:
-        - Eggshells
-    - type: Sprite
-      sprite: Objects/Consumable/Food/egg.rsi
-    - type: Item
-      sprite: Objects/Consumable/Food/egg.rsi
-      size: Tiny
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 6
-          reagents:
-            - ReagentId: Egg
-              Quantity: 6
-    - type: DrawableSolution
-      solution: food
-    - type: SolutionSpiker
-      sourceSolution: food
-      ignoreEmpty: true
-      popup: spike-solution-egg
-    # egg fragile
-    - type: DamageOnHighSpeedImpact
-      minimumSpeed: 0.1
-      damage:
-        types:
-          Blunt: 1
-    - type: Damageable
-      damageContainer: Biological
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 1
-          behaviors:
-            - !type:PlaySoundBehavior
-              sound:
-                collection: desecration
-            - !type:SpillBehavior
-              solution: food
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                Eggshells:
-                  min: 1
-                  max: 1
-                # Wow double-yolk you're so lucky!
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-    # all below are for egg cooking/exploding
-    - type: AtmosExposed
-    - type: Temperature
-
-# Splat
+  - type: Tag
+    tags:
+    - Egg
+    - Meat
+  - type: Edible
+    trash:
+    - Eggshells
+  - type: Sprite
+    sprite: Objects/Consumable/Food/egg.rsi
+  - type: Item
+    sprite: Objects/Consumable/Food/egg.rsi
+    size: Tiny
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Egg
+        Quantity: 6
+  - type: DrawableSolution
+    solution: food
+  - type: SolutionSpiker
+    sourceSolution: food
+    ignoreEmpty: true
+    popup: spike-solution-egg
+  - type: DamageOnHighSpeedImpact
+    minimumSpeed: 0.1
+    damage:
+      types:
+        Blunt: 1
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Biological
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 1
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: desecration
+      - !type:SpillBehavior
+        solution: food
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Eggshells:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: AtmosExposed
+  - type: Temperature
+    thermalConductivity: 1
+    temperature: 293.15
+    heatCapacity: 15000
+  - type: TemperatureDamage
+  - type: InternalTemperature
 - type: entity
   name: eggshells
   parent: BaseItem
   id: Eggshells
   description: You're walkin' on 'em bud.
   components:
-    - type: Food
-    - type: Sprite
-      sprite: Objects/Consumable/Food/egg.rsi
-      state: eggshells
-    - type: STWeight
-      self: 0.75
-    - type: Item
-      size: Tiny
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 2
-          reagents:
-            - ReagentId: Egg
-              Quantity: 1
-    - type: Tag
-      tags:
-        - Egg
-        - Trash
-    - type: SpaceGarbage
-
-# Egg
-
+  - type: Edible
+  - type: Sprite
+    sprite: Objects/Consumable/Food/egg.rsi
+    state: eggshells
+  - type: Item
+    size: Tiny
+  - type: Tag
+    tags:
+    - Egg
+    - Trash
+  - type: SpaceGarbage
+  - type: STWeight
+    self: 0.75
 - type: entity
   parent: FoodEggBase
   id: FoodEgg
   name: egg
   components:
-    - type: Sprite
-      layers:
-        - state: icon
-          map: ["enum.DamageStateVisualLayers.Base"]
-    - type: RandomSprite
-      available:
-        - enum.DamageStateVisualLayers.Base:
-            icon: ""
-            white: ""
-    - type: Construction
-      graph: Egg
-      node: start
-
+  - type: Sprite
+    layers:
+    - state: icon
+      map:
+      - enum.DamageStateVisualLayers.Base
+  - type: RandomSprite
+    available:
+    - enum.DamageStateVisualLayers.Base:
+        icon: ''
+        white: ''
+  - type: Construction
+    graph: Egg
+    node: start
 - type: entity
   parent: FoodEggBase
   id: FoodEggBoiled
   name: boiled egg
   description: A delicious hardboiled egg.
   components:
-    - type: Sprite
-      layers:
-        - state: icon
-          map: ["enum.DamageStateVisualLayers.Base"]
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 6
-          reagents:
-            - ReagentId: EggCooked
-              Quantity: 6
-    - type: Temperature
-      # preserve temperature from the boiling step
-      currentTemperature: 344
+  - type: Sprite
+    layers:
+    - state: icon
+      map:
+      - enum.DamageStateVisualLayers.Base
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: EggCooked
+        Quantity: 6
+  - type: Temperature
+    temperature: 344.0
+    heatCapacity: 15000
+  - type: TemperatureDamage
+  - type: Tag
+    tags:
+    - Egg
+    - FinishedMeal
+    - Meat

@@ -11,11 +11,11 @@ using Content.Shared.Eye.Blinding.Systems;
 
 namespace Content.Server.Body.Systems
 {
-    public sealed class EyesSystem : EntitySystem
+    public sealed partial class EyesSystem : EntitySystem
     {
-        [Dependency] private readonly IEntityManager _entityManager = default!;
-        [Dependency] private readonly BlindableSystem _blindableSystem = default!;
-        [Dependency] private readonly BodySystem _bodySystem = default!;
+        [Dependency] private BlindableSystem _blindableSystem = default!;
+        [Dependency] private BodySystem _bodySystem = default!;
+        [Dependency] private Content.Shared.StatusEffectNew.StatusEffectsSystem _statusEffects = default!;
 
         public override void Initialize()
         {
@@ -74,7 +74,7 @@ namespace Content.Server.Body.Systems
             || args.Organ.Comp.Body is not { Valid: true } body)
                 return;
 
-            RemComp<TemporaryBlindnessComponent>(body);
+            _statusEffects.TryRemoveStatusEffect(body, BlindnessSystem.BlindingStatusEffect);
             HandleSight(uid, body);
         }
 
@@ -84,7 +84,7 @@ namespace Content.Server.Body.Systems
             || args.Organ.Comp.Body is not { Valid: true } body)
                 return;
 
-            EnsureComp<TemporaryBlindnessComponent>(body);
+            _statusEffects.TrySetStatusEffectDuration(body, BlindnessSystem.BlindingStatusEffect);
             HandleSight(body, uid);
         }
     }

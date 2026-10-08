@@ -1,5 +1,47 @@
+- type: entityTable
+  id: FilingCabinetFillTable
+  table: !type:AllSelector
+    children:
+    - !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 2, 4
+      children:
+      - id: BoxFolderBase
+      - id: BoxFolderRed
+      - id: BoxFolderBlue
+      - id: BoxFolderYellow
+      - id: BoxFolderGrey
+      - id: BoxFolderBlack
+      - id: BoxFolderGreen
+    - !type:GroupSelector
+      rolls: !type:RangeNumberSelector
+        range: 0, 3
+      children:
+      - id: Paper
+      - id: PaperOffice
+    - !type:GroupSelector
+      prob: 0.3
+      rolls: !type:ConstantNumberSelector
+        value: 2
+      children:
+      - id: Pen
+    - !type:GroupSelector
+      prob: 0.15
+      children:
+      - !type:AllSelector
+        weight: 0.2
+        children:
+        - id: RubberStampApproved
+        - id: RubberStampDenied
+      - id: RubberStampGreytide
+        weight: 0.1
+      - id: LuxuryPen
+      - id: NanoTaskCartridge
 - type: entity
-  parent: [ BaseStructureDynamic, BaseBagOpenClose ]
+  parent:
+  - BaseStructureDynamic
+  - BaseBagOpenClose
+  - StructureHealthContainerWeak
   id: BaseFilingCabinet
   description: A cabinet for all your filing needs.
   suffix: Empty
@@ -9,11 +51,6 @@
     grid:
     - 0,0,9,3
     maxItemSize: Normal
-    whitelist:
-      tags:
-        - Document
-        - Folder
-        - Write
   - type: Sprite
     sprite: Structures/Storage/cabinets.rsi
     noRot: true
@@ -27,9 +64,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.18,-0.48,0.18,0.48"
+        shape: !type:PhysShapeAabb
+          bounds: -0.18,-0.48,0.18,0.48
         density: 200
         mask:
         - MachineMask
@@ -38,18 +74,14 @@
   - type: InteractionOutline
   - type: ContainerContainer
     containers:
-      storagebase: !type:Container
+      storagebase: !type:Container ''
   - type: Damageable
-    damageContainer: StructuralInorganic
-    damageModifierSet: Metallic
+    damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: !type:DamageTrigger
+        damage: 60
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -62,9 +94,8 @@
     price: 80
   - type: Construction
     graph: FilingCabinet
-
 - type: entity
-  name: "картотечный шкаф"
+  name: картотечный шкаф
   parent: BaseFilingCabinet
   id: filingCabinet
   components:
@@ -73,12 +104,12 @@
     layers:
     - state: filingcabinet
     - state: filingcabinet-open
-      map: ["openLayer"]
+      map:
+      - openLayer
   - type: Construction
     node: filingCabinet
-
 - type: entity
-  name: "высокий картотечный шкаф"
+  name: высокий картотечный шкаф
   parent: BaseFilingCabinet
   id: filingCabinetTall
   components:
@@ -87,31 +118,28 @@
     layers:
     - state: tallcabinet
     - state: tallcabinet-open
-      map: ["openLayer"]
+      map:
+      - openLayer
   - type: Construction
     node: tallCabinet
-
 - type: entity
   name: chest drawer
   parent: BaseFilingCabinet
   id: filingCabinetDrawer
   description: A small drawer for all your filing needs, Now with wheels!
   components:
-  - type: Storage
-    grid:
-    - 0,0,7,2
   - type: Sprite
     state: chestdrawer
     layers:
     - state: chestdrawer
     - state: chestdrawer-open
-      map: ["openLayer"]
+      map:
+      - openLayer
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.22,-0.42,0.22,0.34"
+        shape: !type:PhysShapeAabb
+          bounds: -0.22,-0.42,0.22,0.34
         density: 210
         mask:
         - MachineMask
@@ -120,40 +148,27 @@
   - type: Construction
     node: chestDrawer
   - type: RequireProjectileTarget
-
 - type: entity
   abstract: true
   id: BaseBureaucraticStorageFill
   suffix: Filled
   components:
-  - type: StorageFill
-    contents:
-      - id: Pen
-        prob: 0.5
-      - id: PaperOffice
-        amount: 1
-        maxAmount: 3
-      - id: BoxFolderBlue
-        orGroup: Folder
-      - id: BoxFolderRed
-        orGroup: Folder
-      - id: BoxFolderYellow
-        orGroup: Folder
-      - id: BoxFolderWhite
-        orGroup: Folder
-      - id: BoxFolderGrey
-        orGroup: Folder
-      - id: BoxFolderBlack
-        orGroup: Folder
-
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: FilingCabinetFillTable
 - type: entity
-  parent: [BaseBureaucraticStorageFill, filingCabinet]
+  parent:
+  - BaseBureaucraticStorageFill
+  - filingCabinet
   id: filingCabinetRandom
-
 - type: entity
-  parent: [BaseBureaucraticStorageFill, filingCabinetTall]
+  parent:
+  - BaseBureaucraticStorageFill
+  - filingCabinetTall
   id: filingCabinetTallRandom
-
 - type: entity
-  parent: [BaseBureaucraticStorageFill, filingCabinetDrawer]
+  parent:
+  - BaseBureaucraticStorageFill
+  - filingCabinetDrawer
   id: filingCabinetDrawerRandom

@@ -10,16 +10,15 @@ using Content.Shared.GameTicking.Components;
 using Content.Shared.Humanity.Combat;
 namespace Content.Server.GameTicking.Rules;
 
-public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
+public sealed partial class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly TeamDeathMatchRuleSystem _match = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private RoundEndSystem _roundEndSystem = default!;
+    [Dependency] private ServerGameTicker _gameTicker = default!;
+    [Dependency] private TeamDeathMatchRuleSystem _match = default!;
     public override void Initialize()
     {
         base.Initialize();
@@ -39,7 +38,7 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         var ruleQuery = EntityQueryEnumerator<CaptureAreaRuleComponent, GameRuleComponent>();
         while (ruleQuery.MoveNext(out var ruleUid, out var activeRuleComp, out var gameRule))
         {
-            if (!GameTicker.IsGameRuleActive(ruleUid, gameRule))
+            if (!GameTicker.IsGameRuleActive((ruleUid, gameRule)))
                 continue;
             ruleComp = activeRuleComp;
             break;
@@ -104,12 +103,12 @@ public sealed class CaptureAreaSystem : GameRuleSystem<CaptureAreaRuleComponent>
         var entitiesInRange = _lookup.GetEntitiesInRange(areaXform, area.CaptureRadius, LookupFlags.Dynamic | LookupFlags.Sundries); // Include dynamic entities and items/mobs etc.
         foreach (var entity in entitiesInRange)
         {
-            if (EntityManager.TryGetComponent<MobStateComponent>(entity, out var mobState))
+            if (TryComp<MobStateComponent>(entity, out var mobState))
             {
                 //do not count dead and crit mobs
                 if (mobState.CurrentState == MobState.Alive)
                     // Check if the entity has a faction and if it's one we care about
-                    if (_entityManager.TryGetComponent<NpcFactionMemberComponent>(entity, out var factionMember))
+                    if (TryComp<NpcFactionMemberComponent>(entity, out var factionMember))
                     {
                         foreach (var faction in factionMember.Factions)
                         {

@@ -4,9 +4,9 @@ using Robust.Client.Placement.Modes;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class HumanityConstructionPreviewSystem : EntitySystem
+public sealed partial class HumanityConstructionPreviewSystem : EntitySystem
 {
-    [Dependency] private readonly IPlacementManager _placement = default!;
+    [Dependency] private IPlacementManager _placement = default!;
 
     public override void FrameUpdate(float frameTime)
     {

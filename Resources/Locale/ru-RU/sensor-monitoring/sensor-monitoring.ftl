@@ -9,4 +9,3 @@ sensor-monitoring-value-display = { $unit ->
     [Moles] { TOSTRING($value, "N3") } моль
     *[Other] { $value }
 }
-

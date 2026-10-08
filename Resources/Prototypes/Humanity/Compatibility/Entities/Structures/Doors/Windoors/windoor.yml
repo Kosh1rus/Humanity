@@ -1,0 +1,11 @@
+- type: entity
+  parent: Windoor
+  id: WindoorCargoLocked
+  suffix: Cargo, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board:
+      - DoorElectronicsCargo
+  - type: Wires
+    layoutId: AirlockCargo

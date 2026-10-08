@@ -1,11 +1,11 @@
 - type: construction
-  name: "компостный ящик"
+  name: humanity-construction-CompostBin-name
   id: CompostBin
   graph: CompostBin
   startNode: start
   targetNode: end
   category: construction-category-furniture
-  description: "Деревянный ящик, в котором отходы превращаются в удобрение."
+  description: humanity-construction-CompostBin-description
   icon: { sprite: Civ14/Objects/structures.rsi, state: compostbin }
   objectType: Structure
   agemin: 0

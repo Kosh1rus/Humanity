@@ -9,14 +9,13 @@ using Content.Client.Humanity.Visuals;
 
 namespace Content.Client.Humanity.Combat;
 
-public sealed class BattleExplosionEffectsSystem : EntitySystem
+public sealed partial class BattleExplosionEffectsSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IMapManager _maps = default!;
-    [Dependency] private readonly TransformSystem _transforms = default!;
-    [Dependency] private readonly IOverlayManager _overlays = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly ITileDefinitionManager _tiles = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private TransformSystem _transforms = default!;
+    [Dependency] private IOverlayManager _overlays = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private ITileDefinitionManager _tiles = default!;
 
     public override void Initialize()
     {
@@ -31,7 +30,7 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
 
     public void SpawnEffects(ExplosionVisualsComponent explosion)
     {
-        if (!_maps.MapExists(explosion.Epicenter.MapId))
+        if (!_map.MapExists(explosion.Epicenter.MapId))
             return;
         if (_overlays.TryGetOverlay<HumanityAtmosphereOverlay>(out var fog))
             fog.Disperse(explosion.Epicenter, explosion.Intensity.Count * 1.2f);
@@ -43,7 +42,7 @@ public sealed class BattleExplosionEffectsSystem : EntitySystem
         AddComp<BattleExplosionWaveComponent>(wave).MaxRadius = Math.Clamp(explosion.Intensity.Count, 2, 8);
         var count = Math.Clamp(explosion.Intensity.Count * 2, 8, 16);
         var dirt = false;
-        if (_maps.TryFindGridAt(explosion.Epicenter, out var grid, out MapGridComponent? gridComp) &&
+        if (_map.TryFindGridAt(explosion.Epicenter, out var grid, out MapGridComponent? gridComp) &&
             _map.TryGetTileRef(grid, gridComp, new EntityCoordinates(grid,
                 Vector2.Transform(explosion.Epicenter.Position, _transforms.GetInvWorldMatrix(grid))), out var tile))
         {

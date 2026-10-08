@@ -11,6 +11,8 @@ licenses and will need to be removed if you wish to use this project commerciall
 
 Assets ported over from Civ13 are licenced under GNU Affero General Public License v3.0 (AGPLv3),
 https://opensource.org/license/agpl-v3. Check the `meta.json` files or the `attributions.txt` files accompaniying them.
+For RSI folders containing assets under both AGPL-3.0 and CC-BY-SA-3.0, the adjacent
+`*.rsi.attributions.txt` file records the verified source files and unmatched states.
 
 Code from the "Stalker 14" repository, mostly inside the "_Stalker" folders, is licenced
 under their own terms, please see https://github.com/stalker14-project/stalker-14/blob/master/LICENSE.TXT.

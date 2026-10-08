@@ -1,11 +1,11 @@
 - type: construction
-  name: "перчатки"
+  name: humanity-construction-civ13_gloves_gloves-name
   id: civ13_gloves_gloves
   graph: civ13_gloves_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычная пара перчаток."
+  description: humanity-construction-civ13_gloves_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/latex.rsi
     state: icon
@@ -27,13 +27,13 @@
     - node: end
       entity: civ13_gloves_gloves
 - type: construction
-  name: "белые меховые перчатки"
+  name: humanity-construction-civ13_gloves_white_fur_gloves-name
   id: civ13_gloves_white_fur_gloves
   graph: civ13_gloves_white_fur_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплые перчатки из белого меха."
+  description: humanity-construction-civ13_gloves_white_fur_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/whitefur.rsi
     state: icon
@@ -55,13 +55,13 @@
     - node: end
       entity: civ13_gloves_white_fur_gloves
 - type: construction
-  name: "оранжевые перчатки"
+  name: humanity-construction-civ13_gloves_orange_gloves-name
   id: civ13_gloves_orange_gloves
   graph: civ13_gloves_orange_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Яркие оранжевые перчатки."
+  description: humanity-construction-civ13_gloves_orange_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/orange.rsi
     state: icon
@@ -83,13 +83,13 @@
     - node: end
       entity: civ13_gloves_orange_gloves
 - type: construction
-  name: "вратарские перчатки"
+  name: humanity-construction-civ13_gloves_goalkeeper_gloves-name
   id: civ13_gloves_goalkeeper_gloves
   graph: civ13_gloves_goalkeeper_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки для защиты рук вратаря."
+  description: humanity-construction-civ13_gloves_goalkeeper_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/latex.rsi
     state: icon
@@ -111,13 +111,13 @@
     - node: end
       entity: civ13_gloves_goalkeeper_gloves
 - type: construction
-  name: "вратарские перчатки"
+  name: humanity-construction-civ13_gloves_goalkeeper_gloves_1-name
   id: civ13_gloves_goalkeeper_gloves_1
   graph: civ13_gloves_goalkeeper_gloves_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки для защиты рук вратаря."
+  description: humanity-construction-civ13_gloves_goalkeeper_gloves_1-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/latex.rsi
     state: icon
@@ -139,13 +139,13 @@
     - node: end
       entity: civ13_gloves_goalkeeper_gloves_1
 - type: construction
-  name: "фиолетовые перчатки"
+  name: humanity-construction-civ13_gloves_purple_gloves-name
   id: civ13_gloves_purple_gloves
   graph: civ13_gloves_purple_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Фиолетовые перчатки."
+  description: humanity-construction-civ13_gloves_purple_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/purple.rsi
     state: icon
@@ -167,13 +167,13 @@
     - node: end
       entity: civ13_gloves_purple_gloves
 - type: construction
-  name: "серые меховые перчатки"
+  name: humanity-construction-civ13_gloves_grey_fur_gloves-name
   id: civ13_gloves_grey_fur_gloves
   graph: civ13_gloves_grey_fur_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплые перчатки из серого меха."
+  description: humanity-construction-civ13_gloves_grey_fur_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/greyfur.rsi
     state: icon
@@ -195,13 +195,13 @@
     - node: end
       entity: civ13_gloves_grey_fur_gloves
 - type: construction
-  name: "светло-коричневые перчатки"
+  name: humanity-construction-civ13_gloves_light_brown_gloves-name
   id: civ13_gloves_light_brown_gloves
   graph: civ13_gloves_light_brown_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки светло-коричневого цвета."
+  description: humanity-construction-civ13_gloves_light_brown_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/lightbrown.rsi
     state: icon
@@ -223,13 +223,13 @@
     - node: end
       entity: civ13_gloves_light_brown_gloves
 - type: construction
-  name: "коричневые меховые перчатки"
+  name: humanity-construction-civ13_gloves_brown_fur_gloves-name
   id: civ13_gloves_brown_fur_gloves
   graph: civ13_gloves_brown_fur_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплые перчатки из коричневого меха."
+  description: humanity-construction-civ13_gloves_brown_fur_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/brownfur.rsi
     state: icon
@@ -251,13 +251,13 @@
     - node: end
       entity: civ13_gloves_brown_fur_gloves
 - type: construction
-  name: "красные кожаные перчатки"
+  name: humanity-construction-civ13_gloves_red_leather_gloves-name
   id: civ13_gloves_red_leather_gloves
   graph: civ13_gloves_red_leather_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дорогие на вид перчатки из красной кожи."
+  description: humanity-construction-civ13_gloves_red_leather_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/luxglove.rsi
     state: icon
@@ -279,13 +279,13 @@
     - node: end
       entity: civ13_gloves_red_leather_gloves
 - type: construction
-  name: "розовые перчатки"
+  name: humanity-construction-civ13_gloves_pink_colored_gloves-name
   id: civ13_gloves_pink_colored_gloves
   graph: civ13_gloves_pink_colored_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядные розовые перчатки."
+  description: humanity-construction-civ13_gloves_pink_colored_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/luxglove1.rsi
     state: icon
@@ -307,13 +307,13 @@
     - node: end
       entity: civ13_gloves_pink_colored_gloves
 - type: construction
-  name: "наручные часы"
+  name: humanity-construction-civ13_gloves_watch-name
   id: civ13_gloves_watch
   graph: civ13_gloves_watch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычные часы, которые носят на запястье."
+  description: humanity-construction-civ13_gloves_watch-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/watch.rsi
     state: icon
@@ -335,13 +335,13 @@
     - node: end
       entity: civ13_gloves_watch
 - type: construction
-  name: "дорогие наручные часы"
+  name: humanity-construction-civ13_gloves_expensive_watch-name
   id: civ13_gloves_expensive_watch
   graph: civ13_gloves_expensive_watch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Наручные часы, которые явно стоят немало."
+  description: humanity-construction-civ13_gloves_expensive_watch-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/specialwatch.rsi
     state: icon
@@ -363,13 +363,13 @@
     - node: end
       entity: civ13_gloves_expensive_watch
 - type: construction
-  name: "позолоченные часы"
+  name: humanity-construction-civ13_gloves_gold_watch-name
   id: civ13_gloves_gold_watch
   graph: civ13_gloves_gold_watch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Наручные часы с позолоченным корпусом."
+  description: humanity-construction-civ13_gloves_gold_watch-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/goldwatch.rsi
     state: icon
@@ -391,13 +391,13 @@
     - node: end
       entity: civ13_gloves_gold_watch
 - type: construction
-  name: "серебряное кольцо"
+  name: humanity-construction-civ13_gloves_silver_ring-name
   id: civ13_gloves_silver_ring
   graph: civ13_gloves_silver_ring
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Блестящее серебряное кольцо. Выглядит дорогим."
+  description: humanity-construction-civ13_gloves_silver_ring-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/silver_ring.rsi
     state: icon
@@ -419,13 +419,13 @@
     - node: end
       entity: civ13_gloves_silver_ring
 - type: construction
-  name: "капитанские перчатки"
+  name: humanity-construction-civ13_gloves_captains_gloves-name
   id: civ13_gloves_captains_gloves
   graph: civ13_gloves_captains_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синие перчатки с золотой отделкой. Очень представительные."
+  description: humanity-construction-civ13_gloves_captains_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/captain.rsi
     state: icon
@@ -447,13 +447,13 @@
     - node: end
       entity: civ13_gloves_captains_gloves
 - type: construction
-  name: "чёрные рабочие перчатки"
+  name: humanity-construction-civ13_gloves_black_gloves-name
   id: civ13_gloves_black_gloves
   graph: civ13_gloves_black_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Толстые рабочие перчатки, устойчивые к огню."
+  description: humanity-construction-civ13_gloves_black_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/black.rsi
     state: icon
@@ -475,13 +475,13 @@
     - node: end
       entity: civ13_gloves_black_gloves
 - type: construction
-  name: "кожаные перчатки"
+  name: humanity-construction-civ13_gloves_leather_gloves-name
   id: civ13_gloves_leather_gloves
   graph: civ13_gloves_leather_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные перчатки защищают от холода и огня."
+  description: humanity-construction-civ13_gloves_leather_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/leather.rsi
     state: icon
@@ -503,13 +503,13 @@
     - node: end
       entity: civ13_gloves_leather_gloves
 - type: construction
-  name: "чёрные меховые перчатки"
+  name: humanity-construction-civ13_gloves_black_fur_gloves-name
   id: civ13_gloves_black_fur_gloves
   graph: civ13_gloves_black_fur_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплые перчатки из чёрного меха."
+  description: humanity-construction-civ13_gloves_black_fur_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/blackfur.rsi
     state: icon
@@ -531,13 +531,13 @@
     - node: end
       entity: civ13_gloves_black_fur_gloves
 - type: construction
-  name: "перчатки из человеческой кожи"
+  name: humanity-construction-civ13_gloves_human_skin_gloves-name
   id: civ13_gloves_human_skin_gloves
   graph: civ13_gloves_human_skin_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки из человеческой кожи. Варварство."
+  description: humanity-construction-civ13_gloves_human_skin_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/pinkfur.rsi
     state: icon
@@ -559,13 +559,13 @@
     - node: end
       entity: civ13_gloves_human_skin_gloves
 - type: construction
-  name: "оркские латные рукавицы"
+  name: humanity-construction-civ13_gloves_orcish_gauntlets-name
   id: civ13_gloves_orcish_gauntlets
   graph: civ13_gloves_orcish_gauntlets
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронированные рукавицы орков."
+  description: humanity-construction-civ13_gloves_orcish_gauntlets-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/ork_gauntlet.rsi
     state: icon
@@ -587,13 +587,13 @@
     - node: end
       entity: civ13_gloves_orcish_gauntlets
 - type: construction
-  name: "огнестойкие перчатки"
+  name: humanity-construction-civ13_gloves_fire_resistant_gloves-name
   id: civ13_gloves_fire_resistant_gloves
   graph: civ13_gloves_fire_resistant_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки для защиты рук от жара и огня."
+  description: humanity-construction-civ13_gloves_fire_resistant_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/firefighter.rsi
     state: icon
@@ -615,13 +615,13 @@
     - node: end
       entity: civ13_gloves_fire_resistant_gloves
 - type: construction
-  name: "боевые перчатки"
+  name: humanity-construction-civ13_gloves_combat_gloves-name
   id: civ13_gloves_combat_gloves
   graph: civ13_gloves_combat_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тактические перчатки, отчасти защищающие от огня и ударов."
+  description: humanity-construction-civ13_gloves_combat_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/black.rsi
     state: icon
@@ -643,13 +643,13 @@
     - node: end
       entity: civ13_gloves_combat_gloves
 - type: construction
-  name: "перчатки спецназа"
+  name: humanity-construction-civ13_gloves_swat_gloves-name
   id: civ13_gloves_swat_gloves
   graph: civ13_gloves_swat_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Боевые перчатки сотрудников спецназа."
+  description: humanity-construction-civ13_gloves_swat_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/swat.rsi
     state: icon
@@ -671,13 +671,13 @@
     - node: end
       entity: civ13_gloves_swat_gloves
 - type: construction
-  name: "офицерские перчатки"
+  name: humanity-construction-civ13_gloves_Officer_gloves-name
   id: civ13_gloves_Officer_gloves
   graph: civ13_gloves_Officer_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Блестящие чёрные перчатки, в которых офицеру легко сохранить руки чистыми."
+  description: humanity-construction-civ13_gloves_Officer_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/swat.rsi
     state: icon
@@ -699,13 +699,13 @@
     - node: end
       entity: civ13_gloves_Officer_gloves
 - type: construction
-  name: "позолоченные перчатки"
+  name: humanity-construction-civ13_gloves_gold_plated_gloves-name
   id: civ13_gloves_gold_plated_gloves
   graph: civ13_gloves_gold_plated_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Позолоченные перчатки. Выглядят очень дорогими."
+  description: humanity-construction-civ13_gloves_gold_plated_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/salamon.rsi
     state: icon
@@ -727,13 +727,13 @@
     - node: end
       entity: civ13_gloves_gold_plated_gloves
 - type: construction
-  name: "кожаные перчатки ботаника"
+  name: humanity-construction-civ13_gloves_botanists_leather_gloves-name
   id: civ13_gloves_botanists_leather_gloves
   graph: civ13_gloves_botanists_leather_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Рабочие перчатки, защищающие от шипов, колючек и других неприятных сюрпризов растений."
+  description: humanity-construction-civ13_gloves_botanists_leather_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/leather.rsi
     state: icon
@@ -755,13 +755,13 @@
     - node: end
       entity: civ13_gloves_botanists_leather_gloves
 - type: construction
-  name: "кухонные рукавицы"
+  name: humanity-construction-civ13_gloves_oven_mittens-name
   id: civ13_gloves_oven_mittens
   graph: civ13_gloves_oven_mittens
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные рукавицы для работы с горячей посудой."
+  description: humanity-construction-civ13_gloves_oven_mittens-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/oven_mitts.rsi
     state: icon
@@ -783,13 +783,13 @@
     - node: end
       entity: civ13_gloves_oven_mittens
 - type: construction
-  name: "кавалерийские перчатки"
+  name: humanity-construction-civ13_gloves_cavalry_gloves-name
   id: civ13_gloves_cavalry_gloves
   graph: civ13_gloves_cavalry_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки, которые носят кавалеристы и другие военные."
+  description: humanity-construction-civ13_gloves_cavalry_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/union_gloves.rsi
     state: icon
@@ -811,13 +811,13 @@
     - node: end
       entity: civ13_gloves_cavalry_gloves
 - type: construction
-  name: "боксёрские перчатки"
+  name: humanity-construction-civ13_gloves_boxing_gloves-name
   id: civ13_gloves_boxing_gloves
   graph: civ13_gloves_boxing_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Как будто вам нужен ещё один повод подраться с товарищами."
+  description: humanity-construction-civ13_gloves_boxing_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/boxing.rsi
     state: icon
@@ -839,13 +839,13 @@
     - node: end
       entity: civ13_gloves_boxing_gloves
 - type: construction
-  name: "латексные перчатки"
+  name: humanity-construction-civ13_gloves_latex_gloves-name
   id: civ13_gloves_latex_gloves
   graph: civ13_gloves_latex_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стерильные латексные перчатки."
+  description: humanity-construction-civ13_gloves_latex_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/latex.rsi
     state: icon
@@ -867,13 +867,13 @@
     - node: end
       entity: civ13_gloves_latex_gloves
 - type: construction
-  name: "перчатки химзащиты"
+  name: humanity-construction-civ13_gloves_NBC_gloves-name
   id: civ13_gloves_NBC_gloves
   graph: civ13_gloves_NBC_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стерильные перчатки, которые также защищают от окружающей радиации."
+  description: humanity-construction-civ13_gloves_NBC_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/latex.rsi
     state: icon
@@ -895,13 +895,13 @@
     - node: end
       entity: civ13_gloves_NBC_gloves
 - type: construction
-  name: "нитриловые перчатки"
+  name: humanity-construction-civ13_gloves_nitrile_gloves-name
   id: civ13_gloves_nitrile_gloves
   graph: civ13_gloves_nitrile_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стерильные нитриловые перчатки."
+  description: humanity-construction-civ13_gloves_nitrile_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/blue.rsi
     state: icon
@@ -923,13 +923,13 @@
     - node: end
       entity: civ13_gloves_nitrile_gloves
 - type: construction
-  name: "пластоидные перчатки"
+  name: humanity-construction-civ13_gloves_plastoid_gloves-name
   id: civ13_gloves_plastoid_gloves
   graph: civ13_gloves_plastoid_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара перчаток из пластоида."
+  description: humanity-construction-civ13_gloves_plastoid_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/replicant_gloves.rsi
     state: icon
@@ -951,13 +951,13 @@
     - node: end
       entity: civ13_gloves_plastoid_gloves
 - type: construction
-  name: "непроглядно-чёрные перчатки"
+  name: humanity-construction-civ13_gloves_very_black_gloves-name
   id: civ13_gloves_very_black_gloves
   graph: civ13_gloves_very_black_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Перчатки чернее пустоты."
+  description: humanity-construction-civ13_gloves_very_black_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/veryblack.rsi
     state: icon
@@ -979,13 +979,13 @@
     - node: end
       entity: civ13_gloves_very_black_gloves
 - type: construction
-  name: "кожаные перчатки специалиста"
+  name: humanity-construction-civ13_gloves_specialist_leather_gloves-name
   id: civ13_gloves_specialist_leather_gloves
   graph: civ13_gloves_specialist_leather_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Добротные кожаные перчатки специалиста."
+  description: humanity-construction-civ13_gloves_specialist_leather_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/toughguy.rsi
     state: icon
@@ -1007,13 +1007,13 @@
     - node: end
       entity: civ13_gloves_specialist_leather_gloves
 - type: construction
-  name: "латные рукавицы Кредо"
+  name: humanity-construction-civ13_gloves_creed_gauntlets-name
   id: civ13_gloves_creed_gauntlets
   graph: civ13_gloves_creed_gauntlets
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронированные рукавицы Кредо со скрытым клинком."
+  description: humanity-construction-civ13_gloves_creed_gauntlets-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/ac_gauntlets.rsi
     state: icon
@@ -1035,13 +1035,13 @@
     - node: end
       entity: civ13_gloves_creed_gauntlets
 - type: construction
-  name: "чёрные перчатки без пальцев"
+  name: humanity-construction-civ13_gloves_fingerless_black_gloves-name
   id: civ13_gloves_fingerless_black_gloves
   graph: civ13_gloves_fingerless_black_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные перчатки с открытыми пальцами."
+  description: humanity-construction-civ13_gloves_fingerless_black_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
     state: icon
@@ -1063,13 +1063,13 @@
     - node: end
       entity: civ13_gloves_fingerless_black_gloves
 - type: construction
-  name: "обмотки для рук"
+  name: humanity-construction-civ13_gloves_hand_wraps-name
   id: civ13_gloves_hand_wraps
   graph: civ13_gloves_hand_wraps
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Полосы ткани, которыми обматывают руки."
+  description: humanity-construction-civ13_gloves_hand_wraps-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/ncr_handwraps.rsi
     state: icon
@@ -1091,13 +1091,13 @@
     - node: end
       entity: civ13_gloves_hand_wraps
 - type: construction
-  name: "обмотки легионера"
+  name: humanity-construction-civ13_gloves_legionaire_hand_wraps-name
   id: civ13_gloves_legionaire_hand_wraps
   graph: civ13_gloves_legionaire_hand_wraps
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обмотки для рук, которые носят легионеры."
+  description: humanity-construction-civ13_gloves_legionaire_hand_wraps-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/legion_handwraps.rsi
     state: icon
@@ -1119,13 +1119,13 @@
     - node: end
       entity: civ13_gloves_legionaire_hand_wraps
 - type: construction
-  name: "боевые перчатки без пальцев"
+  name: humanity-construction-civ13_gloves_fingerless_combat_gloves-name
   id: civ13_gloves_fingerless_combat_gloves
   graph: civ13_gloves_fingerless_combat_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тактические перчатки с открытыми пальцами."
+  description: humanity-construction-civ13_gloves_fingerless_combat_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/fingerless.rsi
     state: icon
@@ -1147,13 +1147,13 @@
     - node: end
       entity: civ13_gloves_fingerless_combat_gloves
 - type: construction
-  name: "латные рукавицы"
+  name: humanity-construction-civ13_gloves_armored_gauntlets-name
   id: civ13_gloves_armored_gauntlets
   graph: civ13_gloves_armored_gauntlets
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Железные рукавицы для защиты кистей."
+  description: humanity-construction-civ13_gloves_armored_gauntlets-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/gauntlet.rsi
     state: icon
@@ -1175,13 +1175,13 @@
     - node: end
       entity: civ13_gloves_armored_gauntlets
 - type: construction
-  name: "рукавицы котэ"
+  name: humanity-construction-civ13_gloves_kote_gauntlets-name
   id: civ13_gloves_kote_gauntlets
   graph: civ13_gloves_kote_gauntlets
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Японская защита предплечий с железными пластинами."
+  description: humanity-construction-civ13_gloves_kote_gauntlets-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/kote.rsi
     state: icon
@@ -1203,13 +1203,13 @@
     - node: end
       entity: civ13_gloves_kote_gauntlets
 - type: construction
-  name: "двемерские латные рукавицы"
+  name: humanity-construction-civ13_gloves_dwemmer_gauntlets-name
   id: civ13_gloves_dwemmer_gauntlets
   graph: civ13_gloves_dwemmer_gauntlets
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защита предплечий из двемерского металла."
+  description: humanity-construction-civ13_gloves_dwemmer_gauntlets-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/dwoves.rsi
     state: icon
@@ -1231,13 +1231,13 @@
     - node: end
       entity: civ13_gloves_dwemmer_gauntlets
 - type: construction
-  name: "чёрные водительские перчатки"
+  name: humanity-construction-civ13_gloves_black_motorist_gloves-name
   id: civ13_gloves_black_motorist_gloves
   graph: civ13_gloves_black_motorist_gloves
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные перчатки для вождения."
+  description: humanity-construction-civ13_gloves_black_motorist_gloves-description
   icon:
     sprite: Civ14/Clothing/exported/gloves/motorist.rsi
     state: icon

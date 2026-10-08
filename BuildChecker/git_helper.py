@@ -10,7 +10,7 @@ from typing import List
 
 SOLUTION_PATH = Path("..") / "SpaceStation14.sln"
 # If this doesn't match the saved version we overwrite them all.
-CURRENT_HOOKS_VERSION = "2"
+CURRENT_HOOKS_VERSION = "3"
 QUIET = len(sys.argv) == 2 and sys.argv[1] == "--quiet"
 
 
@@ -75,22 +75,29 @@ def install_hooks():
                     print("No hooks change detected.")
                 return
 
-    with open("INSTALLED_HOOKS_VERSION", "w") as f:
-        f.write(CURRENT_HOOKS_VERSION)
-
     print("Hooks need updating.")
 
-    hooks_target_dir = Path("..")/".git"/"hooks"
+    repository_dir = Path("..").resolve()
+    hooks_path = subprocess.run(
+        ["git", "rev-parse", "--git-path", "hooks"],
+        cwd=repository_dir,
+        check=True,
+        stdout=subprocess.PIPE,
+        text=True,
+    ).stdout.strip()
+    hooks_target_dir = Path(hooks_path)
+    if not hooks_target_dir.is_absolute():
+        hooks_target_dir = repository_dir / hooks_target_dir
+    hooks_target_dir.mkdir(parents=True, exist_ok=True)
     hooks_source_dir = Path("hooks")
-
-    # Clear entire tree since we need to kill deleted files too.
-    for filename in os.listdir(str(hooks_target_dir)):
-        os.remove(str(hooks_target_dir/filename))
 
     for filename in os.listdir(str(hooks_source_dir)):
         print("Copying hook {}".format(filename))
         shutil.copy2(str(hooks_source_dir/filename),
                         str(hooks_target_dir/filename))
+
+    with open("INSTALLED_HOOKS_VERSION", "w") as f:
+        f.write(CURRENT_HOOKS_VERSION)
 
 
 def reset_solution():

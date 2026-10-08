@@ -1,10 +1,11 @@
 - type: entity
   name: план постройки
   id: constructionghost
-  categories: [HideSpawnMenu]
+  categories:
+  - HideSpawnMenu
   components:
-    - type: Sprite
-      color: "#3F38"
-    - type: ConstructionGhost
-    - type: Clickable
-    - type: InteractionOutline
+  - type: Sprite
+    color: '#3F38'
+  - type: ConstructionGhost
+  - type: Clickable
+  - type: InteractionOutline

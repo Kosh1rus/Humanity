@@ -1,10 +1,40 @@
 - type: tile
+  id: BaseFloorPlanet
+  abstract: true
+  heatCapacity: 10000
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  weather: true
+  indestructible: true
+- type: tile
+  id: FloorBasalt
+  name: tiles-basalt-floor
+  parent: BaseFloorPlanet
+  sprite: /Textures/Tiles/Planet/basalt.png
+  edgeSpritePriority: 5
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Cave/single_edge_SE.png
+    NorthEast: /Textures/Tiles/Cave/single_edge_NE.png
+    NorthWest: /Textures/Tiles/Cave/single_edge_NW.png
+    SouthWest: /Textures/Tiles/Cave/single_edge_SW.png
+    South: /Textures/Tiles/Cave/double_edge_S.png
+    East: /Textures/Tiles/Cave/double_edge_E.png
+    North: /Textures/Tiles/Cave/double_edge_N.png
+    West: /Textures/Tiles/Cave/double_edge_W.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+- type: tile
   id: FloorPlanetDryDirt
   name: tiles-drydirt-floor
   sprite: /Textures/Civ14/Structures/Floors/nature.rsi/dust.png
   variants: 1
   placementVariants:
-    - 1.0
+  - 1.0
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
@@ -13,53 +43,18 @@
   indestructible: true
   biome: SemiArid
   suffix: SemiArid
-
 - type: tile
   id: FloorPlanetDryDirtDesert
   name: tiles-drydirt-floor-desert
   parent: FloorPlanetDryDirt
   biome: Desert
   suffix: Desert
-
 - type: tile
   id: FloorPlanetDryDirtSavanna
   name: tiles-drydirt-floor-savanna
   parent: FloorPlanetDryDirt
   biome: Savanna
   suffix: Savanna
-
-# Desert
-- type: tile
-  id: FloorDesert
-  name: tiles-desert-floor
-  sprite: /Textures/Tiles/Planet/Desert/desert.png
-  variants: 6
-  placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-  isSubfloor: true
-  edgeSpritePriority: 3
-  edgeSprites:
-    SouthEast: /Textures/Tiles/Planet/Desert/single_edge.png
-    NorthEast: /Textures/Tiles/Planet/Desert/single_edge.png
-    NorthWest: /Textures/Tiles/Planet/Desert/single_edge.png
-    SouthWest: /Textures/Tiles/Planet/Desert/single_edge.png
-    South: /Textures/Tiles/Planet/Desert/double_edge.png
-    East: /Textures/Tiles/Planet/Desert/double_edge.png
-    North: /Textures/Tiles/Planet/Desert/double_edge.png
-    West: /Textures/Tiles/Planet/Desert/double_edge.png
-  footstepSounds:
-    collection: FootstepAsteroid
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-  biome: Desert
-  suffix: Desert
-
 - type: tile
   id: FloorSand
   name: tiles-sand-floor
@@ -82,152 +77,48 @@
   indestructible: true
   biome: Temperate
   suffix: Temperate
-
 - type: tile
   id: FloorSandSemiArid
   name: tiles-sand-floor-semiarid
   parent: FloorSand
   biome: SemiArid
   suffix: SemiArid
-
 - type: tile
   id: FloorSandTaiga
   name: tiles-sand-floor-taiga
   parent: FloorSand
   biome: Taiga
   suffix: Taiga
-
 - type: tile
   id: FloorSandSavanna
   name: tiles-sand-floor-savanna
   parent: FloorSand
   biome: Savanna
   suffix: Savanna
-
 - type: tile
   id: FloorSandJungle
   name: tiles-sand-floor-jungle
   parent: FloorSand
   biome: Jungle
   suffix: Jungle
-
-- type: tile
-  id: FloorLowDesert
-  name: tiles-low-desert-floor
-  sprite: /Textures/Tiles/Planet/Desert/low_desert.png
-  variants: 6
-  placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepAsteroid
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-
-# Grass
-- type: tile
-  id: FloorPlanetGrass
-  name: tiles-grass-planet-floor
-  sprite: /Textures/Tiles/Planet/Grass/civgrassnew.png
-  variants: 4
-  placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
-  edgeSpritePriority: 1
-  edgeSprites:
-    SouthEast: /Textures/Tiles/Planet/Grass/single_edge_civnew.png
-    NorthEast: /Textures/Tiles/Planet/Grass/single_edge_civnew.png
-    NorthWest: /Textures/Tiles/Planet/Grass/single_edge_civnew.png
-    SouthWest: /Textures/Tiles/Planet/Grass/single_edge_civnew.png
-    South: /Textures/Tiles/Planet/Grass/double_edge_civnew.png
-    East: /Textures/Tiles/Planet/Grass/double_edge_civnew.png
-    North: /Textures/Tiles/Planet/Grass/double_edge_civnew.png
-    West: /Textures/Tiles/Planet/Grass/double_edge_civnew.png
-  baseTurf: FloorDirt
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepGrass
-  itemDrop: FloorTileItemGrass
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-
 - type: tile
   id: FloorPlanetGrassTaiga
   name: tiles-grass-planet-floor-taiga
   parent: FloorPlanetGrass
   biome: Taiga
   suffix: Taiga
-
 - type: tile
   id: FloorPlanetGrassSemiArid
   name: tiles-grass-planet-floor-semiarid
   parent: FloorPlanetGrass
   biome: SemiArid
   suffix: SemiArid
-
 - type: tile
   id: FloorPlanetGrassJungle
   name: tiles-grass-planet-floor-jungle
   parent: FloorPlanetGrass
   biome: Jungle
   suffix: Jungle
-# Lava
-- type: tile
-  id: FloorBasalt
-  name: tiles-basalt-floor
-  sprite: /Textures/Tiles/Planet/basalt.png
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepAsteroid
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-
-# Snow
-- type: tile
-  id: FloorSnow
-  name: tiles-snow
-  sprite: /Textures/Tiles/Planet/Snow/snow.png
-  variants: 13
-  placementVariants:
-    - 0.8
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0166
-    - 0.0116
-    - 0.0116
-  edgeSpritePriority: 2
-  edgeSprites:
-    South: /Textures/Tiles/Planet/Snow/snow_double_edge_south.png
-    East: /Textures/Tiles/Planet/Snow/snow_double_edge_east.png
-    North: /Textures/Tiles/Planet/Snow/snow_double_edge_north.png
-    West: /Textures/Tiles/Planet/Snow/snow_double_edge_west.png
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepSnow
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-  biome: Tundra
-  suffix: Tundra
-
-# Snow
 - type: tile
   id: FloorSnowGrass
   name: tiles-snowgrass
@@ -246,21 +137,18 @@
   indestructible: true
   biome: Tundra
   suffix: Tundra
-
 - type: tile
   id: FloorSnowGrassTaiga
   name: tiles-snowgrass-taiga
   parent: FloorSnowGrass
   biome: Taiga
   suffix: Taiga
-
 - type: tile
   id: FloorSnowGrassTemperate
   name: tiles-snowgrass-temperate
   parent: FloorSnowGrass
   biome: Temperate
   suffix: Temperate
-# Snow
 - type: tile
   id: FloorSnowDirt
   name: tiles-snowdirt
@@ -279,52 +167,15 @@
   indestructible: true
   biome: Tundra
   suffix: Tundra
-
 - type: tile
   id: FloorSnowDirtTaiga
   name: tiles-snowdirt-taiga
   parent: FloorSnowDirt
   biome: Taiga
   suffix: Taiga
-
 - type: tile
   id: FloorSnowDirtTemperate
   name: tiles-snowdirt-temperate
   parent: FloorSnowDirt
   biome: Temperate
   suffix: Temperate
-# Ice
-- type: tile
-  id: FloorIce
-  name: tiles-ice
-  sprite: /Textures/Tiles/Planet/Snow/ice.png
-  isSubfloor: true
-  friction: 0.05
-  heatCapacity: 10000
-  weather: true
-  mobFriction: 0.5
-  mobFrictionNoInput: 0.05
-  mobAcceleration: 2
-  indestructible: true
-  biome: Tundra
-  suffix: Tundra
-
-# Dug snow
-- type: tile
-  id: FloorSnowDug
-  name: tiles-snow-dug
-  sprite: /Textures/Tiles/Planet/Snow/snow_dug.png
-  edgeSpritePriority: 1
-  edgeSprites:
-    South: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_south.png
-    East: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_east.png
-    North: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_north.png
-    West: /Textures/Tiles/Planet/Snow/snow_dug_double_edge_west.png
-  isSubfloor: true
-  footstepSounds:
-    collection: FootstepSnow
-  heatCapacity: 10000
-  weather: true
-  indestructible: true
-  biome: Tundra
-  suffix: Tundra

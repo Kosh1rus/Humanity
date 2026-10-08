@@ -6,9 +6,9 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class BattleCraterSystem : EntitySystem
+public sealed partial class BattleCraterSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transforms = default!;
+    [Dependency] private SharedTransformSystem _transforms = default!;
     private readonly Dictionary<EntityUid, float> _depths = new();
     private readonly List<(EntityUid Grid, Vector2 Position, float Radius)> _craters = new();
 

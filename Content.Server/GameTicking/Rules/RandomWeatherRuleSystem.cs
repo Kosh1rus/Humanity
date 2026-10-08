@@ -14,15 +14,14 @@ namespace Content.Server.GameTicking.Rules;
 /// <summary>
 /// This handles the weather for a specific map
 /// </summary>
-public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleComponent>
+public sealed partial class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleComponent>
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly SharedWeatherSystem _weather = default!;
-    [Dependency] private readonly IPrototypeManager _protoManager = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
-    [Dependency] private readonly IEntityManager _entManager = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private ILogManager _logManager = default!;
+    [Dependency] private SharedWeatherSystem _weather = default!;
+    [Dependency] private IPrototypeManager _protoManager = default!;
+    [Dependency] private SharedMapSystem _mapManager = default!;
+    [Dependency] private IEntityManager _entManager = default!;
     private ISawmill _sawmill = default!;
     /// <inheritdoc/>
     public override void Initialize()
@@ -63,23 +62,22 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
         // Get the MapId from the entity's transform
 
         _sawmill.Info($"Selected weather: {component.CurrentWeather}");
-        var endTime = _gameTiming.CurTime + TimeSpan.FromSeconds(3600); // Weather duration of 1 hour
-        WeatherPrototype? weather = null;
-        if (component.CurrentWeather != "Clear")
+        var duration = TimeSpan.FromHours(1);
+        EntProtoId? weather = component.CurrentWeather == "Clear"
+            ? (EntProtoId?) null : new EntProtoId("Weather" + component.CurrentWeather);
+        if (weather is { } weatherId && !_protoManager.HasIndex(weatherId))
         {
-            if (!_protoManager.TryIndex(component.CurrentWeather, out weather))
-            {
-                _sawmill.Error($"Unknown weather {component.CurrentWeather}!");
-                return;
-            }
+            _sawmill.Error($"Unknown weather {weatherId}!");
+            return;
         }
+
         if (component.WeatherInitialised)
             return;
         foreach (var mapId in _mapManager.GetAllMapIds())
         {
             if (component.WeatherInitialised == false)
             {
-                _weather.SetWeather(mapId, weather, endTime);
+                _weather.TrySetWeather(mapId, weather, out _, duration);
             }
         }
         component.WeatherInitialised = true;
@@ -94,7 +92,7 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
         if (component.DayTimes.Count == 0)
             return;
         var chosenDaylight = _random.Pick(component.DayTimes);
-        var worldWar = GameTicker.CurrentPreset?.ID == "TDMWW2";
+        var worldWar = EntitySystem.Get<ServerGameTicker>().CurrentPreset?.ID == "TDMWW2";
 
         _sawmill.Info($"Selected daytime: {chosenDaylight}");
         var pickedLight = worldWar ? "#D8E0E4" : "#EEE2CB";
@@ -112,12 +110,11 @@ public sealed class RandomWeatherRuleSystem : GameRuleSystem<RandomWeatherRuleCo
         }
         foreach (var mapId in _mapManager.GetAllMapIds())
         {
-            var mapEntityUid = _mapManager.GetMapEntityId(mapId);
+            var mapEntityUid = _mapManager.GetMap(mapId);
             var lighting = _entManager.EnsureComponent<MapLightComponent>(mapEntityUid);
-            var color = Color.TryFromHex(pickedLight);
-            if (color.HasValue)
+            if (Color.TryFromHex(pickedLight, out var color))
             {
-                lighting.AmbientLightColor = color.Value;
+                lighting.AmbientLightColor = color;
                 _entManager.Dirty(mapEntityUid, lighting);
             }
         }

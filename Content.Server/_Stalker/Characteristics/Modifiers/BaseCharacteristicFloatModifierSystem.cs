@@ -9,11 +9,12 @@ public abstract class
         where TModifierComponent : BaseFloatModifierComponent
         where TModifierSystem : BaseFloatModifierSystem<TModifierComponent>
 {
-    [Dependency] private readonly TModifierSystem _modifierSystem = default!;
+    private TModifierSystem _modifierSystem = default!;
 
     public override void Initialize()
     {
         base.Initialize();
+        _modifierSystem = EntityManager.System<TModifierSystem>();
 
         SubscribeLocalEvent<TCharacteristicModifierComponent, CharacteristicUpdatedEvent>(OnCharacteristicUpdate);
         SubscribeLocalEvent<TCharacteristicModifierComponent, FloatModifierRefreshEvent<TModifierComponent>>(OnModifierRefresh);
@@ -26,7 +27,7 @@ public abstract class
 
         ent.Comp.Value = GetModifier(ent, args.NewLevel);
 
-        _modifierSystem.RefreshModifiers(ent);
+        _modifierSystem.RefreshModifiers(ent.Owner);
     }
 
     private void OnModifierRefresh(Entity<TCharacteristicModifierComponent> ent, ref FloatModifierRefreshEvent<TModifierComponent> args)

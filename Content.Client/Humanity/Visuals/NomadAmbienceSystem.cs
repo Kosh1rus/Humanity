@@ -16,17 +16,17 @@ using Robust.Shared.Timing;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class NomadAmbienceSystem : EntitySystem
+public sealed partial class NomadAmbienceSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly SharedTransformSystem _transforms = default!;
-    [Dependency] private readonly SharedMapSystem _maps = default!;
-    [Dependency] private readonly WeatherSystem _weather = default!;
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly ClientGameTicker _ticker = default!;
-    [Dependency] private readonly MetaDataSystem _metadata = default!;
+    [Dependency] private IPlayerManager _players = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private SharedTransformSystem _transforms = default!;
+    [Dependency] private SharedMapSystem _maps = default!;
+    [Dependency] private WeatherSystem _weather = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private ClientGameTicker _ticker = default!;
+    [Dependency] private MetaDataSystem _metadata = default!;
 
     private readonly string[] _paths =
     [
@@ -106,7 +106,7 @@ public sealed class NomadAmbienceSystem : EntitySystem
         var outdoor = 0.15f;
         if (player.GridUid is { } grid && TryComp<MapGridComponent>(grid, out var gridComp) &&
             _maps.TryGetTileRef(grid, gridComp, player.Coordinates, out var tile))
-            outdoor = _weather.CanWeatherAffect(grid, gridComp, tile) ? 1f : 0.15f;
+            outdoor = _weather.CanWeatherAffect((grid, gridComp, null), tile) ? 1f : 0.15f;
         var position = _transforms.GetWorldPosition(player);
         var trees = 0;
         var foliage = EntityQueryEnumerator<FoliageAtmosphereComponent, TransformComponent>();

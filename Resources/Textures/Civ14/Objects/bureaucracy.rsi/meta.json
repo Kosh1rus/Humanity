@@ -550,6 +550,15 @@
         },
         {
             "name": "diplomatic_auth"
+        },
+        {
+            "name": "paper_stamp-deny"
+        },
+        {
+            "name": "stamp-cent"
+        },
+        {
+            "name": "stamp_blank"
         }
     ]
 }

@@ -10,9 +10,9 @@ using System.Numerics;
 namespace Content.Shared.Civ14.SleepZone;
 public sealed partial class SleepZoneSystem : EntitySystem
 {
-    [Dependency] private readonly ILogManager _log = default!;
-    [Dependency] private readonly SharedTransformSystem _xform = default!;
-    [Dependency] private readonly IEntityManager _entities = default!;
+    [Dependency] private ILogManager _log = default!;
+    [Dependency] private SharedTransformSystem _xform = default!;
+    [Dependency] private IEntityManager _entities = default!;
     private ISawmill _sawmill = default!;
 
     public override void Initialize()

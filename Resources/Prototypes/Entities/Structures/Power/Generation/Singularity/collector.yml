@@ -1,4 +1,5 @@
 - type: entity
+  parent: BaseMachineDestructible
   id: RadiationCollector
   name: radiation collector
   suffix: Empty tank
@@ -13,9 +14,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.45,-0.45,0.45,0.45"
+        shape: !type:PhysShapeAabb
+          bounds: -0.45,-0.45,0.45,0.45
         density: 190
         mask:
         - MachineMask
@@ -28,27 +28,39 @@
     sprite: Structures/Power/Generation/Singularity/collector.rsi
     snapCardinals: true
     layers:
-      - state: ca_off
-        map: ["enum.RadiationCollectorVisualLayers.Main"]
+    - state: ca_off
+      map:
+      - enum.RadiationCollectorVisualLayers.Main
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.RadiationCollectorVisuals.TankInserted:
         tankInserted:
-          False: { state: ca-tank, visible: false }
-          True: { state: ca-tank, visible: true }
+          false:
+            state: ca-tank
+            visible: false
+          true:
+            state: ca-tank
+            visible: true
       enum.RadiationCollectorVisuals.PressureState:
         pressureLight:
-          0: { state: ca-o0, shader: "unshaded" }
-          1: { state: ca-o1, shader: "unshaded" }
-          2: { state: ca-o2, shader: "unshaded" }
-          3: { state: ca-o3, shader: "unshaded" }
+          0:
+            state: ca-o0
+            shader: unshaded
+          1:
+            state: ca-o1
+            shader: unshaded
+          2:
+            state: ca-o2
+            shader: unshaded
+          3:
+            state: ca-o3
+            shader: unshaded
   - type: AnimationPlayer
   - type: NodeContainer
     examinable: true
     nodes:
-      input:
-        !type:CableDeviceNode
+      input: !type:CableDeviceNode
         nodeGroupID: HVPower
   - type: PowerMonitoringDevice
     group: Generator
@@ -57,17 +69,16 @@
     sprite: Structures/Power/Generation/Singularity/collector.rsi
     state: static
   - type: RadiationCollector
-    chargeModifier: 7500
+    chargeModifier: 15000
     radiationReactiveGases:
-      - reactantPrototype: Plasma
-        powerGenerationEfficiency: 1
-        reactantBreakdownRate: 0.0001
+    - reactantPrototype: Plasma
+      powerGenerationEfficiency: 1
+      reactantBreakdownRate: 0.0001
   - type: RadiationReceiver
   - type: PowerSupplier
   - type: Anchorable
   - type: Rotatable
   - type: Pullable
-
   - type: ContainerContainer
     containers:
       gas_tank: !type:ContainerSlot {}
@@ -80,7 +91,14 @@
           - GasTank
   - type: UseDelay
     delay: 1
-
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
 - type: entity
   id: RadiationCollectorNoTank
   suffix: No tank
@@ -92,7 +110,6 @@
         whitelist:
           components:
           - GasTank
-
 - type: entity
   id: RadiationCollectorFullTank
   suffix: Filled tank

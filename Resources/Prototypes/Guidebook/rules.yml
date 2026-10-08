@@ -1,175 +1,149 @@
-﻿- type: guideEntry
+- type: guideEntry
   id: DefaultRuleset
   name: guide-entry-rules
   ruleEntry: true
   priority: 1
-  text: "/ServerInfo/Guidebook/ServerRules/DefaultRules.xml"
+  text: /ServerInfo/Guidebook/ServerRules/DefaultRules.xml
   children:
-    - RuleC1
-    - RuleC2
-    - RuleC4
-    - RuleC5
-    - RuleC6
-    - RuleC7
-    - RuleC8
-    - RuleC9
-    - RuleC10
-    - RuleC11
-    - RuleC12
-    - RuleC13
-    - RuleC14
-    - RuleR3
-    - RuleR4
-    - RuleR7
-    - RuleR8
-    - RuleR9
-    - RuleR10
-    - RuleR11
-    - RuleR12
-    - RuleR13
-
+  - RuleC1
+  - RuleC2
+  - RuleC4
+  - RuleC5
+  - RuleC6
+  - RuleC7
+  - RuleC8
+  - RuleC9
+  - RuleC10
+  - RuleC11
+  - RuleC12
+  - RuleC13
+  - RuleC14
+  - RuleR3
+  - RuleR4
+  - RuleR7
+  - RuleR8
+  - RuleR9
+  - RuleR10
+  - RuleR11
+  - RuleR12
+  - RuleR13
 - type: guideEntry
   id: RuleC1
   name: guide-entry-rules-c1
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC1Admins.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC1Admins.xml
 - type: guideEntry
   id: RuleC2
   name: guide-entry-rules-c2
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC2DBAD.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC2DBAD.xml
 - type: guideEntry
   id: RuleC4
   name: guide-entry-rules-c4
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC4NoERP.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC4NoERP.xml
 - type: guideEntry
   id: RuleC5
   name: guide-entry-rules-c5
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC5Metacomms.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC5Metacomms.xml
 - type: guideEntry
   id: RuleC6
   name: guide-entry-rules-c6
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC6BanEvasion.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC6BanEvasion.xml
 - type: guideEntry
   id: RuleC7
   name: guide-entry-rules-c7
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC7EnglishOnly.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC7EnglishOnly.xml
 - type: guideEntry
   id: RuleC8
   name: guide-entry-rules-c8
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC8Exploits.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC8Exploits.xml
 - type: guideEntry
   id: RuleC9
   name: guide-entry-rules-c9
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC9Multikey.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC9Multikey.xml
 - type: guideEntry
   id: RuleC10
   name: guide-entry-rules-c10
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC10AHelp.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC10AHelp.xml
 - type: guideEntry
   id: RuleC11
   name: guide-entry-rules-c11
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC11AhelpThreats.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC11AhelpThreats.xml
 - type: guideEntry
   id: RuleC12
   name: guide-entry-rules-c12
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC12MinAge.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC12MinAge.xml
 - type: guideEntry
   id: RuleC13
   name: guide-entry-rules-c13
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC13CharacterNames.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC13CharacterNames.xml
 - type: guideEntry
   id: RuleC14
   name: guide-entry-rules-c14
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleC14ICinOOC.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleC14ICinOOC.xml
 - type: guideEntry
   id: RuleR3
   name: guide-entry-rules-r3
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR3NormalRP.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR3NormalRP.xml
 - type: guideEntry
   id: RuleR4
   name: guide-entry-rules-r4
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR4Metashield.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR4Metashield.xml
 - type: guideEntry
   id: RuleR7
   name: guide-entry-rules-r7
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR7RoundStalling.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR7RoundStalling.xml
 - type: guideEntry
   id: RuleR8
   name: guide-entry-rules-r8
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR8NoFriendlyAntag.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR8NoFriendlyAntag.xml
 - type: guideEntry
   id: RuleR9
   name: guide-entry-rules-r9
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR9MassSabotage.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR9MassSabotage.xml
 - type: guideEntry
   id: RuleR10
   name: guide-entry-rules-r10
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR10Subordination.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR10Subordination.xml
 - type: guideEntry
   id: RuleR11
   name: guide-entry-rules-r11
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR11Escalation.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR11Escalation.xml
 - type: guideEntry
   id: RuleR12
   name: guide-entry-rules-r12
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR12RoleAbandonment.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR12RoleAbandonment.xml
 - type: guideEntry
   id: RuleR13
   name: guide-entry-rules-r13
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/RuleR13PerformRole.xml"
-
-# Ban-Related Guide Entries are used as hyperlinks in certain Ruleset Guide Entry explanations.
-
+  text: /ServerInfo/Guidebook/ServerRules/RuleR13PerformRole.xml
 - type: guideEntry
   id: BanTypes
   name: guide-entry-rules-ban-types
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/BanTypes.xml"
-
+  text: /ServerInfo/Guidebook/ServerRules/BanTypes.xml
 - type: guideEntry
   id: BanDurations
   name: guide-entry-rules-ban-durations
   ruleEntry: true
-  text: "/ServerInfo/Guidebook/ServerRules/BanDurations.xml"
+  text: /ServerInfo/Guidebook/ServerRules/BanDurations.xml

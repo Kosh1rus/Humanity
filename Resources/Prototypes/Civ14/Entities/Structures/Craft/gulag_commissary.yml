@@ -4,86 +4,84 @@
   name: рубли
   description: Валюта СССР.
   components:
-    - type: Sprite
-      sprite: Civ14/Objects/trash.rsi
-      state: money
-    - type: Item
-      sprite: Civ14/Objects/trash.rsi
-      state: money
-      size: Small
-    - type: Tag
-      tags:
-        - CivMoney
-    - type: Damageable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-    - type: Stack
-      stackType: Roubles
-    - type: Material
-    - type: PhysicalComposition
-      materialComposition:
-        Roubles: 1
-
+  - type: Sprite
+    sprite: Civ14/Objects/trash.rsi
+    state: money
+  - type: Item
+    sprite: Civ14/Objects/trash.rsi
+    state: money
+    size: Small
+  - type: Tag
+    tags:
+    - CivMoney
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: Stack
+    stackType: Roubles
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Roubles: 1
+  - type: Injurable
+    damageContainer: Inorganic
 - type: stack
   id: Roubles
   name: рубли
   spawn: Roubles
   maxCount: 100
-
 - type: material
   id: Roubles
   stackEntity: Roubles
   name: Рубли
   unit: Rbl
-  icon: { sprite: /Textures/Civ14/Objects/trash.rsi, state: money }
-  color: "#d6ad77"
+  icon:
+    sprite: /Textures/Civ14/Objects/trash.rsi
+    state: money
+  color: '#d6ad77'
   price: 1
-
 - type: entity
   parent: BaseLathe
   id: GulagCommissary
   name: лагерный магазин
   description: Здесь можно купить еду и другие вещи.
   components:
-    - type: Transform
-      noRot: false
-    - type: Sprite
-      sprite: Civ14/Objects/vending.rsi
-      snapCardinals: true
-      state: market_stall
-    - type: ApcPowerReceiver
-      needsPower: false
-      powerLoad: 0
-    - type: Anchorable
-      delay: 2
-    - type: Lathe
-      producingSound: /Audio/Machines/button.ogg
-      staticPacks:
-        - GulagCommissary
-    - type: MaterialStorage
-      whitelist:
-        tags:
-          - CivMoney
-
+  - type: Transform
+    noRot: false
+  - type: Sprite
+    sprite: Civ14/Objects/vending.rsi
+    snapCardinals: true
+    state: market_stall
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+  - type: Anchorable
+    delay: 2
+  - type: Lathe
+    producingSound: /Audio/Machines/button.ogg
+    staticPacks:
+    - GulagCommissary
+  - type: MaterialStorage
+    whitelist:
+      tags:
+      - CivMoney
 - type: latheCategory
   id: GulagCommissary
   name: Лагерный магазин
-
 - type: latheRecipePack
   id: GulagCommissary
   recipes:
-    - GulagCommissaryInventoryNutribrick
-
+  - GulagCommissaryInventoryNutribrick
 - type: latheRecipe
   id: GulagCommissaryInventoryNutribrick
   categories:
-    - GulagCommissary
+  - GulagCommissary
   completetime: 0.5
   materials:
     Roubles: 15

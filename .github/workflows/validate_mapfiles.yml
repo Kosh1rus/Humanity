@@ -9,14 +9,12 @@ on:
 jobs:
   yaml-schema-validation:
     name: YAML map schema validator
-    if: github.actor != 'PJBot' && github.event.pull_request.draft == false
+    if: github.actor != 'PJBot'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.6.0
+    - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
     - name: Setup Submodule
-      run: git submodule update --init
-    - name: Pull engine updates
-      uses: space-wizards/submodule-dependency@v0.1.5
+      run: git submodule update --init --recursive
     - uses: PaulRitter/yaml-schema-validator@v1
       with:
         schema: RobustToolbox/Schemas/mapfile.yml

@@ -32,4 +32,3 @@ comms-console-menu-emergency-shuttle-button-tooltip = Вызвать или от
 comms-console-menu-time-remaining = Осталось времени: {$time}
 comms-console-announcement-sent-by = Отправитель
 comms-console-announcement-title-centcom = Мир
-

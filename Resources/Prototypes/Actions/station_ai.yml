@@ -1,55 +1,31 @@
-﻿# Actions
 - type: entity
+  parent: BaseAction
   id: ActionJumpToCore
   name: Вернуться к ядру
   description: Переместить ваше око обратно к ядру.
   components:
-  - type: InstantAction
+  - type: Action
     priority: -9
     itemIconStyle: BigAction
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: ai_core
-    event: !type:JumpToCoreEvent
-
-- type: entity
-  id: ActionSurvCameraLights
-  name: Переключить подсветку камер
-  description: Включить или выключить подсветку камер наблюдения рядом с точкой обзора.
-  components:
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: ai_core
   - type: InstantAction
-    priority: -5
-    itemIconStyle: BigAction
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: camera_light
-    event: !type:RelayedActionComponentChangeEvent
-      components:
-      - type: LightOnCollideCollider
-      - type: FixturesChange
-        fixtures:
-          lightTrigger:
-            shape:
-              !type:PhysShapeCircle
-              radius: 0.35
-            density: 80
-            hard: false
-            layer:
-            - GhostImpassable
-
-
+    event: !type:JumpToCoreEvent ''
 - type: entity
+  parent: BaseMentalAction
   id: ActionAIViewLaws
   name: Посмотреть законы
   description: Показать законы, которым вы обязаны подчиняться.
   components:
-  - type: InstantAction
-    checkCanInteract: false
-    checkConsciousness: false
+  - type: Action
     priority: -3
     itemIconStyle: NoItem
-    icon:
-      sprite: Interface/Actions/actions_ai.rsi
-      state: state_laws
-    event: !type:ToggleLawsScreenEvent
     useDelay: 0.5
+  - type: Sprite
+    sprite: Interface/Actions/actions_ai.rsi
+    layers:
+    - state: state_laws
+  - type: InstantAction
+    event: !type:ToggleLawsScreenEvent ''

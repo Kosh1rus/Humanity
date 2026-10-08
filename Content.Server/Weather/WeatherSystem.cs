@@ -1,126 +1,28 @@
-using Content.Server.Administration;
-using Content.Shared.Administration;
 using Content.Shared.Weather;
-using Robust.Shared.Console;
-using Robust.Shared.GameStates;
-using Robust.Shared.Map;
-using System.Linq;
+using Robust.Server.GameStates;
 
 namespace Content.Server.Weather;
 
-public sealed class WeatherSystem : SharedWeatherSystem
+public sealed partial class WeatherSystem : SharedWeatherSystem
 {
-    [Dependency] private readonly IConsoleHost _console = default!;
-    [Dependency] private readonly SharedMapSystem _mapSystem = default!;
+    //I dont really like to PVS override weather entities, but map status effect containers dont PVS-ing out of the box
+    [Dependency] private PvsOverrideSystem _pvs = default!;
 
     public override void Initialize()
     {
-        base.Initialize();
-        SubscribeLocalEvent<WeatherComponent, ComponentGetState>(OnWeatherGetState);
-        _console.RegisterCommand("weather",
-            Loc.GetString("cmd-weather-desc"),
-            Loc.GetString("cmd-weather-help"),
-            WeatherTwo,
-            WeatherCompletion);
+        SubscribeLocalEvent<WeatherStatusEffectComponent, ComponentInit>(OnCompInit);
+        SubscribeLocalEvent<WeatherStatusEffectComponent, ComponentShutdown>(OnCompShutdown);
     }
 
-    private void OnWeatherGetState(EntityUid uid, WeatherComponent component, ref ComponentGetState args)
+    private void OnCompInit(Entity<WeatherStatusEffectComponent> ent, ref ComponentInit args)
     {
-        args.State = new WeatherComponentState(component.Weather);
+        // The map entitiy itself is networked by PVS if the player is on that map but not anything inside a container,
+        // So we need to add an overridce to make sure the client sees it.
+        _pvs.AddGlobalOverride(ent);
     }
 
-    /// <summary>
-    /// Handles the "weather" admin console command to set the weather on a specified map, optionally for a set duration, and updates precipitation states for all entities with <c>WeatherNomadsComponent</c>.
-    /// </summary>
-    /// <param name="shell">The console shell executing the command.</param>
-    /// <param name="argStr">The raw argument string.</param>
-    /// <param name="args">
-    /// Command arguments:
-    /// <list type="number">
-    /// <item><description>Map ID (integer).</description></item>
-    /// <item><description>Weather prototype ID or "null" to clear weather.</description></item>
-    /// <item><description>(Optional) Duration in seconds for the weather effect.</description></item>
-    /// </list>
-    /// </param>
-    [AdminCommand(AdminFlags.Fun)]
-    private void WeatherTwo(IConsoleShell shell, string argStr, string[] args)
+    private void OnCompShutdown(Entity<WeatherStatusEffectComponent> ent, ref ComponentShutdown args)
     {
-        if (args.Length < 2)
-        {
-            shell.WriteError(Loc.GetString("cmd-weather-error-no-arguments"));
-            return;
-        }
-
-        if (!int.TryParse(args[0], out var mapInt))
-            return;
-
-        var mapId = new MapId(mapInt);
-
-        if (!MapManager.MapExists(mapId))
-            return;
-
-        if (!_mapSystem.TryGetMap(mapId, out var mapUid))
-            return;
-
-        var weatherComp = EnsureComp<WeatherComponent>(mapUid.Value);
-
-        //Weather Proto parsing
-        WeatherPrototype? weather = null;
-        if (!args[1].Equals("null"))
-        {
-            if (!ProtoMan.TryIndex(args[1], out weather))
-            {
-                shell.WriteError(Loc.GetString("cmd-weather-error-unknown-proto"));
-                return;
-            }
-        }
-
-        //Time parsing
-        TimeSpan? endTime = null;
-        if (args.Length == 3)
-        {
-            var curTime = Timing.CurTime;
-            if (int.TryParse(args[2], out var durationInt))
-            {
-                endTime = curTime + TimeSpan.FromSeconds(durationInt);
-            }
-            else
-            {
-                shell.WriteError(Loc.GetString("cmd-weather-error-wrong-time"));
-            }
-        }
-        var nomadsweather = EntityQueryEnumerator<WeatherNomadsComponent>();
-        while (nomadsweather.MoveNext(out var uuid, out var weatherComponent))
-        {
-            var parsedprec = Precipitation.Dry;
-            if (!args[1].Equals("null"))
-            {
-                if (args[1].Equals("Hail") || args[1].Equals("SandstormHeavy") || args[1].Equals("Storm") || args[1].Equals("SnowfallHeavy"))
-                {
-                    parsedprec = Precipitation.Storm;
-                }
-                if (args[1].Equals("Rain") || args[1].Equals("SnowfallLight"))
-                {
-                    parsedprec = Precipitation.LightWet;
-                }
-                if (args[1].Equals("SnowfallMedium"))
-                {
-                    parsedprec = Precipitation.HeavyWet;
-                }
-            }
-            weatherComponent.CurrentPrecipitation = parsedprec;
-        }
-
-        SetWeather(mapId, weather, endTime);
-    }
-
-    private CompletionResult WeatherCompletion(IConsoleShell shell, string[] args)
-    {
-        if (args.Length == 1)
-            return CompletionResult.FromHintOptions(CompletionHelper.MapIds(EntityManager), "Map Id");
-
-        var a = CompletionHelper.PrototypeIDs<WeatherPrototype>(true, ProtoMan);
-        var b = a.Concat(new[] { new CompletionOption("null", Loc.GetString("cmd-weather-null")) });
-        return CompletionResult.FromHintOptions(b, Loc.GetString("cmd-weather-hint"));
+        _pvs.RemoveGlobalOverride(ent);
     }
 }

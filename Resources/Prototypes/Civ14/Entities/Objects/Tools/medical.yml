@@ -22,13 +22,13 @@
       agemax: 8
 
 - type: construction
-  name: "справочник врача"
+  name: humanity-construction-DoctorsHandbook-name
   id: DoctorsHandbook
   graph: DoctorsHandbook
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: "Медицинский справочник, помогающий ставить диагноз."
+  description: humanity-construction-DoctorsHandbook-description
   icon: { sprite: Civ14/Objects/library.rsi, state: bookmed }
   objectType: Item
   agemin: 0

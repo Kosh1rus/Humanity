@@ -4,10 +4,9 @@ using System.Linq; // For LINQ queries if needed for checking existing squad mem
 
 namespace Content.Shared.Overlays;
 
-public abstract class SharedFactionIconsSystem : EntitySystem
+public abstract partial class SharedFactionIconsSystem : EntitySystem
 {
-    [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!;
+    [Dependency] protected IPrototypeManager PrototypeManager = default!;
 
     // Example: Define your squad configurations. This could be more dynamic.
     // You'd likely have prototypes for squads themselves eventually.

@@ -1,8 +1,11 @@
 using Content.Shared.Audio;
+using Content.Shared.Construction.Components;
 using Content.Shared.Explosion;
 using Content.Shared.Eye;
+using Content.Shared.Interaction.Components;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Maps;
+using Content.Shared.Popups;
 using JetBrains.Annotations;
 using Robust.Shared.Map;
 using Robust.Shared.Map.Components;
@@ -14,21 +17,20 @@ namespace Content.Shared.SubFloor
     ///     Entity system backing <see cref="SubFloorHideComponent"/>.
     /// </summary>
     [UsedImplicitly]
-    public abstract class SharedSubFloorHideSystem : EntitySystem
+    public abstract partial class SharedSubFloorHideSystem : EntitySystem
     {
-        [Dependency] private readonly ITileDefinitionManager _tileDefinitionManager = default!;
-        [Dependency] private readonly SharedAmbientSoundSystem _ambientSoundSystem = default!;
-        [Dependency] protected readonly SharedMapSystem Map = default!;
-        [Dependency] protected readonly SharedAppearanceSystem Appearance = default!;
-        [Dependency] private readonly SharedVisibilitySystem _visibility = default!;
+        [Dependency] private ITileDefinitionManager _tileDefinitionManager = default!;
+        [Dependency] private SharedAmbientSoundSystem _ambientSoundSystem = default!;
+        [Dependency] protected SharedMapSystem Map = default!;
+        [Dependency] protected SharedAppearanceSystem Appearance = default!;
+        [Dependency] private SharedVisibilitySystem _visibility = default!;
+        [Dependency] protected SharedPopupSystem _popup = default!;
 
-        private EntityQuery<SubFloorHideComponent> _hideQuery;
+        [Dependency] private EntityQuery<SubFloorHideComponent> _hideQuery = default!;
 
         public override void Initialize()
         {
             base.Initialize();
-
-            _hideQuery = GetEntityQuery<SubFloorHideComponent>();
 
             SubscribeLocalEvent<TileChangedEvent>(OnTileChanged);
             SubscribeLocalEvent<SubFloorHideComponent, ComponentStartup>(OnSubFloorStarted);
@@ -38,6 +40,32 @@ namespace Content.Shared.SubFloor
             SubscribeLocalEvent<SubFloorHideComponent, GettingInteractedWithAttemptEvent>(OnInteractionAttempt);
             SubscribeLocalEvent<SubFloorHideComponent, GettingAttackedAttemptEvent>(OnAttackAttempt);
             SubscribeLocalEvent<SubFloorHideComponent, GetExplosionResistanceEvent>(OnGetExplosionResistance);
+            SubscribeLocalEvent<SubFloorHideComponent, AnchorAttemptEvent>(OnAnchorAttempt);
+            SubscribeLocalEvent<SubFloorHideComponent, UnanchorAttemptEvent>(OnUnanchorAttempt);
+        }
+
+        private void OnAnchorAttempt(EntityUid uid, SubFloorHideComponent component, AnchorAttemptEvent args)
+        {
+            // No teleporting entities through floor tiles when anchoring them.
+            var xform = Transform(uid);
+
+            if (TryComp<MapGridComponent>(xform.GridUid, out var grid)
+                && HasFloorCover(xform.GridUid.Value, grid, Map.TileIndicesFor(xform.GridUid.Value, grid, xform.Coordinates)))
+            {
+                _popup.PopupEntity(Loc.GetString("subfloor-anchor-failure", ("entity", uid)), args.User, args.User);
+                args.Cancel();
+            }
+        }
+
+        private void OnUnanchorAttempt(EntityUid uid, SubFloorHideComponent component, UnanchorAttemptEvent args)
+        {
+            // No un-anchoring things under the floor. Only required for something like vents, which are still interactable
+            // despite being partially under the floor.
+            if (component.IsUnderCover)
+            {
+                _popup.PopupEntity(Loc.GetString("subfloor-unanchor-failure", ("entity", uid)), args.User, args.User);
+                args.Cancel();
+            }
         }
 
         private void OnGetExplosionResistance(EntityUid uid, SubFloorHideComponent component, ref GetExplosionResistanceEvent args)
@@ -54,6 +82,10 @@ namespace Content.Shared.SubFloor
 
         private void OnInteractionAttempt(EntityUid uid, SubFloorHideComponent component, ref GettingInteractedWithAttemptEvent args)
         {
+            // Allow admins (e.g., mappers/aghosts) to twiddle with stuff under subfloors
+            if (HasComp<BypassInteractionChecksComponent>(args.Uid))
+                return;
+
             // No interactions with entities hidden under floor tiles.
             if (component.BlockInteractions && component.IsUnderCover)
                 args.Cancelled = true;
@@ -63,13 +95,13 @@ namespace Content.Shared.SubFloor
         {
             UpdateFloorCover(uid, component);
             UpdateAppearance(uid, component);
-            EntityManager.EnsureComponent<CollideOnAnchorComponent>(uid);
+            EnsureComp<CollideOnAnchorComponent>(uid);
         }
 
         private void OnSubFloorTerminating(EntityUid uid, SubFloorHideComponent component, ComponentShutdown _)
         {
             // If component is being deleted don't need to worry about updating any component stuff because it won't matter very shortly.
-            if (EntityManager.GetComponent<MetaDataComponent>(uid).EntityLifeStage >= EntityLifeStage.Terminating)
+            if (Comp<MetaDataComponent>(uid).EntityLifeStage >= EntityLifeStage.Terminating)
                 return;
 
             // Regardless of whether we're on a subfloor or not, unhide.
@@ -93,13 +125,16 @@ namespace Content.Shared.SubFloor
 
         private void OnTileChanged(ref TileChangedEvent args)
         {
-            if (args.OldTile.IsEmpty)
-                return; // Nothing is anchored here anyways.
+            foreach (var change in args.Changes)
+            {
+                if (change.OldTile.IsEmpty)
+                    continue; // Nothing is anchored here anyways.
 
-            if (args.NewTile.Tile.IsEmpty)
-                return; // Anything that was here will be unanchored anyways.
+                if (change.NewTile.IsEmpty)
+                    continue; // Anything that was here will be unanchored anyways.
 
-            UpdateTile(args.NewTile.GridUid, args.Entity.Comp, args.NewTile.GridIndices);
+                UpdateTile(args.Entity, args.Entity.Comp, change.GridIndices);
+            }
         }
 
         /// <summary>
@@ -193,6 +228,7 @@ namespace Content.Shared.SubFloor
         ScannerRevealed,
     }
 
+    [Serializable, NetSerializable]
     public enum SubfloorLayers : byte
     {
         FirstLayer

@@ -2,9 +2,9 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._Stalker.Modifier;
 
-public abstract class BaseFloatModifierSystem<TComponent> : EntitySystem where TComponent : BaseFloatModifierComponent
+public abstract partial class BaseFloatModifierSystem<TComponent> : EntitySystem where TComponent : BaseFloatModifierComponent
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private IGameTiming _timing = default!;
 
     public void RefreshModifiers(EntityUid uid)
     {

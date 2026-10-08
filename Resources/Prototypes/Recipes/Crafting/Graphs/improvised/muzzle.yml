@@ -2,12 +2,12 @@
   id: Muzzle
   start: start
   graph:
-    - node: start
-      edges:
-        - to: muzzle
-          steps:
-            - material: Leather
-              amount: 3
-              doAfter: 10
-    - node: muzzle
-      entity: ClothingMaskMuzzle
+  - node: start
+    edges:
+    - to: muzzle
+      steps:
+      - material: Leather
+        amount: 3
+        doAfter: 10
+  - node: muzzle
+    entity: ClothingMaskMuzzle

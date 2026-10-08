@@ -1,4 +1,4 @@
-guide-entry-ss14 = Guides
+guide-entry-ss14 = Station and Shifts
 guide-entry-engineering = Engineering
 guide-entry-construction = Construction
 guide-entry-expandingrepairingstation = Expanding and Repairing Stations
@@ -20,10 +20,12 @@ guide-entry-manualvalve = Manual Valve
 guide-entry-signalvalve = Signal Valve
 guide-entry-pneumaticvalve = Pneumatic Valve
 guide-entry-passivegate = Passive Gate
+guide-entry-ressureregulator = Pressure Regulator
 guide-entry-mixingandfiltering = Mixing and Filtering
 guide-entry-gascanisters = Gas Canisters
 guide-entry-thermomachines = Thermomachines
 guide-entry-gascondensing = Gas Condensing
+guide-entry-gasrecycling = Gas Recycling
 guide-entry-radiators = Radiators
 guide-entry-atmosphericssystems = Atmospherics Systems
 guide-entry-pipenetworks = Pipe Networks
@@ -36,6 +38,7 @@ guide-entry-gasminingandstorage = Gas Mining and Storage
 guide-entry-atmosphericupsets = Atmospheric Upsets
 guide-entry-fires = Fires
 guide-entry-spacing = Spacing
+guide-entry-deltapressure = Delta Pressure
 guide-entry-atmostools = Atmos Tools
 guide-entry-gasses = Gasses
 guide-entry-botany = Botany
@@ -77,6 +80,8 @@ guide-entry-anomalous-research = Anomalous Research
 guide-entry-scanners-and-vessels = Scanners and Vessels
 guide-entry-ape = A.P.E.
 guide-entry-xenoarchaeology = Xenoarchaeology
+guide-entry-xenoarchaeologyunlockingnodes = Unlocking Nodes
+guide-entry-analysisconsole = Analysis Console
 guide-entry-artifact-reports = Artifact Reports
 guide-entry-traversal-distorter = Traversal Distorter
 guide-entry-machine-upgrading = Machine Upgrading
@@ -91,19 +96,10 @@ guide-entry-service = Service
 
 guide-entry-newplayer = New? Start here!
 guide-entry-charactercreation = Creating Characters
-guide-entry-nomads = Nomads Gamemode
-guide-entry-nomads-starterguide = Starter Guide
-guide-entry-nomads-farming = Farming
-guide-entry-nomads-metallurgy = Metallurgy
 guide-entry-species = Species
 guide-entry-yourfirstcharacter = Your First Character
 guide-entry-controls = Controls
 guide-entry-radio = Radio and Speech
-
-
-guide-entry-tdm = Team Deathmatch Gamemode
-guide-entry-valley = Valley Map
-guide-entry-mapping = Guide to Mapping
 
 guide-entry-references = Tables & References
 guide-entry-chemicals = Chemicals
@@ -136,6 +132,7 @@ guide-entry-salad-recipes = Salads
 guide-entry-medicinal-recipes = Medicinal
 guide-entry-other-recipes = Other
 guide-entry-secret-recipes = Secret
+guide-entry-lawsets = Silicon Lawsets
 
 guide-entry-antagonists = Antagonists
 guide-entry-nuclear-operatives = Nuclear Operatives
@@ -146,6 +143,8 @@ guide-entry-minor-antagonists = Minor Antagonists
 guide-entry-space-ninja = Space Ninja
 guide-entry-thieves = Thieves
 guide-entry-wizard = Wizard
+guide-entry-xenoborgs = Xenoborgs
+guide-entry-changelings = Changelings
 
 guide-entry-rules = Server Rules
 guide-entry-rules-core-only = Core Only Ruleset
@@ -207,3 +206,4 @@ guide-entry-rules-ban-types = Ban Types
 guide-entry-rules-ban-durations = Ban Durations
 
 guide-entry-writing = Writing
+guide-entry-glossary = Glossary

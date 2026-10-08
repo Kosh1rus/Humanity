@@ -6,11 +6,11 @@ namespace Content.Shared.Farming;
 [Serializable, NetSerializable]
 public sealed partial class CompostDoAfterEvent : DoAfterEvent
 {
-    public NetEntity Used { get; }
+    public NetEntity CompostedItem { get; }
 
     public CompostDoAfterEvent(NetEntity used)
     {
-        Used = used;
+        CompostedItem = used;
     }
 
     public override DoAfterEvent Clone() => this;

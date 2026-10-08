@@ -5,6 +5,7 @@ using Content.Shared.Humanity.Visuals;
 using Content.Shared.Light.Components;
 using Content.Shared.Damage;
 using Content.Shared.TreeBranch;
+using Content.Shared.Gatherable.Components;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 
@@ -20,6 +21,12 @@ public sealed class NomadLandscapeSystem : EntitySystem
         base.Initialize();
         SubscribeLocalEvent<ConstructionComponent, ConstructionChangeEntityEvent>(OnBuilt);
         SubscribeLocalEvent<TreeBranchesComponent, DamageChangedEvent>(OnChop);
+        SubscribeLocalEvent<GatherableComponent, NomadGatherEffectEvent>(OnGatherEffect);
+    }
+
+    private void OnGatherEffect(Entity<GatherableComponent> gathered, ref NomadGatherEffectEvent args)
+    {
+        Emit(gathered, args.Effect);
     }
 
     private void OnBuilt(EntityUid uid, ConstructionComponent component, ConstructionChangeEntityEvent args)

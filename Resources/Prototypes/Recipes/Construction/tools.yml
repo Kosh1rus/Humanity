@@ -1,13 +1,53 @@
 - type: construction
-  name: torch
+  abstract: true
+  id: BaseTool
+  category: construction-category-tools
+  objectType: Item
+- type: construction
+  parent: BaseTool
+  id: LogicGate
+  graph: LogicGate
+  targetNode: logic_gate
+  hide: true
+- type: construction
+  parent: LogicGate
+  id: EdgeDetector
+  targetNode: edge_detector
+  hide: true
+- type: construction
+  parent: LogicGate
+  id: PowerSensor
+  targetNode: power_sensor
+  hide: true
+- type: construction
+  parent: LogicGate
+  id: MemoryCell
+  targetNode: memory_cell
+  hide: true
+- type: construction
+  parent: LogicGate
+  id: RandomGate
+  targetNode: random_gate
+- type: construction
+  parent: BaseTool
   id: LightTorch
   graph: LightTorch
-  startNode: start
   targetNode: torch
-  category: construction-category-tools
-  description: A torch fashioned from some wood.
-  icon: { sprite: Objects/Misc/torch.rsi, state: icon }
-  objectType: Item
   agemin: 0
   agemax: 8
   tdm: true
+- type: construction
+  parent: BaseTool
+  id: MakeshiftMortarAndPestle
+  graph: MakeshiftMortarAndPestle
+  targetNode: mortarAndPestle
+- type: construction
+  parent: BaseTool
+  id: MakeshiftJuicer
+  graph: MakeshiftJuicer
+  targetNode: juicer
+- type: construction
+  parent: BaseTool
+  id: MakeshiftCentrifuge
+  graph: MakeshiftCentrifuge
+  targetNode: makeshiftCentrifuge

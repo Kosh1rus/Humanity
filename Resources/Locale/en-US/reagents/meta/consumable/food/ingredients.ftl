@@ -1,8 +1,5 @@
-reagent-name-flour = wheat flour
+reagent-name-flour = flour
 reagent-desc-flour = Used for baking.
-
-reagent-name-barleyflour = barley flour
-reagent-desc-barleyflour = Used for baking.
 
 reagent-name-cornmeal = cornmeal
 reagent-desc-cornmeal = Used for baking.

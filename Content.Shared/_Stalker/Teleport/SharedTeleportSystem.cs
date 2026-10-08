@@ -3,10 +3,9 @@ using Robust.Shared.Map;
 
 namespace Content.Shared._Stalker.Teleport;
 
-public abstract class SharedTeleportSystem : EntitySystem
+public abstract partial class SharedTeleportSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _xform = default!;
-    [Dependency] private readonly IMapManager _mapMan = default!;
+    [Dependency] private SharedTransformSystem _xform = default!;
     protected void TeleportEntity(EntityUid entity, EntityCoordinates coords, bool reParent = true)
     {
         // raise before event so other systems can handle this

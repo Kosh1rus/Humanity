@@ -1,9 +1,6 @@
-﻿using Content.Server.Actions;
-using Content.Server.Atmos.EntitySystems;
 using Content.Server.Body.Systems;
 using Content.Server.Medical.Components;
-using Content.Shared.Bed.Sleep;
-using Content.Shared.Actions;
+using Content.Shared.Atmos;
 using Content.Shared.Medical.Cryogenics;
 
 namespace Content.Server.Medical
@@ -18,7 +15,6 @@ namespace Content.Server.Medical
             SubscribeLocalEvent<InsideCryoPodComponent, ExhaleLocationEvent>(OnExhaleLocation);
             SubscribeLocalEvent<InsideCryoPodComponent, AtmosExposedGetAirEvent>(OnGetAir);
         }
-
 
         #region Atmos handlers
 

@@ -1,143 +1,157 @@
-﻿# any type of magical items used by wizards and similiar
+- type: entity
+  id: BaseHighlyIllegalContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: HighlyIllegal
+- type: entity
+  id: BaseXenoborgContraband
+  abstract: true
+  components:
+  - type: Contraband
+    severity: HighlyIllegal
 - type: entity
   id: BaseMagicalContraband
   abstract: true
   components:
-    - type: Contraband
-      severity: Magical
-
-# non-stealth syndicate stuff
+  - type: Contraband
+    severity: Magical
 - type: entity
   id: BaseSyndicateContraband
   abstract: true
   components:
-    - type: Contraband
-      severity: Syndicate
-
-# minor contraband not departmentally restricted -- improvised weapons etc
+  - type: Contraband
+    severity: Syndicate
+    allowedDepartments: []
+    allowedJobs: []
 - type: entity
   id: BaseMinorContraband
   abstract: true
   components:
-    - type: Contraband
-      severity: Minor
-
-# major contraband, for things like guns or weaponry that don't belong to any department and aren't syndicate specific
+  - type: Contraband
+    severity: Minor
 - type: entity
   id: BaseMajorContraband
   abstract: true
   components:
-    - type: Contraband
-      severity: Major
-
-# base department restricted contraband, this should only be used as a parent for other contraband prototypes, not the restricted items themselves.
+  - type: Contraband
+    severity: Major
 - type: entity
   id: BaseRestrictedContraband
   abstract: true
   components:
-    - type: Contraband
-      severity: Restricted
-      allowedDepartments: []
-      allowedJobs: []
-
-# one department restricted contraband
+  - type: Contraband
+    severity: Restricted
+    allowedDepartments: []
+    allowedJobs: []
 - type: entity
   id: BaseCentcommContraband
   parent: BaseRestrictedContraband
   abstract: true
   components:
-    - type: Contraband
-      allowedDepartments: [CentralCommand]
-
+  - type: Contraband
+    allowedDepartments:
+    - CentralCommand
+- type: entity
+  id: BaseTaskForceContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments:
+    - TaskForce
 - type: entity
   id: BaseCommandContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseEngineeringContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseScienceContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseMedicalContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseCivilianContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseCargoContraband
   parent: BaseRestrictedContraband
   abstract: true
-
-# multiple departments restricted contraband
+- type: entity
+  id: BaseServiceContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments:
+    - Service
 - type: entity
   id: BaseCentcommCommandContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityCommandContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityScienceCommandContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityEngineeringContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSiliconScienceContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityCargoContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseMedicalScienceContraband
   parent: BaseRestrictedContraband
   abstract: true
-
-# contraband restricted by job by some degree
+- type: entity
+  id: BaseCBURNContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedJobs:
+    - CBURN
+- type: entity
+  id: BaseDeathSquadContraband
+  parent: BaseRestrictedContraband
+  abstract: true
+  components:
+  - type: Contraband
+    allowedJobs:
+    - DeathSquad
 - type: entity
   id: BaseSecurityBartenderContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseSecurityLawyerContraband
   parent: BaseRestrictedContraband
   abstract: true
-
 - type: entity
   id: BaseJanitorContraband
   parent: BaseRestrictedContraband
   abstract: true
-
-# for ~objective items
 - type: entity
   id: BaseGrandTheftContraband
   abstract: true
-  components:

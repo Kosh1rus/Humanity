@@ -1,11 +1,11 @@
 - type: construction
-  name: "деревянный ящик"
+  name: humanity-construction-CrateWood-name
   id: CrateWood
   graph: CrateWood
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Деревянный ящик для хранения вещей."
+  description: humanity-construction-CrateWood-description
   icon: { sprite: Civ14/Objects/Storage/wood_crate.rsi, state: icon }
   objectType: Item
   agemin: 0

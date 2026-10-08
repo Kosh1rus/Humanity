@@ -1,19 +1,16 @@
 using Content.Client.Clothing.Systems;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Tag;
-using Content.Shared.Prototypes;
 using JetBrains.Annotations;
-using Robust.Client.GameObjects;
 using Robust.Client.UserInterface;
 using Robust.Shared.Prototypes;
 
 namespace Content.Client.Clothing.UI;
 
 [UsedImplicitly]
-public sealed class ChameleonBoundUserInterface : BoundUserInterface
+public sealed partial class ChameleonBoundUserInterface : BoundUserInterface
 {
-    [Dependency] private readonly IComponentFactory _factory = default!;
-    [Dependency] private readonly IPrototypeManager _proto = default!;
+    [Dependency] private IPrototypeManager _proto = default!;
     private readonly ChameleonClothingSystem _chameleon;
     private readonly TagSystem _tag;
 
@@ -43,19 +40,20 @@ public sealed class ChameleonBoundUserInterface : BoundUserInterface
         var targets = _chameleon.GetValidTargets(st.Slot);
         if (st.RequiredTag != null)
         {
-            var newTargets = new List<string>();
+            var newTargets = new List<EntProtoId>();
             foreach (var target in targets)
             {
-                if (string.IsNullOrEmpty(target) || !_proto.TryIndex(target, out EntityPrototype? proto))
+                if (string.IsNullOrEmpty(target) || !_proto.Resolve(target, out EntityPrototype? proto))
                     continue;
 
-                if (!proto.TryGetComponent(out TagComponent? tag, _factory) || !_tag.HasTag(tag, st.RequiredTag))
+                if (!proto.TryComp(out TagComponent? tag, EntMan.ComponentFactory) || !_tag.HasTag(tag, st.RequiredTag))
                     continue;
 
                 newTargets.Add(target);
             }
             _menu?.UpdateState(newTargets, st.SelectedId);
-        } else
+        }
+        else
         {
             _menu?.UpdateState(targets, st.SelectedId);
         }

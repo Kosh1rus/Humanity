@@ -1,50 +1,179 @@
 - type: entity
-  parent: BaseItem
-  id: DeskBell
-  name: "настольный звонок"
-  description: "Незаменимая вещь на стойке обслуживания. Так и хочется позвонить."
+  abstract: true
+  parent:
+  - BaseItem
+  - BaseItemDestructible
+  id: BaseDeskBell
   components:
   - type: Sprite
     sprite: Objects/Misc/desk_bell.rsi
-    state: "normal"
-  - type: Tag
-    tags:
-      - Payload
-  - type: InteractionPopup
-    successChance: 1
-    interactSuccessSound:
-      collection: DeskBell
-      params:
-        variation: 0.03
-        volume: 3
-    onActivate: true
-  - type: EmitSoundOnUse
-    sound:
-      collection: DeskBell
-      params:
-          variation: 0.03
-          volume: 3
-  - type: EmitSoundOnTrigger
-    sound:
-      collection: DeskBell
-      params:
-          variation: 0.03
-          volume: 3
-  - type: EmitSoundOnLand
-    sound:
-      collection: DeskBell
-      params:
-          variation: 0.03
-          volume: 3
-  - type: UseDelay
-    delay: 0.5
+    state: icon-empty
+  - type: Construction
+    graph: BellGraph
+    node: start
+  - type: Destructible
+    thresholds:
+    - trigger: &id002 !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
   - type: MeleeWeapon
     wideAnimationRotation: 180
-    soundHit:
+    soundHit: &id001
       collection: DeskBell
-      params:
-          variation: 0.03
-          volume: 3
+      params: &id004
+        variation: 0.03
+        volume: 3
     damage:
       types:
         Blunt: 4
+  - type: MeleeSound
+    soundGroups:
+      Brute: *id001
+  - type: EmitSoundOnLand
+    sound: *id001
+  - type: EmitSoundOnCollide
+    sound: *id001
+- type: entity
+  parent: BaseDeskBell
+  id: EmptyDeskBell
+  name: unfinished desk bell
+  description: An empty bell missing its noise maker.
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger: *id002
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 0
+            max: 1
+- type: entity
+  parent: BaseDeskBell
+  id: DeskBell
+  name: настольный звонок
+  description: Незаменимая вещь на стойке обслуживания. Так и хочется позвонить.
+  components:
+  - type: Sprite
+    state: icon-bell
+  - type: Tag
+    tags: &id003
+    - Payload
+  - type: Construction
+    graph: BellGraph
+    node: deskBellNode
+  - type: Destructible
+    thresholds:
+    - trigger: *id002
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PartRodMetal1:
+            min: 0
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+  - type: InteractionPopup
+    successChance: 1
+    onActivate: true
+    interactSuccessSound: *id001
+  - type: UseDelay
+    delay: 0.5
+  - type: EmitSoundOnUse
+    sound: *id001
+  - type: EmitSoundOnTrigger
+    sound: *id001
+- type: entity
+  parent: BaseDeskBell
+  id: DeskBuzzer
+  name: desk buzzer
+  description: An advanced customer service tool. You feel an unending urge to buzz it.
+  components:
+  - type: Sprite
+    state: icon-buzzer
+  - type: Tag
+    tags: *id003
+  - type: Construction
+    graph: BellGraph
+    node: deskBuzzerNode
+  - type: Destructible
+    thresholds:
+    - trigger: *id002
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CableApcStack1:
+            min: 0
+            max: 2
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+  - type: StationAiWhitelist
+  - type: InteractionPopup
+    successChance: 1
+    onActivate: true
+    interactSuccessSound: &id005
+      collection: DeskBuzzer
+      params: *id004
+  - type: UseDelay
+    delay: 0.5
+  - type: EmitSoundOnUse
+    sound: *id005
+  - type: EmitSoundOnTrigger
+    sound: *id005
+  - type: MeleeSound
+    soundGroups:
+      Brute: *id005
+  - type: MeleeWeapon
+    soundHit: *id005
+  - type: EmitSoundOnLand
+    sound: *id005
+  - type: EmitSoundOnCollide
+    sound: *id005
+- type: entity
+  parent: BaseDeskBell
+  id: DeskHorn
+  name: desk horn
+  description: The cornerstone of any clown business. You feel an unending urge to honk it.
+  components:
+  - type: Sprite
+    state: icon-buzzer
+  - type: Tag
+    tags: *id003
+  - type: Construction
+    graph: BellGraph
+    node: deskHornNode
+  - type: Destructible
+    thresholds:
+    - trigger: *id002
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          BikeHorn:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+  - type: InteractionPopup
+    successChance: 1
+    onActivate: true
+    interactSuccessSound: &id006
+      collection: BikeHorn
+      params: *id004
+  - type: UseDelay
+    delay: 0.5
+  - type: EmitSoundOnUse
+    sound: *id006
+  - type: EmitSoundOnTrigger
+    sound: *id006
+  - type: MeleeSound
+    soundGroups:
+      Brute: *id006
+  - type: MeleeWeapon
+    soundHit: *id006
+  - type: EmitSoundOnLand
+    sound: *id006
+  - type: EmitSoundOnCollide
+    sound: *id006

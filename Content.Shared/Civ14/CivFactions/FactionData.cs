@@ -43,4 +43,3 @@ public sealed partial class FactionData
     [DataField("factionLeaders")]
     public List<string> FactionLeaders { get; set; } = new List<string>();
 }
-

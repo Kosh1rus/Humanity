@@ -1,27 +1,26 @@
+using Content.Shared.Damage.Components;
 using Content.Shared.Projectiles;
-using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Standing;
-using Robust.Shared.Physics.Events;
+using Content.Shared.Weapons.Ranged.Components;
 using Robust.Shared.Containers;
+using Robust.Shared.Physics.Events;
 using Robust.Shared.Random;
 using Content.Shared.Mobs.Systems;
 
-namespace Content.Shared.Damage.Components;
+namespace Content.Shared.Damage.Systems;
 
-public sealed class RequireProjectileTargetSystem : EntitySystem
+public sealed partial class RequireProjectileTargetSystem : EntitySystem
 {
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    private ISawmill _sawmill = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
+
     public override void Initialize()
     {
         SubscribeLocalEvent<RequireProjectileTargetComponent, PreventCollideEvent>(PreventCollide);
         SubscribeLocalEvent<RequireProjectileTargetComponent, StoodEvent>(StandingBulletHit);
         SubscribeLocalEvent<RequireProjectileTargetComponent, DownedEvent>(LayingBulletPass);
 
-        _sawmill = _logManager.GetSawmill("targeting");
     }
 
     private void PreventCollide(Entity<RequireProjectileTargetComponent> ent, ref PreventCollideEvent args)
@@ -30,29 +29,22 @@ public sealed class RequireProjectileTargetSystem : EntitySystem
             return;
 
         if (!ent.Comp.Active)
-        {
             return;
-        }
-        else
-        {
-            if (_mobState.IsDead(args.OtherEntity))
-            { args.Cancelled = true; }
-            //_sawmill.Info("checking");
-            var rando = _random.NextFloat(0.0f, 100.0f);
-            // 20% chance get hit
-            if (rando >= 80.0f)
-            {
-                //_sawmill.Info("20%");
-                return;
-            }
-
-        }
 
         var other = args.OtherEntity;
         // Resolve the ProjectileComponent on the 'other' entity (the projectile)
         if (TryComp(other, out ProjectileComponent? projectileComp) &&
             CompOrNull<TargetedProjectileComponent>(other)?.Target != ent)
         {
+            if (_mobState.IsDead(ent))
+            {
+                args.Cancelled = true;
+                return;
+            }
+
+            if (_random.Prob(0.2f))
+                return;
+
             // Prevents shooting out of while inside of crates
             var shooter = projectileComp.Shooter;
             if (!shooter.HasValue)

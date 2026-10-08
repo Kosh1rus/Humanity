@@ -1,8 +1,8 @@
 - type: entity
-  name: training sword
+  name: "тренировочный меч"
   parent: BaseSword
   id: civ13_sword_training_sword
-  description: A wood sword used for nonlethal practice.
+  description: "Деревянный меч для тренировок."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/wood_sword.rsi
@@ -20,10 +20,10 @@
       graph: civ13_sword_training_sword
       node: end
 - type: entity
-  name: bokken
+  name: "боккэн"
   parent: BaseSword
   id: civ13_sword_bokken
-  description: A bamboo sword used for nonlethal practice.
+  description: "Бамбуковый меч для тренировок."
   components:
     - type: Sprite
       sprite: Civ14/Weapons/bokken_sword.rsi
@@ -656,13 +656,13 @@
     - type: DisarmMalus
 
 - type: construction
-  name: training sword
+  name: humanity-construction-civ13_sword_training_sword-name
   id: civ13_sword_training_sword
   graph: civ13_sword_training_sword
   startNode: start
   targetNode: end
   category: weapons
-  description: A wood sword used for nonlethal practice.
+  description: humanity-construction-civ13_sword_training_sword-description
   icon:
     sprite: Civ14/Weapons/wood_sword.rsi
     state: icon
@@ -684,13 +684,13 @@
     - node: end
       entity: civ13_sword_training_sword
 - type: construction
-  name: bokken
+  name: humanity-construction-civ13_sword_bokken-name
   id: civ13_sword_bokken
   graph: civ13_sword_bokken
   startNode: start
   targetNode: end
   category: weapons
-  description: A bamboo sword used for nonlethal practice.
+  description: humanity-construction-civ13_sword_bokken-description
   icon:
     sprite: Civ14/Weapons/bokken_sword.rsi
     state: icon

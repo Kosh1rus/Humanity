@@ -19,12 +19,14 @@ namespace Content.Client.Guidebook.Controls;
 /// Control for embedding a microwave recipe into a guidebook.
 /// </summary>
 [UsedImplicitly, GenerateTypedNameReferences]
-public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, ISearchableControl
+public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, ISearchableControl, IPrototypeRepresentationControl
 {
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
-    [Dependency] private readonly ILogManager _logManager = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private ILogManager _logManager = default!;
 
-    private ISawmill _sawmill = default!;
+    private readonly ISawmill _sawmill = default!;
+
+    public IPrototype? RepresentedPrototype { get; private set; }
 
     public GuideMicrowaveEmbed()
     {
@@ -32,15 +34,15 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         IoCManager.InjectDependencies(this);
         MouseFilter = MouseFilterMode.Stop;
 
-        _sawmill = _logManager.GetSawmill("guidemicrowaveembed");
+        _sawmill = _logManager.GetSawmill("guidebook.microwave");
     }
 
     public GuideMicrowaveEmbed(string recipe) : this()
     {
-        GenerateControl(_prototype.Index<FoodRecipePrototype>(recipe));
+        GenerateControl(_prototype.Index<MicrowaveMealRecipePrototype>(recipe));
     }
 
-    public GuideMicrowaveEmbed(FoodRecipePrototype recipe) : this()
+    public GuideMicrowaveEmbed(MicrowaveMealRecipePrototype recipe) : this()
     {
         GenerateControl(recipe);
     }
@@ -64,7 +66,7 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
             return false;
         }
 
-        if (!_prototype.TryIndex<FoodRecipePrototype>(id, out var recipe))
+        if (!_prototype.TryIndex<MicrowaveMealRecipePrototype>(id, out var recipe))
         {
             _sawmill.Error($"Specified recipe prototype \"{id}\" is not a valid recipe prototype");
             return false;
@@ -76,18 +78,20 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         return true;
     }
 
-    private void GenerateHeader(FoodRecipePrototype recipe)
+    private void GenerateHeader(MicrowaveMealRecipePrototype recipe)
     {
         var entity = _prototype.Index<EntityPrototype>(recipe.Result);
+
+        RepresentedPrototype = entity;
 
         IconContainer.AddChild(new GuideEntityEmbed(recipe.Result, false, false));
         ResultName.SetMarkup(entity.Name);
         ResultDescription.SetMarkup(entity.Description);
     }
 
-    private void GenerateSolidIngredients(FoodRecipePrototype recipe)
+    private void GenerateSolidIngredients(MicrowaveMealRecipePrototype recipe)
     {
-        foreach (var (product, amount) in recipe.IngredientsSolids.OrderByDescending(p => p.Value))
+        foreach (var (product, amount) in recipe.Ingredients.Solids.OrderByDescending(p => p.Value))
         {
             var ingredient = _prototype.Index<EntityPrototype>(product);
 
@@ -99,8 +103,9 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
             solidNameMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-solid-name-display", ("ingredient", ingredient.Name)));
             solidNameMsg.Pop();
 
-            var solidNameLabel = new RichTextLabel();
+            var solidNameLabel = new GuidebookRichPrototypeLink();
             solidNameLabel.SetMessage(solidNameMsg);
+            solidNameLabel.LinkedPrototype = ingredient;
 
             IngredientsGrid.AddChild(solidNameLabel);
 
@@ -117,9 +122,9 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         }
     }
 
-    private void GenerateLiquidIngredients(FoodRecipePrototype recipe)
+    private void GenerateLiquidIngredients(MicrowaveMealRecipePrototype recipe)
     {
-        foreach (var (product, amount) in recipe.IngredientsReagents.OrderByDescending(p => p.Value))
+        foreach (var (product, amount) in recipe.Ingredients.Reagents.OrderByDescending(p => p.Value))
         {
             var reagent = _prototype.Index<ReagentPrototype>(product);
 
@@ -129,9 +134,10 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
             liquidColorMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-reagent-color-display", ("color", reagent.SubstanceColor)));
             liquidColorMsg.Pop();
 
-            var liquidColorLabel = new RichTextLabel();
+            var liquidColorLabel = new GuidebookRichPrototypeLink();
             liquidColorLabel.SetMessage(liquidColorMsg);
             liquidColorLabel.HorizontalAlignment = Control.HAlignment.Center;
+            liquidColorLabel.LinkedPrototype = reagent;
 
             IngredientsGrid.AddChild(liquidColorLabel);
 
@@ -159,22 +165,58 @@ public sealed partial class GuideMicrowaveEmbed : PanelContainer, IDocumentTag, 
         }
     }
 
-    private void GenerateIngredients(FoodRecipePrototype recipe)
+    private void GenerateStackIngredients(MicrowaveMealRecipePrototype recipe)
+    {
+        foreach (var (product, amount) in recipe.Ingredients.Stacks.OrderByDescending(p => p.Value))
+        {
+            var stack = _prototype.Index(product);
+
+            // stack icon
+
+            IngredientsGrid.AddChild(new GuideEntityEmbed(stack.Spawn, false, false));
+
+            // stack name
+
+            var stackName = Loc.GetString(stack.Name);
+            var stackNameMsg = new FormattedMessage();
+            stackNameMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-stack-name-display", ("stack", stackName)));
+            stackNameMsg.Pop();
+
+            var stackNameLabel = new RichTextLabel();
+            stackNameLabel.SetMessage(stackNameMsg);
+
+            IngredientsGrid.AddChild(stackNameLabel);
+
+            // stack quantity
+
+            var stackQuantityMsg = new FormattedMessage();
+            stackQuantityMsg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-stack-quantity-display", ("amount", amount)));
+            stackQuantityMsg.Pop();
+
+            var stackQuantityLabel = new RichTextLabel();
+            stackQuantityLabel.SetMessage(stackQuantityMsg);
+
+            IngredientsGrid.AddChild(stackQuantityLabel);
+        }
+    }
+
+    private void GenerateIngredients(MicrowaveMealRecipePrototype recipe)
     {
         GenerateLiquidIngredients(recipe);
+        GenerateStackIngredients(recipe);
         GenerateSolidIngredients(recipe);
     }
 
-    private void GenerateCookTime(FoodRecipePrototype recipe)
+    private void GenerateCookTime(MicrowaveMealRecipePrototype recipe)
     {
         var msg = new FormattedMessage();
-        msg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-cook-time", ("time", recipe.CookTime)));
+        msg.AddMarkupOrThrow(Loc.GetString("guidebook-microwave-cook-time", ("time", recipe.Time)));
         msg.Pop();
 
         CookTimeLabel.SetMessage(msg);
     }
 
-    private void GenerateControl(FoodRecipePrototype recipe)
+    private void GenerateControl(MicrowaveMealRecipePrototype recipe)
     {
         GenerateHeader(recipe);
         GenerateIngredients(recipe);

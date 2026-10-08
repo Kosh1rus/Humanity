@@ -4,15 +4,14 @@ using Content.Shared.Interaction;
 using Content.Shared.DoAfter;
 using Robust.Server.GameObjects;
 using Robust.Shared.Prototypes;
-using Content.Server.Kitchen.Components;
+using Content.Shared.Damage.Components;
 using Content.Shared.Verbs;
 
 namespace Content.Server.Crafting;
 
 public sealed partial class SharpenSystem : EntitySystem
 {
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
 
     public override void Initialize()
     {

@@ -12,11 +12,11 @@ using System.Collections.Generic;
 
 namespace Content.Server.GameTicking.Rules;
 
-public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
+public sealed partial class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
 {
-    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
+    [Dependency] private SharedPhysicsSystem _physics = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
 
     private const int GraceWallCollisionGroup = (int)CollisionGroup.MidImpassable;
 
@@ -45,7 +45,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         var announcementMessage = "До начала боя три минуты.";
         Timer.Spawn(TimeSpan.FromSeconds(15), () =>
         {
-            if (GameTicker.IsGameRuleActive(uid, gameRule) && component.GracewallActive)
+            if (GameTicker.IsGameRuleActive((uid, gameRule)) && component.GracewallActive)
                 _chat.DispatchGlobalAnnouncement(announcementMessage, "Штаб", false, null, Color.Yellow);
         });
         Log.Info($"Grace wall active for {component.GracewallDuration.TotalMinutes} minutes.");
@@ -59,9 +59,10 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         }
     }
 
-    protected override void Ended(EntityUid uid, GracewallRuleComponent component, GameRuleComponent gameRule, GameRuleEndedEvent args)
+    protected override void Ended(Entity<GracewallRuleComponent> rule, ref GameRuleEndedEvent args)
     {
-        base.Ended(uid, component, gameRule, args);
+        base.Ended(rule, ref args);
+        var component = rule.Comp;
 
         // Ensure walls are deactivated if the rule ends unexpectedly
         var wasActive = component.GracewallActive;
@@ -85,7 +86,7 @@ public sealed class GracewallRuleSystem : GameRuleSystem<GracewallRuleComponent>
         var query = EntityQueryEnumerator<GracewallRuleComponent, GameRuleComponent>();
         while (query.MoveNext(out var ruleUid, out var gracewall, out var gameRule))
         {
-            if (!GameTicker.IsGameRuleActive(ruleUid, gameRule) || !gracewall.GracewallActive)
+            if (!GameTicker.IsGameRuleActive((ruleUid, gameRule)) || !gracewall.GracewallActive)
                 continue;
 
             gracewall.Timer -= frameTime;

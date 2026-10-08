@@ -1,0 +1,33 @@
+name: RSI Validator
+
+on:
+  push:
+    branches: [ master, staging, stable ]
+  merge_group:
+  pull_request:
+    types: [ opened, reopened, synchronize, ready_for_review ]
+    paths:
+      - '**.rsi/**'
+      - 'Resources/Schemas/rsi.json'
+      - '.github/workflows/validate-rsis.yml'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name == 'pull_request' && github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
+
+jobs:
+  validate_rsis:
+    name: Validate RSIs
+    if: github.actor != 'PJBot'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+      - name: Setup Submodule
+        run: git submodule update --init --recursive
+      - name: Install Python dependencies
+        run: |
+          pip3 install --ignore-installed --user pillow jsonschema
+      - name: Validate RSIs
+        run: |
+          cp Resources/Schemas/rsi.json RobustToolbox/Schemas/rsi.json
+          python3 RobustToolbox/Schemas/validate_rsis.py Resources/

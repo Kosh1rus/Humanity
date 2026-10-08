@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Bloodsucker
-  name: "bloodsucker"
+  name: bloodsucker
   root: torso
   slots:
     torso:

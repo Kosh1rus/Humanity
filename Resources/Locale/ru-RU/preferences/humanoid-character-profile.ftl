@@ -1,5 +1,5 @@
 
-humanoid-character-profile-summary = 
+humanoid-character-profile-summary =
     Это { $name }. { $gender ->
         [male] Ему
         [female] Ей

@@ -1,37 +1,37 @@
 - type: construction
-  name: "кожаная поясная сумка"
+  name: humanity-construction-LeatherClothingBelt-name
   id: LeatherClothingBelt
   graph: LeatherClothingBelt
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Кожаная сумка, которую носят на поясе."
+  description: humanity-construction-LeatherClothingBelt-description
   icon: { sprite: Civ14/Objects/Storage/satchel.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "кожаный рюкзак"
+  name: humanity-construction-LeatherClothingBackpack-name
   id: LeatherClothingBackpack
   graph: LeatherClothingBackpack
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Прочный рюкзак из кожи."
+  description: humanity-construction-LeatherClothingBackpack-description
   icon: { sprite: Civ14/Objects/Storage/backpack.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "кожаный бурдюк"
+  name: humanity-construction-LeatherWaterskin-name
   id: LeatherWaterskin
   graph: LeatherWaterskin
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Бурдюк из кожи для хранения и переноски жидкостей."
+  description: humanity-construction-LeatherWaterskin-description
   icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: waterskin }
   objectType: Item
   agemin: 0

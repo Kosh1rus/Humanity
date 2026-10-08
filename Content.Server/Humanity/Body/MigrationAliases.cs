@@ -1,0 +1,21 @@
+global using Content.Shared.GameTicking.Rules;
+global using Content.Shared.Speech;
+global using Content.Shared.Speech.EntitySystems;
+global using Content.Shared.Atmos.Components;
+global using Content.Shared.Botany.Systems;
+global using Content.Shared.Antag;
+global using Content.Shared.GameTicking;
+global using Content.Shared.Body.Part;
+global using Content.Shared.Emp;
+global using Robust.Shared.Physics.Events;
+global using Content.Shared.Body.Events;
+global using Content.Shared.Movement.Pulling.Events;
+
+global using Content.Shared.Body.Components;
+global using Content.Shared.Chat;
+global using Content.Shared.Xenoarchaeology.Artifact.Components;
+global using Content.Shared.Botany.Items.Components;
+global using Content.Shared.Temperature.Components;
+global using Content.Shared.IgnitionSource;
+global using Robust.Shared.Player;
+global using Content.Shared.Gibbing.Events;

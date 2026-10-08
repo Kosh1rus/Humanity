@@ -40,7 +40,7 @@ namespace Content.Client.HealthAnalyzer.UI
         public event Action<TargetBodyPart?, EntityUid>? OnBodyPartSelected;
         private EntityUid _spriteViewEntity;
 
-        [ValidatePrototypeId<EntityPrototype>]
+
         private readonly EntProtoId _bodyView = "AlertSpriteView";
 
         private readonly Dictionary<TargetBodyPart, TextureButton> _bodyPartControls;
@@ -104,7 +104,7 @@ namespace Content.Client.HealthAnalyzer.UI
         }
 
         // Not all of this function got messed with, but it was spread enough to warrant being covered entirely by a Shitmed Change
-        public void Populate(HealthAnalyzerScannedUserMessage msg)
+        public void Populate(HealthAnalyzerUiState msg)
         {
             // Start-Shitmed
             _target = _entityManager.GetEntity(msg.TargetEntity);
@@ -132,18 +132,18 @@ namespace Content.Client.HealthAnalyzer.UI
 
             // Scan Mode
 
-            ScanModeLabel.Text = msg.ScanMode.HasValue
-                ? msg.ScanMode.Value
+            ScanModeLabel.Text = true
+                ? msg.ScanMode
                     ? Loc.GetString("health-analyzer-window-scan-mode-active")
                     : Loc.GetString("health-analyzer-window-scan-mode-inactive")
                 : Loc.GetString("health-analyzer-window-entity-unknown-text");
 
-            ScanModeLabel.FontColorOverride = msg.ScanMode.HasValue && msg.ScanMode.Value ? Color.Green : Color.Red;
+            ScanModeLabel.FontColorOverride = true && msg.ScanMode ? Color.Green : Color.Red;
 
             // Patient Information
 
             SpriteView.SetEntity(SetupIcon(msg.Body) ?? _target.Value);
-            SpriteView.Visible = msg.ScanMode.HasValue && msg.ScanMode.Value;
+            SpriteView.Visible = true && msg.ScanMode;
             PartView.Visible = SpriteView.Visible;
             NoDataTex.Visible = !SpriteView.Visible;
 
@@ -177,7 +177,7 @@ namespace Content.Client.HealthAnalyzer.UI
 
             // Total Damage
 
-            DamageLabel.Text = damageable.TotalDamage.ToString();
+            DamageLabel.Text = _entityManager.System<DamageableSystem>().GetTotalDamage((isPart ? part!.Value : _target.Value, damageable)).ToString();
 
             // Alerts
 
@@ -208,10 +208,10 @@ namespace Content.Client.HealthAnalyzer.UI
             // Damage Groups
 
             var damageSortedGroups =
-                damageable.DamagePerGroup.OrderByDescending(damage => damage.Value)
-                    .ToDictionary(x => x.Key, x => x.Value);
+                _entityManager.System<DamageableSystem>().GetDamagePerGroup((isPart ? part!.Value : _target.Value, damageable)).OrderByDescending(damage => damage.Value)
+                    .ToDictionary(x => x.Key.Id, x => x.Value);
 
-            IReadOnlyDictionary<string, FixedPoint2> damagePerType = damageable.Damage.DamageDict;
+            IReadOnlyDictionary<string, FixedPoint2> damagePerType = _entityManager.System<DamageableSystem>().GetPositiveDamage((isPart ? part!.Value : _target.Value, damageable)).DamageDict.ToDictionary(x => x.Key.Id, x => x.Value);
 
             DrawDiagnosticGroups(damageSortedGroups, damagePerType);
         }

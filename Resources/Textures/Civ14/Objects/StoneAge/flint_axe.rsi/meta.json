@@ -17,5 +17,6 @@
         {
             "name": "icon"
         }
-    ]
+    ],
+    "license": "AGPL-3.0"
 }

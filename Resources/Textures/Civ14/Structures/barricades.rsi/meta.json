@@ -67,6 +67,9 @@
         {
             "name": "crenelated_wall",
             "directions": 4
+        },
+        {
+            "name": "wood_barricade"
         }
     ]
 }

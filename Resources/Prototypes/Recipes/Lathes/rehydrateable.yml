@@ -1,39 +1,29 @@
-# Base prototypes
-
 - type: latheRecipe
   abstract: true
   id: BaseCubeRecipe
   completetime: 30
   materials:
     Biomass: 16
-
-# Recipes
-
-# recipes should generally cost 1.5x to 2x of the biomass output of their mob
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: MonkeyCube
   result: MonkeyCube
-
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: KoboldCube
   result: KoboldCube
-
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: CowCube
   result: CowCube
   materials:
     Biomass: 120
-
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: GoatCube
   result: GoatCube
   materials:
     Biomass: 35
-
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: MouseCube
@@ -41,7 +31,10 @@
   completetime: 15
   materials:
     Biomass: 12
-
+- type: latheRecipe
+  parent: BaseCubeRecipe
+  id: SlimeCube
+  result: SlimeCube
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: SpaceCarpCube
@@ -49,7 +42,6 @@
   materials:
     Biomass: 24
     Plasma: 600
-
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: SpaceTickCube
@@ -57,12 +49,11 @@
   completetime: 15
   materials:
     Biomass: 8
-    Plasma: 300 # less biomass but more plasma
-
+    Plasma: 300
 - type: latheRecipe
   parent: BaseCubeRecipe
   id: AbominationCube
   result: AbominationCube
-  materials: # abominations are slow and essentially worse than even carp
+  materials:
     Biomass: 28
-    Plasma: 500 # more biomass but less plasma
+    Plasma: 500

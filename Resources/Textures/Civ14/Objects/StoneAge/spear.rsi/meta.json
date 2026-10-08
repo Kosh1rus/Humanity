@@ -32,5 +32,6 @@
         {
             "name": "spear"
         }
-    ]
+    ],
+    "license": "AGPL-3.0"
 }

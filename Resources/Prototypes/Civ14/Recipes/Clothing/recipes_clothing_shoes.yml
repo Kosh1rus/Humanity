@@ -1,11 +1,11 @@
 - type: construction
-  name: "туфли"
+  name: humanity-construction-civ13_shoes_shoes-name
   id: civ13_shoes_shoes
   graph: civ13_shoes_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычная пара туфель."
+  description: humanity-construction-civ13_shoes_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
@@ -26,13 +26,13 @@
     - node: end
       entity: civ13_shoes_shoes
 - type: construction
-  name: "белые меховые сапоги"
+  name: humanity-construction-civ13_shoes_white_fur_boots-name
   id: civ13_shoes_white_fur_boots
   graph: civ13_shoes_white_fur_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные тёплые сапоги из белого меха."
+  description: humanity-construction-civ13_shoes_white_fur_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur4.rsi
     state: icon
@@ -53,13 +53,13 @@
     - node: end
       entity: civ13_shoes_white_fur_boots
 - type: construction
-  name: "коричневые меховые сапоги"
+  name: humanity-construction-civ13_shoes_brown_fur_boots-name
   id: civ13_shoes_brown_fur_boots
   graph: civ13_shoes_brown_fur_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные тёплые сапоги из коричневого меха."
+  description: humanity-construction-civ13_shoes_brown_fur_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
@@ -80,13 +80,13 @@
     - node: end
       entity: civ13_shoes_brown_fur_boots
 - type: construction
-  name: "красные туфли"
+  name: humanity-construction-civ13_shoes_red_shoes-name
   id: civ13_shoes_red_shoes
   graph: civ13_shoes_red_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стильные красные туфли."
+  description: humanity-construction-civ13_shoes_red_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/red.rsi
     state: icon
@@ -107,13 +107,13 @@
     - node: end
       entity: civ13_shoes_red_shoes
 - type: construction
-  name: "оранжевые туфли"
+  name: humanity-construction-civ13_shoes_orange_shoes-name
   id: civ13_shoes_orange_shoes
   graph: civ13_shoes_orange_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Яркие оранжевые туфли."
+  description: humanity-construction-civ13_shoes_orange_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/orange.rsi
     state: icon
@@ -134,13 +134,13 @@
     - node: end
       entity: civ13_shoes_orange_shoes
 - type: construction
-  name: "сапоги с высоким голенищем"
+  name: humanity-construction-civ13_shoes_jackboots-name
   id: civ13_shoes_jackboots
   graph: civ13_shoes_jackboots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Армейские сапоги для боя и передвижения по пересечённой местности."
+  description: humanity-construction-civ13_shoes_jackboots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/jackboots.rsi
     state: icon
@@ -161,13 +161,13 @@
     - node: end
       entity: civ13_shoes_jackboots
 - type: construction
-  name: "советские сапоги"
+  name: humanity-construction-civ13_shoes_Soviet_sapogi_boots-name
   id: civ13_shoes_Soviet_sapogi_boots
   graph: civ13_shoes_Soviet_sapogi_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Крепкие советские юфтевые сапоги."
+  description: humanity-construction-civ13_shoes_Soviet_sapogi_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sovietboots.rsi
     state: icon
@@ -188,13 +188,13 @@
     - node: end
       entity: civ13_shoes_Soviet_sapogi_boots
 - type: construction
-  name: "рабочие ботинки"
+  name: humanity-construction-civ13_shoes_workboots-name
   id: civ13_shoes_workboots
   graph: civ13_shoes_workboots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Ботинки со стальными подносками для работы на производстве. Безопасность прежде всего."
+  description: humanity-construction-civ13_shoes_workboots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/workboots.rsi
     state: icon
@@ -215,13 +215,13 @@
     - node: end
       entity: civ13_shoes_workboots
 - type: construction
-  name: "чёрные меховые сапоги"
+  name: humanity-construction-civ13_shoes_black_fur_boots-name
   id: civ13_shoes_black_fur_boots
   graph: civ13_shoes_black_fur_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные тёплые сапоги из чёрного меха."
+  description: humanity-construction-civ13_shoes_black_fur_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur3.rsi
     state: icon
@@ -242,13 +242,13 @@
     - node: end
       entity: civ13_shoes_black_fur_boots
 - type: construction
-  name: "военные ботинки"
+  name: humanity-construction-civ13_shoes_military_boots-name
   id: civ13_shoes_military_boots
   graph: civ13_shoes_military_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Прочные ботинки для жаркой схватки."
+  description: humanity-construction-civ13_shoes_military_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
@@ -269,13 +269,13 @@
     - node: end
       entity: civ13_shoes_military_boots
 - type: construction
-  name: "ботинки с обмотками"
+  name: humanity-construction-civ13_shoes_wrapped_boots-name
   id: civ13_shoes_wrapped_boots
   graph: civ13_shoes_wrapped_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые ботинки с обмотками на голенях."
+  description: humanity-construction-civ13_shoes_wrapped_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/wrappedboots.rsi
     state: icon
@@ -296,13 +296,13 @@
     - node: end
       entity: civ13_shoes_wrapped_boots
 - type: construction
-  name: "ботинки НКР с обмотками"
+  name: humanity-construction-civ13_shoes_NCR_wrapped_boots-name
   id: civ13_shoes_NCR_wrapped_boots
   graph: civ13_shoes_NCR_wrapped_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Армейские ботинки НКР с обмотками на голенях."
+  description: humanity-construction-civ13_shoes_NCR_wrapped_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/ncr_boots.rsi
     state: icon
@@ -323,13 +323,13 @@
     - node: end
       entity: civ13_shoes_NCR_wrapped_boots
 - type: construction
-  name: "бронированные сапоги легионера"
+  name: humanity-construction-civ13_shoes_Legionaire_armored_boots-name
   id: civ13_shoes_Legionaire_armored_boots
   graph: civ13_shoes_Legionaire_armored_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные сапоги с защитными пластинами."
+  description: humanity-construction-civ13_shoes_Legionaire_armored_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/legion_boots.rsi
     state: icon
@@ -350,13 +350,13 @@
     - node: end
       entity: civ13_shoes_Legionaire_armored_boots
 - type: construction
-  name: "кожаные сапоги"
+  name: humanity-construction-civ13_shoes_Leather_boots-name
   id: civ13_shoes_Leather_boots
   graph: civ13_shoes_Leather_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные сапоги, подбитые гвоздями."
+  description: humanity-construction-civ13_shoes_Leather_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2.rsi
     state: icon
@@ -377,13 +377,13 @@
     - node: end
       entity: civ13_shoes_Leather_boots
 - type: construction
-  name: "чёрные кожаные сапоги"
+  name: humanity-construction-civ13_shoes_Black_leather_boots-name
   id: civ13_shoes_Black_leather_boots
   graph: civ13_shoes_Black_leather_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные кожаные сапоги, подбитые гвоздями."
+  description: humanity-construction-civ13_shoes_Black_leather_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots_ww2_navy.rsi
     state: icon
@@ -404,13 +404,13 @@
     - node: end
       entity: civ13_shoes_Black_leather_boots
 - type: construction
-  name: "ботинки спецназа"
+  name: humanity-construction-civ13_shoes_SWAT_boots-name
   id: civ13_shoes_SWAT_boots
   graph: civ13_shoes_SWAT_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Прочные ботинки для самых опасных операций."
+  description: humanity-construction-civ13_shoes_SWAT_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
@@ -431,13 +431,13 @@
     - node: end
       entity: civ13_shoes_SWAT_boots
 - type: construction
-  name: "боевые ботинки"
+  name: humanity-construction-civ13_shoes_combat_boots-name
   id: civ13_shoes_combat_boots
   graph: civ13_shoes_combat_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлые ботинки для настоящего боя."
+  description: humanity-construction-civ13_shoes_combat_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/swat.rsi
     state: icon
@@ -458,13 +458,13 @@
     - node: end
       entity: civ13_shoes_combat_boots
 - type: construction
-  name: "боевые ботинки ИОГ"
+  name: humanity-construction-civ13_shoes_IOG_boots-name
   id: civ13_shoes_IOG_boots
   graph: civ13_shoes_IOG_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлые армейские ботинки ИОГ."
+  description: humanity-construction-civ13_shoes_IOG_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/iogboot.rsi
     state: icon
@@ -485,13 +485,13 @@
     - node: end
       entity: civ13_shoes_IOG_boots
 - type: construction
-  name: "деревянные сандалии"
+  name: humanity-construction-civ13_shoes_sandals-name
   id: civ13_shoes_sandals
   graph: civ13_shoes_sandals
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые деревянные сандалии."
+  description: humanity-construction-civ13_shoes_sandals-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sandals.rsi
     state: icon
@@ -512,13 +512,13 @@
     - node: end
       entity: civ13_shoes_sandals
 - type: construction
-  name: "кожаные туфли"
+  name: humanity-construction-civ13_shoes_leather_shoes-name
   id: civ13_shoes_leather_shoes
   graph: civ13_shoes_leather_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Прочная пара кожаных туфель."
+  description: humanity-construction-civ13_shoes_leather_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/leather.rsi
     state: icon
@@ -539,13 +539,13 @@
     - node: end
       entity: civ13_shoes_leather_shoes
 - type: construction
-  name: "волшебные туфли"
+  name: humanity-construction-civ13_shoes_magic_shoes-name
   id: civ13_shoes_magic_shoes
   graph: civ13_shoes_magic_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные туфли с магическими свойствами."
+  description: humanity-construction-civ13_shoes_magic_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/black.rsi
     state: icon
@@ -566,13 +566,13 @@
     - node: end
       entity: civ13_shoes_magic_shoes
 - type: construction
-  name: "туфли на шнуровке"
+  name: humanity-construction-civ13_shoes_laceup_shoes-name
   id: civ13_shoes_laceup_shoes
   graph: civ13_shoes_laceup_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Парадные туфли, уже начищенные до блеска."
+  description: humanity-construction-civ13_shoes_laceup_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/laceups.rsi
     state: icon
@@ -593,13 +593,13 @@
     - node: end
       entity: civ13_shoes_laceup_shoes
 - type: construction
-  name: "серые меховые сапоги"
+  name: humanity-construction-civ13_shoes_grey_fur_boots-name
   id: civ13_shoes_grey_fur_boots
   graph: civ13_shoes_grey_fur_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные тёплые сапоги из серого меха."
+  description: humanity-construction-civ13_shoes_grey_fur_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur2.rsi
     state: icon
@@ -620,13 +620,13 @@
     - node: end
       entity: civ13_shoes_grey_fur_boots
 - type: construction
-  name: "туфли из кожи аллигатора"
+  name: humanity-construction-civ13_shoes_alligator_scale_laceup_shoes-name
   id: civ13_shoes_alligator_scale_laceup_shoes
   graph: civ13_shoes_alligator_scale_laceup_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Роскошные туфли на шнуровке, уже начищенные до блеска."
+  description: humanity-construction-civ13_shoes_alligator_scale_laceup_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_laceups.rsi
     state: icon
@@ -647,13 +647,13 @@
     - node: end
       entity: civ13_shoes_alligator_scale_laceup_shoes
 - type: construction
-  name: "туфли красавчика"
+  name: humanity-construction-civ13_shoes_chad_shoes-name
   id: civ13_shoes_chad_shoes
   graph: civ13_shoes_chad_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Ай!"
+  description: humanity-construction-civ13_shoes_chad_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/chad.rsi
     state: icon
@@ -674,13 +674,13 @@
     - node: end
       entity: civ13_shoes_chad_shoes
 - type: construction
-  name: "сланцы"
+  name: humanity-construction-civ13_shoes_flip_flops-name
   id: civ13_shoes_flip_flops
   graph: civ13_shoes_flip_flops
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пляжные сланцы в бразильском стиле."
+  description: humanity-construction-civ13_shoes_flip_flops-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/flipflops.rsi
     state: icon
@@ -701,13 +701,13 @@
     - node: end
       entity: civ13_shoes_flip_flops
 - type: construction
-  name: "пластоидные сапоги"
+  name: humanity-construction-civ13_shoes_plastoid_boots-name
   id: civ13_shoes_plastoid_boots
   graph: civ13_shoes_plastoid_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара сапог из пластоида."
+  description: humanity-construction-civ13_shoes_plastoid_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/white.rsi
     state: icon
@@ -728,13 +728,13 @@
     - node: end
       entity: civ13_shoes_plastoid_boots
 - type: construction
-  name: "красные пластоидные сапоги"
+  name: humanity-construction-civ13_shoes_red_plastoid_boots-name
   id: civ13_shoes_red_plastoid_boots
   graph: civ13_shoes_red_plastoid_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара красных сапог из пластоида."
+  description: humanity-construction-civ13_shoes_red_plastoid_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/redboots.rsi
     state: icon
@@ -755,13 +755,13 @@
     - node: end
       entity: civ13_shoes_red_plastoid_boots
 - type: construction
-  name: "синие пластоидные сапоги"
+  name: humanity-construction-civ13_shoes_blue_plastoid_boots-name
   id: civ13_shoes_blue_plastoid_boots
   graph: civ13_shoes_blue_plastoid_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара синих сапог из пластоида."
+  description: humanity-construction-civ13_shoes_blue_plastoid_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/senateboots.rsi
     state: icon
@@ -782,13 +782,13 @@
     - node: end
       entity: civ13_shoes_blue_plastoid_boots
 - type: construction
-  name: "кожаные сандалии"
+  name: humanity-construction-civ13_shoes_sandals_1-name
   id: civ13_shoes_sandals_1
   graph: civ13_shoes_sandals_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые кожаные сандалии с ремнями до колена."
+  description: humanity-construction-civ13_shoes_sandals_1-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/roman.rsi
     state: icon
@@ -809,13 +809,13 @@
     - node: end
       entity: civ13_shoes_sandals_1
 - type: construction
-  name: "ацтекские сандалии"
+  name: humanity-construction-civ13_shoes_aztec_sandals-name
   id: civ13_shoes_aztec_sandals
   graph: civ13_shoes_aztec_sandals
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые кожаные сандалии родом из джунглей."
+  description: humanity-construction-civ13_shoes_aztec_sandals-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/aztec_sandals.rsi
     state: icon
@@ -836,13 +836,13 @@
     - node: end
       entity: civ13_shoes_aztec_sandals
 - type: construction
-  name: "меховые сапоги"
+  name: humanity-construction-civ13_shoes_fur_boots-name
   id: civ13_shoes_fur_boots
   graph: civ13_shoes_fur_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотные тёплые меховые сапоги."
+  description: humanity-construction-civ13_shoes_fur_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur1.rsi
     state: icon
@@ -863,13 +863,13 @@
     - node: end
       entity: civ13_shoes_fur_boots
 - type: construction
-  name: "сапоги из человеческой кожи"
+  name: humanity-construction-civ13_shoes_human_skin_boots-name
   id: civ13_shoes_human_skin_boots
   graph: civ13_shoes_human_skin_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Сапоги из человеческой кожи. Лучше не думать об этом."
+  description: humanity-construction-civ13_shoes_human_skin_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/fur5.rsi
     state: icon
@@ -890,13 +890,13 @@
     - node: end
       entity: civ13_shoes_human_skin_boots
 - type: construction
-  name: "оркские сабатоны"
+  name: humanity-construction-civ13_shoes_orcish_sabatons-name
   id: civ13_shoes_orcish_sabatons
   graph: civ13_shoes_orcish_sabatons
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлые бронированные сапоги орков."
+  description: humanity-construction-civ13_shoes_orcish_sabatons-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/ork_warrior.rsi
     state: icon
@@ -917,13 +917,13 @@
     - node: end
       entity: civ13_shoes_orcish_sabatons
 - type: construction
-  name: "ботинки специалиста"
+  name: humanity-construction-civ13_shoes_specialist_boots-name
   id: civ13_shoes_specialist_boots
   graph: civ13_shoes_specialist_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Добротные армейские кожаные ботинки с тихой подошвой."
+  description: humanity-construction-civ13_shoes_specialist_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/toughguy.rsi
     state: icon
@@ -944,13 +944,13 @@
     - node: end
       entity: civ13_shoes_specialist_boots
 - type: construction
-  name: "ботинки Кредо"
+  name: humanity-construction-civ13_shoes_creed_boots-name
   id: civ13_shoes_creed_boots
   graph: civ13_shoes_creed_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные ботинки, которые носят члены Кредо."
+  description: humanity-construction-civ13_shoes_creed_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/ac_boots.rsi
     state: icon
@@ -971,13 +971,13 @@
     - node: end
       entity: civ13_shoes_creed_boots
 - type: construction
-  name: "зимние ботинки с обмотками"
+  name: humanity-construction-civ13_shoes_Winter_wrapped_boots-name
   id: civ13_shoes_Winter_wrapped_boots
   graph: civ13_shoes_Winter_wrapped_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые тонкие кожаные ботинки с защитой голени."
+  description: humanity-construction-civ13_shoes_Winter_wrapped_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/japboots.rsi
     state: icon
@@ -998,13 +998,13 @@
     - node: end
       entity: civ13_shoes_Winter_wrapped_boots
 - type: construction
-  name: "чёрные сапоги"
+  name: humanity-construction-civ13_shoes_black_boots-name
   id: civ13_shoes_black_boots
   graph: civ13_shoes_black_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические чёрные сапоги."
+  description: humanity-construction-civ13_shoes_black_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
@@ -1025,13 +1025,13 @@
     - node: end
       entity: civ13_shoes_black_boots
 - type: construction
-  name: "кожаные сапоги"
+  name: humanity-construction-civ13_shoes_leather_boots-name
   id: civ13_shoes_leather_boots
   graph: civ13_shoes_leather_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические кожаные сапоги."
+  description: humanity-construction-civ13_shoes_leather_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
@@ -1052,13 +1052,13 @@
     - node: end
       entity: civ13_shoes_leather_boots
 - type: construction
-  name: "зимние сапоги"
+  name: humanity-construction-civ13_shoes_winter_boots-name
   id: civ13_shoes_winter_boots
   graph: civ13_shoes_winter_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические зимние сапоги."
+  description: humanity-construction-civ13_shoes_winter_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/winterboots.rsi
     state: icon
@@ -1079,13 +1079,13 @@
     - node: end
       entity: civ13_shoes_winter_boots
 - type: construction
-  name: "чёрные сапоги с обмотками"
+  name: humanity-construction-civ13_shoes_black_puttee_boots-name
   id: civ13_shoes_black_puttee_boots
   graph: civ13_shoes_black_puttee_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические чёрные сапоги с белыми обмотками."
+  description: humanity-construction-civ13_shoes_black_puttee_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/whiteput.rsi
     state: icon
@@ -1106,13 +1106,13 @@
     - node: end
       entity: civ13_shoes_black_puttee_boots
 - type: construction
-  name: "пехотные ботинки"
+  name: humanity-construction-civ13_shoes_infantry_shoes-name
   id: civ13_shoes_infantry_shoes
   graph: civ13_shoes_infantry_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Низкие чёрные ботинки пехотинца."
+  description: humanity-construction-civ13_shoes_infantry_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/soldier_shoes.rsi
     state: icon
@@ -1133,13 +1133,13 @@
     - node: end
       entity: civ13_shoes_infantry_shoes
 - type: construction
-  name: "чёрные матросские сапоги"
+  name: humanity-construction-civ13_shoes_black_sailor_boots-name
   id: civ13_shoes_black_sailor_boots
   graph: civ13_shoes_black_sailor_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические чёрные сапоги матроса."
+  description: humanity-construction-civ13_shoes_black_sailor_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots1.rsi
     state: icon
@@ -1160,13 +1160,13 @@
     - node: end
       entity: civ13_shoes_black_sailor_boots
 - type: construction
-  name: "кожаные матросские сапоги"
+  name: humanity-construction-civ13_shoes_leather_sailor_boots-name
   id: civ13_shoes_leather_sailor_boots
   graph: civ13_shoes_leather_sailor_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические кожаные сапоги матроса."
+  description: humanity-construction-civ13_shoes_leather_sailor_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/sailorboots2.rsi
     state: icon
@@ -1187,13 +1187,13 @@
     - node: end
       entity: civ13_shoes_leather_sailor_boots
 - type: construction
-  name: "песочные военные ботинки"
+  name: humanity-construction-civ13_shoes_military_boots_tan-name
   id: civ13_shoes_military_boots_tan
   graph: civ13_shoes_military_boots_tan
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Классические армейские ботинки песочного цвета."
+  description: humanity-construction-civ13_shoes_military_boots_tan-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/usmc.rsi
     state: icon
@@ -1214,13 +1214,13 @@
     - node: end
       entity: civ13_shoes_military_boots_tan
 - type: construction
-  name: "чёрные сапоги для верховой езды"
+  name: humanity-construction-civ13_shoes_black_riding_boots-name
   id: civ13_shoes_black_riding_boots
   graph: civ13_shoes_black_riding_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрные кожаные сапоги со шпорами. Идеальны для верховой езды."
+  description: humanity-construction-civ13_shoes_black_riding_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/cowboyboots1.rsi
     state: icon
@@ -1241,13 +1241,13 @@
     - node: end
       entity: civ13_shoes_black_riding_boots
 - type: construction
-  name: "сапоги для верховой езды из кожи аллигатора"
+  name: humanity-construction-civ13_shoes_alligator_scale_riding_boots-name
   id: civ13_shoes_alligator_scale_riding_boots
   graph: civ13_shoes_alligator_scale_riding_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядные сапоги из кожи аллигатора со шпорами."
+  description: humanity-construction-civ13_shoes_alligator_scale_riding_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_cowboy.rsi
     state: icon
@@ -1268,13 +1268,13 @@
     - node: end
       entity: civ13_shoes_alligator_scale_riding_boots
 - type: construction
-  name: "сапоги для верховой езды из кожи ящерицы"
+  name: humanity-construction-civ13_shoes_lizard_scale_riding_boots-name
   id: civ13_shoes_lizard_scale_riding_boots
   graph: civ13_shoes_lizard_scale_riding_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядные сапоги из кожи ящерицы со шпорами."
+  description: humanity-construction-civ13_shoes_lizard_scale_riding_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_cowboy.rsi
     state: icon
@@ -1295,13 +1295,13 @@
     - node: end
       entity: civ13_shoes_lizard_scale_riding_boots
 - type: construction
-  name: "кожаные сапоги для верховой езды"
+  name: humanity-construction-civ13_shoes_leather_riding_boots-name
   id: civ13_shoes_leather_riding_boots
   graph: civ13_shoes_leather_riding_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаные сапоги со шпорами. Идеальны для верховой езды."
+  description: humanity-construction-civ13_shoes_leather_riding_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/cowboyboots2.rsi
     state: icon
@@ -1322,13 +1322,13 @@
     - node: end
       entity: civ13_shoes_leather_riding_boots
 - type: construction
-  name: "полусапожки из кожи аллигатора"
+  name: humanity-construction-civ13_shoes_alligator_scale_ankle_boots-name
   id: civ13_shoes_alligator_scale_ankle_boots
   graph: civ13_shoes_alligator_scale_ankle_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Элегантные полусапожки из кожи аллигатора для тех, кто любит выделяться."
+  description: humanity-construction-civ13_shoes_alligator_scale_ankle_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/gator_ankleboots.rsi
     state: icon
@@ -1349,13 +1349,13 @@
     - node: end
       entity: civ13_shoes_alligator_scale_ankle_boots
 - type: construction
-  name: "кожаные туфли"
+  name: humanity-construction-civ13_shoes_leather_shoes_1-name
   id: civ13_shoes_leather_shoes_1
   graph: civ13_shoes_leather_shoes_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые тонкие кожаные туфли до щиколотки."
+  description: humanity-construction-civ13_shoes_leather_shoes_1-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/medieval.rsi
     state: icon
@@ -1376,13 +1376,13 @@
     - node: end
       entity: civ13_shoes_leather_shoes_1
 - type: construction
-  name: "арабские кожаные туфли"
+  name: humanity-construction-civ13_shoes_arabic_leather_shoes-name
   id: civ13_shoes_arabic_leather_shoes
   graph: civ13_shoes_arabic_leather_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые тонкие кожаные туфли с просторным носком."
+  description: humanity-construction-civ13_shoes_arabic_leather_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/arab.rsi
     state: icon
@@ -1403,13 +1403,13 @@
     - node: end
       entity: civ13_shoes_arabic_leather_shoes
 - type: construction
-  name: "кожаные туфли эмирата"
+  name: humanity-construction-civ13_shoes_emirate_leather_shoes-name
   id: civ13_shoes_emirate_leather_shoes
   graph: civ13_shoes_emirate_leather_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые кожаные туфли арабского покроя с мягкой подкладкой и просторным носком."
+  description: humanity-construction-civ13_shoes_emirate_leather_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/emir.rsi
     state: icon
@@ -1430,13 +1430,13 @@
     - node: end
       entity: civ13_shoes_emirate_leather_shoes
 - type: construction
-  name: "сабатоны"
+  name: humanity-construction-civ13_shoes_Sabatons-name
   id: civ13_shoes_Sabatons
   graph: civ13_shoes_Sabatons
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Латные башмаки, защищающие ноги."
+  description: humanity-construction-civ13_shoes_Sabatons-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/knight.rsi
     state: icon
@@ -1457,13 +1457,13 @@
     - node: end
       entity: civ13_shoes_Sabatons
 - type: construction
-  name: "степные шерстяные башмаки"
+  name: humanity-construction-civ13_shoes_steppe_wool_shoe-name
   id: civ13_shoes_steppe_wool_shoe
   graph: civ13_shoes_steppe_wool_shoe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубые утеплённые башмаки для холода открытой степи."
+  description: humanity-construction-civ13_shoes_steppe_wool_shoe-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/steppe_wool_shoes.rsi
     state: icon
@@ -1484,13 +1484,13 @@
     - node: end
       entity: civ13_shoes_steppe_wool_shoe
 - type: construction
-  name: "сандалии гэта"
+  name: humanity-construction-civ13_shoes_geta_sandals-name
   id: civ13_shoes_geta_sandals
   graph: civ13_shoes_geta_sandals
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые деревянные сандалии, слегка приподнимающие ноги над землёй."
+  description: humanity-construction-civ13_shoes_geta_sandals-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/geta.rsi
     state: icon
@@ -1511,13 +1511,13 @@
     - node: end
       entity: civ13_shoes_geta_sandals
 - type: construction
-  name: "цурануки"
+  name: humanity-construction-civ13_shoes_tsuranuki-name
   id: civ13_shoes_tsuranuki
   graph: civ13_shoes_tsuranuki
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Японская обувь с латной защитой голеней."
+  description: humanity-construction-civ13_shoes_tsuranuki-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/tsuranuki.rsi
     state: icon
@@ -1538,13 +1538,13 @@
     - node: end
       entity: civ13_shoes_tsuranuki
 - type: construction
-  name: "двемерские сапоги"
+  name: humanity-construction-civ13_shoes_dwemmer_boots-name
   id: civ13_shoes_dwemmer_boots
   graph: civ13_shoes_dwemmer_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Латные сапоги из двемерского металла."
+  description: humanity-construction-civ13_shoes_dwemmer_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/dwoots.rsi
     state: icon
@@ -1565,13 +1565,13 @@
     - node: end
       entity: civ13_shoes_dwemmer_boots
 - type: construction
-  name: "кроссовки курьера"
+  name: humanity-construction-civ13_shoes_courier_sneakers-name
   id: civ13_shoes_courier_sneakers
   graph: civ13_shoes_courier_sneakers
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простые тонкие серые кроссовки."
+  description: humanity-construction-civ13_shoes_courier_sneakers-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/courier_sneakers.rsi
     state: icon
@@ -1592,13 +1592,13 @@
     - node: end
       entity: civ13_shoes_courier_sneakers
 - type: construction
-  name: "панковские сапоги"
+  name: humanity-construction-civ13_shoes_punk_boots-name
   id: civ13_shoes_punk_boots
   graph: civ13_shoes_punk_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Высокие кожаные сапоги для тех, кому надоело терпеть власть имущих."
+  description: humanity-construction-civ13_shoes_punk_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/punk.rsi
     state: icon
@@ -1619,13 +1619,13 @@
     - node: end
       entity: civ13_shoes_punk_boots
 - type: construction
-  name: "полусапожки из кожи ящерицы"
+  name: humanity-construction-civ13_shoes_lizard_scale_ankle_boots-name
   id: civ13_shoes_lizard_scale_ankle_boots
   graph: civ13_shoes_lizard_scale_ankle_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Элегантные полусапожки из кожи ящерицы для тех, кто любит выделяться."
+  description: humanity-construction-civ13_shoes_lizard_scale_ankle_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_ankleboots.rsi
     state: icon
@@ -1646,13 +1646,13 @@
     - node: end
       entity: civ13_shoes_lizard_scale_ankle_boots
 - type: construction
-  name: "туфли из кожи ящерицы"
+  name: humanity-construction-civ13_shoes_lizard_scale_laceup_shoes-name
   id: civ13_shoes_lizard_scale_laceup_shoes
   graph: civ13_shoes_lizard_scale_laceup_shoes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Роскошные туфли на шнуровке, уже начищенные до блеска."
+  description: humanity-construction-civ13_shoes_lizard_scale_laceup_shoes-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/lizard_laceups.rsi
     state: icon
@@ -1673,13 +1673,13 @@
     - node: end
       entity: civ13_shoes_lizard_scale_laceup_shoes
 - type: construction
-  name: "коричневые армейские ботинки"
+  name: humanity-construction-civ13_shoes_Brown_boots-name
   id: civ13_shoes_Brown_boots
   graph: civ13_shoes_Brown_boots
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Боевые ботинки из коричневой кожи со стальным подноском и резиновой подошвой."
+  description: humanity-construction-civ13_shoes_Brown_boots-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/brownboots.rsi
     state: icon
@@ -1700,13 +1700,13 @@
     - node: end
       entity: civ13_shoes_Brown_boots
 - type: construction
-  name: "коричневые армейские ботинки с крагами"
+  name: humanity-construction-civ13_shoes_Brown_boots_with_leggings-name
   id: civ13_shoes_Brown_boots_with_leggings
   graph: civ13_shoes_Brown_boots_with_leggings
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Прочные коричневые ботинки со стальным подноском, резиновой подошвой и защитными крагами для голеней."
+  description: humanity-construction-civ13_shoes_Brown_boots_with_leggings-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/brownboots_us_ww2_alt.rsi
     state: icon
@@ -1727,13 +1727,13 @@
     - node: end
       entity: civ13_shoes_Brown_boots_with_leggings
 - type: construction
-  name: "футбольные кроссовки"
+  name: humanity-construction-civ13_shoes_football_trainers-name
   id: civ13_shoes_football_trainers
   graph: civ13_shoes_football_trainers
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пара кроссовок для футбола."
+  description: humanity-construction-civ13_shoes_football_trainers-description
   icon:
     sprite: Civ14/Clothing/exported/shoes/football.rsi
     state: icon

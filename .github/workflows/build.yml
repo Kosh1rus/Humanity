@@ -1,0 +1,38 @@
+name: Build Humanity
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - name: Build server
+        run: dotnet build Content.Server/Content.Server.csproj --configuration Release
+      - name: Build client
+        run: dotnet build Content.Client/Content.Client.csproj --configuration Release
+      - name: Build packaging
+        run: dotnet build Content.Packaging/Content.Packaging.csproj --configuration Release

@@ -1,28 +1,29 @@
 - type: entity
+  parent:
+  - BaseStructure
+  - StructureHealthFurniture
   id: Bookshelf
-  parent: BaseStructure
-  name: "книжный шкаф"
-  description: "Полки почти целиком заняты книгами."
+  name: книжный шкаф
+  description: Полки почти целиком заняты книгами.
   components:
   - type: Sprite
     sprite: Structures/Furniture/bookshelf.rsi
     snapCardinals: true
     layers:
-      - state: base
-      - state: book-0
-      - map: ["enum.StorageFillLayers.Fill"]
+    - state: base
+    - state: book-0
+    - map:
+      - enum.StorageFillLayers.Fill
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 21
     fillBaseName: book
   - type: Damageable
-    damageModifierSet: Wood
-    damageContainer: StructuralInorganic
+    damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 30
+    - trigger: !type:DamageTrigger
+        damage: 40
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -32,12 +33,9 @@
           MaterialWoodPlank:
             min: 2
             max: 3
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
   - type: Tag
     tags:
     - Structure
-    - Wooden
   - type: Transform
     anchored: true
     noRot: true
@@ -48,15 +46,15 @@
   - type: Occluder
   - type: Storage
     grid:
-    - 0,0,15,3
+    - 0,0,9,3
     maxItemSize: Normal
     whitelist:
       tags:
-        - Document
-        - Folder
-        - Write
-        - Book
-        - Spellbook
+      - Document
+      - Folder
+      - Write
+      - Book
+      - Spellbook
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -64,7 +62,7 @@
   - type: InteractionOutline
   - type: ContainerContainer
     containers:
-      storagebase: !type:Container
+      storagebase: !type:Container ''
   - type: Construction
     graph: Bookshelf
     node: bookshelf

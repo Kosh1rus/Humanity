@@ -1,4 +1,3 @@
-job-supervisors-nobody = nobody, you are the highest ranking person in your faction
 job-supervisors-sgt = your Sergeant
 job-supervisors-officer = any Officer
 job-supervisors-squadleader = your Squad Leader

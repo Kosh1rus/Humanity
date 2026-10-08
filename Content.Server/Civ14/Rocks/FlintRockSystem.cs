@@ -14,11 +14,11 @@ namespace Content.Server.Rocks;
 
 public sealed partial class FlintRockSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom Random = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private IRobustRandom Random = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
 
 
     public override void Initialize()

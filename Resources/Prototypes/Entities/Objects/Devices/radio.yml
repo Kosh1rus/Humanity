@@ -1,26 +1,67 @@
 - type: entity
-  name: handheld radio
-  description: A handy handheld radio.
   parent: BaseItem
   id: RadioHandheld
+  name: handheld radio
+  description: A handy handheld radio.
   components:
-    - type: TelecomExempt
-    - type: RadioMicrophone
-      broadcastChannel: Handheld
-    - type: RadioSpeaker
-      channels:
-        - Handheld
-    - type: Speech
-      speechVerb: Robotic
-    - type: Sprite
-      sprite: Objects/Devices/communication.rsi
-      layers:
-        - state: walkietalkie
-        - state: walkietalkie-on
-      state: walkietalkie
-    - type: Item
-      sprite: Objects/Devices/communication.rsi
-      heldPrefix: walkietalkie
-    - type: Tag
-      tags:
-        - Radio
+  - type: TelecomExempt
+  - type: RadioMicrophone
+    broadcastChannel: Handheld
+  - type: RadioSpeaker
+    channels:
+    - Handheld
+  - type: Speech
+    speechVerb: Robotic
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: walkietalkie
+    - map:
+      - enum.RadioDeviceVisualLayers.Broadcasting
+      state: walkietalkie-on
+      shader: unshaded
+      visible: false
+    - map:
+      - enum.RadioDeviceVisualLayers.Speaker
+      state: walkietalkie-active
+      shader: unshaded
+      visible: false
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.RadioDeviceVisuals.Broadcasting:
+        enum.RadioDeviceVisualLayers.Broadcasting:
+          true:
+            visible: true
+          false:
+            visible: false
+      enum.RadioDeviceVisuals.Speaker:
+        enum.RadioDeviceVisualLayers.Speaker:
+          true:
+            visible: true
+          false:
+            visible: false
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: walkietalkie
+  - type: Tag
+    tags:
+    - Radio
+- type: entity
+  parent:
+  - RadioHandheld
+  - BaseSecurityContraband
+  id: RadioHandheldSecurity
+  name: security radio
+  description: A handy security radio.
+  components:
+  - type: RadioMicrophone
+    broadcastChannel: Security
+    listenRange: 1
+  - type: RadioSpeaker
+    channels:
+    - Security
+  - type: Sprite
+    sprite: Objects/Devices/securityhandy.rsi
+  - type: Item
+    sprite: Objects/Devices/securityhandy.rsi
