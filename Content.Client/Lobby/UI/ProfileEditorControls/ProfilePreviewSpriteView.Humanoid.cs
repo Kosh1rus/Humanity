@@ -75,7 +75,8 @@ public sealed partial class ProfilePreviewSpriteView
     /// </summary>
     private JobPrototype GetPreferredJob(HumanoidCharacterProfile profile)
     {
-        var highPriorityJob = profile.JobPriorities.FirstOrDefault(p => p.Value == JobPriority.High).Key;
+        var highPriorityJob = profile.JobPriorities.FirstOrDefault(p => p.Value == JobPriority.High &&
+            (p.Key.Id == "Nomad" || p.Key.Id.StartsWith("German") || p.Key.Id.StartsWith("Soviet") && !p.Key.Id.StartsWith("SovietCW"))).Key;
         if (highPriorityJob.Id != null && _prototypeManager.TryIndex<JobPrototype>(highPriorityJob, out var preferred))
             return preferred;
         return _prototypeManager.Index<JobPrototype>(GameTicker.FallbackOverflowJob);

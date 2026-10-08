@@ -266,10 +266,6 @@
   - type: AccessReader
     access:
     - - Bar
-  - type: GuideHelp
-    guides:
-    - Bartender
-    - Drinks
 - type: entity
   parent: VendingMachineBooze
   id: VendingMachineBoozeSyndicate
@@ -302,10 +298,6 @@
   - type: AccessReader
     access:
     - - SyndicateAgent
-  - type: GuideHelp
-    guides:
-    - Bartender
-    - Drinks
 - type: entity
   parent: VendingMachine
   id: VendingMachineCart
@@ -954,9 +946,6 @@
     radius: 1.5
     energy: 3.0
     color: '#9dc5c9'
-  - type: GuideHelp
-    guides:
-    - MedicalDoctor
   - type: AmbientMusicMarkerMedical
 - type: entity
   parent: VendingMachineMedicalBase
@@ -1052,10 +1041,6 @@
     radius: 1
     energy: 2.0
     color: '#78645c'
-  - type: GuideHelp
-    guides:
-    - Security
-    - Antagonists
 - type: entity
   parent: VendingMachine
   id: VendingMachineSeedsUnlocked
@@ -1377,9 +1362,6 @@
     radius: 1.5
     energy: 3.0
     color: '#B0ADA9'
-  - type: GuideHelp
-    guides:
-    - Robotics
 - type: entity
   parent: VendingMachine
   id: VendingMachineYouTool
@@ -1502,9 +1484,6 @@
   - type: AccessReader
     access:
     - - Salvage
-  - type: GuideHelp
-    guides:
-    - Salvage
 - type: entity
   parent: VendingMachine
   id: VendingMachineDonut
@@ -2254,10 +2233,6 @@
   - type: AccessReader
     access:
     - - Chemistry
-  - type: GuideHelp
-    guides:
-    - Chemicals
-    - Chemist
   - type: AmbientMusicMarkerMedical
 - type: entity
   parent: VendingMachineChemicals
@@ -2303,9 +2278,6 @@
     radius: 1.3
     energy: 3.0
     color: '#43ccb5'
-  - type: GuideHelp
-    guides:
-    - Medical
 - type: entity
   parent: VendingMachineWallMedicalCivilian
   id: VendingMachineWallMedical

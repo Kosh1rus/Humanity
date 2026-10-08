@@ -20,10 +20,6 @@
     noRot: false
   - type: Machine
     board: SodaDispenserMachineCircuitboard
-  - type: GuideHelp
-    guides:
-    - Bartender
-    - Drinks
 - type: entity
   parent: SodaDispenserEmpty
   id: SodaDispenser

@@ -6,4 +6,3 @@ humanity-mortar-empty = No shell loaded.
 humanity-mortar-loaded = A shell is already loaded.
 humanity-mortar-ready = Shell loaded.
 humanity-mortar-no-ground = The mortar cannot be secured here.
-humanity-mortar-hint = Load a shell into the barrel, then press Fire.

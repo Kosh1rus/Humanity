@@ -48,7 +48,7 @@ public sealed partial class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathM
             }
         }
         if (component.RoundDuration > 0)
-            _chat.DispatchGlobalAnnouncement("Р—Р°РґР°С‡Р° - Р·Р°С…РІР°С‚РёС‚СЊ С†РµРЅС‚СЂ РєР°СЂС‚С‹. РџРѕРґРєСЂРµРїР»РµРЅРёСЏ Р±СѓРґСѓС‚ РєР°Р¶РґС‹Рµ 2 РјРёРЅСѓС‚С‹, Р° СЃР°Рј Р±РѕР№ РґР»РёС‚СЃСЏ 45 РјРёРЅСѓС‚.", "РЁС‚Р°Р±", false, null, Color.Yellow);
+            _chat.DispatchGlobalAnnouncement("Задача - захватить центр карты. Подкрепления будут каждые 2 минуты, а сам бой длится 45 минут.", "Штаб", false, null, Color.Yellow);
     }
 
     public override void Update(float frameTime)
@@ -68,9 +68,9 @@ public sealed partial class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathM
             match.WinnerTeam = match.Team1Kills > match.Team2Kills ? match.Team1 :
                 match.Team2Kills > match.Team1Kills ? match.Team2 : "";
             var message = match.WinnerTeam == ""
-                ? "Р’СЂРµРјСЏ Р±РѕСЏ РёСЃС‚РµРєР»Рѕ. Р Р°РІРЅС‹Р№ СЃС‡С‘С‚ вЂ” РЅРёС‡СЊСЏ."
-                : $"Р’СЂРµРјСЏ Р±РѕСЏ РёСЃС‚РµРєР»Рѕ. РџРѕ С‡РёСЃР»Сѓ СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° РїРѕР±РµР¶РґР°РµС‚ {BattleFactionNames.Get(match.WinnerTeam)}.";
-            _chat.DispatchGlobalAnnouncement(message, "РЁС‚Р°Р±", false, null, Color.Yellow);
+                ? "Время боя истекло. Равный счёт — ничья."
+                : $"Время боя истекло. По числу убийств противника побеждает {BattleFactionNames.Get(match.WinnerTeam)}.";
+            _chat.DispatchGlobalAnnouncement(message, "Штаб", false, null, Color.Yellow);
             _roundEnd.EndRound();
             return;
         }
@@ -204,18 +204,18 @@ public sealed partial class TeamDeathMatchRuleSystem : GameRuleSystem<TeamDeathM
     {
         var match = rule.Comp;
         if (match.WinnerTeam != "")
-            args.AddLine($"РџРѕР±РµРґРёС‚РµР»СЊ: [color=lime]{BattleFactionNames.Get(match.WinnerTeam)}[/color].");
+            args.AddLine($"Победитель: [color=lime]{BattleFactionNames.Get(match.WinnerTeam)}[/color].");
         else if (match.TimedOut)
-            args.AddLine("Р‘РѕР№ Р·Р°РІРµСЂС€С‘РЅ РІРЅРёС‡СЊСЋ.");
-        args.AddLine($"{BattleFactionNames.Get(match.Team1)}: СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° вЂ” {match.Team1Kills}, СЃРјРµСЂС‚РµР№ вЂ” {match.Team1Deaths}.");
-        args.AddLine($"{BattleFactionNames.Get(match.Team2)}: СѓР±РёР№СЃС‚РІ РїСЂРѕС‚РёРІРЅРёРєР° вЂ” {match.Team2Kills}, СЃРјРµСЂС‚РµР№ вЂ” {match.Team2Deaths}.");
+            args.AddLine("Бой завершён вничью.");
+        args.AddLine($"{BattleFactionNames.Get(match.Team1)}: убийств противника — {match.Team1Kills}, смертей — {match.Team1Deaths}.");
+        args.AddLine($"{BattleFactionNames.Get(match.Team2)}: убийств противника — {match.Team2Kills}, смертей — {match.Team2Deaths}.");
         args.AddLine("");
-        args.AddLine("[color=yellow]РЎС‚Р°С‚РёСЃС‚РёРєР° РёРіСЂРѕРєРѕРІ[/color]");
+        args.AddLine("[color=yellow]Статистика игроков[/color]");
         foreach (var team in new[] { match.Team1, match.Team2 })
         {
             args.AddLine($"[color=cyan]{BattleFactionNames.Get(team)}[/color]:");
             foreach (var player in match.KDRatio.Values.Where(player => player.Team == team).OrderByDescending(player => player.KDRatio).ThenByDescending(player => player.Kills))
-                args.AddLine($"  {FormattedMessage.EscapeText(player.Name)}: СѓР±РёР№СЃС‚РІ вЂ” {player.Kills}, СЃРјРµСЂС‚РµР№ вЂ” {player.Deaths}, Рљ/РЎ вЂ” {player.KDRatio:F2}.");
+                args.AddLine($"  {FormattedMessage.EscapeText(player.Name)}: убийств — {player.Kills}, смертей — {player.Deaths}, К/С — {player.KDRatio:F2}.");
         }
     }
 }

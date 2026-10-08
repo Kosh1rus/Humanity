@@ -73,6 +73,7 @@ entities:
     - type: Transform
       pos: -0.5625,-0.5
       parent: 1
+    - type: Roof
     - type: MapGrid
       chunks:
         1,3:

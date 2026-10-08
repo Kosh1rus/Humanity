@@ -130,10 +130,6 @@
     storedSprite:
       sprite: Structures/Piping/Atmospherics/pipe.rsi
       state: storageHalf
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   parent: GasPipeBase
   id: !type:CreateVariants
@@ -191,10 +187,6 @@
         Blunt: 8
     soundHit:
       collection: MetalThud
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   parent: GasPipeBase
   id: !type:CreateVariants
@@ -259,10 +251,6 @@
     damage:
       types:
         Blunt: 8
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   parent: GasPipeBase
   id: !type:CreateVariants
@@ -320,10 +308,6 @@
         Blunt: 10
     soundHit:
       collection: MetalThud
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   parent: GasPipeBase
   id: !type:CreateVariants
@@ -383,10 +367,6 @@
         Blunt: 10
     soundHit:
       collection: MetalThud
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   id: GasPipeBroken
   parent:
@@ -408,10 +388,6 @@
     size: Small
   - type: Damageable
     damageModifierSet: SteelMod
-  - type: GuideHelp
-    guides:
-    - Pipes
-    - PipeNetworks
 - type: entity
   parent: GasPipeBase
   id: GasPipeManifold

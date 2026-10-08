@@ -17,6 +17,5 @@
         <Label Name="LimitsLabel" Access="Public" />
         <Label Name="StatusLabel" Access="Public" />
         <Button Name="FireButton" Access="Public" Text="{Loc 'humanity-mortar-fire'}" />
-        <Label Text="{Loc 'humanity-mortar-hint'}" />
     </BoxContainer>
 </controls:MortarWindow>

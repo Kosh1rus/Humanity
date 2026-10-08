@@ -39,10 +39,6 @@
     loadNode: output
     collectionName: substation
   - type: PacifismDangerousAttack
-  - type: GuideHelp
-    guides:
-    - VoltageNetworks
-    - Power
   - type: AmbientOnPowered
   - type: AmbientSound
     volume: -5

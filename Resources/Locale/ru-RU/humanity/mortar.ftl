@@ -6,4 +6,3 @@ humanity-mortar-empty = Мина не заряжена.
 humanity-mortar-loaded = В стволе уже есть мина.
 humanity-mortar-ready = Мина заряжена.
 humanity-mortar-no-ground = Здесь нельзя закрепить миномёт.
-humanity-mortar-hint = Зарядите мину в ствол, затем нажмите «Огонь».

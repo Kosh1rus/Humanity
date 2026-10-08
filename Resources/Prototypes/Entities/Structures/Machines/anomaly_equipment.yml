@@ -82,10 +82,6 @@
         sound:
           collection: MetalGlassBreak
       - !type:ExplodeBehavior
-  - type: GuideHelp
-    guides:
-    - ScannersAndVessels
-
 - type: entity
   id: MachineAnomalyVesselExperimental
   parent: MachineAnomalyVessel
@@ -192,9 +188,6 @@
     workingPowerDraw: 100
   - type: ApcPowerReceiver
     powerLoad: 5
-  - type: GuideHelp
-    guides:
-    - APE
   - type: Gun
     projectileSpeed: 10
     fireRate: 10 #just has to be fast enough to keep up with upgrades
@@ -335,6 +328,3 @@
     price: 5000
   - type: AccessReader
     access: [["Research"]]
-  - type: GuideHelp
-    guides:
-    - AnomalousResearch

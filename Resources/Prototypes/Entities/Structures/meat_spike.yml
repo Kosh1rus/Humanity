@@ -48,9 +48,6 @@
   - type: Construction
     graph: MeatSpike
     node: MeatSpike
-  - type: GuideHelp
-    guides:
-    - FoodRecipes
   - type: ContainerContainer
     containers:
       body: !type:ContainerSlot ''

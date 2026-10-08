@@ -247,10 +247,6 @@
     onBump: false
     requirePower: true
     highVoltageNode: output
-  - type: GuideHelp
-    guides:
-    - RTG
-    - Power
 - type: entity
   parent:
   - BaseRTG

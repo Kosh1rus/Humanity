@@ -66,10 +66,6 @@
     entity: AmeController
   - type: StaticPrice
     price: 1000
-  - type: GuideHelp
-    guides:
-    - AME
-    - Power
 - type: entity
   parent: BaseFlatpack
   id: AmePartFlatpack
@@ -237,10 +233,6 @@
   - type: Sprite
     layers:
     - state: hydroponics-tray
-  - type: GuideHelp
-    guides:
-    - Botany
-    - Chemicals
 - type: entity
   parent:
   - BaseFlatpack
@@ -253,9 +245,6 @@
     size: Normal
   - type: Flatpack
     entity: SyndicateMicrowave
-  - type: GuideHelp
-    guides:
-    - FoodRecipes
 - type: entity
   parent:
   - BaseFlatpack
@@ -274,9 +263,6 @@
     size: Normal
   - type: Flatpack
     entity: XenoborgExtractor
-  - type: GuideHelp
-    guides:
-    - Xenoborgs
 - type: entity
   parent: BaseFlatpack
   id: MachineAnomalyVesselFlatpack
@@ -285,9 +271,6 @@
   components:
   - type: Flatpack
     entity: MachineAnomalyVessel
-  - type: GuideHelp
-    guides:
-    - ScannersAndVessels
   - type: Sprite
     layers:
     - state: base

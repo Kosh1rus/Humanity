@@ -43,26 +43,6 @@ public sealed partial class GuidebookUIController : UIController, IOnStateEntere
 
     private void HandleStateEntered(State state)
     {
-        DebugTools.Assert(_guideWindow == null);
-
-        // setup window
-        _guideWindow = UIManager.CreateWindow<GuidebookWindow>();
-        _guideWindow.OnClose += OnWindowClosed;
-        _guideWindow.OnOpen += OnWindowOpen;
-
-        if (state is LobbyState &&
-            _jobRequirements.FetchOverallPlaytime() < TimeSpan.FromMinutes(PlaytimeOpenGuidebook))
-        {
-            OpenGuidebook();
-            _guideWindow.RecenterWindow(new(0.5f, 0.5f));
-            _guideWindow.SetPositionFirst();
-        }
-
-        // setup keybinding
-        CommandBinds.Builder
-            .Bind(ContentKeyFunctions.OpenGuidebook,
-                InputCmdHandler.FromDelegate(_ => ToggleGuidebook()))
-            .Register<GuidebookUIController>();
     }
 
     public void OnStateExited(LobbyState state)
