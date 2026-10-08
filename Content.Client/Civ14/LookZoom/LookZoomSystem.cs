@@ -68,15 +68,15 @@ public sealed partial class LookZoomSystem : EntitySystem
         // Sets the offset if there is an item in the active hand with the EyeCurserOffset component
         if (item != null && TryComp<EyeCursorOffsetComponent>(item, out var itemComp))
         {
-            SetOffset(item.Value, args);
+            SetOffset(item.Value, ref args);
             return;
         }
 
         //Sets the offset using the EyeCurserOffset on the player entity instead
-        SetOffset(comp.Owner, args);
+        SetOffset(uid, ref args);
     }
 
-    private void SetOffset(EntityUid uid, GetEyeOffsetRelayedEvent args)
+    private void SetOffset(EntityUid uid, ref GetEyeOffsetRelayedEvent args)
     {
         var offset = _eyeOffset.OffsetAfterMouse(uid, null);
         if (offset == null)

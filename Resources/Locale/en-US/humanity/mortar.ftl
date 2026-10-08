@@ -1,6 +1,5 @@
-humanity-mortar-heading = Bearing: 0° — north, 90° — east
+humanity-mortar-heading = Bearing
 humanity-mortar-range = Range, m
-humanity-mortar-limits = Range: {$min}–{$max} m
 humanity-mortar-fire = Fire
 humanity-mortar-empty = No shell loaded.
 humanity-mortar-loaded = A shell is already loaded.

@@ -35,7 +35,7 @@ namespace Content.Shared.Preferences
     {
         public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
         public static readonly ProtoId<EmoteSoundsPrototype> DefaultVoice = "MaleHuman";
-        private static readonly Regex RestrictedNameRegex = new(@"[^A-Za-z0-9 '\-]");
+        private static readonly Regex RestrictedNameRegex = new(@"[^\p{L}\p{M}0-9 '\-]");
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
         /// <summary>
@@ -749,10 +749,6 @@ namespace Content.Shared.Preferences
                 hasHighPrio = true;
             }
 
-            var antags = AntagPreferences
-                .Where(id => prototypeManager.TryIndex(id, out var antag) && antag.SetPreference)
-                .ToList();
-
             var traits = TraitPreferences
                          .Where(prototypeManager.HasIndex)
                          .ToList();
@@ -776,7 +772,6 @@ namespace Content.Shared.Preferences
             PreferenceUnavailable = prefsUnavailableMode;
 
             _antagPreferences.Clear();
-            _antagPreferences.UnionWith(antags);
 
             _traitPreferences.Clear();
             _traitPreferences.UnionWith(GetValidTraits(traits, prototypeManager));

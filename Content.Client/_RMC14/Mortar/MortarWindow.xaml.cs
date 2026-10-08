@@ -55,7 +55,6 @@ public sealed partial class MortarWindow : DefaultWindow
         _maximum = mortar.MaximumRange;
         _heading.Value = mortar.Heading;
         _range.Value = mortar.Range;
-        LimitsLabel.Text = Loc.GetString("humanity-mortar-limits", ("min", _minimum), ("max", _maximum));
         StatusLabel.Text = Loc.GetString(mortar.Loaded ? "humanity-mortar-ready" : "humanity-mortar-empty");
         FireButton.Disabled = !mortar.Loaded || !mortar.Deployed;
     }
