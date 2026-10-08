@@ -76,8 +76,9 @@ public sealed partial class ProfilePreviewSpriteView
     private JobPrototype GetPreferredJob(HumanoidCharacterProfile profile)
     {
         var highPriorityJob = profile.JobPriorities.FirstOrDefault(p => p.Value == JobPriority.High).Key;
-        // ReSharper disable once NullCoalescingConditionIsAlwaysNotNullAccordingToAPIContract (what is resharper smoking?)
-        return _prototypeManager.Index<JobPrototype>(highPriorityJob.Id ?? GameTicker.FallbackOverflowJob);
+        if (highPriorityJob.Id != null && _prototypeManager.TryIndex<JobPrototype>(highPriorityJob, out var preferred))
+            return preferred;
+        return _prototypeManager.Index<JobPrototype>(GameTicker.FallbackOverflowJob);
     }
 
     private void GiveDummyLoadout(RoleLoadout? roleLoadout)
@@ -131,7 +132,7 @@ public sealed partial class ProfilePreviewSpriteView
                                 EntMan.DeleteEntity(unequippedItem.Value);
                             }
 
-                            if (itemType != string.Empty)
+                            if (!string.IsNullOrEmpty(itemType) && _prototypeManager.HasIndex<EntityPrototype>(itemType))
                             {
                                 var item = EntMan.SpawnEntity(itemType, MapCoordinates.Nullspace);
                                 inventorySys.TryEquip(PreviewDummy, item, slot.Name, true, true);
@@ -146,7 +147,7 @@ public sealed partial class ProfilePreviewSpriteView
                                 EntMan.DeleteEntity(unequippedItem.Value);
                             }
 
-                            if (itemType != string.Empty)
+                            if (!string.IsNullOrEmpty(itemType) && _prototypeManager.HasIndex<EntityPrototype>(itemType))
                             {
                                 var item = EntMan.SpawnEntity(itemType, MapCoordinates.Nullspace);
                                 inventorySys.TryEquip(PreviewDummy, item, slot.Name, true, true);
@@ -169,7 +170,7 @@ public sealed partial class ProfilePreviewSpriteView
                 EntMan.DeleteEntity(unequippedItem.Value);
             }
 
-            if (itemType != string.Empty)
+            if (!string.IsNullOrEmpty(itemType) && _prototypeManager.HasIndex<EntityPrototype>(itemType))
             {
                 var item = EntMan.SpawnEntity(itemType, MapCoordinates.Nullspace);
                 inventorySys.TryEquip(PreviewDummy, item, slot.Name, true, true);
