@@ -1,4 +1,3 @@
-using System.Numerics;
 using Content.Server.Popups;
 using Content.Shared._RMC14.Mortar;
 using Robust.Server.Containers;
@@ -17,68 +16,45 @@ public sealed partial class MortarSystem : SharedMortarSystem
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
 
-    protected override bool CanLoadPopup(
-        Entity<MortarComponent> mortar,
-        Entity<MortarShellComponent> shell,
-        EntityUid user,
-        out TimeSpan travelTime,
-        out MapCoordinates coordinates)
+    protected override bool CanLoadPopup(Entity<MortarComponent> mortar, Entity<MortarShellComponent> shell,
+        EntityUid user, out TimeSpan travelTime, out MapCoordinates coordinates)
     {
         travelTime = default;
         coordinates = default;
-
-        if (!mortar.Comp.Deployed)
+        if (!mortar.Comp.Deployed || !Transform(mortar).Anchored)
         {
             _popup.PopupEntity(Loc.GetString("rmc-mortar-not-deployed", ("mortar", mortar)), user, user, SmallCaution);
             return false;
         }
 
-        var time = _timing.CurTime;
-        if (time < mortar.Comp.LastFiredAt + mortar.Comp.FireDelay)
+        if (mortar.Comp.Loaded || HasComp<ActiveMortarShellComponent>(shell) ||
+            (_container.TryGetContainer(mortar, mortar.Comp.ContainerId, out var container) &&
+             (container.ContainedEntities.Count > 0 || !_container.CanInsert(shell, container))))
+        {
+            _popup.PopupEntity(Loc.GetString("humanity-mortar-loaded"), user, user, SmallCaution);
+            return false;
+        }
+        return true;
+    }
+
+    protected override bool TryGetShotCoordinates(Entity<MortarComponent> mortar, Entity<MortarShellComponent> shell,
+        EntityUid user, out TimeSpan travelTime, out MapCoordinates coordinates)
+    {
+        travelTime = default;
+        coordinates = default;
+        if (mortar.Comp.LastFiredAt != TimeSpan.Zero && _timing.CurTime < mortar.Comp.LastFiredAt + mortar.Comp.FireDelay)
         {
             _popup.PopupEntity(Loc.GetString("rmc-mortar-fire-cooldown", ("mortar", mortar)), user, user, SmallCaution);
             return false;
         }
-
-        var target = mortar.Comp.Target + mortar.Comp.Offset + mortar.Comp.Dial;
-        if (target == Vector2i.Zero)
-        {
-            _popup.PopupEntity(Loc.GetString("rmc-mortar-not-aimed", ("mortar", mortar)), user, user, SmallCaution);
+        if (!float.IsFinite(mortar.Comp.Heading) ||
+            mortar.Comp.Range < mortar.Comp.MinimumRange || mortar.Comp.Range > mortar.Comp.MaximumRange)
             return false;
-        }
 
-        var mortarCoordinates = _transform.GetMapCoordinates(mortar);
-        coordinates = new MapCoordinates(Vector2.Zero, mortarCoordinates.MapId);
-
-        coordinates = coordinates.Offset(target);
-        travelTime = shell.Comp.TravelDelay;
-
-        if ((mortarCoordinates.Position - coordinates.Position).Length() < mortar.Comp.MinimumRange)
-        {
-            _popup.PopupEntity(Loc.GetString("rmc-mortar-target-too-close"), user, user, SmallCaution);
-            return false;
-        }
-
-        if ((mortarCoordinates.Position - coordinates.Position).Length() > mortar.Comp.MaximumRange)
-        {
-            _popup.PopupEntity(Loc.GetString("rmc-mortar-target-too-far"), user, user, SmallCaution);
-            return false;
-        }
-
-        if (mortar.Comp.FireRandomOffset is { Length: > 0 } fireRandomOffset)
-        {
-            var xDeviation = _random.Pick(fireRandomOffset);
-            var yDeviation = _random.Pick(fireRandomOffset);
-            coordinates = coordinates.Offset(new Vector2(xDeviation, yDeviation));
-        }
-
-        if (_container.TryGetContainer(mortar, mortar.Comp.ContainerId, out var container) &&
-            !_container.CanInsert(shell, container))
-        {
-            _popup.PopupClient(Loc.GetString("rmc-mortar-cant-insert", ("shell", shell), ("mortar", mortar)), user, user, SmallCaution);
-            return false;
-        }
-
+        var origin = _transform.GetMapCoordinates(mortar);
+        var spread = 0.5f + mortar.Comp.Range * 0.02f;
+        coordinates = origin.Offset(GetAimDirection(mortar.Comp.Heading) * mortar.Comp.Range + _random.NextVector2(spread));
+        travelTime = TimeSpan.FromSeconds(Math.Max(2, shell.Comp.TravelDelay.TotalSeconds * mortar.Comp.Range / mortar.Comp.MaximumRange));
         return true;
     }
 }

@@ -1,7 +1,8 @@
+using Content.Client.Humanity.Mortar;
 using Content.Shared._RMC14.Mortar;
+using Content.Shared.Humanity.Mortar;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
-using Robust.Client.UserInterface.Controls;
 
 namespace Content.Client._RMC14.Mortar;
 
@@ -14,57 +15,21 @@ public sealed class MortarBui(EntityUid owner, Enum uiKey) : BoundUserInterface(
     {
         base.Open();
         _window = this.CreateWindow<MortarWindow>();
-
+        _window.AimChanged += (heading, range) => SendPredictedMessage(new MortarAimMessage(heading, range));
+        _window.FireButton.OnPressed += _ => SendPredictedMessage(new MortarFireMessage());
+        EntMan.System<MortarAimPreviewSystem>().Aiming.Add(Owner);
         Refresh();
-
-        static int Parse(FloatSpinBox spinBox)
-        {
-            return (int) spinBox.Value;
-        }
-
-        static void SetSpinBox(FloatSpinBox spinBox, int limit, int value)
-        {
-            spinBox.Value = value;
-            spinBox.OnValueChanged += args =>
-            {
-                var value = Math.Clamp(args.Value, -limit, limit);
-                spinBox.Value = value;
-            };
-        }
-
-        if (EntMan.TryGetComponent(Owner, out MortarComponent? mortar))
-        {
-            SetSpinBox(_window.TargetX, mortar.MaxTarget, mortar.Target.X);
-            SetSpinBox(_window.TargetY, mortar.MaxTarget, mortar.Target.Y);
-            SetSpinBox(_window.DialX, mortar.MaxDial, mortar.Dial.X);
-            SetSpinBox(_window.DialY, mortar.MaxDial, mortar.Dial.Y);
-            _window.SetTargetButton.OnPressed += _ =>
-                SendPredictedMessage(new MortarTargetBuiMsg((Parse(_window.TargetX), Parse(_window.TargetY))));
-
-            _window.SetOffsetButton.OnPressed += _ =>
-                SendPredictedMessage(new MortarDialBuiMsg((Parse(_window.DialX), Parse(_window.DialY))));
-        }
-
     }
 
     public void Refresh()
     {
-        if (_window is not { IsOpen: true })
-            return;
+        if (_window is { IsOpen: true } && EntMan.TryGetComponent<MortarComponent>(Owner, out var mortar))
+            _window.Refresh(mortar);
+    }
 
-        if (!EntMan.TryGetComponent(Owner, out MortarComponent? mortar))
-            return;
-
-        static void SetValue(FloatSpinBox? spinBox, int value)
-        {
-            if (spinBox != null)
-                spinBox.Value = value;
-        }
-
-        SetValue(_window.TargetX, mortar.Target.X);
-        SetValue(_window.TargetY, mortar.Target.Y);
-        SetValue(_window.DialX, mortar.Dial.X);
-        SetValue(_window.DialY, mortar.Dial.Y);
-        _window.MaxDialLabel.Text = Loc.GetString("rmc-mortar-offset-max", ("max", mortar.MaxDial));
+    protected override void Dispose(bool disposing)
+    {
+        EntMan.System<MortarAimPreviewSystem>().Aiming.Remove(Owner);
+        base.Dispose(disposing);
     }
 }

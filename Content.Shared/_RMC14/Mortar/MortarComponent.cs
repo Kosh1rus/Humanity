@@ -25,6 +25,15 @@ public sealed partial class MortarComponent : Component
     public bool Deployed;
 
     [DataField, AutoNetworkedField]
+    public float Heading;
+
+    [DataField, AutoNetworkedField]
+    public int Range = 40;
+
+    [DataField, AutoNetworkedField]
+    public bool Loaded;
+
+    [DataField, AutoNetworkedField]
     public Vector2i Target;
 
     [DataField, AutoNetworkedField]
