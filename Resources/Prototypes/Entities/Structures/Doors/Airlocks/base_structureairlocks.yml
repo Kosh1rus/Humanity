@@ -155,10 +155,6 @@
     - Airlock
     - DoorRemoteWhitelist
   - type: BlockWeather
-  - type: GuideHelp
-    guides:
-    - Airlocks
-    - WirePanels
   - type: StaticPrice
     price: 150
   - type: StructureAligner

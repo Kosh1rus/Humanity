@@ -51,6 +51,7 @@ entities:
       parent: 1
     - type: Weather
       weather: {}
+    - type: Roof
     - type: MapGrid
       chunks:
         1,0:

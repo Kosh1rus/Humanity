@@ -13,9 +13,6 @@
     heldPrefix: ointment
   - type: StaticPrice
     price: 0
-  - type: GuideHelp
-    guides:
-    - Medical
   - type: Tag
     tags:
     - Burnable

@@ -68,6 +68,7 @@ entities:
       name: Gulag14
     - type: Transform
       parent: 1
+    - type: Roof
     - type: MapGrid
       chunks:
         0,0:

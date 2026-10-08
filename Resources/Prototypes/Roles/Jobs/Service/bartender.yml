@@ -10,7 +10,6 @@
   startingGear: BartenderGear
   icon: "JobIconBartender"
   supervisors: job-supervisors-hop
-  guides: [ Bartender ]
   access:
   - Service
   - Maintenance

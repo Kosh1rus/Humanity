@@ -105,10 +105,6 @@
   - type: Weldable
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasVentOpening
-  - type: GuideHelp
-    guides:
-    - AirVent
-    - DeviceMonitoringAndControl
 - type: entity
   parent: GasUnaryBase
   id: !type:CreateVariants
@@ -162,9 +158,6 @@
     node: passivevent
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasVentOpening
-  - type: GuideHelp
-    guides:
-    - PassiveVent
 - type: entity
   parent:
   - GasUnaryBase
@@ -251,10 +244,6 @@
   - type: Weldable
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasVentScrubber
-  - type: GuideHelp
-    guides:
-    - AirScrubber
-    - DeviceMonitoringAndControl
 - type: entity
   parent: GasUnaryBase
   id: !type:CreateVariants
@@ -322,9 +311,6 @@
     - enum.LightLayers.Unshaded
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: GasVentOpening
-  - type: GuideHelp
-    guides:
-    - AirInjector
 - type: entity
   parent:
   - BaseMachinePowered
@@ -372,9 +358,6 @@
   - type: PowerSwitch
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
-  - type: GuideHelp
-    guides:
-    - Thermomachines
 - type: entity
   parent: BaseGasThermoMachine
   id: !type:CreateVariants
@@ -713,6 +696,3 @@
   - type: PowerSwitch
   - type: AtmosMonitoringConsoleDevice
     navMapBlip: Thermoregulator
-  - type: GuideHelp
-    guides:
-    - GasCondensing

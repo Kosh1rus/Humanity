@@ -10,7 +10,6 @@
   startingGear: ChefGear
   icon: "JobIconChef"
   supervisors: job-supervisors-hop
-  guides: [ Chef ]
   access:
   - Service
   - Maintenance

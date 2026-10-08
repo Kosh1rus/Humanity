@@ -121,7 +121,7 @@ public sealed partial class HumanoidProfileEditor
         var departments = new List<DepartmentPrototype>();
         foreach (var department in _prototypeManager.EnumeratePrototypes<DepartmentPrototype>())
         {
-            if (department.EditorHidden)
+            if (department.EditorHidden || department.ID is not ("Nomads" or "DepGerman" or "DepSoviet"))
                 continue;
 
             departments.Add(department);

@@ -71,9 +71,6 @@
         Poison: -0.2
         Cold: -0.4
         Blunt: -0.2
-  - type: GuideHelp
-    guides:
-    - MedicalDoctor
   - type: AmbientMusicMarkerMedical
 - type: entity
   parent:

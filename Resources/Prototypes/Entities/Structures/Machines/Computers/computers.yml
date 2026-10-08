@@ -698,9 +698,6 @@
     radius: 1.5
     energy: 4.0
     color: '#b53ca1'
-  - type: GuideHelp
-    guides:
-    - AnalysisConsole
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerId
@@ -1297,10 +1294,6 @@
   - type: AccessReader
     access:
     - - Quartermaster
-  - type: GuideHelp
-    guides:
-    - CargoBounties
-    - Cargo
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerFundingAllocation
@@ -1392,9 +1385,6 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai
-  - type: GuideHelp
-    guides:
-    - Cloning
 - type: entity
   parent: BaseComputerAiAccess
   id: ComputerSalvageJobBoard

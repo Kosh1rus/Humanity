@@ -29,6 +29,7 @@ public sealed partial class RequirementsSelector : BoxContainer
     public RequirementsSelector()
     {
         RobustXamlLoader.Load(this);
+        Help.Visible = false;
         _options = new RadioOptions<int>(RadioOptionsLayout.Horizontal)
         {
             FirstButtonStyle = StyleClass.ButtonOpenRight,
@@ -88,7 +89,7 @@ public sealed partial class RequirementsSelector : BoxContainer
             _options.AddItem(Loc.GetString(text), value);
         }
 
-        Help.Visible = guides != null;
+        Help.Visible = false;
         _guides = guides;
 
         TitleLabel.Text = title;

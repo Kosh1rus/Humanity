@@ -1,0 +1,8 @@
+humanity-mortar-heading = Направление: 0° — север, 90° — восток
+humanity-mortar-range = Дальность, м
+humanity-mortar-limits = Дальность: от {$min} до {$max} м
+humanity-mortar-fire = Огонь
+humanity-mortar-empty = Мина не заряжена.
+humanity-mortar-loaded = В стволе уже есть мина.
+humanity-mortar-ready = Мина заряжена.
+humanity-mortar-no-ground = Здесь нельзя закрепить миномёт.

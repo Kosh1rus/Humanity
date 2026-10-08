@@ -4,7 +4,6 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-mothership-core-objective
-  guides: [ Xenoborgs ]
   tags:
   - OffStation
   - Roundstart
@@ -25,7 +24,6 @@
   antagonist: true
   setPreference: true
   objective: roles-antag-xenoborg-objective
-  guides: [ Xenoborgs ]
   tags:
   - OffStation
   - Roundstart

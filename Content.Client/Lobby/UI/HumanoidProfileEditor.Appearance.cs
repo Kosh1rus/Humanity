@@ -23,6 +23,7 @@ public sealed partial class HumanoidProfileEditor
 
     public void UpdateSpeciesGuidebookIcon()
     {
+        SpeciesInfoButton.Visible = false;
         SpeciesInfoButton.StyleClasses.Clear();
 
         var species = Profile?.Species;

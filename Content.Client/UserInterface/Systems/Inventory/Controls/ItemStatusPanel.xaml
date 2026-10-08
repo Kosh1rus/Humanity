@@ -10,7 +10,7 @@
                 PatchMarginBottom="4"
                 PatchMarginTop="6"
                 TextureScale="2 2"
-                Mode="Tile"/>
+                Mode="Stretch"/>
         </PanelContainer.PanelOverride>
     </PanelContainer>
     <PanelContainer Name="HighlightPanel">

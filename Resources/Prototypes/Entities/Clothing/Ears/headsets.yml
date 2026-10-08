@@ -26,9 +26,6 @@
     - ears
     sprite: Clothing/Ears/Headsets/base.rsi
   - type: TelecomExempt
-  - type: GuideHelp
-    guides:
-    - Radio
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetGrey

@@ -49,6 +49,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 0,0
+    - type: Roof
     - type: MapGrid
       chunks:
         0,0:

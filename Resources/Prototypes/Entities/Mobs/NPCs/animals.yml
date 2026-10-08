@@ -997,9 +997,6 @@
   - type: HTN
     rootTask:
       task: RuminantCompound
-  - type: GuideHelp
-    guides:
-    - FoodRecipes
 - type: entity
   parent: SolutionLarge
   id: SolutionUdder
@@ -1351,10 +1348,6 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 0.6
     baseSprintSpeed: 0.8
-  - type: GuideHelp
-    guides:
-    - Chef
-    - FoodRecipes
 - type: entity
   parent: SolutionUdder
   id: SolutionUdderSheep

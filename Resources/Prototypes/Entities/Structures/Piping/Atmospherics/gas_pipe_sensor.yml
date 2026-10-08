@@ -82,10 +82,6 @@
     tags:
     - AirSensor
     - Unstackable
-  - type: GuideHelp
-    guides:
-    - AtmosphericNetworkMonitor
-    - DeviceMonitoringAndControl
 - type: entity
   parent: !type:CreateVariants
     values:

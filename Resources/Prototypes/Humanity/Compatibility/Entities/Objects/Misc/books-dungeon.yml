@@ -18,7 +18,3 @@
     damage:
       types:
         Blunt: 6
-  - type: GuideHelp
-    guides:
-    - Security
-    - Antagonists

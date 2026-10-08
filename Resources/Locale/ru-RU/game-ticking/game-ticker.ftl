@@ -1,6 +1,6 @@
 game-ticker-restart-round = Перезапуск раунда...
 
-game-ticker-player-join-game-message = Правила и справочник — F1. Помощь — АХелп.
+game-ticker-player-join-game-message = Помощь — АХелп.
 game-ticker-get-info-text = Добро пожаловать в [color=white]Humanity![/color]
     Раунд: [color=white]#{$roundId}[/color]
     Игроков: [color=white]{$playerCount}[/color]

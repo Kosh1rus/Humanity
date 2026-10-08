@@ -43,8 +43,6 @@ public sealed partial class GuidebookSystem : EntitySystem
     /// <inheritdoc/>
     public override void Initialize()
     {
-        SubscribeLocalEvent<GuideHelpComponent, GetVerbsEvent<ExamineVerb>>(OnGetVerbs);
-        SubscribeLocalEvent<GuideHelpComponent, ActivateInWorldEvent>(OnInteract);
 
         SubscribeLocalEvent<GuidebookControlsTestComponent, InteractHandEvent>(OnGuidebookControlsTestInteractHand);
         SubscribeLocalEvent<GuidebookControlsTestComponent, ActivateInWorldEvent>(OnGuidebookControlsTestActivateInWorld);
@@ -86,7 +84,8 @@ public sealed partial class GuidebookSystem : EntitySystem
 
     public void OpenHelp(List<ProtoId<GuideEntryPrototype>> guides)
     {
-        OnGuidebookOpen?.Invoke(guides, null, null, true, guides[0]);
+        if (guides.Count > 0)
+            OnGuidebookOpen?.Invoke(guides, null, null, true, guides[0]);
     }
 
     private void OnInteract(EntityUid uid, GuideHelpComponent component, ActivateInWorldEvent args)

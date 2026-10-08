@@ -36,9 +36,6 @@
       - BotanySwab
     proto: DiseaseSwab
     capacity: 30
-  - type: GuideHelp
-    guides:
-    - Medical
 - type: entity
   parent: BaseItem
   id: Vaccine

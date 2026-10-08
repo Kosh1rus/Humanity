@@ -16,13 +16,13 @@ humanity-construction-HumanityMetalPot-name = железный котелок
 
 humanity-construction-HumanityMetalPot-description = Прочный котелок для припасов.
 
-humanity-construction-HumanitySteelForge-name = СЃС‚Р°Р»РµРїР»Р°РІРёР»СЊРЅС‹Р№ РіРѕСЂРЅ
+humanity-construction-HumanitySteelForge-name = сталеплавильный горн
 
-humanity-construction-HumanitySteelForge-description = РџРµСЂРµСЂР°Р±Р°С‚С‹РІР°РµС‚ Р¶РµР»РµР·Рѕ Рё СѓРіРѕР»СЊ РІ СЃС‚Р°Р»СЊ. РЈРіРѕР»СЊ РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РІ РєР°РјРµРЅРЅРѕР№ РїР»Р°РІРёР»СЊРЅРµ РёР· РґСЂРµРІРµСЃРёРЅС‹.
+humanity-construction-HumanitySteelForge-description = Перерабатывает железо и уголь в сталь. Уголь можно получить в каменной плавильне из древесины.
 
-humanity-construction-HumanityIndustrialWorkshop-name = РјРµС…Р°РЅРёС‡РµСЃРєР°СЏ РјР°СЃС‚РµСЂСЃРєР°СЏ
+humanity-construction-HumanityIndustrialWorkshop-name = механическая мастерская
 
-humanity-construction-HumanityIndustrialWorkshop-description = РџСЂРѕРёР·РІРѕРґРёС‚ РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹ Рё РѕР±РѕСЂСѓРґРѕРІР°РЅРёРµ. РќРѕРІС‹Рµ РёР·РґРµР»РёСЏ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ РїРѕ РјРµСЂРµ СЃРјРµРЅС‹ СЌРїРѕС….
+humanity-construction-HumanityIndustrialWorkshop-description = Производит инструменты и оборудование. Новые изделия открываются по мере смены эпох.
 
 humanity-construction-HumanityResearchTable-name = стол исследований
 

@@ -18,10 +18,6 @@
         type: InstrumentBoundUserInterface
       enum.IntercomUiKey.Key:
         type: IntercomBoundUserInterface
-  - type: GuideHelp
-    guides:
-    - Xenoarchaeology
-  # gameplay interactions
   - type: XenoArtifact
     effectsTable: !type:NestedSelector
       tableId: XenoArtifactEffectsDefaultTable
