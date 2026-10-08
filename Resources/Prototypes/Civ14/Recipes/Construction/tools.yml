@@ -1,115 +1,115 @@
 - type: construction
-  name: "костяная лопата"
+  name: humanity-construction-BoneShovel-name
   id: BoneShovel
   graph: BoneShovel
   startNode: start
   targetNode: boneshovel
   category: construction-category-tools
-  description: "Грубая лопата из кости."
+  description: humanity-construction-BoneShovel-description
   icon: { sprite: Civ14/Objects/StoneAge/bone_shovel.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "каменная лопата"
+  name: humanity-construction-StoneShovel-name
   id: StoneShovel
   graph: StoneShovel
   startNode: start
   targetNode: stoneshovel
   category: construction-category-tools
-  description: "Грубая лопата из камня."
+  description: humanity-construction-StoneShovel-description
   icon: { sprite: Civ14/Objects/StoneAge/stone_shovel.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "костяная кирка"
+  name: humanity-construction-BonePickaxe-name
   id: BonePickaxe
   graph: BonePickaxe
   startNode: start
   targetNode: bonepickaxe
   category: construction-category-tools
-  description: "Грубая кирка из кости."
+  description: humanity-construction-BonePickaxe-description
   icon: { sprite: Civ14/Objects/StoneAge/bone_pickaxe.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "костяной топор"
+  name: humanity-construction-BoneAxe-name
   id: BoneAxe
   graph: BoneAxe
   startNode: start
   targetNode: boneaxe
   category: construction-category-tools
-  description: "Грубый топор из кости."
+  description: humanity-construction-BoneAxe-description
   icon: { sprite: Civ14/Objects/StoneAge/bone_axe.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "костяной нож"
+  name: humanity-construction-BoneKnife-name
   id: BoneKnife
   graph: BoneKnife
   startNode: start
   targetNode: boneknife
   category: construction-category-tools
-  description: "Грубый нож из кости."
+  description: humanity-construction-BoneKnife-description
   icon: { sprite: Civ14/Objects/StoneAge/bone_knife.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "кремнёвый топор"
+  name: humanity-construction-FlintAxe-name
   id: FlintAxe
   graph: FlintAxe
   startNode: start
   targetNode: flintaxe
   category: construction-category-tools
-  description: "Грубый топор с кремнёвым лезвием."
+  description: humanity-construction-FlintAxe-description
   icon: { sprite: Civ14/Objects/StoneAge/flint_axe.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "плуг"
+  name: humanity-construction-Plough-name
   id: Plough
   graph: Plough
   startNode: start
   targetNode: plough
   category: construction-category-tools
-  description: "Простой деревянный плуг. Вспашите им землю, чтобы подготовить участок для посева."
+  description: humanity-construction-Plough-description
   icon: { sprite: Civ14/Objects/items.rsi, state: plough }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "деревянный молоток"
+  name: humanity-construction-WoodHammer-name
   id: WoodHammer
   graph: WoodHammer
   startNode: start
   targetNode: woodhammer
   category: construction-category-tools
-  description: "Простой деревянный молоток."
+  description: humanity-construction-WoodHammer-description
   icon: { sprite: Civ14/Objects/StoneAge/wood_hammer.rsi, state: icon }
   objectType: Item
   agemin: 0
   agemax: 8
 
 - type: construction
-  name: "деревянное ведро"
+  name: humanity-construction-Bucket-name
   id: Bucket
   graph: Bucket
   startNode: start
   targetNode: bucket
   category: construction-category-tools
-  description: "Простое ведро из дерева."
+  description: humanity-construction-Bucket-description
   icon: { sprite: Objects/Tools/bucket.rsi, state: icon }
   objectType: Item
   agemin: 0
@@ -277,13 +277,13 @@
       entity: Bucket
 
 - type: construction
-  name: "мотыга"
+  name: humanity-construction-Hoe-name
   id: Hoe
   graph: Hoe
   startNode: start
   targetNode: end
   category: construction-category-tools
-  description: "Помогает выпалывать сорняки."
+  description: humanity-construction-Hoe-description
   icon: { sprite: Objects/Tools/Hydroponics/hoe.rsi, state: icon }
   objectType: Item
   agemin: 0
@@ -304,13 +304,13 @@
       entity: HydroponicsToolMiniHoe
 
 - type: construction
-  name: "верстак стрелодела"
+  name: humanity-construction-FletchersWorkstation-name
   id: FletchersWorkstation
   graph: FletchersWorkstation
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: "На нём делают луки и стрелы."
+  description: humanity-construction-FletchersWorkstation-description
   icon: { sprite: Civ14/Objects/structures.rsi, state: fletchersbench }
   objectType: Structure
   agemin: 0

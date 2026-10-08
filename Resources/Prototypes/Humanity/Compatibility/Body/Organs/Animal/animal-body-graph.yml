@@ -1,0 +1,16 @@
+- type: entity
+  id: OrganMouseStomach
+  parent: OrganAnimalStomach
+  name: stomach
+  categories:
+  - HideSpawnMenu
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      stomach:
+        maxVol: 30
+  - type: STWeight
+    self: 1
+  - type: Item
+    size: Small
+    heldPrefix: stomach

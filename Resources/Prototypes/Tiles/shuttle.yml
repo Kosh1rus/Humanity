@@ -1,0 +1,119 @@
+- type: tile
+  id: FloorShuttleWhite
+  parent: BaseStationTile
+  name: tiles-white-shuttle-floor
+  sprite: /Textures/Tiles/shuttlewhite.png
+  itemDrop: FloorTileItemShuttleWhite
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttleGrey
+  parent: BaseStationTile
+  name: tiles-grey-shuttle-floor
+  sprite: /Textures/Tiles/shuttlegrey.png
+  itemDrop: FloorTileItemShuttleGrey
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttleBlack
+  parent: BaseStationTile
+  name: tiles-black-shuttle-floor
+  sprite: /Textures/Tiles/shuttleblack.png
+  itemDrop: FloorTileItemShuttleBlack
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttleBlue
+  parent: BaseStationTile
+  name: tiles-blue-shuttle-floor
+  sprite: /Textures/Tiles/shuttleblue.png
+  itemDrop: FloorTileItemShuttleBlue
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttleOrange
+  parent: BaseStationTile
+  name: tiles-orange-shuttle-floor
+  sprite: /Textures/Tiles/shuttleorange.png
+  itemDrop: FloorTileItemShuttleOrange
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttlePurple
+  parent: BaseStationTile
+  name: tiles-purple-shuttle-floor
+  sprite: /Textures/Tiles/shuttlepurple.png
+  itemDrop: FloorTileItemShuttlePurple
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorShuttleRed
+  parent: BaseStationTile
+  name: tiles-red-shuttle-floor
+  sprite: /Textures/Tiles/shuttlered.png
+  itemDrop: FloorTileItemShuttleRed
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000

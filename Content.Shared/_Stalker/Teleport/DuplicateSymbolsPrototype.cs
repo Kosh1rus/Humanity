@@ -1,16 +1,16 @@
-﻿using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server._Stalker.Teleports.DuplicateTeleport;
 
 /// <summary>
 /// This is a prototype for...
 /// </summary>
-[Prototype("duplicateSymbols")]
+[Prototype]
 public sealed partial class DuplicateSymbolsPrototype : IPrototype
 {
     /// <inheritdoc/>
     [IdDataField]
-    public string ID { get; } = default!;
+    public string ID { get; private set; } = default!;
 
     [DataField]
     public List<string> Symbols = new();

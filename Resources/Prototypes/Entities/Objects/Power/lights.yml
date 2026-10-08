@@ -1,7 +1,7 @@
 - type: entity
-  parent: BaseItem
-  id: BaseLightbulb
   abstract: true
+  parent: BaseItem
+  id: BaseReplacementLight
   components:
   - type: MeleeSound
     soundGroups:
@@ -10,10 +10,12 @@
   - type: Sprite
     sprite: Objects/Power/light_bulb.rsi
     layers:
-      - map: [ enum.LightBulbVisualLayers.Base ]
-        state: normal
+    - map:
+      - enum.LightBulbVisualLayers.Base
+      state: normal
   - type: LightBulb
   - type: Damageable
+  - type: Injurable
     damageContainer: Inorganic
   - type: DamageOnLand
     damage:
@@ -25,95 +27,65 @@
         Blunt: 5
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
           params:
-            volume: -8
+            volume: -4
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
-    - trigger:
-        !type:DamageTrigger
+        acts:
+        - Breakage
+    - trigger: &id001 !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
           params:
-            volume: -8
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ShardGlass:
-            min: 1
-            max: 1
+            volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts:
+        - Destruction
   - type: Appearance
   - type: Tag
     tags:
     - Trash
   - type: PhysicalComposition
     materialComposition:
-      Glass: 25
+      Steel: 20
+      Glass: 80
   - type: SpaceGarbage
   - type: ToolRefinable
     refineResult:
     - id: SheetGlass1
-
 - type: entity
-  parent: BaseLightbulb
-  id: BaseLightTube
   abstract: true
+  parent: BaseReplacementLight
+  id: BaseLightbulb
   components:
-  - type: Sprite
-    sprite:  Objects/Power/light_tube.rsi
-  - type: LightBulb
-    bulb: Tube
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 5
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:DoActsBehavior
-        acts: [ "Breakage" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 10
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
+    - trigger: *id001
+      behaviors: &id002
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-
-# Lighting color values gathered from
-# https://andi-siess.de/rgb-to-color-temperature/
-# https://academo.org/demos/colour-temperature-relationship/
+- type: entity
+  abstract: true
+  parent: BaseReplacementLight
+  id: BaseLightTube
+  components:
+  - type: Sprite
+    sprite: Objects/Power/light_tube.rsi
+  - type: Destructible
+    thresholds:
+    - trigger: *id001
+      behaviors: *id002
 - type: entity
   parent: BaseLightbulb
   name: incandescent light bulb
@@ -122,15 +94,15 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#FFD1A3" # 4000K color temp
+    color: '#FFD1A3'
     lightEnergy: 1.0
     lightRadius: 6
     lightSoftness: 1.1
+    shortName: comp-light-bulb-incandescent
   - type: Tag
     tags:
     - LightBulb
     - Trash
-
 - type: entity
   parent: BaseLightbulb
   name: led light bulb
@@ -139,17 +111,17 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#EEEEFF"
+    color: '#EEEEFF'
     lightEnergy: 1
     lightRadius: 8
     lightSoftness: 1
-    BurningTemperature: 350 #LEDs are colder than incandescent bulbs
-    PowerUse: 6 #LEDs are more power efficient than incandescent bulbs
+    BurningTemperature: 350
+    PowerUse: 6
+    shortName: comp-light-bulb-led
   - type: Tag
     tags:
     - LightBulb
     - Trash
-
 - type: entity
   parent: BaseLightbulb
   name: dim light bulb
@@ -158,15 +130,15 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#ba473f"
+    color: '#ba473f'
     lightEnergy: 0.5
     lightRadius: 5
     lightSoftness: 3
+    shortName: comp-light-bulb-dim
   - type: Tag
     tags:
     - LightBulb
     - Trash
-
 - type: entity
   parent: BaseLightbulb
   name: warm light bulb
@@ -175,15 +147,15 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#ff9833" # 2200k color temp
+    color: '#ff9833'
     lightEnergy: 1
     lightRadius: 6
     lightSoftness: 3
+    shortName: comp-light-bulb-warm
   - type: Tag
     tags:
     - LightBulb
     - Trash
-
 - type: entity
   parent: LightBulb
   name: old incandescent light bulb
@@ -192,22 +164,21 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#FFD1A3" # 4000K color temp
-    lightEnergy: 0.3 # old incandescents just arent as bright
+    color: '#FFD1A3'
+    lightEnergy: 0.3
     lightRadius: 6
     lightSoftness: 1.1
-
+    shortName: comp-light-bulb-old
 - type: entity
-  suffix: Broken
   parent: BaseLightbulb
   name: incandescent light bulb
   id: LightBulbBroken
-  description: A light bulb.
+  suffix: Broken
+  description: A broken light bulb.
   components:
   - type: LightBulb
     startingState: Broken
     bulb: Bulb
-
 - type: entity
   parent: BaseLightbulb
   name: service light bulb
@@ -216,15 +187,15 @@
   components:
   - type: LightBulb
     bulb: Bulb
-    color: "#CCFF60"
+    color: '#CCFF60'
     lightEnergy: 0.45
     lightRadius: 1.5
     lightSoftness: 3
+    shortName: comp-light-bulb-service
   - type: Tag
     tags:
     - LightBulb
     - Trash
-
 - type: entity
   parent: BaseLightTube
   name: fluorescent light tube
@@ -232,12 +203,12 @@
   description: A light fixture.
   components:
   - type: LightBulb
-    color: "#FFE4CE" # 5000K color temp
+    color: '#FFE4CE'
     lightEnergy: 0.8
     lightRadius: 10
     lightSoftness: 1
     PowerUse: 25
-
+    shortName: comp-light-bulb-fluorescent
 - type: entity
   parent: LightTube
   name: old fluorescent light tube
@@ -245,22 +216,21 @@
   description: An aging light fixture.
   components:
   - type: LightBulb
-    color: "#FFDABB" # old fluorescents are yellower-4500K temp
+    color: '#FFDABB'
     lightEnergy: 0.5
     lightRadius: 10
     lightSoftness: 1
     PowerUse: 10
-
+    shortName: comp-light-bulb-old
 - type: entity
-  suffix: Broken
   parent: BaseLightTube
   name: fluorescent light tube
   id: LightTubeBroken
-  description: A light fixture.
+  suffix: Broken
+  description: A broken light fixture.
   components:
   - type: LightBulb
     startingState: Broken
-
 - type: entity
   parent: BaseLightTube
   name: led light tube
@@ -268,13 +238,13 @@
   id: LedLightTube
   components:
   - type: LightBulb
-    color: "#EEEEFF"
+    color: '#EEEEFF'
     lightEnergy: 1
     lightRadius: 15
     lightSoftness: 0.9
     BurningTemperature: 350
     PowerUse: 12
-
+    shortName: comp-light-bulb-led
 - type: entity
   parent: BaseLightTube
   name: exterior light tube
@@ -282,13 +252,13 @@
   id: ExteriorLightTube
   components:
   - type: LightBulb
-    color: "#B4FCF0"
+    color: '#B4FCF0'
     lightEnergy: 4.5
     lightRadius: 12
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 100
-
+    shortName: comp-light-bulb-exterior
 - type: entity
   parent: BaseLightTube
   name: sodium light tube
@@ -296,13 +266,13 @@
   id: SodiumLightTube
   components:
   - type: LightBulb
-    color: "#FFAF38"
+    color: '#FFAF38'
     lightEnergy: 4
     lightRadius: 10
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 100
-
+    shortName: comp-light-bulb-sodium
 - type: entity
   parent: BaseLightTube
   name: crystal light tube
@@ -316,14 +286,14 @@
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 60
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: cyan crystal light tube
   id: LightTubeCrystalCyan
   components:
   - type: LightBulb
-    color: "#47f8ff"
+    color: '#47f8ff'
+    shortName: comp-light-bulb-cyan
   - type: Construction
     graph: CyanLight
     node: icon
@@ -331,14 +301,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: blue crystal light tube
   id: LightTubeCrystalBlue
   components:
   - type: LightBulb
-    color: "#39a1ff"
+    color: '#39a1ff'
+    shortName: comp-light-bulb-blue
   - type: Construction
     graph: BlueLight
     node: icon
@@ -346,14 +316,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: yellow crystal light tube
   id: LightTubeCrystalYellow
   components:
   - type: LightBulb
-    color: "#ffde46"
+    color: '#ffde46'
+    shortName: comp-light-bulb-yellow
   - type: Construction
     graph: YellowLight
     node: icon
@@ -361,14 +331,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalYellow
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: pink crystal light tube
   id: LightTubeCrystalPink
   components:
   - type: LightBulb
-    color: "#ff66cc"
+    color: '#ff66cc'
+    shortName: comp-light-bulb-pink
   - type: Construction
     graph: PinkLight
     node: icon
@@ -376,14 +346,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: orange crystal light tube
   id: LightTubeCrystalOrange
   components:
   - type: LightBulb
-    color: "#ff8227"
+    color: '#ff8227'
+    shortName: comp-light-bulb-orange
   - type: Construction
     graph: OrangeLight
     node: icon
@@ -391,7 +361,6 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: black crystal light tube
@@ -399,9 +368,10 @@
   id: LightTubeCrystalBlack
   components:
   - type: LightBulb
-    color: "#363636"
+    color: '#363636'
     lightEnergy: 1
     lightRadius: 8
+    shortName: comp-light-bulb-black
   - type: Construction
     graph: BlackLight
     node: icon
@@ -409,14 +379,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlack
-
 - type: entity
   parent: BaseLightTubeCrystal
   name: red crystal light tube
   id: LightTubeCrystalRed
   components:
   - type: LightBulb
-    color: "#fb4747"
+    color: '#fb4747'
+    shortName: comp-light-bulb-red
   - type: Construction
     graph: RedLight
     node: icon
@@ -424,14 +394,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
-
 - type: entity
   parent: LightTubeCrystalCyan
   name: green crystal light tube
   id: LightTubeCrystalGreen
   components:
   - type: LightBulb
-    color: "#52ff39"
+    color: '#52ff39'
+    shortName: comp-light-bulb-green
   - type: Construction
     graph: GreenLight
     node: icon
@@ -439,8 +409,6 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalGreen
-
-
 - type: entity
   parent: BaseLightbulb
   name: crystal light bulb
@@ -449,21 +417,21 @@
   abstract: true
   components:
   - type: LightBulb
-    color: "#47f8ff"
+    color: '#47f8ff'
     lightEnergy: 1
     lightRadius: 6
     lightSoftness: 0.5
     BurningTemperature: 350
     PowerUse: 60
     bulb: Bulb
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: cyan crystal light bulb
   id: LightBulbCrystalCyan
   components:
   - type: LightBulb
-    color: "#47f8ff"
+    color: '#47f8ff'
+    shortName: comp-light-bulb-cyan
   - type: Construction
     graph: CyanLightBulb
     node: icon
@@ -471,14 +439,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalCyan
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: blue crystal light bulb
   id: LightBulbCrystalBlue
   components:
   - type: LightBulb
-    color: "#39a1ff"
+    color: '#39a1ff'
+    shortName: comp-light-bulb-blue
   - type: Construction
     graph: BlueLightBulb
     node: icon
@@ -486,14 +454,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlue
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: yellow crystal light bulb
   id: LightBulbCrystalYellow
   components:
   - type: LightBulb
-    color: "#ffde46"
+    color: '#ffde46'
+    shortName: comp-light-bulb-yellow
   - type: Construction
     graph: YellowLightBulb
     node: icon
@@ -501,14 +469,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalYellow
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: pink crystal light bulb
   id: LightBulbCrystalPink
   components:
   - type: LightBulb
-    color: "#ff66cc"
+    color: '#ff66cc'
+    shortName: comp-light-bulb-pink
   - type: Construction
     graph: PinkLightBulb
     node: icon
@@ -516,14 +484,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalPink
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: orange crystal light bulb
   id: LightBulbCrystalOrange
   components:
   - type: LightBulb
-    color: "#ff8227"
+    color: '#ff8227'
+    shortName: comp-light-bulb-orange
   - type: Construction
     graph: OrangeLightBulb
     node: icon
@@ -531,7 +499,6 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalOrange
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: black crystal light bulb
@@ -539,9 +506,10 @@
   id: LightBulbCrystalBlack
   components:
   - type: LightBulb
-    color: "#363636"
+    color: '#363636'
     lightEnergy: 1
     lightRadius: 8
+    shortName: comp-light-bulb-black
   - type: Construction
     graph: BlackLightBulb
     node: icon
@@ -549,14 +517,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalBlack
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: red crystal light bulb
   id: LightBulbCrystalRed
   components:
   - type: LightBulb
-    color: "#fb4747"
+    color: '#fb4747'
+    shortName: comp-light-bulb-red
   - type: Construction
     graph: RedLightBulb
     node: icon
@@ -564,14 +532,14 @@
     refineResult:
     - id: SheetGlass1
     - id: ShardCrystalRed
-
 - type: entity
   parent: BaseLightbulbCrystal
   name: green crystal light bulb
   id: LightBulbCrystalGreen
   components:
   - type: LightBulb
-    color: "#52ff39"
+    color: '#52ff39'
+    shortName: comp-light-bulb-green
   - type: Construction
     graph: GreenLightBulb
     node: icon

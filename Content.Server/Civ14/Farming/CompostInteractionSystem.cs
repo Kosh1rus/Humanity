@@ -1,7 +1,7 @@
 using Content.Shared.Interaction;
 using Content.Shared.DoAfter;
 using Content.Server.DoAfter;
-using Content.Server.Botany.Components;
+using Content.Shared.Botany.Components;
 using Content.Shared.Farming;
 using Content.Shared.Popups;
 
@@ -9,8 +9,9 @@ namespace Content.Server.Farming;
 
 public sealed partial class CompostInteractionSystem : EntitySystem
 {
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private PlantTraySystem _trays = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
 
     public override void Initialize()
     {
@@ -51,14 +52,14 @@ public sealed partial class CompostInteractionSystem : EntitySystem
         if (args.Cancelled || args.Handled)
             return;
 
-        if (!TryComp<PlantHolderComponent>(field, out var plantHolder))
+        if (!TryComp<PlantTrayComponent>(field, out var plantHolder))
             return;
 
-        var usedEntity = GetEntity(args.Used);
+        var usedEntity = GetEntity(args.CompostedItem);
         if (TerminatingOrDeleted(usedEntity) || EntityManager.IsQueuedForDeletion(usedEntity) ||
             !TryComp<CompostComponent>(usedEntity, out var compostComp))
             return;
-        plantHolder.NutritionLevel += compostComp.NutritionValue;
+        _trays.AdjustNutrient((field.Owner, plantHolder), compostComp.NutritionValue);
 
         QueueDel(usedEntity);
 

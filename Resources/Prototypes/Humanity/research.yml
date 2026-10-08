@@ -23,8 +23,8 @@
 
 - type: construction
   id: HumanityResearchTable
-  name: стол исследований
-  description: Опыты с материалами ускоряют автоматическое развитие всей карты.
+  name: humanity-construction-HumanityResearchTable-name
+  description: humanity-construction-HumanityResearchTable-description
   graph: HumanityResearchTable
   startNode: start
   targetNode: end

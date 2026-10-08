@@ -8,7 +8,7 @@
     },
     "states": [
         {
-            "name": "",
+            "name": "unused-blank",
             "delays": [
                 [
                     0.120000005,
@@ -286,7 +286,7 @@
             "name": "e_skull0"
         },
         {
-            "name": "PAINTINGS \u0026 SIGNS"
+            "name": "PAINTINGS & SIGNS"
         },
         {
             "name": "painting1"

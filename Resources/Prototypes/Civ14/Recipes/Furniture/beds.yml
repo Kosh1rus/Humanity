@@ -1,11 +1,11 @@
 - type: construction
-  name: "спальный тюфяк"
+  name: humanity-construction-BedRollPrim14-name
   id: BedRollPrim14
   graph: BedRollPrim14
   startNode: start
   targetNode: bedroll
   category: construction-category-misc
-  description: "Удобный и лёгкий в переноске."
+  description: humanity-construction-BedRollPrim14-description
   icon: { sprite: Civ14/Objects/items.rsi, state: bedroll_r }
   objectType: Item
   agemin: 0

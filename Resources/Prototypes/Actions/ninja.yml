@@ -1,82 +1,103 @@
-# gloves
 - type: entity
+  parent: BaseToggleAction
   id: ActionToggleNinjaGloves
   name: Переключить перчатки ниндзя
-  description: Переключить действие перчаток при нажатии левой кнопки мыши. Доступны взлом дверей и некоторых компьютеров, откачка энергии и оглушение врагов.
+  description: Переключить действие перчаток при нажатии левой кнопки мыши. Доступны взлом дверей и некоторых компьютеров,
+    откачка энергии и оглушение врагов.
   components:
-  - type: InstantAction
+  - type: Action
     priority: -13
-    event: !type:ToggleActionEvent {}
-
-# suit
 - type: entity
+  parent: BaseAction
   id: ActionCreateThrowingStar
   name: Создать метательную звезду
   description: Потратить заряд костюма на метательную звезду, которая наносит дополнительный урон выносливости.
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 0.5
-    icon:
-      sprite: Objects/Weapons/Throwable/throwing_star.rsi
-      state: icon
     itemIconStyle: NoItem
     priority: -10
+  - type: Sprite
+    sprite: Objects/Weapons/Throwable/throwing_star.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
     event: !type:CreateItemEvent {}
-
 - type: entity
+  parent: BaseAction
   id: ActionRecallKatana
   name: Призвать катану
   description: Телепортировать энергетическую катану, привязанную к костюму. Расход энергии зависит от расстояния.
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 1
-    icon:
-      sprite: Objects/Weapons/Melee/energykatana.rsi
-      state: icon
     itemIconStyle: NoItem
     priority: -11
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/energykatana.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
     event: !type:RecallKatanaEvent {}
-
 - type: entity
+  parent: BaseAction
   id: ActionNinjaEmp
   name: ЭМИ-импульс
   description: Вывести из строя технику поблизости электромагнитным импульсом.
   components:
-  - type: InstantAction
-    icon:
-      sprite: Objects/Weapons/Grenades/empgrenade.rsi
-      state: icon
+  - type: Action
     itemIconStyle: BigAction
     priority: -13
+  - type: Sprite
+    sprite: Objects/Weapons/Grenades/empgrenade.rsi
+    layers:
+    - state: icon
+  - type: InstantAction
     event: !type:NinjaEmpEvent {}
-
 - type: entity
+  parent: BaseAction
   id: ActionTogglePhaseCloak
   name: Фазовая маскировка
-  description: Включить или выключить фазовую маскировку костюма. Если вас ударят, все способности, включая маскировку, отключатся на 5 секунд!
+  description: Включить или выключить фазовую маскировку костюма. Если вас ударят, все способности, включая маскировку, отключатся
+    на 5 секунд!
   components:
-  - type: InstantAction
-    # have to plan (un)cloaking ahead of time
+  - type: Action
     useDelay: 5
     priority: -9
-    event: !type:ToggleActionEvent
-
-# katana
+  - type: InstantAction
+    event: !type:ToggleActionEvent ''
 - type: entity
+  parent: BaseAction
   id: ActionEnergyKatanaDash
   name: Рывок с катаной
   description: Телепортироваться в любую видимую точку, если энергетическая катана у вас в руке.
   components:
-  - type: WorldTargetAction
-    icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: blink
+  - type: Action
     itemIconStyle: NoItem
     sound:
       path: /Audio/Magic/blink.ogg
       params:
         volume: 5
     priority: -12
-    event: !type:DashEvent
+  - type: Sprite
+    sprite: Objects/Magic/magicactions.rsi
+    layers:
+    - state: blink
+  - type: TargetAction
     checkCanAccess: false
     range: 0
+  - type: WorldTargetAction
+    event: !type:TeleportActionEvent
+      stopBeingPulled: true
+      stopPulling: true
+  - type: ActionUserWhitelist
+    whitelist:
+      components:
+      - SpaceNinja
+  - type: ActionProviderHeld
+    onFailPopup: dash-ability-not-held
+  - type: LimitedCharges
+    maxCharges: 3
+    onFailPopup: limited-charges-no-charges
+  - type: AutoRecharge
+    rechargeDuration: 20

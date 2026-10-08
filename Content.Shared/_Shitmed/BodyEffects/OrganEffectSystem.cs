@@ -7,7 +7,7 @@
 // We keep this clone of the other system since I don't know yet if I'll need organ specific functions in the future.
 // will delete or refactor as time goes on.
 using Content.Shared._Shitmed.Body.Organ;
-using Content.Shared.Body.Organ;
+using Content.Shared.Body;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 using Robust.Shared.Timing;
@@ -18,10 +18,7 @@ using Robust.Shared.Network;
 namespace Content.Shared._Shitmed.BodyEffects;
 public sealed partial class OrganEffectSystem : EntitySystem
 {
-    [Dependency] private readonly IComponentFactory _compFactory = default!;
-    [Dependency] private readonly ISerializationManager _serManager = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
     public override void Initialize()
     {
         base.Initialize();

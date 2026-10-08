@@ -4,14 +4,12 @@
     entity: MobMouse
     forced: true
     duration: 30
-
 - type: polymorph
   id: Chicken
   configuration:
     entity: MobChicken
     forced: true
     inventory: Drop
-
 - type: polymorph
   id: Monkey
   configuration:
@@ -20,7 +18,6 @@
     inventory: Drop
     revertOnCrit: true
     revertOnDeath: true
-
 - type: polymorph
   id: WizardForcedCarp
   configuration:
@@ -35,7 +32,6 @@
       path: /Audio/Magic/forcewall.ogg
     exitPolymorphSound: !type:SoundPathSpecifier
       path: /Audio/Magic/forcewall.ogg
-
 - type: polymorph
   id: WizardForcedMonkey
   configuration:
@@ -50,7 +46,6 @@
       path: /Audio/Magic/forcewall.ogg
     exitPolymorphSound: !type:SoundPathSpecifier
       path: /Audio/Magic/forcewall.ogg
-
 - type: polymorph
   id: WizardWallDoor
   configuration:
@@ -65,8 +60,6 @@
       path: /Audio/Magic/forcewall.ogg
     exitPolymorphSound: !type:SoundPathSpecifier
       path: /Audio/Magic/forcewall.ogg
-
-# this is a test for transferring some visual appearance stuff
 - type: polymorph
   id: TestHumanMorph
   configuration:
@@ -74,7 +67,6 @@
     transferName: true
     transferHumanoidAppearance: true
     inventory: Transfer
-
 - type: polymorph
   id: AMIVMorph
   configuration:
@@ -84,7 +76,6 @@
     transferName: true
     revertOnCrit: false
     revertOnDeath: false
-
 - type: polymorph
   id: BreadMorph
   configuration:
@@ -96,7 +87,6 @@
     revertOnCrit: false
     revertOnDeath: true
     revertOnEat: true
-
 - type: polymorph
   id: TreeMorph
   configuration:
@@ -106,8 +96,6 @@
     revertOnDeath: true
     inventory: Drop
     cooldown: 160
-
-# this is the monkey polymorph for artifact.
 - type: polymorph
   id: ArtifactMonkey
   configuration:
@@ -119,45 +107,39 @@
     revertOnCrit: true
     revertOnDeath: true
     duration: 20
-
 - type: polymorph
   id: ArtifactLizard
   configuration:
     entity: MobLizard
     forced: true
     transferName: true
-    transferHumanoidAppearance: true
     inventory: None
     revertOnDeath: true
     revertOnCrit: true
     duration: 20
-
 - type: polymorph
   id: ArtifactLuminous
   configuration:
     entity: MobLuminousPerson
     forced: true
     transferName: true
-    transferHumanoidAppearance: true
     inventory: None
     revertOnDeath: true
     revertOnCrit: true
     duration: 20
-
-# Polymorphs for Wizards polymorph self spell
 - type: polymorph
   id: WizardSpider
   configuration:
-    entity: MobGiantSpiderWizard #Not angry so ghosts can't just take over the wizard
+    entity: MobGiantSpiderWizard
+    revertConfirmationPopup: false
     transferName: true
     inventory: None
     revertOnDeath: true
     revertOnCrit: true
-
 - type: polymorph
   id: WizardRod
   configuration:
-    entity: ImmovableRodWizard #CLANG
+    entity: ImmovableRodWizard
     transferName: true
     transferDamage: false
     inventory: None
@@ -165,9 +147,6 @@
     forced: true
     revertOnCrit: false
     revertOnDeath: false
-
-# Temporary Jaunt
-# Don't make permanent jaunts until action system can be reworked to allow do afters and cooldown pausing
 - type: polymorph
   id: Jaunt
   configuration:
@@ -181,3 +160,24 @@
     polymorphSound: /Audio/Magic/ethereal_enter.ogg
     exitPolymorphSound: /Audio/Magic/ethereal_exit.ogg
     duration: 3
+- type: polymorph
+  id: VoidPocket
+  configuration:
+    entity: DesynchronizedPocket
+    transferName: false
+    inventory: None
+    forced: false
+    revertConfirmationPopup: false
+    revertOnDeath: true
+    allowRepeatedMorphs: false
+    polymorphSound: /Audio/Magic/ethereal_enter.ogg
+    exitPolymorphSound: /Audio/Magic/ethereal_exit.ogg
+    duration: 120
+    effectProto: EffectDesynchronizer
+- type: polymorph
+  id: ChangelingMeteor
+  configuration:
+    entity: ChangelingMeteor
+    forced: true
+    polymorphPopup: null
+    exitPolymorphPopup: null

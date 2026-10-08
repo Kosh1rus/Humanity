@@ -1,0 +1,216 @@
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockVendomat
+  name: Vendomat restock box
+  description: A box full of parts for various machinery. Load it into a Vendomat to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - VendomatInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_parts
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockTankDispenser
+  name: tank dispenser restock box
+  description: Capable of replacing tanks in a gas tank dispenser. Handle with care.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - TankDispenserEVAInventory
+    - TankDispenserEngineeringInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_tanks
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockSalvageEquipment
+  name: Salvage Vendor restock box
+  description: Strike the earth ere the space carp nip your behind! Slam into a salvage vendor to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - SalvageEquipmentInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_salvage
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockPTech
+  name: PTech restock box
+  description: All the bureaucracy you can handle, and more! Load into the PTech vending machine to get started.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - PTechInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_ptech
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockHappyHonk
+  name: Happy Honk restock box
+  description: Place this box full of fun into the restock slot on the Happy Honk Dispenser to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - HappyHonkDispenserInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_honk
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockGetmoreChocolateCorp
+  name: GetMore Chocolate restock box
+  description: A box loaded with the finest ersatz cacao. Only to be used in official Getmore Chocolate vending machines.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - GetmoreChocolateCorpInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_snack
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockGames
+  name: Good Clean Fun restock box
+  description: It's time to roll for initiative, dice dragons! Load up at the Good Clean Fun vending machine!
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - GoodCleanFunInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_games
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockDiscountDans
+  name: Discount Dan's restock box
+  description: A box full of salt and starch. Why suffer Quality when you can have Quantity? Discount Dan's!
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - DiscountDansInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_discount
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockDinnerware
+  name: Plasteel Chef's restock box
+  description: It's never raw in this kitchen! Drop into the restock slot on the Plasteel Chef to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - DinnerwareInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_dinner
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockCostumes
+  name: AutoDrobe restock box
+  description: A panoply of NanoTrasen employees are prancing about a colorful theater in a tragicomedy. You can join them
+    too! Load this into your nearest AutoDrobe vending machine.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - AutoDrobeInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_costume
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockClothes
+  name: wardrobe restock box
+  description: It's time to step up your fashion! Place inside any clothes vendor restock slot to begin.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - ClothesMateInventory
+    - AtmosDrobeInventory
+    - BarDrobeInventory
+    - CargoDrobeInventory
+    - ChefDrobeInventory
+    - ChemDrobeInventory
+    - DetDrobeInventory
+    - EngiDrobeInventory
+    - GeneDrobeInventory
+    - HyDrobeInventory
+    - JaniDrobeInventory
+    - LawDrobeInventory
+    - MediDrobeInventory
+    - RoboDrobeInventory
+    - SciDrobeInventory
+    - SecDrobeInventory
+    - ViroDrobeInventory
+    - WinterDrobeInventory
+    - CuraDrobeInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_clothes
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockChefvend
+  name: ChefVend restock box
+  description: Refill the ChefVend. Just don't break any more of the eggs.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - ChefvendInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_chef
+- type: entity
+  parent: BaseVendingMachineRestock
+  id: VendingMachineRestockChang
+  name: Mr. Chang's restock box
+  description: A box covered in white labels with bold red Chinese characters, ready to be loaded into the nearest Mr. Chang's
+    vending machine.
+  components:
+  - type: VendingMachineRestock
+    canRestock:
+    - ChangInventory
+  - type: Sprite
+    layers:
+    - state: base
+    - state: green_bit
+      shader: unshaded
+    - state: refill_chinese

@@ -1,92 +1,88 @@
-﻿- type: entity
+- type: entity
+  parent: BaseAction
   id: ActionRevertPolymorph
   name: Вернуть облик
   description: Вернуться к первоначальному облику.
   components:
   - type: InstantAction
-    event: !type:RevertPolymorphActionEvent
-
+    event: !type:RevertPolymorphActionEvent ''
 - type: entity
-  id: ActionPolymorph
+  parent: ActionRevertPolymorph
+  id: ActionRevertPolymorphConfirm
   components:
-  - type: InstantAction
-    event: !type:PolymorphActionEvent
-    itemIconStyle: NoItem
-
+  - type: ConfirmableAction
+    popup: revert-polymorph-action-popup
 - type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseActionPolymorph
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 60
+  - type: InstantAction
+    event: !type:PolymorphActionEvent ''
+- type: entity
+  parent: BaseActionPolymorph
   id: ActionPolymorphWizardSpider
   name: Превратиться в паука
   description: Принять облик паука.
   components:
+  - type: Action
+  - type: Sprite
+    sprite: Mobs/Animals/Spiders/tarantulaspider.rsi
+    layers:
+    - state: idle
   - type: InstantAction
-    useDelay: 60
     event: !type:PolymorphActionEvent
       protoId: WizardSpider
-    itemIconStyle: NoItem
-    icon:
-      sprite: Mobs/Animals/spider.rsi
-      state: tarantula
-
 - type: entity
+  parent: BaseActionPolymorph
   id: ActionPolymorphWizardRod
   name: Облик стержня
   description: ДЗЫНЬ!
   components:
+  - type: Action
+  - type: Sprite
+    sprite: Objects/Fun/immovable_rod.rsi
+    layers:
+    - state: icon
   - type: InstantAction
-    useDelay: 60
     event: !type:PolymorphActionEvent
       protoId: WizardRod
-    itemIconStyle: NoItem
-    icon:
-      sprite: Objects/Fun/immovable_rod.rsi
-      state: icon
-
 - type: entity
+  parent: BaseActionPolymorph
   id: ActionPolymorphJaunt
   name: Эфирный скачок
   description: Раствориться в эфирном измерении и быстро ускользнуть!
   components:
   - type: Magic
-  - type: InstantAction
+  - type: Action
     useDelay: 30
+  - type: Sprite
+    sprite: Objects/Magic/magicactions.rsi
+    layers:
+    - state: jaunt
+  - type: InstantAction
     event: !type:PolymorphActionEvent
       protoId: Jaunt
-    itemIconStyle: NoItem
-    icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: jaunt
-    # TODO: Effect ECS (from cardboard box)
   - type: ActionUpgrade
     effectedLevels:
       2: ActionPolymorphJauntII
       3: ActionPolymorphJauntIII
-
 - type: entity
-  id: ActionPolymorphJauntII
   parent: ActionPolymorphJaunt
+  id: ActionPolymorphJauntII
   name: Эфирный скачок II
   description: Раствориться в эфирном измерении и ускользнуть ещё быстрее!
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 25
-    event: !type:PolymorphActionEvent
-      protoId: Jaunt
-    itemIconStyle: NoItem
-    icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: jaunt
-
 - type: entity
-  id: ActionPolymorphJauntIII
   parent: ActionPolymorphJaunt
+  id: ActionPolymorphJauntIII
   name: Эфирный скачок III
   description: Вы вообще ещё материальны?
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 20
-    event: !type:PolymorphActionEvent
-      protoId: Jaunt
-    itemIconStyle: NoItem
-    icon:
-      sprite: Objects/Magic/magicactions.rsi
-      state: jaunt

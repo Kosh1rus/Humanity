@@ -1,4 +1,4 @@
-﻿using Content.Server.Atmos.EntitySystems;
+using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Reactions;
 using Robust.Shared.Prototypes;
@@ -15,7 +15,7 @@ namespace Content.Server.Atmos.Reactions
         /// <summary>
         ///     Minimum gas amount requirements.
         /// </summary>
-        [DataField("minimumRequirements")]
+        [DataField("minimumRequirements", customTypeSerializer: typeof(GasArraySerializer))]
         public float[] MinimumRequirements { get; private set; } = new float[Atmospherics.TotalNumberOfGases];
 
         /// <summary>

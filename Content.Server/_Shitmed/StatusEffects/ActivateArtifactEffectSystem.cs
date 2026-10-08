@@ -5,23 +5,23 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
 using Content.Shared._Shitmed.StatusEffects;
-using Content.Server.Xenoarchaeology.XenoArtifacts;
+using Content.Shared.Xenoarchaeology.Artifact;
 
 namespace Content.Server._Shitmed.StatusEffects;
 
-public sealed class ActivateArtifactEffectSystem : EntitySystem
+public sealed partial class ActivateArtifactEffectSystem : EntitySystem
 {
-    [Dependency] private readonly ArtifactSystem _artifact = default!;
+    [Dependency] private SharedXenoArtifactSystem _artifact = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<ActivateArtifactEffectComponent, ComponentInit>(OnInit);
     }
     private void OnInit(EntityUid uid, ActivateArtifactEffectComponent component, ComponentInit args)
     {
-        if (!TryComp<ArtifactComponent>(uid, out var artifact))
+        if (!TryComp<XenoArtifactComponent>(uid, out var artifact))
             return;
 
-        _artifact.TryActivateArtifact(uid, logMissing: false);
+        _artifact.TryActivateXenoArtifact((uid, artifact), null, null, Transform(uid).Coordinates);
     }
 
 

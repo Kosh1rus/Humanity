@@ -1,14 +1,14 @@
 {
     "version": 1,
-    "license": null,
-    "copyright": null,
+    "license": "AGPL-3.0 AND CC-BY-SA-3.0",
+    "copyright": "Civilization 13 and Civ14 contributors; per-state sources in ../ammo.rsi.attributions.txt",
     "size": {
         "x": 32,
         "y": 32
     },
     "states": [
         {
-            "name": "",
+            "name": "unused-blank",
             "delays": [
                 [
                     0.120000005,
@@ -1567,6 +1567,9 @@
         },
         {
             "name": "service_rifle-0"
+        },
+        {
+            "name": "dpdisk"
         }
     ]
 }

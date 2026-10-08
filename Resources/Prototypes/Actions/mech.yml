@@ -1,37 +1,48 @@
 - type: entity
+  abstract: true
+  parent: BaseAction
+  id: BaseMechAction
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+- type: entity
+  parent: BaseMechAction
   id: ActionMechCycleEquipment
   name: Сменить оборудование
   description: Переключить выбранное оборудование меха.
   components:
-  - type: InstantAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: Interface/Actions/actions_mecha.rsi
-      state: mech_cycle_equip_on
-    event: !type:MechToggleEquipmentEvent
+  - type: Action
     useDelay: 0.5
-
+  - type: Sprite
+    sprite: Interface/Actions/actions_mecha.rsi
+    layers:
+    - state: mech_cycle_equip_on
+  - type: InstantAction
+    event: !type:MechToggleEquipmentEvent ''
 - type: entity
+  parent: BaseMechAction
   id: ActionMechOpenUI
   name: Панель управления
   description: Открыть панель управления мехом.
   components:
-  - type: InstantAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: Interface/Actions/actions_mecha.rsi
-      state: mech_view_stats
-    event: !type:MechOpenUiEvent
+  - type: Action
     useDelay: 1
-
+  - type: Sprite
+    sprite: Interface/Actions/actions_mecha.rsi
+    layers:
+    - state: mech_view_stats
+  - type: InstantAction
+    event: !type:MechOpenUiEvent ''
 - type: entity
+  parent: BaseMechAction
   id: ActionMechEject
   name: Покинуть мех
   description: Высадить пилота из меха.
   components:
+  - type: Action
+  - type: Sprite
+    sprite: Interface/Actions/actions_mecha.rsi
+    layers:
+    - state: mech_eject
   - type: InstantAction
-    itemIconStyle: NoItem
-    icon:
-      sprite: Interface/Actions/actions_mecha.rsi
-      state: mech_eject
-    event: !type:MechEjectPilotEvent
+    event: !type:MechEjectPilotEvent ''

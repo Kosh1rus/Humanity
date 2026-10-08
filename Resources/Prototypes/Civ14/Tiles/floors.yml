@@ -4,68 +4,64 @@
   sprite: /Textures/Tiles/dirt.png
   variants: 4
   placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
-
 - type: tile
   id: FloorDirtRock
   name: tiles-dirt-floor-rock
   sprite: /Textures/Tiles/dirt.png
   variants: 4
   placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
-
 - type: tile
   id: FloorDirtDigged_2
   name: tiles-dirt-floor-digged2
   sprite: /Textures/Tiles/dirt.png
   variants: 4
   placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
-
 - type: tile
   id: FloorDirtDigged_3
   name: tiles-dirt-floor-digged3
   sprite: /Textures/Tiles/dirt.png
   variants: 4
   placementVariants:
-    - 1.0
-    - 1.0
-    - 1.0
-    - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
   baseTurf: FloorDirt
   isSubfloor: true
   footstepSounds:
     collection: FootstepAsteroid
   heatCapacity: 10000
   weather: true
-
 - type: tile
   id: FloorThatch
   name: соломенный настил
@@ -73,7 +69,8 @@
   variants: 1
   baseTurf: FloorDirt
   isSubfloor: false
-  deconstructTools: [Prying]
+  deconstructTools:
+  - Prying
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -81,87 +78,85 @@
   itemDrop: FloorTileItemThatch
   heatCapacity: 10000
   weather: false
-
 - type: stack
   id: FloorTileThatch
   name: соломенный настил
   spawn: FloorTileItemThatch
   maxCount: 30
-
 - type: entity
   name: соломенный настил
   parent: FloorTileItemBase
   id: FloorTileItemThatch
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/wood.rsi
-      state: thatch_hand
-    - type: Item
-      heldPrefix: wood
-    - type: FloorTile
-      outputs:
-        - Plating
-        - FloorThatch
-    - type: Stack
-      stackType: FloorTileThatch
-    - type: SpawnAfterInteract #Nuke after convert to FloorTile
-      prototype: FloorThatch
-      doAfter: 0.5
-      removeOnInteract: true
-    - type: Construction
-      graph: TileThatch
-      node: end
-    - type: Tag
-      tags:
-        - Bridging
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/wood.rsi
+    state: thatch_hand
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorThatch
+  - type: Stack
+    stackType: FloorTileThatch
+  - type: SpawnAfterInteract
+    prototype: FloorThatch
+    doAfter: 0.5
+    removeOnInteract: true
+  - type: Construction
+    graph: TileThatch
+    node: end
+  - type: Tag
+    tags:
+    - Bridging
 - type: entity
   id: FloorThatch
   parent: FloorWoodClassic
   name: соломенный настил
-  description: "Настил из плотно утрамбованной сухой соломы."
+  description: Настил из плотно утрамбованной сухой соломы.
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/wood.rsi
-      state: thatch2
-      drawdepth: FloorTiles
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 25
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/wood.rsi
+    state: thatch2
+    drawdepth: FloorTiles
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
 - type: entity
   id: FloorWoodClassic
   parent: BaseStructure
   name: деревянный настил
-  description: "Простой настил из деревянных досок."
+  description: Простой настил из деревянных досок.
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/wood.rsi
-      state: wood
-      drawdepth: FloorTiles
-    - type: IsRoof
-    - type: Tag
-      tags:
-        - ForceFixRotations
-    - type: Physics
-      canCollide: false
-    - type: Fixtures
-    - type: Damageable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 40
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-    - type: BlockWeather
-    - type: SunShadowCast
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/wood.rsi
+    state: wood
+    drawdepth: FloorTiles
+  - type: IsRoof
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: BlockWeather
+  - type: SunShadowCast
+  - type: Injurable
+    damageContainer: Inorganic
 - type: tile
   id: FloorRoad
   name: старая дорога
@@ -170,70 +165,69 @@
   baseTurf: FloorDirt
   weather: true
   isSubfloor: false
-  deconstructTools: [Prying]
+  deconstructTools:
+  - Prying
   footstepSounds:
     collection: FootstepFloor
   barestepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemRoad
   heatCapacity: 10000
-
 - type: stack
   id: FloorTileRoad
   name: старая дорога
   spawn: FloorTileItemRoad
   maxCount: 30
-
 - type: entity
   name: старая дорога
   parent: FloorTileItemBase
   id: FloorTileItemRoad
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/roads.rsi
-      state: r_roadfull
-    - type: Item
-      heldPrefix: cobblestone
-    - type: FloorTile
-      outputs:
-        - Plating
-        - FloorRoad
-    - type: Stack
-      stackType: FloorTileRoad
-    - type: SpawnAfterInteract #Nuke after convert to FloorTile
-      prototype: FloorRoad
-      doAfter: 0.5
-      removeOnInteract: true
-    - type: Construction
-      graph: TileRoad
-      node: end
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/roads.rsi
+    state: r_roadfull
+  - type: Item
+    heldPrefix: cobblestone
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorRoad
+  - type: Stack
+    stackType: FloorTileRoad
+  - type: SpawnAfterInteract
+    prototype: FloorRoad
+    doAfter: 0.5
+    removeOnInteract: true
+  - type: Construction
+    graph: TileRoad
+    node: end
 - type: entity
   id: FloorRoad
   parent: BaseStructure
   name: старая дорога
-  description: "Старая дорога, выложенная грубым булыжником."
+  description: Старая дорога, выложенная грубым булыжником.
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/roads.rsi
-      state: r_roadfull
-      drawdepth: FloorTiles
-    - type: Tag
-      tags:
-        - ForceFixRotations
-    - type: Physics
-      canCollide: false
-    - type: Fixtures
-    - type: Damageable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 180
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/roads.rsi
+    state: r_roadfull
+    drawdepth: FloorTiles
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 180
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: Injurable
+    damageContainer: Inorganic
 - type: tile
   id: FloorCobblestone
   name: булыжная мостовая
@@ -242,70 +236,69 @@
   baseTurf: FloorDirt
   weather: true
   isSubfloor: false
-  deconstructTools: [Prying]
+  deconstructTools:
+  - Prying
   footstepSounds:
     collection: FootstepFloor
   barestepSounds:
     collection: FootstepFloor
   itemDrop: FloorTileItemCobblestone
   heatCapacity: 10000
-
 - type: stack
   id: FloorTileCobblestone
   name: булыжная мостовая
   spawn: FloorTileItemCobblestone
   maxCount: 30
-
 - type: entity
   name: булыжная мостовая
   parent: FloorTileItemBase
   id: FloorTileItemCobblestone
   components:
-    - type: Sprite
-      sprite: Civ14/Objects/floors.rsi
-      state: cobble_vertical_dark
-    - type: Item
-      heldPrefix: cobblestone
-    - type: FloorTile
-      outputs:
-        - Plating
-        - FloorRoad
-    - type: Stack
-      stackType: FloorTileCobblestone
-    - type: SpawnAfterInteract #Nuke after convert to FloorTile
-      prototype: FloorCobblestone
-      doAfter: 0.5
-      removeOnInteract: true
-    - type: Construction
-      graph: TileCobblestone
-      node: end
-
+  - type: Sprite
+    sprite: Civ14/Objects/floors.rsi
+    state: cobble_vertical_dark
+  - type: Item
+    heldPrefix: cobblestone
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorRoad
+  - type: Stack
+    stackType: FloorTileCobblestone
+  - type: SpawnAfterInteract
+    prototype: FloorCobblestone
+    doAfter: 0.5
+    removeOnInteract: true
+  - type: Construction
+    graph: TileCobblestone
+    node: end
 - type: entity
   id: FloorCobblestone
   parent: BaseStructure
   name: булыжная мостовая
-  description: "Пол, выложенный булыжником."
+  description: Пол, выложенный булыжником.
   components:
-    - type: Sprite
-      sprite: Civ14/Objects/floors.rsi
-      state: cobble_vertical_dark
-      drawdepth: FloorTiles
-    - type: Tag
-      tags:
-        - ForceFixRotations
-    - type: Physics
-      canCollide: false
-    - type: Fixtures
-    - type: Damageable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 180
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-
+  - type: Sprite
+    sprite: Civ14/Objects/floors.rsi
+    state: cobble_vertical_dark
+    drawdepth: FloorTiles
+  - type: Tag
+    tags:
+    - ForceFixRotations
+  - type: Physics
+    canCollide: false
+  - type: Fixtures
+  - type: Damageable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 180
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: Injurable
+    damageContainer: Inorganic
 - type: tile
   id: FloorBridge
   name: мост
@@ -313,7 +306,8 @@
   variants: 1
   baseTurf: FloorDirt
   isSubfloor: false
-  deconstructTools: [Prying]
+  deconstructTools:
+  - Prying
   footstepSounds:
     collection: FootstepWood
   barestepSounds:
@@ -321,54 +315,52 @@
   itemDrop: FloorTileItemBridge
   heatCapacity: 10000
   weather: false
-
 - type: stack
   id: FloorTileBridge
   name: мостовой настил
   spawn: FloorTileItemBridge
   maxCount: 10
-
 - type: entity
   name: мостовой настил
   parent: FloorTileItemBase
   id: FloorTileItemBridge
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/wood.rsi
-      state: bridge_hand
-    - type: Item
-      heldPrefix: wood
-    - type: FloorTile
-      outputs:
-        - Plating
-        - FloorBridge
-    - type: Stack
-      stackType: FloorTileBridge
-    - type: SpawnAfterInteract #Nuke after convert to FloorTile
-      prototype: FloorBridge
-      doAfter: 0.5
-      removeOnInteract: true
-    - type: Construction
-      graph: TileBridge
-      node: end
-    - type: Tag
-      tags:
-        - Bridging
-
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/wood.rsi
+    state: bridge_hand
+  - type: Item
+    heldPrefix: wood
+  - type: FloorTile
+    outputs:
+    - Plating
+    - FloorBridge
+  - type: Stack
+    stackType: FloorTileBridge
+  - type: SpawnAfterInteract
+    prototype: FloorBridge
+    doAfter: 0.5
+    removeOnInteract: true
+  - type: Construction
+    graph: TileBridge
+    node: end
+  - type: Tag
+    tags:
+    - Bridging
 - type: entity
   id: FloorBridge
   parent: FloorWoodClassic
   name: мост
-  description: "Временный мост из деревянных досок."
+  description: Временный мост из деревянных досок.
   components:
-    - type: Sprite
-      sprite: Civ14/Structures/Floors/wood.rsi
-      state: woodalt7
-      drawdepth: FloorTiles
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 180
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
+  - type: Sprite
+    sprite: Civ14/Structures/Floors/wood.rsi
+    state: woodalt7
+    drawdepth: FloorTiles
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 180
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction

@@ -1,13 +1,12 @@
-﻿using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Stalker.Characteristics;
 
-[Prototype("characteristic"), Serializable, NetSerializable]
+[Prototype]
 public sealed partial class CharacteristicPrototype : IPrototype
 {
     [IdDataField]
-    public string ID { get; } = string.Empty;
+    public string ID { get; private set; } = string.Empty;
 
     [DataField]
     public string Name = string.Empty;

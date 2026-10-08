@@ -22,4 +22,3 @@ public sealed partial class STLayComponent : Component
         { STLayState.Laid, STLayState.Stand },
     };
 }
-

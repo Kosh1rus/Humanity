@@ -5,8 +5,7 @@ namespace Content.Shared.Civ14.CivResearch;
 
 public sealed partial class CivResearchSystem : EntitySystem
 {
-    [Dependency] private readonly IMapManager _mapManager = default!;
-    [Dependency] private readonly INetManager _net = default!;
+    [Dependency] private INetManager _net = default!;
 
     public override void Initialize()
     {
@@ -17,6 +16,6 @@ public sealed partial class CivResearchSystem : EntitySystem
     private void OnMapCreated(MapCreatedEvent ev)
     {
         if (_net.IsServer)
-            EnsureComp<CivResearchComponent>(_mapManager.GetMapEntityId(ev.MapId));
+            EnsureComp<CivResearchComponent>(ev.Uid);
     }
 }

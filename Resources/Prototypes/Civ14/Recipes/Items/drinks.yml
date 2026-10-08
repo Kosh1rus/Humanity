@@ -1,11 +1,11 @@
 - type: construction
-  name: "деревянная чашка"
+  name: humanity-construction-WoodCup-name
   id: WoodCup
   graph: WoodCup
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Простая чашка, вырезанная из дерева."
+  description: humanity-construction-WoodCup-description
   icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup2 }
   objectType: Item
   agemin: 0
@@ -26,13 +26,13 @@
       entity: WoodCup
 
 - type: construction
-  name: "деревянная кружка"
+  name: humanity-construction-WoodMug-name
   id: WoodMug
   graph: WoodMug
   startNode: start
   targetNode: end
   category: construction-category-storage
-  description: "Простая кружка, вырезанная из дерева."
+  description: humanity-construction-WoodMug-description
   icon: { sprite: "Civ14/Objects/drinks.rsi", state: wood_cup }
   objectType: Item
   agemin: 0

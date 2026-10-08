@@ -7,11 +7,11 @@ using Robust.Shared.Utility;
 
 namespace Content.Server.Humanity.Persistence;
 
-public sealed class NomadWorldSaveSystem : EntitySystem
+public sealed partial class NomadWorldSaveSystem : EntitySystem
 {
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly IResourceManager _resources = default!;
-    [Dependency] private readonly MapLoaderSystem _loader = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private IResourceManager _resources = default!;
+    [Dependency] private MapLoaderSystem _loader = default!;
     private float _elapsed;
 
     public override void Update(float frameTime)

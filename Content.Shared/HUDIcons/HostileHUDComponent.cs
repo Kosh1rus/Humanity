@@ -3,7 +3,6 @@ using Content.Shared.StatusIcon;
 using Robust.Shared.Prototypes;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 
 /// <summary>
@@ -16,6 +15,6 @@ public sealed partial class HostileHUDComponent : Component
     /// <summary>
     ///
     /// </summary>
-    [DataField("statusIcon", customTypeSerializer: typeof(PrototypeIdSerializer<FactionIconPrototype>))]
+    [DataField("statusIcon")]
     public string StatusIcon = "HostileFaction";
 }

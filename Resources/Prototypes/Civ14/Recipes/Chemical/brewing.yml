@@ -29,13 +29,13 @@
     Ale: 20
 
 - type: construction
-  name: "бочка для брожения"
+  name: humanity-construction-BrewingBarrel-name
   id: BrewingBarrel
   graph: BrewingBarrel
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: "Большая деревянная бочка для приготовления напитков брожением."
+  description: humanity-construction-BrewingBarrel-description
   icon: { sprite: Civ14/Objects/barrel.rsi, state: beer_barrel }
   objectType: Item
   agemin: 0
@@ -56,13 +56,13 @@
       entity: BrewingBarrel
 
 - type: construction
-  name: "банка для закваски"
+  name: humanity-construction-StarterJar-name
   id: StarterJar
   graph: StarterJar
   startNode: start
   targetNode: end
   category: construction-category-production
-  description: "Простая банка для выращивания дрожжей."
+  description: humanity-construction-StarterJar-description
   icon: { sprite: Civ14/Objects/drinks.rsi, state: jarF }
   objectType: Structure
   agemin: 0

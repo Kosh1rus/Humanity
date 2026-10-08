@@ -1,102 +1,169 @@
 - type: construction
-  name: muzzle
+  abstract: true
+  id: BaseItemMisc
+  category: construction-category-misc
+  objectType: Item
+- type: construction
+  parent: BaseWeapon
+  id: bat
+  graph: WoodenBat
+  targetNode: bat
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: makeshiftstunprod
+  graph: makeshiftstunprod
+  targetNode: msstunprod
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: MakeshiftLaser
+  graph: MakeshiftLaserGraph
+  targetNode: mslaser
+- type: construction
+  parent: BaseWeapon
+  id: pneumaticcannon
+  graph: PneumaticCannon
+  targetNode: cannon
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: improvisedshotgun
+  graph: ImprovisedShotgunGraph
+  targetNode: shotgun
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: ShellShotgunImprovised
+  graph: ImprovisedShotgunShellGraph
+  targetNode: shell
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: riflestock
+  graph: RifleStockGraph
+  targetNode: riflestock
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: firebomb
+  graph: FireBomb
+  targetNode: firebomb
+  hide: true
+- type: construction
+  parent: BaseWeapon
+  id: pipebomb
+  graph: PipeBomb
+  targetNode: pipebomb
+  hide: true
+- type: construction
+  parent: BaseClothing
+  id: ghost_sheet
+  graph: GhostSheet
+  targetNode: ghost_sheet
+  hide: true
+- type: construction
+  parent: BaseClothing
+  id: flowerwreath
+  graph: flowerwreath
+  targetNode: flowerwreath
+- type: construction
+  parent: BaseClothing
+  id: strawHat
+  graph: StrawHat
+  targetNode: strawhat
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseClothing
+  id: HardsuitGoliath
+  graph: HardsuitGoliath
+  targetNode: hardsuitGoliath
+  hide: true
+- type: construction
+  parent: BaseClothing
+  id: scraparmor
+  graph: scraparmor
+  targetNode: scraparmorfinished
+- type: construction
+  parent: BaseClothing
+  id: scraphelmet
+  graph: scraphelmet
+  targetNode: scraphelmet
+- type: construction
+  parent: BaseClothing
+  id: ClothingBagPet
+  graph: ClothingBagPet
+  targetNode: bagPet
+- type: construction
+  parent: BaseTool
+  id: makeshifthandcuffs
+  graph: makeshifthandcuffs
+  targetNode: cuffscable
+  hide: true
+- type: construction
+  parent: BaseTool
   id: muzzle
   graph: Muzzle
-  startNode: start
   targetNode: muzzle
-  category: construction-category-tools
-  objectType: Item
-  description: "A muzzle to shut your victim up."
-  icon:
-    sprite: Clothing/Mask/muzzle.rsi
-    state: icon
   tdm: true
-
 - type: construction
-  name: gauze
+  parent: BaseTool
   id: gauze
   graph: Gauze
-  startNode: start
   targetNode: gauze
-  category: construction-category-tools
-  objectType: Item
-  description: When you've really got nothing left.
-  icon:
-    sprite: Objects/Specific/Medical/medical.rsi
-    state: gauze
   agemin: 1
   agemax: 8
   tdm: true
-
 - type: construction
-  name: leather bandage
+  parent: BaseTool
+  id: blindfold
+  graph: Blindfold
+  targetNode: blindfold
+  agemin: 0
+  agemax: 8
+  tdm: true
+- type: construction
+  parent: BaseTool
+  id: rag
+  graph: Rag
+  targetNode: rag
+- type: construction
+  parent: BaseTool
+  id: rollingpin
+  graph: WoodenRollingPin
+  targetNode: rollingpin
+  hide: true
+- type: construction
+  parent: BaseItemMisc
+  id: CottonWovenCloth
+  graph: CottonObjects
+  targetNode: cottoncloth
+  category: construction-category-materials
+  hide: true
+- type: construction
+  parent: BaseItemMisc
+  id: PetCarrier
+  graph: PetCarrier
+  targetNode: petCarrier
+  hide: true
+- type: construction
+  parent: BaseItemMisc
+  id: RepairMothershipPinpointer
+  graph: RepairMothershipPinpointer
+  targetNode: repairedPinpointer
+- type: construction
+  name: humanity-construction-GauzeLeather-name
   id: GauzeLeather
   graph: GauzeLeather
   startNode: start
   targetNode: end
   category: construction-category-tools
   objectType: Item
-  description: When you've really got nothing left.
+  description: humanity-construction-GauzeLeather-description
   icon:
     sprite: Civ14/Objects/surgery.rsi
     state: leatherbandage
   agemin: 0
   agemax: 8
   tdm: true
-
-- type: construction
-  name: blindfold
-  id: blindfold
-  graph: Blindfold
-  startNode: start
-  targetNode: blindfold
-  category: construction-category-tools
-  objectType: Item
-  description: Better hope everyone turns a blind eye to you crafting this sussy item...
-  icon:
-    sprite: Clothing/Eyes/Misc/blindfold.rsi
-    state: icon
-  agemin: 0
-  agemax: 8
-  tdm: true
-
-- type: construction
-  name: flower wreath
-  id: flowerwreath
-  graph: flowerwreath
-  startNode: start
-  targetNode: flowerwreath
-  category: construction-category-clothing
-  description: A wreath of colourful flowers. Can be worn both on head and neck.
-  icon:
-    sprite: Clothing/Head/Misc/flower-wreath.rsi
-    state: icon
-  objectType: Item
-
-- type: construction
-  name: damp rag
-  id: rag
-  graph: Rag
-  startNode: start
-  targetNode: rag
-  category: construction-category-tools
-  objectType: Item
-  description: A damp rag to clean up the ground. Better than slipping around all day.
-  icon:
-    sprite: Objects/Specific/Janitorial/rag.rsi
-    state: rag
-
-- type: construction
-  name: straw hat
-  id: strawHat
-  graph: StrawHat
-  startNode: start
-  targetNode: strawhat
-  category: construction-category-clothing
-  description: A fancy hat for hot days! Not recommended to wear near fires.
-  icon:
-    sprite: Clothing/Head/Hats/straw_hat.rsi
-    state: icon
-  objectType: Item
-  agemin: 0
-  agemax: 8

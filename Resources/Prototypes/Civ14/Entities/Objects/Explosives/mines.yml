@@ -9,6 +9,15 @@
       drawdepth: Items
       sprite: Civ14/Objects/grenade.rsi
       state: mine_armed
+      layers:
+        - state: mine_armed
+          map: [enum.ToggleableVisuals.Layer]
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
+            True: { state: mine_armed, visible: true }
+            False: { state: mine, visible: true }
     - type: LandMine
       sound:
         path: /Audio/Weapons/Guns/Cock/shotgun_open.ogg # yes, this is the right sound
@@ -25,6 +34,15 @@
       drawdepth: Items
       sprite: Civ14/Objects/grenade.rsi
       state: boobytrap_armed
+      layers:
+        - state: boobytrap_armed
+          map: [enum.ToggleableVisuals.Layer]
+    - type: GenericVisualizer
+      visuals:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
+            True: { state: boobytrap_armed, visible: true }
+            False: { state: boobytrap_armed, visible: true }
     - type: Explosive
       explosionType: CivDefault
       maxIntensity: 5

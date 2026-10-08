@@ -14,13 +14,12 @@ using Robust.Client.Timing;
 
 
 namespace Content.Client.Civ14.LookZoom;
-public sealed class LookZoomSystem : EntitySystem
+public sealed partial class LookZoomSystem : EntitySystem
 {
-    [Dependency] private readonly EyeCursorOffsetSystem _eyeOffset = default!;
-    [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
-    [Dependency] private readonly IClientGameTiming _gameTiming = default!;
+    [Dependency] private EyeCursorOffsetSystem _eyeOffset = default!;
+    [Dependency] private SharedHandsSystem _handsSystem = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IClientGameTiming _gameTiming = default!;
     public override void Initialize()
     {
         base.Initialize();

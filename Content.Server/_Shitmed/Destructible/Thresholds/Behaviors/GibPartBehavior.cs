@@ -20,6 +20,6 @@ public sealed partial class GibPartBehavior : IThresholdBehavior
         if (!system.EntityManager.TryGetComponent(owner, out BodyPartComponent? part))
             return;
 
-        system.BodySystem.GibPart(owner, part);
+        system.EntityManager.System<Content.Server.Body.Systems.BodySystem>().GibPart(owner, part);
     }
 }

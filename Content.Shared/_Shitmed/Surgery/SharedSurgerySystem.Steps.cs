@@ -12,7 +12,7 @@
 using Content.Shared.Humanoid;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Body.Part;
-using Content.Shared.Body.Organ;
+using Content.Shared.Body;
 using Content.Shared._Shitmed.BodyEffects;
 using Content.Shared._Shitmed.Body.Events;
 using Content.Shared.Buckle.Components;
@@ -39,6 +39,7 @@ namespace Content.Shared._Shitmed.Medical.Surgery;
 
 public abstract partial class SharedSurgerySystem
 {
+    private static readonly ProtoId<DamageTypePrototype> SepsisDamageType = "Poison";
     private static readonly string[] BruteDamageTypes = { "Slash", "Blunt", "Piercing" };
     private static readonly string[] BurnDamageTypes = { "Heat", "Shock", "Cold", "Caustic" };
     private void InitializeSteps()
@@ -299,7 +300,7 @@ public abstract partial class SharedSurgerySystem
             // We reward players for properly affixing the parts by healing a little bit of damage, and enabling the part temporarily.
             var ev = new BodyPartEnableChangedEvent(true);
             RaiseLocalEvent(targetPart.Id, ref ev);
-            _damageable.TryChangeDamage(args.Body,
+            _damageable.ChangeBodyDamage(args.Body,
                 _body.GetHealingSpecifier(targetPart.Component) * 2,
                 canSever: false, // Just in case we heal a brute damage specifier and the logic gets fucky lol
                 targetPart: _body.GetTargetBodyPart(targetPart.Component.PartType, targetPart.Component.Symmetry));
@@ -354,7 +355,7 @@ public abstract partial class SharedSurgerySystem
 
         // Adding organs is generally done for a single one at a time, so we only need to check for the first.
         var firstOrgan = organComp.Organ.Values.FirstOrDefault();
-        if (firstOrgan == default)
+        if (firstOrgan.Component == null)
             return;
 
         foreach (var tool in args.Tools)
@@ -474,7 +475,7 @@ public abstract partial class SharedSurgerySystem
             return;
 
         var organType = ent.Comp.Organ.Values.FirstOrDefault();
-        if (organType == default)
+        if (organType.Component == null)
             return;
 
         var markingCategory = MarkingCategoriesConversion.FromHumanoidVisualLayers(ent.Comp.MarkingCategory);
@@ -484,7 +485,7 @@ public abstract partial class SharedSurgerySystem
                 && HasComp(tool, organType.Component.GetType()))
             {
                 if (!bodyAppearance.MarkingSet.Markings.TryGetValue(markingCategory, out var markingList)
-                    || !markingList.Any(marking => marking.MarkingId.Contains(ent.Comp.MatchString)))
+                    || !markingList.Any(marking => marking.MarkingId.Id.Contains(ent.Comp.MatchString)))
                 {
                     EnsureComp<BodyPartAppearanceComponent>(args.Part);
                     _body.ModifyMarkings(args.Body, args.Part, bodyAppearance, ent.Comp.MarkingCategory, markingComp.Marking);
@@ -510,7 +511,7 @@ public abstract partial class SharedSurgerySystem
 
         if (!TryComp(args.Body, out HumanoidAppearanceComponent? bodyAppearance)
             || !bodyAppearance.MarkingSet.Markings.TryGetValue(markingCategory, out var markingList)
-            || !markingList.Any(marking => marking.MarkingId.Contains(ent.Comp.MatchString)))
+            || !markingList.Any(marking => marking.MarkingId.Id.Contains(ent.Comp.MatchString)))
             args.Cancelled = true;
     }
 
@@ -557,7 +558,7 @@ public abstract partial class SharedSurgerySystem
 
         if (HasComp<SanitizedComponent>(args.User))
             return;
-        var sepsis = new DamageSpecifier(_prototypes.Index<DamageTypePrototype>("Poison"), 5);
+        var sepsis = new DamageSpecifier(_prototypes.Index(SepsisDamageType), 5);
         var ev = new SurgeryStepDamageEvent(args.User, args.Body, args.Part, args.Surgery, sepsis, 0.5f);
         RaiseLocalEvent(args.Body, ref ev);
     }
@@ -894,7 +895,7 @@ public abstract partial class SharedSurgerySystem
     {
         foreach (var tool in tools)
         {
-            if (EntityManager.TryGetComponent(tool, component.GetType(), out var found) && found is ISurgeryToolComponent toolComp)
+            if (TryComp(tool, component.GetType(), out var found) && found is ISurgeryToolComponent toolComp)
             {
                 withComp = tool;
                 speed = toolComp.Speed;

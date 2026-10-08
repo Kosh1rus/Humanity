@@ -1,0 +1,3 @@
+The original artist of equipped-BELT.png was not recorded in the Civ14 import.
+First recorded in Civ14: https://github.com/Civ13/Civ14/commit/5209471577
+Civ14 declares CC-BY-SA-3.0 as its default asset license: https://github.com/Civ13/Civ14/blob/459f0b9e4fa8efea11da21dbbeb500d6ac500f64/LICENSE.TXT

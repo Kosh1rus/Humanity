@@ -54,7 +54,8 @@
     state: reeds
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityShoreGrassThin

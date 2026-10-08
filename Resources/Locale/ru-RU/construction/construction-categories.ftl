@@ -29,3 +29,4 @@ construction-add-favorite-button = Добавить в избранное
 construction-remove-from-favorite-button = Удалить из избранного
 construction-category-production = Производство
 construction-category-decoration = Украшения
+construction-category-atmospherics = Трубы и вентиляция

@@ -10,15 +10,13 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._Stalker.Stamina;
 
-public sealed class StaminaActiveSystem : EntitySystem
+public sealed partial class StaminaActiveSystem : EntitySystem
 {
-    [Dependency] private readonly StaminaSystem _stamina = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _speed = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private SharedStaminaSystem _stamina = default!;
+    [Dependency] private MovementSpeedModifierSystem _speed = default!;
+    [Dependency] private ChatSystem _chat = default!;
 
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    private ISawmill _sawmill = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
 
     public override void Initialize()
     {

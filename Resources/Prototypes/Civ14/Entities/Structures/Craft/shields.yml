@@ -713,13 +713,13 @@
               acts: ["Destruction"]
 
 - type: construction
-  name: щит нгуни
+  name: humanity-construction-civ13_shield_nguni_shield-name
   id: civ13_shield_nguni_shield
   graph: civ13_shield_nguni_shield
   startNode: start
   targetNode: end
   category: weapons
-  description: "Африканский деревянный щит."
+  description: humanity-construction-civ13_shield_nguni_shield-description
   icon:
     sprite: Civ14/Weapons/nguni_shield.rsi
     state: icon
@@ -741,13 +741,13 @@
     - node: end
       entity: civ13_shield_nguni_shield
 - type: construction
-  name: скутум
+  name: humanity-construction-civ13_shield_scutum_shield-name
   id: civ13_shield_scutum_shield
   graph: civ13_shield_scutum_shield
   startNode: start
   targetNode: end
   category: weapons
-  description: Прямоугольный щит со скруглёнными углами и кельтскими узорами.
+  description: humanity-construction-civ13_shield_scutum_shield-description
   icon:
     sprite: Civ14/Weapons/scutum.rsi
     state: icon
@@ -769,13 +769,13 @@
     - node: end
       entity: civ13_shield_scutum_shield
 - type: construction
-  name: чималли
+  name: humanity-construction-civ13_shield_chimalli-name
   id: civ13_shield_chimalli
   graph: civ13_shield_chimalli
   startNode: start
   targetNode: end
   category: weapons
-  description: Овальный щит народов Мезоамерики, украшенный перьями.
+  description: humanity-construction-civ13_shield_chimalli-description
   icon:
     sprite: Civ14/Weapons/chimalli.rsi
     state: icon

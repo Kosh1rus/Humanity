@@ -14,18 +14,18 @@ using Content.Shared.GameTicking;
 using Content.Shared.Humanity.Factions;
 using Robust.Shared.Timing;
 using Content.Shared.Weather;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Civ14.CivFactions;
 
-public sealed class CivFactionsSystem : EntitySystem
+public sealed partial class CivFactionsSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly ChatSystem _chatSystem = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!; // Use IEntityManager
-    [Dependency] private readonly GameTicker _gameTicker = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
+    private static readonly EntProtoId FactionRule = "FactionRule";
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private IEntityManager _entityManager = default!; // Use IEntityManager
+    [Dependency] private ServerGameTicker _gameTicker = default!;
+    [Dependency] private IGameTiming _timing = default!;
     private readonly Dictionary<NetUserId, (FactionData Faction, TimeSpan Expires)> _invites = new();
     private EntityUid? _factionsEntity;
     private CivFactionsComponent? _factionsComponent;
@@ -68,7 +68,7 @@ public sealed class CivFactionsSystem : EntitySystem
     private bool EnsureFactionsComponent()
     {
         if ((_gameTicker.CurrentPreset ?? _gameTicker.Preset)?.ID == "TDMWW2" ||
-            !_gameTicker.IsGameRuleActive("FactionRule"))
+            !_gameTicker.IsGameRuleActive(FactionRule))
         {
             Log.Info($"Factions are disabled on this map.");
             return false;

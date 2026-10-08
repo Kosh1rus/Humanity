@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   abstract: true
-  id: CableBase
+  id: CablePhysBase
   placement:
     mode: SnapgridCenter
   components:
@@ -13,31 +13,38 @@
   - type: Transform
     anchored: true
     noRot: true
-  # TODO: Remove both of these, same with CollideOnAnchor
   - type: Physics
     bodyType: Static
     canCollide: false
   - type: Fixtures
+  - type: CollideOnAnchor
+  - type: Appearance
+- type: entity
+  abstract: true
+  parent:
+  - CablePhysBase
+  - StructureHealthContainerWeak
+  id: CableBase
+  components:
+  - type: Visibility
+    layer: 1
   - type: Sprite
     drawdepth: ThinWire
     visible: false
   - type: Damageable
-    damageContainer: Inorganic
-    damageModifierSet: Metallic
+    damageModifierSet: RodMetalMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: &id001 !type:DamageTrigger
+        damage: 60
       behaviors:
-      - !type:DoActsBehavior
-        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/cig_snuff.ogg
   - type: SubFloorHide
-  - type: CollideOnAnchor
-  - type: Appearance
   - type: Electrified
     onHandInteract: false
-    onInteractUsing: false # wire-cutting handled separately.
+    onInteractUsing: false
     onBump: false
     requirePower: true
     highVoltageNode: power
@@ -49,7 +56,6 @@
     cost: 2
     delay: 0
     fx: EffectRCDConstruct0
-
 - type: entity
   parent: CableBase
   id: CableHV
@@ -65,41 +71,28 @@
     state: hvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: HVPower
   - type: Cable
     cableDroppedOnCutPrototype: CableHVStack1
     cableType: HighVoltage
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: *id001
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
           CableHVStack1:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: hvcable_
-  # TODO make this change on power
   - type: AmbientSound
     enabled: false
     volume: -14
     range: 2
     sound:
       path: /Audio/Ambience/Objects/emf_buzz.ogg
-
 - type: entity
   id: CableHVUncuttable
   parent: CableHV
@@ -107,7 +100,6 @@
   components:
   - type: Cable
     cuttingQuality: null
-
 - type: entity
   parent: CableBase
   id: CableMV
@@ -115,43 +107,33 @@
   description: A medium voltage power cable.
   components:
   - type: Sprite
-    color: Yellow
     sprite: Structures/Power/Cables/mv_cable.rsi
-    state: mvcable_0
+    layers:
+    - state: mvcable_0
+      color: Yellow
+    - state: mvstripes_0
   - type: Icon
-    color: Yellow
     sprite: Structures/Power/Cables/mv_cable.rsi
     state: mvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: MVPower
   - type: Cable
     cableDroppedOnCutPrototype: CableMVStack1
     cableType: MediumVoltage
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: *id001
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
           CableMVStack1:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: mvcable_
-
+    extraLayerPrefix: mvstripes_
 - type: entity
   id: CableMVUncuttable
   parent: CableMV
@@ -159,25 +141,22 @@
   components:
   - type: Cable
     cuttingQuality: null
-
 - type: entity
   parent: CableBase
   id: CableApcExtension
   name: LV power cable
-  description: A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
+  description: A cable used to connect machines to an APC.
   components:
   - type: Sprite
     color: Green
     sprite: Structures/Power/Cables/lv_cable.rsi
     state: lvcable_0
   - type: Icon
-    color: Green
     sprite: Structures/Power/Cables/lv_cable.rsi
     state: lvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: Apc
   - type: PowerProvider
     voltage: Apc
@@ -187,26 +166,15 @@
     cableType: Apc
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 100
-      behaviors: #excess damage (nuke?). avoid computational cost of spawning entities.
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
+    - trigger: *id001
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
           CableApcStack1:
             min: 1
             max: 1
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
   - type: CableVisualizer
     statePrefix: lvcable_
-
 - type: entity
   id: CableApcExtensionUncuttable
   parent: CableApcExtension
@@ -214,3 +182,71 @@
   components:
   - type: Cable
     cuttingQuality: null
+- type: entity
+  id: CableDet
+  parent:
+  - CablePhysBase
+  - BaseSecurityContraband
+  name: explosive cord
+  description: Spaghetti for people who hate walls.
+  components:
+  - type: Cable
+    cableDroppedOnCutPrototype: CableDetStack1
+    cableType: ExCable
+  - type: Sprite
+    sprite: Structures/Power/Cables/ex_cable.rsi
+    state: excable_0
+  - type: Icon
+    sprite: Structures/Power/Cables/ex_cable.rsi
+    state: excable_4
+  - type: Damageable
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTypeTrigger
+        damageType: Structural
+        damage: 120
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+      - !type:ExplodeBehavior ''
+    - trigger: !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+    - trigger: !type:DamageTrigger
+        damage: 35
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CableDetStack1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: CableVis
+    node: cordage
+  - type: NodeContainer
+    nodes:
+      cordage: !type:CableNode
+        nodeGroupID: ExCable
+  - type: CableVisualizer
+    statePrefix: excable_
+  - type: Explosive
+    explosionType: DemolitionCharge
+    totalIntensity: 10
+    intensitySlope: 5
+    maxIntensity: 5
+    canCreateVacuum: false
+  - type: ExplodeOnTrigger
+  - type: Construction
+    graph: DetCable
+    node: detonationCable
+  - type: Tag
+    tags:
+    - ExCable

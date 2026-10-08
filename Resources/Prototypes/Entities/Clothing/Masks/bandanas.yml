@@ -1,13 +1,14 @@
 - type: entity
-  parent: [ClothingMaskBaseButcherable, BaseFoldable]
+  parent:
+  - ClothingMaskBaseButcherable
+  - BaseFoldable
   id: ClothingMaskBandanaBase
   abstract: true
   components:
-  - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
-    foldedEquippedPrefix: "" # folding the bandana will toggles the mask, which adds the toggled prefix. This overrides that prefix.
+    foldedEquippedPrefix: ''
     foldedSlots:
     - HEAD
     unfoldedSlots:
@@ -23,19 +24,21 @@
   - type: Sprite
     layers:
     - state: icon_mask
-      map: [ "unfoldedLayer" ]
+      map:
+      - unfoldedLayer
     - state: icon
-      map: ["foldedLayer"]
+      map:
+      - foldedLayer
       visible: false
   - type: Tag
     tags:
     - Bandana
     - ClothMade
+    - Recyclable
   - type: HideLayerClothing
     slots:
     - Snout
     hideOnToggle: true
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandBlack
@@ -46,7 +49,6 @@
     sprite: Clothing/Head/Bandanas/black.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/black.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandBlue
@@ -57,7 +59,6 @@
     sprite: Clothing/Head/Bandanas/blue.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/blue.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandBotany
@@ -72,7 +73,7 @@
     tags:
     - WhitelistChameleon
     - ClothMade
-
+    - Recyclable
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandGold
@@ -83,7 +84,6 @@
     sprite: Clothing/Head/Bandanas/gold.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/gold.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandGreen
@@ -94,7 +94,6 @@
     sprite: Clothing/Head/Bandanas/green.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/green.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandGrey
@@ -105,7 +104,6 @@
     sprite: Clothing/Head/Bandanas/grey.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/grey.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandRed
@@ -116,7 +114,6 @@
     sprite: Clothing/Head/Bandanas/red.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/red.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandSkull
@@ -127,7 +124,6 @@
     sprite: Clothing/Head/Bandanas/skull.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/skull.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandMerc
@@ -138,7 +134,6 @@
     sprite: Clothing/Head/Bandanas/merc.rsi
   - type: Clothing
     sprite: Clothing/Head/Bandanas/merc.rsi
-
 - type: entity
   parent: ClothingMaskBandanaBase
   id: ClothingMaskBandBrown

@@ -1,5 +1,7 @@
-﻿using Content.Server.Explosion.Components;
+using System.Numerics;
+using Content.Server.Explosion.Components;
 using Content.Server.Weapons.Ranged.Systems;
+using Content.Shared.Trigger;
 using Robust.Server.GameObjects;
 using Robust.Shared.Containers;
 using Robust.Shared.Map;
@@ -7,12 +9,12 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Explosion.EntitySystems;
 
-public sealed class ProjectileGrenadeSystem : EntitySystem
+public sealed partial class ProjectileGrenadeSystem : EntitySystem
 {
-    [Dependency] private readonly GunSystem _gun = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedContainerSystem _container = default!;
-    [Dependency] private readonly TransformSystem _transformSystem = default!;
+    [Dependency] private GunSystem _gun = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedContainerSystem _container = default!;
+    [Dependency] private TransformSystem _transformSystem = default!;
 
 
     public override void Initialize()
@@ -45,8 +47,9 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
     /// </summary>
     private void OnFragTrigger(Entity<ProjectileGrenadeComponent> entity, ref TriggerEvent args)
     {
-        if (entity.Comp.Fragmented)
+        if (args.Key != entity.Comp.TriggerKey || entity.Comp.Fragmented)
             return;
+
         entity.Comp.Fragmented = true;
         FragmentIntoProjectiles(entity.Owner, entity.Comp, args.User);
         args.Handled = true;
@@ -62,12 +65,9 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
         var shootCount = 0;
         var totalCount = component.Container.ContainedEntities.Count + component.UnspawnedCount;
 
-        // Check for division by zero
+        // Just in case
         if (totalCount <= 0)
-        {
-            Logger.Warning($"ProjectileGrenade {ToPrettyString(uid)} has no projectiles to fragment into");
             return;
-        }
 
         var segmentAngle = 360f / totalCount;
 
@@ -87,8 +87,8 @@ public sealed class ProjectileGrenadeSystem : EntitySystem
             // velocity is randomized to make the projectiles look
             // slightly uneven, doesn't really change much, but it looks better
             var direction = angle.ToVec().Normalized();
-            var velocity = _random.NextVector2(component.MinVelocity, component.MaxVelocity);
-            _gun.ShootProjectile(contentUid, direction, velocity, uid, user);
+            var velocity = _random.NextFloat(component.MinVelocity, component.MaxVelocity);
+            _gun.ShootProjectile(contentUid, direction, Vector2.Zero, uid, user, speed: velocity);
         }
     }
 

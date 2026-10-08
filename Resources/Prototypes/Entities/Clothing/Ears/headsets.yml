@@ -5,125 +5,148 @@
   name: headset
   description: An updated, modular intercom that fits over the head. Takes encryption keys.
   components:
-    - type: ContainerContainer
-      containers:
-        key_slots: !type:Container
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyCommon
-    - type: Headset
-    - type: EncryptionKeyHolder
-      keySlots: 4
-    - type: Sprite
-      state: icon
-    - type: STWeight
-      self: 0.5
-    - type: Item
-      size: Small
-    - type: Clothing
-      slots:
-        - ears
-      sprite: Clothing/Ears/Headsets/base.rsi
-    - type: TelecomExempt
-    - type: GuideHelp
-      guides:
-        - Radio
-
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container ''
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+  - type: Headset
+  - type: EncryptionKeyHolder
+    keySlots: 4
+  - type: Sprite
+    state: icon
+  - type: STWeight
+    self: 0.5
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - ears
+    sprite: Clothing/Ears/Headsets/base.rsi
+  - type: TelecomExempt
+  - type: GuideHelp
+    guides:
+    - Radio
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetGrey
   name: passenger headset
   components:
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/base.rsi
-
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/base.rsi
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetCargo
   name: cargo headset
   description: A headset used by supply employees.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyCommon
-    - type: Sprite
-      sprite: Clothing/Ears/Headsets/cargo.rsi
-    - type: Clothing
-      sprite: Clothing/Ears/Headsets/cargo.rsi
-
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/cargo.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/cargo.rsi
+- type: entity
+  parent:
+  - ClothingHeadset
+  - BaseMagicalContraband
+  id: ClothingHeadsetWizard
+  name: wizard headset
+  description: A headset used by the dreaded space wizards.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyStationMaster
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/wizard.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/wizard.rsi
+- type: entity
+  parent:
+  - ClothingHeadset
+  - BaseHighlyIllegalContraband
+  id: ClothingHeadsetNinja
+  name: green headset
+  description: Who could refuse to wear this stylish black and green headset?
+  components:
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/ninja.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/ninja.rsi
+  - type: EmpResistance
+    strengthMultiplier: 0
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetSoviet
   name: Soviet headset
   description: A headset used by the Soviet Union.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeySoviet
-    - type: Sprite
-      sprite: Civ14/Objects/headset.rsi
-    - type: Clothing
-      sprite: Civ14/Objects/headset.rsi
-
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySoviet
+  - type: Sprite
+    sprite: Civ14/Objects/headset.rsi
+  - type: Clothing
+    sprite: Civ14/Objects/headset.rsi
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetUS
   name: US headset
   description: A headset used by the United States.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyUS
-    - type: Sprite
-      sprite: Civ14/Objects/headset.rsi
-    - type: Clothing
-      sprite: Civ14/Objects/headset.rsi
-
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyUS
+  - type: Sprite
+    sprite: Civ14/Objects/headset.rsi
+  - type: Clothing
+    sprite: Civ14/Objects/headset.rsi
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetInsurgents
   name: Insurgent headset
   description: A headset used by the Insurgents.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyInsurgents
-    - type: Sprite
-      sprite: Civ14/Objects/headset.rsi
-    - type: Clothing
-      sprite: Civ14/Objects/headset.rsi
-
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyInsurgents
+  - type: Sprite
+    sprite: Civ14/Objects/headset.rsi
+  - type: Clothing
+    sprite: Civ14/Objects/headset.rsi
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetBlugoslavia
   name: Blugoslavia headset
   description: A headset used by the Republic of Blugoslavia.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyBlugoslavia
-    - type: Sprite
-      sprite: Civ14/Objects/headset.rsi
-    - type: Clothing
-      sprite: Civ14/Objects/headset.rsi
-
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyBlugoslavia
+  - type: Sprite
+    sprite: Civ14/Objects/headset.rsi
+  - type: Clothing
+    sprite: Civ14/Objects/headset.rsi
 - type: entity
   parent: ClothingHeadset
   id: ClothingHeadsetUnitedNations
   name: UN headset
   description: A headset used by the United Nations.
   components:
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - EncryptionKeyUnitedNations
-    - type: Sprite
-      sprite: Civ14/Objects/headset.rsi
-    - type: Clothing
-      sprite: Civ14/Objects/headset.rsi
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyUnitedNations
+  - type: Sprite
+    sprite: Civ14/Objects/headset.rsi
+  - type: Clothing
+    sprite: Civ14/Objects/headset.rsi

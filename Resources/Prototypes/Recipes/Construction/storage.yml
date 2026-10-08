@@ -1,64 +1,78 @@
 - type: construction
+  abstract: true
+  id: BaseStorageStructure
+  category: construction-category-storage
+  placementMode: SnapgridCenter
+  conditions:
+  - !type:TileNotBlocked ''
+- type: construction
+  abstract: true
+  parent: BaseStorageStructure
+  id: BaseShelf
+  graph: Shelf
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition ''
+- type: construction
+  parent: BaseStorageStructure
+  id: FilingCabinet
+  graph: FilingCabinet
+  targetNode: filingCabinet
+  hide: true
+- type: construction
+  parent: FilingCabinet
+  id: TallCabinet
+  targetNode: tallCabinet
+  hide: true
+- type: construction
+  parent: FilingCabinet
+  id: ChestDrawer
+  targetNode: chestDrawer
+  hide: true
+- type: construction
+  parent: BaseStorageStructure
+  id: ShowCase
+  graph: GlassBox
+  targetNode: glassBox
+  hide: true
+- type: construction
+  parent: BaseShelf
   id: ShelfWood
-  name: wooden shelf
-  description: A convenient place to place, well, anything really.
-  graph: Shelf
-  startNode: start
   targetNode: ShelfWood
-  icon:
-    sprite: Structures/Storage/Shelfs/wood.rsi
-    state: base
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-  conditions:
-    - !type:WallmountCondition # Departmental
-
-
 - type: construction
+  parent: BaseShelf
+  id: ShelfMetal
+  targetNode: ShelfMetal
+  hide: true
+- type: construction
+  parent: BaseShelf
+  id: ShelfGlass
+  targetNode: ShelfGlass
+  hide: true
+- type: construction
+  parent: BaseShelf
+  id: ShelfRWood
+  targetNode: ShelfRWood
+  hide: true
+- type: construction
+  parent: BaseShelf
+  id: ShelfRMetal
+  targetNode: ShelfRMetal
+  hide: true
+- type: construction
+  parent: BaseShelf
+  id: ShelfRGlass
+  targetNode: ShelfRGlass
+  hide: true
+- type: construction
+  parent: BaseShelf
   id: ShelfBar
-  name: bar shelf
-  description: A convenient place for all your extra booze, specifically designed to hold more bottles!
-  graph: Shelf
-  startNode: start
   targetNode: ShelfBar
-  icon:
-    sprite: Structures/Storage/Shelfs/Departments/Service/bar.rsi
-    state: base
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-  conditions:
-    - !type:WallmountCondition
-
 - type: construction
+  parent: BaseShelf
   id: ShelfKitchen
-  name: kitchen shelf
-  description: Holds your knifes, spice, and everything nice!
-  graph: Shelf
-  startNode: start
   targetNode: ShelfKitchen
-  icon:
-    sprite: Structures/Storage/Shelfs/Departments/Service/kitchen.rsi
-    state: base
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-  conditions:
-    - !type:WallmountCondition
-
 - type: construction
+  parent: BaseShelf
   id: ShelfChemistry
-  name: chemical shelf
-  description: Perfect for keeping the most important chemicals safe, and out of the clumsy clowns hands!
-  graph: Shelf
-  startNode: start
   targetNode: ShelfChemistry
-  icon:
-    sprite: Structures/Storage/Shelfs/Departments/Medical/chemistry.rsi
-    state: base
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-  conditions:
-    - !type:WallmountCondition

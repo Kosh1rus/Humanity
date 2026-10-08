@@ -1,131 +1,132 @@
-- type: factionIcon
+- type: statusIcon
   id: ZombieFaction
   priority: 11
   showTo:
     components:
-      - ShowAntagIcons
-      - Zombie
+    - ShowAntagIcons
+    - Zombie
+    - InitialInfected
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Zombie
-
-- type: factionIcon
+- type: statusIcon
+  id: InitialInfectedFaction
+  priority: 11
+  showTo:
+    components:
+    - ShowAntagIcons
+    - InitialInfected
+    - Zombie
+  icon:
+    sprite: /Textures/Interface/Misc/job_icons.rsi
+    state: InitialInfected
+- type: statusIcon
   id: RevolutionaryFaction
   isShaded: true
   priority: 11
   showTo:
     components:
-      - ShowAntagIcons
-      - Revolutionary
+    - ShowAntagIcons
+    - Revolutionary
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Revolutionary
-
-- type: factionIcon
+- type: statusIcon
   id: HeadRevolutionaryFaction
   isShaded: true
   priority: 11
   showTo:
     components:
-      - ShowAntagIcons
-      - Revolutionary
+    - ShowAntagIcons
+    - Revolutionary
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: HeadRevolutionary
-
-- type: factionIcon
+- type: statusIcon
   id: SyndicateFaction
   priority: 0
   locationPreference: Left
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: Syndicate
-
 - type: factionIcon
   id: NomadsFaction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ2
-
 - type: factionIcon
   id: Nomads1Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ1
-
 - type: factionIcon
   id: Nomads2Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ2
-
 - type: factionIcon
   id: Nomads3Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ3
-
 - type: factionIcon
   id: Nomads4Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ4
-
 - type: factionIcon
   id: Nomads5Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ5
-
 - type: factionIcon
   id: Nomads6Faction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
+    - ShowAntagIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: civ6
-
 - type: factionIcon
   id: HostileFaction
   priority: 0
   locationPreference: Right
   showTo:
     components:
-      - ShowAntagIcons
-      - ShowSyndicateIcons
+    - ShowAntagIcons
+    - ShowSyndicateIcons
   icon:
     sprite: /Textures/Interface/Misc/civ_hud.rsi
     state: hostile

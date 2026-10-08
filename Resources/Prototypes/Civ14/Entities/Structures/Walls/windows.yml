@@ -1,130 +1,131 @@
 - type: entity
   parent: BaseRailing
   id: BaseCivWindow
-  name: "окно"
-  description: "Обычное окно."
+  name: окно
+  description: Обычное окно.
   abstract: true
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: drysod_window
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: drysod_window
-    - type: IsRoof
-    - type: Climbable
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.49,-0.49,0.49,0.49"
-          density: 1000
-          mask:
-            - TableMask
-          layer:
-            - LowImpassable
-    - type: Damageable
-      damageContainer: StructuralInorganic
-      damageModifierSet: Wood
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 90
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: drysod_window
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: drysod_window
+  - type: IsRoof
+  - type: Climbable
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.49,-0.49,0.49,0.49
+        density: 1000
+        mask:
+        - TableMask
+        layer:
+        - LowImpassable
+  - type: Damageable
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:DoActsBehavior
+        acts:
+        - Destruction
+  - type: Injurable
+    damageContainer: StructuralInorganic
 - type: entity
   parent: BaseCivWindow
   id: DirtWallWindow
-  name: "окно в глинобитной стене"
-  description: "Стена из высушенных глиняных кирпичей с окном."
+  name: окно в глинобитной стене
+  description: Стена из высушенных глиняных кирпичей с окном.
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: drysod_window
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: drysod_window
-    - type: Construction
-      agemin: 0
-      agemax: 8
-      node: end
-
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: drysod_window
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: drysod_window
+  - type: Construction
+    agemin: 0
+    agemax: 8
+    node: end
+    graph: HumanityDirtWallWindow
 - type: entity
   parent: BaseCivWindow
   id: StrawWallWindow
-  name: "окно в соломенной стене"
-  description: "Стена из соломы и сухих листьев с окном. Легко загорается."
+  name: окно в соломенной стене
+  description: Стена из соломы и сухих листьев с окном. Легко загорается.
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: straw_window
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: straw_window
-    - type: Construction
-      agemin: 0
-      agemax: 8
-      node: end
-
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: straw_window
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: straw_window
+  - type: Construction
+    agemin: 0
+    agemax: 8
+    node: end
+    graph: HumanityStrawWallWindow
 - type: entity
   parent: BaseCivWindow
   id: ClayWallWindow
-  name: "окно в стене из обожжённой глины"
-  description: "Стена из кирпичей обожжённой глины с окном."
+  name: окно в стене из обожжённой глины
+  description: Стена из кирпичей обожжённой глины с окном.
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: clay_windownew
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: clay_windownew
-    - type: Construction
-      agemin: 0
-      agemax: 8
-      node: end
-
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: clay_windownew
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: clay_windownew
+  - type: Construction
+    agemin: 0
+    agemax: 8
+    node: end
+    graph: HumanityClayWallWindow
 - type: entity
   parent: BaseCivWindow
   id: LogWallWindow
-  name: "окно в бревенчатой стене"
-  description: "Стена из брёвен твёрдой древесины с окном."
+  name: окно в бревенчатой стене
+  description: Стена из брёвен твёрдой древесины с окном.
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: log_window
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: log_window
-    - type: Construction
-      agemin: 0
-      agemax: 8
-      node: end
-
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: log_window
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: log_window
+  - type: Construction
+    agemin: 0
+    agemax: 8
+    node: end
+    graph: HumanityLogWallWindow
 - type: entity
   parent: BaseCivWindow
   id: WoodWindowClassic
-  name: "деревянное окно"
-  description: "Окно в деревенском стиле с деревянной рамой."
+  name: деревянное окно
+  description: Окно в деревенском стиле с деревянной рамой.
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
-      sprite: Civ14/Structures/windows.rsi
-      state: windownew_frame
-    - type: Icon
-      sprite: Civ14/Structures/windows.rsi
-      state: windownew_frame
-    - type: IconSmooth
-      key: walls
-      mode: NoSprite
-    - type: Construction
-      graph: WoodWindowClassic
-      agemin: 0
-      agemax: 8
-      node: end
+  - type: Sprite
+    drawdepth: SmallObjects
+    sprite: Civ14/Structures/windows.rsi
+    state: windownew_frame
+  - type: Icon
+    sprite: Civ14/Structures/windows.rsi
+    state: windownew_frame
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  - type: Construction
+    graph: WoodWindowClassic
+    agemin: 0
+    agemax: 8
+    node: end

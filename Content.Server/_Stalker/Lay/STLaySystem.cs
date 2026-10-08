@@ -1,4 +1,4 @@
-﻿using Content.Server._Stalker.Lay.Events;
+using Content.Server._Stalker.Lay.Events;
 using Content.Server.DoAfter;
 using Content.Shared._Stalker.Lay;
 using Content.Shared._Stalker.Lay.Events;
@@ -8,7 +8,7 @@ namespace Content.Server._Stalker.Lay;
 
 public sealed partial class STLaySystem : EntitySystem
 {
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
 
     public override void Initialize()
     {

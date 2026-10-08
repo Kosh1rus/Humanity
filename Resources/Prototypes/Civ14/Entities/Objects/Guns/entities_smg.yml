@@ -135,7 +135,7 @@
       maxAngle: 55
       angleIncrease: 5
       angleDecay: 20
-      fireRate: 6.0 
+      fireRate: 6.0
       soundGunshot:
         path: /Audio/Weapons/Guns/Fire/762x25.ogg
     - type: ItemSlots

@@ -1,9 +1,9 @@
 using Content.Server.Chat.Managers;
-using Content.Server.Database.Migrations.Postgres;
 using Content.Server.GameTicking.Rules.Components;
 using Content.Server.Station.Systems;
 using Content.Shared.Chat;
 using Content.Shared.GameTicking.Components;
+using Content.Shared.GameTicking.Rules;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Mind;
 using Content.Shared.Mobs;
@@ -20,14 +20,14 @@ namespace Content.Server.GameTicking.Rules;
 /// <summary>
 /// This handles logic and interactions related to <see cref="RespawnDeadRuleComponent"/>
 /// </summary>
-public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
+public sealed partial class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 {
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IPlayerManager _playerManager = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    private bool _announced = false;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IPlayerManager _playerManager = default!;
+    [Dependency] private ServerStationSystem _station = default!;
+    [Dependency] private ChatSystem _chat = default!;
+
     /// <inheritdoc/>
     public override void Initialize()
     {
@@ -53,33 +53,26 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
         var query = EntityQueryEnumerator<RespawnDeadRuleComponent, RespawnTrackerComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out _, out var tracker, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
             if (!tracker.Fixed)
             {
-                foreach (var (player, time) in tracker.RespawnQueue)
+                foreach (var (player, time) in tracker.RespawnQueue.ToArray())
                 {
                     if (_timing.CurTime < time)
                         continue;
 
-                    //This autorespawner is disabled since people can manually return to the lobby.
-                    //We just check on the spawn event if the player is not in the queue.
-                    //if (session.GetMind() is { } mind && TryComp<MindComponent>(mind, out var mindComp) && mindComp.OwnedEntity.HasValue)
-                    //    QueueDel(mindComp.OwnedEntity.Value);
-                    //GameTicker.MakeJoinGame(session, station, silent: true);
                     tracker.RespawnQueue.Remove(player);
                 }
             }
             else
             {
-                if (_timing.CurTime > tracker.GlobalTimer && _announced == false)
+                if (_timing.CurTime >= tracker.GlobalTimer)
                 {
-                    _announced = true;
                     var announcementMessage = "Подкрепления доступны. Вступайте через лобби.";
                     RespawnFixed(tracker);
                     _chat.DispatchGlobalAnnouncement(announcementMessage, "Round", false, null, Color.Yellow);
                     tracker.GlobalTimer = _timing.CurTime + tracker.RespawnDelay;
-                    _announced = false;
                 }
             }
         }
@@ -97,7 +90,7 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
         var query = EntityQueryEnumerator<RespawnDeadRuleComponent, RespawnTrackerComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var respawnRule, out var tracker, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
 
             if (respawnRule.AlwaysRespawnDead)
@@ -116,7 +109,7 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
         var query = EntityQueryEnumerator<RespawnDeadRuleComponent, RespawnTrackerComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var respawnRule, out var tracker, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
 
             if (respawnRule.AlwaysRespawnDead)
@@ -141,6 +134,7 @@ public sealed class RespawnRuleSystem : GameRuleSystem<RespawnDeadRuleComponent>
 
             if (respawnTracker.Comp.DeleteBody)
                 QueueDel(player);
+
             GameTicker.MakeJoinGame(player.Comp.PlayerSession, station, silent: true);
             return false;
         }

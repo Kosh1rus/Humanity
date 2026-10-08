@@ -1,3 +1,3 @@
 melee-stamina = Not enough stamina
 slow-on-damage-modifier-examine = Slowness from injuries is reduced by [color=yellow]{$mod}%[/color]
-wideswing-dodge-generic = {THE($target)} swiftly evades the broad swing!
+stamina-resistance-coefficient-value = - [color=lightyellow]Stamina[/color] damage reduced by [color=lightblue]{$value}%[/color].

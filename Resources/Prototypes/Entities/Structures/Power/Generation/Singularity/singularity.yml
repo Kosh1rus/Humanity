@@ -13,20 +13,20 @@
     bodyType: Dynamic
     bodyStatus: InAir
   - type: CanMoveInAir
-  - type: EventHorizon # To make the singularity consume things.
+  - type: TileFrictionModifier
+  - type: EventHorizon
     radius: 0.5
     canBreachContainment: false
     colliderFixtureId: EventHorizonCollider
     consumerFixtureId: EventHorizonConsumer
-  - type: GravityWell # To make the singularity attract things.
+  - type: GravityWell
     baseRadialAcceleration: 10
     maxRange: 4
   - type: Fixtures
     fixtures:
       EventHorizonCollider:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.35
+        shape: !type:PhysShapeCircle
+          radius: 0.35
         hard: true
         restitution: 0.8
         density: 99999
@@ -35,9 +35,8 @@
         layer:
         - SingularityLayer
       EventHorizonConsumer:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.35
+        shape: !type:PhysShapeCircle
+          radius: 0.35
         hard: false
         mask:
         - SingularityLayer
@@ -48,33 +47,33 @@
     level: 1
     radsPerLevel: 2
     energyLoss: 1
-  - type: RandomWalk # To make the singularity move around.
+  - type: RandomWalk
     maxSpeed: 2.5
     minSpeed: 1.875
   - type: SingularityDistortion
     falloffPower: 2.529822
     intensity: 3645
   - type: RadiationSource
-    slope: 0.2 # its emit really far away
+    slope: 0.2
     intensity: 2
   - type: PointLight
     enabled: true
     radius: 10
   - type: Appearance
-
   - type: WarpPoint
     follow: true
-    location: singularity
+    location: location-singularity
   - type: Sprite
     sprite: Structures/Power/Generation/Singularity/singularity_1.rsi
-    shader: unshaded
     layers:
-    - map: [ "VisualLevel" ]
+    - map:
+      - VisualLevel
       state: singularity_1
+      shader: unshaded
   - type: GenericVisualizer
     visuals:
       enum.SingularityAppearanceKeys.Singularity:
-       VisualLevel:
+        VisualLevel:
           1:
             sprite: Structures/Power/Generation/Singularity/singularity_1.rsi
             state: singularity_1

@@ -4,9 +4,9 @@ using Robust.Client.Player;
 
 namespace Content.Client.Humanity.Research;
 
-public sealed class NomadProgressSystem : EntitySystem
+public sealed partial class NomadProgressSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _players = default!;
+    [Dependency] private IPlayerManager _players = default!;
     private float _elapsed;
     public event Action<string, int>? ProgressChanged;
 

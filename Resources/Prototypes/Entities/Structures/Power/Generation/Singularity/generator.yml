@@ -1,7 +1,8 @@
 - type: entity
   id: SingularityGenerator
   name: gravitational singularity generator
-  description: An Odd Device which produces a Gravitational Singularity when set up. Comes with a temporary shutdown containment failsafe.
+  description: An Odd Device which produces a Gravitational Singularity when set up. Comes with a temporary shutdown containment
+    failsafe.
   placement:
     mode: SnapgridCenter
   components:
@@ -16,12 +17,9 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          # Using a circle here makes it a lot easier to pull it all the way from Cargo
-          !type:PhysShapeCircle
-            radius: 0.45
+        shape: !type:PhysShapeCircle
+          radius: 0.45
         density: 190
-        # Keep an eye on ParticlesProjectile when adjusting these
         mask:
         - MachineMask
         layer:
@@ -31,5 +29,3 @@
     noRot: true
   - type: Anchorable
   - type: Pullable
-
-

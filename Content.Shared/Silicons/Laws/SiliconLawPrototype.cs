@@ -1,4 +1,4 @@
-﻿using Content.Shared.FixedPoint;
+using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 
@@ -30,6 +30,12 @@ public partial class SiliconLaw : IComparable<SiliconLaw>, IEquatable<SiliconLaw
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public string? LawIdentifierOverride;
+
+    /// <summary>
+    /// A flag that marks whether or not a law is considered corrupted (e.g. by an ion storm).
+    /// </summary>
+    [DataField, ViewVariables(VVAccess.ReadWrite)]
+    public bool Corrupted;
 
     public int CompareTo(SiliconLaw? other)
     {
@@ -78,7 +84,6 @@ public partial class SiliconLaw : IComparable<SiliconLaw>, IEquatable<SiliconLaw
 /// This is a prototype for a law governing the behavior of silicons.
 /// </summary>
 [Prototype]
-[Serializable, NetSerializable]
 public sealed partial class SiliconLawPrototype : SiliconLaw, IPrototype
 {
     /// <inheritdoc/>

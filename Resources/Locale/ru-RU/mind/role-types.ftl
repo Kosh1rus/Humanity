@@ -13,4 +13,3 @@ role-type-silicon-name = Синтетик
 role-type-silicon-antagonist-name = Изменённый синтетик
 
 role-type-update-message = Ваша роль: [color = { $color }]{ $role }[/color]
-

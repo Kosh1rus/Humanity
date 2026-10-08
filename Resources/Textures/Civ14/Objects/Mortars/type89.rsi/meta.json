@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "type89",
+            "directions": 4
+        }
+    ],
+    "license": "AGPL-3.0",
+    "copyright": "Civilization 13 contributors. Source: https://github.com/civ13/civ13/blob/0d38999d5f9f987a944493f11c456537f39ac2f6/icons/obj/cannon_ball.dmi"
+}

@@ -1,10 +1,12 @@
-﻿- type: entity
+- type: entity
+  parent: BaseAction
   id: ActionConfigureMeleeSpeech
   name: Задать боевой клич
   description: Придумать клич, который вы будете выкрикивать при атаке!
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: BigItem
     priority: -20
     useDelay: 1
-    event: !type:MeleeSpeechConfigureActionEvent
+  - type: InstantAction
+    event: !type:MeleeSpeechConfigureActionEvent ''

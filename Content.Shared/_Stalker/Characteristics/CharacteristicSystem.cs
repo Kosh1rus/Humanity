@@ -1,11 +1,11 @@
-﻿using System.Runtime.CompilerServices;
+using System.Runtime.CompilerServices;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Stalker.Characteristics;
 
-public sealed class CharacteristicSystem : EntitySystem
+public sealed partial class CharacteristicSystem : EntitySystem
 {
-    [Robust.Shared.IoC.Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Robust.Shared.IoC.Dependency] private IPrototypeManager _prototype = default!;
 
     public IReadOnlyDictionary<CharacteristicType, Characteristic> Characteristics => _characteristics;
 

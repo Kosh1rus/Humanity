@@ -1,0 +1,29 @@
+- type: entity
+  name: человеческие останки
+  parent: BaseItem
+  id: HumanRemains
+  description: То, что осталось от человека.
+  components:
+  - type: Sprite
+    sprite: Civ14/Objects/tribal.rsi
+    state: remains1
+    layers:
+    - state: remains1
+      map:
+      - random
+  - type: RandomSprite
+    available:
+    - random:
+        remains1: ''
+        remains2: ''
+        remains3: ''
+        remains4: ''
+        remains5: ''
+        remains6: ''
+  - type: STWeight
+    self: 8
+  - type: Item
+    size: Huge
+  - type: Tag
+    tags:
+    - Trash

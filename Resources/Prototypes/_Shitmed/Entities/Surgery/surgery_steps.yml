@@ -549,7 +549,7 @@
       addOrganOnAdd:
         brain:
           - type: RatvarianLanguage
-          - type: Clumsy
+          - type: LobotomyClumsy
             # clumsyDamage:
             #   types:
             #     Blunt: 5
@@ -579,7 +579,7 @@
       removeOrganOnAdd:
         brain:
           - type: RatvarianLanguage
-          - type: Clumsy
+          - type: LobotomyClumsy
             # clumsyDamage:
             #   types:
             #     Blunt: 0

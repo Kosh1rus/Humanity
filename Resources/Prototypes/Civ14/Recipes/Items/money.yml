@@ -1,11 +1,11 @@
 - type: construction
-  name: "серебряные монеты"
+  name: humanity-construction-SilverCoins-name
   id: SilverCoins
   graph: SilverCoins
   startNode: start
   targetNode: end
   category: construction-category-misc
-  description: "Основная денежная единица. Десять монет равны одному серебряному слитку."
+  description: humanity-construction-SilverCoins-description
   icon: { sprite: Civ14/Objects/money.rsi, state: coin_silver_new_10 }
   objectType: Item
   agemin: 0

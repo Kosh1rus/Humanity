@@ -11,10 +11,10 @@ using Robust.Shared.Timing;
 
 namespace Content.Server.Humanity.Audio;
 
-public sealed class WorldWarPlayerVoiceSystem : EntitySystem
+public sealed partial class WorldWarPlayerVoiceSystem : EntitySystem
 {
-    [Dependency] private readonly SharedAudioSystem _audio = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private SharedAudioSystem _audio = default!;
+    [Dependency] private IGameTiming _timing = default!;
     private readonly Dictionary<EntityUid, TimeSpan> _nextCry = new();
     private TimeSpan _nextCleanup;
 
@@ -45,7 +45,7 @@ public sealed class WorldWarPlayerVoiceSystem : EntitySystem
         var wound = 0f;
         foreach (var (type, damage) in args.DamageDelta.DamageDict)
         {
-            if (type is "Piercing" or "Slash" or "Blunt" or "Heat" && damage > 0)
+            if (type.Id is "Piercing" or "Slash" or "Blunt" or "Heat" && damage > 0)
                 wound += (float) damage;
         }
         if (wound < 15f)

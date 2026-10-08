@@ -41,13 +41,11 @@ namespace Content.Shared.Body.Systems;
 
 public partial class SharedBodySystem
 {
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly MobStateSystem _mobState = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly DamageableSystem _damageable = default!;
-    [Dependency] private readonly StandingStateSystem _standing = default!;
+    private static readonly ProtoId<DamageModifierSetPrototype> PartDamageModifiers = "PartDamage";
+    [Dependency] private INetManager _net = default!;
+    [Dependency] private MobStateSystem _mobState = default!;
 
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
     private readonly ProtoId<DamageTypePrototype>[] _severingDamageTypes = { "Slash", "Piercing", "Blunt" };
     private const double IntegrityJobTime = 0.005;
     private readonly JobQueue _integrityJobQueue = new(IntegrityJobTime);
@@ -97,7 +95,7 @@ public partial class SharedBodySystem
             && damage <= entity.Comp.IntegrityThresholds[TargetIntegrity.HeavilyWounded]
             && _queryTargeting.HasComp(body)
             && !_mobState.IsDead(body))
-            _damageable.TryChangeDamage(entity, GetHealingSpecifier(entity), canSever: false, targetPart: GetTargetBodyPart(entity));
+            Damageable.ChangeBodyDamage(entity, GetHealingSpecifier(entity), canSever: false, targetPart: GetTargetBodyPart(entity));
     }
 
     public override void Update(float frameTime)
@@ -191,7 +189,7 @@ public partial class SharedBodySystem
             && TryComp(partEnt.Comp.Body.Value, out InventoryComponent? inventory))
             _inventory.RelayEvent((partEnt.Comp.Body.Value, inventory), ref args);
 
-        if (Prototypes.TryIndex<DamageModifierSetPrototype>("PartDamage", out var partModifierSet))
+        if (Prototypes.TryIndex(PartDamageModifiers, out var partModifierSet))
             args.Damage = DamageSpecifier.ApplyModifierSet(args.Damage, partModifierSet);
         args.Damage *= GetPartDamageModifier(partEnt.Comp.PartType);
     }
@@ -227,7 +225,7 @@ public partial class SharedBodySystem
                     continue;
                 }
 
-                var damageResult = _damageable.TryChangeDamage(part.FirstOrDefault().Id, damage * partMultiplier, ignoreResistances, canSever: canSever, armorPenetration: armorPenetration);
+                var damageResult = Damageable.ChangeBodyDamage(part.FirstOrDefault().Id, damage * partMultiplier, ignoreResistances, canSever: canSever, armorPenetration: armorPenetration);
                 if (damageResult != null && damageResult.GetTotal() != 0)
                     landed = true;
             }
@@ -439,7 +437,7 @@ public partial class SharedBodySystem
     {
         var damage = new DamageSpecifier()
         {
-            DamageDict = new Dictionary<string, FixedPoint2>()
+            DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>()
             {
                 { "Blunt", -part.SelfHealingAmount },
                 { "Slash", -part.SelfHealingAmount },
@@ -512,7 +510,7 @@ public partial class SharedBodySystem
 
     public bool CanEvadeDamage(EntityUid uid)
     {
-        return !_mobState.IsIncapacitated(uid) && !_standing.IsDown(uid);
+        return !_mobState.IsIncapacitated(uid) && !Standing.IsDown(uid);
     }
 
     public bool TryEvadeDamage(EntityUid uid, float evadeChance)

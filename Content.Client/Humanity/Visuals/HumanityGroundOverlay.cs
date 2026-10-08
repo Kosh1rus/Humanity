@@ -30,7 +30,7 @@ public sealed class HumanityGroundOverlay(IEntityManager entities) : GridOverlay
         {
             var id = _tiles[tile.Tile.TypeId].ID;
             if (!(id.Contains("Dirt", StringComparison.Ordinal) || id.Contains("Grass", StringComparison.Ordinal)) ||
-                !_weather.CanWeatherAffect(Grid.Owner, Grid.Comp, tile, roof))
+                !_weather.CanWeatherAffect((Grid.Owner, Grid.Comp, roof), tile))
                 continue;
             var seed = unchecked((uint)(tile.GridIndices.X * 73856093 ^ tile.GridIndices.Y * 19349663));
             seed ^= seed >> 13;

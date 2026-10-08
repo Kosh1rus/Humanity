@@ -1,11 +1,11 @@
 - type: construction
-  name: "деревянный стол"
+  name: humanity-construction-TableWoodClassic-name
   id: TableWoodClassic
   graph: TableWoodClassic
   startNode: start
   targetNode: end
   category: construction-category-furniture
-  description: "Грубо сколоченный деревянный стол."
+  description: humanity-construction-TableWoodClassic-description
   icon: { sprite: Civ14/Structures/old_table4.rsi, state: full }
   objectType: Structure
   agemin: 0

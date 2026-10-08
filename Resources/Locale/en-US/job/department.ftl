@@ -4,21 +4,11 @@ department-Command = Command
 department-CentralCommand = Central Command
 department-Engineering = Engineering
 department-Medical = Medical
-department-Security = Security
 department-Science = Science
+department-Security = Security
+department-Service = Service
 department-Silicon = Silicon
+department-Task-Force = Task Force
 department-Specific = Station specific
 
-department-Nomads = Nomads
-department-French = France
-department-English = England
-department-German = Germany
-department-Soviet = Soviet Union
-department-US = United States
-department-SovietCW = Soviet Union
-department-Insurgents = Insurgents
-department-Blugoslavia = Blugoslavia
-department-UnitedNations = United Nations
-
-department-Gulag-Soviets = Soviets
-department-Gulag-Prisoners = Prisoners
+department-Unknown = Unknown

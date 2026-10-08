@@ -4,35 +4,34 @@
   name: joint
   description: A roll of dried plant matter wrapped in thin paper.
   components:
-    - type: Sprite
-      sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
-      state: unlit-icon
-    - type: Tag
-      tags:
-        - Cigarette
-        - Trash
-    - type: SpaceGarbage
-    - type: Clothing
-      sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
-      slots: [mask]
-      equippedPrefix: unlit
-    - type: STWeight
-      self: 0.75
-    - type: Item
-      size: Tiny
-    - type: Construction
-      graph: smokeableJoint
-      node: joint
-    - type: SolutionContainerManager
-      solutions:
-        smokable:
-          maxVol: 30
-          reagents:
-            - ReagentId: THC
-              Quantity: 20
-    - type: RandomMetadata
-      nameSegments: [NamesRollie]
-
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+    - Cigarette
+    - Trash
+  - type: SpaceGarbage
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
+    slots:
+    - mask
+    equippedPrefix: unlit
+  - type: Item
+    size: Tiny
+  - type: Construction
+    graph: smokeableJoint
+    node: joint
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: THC
+        Quantity: 20
+  - type: RandomMetadata
+    nameSegments:
+    - NamesRollie
+  - type: STWeight
+    self: 0.75
 - type: entity
   id: JointRainbow
   parent: Joint
@@ -40,62 +39,56 @@
   suffix: Rainbow
   description: A roll of dried plant matter wrapped in thin paper. Seems to be colorful inside.
   components:
-    - type: Construction
-      graph: smokeableJointRainbow
-      node: jointRainbow
-    - type: SolutionContainerManager
-      solutions:
-        smokable:
-          maxVol: 20
-          reagents:
-            - ReagentId: SpaceDrugs
-              Quantity: 4
-            - ReagentId: Lipolicide
-              Quantity: 4
-            - ReagentId: MindbreakerToxin
-              Quantity: 2.66
-            - ReagentId: Happiness
-              Quantity: 2.66
-            #       - ReagentId: ColorfulReagent
-            #         Quantity: 1.33
-            - ReagentId: Psicodine
-              Quantity: 0.8
-
+  - type: Construction
+    graph: smokeableJointRainbow
+    node: jointRainbow
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SpaceDrugs
+        Quantity: 10
+      - ReagentId: Lipolicide
+        Quantity: 5
+      - ReagentId: MindbreakerToxin
+        Quantity: 5
+      - ReagentId: Happiness
+        Quantity: 5
+      - ReagentId: Psicodine
+        Quantity: 3.67
 - type: entity
   id: Blunt
   parent: BaseCigar
   name: blunt
   description: A roll of dried plant matter wrapped in a dried tobacco leaf.
   components:
-    - type: Sprite
-      sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
-      state: unlit-icon
-    - type: Tag
-      tags:
-        - Cigarette
-        - Trash
-    - type: SpaceGarbage
-    - type: Clothing
-      sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
-      slots: [mask]
-      equippedPrefix: unlit
-    - type: STWeight
-      self: 0.75
-    - type: Item
-      size: Tiny
-    - type: Construction
-      graph: smokeableBlunt
-      node: blunt
-    - type: SolutionContainerManager
-      solutions:
-        smokable:
-          maxVol: 30
-          reagents:
-            - ReagentId: THC
-              Quantity: 20
-    - type: RandomMetadata
-      nameSegments: [NamesRollie]
-
+  - type: Sprite
+    sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
+    state: unlit-icon
+  - type: Tag
+    tags:
+    - Cigarette
+    - Trash
+  - type: SpaceGarbage
+  - type: Clothing
+    sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
+    slots:
+    - mask
+    equippedPrefix: unlit
+  - type: Item
+    size: Tiny
+  - type: Construction
+    graph: smokeableBlunt
+    node: blunt
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: THC
+        Quantity: 20
+  - type: RandomMetadata
+    nameSegments:
+    - NamesRollie
+  - type: STWeight
+    self: 0.75
 - type: entity
   id: BluntRainbow
   parent: Blunt
@@ -103,23 +96,19 @@
   suffix: Rainbow
   description: A roll of dried plant matter wrapped in a dried tobacco leaf. Seems to be colorful inside.
   components:
-    - type: Construction
-      graph: smokeableBluntRainbow
-      node: bluntRainbow
-    - type: SolutionContainerManager
-      solutions:
-        smokable:
-          maxVol: 20
-          reagents:
-            - ReagentId: SpaceDrugs
-              Quantity: 4
-            - ReagentId: Lipolicide
-              Quantity: 4
-            - ReagentId: MindbreakerToxin
-              Quantity: 2.66
-            - ReagentId: Happiness
-              Quantity: 2.66
-            #       - ReagentId: ColorfulReagent
-            #         Quantity: 1.33
-            - ReagentId: Psicodine
-              Quantity: 0.8
+  - type: Construction
+    graph: smokeableBluntRainbow
+    node: bluntRainbow
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: SpaceDrugs
+        Quantity: 10
+      - ReagentId: Lipolicide
+        Quantity: 5
+      - ReagentId: MindbreakerToxin
+        Quantity: 5
+      - ReagentId: Happiness
+        Quantity: 5
+      - ReagentId: Psicodine
+        Quantity: 3.67

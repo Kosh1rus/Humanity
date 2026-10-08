@@ -13,11 +13,11 @@
   fireStates: 3
   sound:
     collection: CivExplosion
-  smallSound: 
+  smallSound:
      collection: CivExplosionSmall
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar
 
 - type: explosion
@@ -35,9 +35,9 @@
   fireStates: 3
   sound:
     collection: CivExplosionGrenade
-  smallSound: 
+  smallSound:
      collection: CivExplosionGrenade
-  soundFar: 
+  soundFar:
      collection: CivExplosionDistant
-  smallSoundFar: 
+  smallSoundFar:
      collection: CivExplosionDistantFar

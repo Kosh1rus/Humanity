@@ -1,0 +1,36 @@
+- type: tile
+  id: FloorGreenCircuit
+  parent: BaseStationTile
+  name: tiles-green-circuit-floor
+  sprite: /Textures/Tiles/green_circuit.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemGCircuit
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorBlueCircuit
+  parent: BaseStationTile
+  name: tiles-blue-circuit-floor
+  sprite: /Textures/Tiles/blue_circuit.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemBCircuit
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorRedCircuit
+  parent: BaseStationTile
+  name: tiles-red-circuit-floor
+  sprite: /Textures/Tiles/red_circuit.png
+  variants: 1
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemRCircuit
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000

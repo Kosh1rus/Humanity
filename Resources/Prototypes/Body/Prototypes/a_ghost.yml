@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Aghost
-  name: "aghost"
+  name: aghost
   root: torso
   slots:
     torso:

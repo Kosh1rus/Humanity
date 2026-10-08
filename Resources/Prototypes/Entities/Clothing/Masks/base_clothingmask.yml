@@ -3,48 +3,66 @@
   parent: Clothing
   id: ClothingMaskBase
   components:
-    - type: Sprite
-      state: icon
-    - type: STWeight
-      self: 0.1
-    - type: Item
-      size: Small
-    - type: Clothing
-      slots: [mask]
-    - type: StaticPrice
-      price: 25
-
+  - type: Sprite
+    state: icon
+  - type: STWeight
+    self: 0.1
+  - type: Item
+    size: Small
+  - type: Clothing
+    slots:
+    - mask
+  - type: StaticPrice
+    price: 25
 - type: entity
   abstract: true
   parent: ClothingMaskBase
   id: ClothingMaskPullableBase
   components:
-    - type: Mask
-
+  - type: Mask
 - type: entity
+  parent: BaseAction
   id: ActionToggleMask
   name: Toggle Mask
   description: Handy, but prevents insertion of pie into your pie hole.
   components:
-    - type: InstantAction
-      icon: { sprite: Clothing/Mask/gas.rsi, state: icon }
-      iconOn: Interface/Default/blocked.png
-      event: !type:ToggleMaskEvent
-
+  - type: Action
+  - type: Sprite
+    sprite: Clothing/Mask/gas.rsi
+    layers:
+    - state: icon
+      map:
+      - enum.ActionVisuals.Icon
+    - texture: Interface/Default/blocked.png
+      map:
+      - enum.ActionVisuals.IconToggled
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleMaskEvent ''
 - type: entity
-  id: ClothingMaskBaseButcherable
-  parent: ClothingMaskBase
   abstract: true
+  parent:
+  - SolutionFood
+  - SolutionToolSmall
+  - ClothingMaskBase
+  - BaseSlicingRefinable
+  id: ClothingMaskBaseButcherable
   components:
-    - type: Food
-      requiresSpecialDigestion: true
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 10
-          reagents:
-            - ReagentId: Fiber
-              Quantity: 10
-    - type: Tag
-      tags:
-        - ClothMade
+  - type: ToolRefinable
+    refineResult:
+    - id: MaterialCloth1
+      amount: 1
+  - type: PhysicalComposition
+    materialComposition:
+      Cloth: 50
+  - type: Edible
+    requiresSpecialDigestion: true
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Fiber
+        Quantity: 15
+  - type: Tag
+    tags:
+    - ClothMade
+    - Recyclable

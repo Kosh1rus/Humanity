@@ -1,14 +1,20 @@
-﻿- type: entity
+- type: entity
+  parent: BaseAction
   id: ActionToggleInternals
   name: Переключить подачу воздуха
   description: Дышать из надетого баллона. Также нужна надетая дыхательная маска.
   components:
-  - type: InstantAction
-    icon:
-      sprite: Interface/Alerts/internals.rsi
-      state: internal2
-    iconOn:
-      sprite: Interface/Alerts/internals.rsi
-      state: internal1
-    event: !type:ToggleActionEvent
+  - type: Action
     useDelay: 1
+  - type: Sprite
+    sprite: Interface/Alerts/internals.rsi
+    layers:
+    - state: internal2
+      map:
+      - enum.ActionVisuals.Icon
+    - state: internal1
+      map:
+      - enum.ActionVisuals.IconToggled
+      visible: false
+  - type: InstantAction
+    event: !type:ToggleActionEvent ''

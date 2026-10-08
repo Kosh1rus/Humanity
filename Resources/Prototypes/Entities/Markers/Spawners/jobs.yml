@@ -1,37 +1,54 @@
-# Base
-
 - type: entity
   id: SpawnPointJobBase
   parent: MarkerBase
   abstract: true
   suffix: Job Spawn
   components:
-    - type: SpawnPoint
-      spawn_type: Job
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-
+  - type: SpawnPoint
+    spawn_type: Job
+  - type: Sprite
+    sprite: Markers/jobs.rsi
 - type: entity
   name: observer spawn point
   id: SpawnPointObserver
   parent: MarkerBase
   components:
-    - type: Sprite
-      sprite: Markers/jobs.rsi
-      layers:
-        - state: green
-        - sprite: Mobs/Ghosts/ghost_human.rsi
-          state: icon
-      state: observer
-    - type: SpawnPoint
-      spawn_type: Observer
-
+  - type: Sprite
+    sprite: Markers/jobs.rsi
+    layers:
+    - state: green
+    - sprite: Mobs/Ghosts/ghost_human.rsi
+      state: icon
+    state: observer
+  - type: SpawnPoint
+    spawn_type: Observer
 - type: entity
   name: latejoin spawn point
   id: SpawnPointLatejoin
   parent: SpawnPointJobBase
   components:
-    - type: Sprite
-      state: green
-    - type: SpawnPoint
-      spawn_type: LateJoin
+  - type: Sprite
+    state: green
+  - type: SpawnPoint
+    spawn_type: LateJoin
+- type: entity
+  name: any job spawn point
+  id: SpawnPointAnyJob
+  parent: SpawnPointJobBase
+  components:
+  - type: Sprite
+    state: green
+  - type: SpawnPoint
+    spawn_type: Job
+    job_id: null
+- type: entity
+  id: SpawnPointTramDriver
+  parent: SpawnPointJobBase
+  name: tramdriver
+  components:
+  - type: SpawnPoint
+    job_id: TramDriver
+  - type: Sprite
+    layers:
+    - state: green
+    - state: tramdriver

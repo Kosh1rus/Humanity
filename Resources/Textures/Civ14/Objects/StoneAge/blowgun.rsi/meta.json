@@ -16,6 +16,11 @@
         },
         {
             "name": "icon"
+        },
+        {
+            "name": "equipped-BELT",
+            "directions": 4
         }
-    ]
+    ],
+    "license": "AGPL-3.0"
 }

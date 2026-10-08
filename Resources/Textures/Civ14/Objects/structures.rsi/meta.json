@@ -1625,6 +1625,66 @@
         {
             "name": "cliffside_corner",
             "directions": 4
+        },
+        {
+            "name": "unused-blank"
+        },
+        {
+            "name": "barricade sareas"
+        },
+        {
+            "name": "fence0-4"
+        },
+        {
+            "name": "fence0-8"
+        },
+        {
+            "name": "fence1-2"
+        },
+        {
+            "name": "fence4-8-b"
+        },
+        {
+            "name": "fence4-8"
+        },
+        {
+            "name": "fence5"
+        },
+        {
+            "name": "fence6"
+        },
+        {
+            "name": "table-old"
+        },
+        {
+            "name": "table_middle-old"
+        },
+        {
+            "name": "_____"
+        },
+        {
+            "name": "barbwire - sareas",
+            "directions": 4
+        },
+        {
+            "name": "table_1tileendtable-old",
+            "directions": 4
+        },
+        {
+            "name": "table_1tilethick-old",
+            "directions": 8
+        },
+        {
+            "name": "table_dir-old",
+            "directions": 8
+        },
+        {
+            "name": "table_dir2-old",
+            "directions": 4
+        },
+        {
+            "name": "table_dir3-old",
+            "directions": 8
         }
     ]
 }

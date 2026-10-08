@@ -12,14 +12,13 @@ namespace Content.Server._Stalker.Teleports.LocalTeleport;
 /// <summary>
 /// Use to teleport entities between maps/grids/tiles. Just spawn two portals with the same name.
 /// </summary>
-public sealed class LocalTeleportSystem : SharedTeleportSystem
+public sealed partial class LocalTeleportSystem : SharedTeleportSystem
 {
-    [Dependency] private readonly PullingSystem _pulling = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly SharedTransformSystem _xformSystem = default!;
-    [Dependency] private readonly LinkedEntitySystem _linkedEntitySystem = default!;
-    [Dependency] private readonly IEntityManager _entMan = default!;
-    [Dependency] private readonly AccessReaderSystem _accessReaderSystem = default!;
+    [Dependency] private PullingSystem _pulling = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private LinkedEntitySystem _linkedEntitySystem = default!;
+    [Dependency] private IEntityManager _entMan = default!;
+    [Dependency] private AccessReaderSystem _accessReaderSystem = default!;
     public override void Initialize()
     {
         SubscribeLocalEvent<LocalTeleportComponent, StartCollideEvent>(OnStartCollide);

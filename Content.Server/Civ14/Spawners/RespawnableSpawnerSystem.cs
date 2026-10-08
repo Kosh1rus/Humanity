@@ -6,11 +6,11 @@ using Robust.Shared;
 
 namespace Content.Server.Spawners;
 
-public sealed class RespawnableSpawnerSystem : EntitySystem
+public sealed partial class RespawnableSpawnerSystem : EntitySystem
 {
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
+    [Dependency] private IGameTiming _gameTiming = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     public override void Initialize()
     {

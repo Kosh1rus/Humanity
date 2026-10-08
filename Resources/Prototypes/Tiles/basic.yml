@@ -1,0 +1,430 @@
+- type: tile
+  id: FloorSteel
+  parent: BaseStationTile
+  name: tiles-steel-floor
+  sprite: /Textures/Tiles/steel.png
+  itemDrop: FloorTileItemSteel
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelMini
+  parent: BaseStationTile
+  name: tiles-steel-floor-mini
+  sprite: /Textures/Tiles/steel_mini.png
+  itemDrop: FloorTileItemSteelMini
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelPavement
+  parent: BaseStationTile
+  name: tiles-steel-floor-pavement
+  sprite: /Textures/Tiles/steel_pavement.png
+  itemDrop: FloorTileItemSteelPavement
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelMono
+  parent: BaseStationTile
+  name: tiles-steel-floor-mono
+  sprite: /Textures/Tiles/steel_mono.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemSteelMono
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelPavementVertical
+  parent: BaseStationTile
+  name: tiles-steel-floor-pavement-vertical
+  sprite: /Textures/Tiles/steel_pavement_vertical.png
+  itemDrop: FloorTileItemSteelPavementVertical
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelHerringbone
+  parent: BaseStationTile
+  name: tiles-steel-floor-herringbone
+  sprite: /Textures/Tiles/steel_herringbone.png
+  itemDrop: FloorTileItemSteelHerringbone
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepTile
+  heatCapacity: 10000
+- type: tile
+  parent: BaseStationTile
+  id: FloorSteelVerticalSlatsBordered
+  name: tiles-steel-floor-vertical-slats-bordered
+  sprite: /Textures/Tiles/Basic/Gray/gray-vertical-slats.png
+  itemDrop: FloorTileItemSteelVerticalSlatsBordered
+- type: tile
+  parent: BaseStationTile
+  id: FloorSteelHorizontalSlatsBordered
+  name: tiles-steel-floor-horizontal-slats-bordered
+  sprite: /Textures/Tiles/Basic/Gray/gray-horizontal-slats.png
+  itemDrop: FloorTileItemSteelHorizontalSlatsBordered
+- type: tile
+  id: FloorTechMaint2
+  parent: BaseStationTile
+  name: tiles-techmaint2-floor
+  sprite: /Textures/Tiles/steel_maint.png
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemSteelMaint
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorPlastic
+  parent: BaseStationTile
+  name: tiles-plastic-floor
+  sprite: /Textures/Tiles/plastic.png
+  itemDrop: FloorTileItemSteel
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorSteelDamaged
+  parent: BaseStationTile
+  name: tiles-steel-floor
+  sprite: /Textures/Tiles/steel_damaged.png
+  variants: 5
+  itemDrop: FloorTileItemSteel
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepFloor
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhite
+  parent: BaseStationTile
+  name: tiles-white-floor
+  sprite: /Textures/Tiles/white.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhiteMini
+  parent: BaseStationTile
+  name: tiles-white-floor-mini
+  sprite: /Textures/Tiles/white_mini.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhiteMini
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  parent: BaseStationTile
+  id: FloorWhiteVerticalSlatsBordered
+  name: tiles-white-floor-vertical-slats-bordered
+  sprite: /Textures/Tiles/Basic/White/white-vertical-slats.png
+  itemDrop: FloorTileItemWhiteVerticalSlatsBordered
+- type: tile
+  parent: BaseStationTile
+  id: FloorWhiteHorizontalSlatsBordered
+  name: tiles-white-floor-horizontal-slats-bordered
+  sprite: /Textures/Tiles/Basic/White/white-horizontal-slats.png
+  itemDrop: FloorTileItemWhiteHorizontalSlatsBordered
+- type: tile
+  id: FloorWhitePavement
+  parent: BaseStationTile
+  name: tiles-white-floor-pavement
+  sprite: /Textures/Tiles/white_pavement.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhitePavement
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhiteMono
+  parent: BaseStationTile
+  name: tiles-white-floor-mono
+  sprite: /Textures/Tiles/white_mono.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhiteMono
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhitePavementVertical
+  parent: BaseStationTile
+  name: tiles-white-floor-pavement-vertical
+  sprite: /Textures/Tiles/white_pavement_vertical.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhitePavementVertical
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhiteHerringbone
+  parent: BaseStationTile
+  name: tiles-white-floor-herringbone
+  sprite: /Textures/Tiles/white_herringbone.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhiteHerringbone
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorWhitePlastic
+  parent: BaseStationTile
+  name: tiles-plastic-white-floor
+  sprite: /Textures/Tiles/white_plastic.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemWhite
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDark
+  parent: BaseStationTile
+  name: tiles-dark-floor
+  sprite: /Textures/Tiles/dark.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDarkMini
+  parent: BaseStationTile
+  name: tiles-dark-floor-mini
+  sprite: /Textures/Tiles/dark_mini.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDarkMini
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  parent: BaseStationTile
+  id: FloorDarkVerticalSlatsBordered
+  name: tiles-dark-floor-vertical-slats-bordered
+  sprite: /Textures/Tiles/Basic/Dark/dark-vertical-slats.png
+  itemDrop: FloorTileItemDarkVerticalSlatsBordered
+- type: tile
+  parent: BaseStationTile
+  id: FloorDarkHorizontalSlatsBordered
+  name: tiles-dark-floor-horizontal-slats-bordered
+  sprite: /Textures/Tiles/Basic/Dark/dark-horizontal-slats.png
+  itemDrop: FloorTileItemDarkHorizontalSlatsBordered
+- type: tile
+  id: FloorDarkPavement
+  parent: BaseStationTile
+  name: tiles-dark-floor-pavement
+  sprite: /Textures/Tiles/dark_pavement.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDarkPavement
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDarkMono
+  parent: BaseStationTile
+  name: tiles-dark-floor-mono
+  sprite: /Textures/Tiles/dark_mono.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDarkMono
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDarkPavementVertical
+  parent: BaseStationTile
+  name: tiles-dark-floor-pavement-vertical
+  sprite: /Textures/Tiles/dark_pavement_vertical.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDarkPavementVertical
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDarkHerringbone
+  parent: BaseStationTile
+  name: tiles-dark-floor-herringbone
+  sprite: /Textures/Tiles/dark_herringbone.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDarkHerringbone
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorDarkPlastic
+  parent: BaseStationTile
+  name: tiles-plastic-dark-floor
+  sprite: /Textures/Tiles/dark_plastic.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: FloorTileItemDark
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorTechMaintDark
+  parent: BaseStationTile
+  name: tiles-techmaint-floor-dark
+  sprite: /Textures/Tiles/Basic/Dark/dark-maint.png
+  footstepSounds:
+    collection: FootstepHull
+  itemDrop: FloorTileItemTechmaintDark

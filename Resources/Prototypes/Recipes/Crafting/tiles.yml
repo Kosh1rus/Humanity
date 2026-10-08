@@ -1,14 +1,43 @@
-# These should be lathe recipes but lathe code sucks so hard rn so they'll be crafted by hand.
-
 - type: construction
-  name: wood floor
+  abstract: true
+  id: BaseTile
+  category: construction-category-tiles
+  objectType: Item
+- type: construction
+  parent: BaseTile
+  id: TileSteel
+  graph: TileSteel
+  targetNode: steeltile
+  hide: true
+- type: construction
+  parent: BaseTile
   id: TileWood
   graph: TileWood
-  startNode: start
   targetNode: woodtile
-  category: construction-category-tiles
-  description: "Four pieces of wooden flooring."
-  icon: { sprite: Objects/Tiles/tile.rsi, state: wood }
-  objectType: Item
   agemin: 0
   agemax: 8
+  description: humanity-construction-TileWood-description
+- type: construction
+  parent: BaseTile
+  id: TileWhite
+  graph: TileWhite
+  targetNode: whitetile
+  hide: true
+- type: construction
+  parent: BaseTile
+  id: TileDark
+  graph: TileDark
+  targetNode: darktile
+  hide: true
+- type: construction
+  parent: BaseTile
+  id: TileFlesh
+  graph: TileFlesh
+  targetNode: fleshTile
+  hide: true
+- type: construction
+  parent: BaseTile
+  id: TileWoodLarge
+  graph: TileWoodLarge
+  targetNode: woodtilelarge
+  hide: true

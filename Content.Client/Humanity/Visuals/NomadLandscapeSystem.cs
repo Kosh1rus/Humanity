@@ -10,15 +10,15 @@ using Robust.Shared.Random;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class NomadLandscapeSystem : EntitySystem
+public sealed partial class NomadLandscapeSystem : EntitySystem
 {
-    [Dependency] private readonly IOverlayManager _overlays = default!;
-    [Dependency] private readonly SharedTransformSystem _transforms = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly ITileDefinitionManager _tiles = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly HumanityAtmosphereSystem _atmosphere = default!;
-    [Dependency] private readonly FoliageAtmosphereSystem _foliage = default!;
+    [Dependency] private IOverlayManager _overlays = default!;
+    [Dependency] private SharedTransformSystem _transforms = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private ITileDefinitionManager _tiles = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private HumanityAtmosphereSystem _atmosphere = default!;
+    [Dependency] private FoliageAtmosphereSystem _foliage = default!;
     private readonly Dictionary<EntityUid, MapCoordinates> _positions = new();
     internal readonly List<LandscapeMark> Marks = new();
     private readonly HashSet<(EntityUid Grid, Vector2i Tile)> _water = new();

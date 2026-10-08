@@ -1,342 +1,396 @@
 - type: construction
-  name: stool
-  id: Stool
-  graph: Seat
-  startNode: start
-  targetNode: stool
+  abstract: true
+  id: BaseFurniture
   category: construction-category-furniture
-  description: You sit in this. Either by will or force.
-  icon:
-    sprite: Civ14/Objects/bed_chair.rsi
-    state: stool_wood
-    objectType: Structure
-  agemin: 0
-  agemax: 8
   placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
 - type: construction
-  name: wooden chair
-  id: ChairWood
+  abstract: true
+  parent: BaseFurniture
+  id: BaseChair
   graph: Seat
-  startNode: start
-  targetNode: chairWood
-  category: construction-category-furniture
-  description: You sit in this. Either by will or force.
-  icon:
-    sprite: Civ14/Objects/bed_chair.rsi
-    state: wooden_chair
-    objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
   conditions:
-    - !type:TileNotBlocked
-
+  - !type:TileNotBlocked ''
 - type: construction
-  name: wooden bench
-  id: ChairWoodBench
-  graph: Seat
-  startNode: start
-  targetNode: chairWoodBench
-  category: construction-category-furniture
-  description: Did you get a splinter? Well, at least it’s eco friendly.
-  icon:
-    sprite: Structures/Furniture/chairs.rsi
-    state: wooden-bench
-    objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: construction
-  name: wood table
-  id: TableWood
+  abstract: true
+  parent: BaseFurniture
+  id: BaseTable
   graph: Table
-  startNode: start
-  targetNode: TableWood
-  category: construction-category-furniture
-  description: Do not apply fire to this. Rumour says it burns easily.
-  icon:
-    sprite: Structures/Furniture/Tables/wood.rsi
-    state: full
-    objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
+  canRotate: false
   conditions:
-    - !type:TileNotBlocked
-
+  - !type:TileNotBlocked ''
 - type: construction
-  name: wood counter
-  id: TableCounterWood
-  graph: Table
-  startNode: start
-  targetNode: CounterWood
-  category: construction-category-furniture
-  description: Do not apply fire to this. Rumour says it burns easily.
-  icon:
-    sprite: Structures/Furniture/Tables/counterwood.rsi
-    state: full
-    objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked #bedroom
-
-
-- type: construction
-  id: Bed
-  name: bed
-  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  abstract: true
+  parent: BaseFurniture
+  id: BaseBed
   graph: bed
+  canRotate: false
+  conditions:
+  - !type:TileNotBlocked ''
+- type: construction
+  abstract: true
+  parent: BaseFurniture
+  id: BaseCurtains
+  graph: Curtains
+  canBuildInImpassable: true
+- type: construction
+  parent: BaseChair
+  id: Chair
+  targetNode: chair
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: Stool
+  targetNode: stool
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseChair
+  id: StoolBar
+  targetNode: stoolBar
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairBrass
+  targetNode: chairBrass
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairOfficeLight
+  targetNode: chairOffice
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairOfficeDark
+  targetNode: chairOfficeDark
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairComfy
+  targetNode: chairComfy
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: chairPilotSeat
+  targetNode: chairPilotSeat
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairWood
+  targetNode: chairWood
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseChair
+  id: ChairMeat
+  targetNode: chairMeat
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairRitual
+  graph: RitualSeat
   startNode: start
+  targetNode: chairRitual
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairFolding
+  targetNode: chairFolding
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ChairSteelBench
+  targetNode: chairSteelBench
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: StoolCard
+  targetNode: stoolCard
+- type: construction
+  parent: BaseChair
+  id: ChairWoodBench
+  targetNode: chairWoodBench
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseChair
+  id: RedComfBench
+  name: construction-recipe-red-comf-bench
+  targetNode: redComfBench
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: BlueComfBench
+  name: construction-recipe-blue-comf-bench
+  targetNode: blueComfBench
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: Table
+  targetNode: Table
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableReinforced
+  targetNode: TableReinforced
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableGlass
+  targetNode: TableGlass
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableCard
+  graph: Table
+  targetNode: TableCard
+- type: construction
+  parent: BaseTable
+  id: TableReinforcedGlass
+  targetNode: TableReinforcedGlass
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TablePlasmaGlass
+  targetNode: TablePlasmaGlass
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableBrass
+  targetNode: TableBrass
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableWood
+  targetNode: TableWood
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseTable
+  id: TableCarpet
+  targetNode: TableCarpet
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyBlack
+  name: construction-recipe-table-fancy-black
+  targetNode: TableFancyBlack
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyBlue
+  name: construction-recipe-table-fancy-blue
+  targetNode: TableFancyBlue
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancySkyBlue
+  name: construction-recipe-table-fancy-sky-blue
+  targetNode: TableFancySkyBlue
+- type: construction
+  parent: BaseTable
+  id: TableFancyCyan
+  name: construction-recipe-table-fancy-cyan
+  targetNode: TableFancyCyan
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyGreen
+  name: construction-recipe-table-fancy-green
+  targetNode: TableFancyGreen
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyOrange
+  name: construction-recipe-table-fancy-orange
+  targetNode: TableFancyOrange
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyPurple
+  targetNode: TableFancyPurple
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyPink
+  name: construction-recipe-table-fancy-pink
+  targetNode: TableFancyPink
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyRed
+  name: construction-recipe-table-fancy-red
+  targetNode: TableFancyRed
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableFancyWhite
+  name: construction-recipe-table-fancy-white
+  targetNode: TableFancyWhite
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableCounterMetal
+  targetNode: CounterMetal
+  hide: true
+- type: construction
+  parent: BaseTable
+  id: TableCounterWood
+  targetNode: CounterWood
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseBed
+  id: Bed
   targetNode: bed
-  category: construction-category-furniture
-  icon:
-    sprite: Civ14/Objects/bed_chair.rsi
-    state: bed_wood
-  objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
 - type: construction
+  parent: BaseBed
+  id: MedicalBed
+  targetNode: medicalbed
+  hide: true
+- type: construction
+  parent: BaseBed
+  id: DogBed
+  targetNode: dogbed
+  hide: true
+- type: construction
+  parent: BaseTable
   id: Dresser
-  name: dresser
-  description: Wooden dresser, can store things inside itself.
   graph: Dresser
-  startNode: start
   targetNode: dresser
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Furniture/furniture.rsi
-    state: dresser
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
 - type: construction
+  parent: BaseCurtains
   id: Curtains
-  name: white curtains
-  description: Basic white curtains. For when you need privacy.
-  graph: Curtains
-  startNode: start
+  name: humanity-construction-Curtains-name
   targetNode: Curtains
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/hospital.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
+  description: humanity-construction-Curtains-description
 - type: construction
+  parent: BaseCurtains
   id: CurtainsBlack
-  name: black curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-black
   targetNode: CurtainsBlack
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/black.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsBlue
-  name: blue curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-blue
   targetNode: CurtainsBlue
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/blue.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
+  id: CurtainsSkyBlue
+  name: construction-recipe-curtains-sky-blue
+  targetNode: CurtainsSkyBlue
+- type: construction
+  parent: BaseCurtains
   id: CurtainsCyan
-  name: cyan curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-cyan
   targetNode: CurtainsCyan
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/cyan.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsGreen
-  name: green curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-green
   targetNode: CurtainsGreen
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/green.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsOrange
-  name: orange curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-orange
   targetNode: CurtainsOrange
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/orange.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsPink
-  name: pink curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-pink
   targetNode: CurtainsPink
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/pink.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsPurple
-  name: purple curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-purple
   targetNode: CurtainsPurple
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/purple.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsRed
-  name: red curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-red
   targetNode: CurtainsRed
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/red.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
+  parent: BaseCurtains
   id: CurtainsWhite
-  name: white curtains
-  description: Hides what others shouldn't see.
-  graph: Curtains
-  startNode: start
+  name: construction-recipe-curtains-white
   targetNode: CurtainsWhite
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Decoration/Curtains/white.rsi
-    state: closed
-    objectType: Structure
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: true
-
 - type: construction
-  id: Bookshelf
-  name: bookshelf
-  description: Mostly filled with books.
-  graph: Bookshelf
-  startNode: start
-  targetNode: bookshelf
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Furniture/bookshelf.rsi
-    state: base
-    objectType: Structure
-  agemin: 0
-  agemax: 8
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
+  parent: BaseFurniture
+  id: MeatSpike
+  graph: MeatSpike
+  targetNode: MeatSpike
+  canRotate: false
   conditions:
-    - !type:TileNotBlocked
-
+  - !type:TileNotBlocked ''
+  hide: true
 - type: construction
-  id: NoticeBoard
-  name: notice board
-  description: Wooden notice board, can store paper inside itself.
-  graph: NoticeBoard
-  startNode: start
-  targetNode: noticeBoard
-  category: construction-category-furniture
-  icon:
-    sprite: Structures/Wallmounts/noticeboard.rsi
-    state: noticeboard
-    objectType: Structure
+  parent: BaseTable
+  id: Bookshelf
+  graph: Bookshelf
+  targetNode: bookshelf
   agemin: 0
   agemax: 8
-  placementMode: SnapgridCenter
+- type: construction
+  parent: BaseTable
+  id: Rack
+  graph: Rack
+  targetNode: Rack
+  hide: true
+- type: construction
+  parent: BaseChair
+  id: ToiletEmpty
+  graph: Toilet
+  targetNode: toilet
+  hide: true
+- type: construction
+  parent: BaseFurniture
+  id: NoticeBoard
+  graph: WallBoard
+  targetNode: noticeBoard
   canRotate: true
   canBuildInImpassable: true
   conditions:
-    - !type:WallmountCondition
+  - !type:WallmountCondition ''
+  agemin: 0
+  agemax: 8
+- type: construction
+  parent: BaseFurniture
+  id: PostBoard
+  graph: WallBoard
+  targetNode: postBoard
+  canRotate: true
+  canBuildInImpassable: true
+  conditions:
+  - !type:WallmountCondition ''
+- type: construction
+  parent: BaseFurniture
+  id: Mannequin
+  graph: Mannequin
+  targetNode: mannequin
+  canRotate: true
+  conditions:
+  - !type:TileNotBlocked ''
+  hide: true

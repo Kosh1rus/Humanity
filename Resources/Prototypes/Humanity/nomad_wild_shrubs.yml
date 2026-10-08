@@ -18,21 +18,20 @@
       components:
       - Hands
     loot:
-      All: HumanityWildShrubHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildShrubHarvest
 
-- type: entityLootTable
+- type: entityTable
   id: HumanityWildShrubHarvest
-  entries:
-  - id: LeafedStick
-    amount: 1
-    maxAmount: 1
+  table: !type:AllSelector
+    children:
+    - id: LeafedStick
 
-- type: entityLootTable
+- type: entityTable
   id: HumanityWildGrassHarvest
-  entries:
-  - id: MaterialStraw1
-    amount: 1
-    maxAmount: 1
+  table: !type:AllSelector
+    children:
+    - id: MaterialStraw1
 
 - type: entity
   id: HumanityWildShrub1
@@ -72,7 +71,8 @@
     state: smallbush5
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub6
@@ -84,7 +84,8 @@
     state: smallbush6
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub7
@@ -96,7 +97,8 @@
     state: smallbush7
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub8
@@ -108,7 +110,8 @@
     state: smallbush8
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub9
@@ -141,7 +144,8 @@
     state: smallbush12
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub13
@@ -153,7 +157,8 @@
     state: smallbush13
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub14
@@ -165,7 +170,8 @@
     state: smallbush14
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub15
@@ -177,7 +183,8 @@
     state: smallbush15
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub16
@@ -189,7 +196,8 @@
     state: smallbush16
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub17
@@ -201,7 +209,8 @@
     state: smallbush17
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub18
@@ -213,7 +222,8 @@
     state: smallbush18
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub19
@@ -225,7 +235,8 @@
     state: smallbush19
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub20
@@ -237,7 +248,8 @@
     state: smallbush20
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub21
@@ -249,7 +261,8 @@
     state: smallbush21
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub22
@@ -261,7 +274,8 @@
     state: smallbush22
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub23
@@ -371,7 +385,8 @@
     state: smallbush37
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub38
@@ -383,7 +398,8 @@
     state: smallbush38
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub39
@@ -395,7 +411,8 @@
     state: smallbush39
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub40
@@ -407,7 +424,8 @@
     state: smallbush40
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub41
@@ -419,7 +437,8 @@
     state: smallbush41
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest
 
 - type: entity
   id: HumanityWildShrub42
@@ -431,5 +450,5 @@
     state: smallbush42
   - type: Gatherable
     loot:
-      All: HumanityWildGrassHarvest
-
+      All: !type:NestedSelector
+        tableId: HumanityWildGrassHarvest

@@ -1,0 +1,7 @@
+- type: entity
+  parent: BaseMobHuman
+  id: HumanityMobHuman
+  name: человек
+  components:
+  - type: HumanoidProfile
+    species: Human

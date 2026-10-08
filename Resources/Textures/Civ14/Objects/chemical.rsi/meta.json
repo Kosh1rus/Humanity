@@ -8,7 +8,7 @@
     },
     "states": [
         {
-            "name": "",
+            "name": "unused-blank",
             "delays": [
                 [
                     0.120000005,
@@ -439,6 +439,17 @@
         },
         {
             "name": "grinder_active"
+        },
+        {
+            "name": "distill_on",
+            "delays": [
+                [
+                    0.1,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
         }
     ]
 }

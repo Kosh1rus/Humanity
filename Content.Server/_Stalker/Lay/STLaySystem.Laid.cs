@@ -6,8 +6,8 @@ namespace Content.Server._Stalker.Lay;
 
 public sealed partial class STLaySystem
 {
-    [Dependency] private readonly StandingStateSystem _standingState = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
+    [Dependency] private StandingStateSystem _standingState = default!;
+    [Dependency] private MovementSpeedModifierSystem _movementSpeedModifier = default!;
 
     private void InitializeLaid()
     {
@@ -22,7 +22,7 @@ public sealed partial class STLaySystem
     private void OnLaidInit(Entity<STLaidComponent> laid, ref ComponentInit args)
     {
         _standingState.Down(laid, dropHeldItems: false, fixtureAttempt: false);
-        _movementSpeedModifier.RefreshMovementSpeedModifiers(laid);
+        _movementSpeedModifier.RefreshMovementSpeedModifiers(laid.Owner);
     }
 
     private void OnLaidShutdown(Entity<STLaidComponent> laid, ref ComponentShutdown args)
@@ -30,7 +30,7 @@ public sealed partial class STLaySystem
         laid.Comp.Standing = true;
         _standingState.Stand(laid);
         laid.Comp.Standing = true;
-        _movementSpeedModifier.RefreshMovementSpeedModifiers(laid);
+        _movementSpeedModifier.RefreshMovementSpeedModifiers(laid.Owner);
     }
 
     private void OnLaidStandAttempt(Entity<STLaidComponent> laid, ref StandAttemptEvent args)

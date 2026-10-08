@@ -92,6 +92,7 @@ namespace Content.Shared.Chat
 
         AdminRelated = Admin | AdminAlert | AdminChat,
     }
+
     /// <summary>
     /// Contains extension methods for <see cref="ChatChannel"/>
     /// </summary>
@@ -105,8 +106,9 @@ namespace Content.Shared.Chat
         {
             return channel switch
             {
-                ChatChannel.OOC => "OOC",
-                ChatChannel.Admin => "ADMIN",
+                ChatChannel.OOC => Loc.GetString("chat-channel-humanized-ooc"),
+                ChatChannel.AdminChat => Loc.GetString("chat-channel-humanized-admin"),
+                ChatChannel.Admin => Loc.GetString("chat-channel-humanized-admin"),
                 _ => throw new ArgumentOutOfRangeException(nameof(channel), channel, null)
             };
         }

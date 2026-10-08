@@ -12,6 +12,8 @@ using Robust.Shared.Timing;
 using Content.Server.KillTracking;
 using Content.Shared.NPC.Systems;
 using Content.Server.RoundEnd;
+using Content.Shared.NPC.Prototypes;
+using Robust.Shared.Prototypes;
 
 
 namespace Content.Server.GameTicking.Rules;
@@ -19,17 +21,16 @@ namespace Content.Server.GameTicking.Rules;
 /// <summary>
 /// Handles the Valley gamemode points system for Blugoslavia vs Insurgents
 /// </summary>
-public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponent>
+public sealed partial class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponent>
 {
-    [Dependency] private readonly ILogManager _logManager = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly IChatManager _chatManager = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedHandsSystem _hands = default!;
-    [Dependency] private readonly RoundEndSystem _roundEndSystem = default!;
-    [Dependency] private readonly NpcFactionSystem _factionSystem = default!; // Added dependency
+    private static readonly ProtoId<NpcFactionPrototype> UnitedNations = "UnitedNations";
+    [Dependency] private ILogManager _logManager = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private IChatManager _chatManager = default!;
+    [Dependency] private EntityLookupSystem _lookup = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private RoundEndSystem _roundEndSystem = default!;
+    [Dependency] private NpcFactionSystem _factionSystem = default!; // Added dependency
     private ISawmill _sawmill = default!;
     private TimeSpan _lastSupplyBoxCheck = TimeSpan.Zero;
     private const float SupplyBoxCheckInterval = 30f; // Check every 30 seconds
@@ -123,7 +124,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         var query = EntityQueryEnumerator<ValleyPointsComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var valley, out var gameRule))
         {
-            if (!GameTicker.IsGameRuleAdded(uid, gameRule))
+            if (!GameTicker.IsGameRuleAdded((uid, gameRule)))
                 continue;
 
             if (valley.GameEnded)
@@ -468,8 +469,9 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         _chatManager.DispatchServerAnnouncement(message);
     }
 
-    protected override void AppendRoundEndText(EntityUid uid, ValleyPointsComponent component, GameRuleComponent gameRule, ref RoundEndTextAppendEvent args)
+    protected override void AppendRoundEndText(Entity<ValleyPointsComponent> rule, ref RoundEndTextAppendEvent args)
     {
+        var component = rule.Comp;
 
         if (component.BlugoslaviaPoints > component.InsurgentPoints)
         {
@@ -496,7 +498,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
         var query = EntityQueryEnumerator<ValleyPointsComponent, GameRuleComponent>();
         while (query.MoveNext(out var uid, out var valley, out var rule))
         {
-            if (!GameTicker.IsGameRuleActive(uid, rule))
+            if (!GameTicker.IsGameRuleActive((uid, rule)))
                 continue;
 
             // Check if UN member was involved (either as killer or victim) TODO: Check killer
@@ -505,7 +507,7 @@ public sealed class ValleyPointsRuleSystem : GameRuleSystem<ValleyPointsComponen
             // Check if victim is UN
             if (TryComp<NpcFactionMemberComponent>(ev.Entity, out var victimFaction))
             {
-                if (_factionSystem.IsMember(ev.Entity, "UnitedNations"))
+                if (_factionSystem.IsMember(ev.Entity, UnitedNations))
                 {
                     unInvolved = true;
                 }

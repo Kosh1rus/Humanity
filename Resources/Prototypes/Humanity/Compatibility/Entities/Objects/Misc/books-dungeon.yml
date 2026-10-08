@@ -1,0 +1,24 @@
+- type: entity
+  id: BookSecurity
+  parent: BaseGuidebook
+  name: security 101
+  description: A book about security written by Nanotrasen. The book is stained with blood. It seems to have been used more
+    as a weapon than reading material.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: '#ab1515'
+    - state: decor_wingette
+      color: '#e05334'
+    - state: icon_stunbaton
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    damage:
+      types:
+        Blunt: 6
+  - type: GuideHelp
+    guides:
+    - Security
+    - Antagonists

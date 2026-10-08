@@ -1,66 +1,222 @@
 - type: gamePreset
+  id: Survival
+  alias:
+  - survival
+  name: survival-title
+  showInVote: false
+  description: survival-description
+  rules:
+  - MeteorSwarmScheduler
+  - RampingStationEventScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: AllAtOnce
+  alias:
+  - all
+  name: all-at-once-title
+  description: all-at-once-description
+  showInVote: false
+  rules:
+  - Nukeops
+  - Traitor
+  - Revolutionary
+  - Zombie
+  - Wizard
+  - Xenoborgs
+  - Changeling
+  - KesslerSyndromeScheduler
+  - RampingStationEventScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: AllerAtOnce
+  alias:
+  - allall
+  - aller
+  - badidea
+  - punishment
+  name: aller-at-once-title
+  description: aller-at-once-description
+  showInVote: false
+  rules:
+  - Nukeops
+  - Traitor
+  - Revolutionary
+  - Zombie
+  - Wizard
+  - Xenoborgs
+  - Changeling
+  - BasicStationEventScheduler
+  - KesslerSyndromeScheduler
+  - MeteorSwarmMildScheduler
+  - MeteorSwarmScheduler
+  - RampingStationEventScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Greenshift
+  alias:
+  - greenshift
+  - shittersafarideluxeedition
+  name: greenshift-title
+  showInVote: false
+  description: greenshift-description
+  rules:
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Dynamic
+  alias:
+  - dynamic
+  - multiantag
+  - director
+  name: dynamic-title
+  showInVote: false
+  description: dynamic-description
+  rules:
+  - DynamicRule
+  - DummyNonAntag
+  - DynamicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Traitor
+  alias:
+  - traitor
+  - tator
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - Traitor
+  - SubGamemodesRuleNoWizard
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Nukeops
+  alias:
+  - nukeops
+  name: nukeops-title
+  description: nukeops-description
+  showInVote: false
+  rules:
+  - Nukeops
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizard
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Revolutionary
+  alias:
+  - rev
+  - revs
+  - revolutionaries
+  name: rev-title
+  description: rev-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - Revolutionary
+  - SubGamemodesRuleNoWizard
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Wizard
+  alias:
+  - wizard
+  name: wizard-title
+  description: wizard-description
+  showInVote: false
+  rules:
+  - Wizard
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizard
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
+  id: Xenoborgs
+  alias:
+  - xenoborgs
+  name: xenoborgs-title
+  description: xenoborgs-description
+  showInVote: false
+  rules:
+  - Xenoborgs
+  - DummyNonAntagChance
+  - SubGamemodesRuleNoWizardNoXenoborg
+  - BasicStationEventScheduler
+  - MeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+- type: gamePreset
   id: Nomads
   alias:
-    - extended
-    - nomads
+  - extended
+  - nomads
   name: extended-title
   showInVote: true
   supportedMaps: HumanityNomadMaps
   description: extended-description
   rules:
-    - RespawnDeadRule
-    - FactionRule
-
+  - RespawnDeadRule
+  - FactionRule
 - type: gamePreset
   id: TDM
   alias:
-    - tdm
+  - tdm
   name: tdm-title
   showInVote: false
   description: tdm-description
   rules:
-    - RespawnDeadRuleTDMFixed
-    - GracewallRule
-    - CaptureAreaRule
-    - TeamDeathMatchRule
-    - RandomWeatherRule
-
+  - RespawnDeadRuleTDMFixed
+  - GracewallRule
+  - CaptureAreaRule
+  - TeamDeathMatchRule
+  - RandomWeatherRule
 - type: gamePreset
   id: TDMAsymmetric
   alias:
-    - tdm-asymmetric
+  - tdm-asymmetric
   name: tdm-asy-title
   showInVote: false
   description: tdm-asy-description
   rules:
-    - RespawnDeadRuleTDMFixed
-    - GracewallRule5
-    - CaptureAreaRuleAsymmetric
-    - TeamDeathMatchRule
-    - RandomWeatherRuleNightSnow
-
+  - RespawnDeadRuleTDMFixed
+  - GracewallRule5
+  - CaptureAreaRuleAsymmetric
+  - TeamDeathMatchRule
+  - RandomWeatherRuleNightSnow
 - type: gamePreset
   id: TDMValley
   alias:
-    - tdm-valley
+  - tdm-valley
   name: tdm-valley-title
   showInVote: false
   description: tdm-valley-description
   rules:
-    - RespawnDeadRuleTDM
-    - GracewallRule
-    - ValleyPointsRule
-    - TeamDeathMatchRule
-    - RandomWeatherRule
-    - CaptureAreaRulePoints
-
+  - RespawnDeadRuleTDM
+  - GracewallRule
+  - ValleyPointsRule
+  - TeamDeathMatchRule
+  - RandomWeatherRule
+  - CaptureAreaRulePoints
 - type: gamePreset
   id: Gulag14
   alias:
-    - gulag14
+  - gulag14
   name: gulag14
   showInVote: false
   description: gulag14-description
   rules:
-    - RespawnDeadRuleTDMFixed
-    - RandomWeatherRuleNightSnow
+  - RespawnDeadRuleTDMFixed
+  - RandomWeatherRuleNightSnow

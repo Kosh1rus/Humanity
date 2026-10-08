@@ -8,7 +8,7 @@
     },
     "states": [
         {
-            "name": "",
+            "name": "unused-blank",
             "delays": [
                 [
                     0.120000005,
@@ -40,13 +40,13 @@
             "name": "giftbag2"
         },
         {
-            "name": "lockbox\u002Bl"
+            "name": "lockbox+l"
         },
         {
             "name": "lockbox"
         },
         {
-            "name": "lockbox\u002Bb"
+            "name": "lockbox+b"
         },
         {
             "name": "crate"

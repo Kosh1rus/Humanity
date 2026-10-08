@@ -48,6 +48,12 @@ public sealed partial class CCVars
         CVarDef.Create("discord.votekick_webhook", string.Empty, CVar.SERVERONLY);
 
     /// <summary>
+    ///     URL of the Discord webhook which will relay event logs. If left empty, disables the webhook.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordEventWebhook =
+        CVarDef.Create("discord.event_webhook", string.Empty, CVar.SERVERONLY);
+
+    /// <summary>
     ///     URL of the Discord webhook which will relay round restart messages.
     /// </summary>
     public static readonly CVarDef<string> DiscordRoundUpdateWebhook =
@@ -58,6 +64,8 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> DiscordRoundEndRoleWebhook =
         CVarDef.Create("discord.round_end_role", string.Empty, CVar.SERVERONLY);
+
+
     /// <summary>
     ///     The token used to authenticate with Discord. For the Bot to function set: discord.token, discord.guild_id, and discord.prefix.
     ///     If this is empty, the bot will not connect.
@@ -78,6 +86,7 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<string> DiscordPrefix =
         CVarDef.Create("discord.prefix", "!", CVar.SERVERONLY);
+
     /// <summary>
     ///     URL of the Discord webhook which will relay watchlist connection notifications. If left empty, disables the webhook.
     /// </summary>
@@ -91,4 +100,24 @@ public sealed partial class CCVars
     /// </summary>
     public static readonly CVarDef<float> DiscordWatchlistConnectionBufferTime =
         CVarDef.Create("discord.watchlist_connection_buffer_time", 5f, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     URL of the Discord webhook which will receive station news acticles at the round end.
+    ///     If left empty, disables the webhook.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordNewsWebhook =
+        CVarDef.Create("discord.news_webhook", string.Empty, CVar.SERVERONLY);
+
+    /// <summary>
+    ///     HEX color of station news discord webhook's embed.
+    /// </summary>
+    public static readonly CVarDef<string> DiscordNewsWebhookEmbedColor =
+        CVarDef.Create("discord.news_webhook_embed_color", Color.LawnGreen.ToHex(), CVar.SERVERONLY);
+
+    /// <summary>
+    ///     Whether or not articles should be sent mid-round instead of all at once at the round's end
+    /// </summary>
+    public static readonly CVarDef<bool> DiscordNewsWebhookSendDuringRound =
+        CVarDef.Create("discord.news_webhook_send_during_round", false, CVar.SERVERONLY);
+
 }

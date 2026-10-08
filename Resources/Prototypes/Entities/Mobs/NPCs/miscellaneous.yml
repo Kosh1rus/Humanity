@@ -1,76 +1,77 @@
 - type: entity
   name: laser raptor
   id: MobLaserRaptor
-  parent: SimpleMobBase
+  parent:
+  - SimpleMobBase
+  - BaseSlicingRefinableButchering
+  - BaseMobDestructible
   description: From the Viking age.
   components:
-    - type: NpcFactionMember
-      factions:
-        - SimpleHostile
-    - type: HTN
-      rootTask:
-        task: SimpleRangedHostileCompound
-    - type: Sprite
-      drawdepth: Mobs
-      sprite: Mobs/Aliens/laser_raptor.rsi
-      layers:
-        - map: [ "enum.DamageStateVisualLayers.Base" ]
-          state: laser_raptor
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeCircle
-            radius: 0.30
-          density: 80
-          mask:
-            - MobMask
-          layer:
-            - MobLayer
-    - type: DamageStateVisuals
-      states:
-        Alive:
-          Base: laser_raptor
-        Dead:
-          Base: laser_raptor_dead
-    - type: MobThresholds
-      thresholds:
-        0: Alive
-        100: Dead
-    - type: Butcherable
-      spawned:
-      - id: FoodMeatChicken
-        amount: 2
-    - type: MovementSpeedModifier
-      baseWalkSpeed: 2
-      baseSprintSpeed: 5
-    - type: Tag
-      tags:
-        - FootstepSound
-    - type: HitscanBatteryAmmoProvider
-      proto: RedLightLaser
-      fireCost: 50
-    - type: BatterySelfRecharger
-      autoRecharge: true
-      autoRechargeRate: 50
-    - type: Battery
-      maxCharge: 1000
-      startingCharge: 1000
-    - type: Gun
-      fireRate: 1
-      useKey: false
-      selectedMode: SemiAuto
-      availableModes:
-        - SemiAuto
-      soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    - type: CombatMode
-    - type: InteractionPopup
-      successChance: 0.3
-      interactSuccessString: petting-success-reptile
-      interactFailureString: petting-failure-generic
-      interactSuccessSound:
-        path: /Audio/Animals/lizard_happy.ogg
-
+  - type: NpcFactionMember
+    factions:
+    - SimpleHostile
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/laser_raptor.rsi
+    layers:
+    - map:
+      - enum.DamageStateVisualLayers.Base
+      state: laser_raptor
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.3
+        density: 80
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: laser_raptor
+      Dead:
+        Base: laser_raptor_dead
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Dead
+  - type: ToolRefinable
+    refineResult:
+    - id: FoodMeatChicken
+      amount: 2
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 2
+    baseSprintSpeed: 5
+  - type: Tag
+    tags:
+    - FootstepSound
+  - type: BatteryAmmoProvider
+    proto: RedLightLaser
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: Gun
+    fireRate: 1
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+  - type: CombatMode
+  - type: InteractionPopup
+    successChance: 0.3
+    interactSuccessString: petting-success-reptile
+    interactFailureString: petting-failure-generic
+    interactSuccessSound:
+      path: /Audio/Animals/lizard_happy.ogg
 - type: entity
   id: MobTomatoKiller
   parent:
@@ -97,81 +98,89 @@
     baseResistTime: 3
   - type: Reactive
     groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
+      Flammable:
+      - Touch
+      Extinguish:
+      - Touch
     reactions:
-    - reagents: [ Water ]
-      methods: [ Touch ]
+    - reagents:
+      - Water
+      methods:
+      - Touch
       effects:
-      - !type:HealthChange
-        scaleByQuantity: true
+      - !type:EvenHealthChange
         damage:
-          groups:
-            Brute: -0.25
-    - reagents: [ Blood ]
-      methods: [ Touch ]
+          Brute: -0.15
+    - reagents:
+      - Blood
+      methods:
+      - Touch
       effects:
-      - !type:HealthChange
-        scaleByQuantity: true
+      - !type:EvenHealthChange
         damage:
-          groups:
-            Brute: -0.5
-            Burn: -0.5
-    - reagents: [ RobustHarvest ]
-      methods: [ Touch ]
+          Brute: -0.25
+          Burn: -0.25
+    - reagents:
+      - RobustHarvest
+      methods:
+      - Touch
       effects:
-      - !type:HealthChange
-        scaleByQuantity: true
+      - !type:EvenHealthChange
         damage:
-          groups:
-            Brute: -2
-            Burn: -2
-    - reagents: [ WeedKiller, PlantBGone ]
-      methods: [ Touch ]
+          Brute: -1
+          Burn: -1
+    - reagents:
+      - WeedKiller
+      - PlantBGone
+      methods:
+      - Touch
       effects:
       - !type:HealthChange
-        scaleByQuantity: true
         damage:
           types:
-            Heat: 2
+            Heat: 1
   - type: ReplacementAccent
     accent: tomatoKiller
   - type: Item
+    size: Large
+    shape:
+    - 0,0,2,2
   - type: MultiHandedItem
   - type: NpcFactionMember
     factions:
-      - SimpleHostile
+    - SimpleHostile
   - type: HTN
     rootTask:
       task: KillerTomatoCompound
   - type: NPCImprintingOnSpawnBehaviour
     whitelist:
       components:
-      - HumanoidAppearance
+      - HumanoidProfile
   - type: Sprite
     sprite: Mobs/Demons/tomatokiller.rsi
     noRot: true
     layers:
-      - map: [ "enum.DamageStateVisualLayers.Base" ]
-        state: alive
+    - map:
+      - enum.DamageStateVisualLayers.Base
+      state: alive
   - type: Bloodstream
-    bloodReagent: JuiceTomato
-    bloodMaxVolume: 50
-    chemicalMaxVolume: 30
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: JuiceTomato
+        Quantity: 50
   - type: DamageStateVisuals
     states:
       Alive:
         Base: alive
       Dead:
         Base: dead
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeatTomato
       amount: 2
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Blunt
         damage: 40
       behaviors:
@@ -181,7 +190,8 @@
             min: 1
             max: 2
       - !type:DoActsBehavior
-        acts: ["Destruction"]
+        acts:
+        - Destruction
       - !type:PlaySoundBehavior
         sound:
           collection: gib
@@ -192,43 +202,41 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
-          radius: 0.30
+        shape: !type:PhysShapeCircle
+          radius: 0.3
         density: 80
         mask:
-          - MobMask
+        - MobMask
         layer:
-          - MobLayer
+        - MobLayer
   - type: MeleeWeapon
     hidden: true
     damage:
-      groups:
-        Brute: 9
+      types:
+        Blunt: 3
+        Piercing: 3
+        Slash: 3
     animation: WeaponArcBite
   - type: Climbing
   - type: NameIdentifier
     group: GenericNumber
   - type: FootstepModifier
     footstepSoundCollection:
-      path: /Audio/Effects/Footsteps/slime1.ogg
-      params:
-        volume: 3
+      collection: FootstepSlime
   - type: Tag
     tags:
-      - FootstepSound
-      - Fruit
+    - FootstepSound
+    - Fruit
   - type: Extractable
     grindableSolutionName: bloodstream
   - type: PotencyVisuals
   - type: Appearance
   - type: Produce
-    seedId: killerTomato
-  - type: PassiveDamage # Slight passive damage. 35 hp \ 5 min \ 60 sec = 0.08
+    plantId: KillerTomatoPlants
+  - type: PassiveDamage
     allowedStates:
     - Alive
     - Dead
-    damageCap: 50
     damage:
       types:
         Blunt: 0.11

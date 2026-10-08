@@ -6,7 +6,6 @@ damage-type-caustic = Caustic
 damage-type-cold = Cold
 damage-type-heat = Heat
 damage-type-piercing = Piercing
-damage-type-arrow = Arrow
 damage-type-poison = Poison
 damage-type-radiation = Radiation
 damage-type-shock = Shock

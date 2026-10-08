@@ -1,11 +1,11 @@
 - type: construction
-  name: "повязка на глаз"
+  name: humanity-construction-civ13_glasses_eyepatch-name
   id: civ13_glasses_eyepatch
   graph: civ13_glasses_eyepatch
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Йо-хо-хо!"
+  description: humanity-construction-civ13_glasses_eyepatch-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/eyepatch.rsi
     state: icon
@@ -27,13 +27,13 @@
     - node: end
       entity: civ13_glasses_eyepatch
 - type: construction
-  name: "монокль"
+  name: humanity-construction-civ13_glasses_monocle-name
   id: civ13_glasses_monocle
   graph: civ13_glasses_monocle
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Изысканный оптический аксессуар."
+  description: humanity-construction-civ13_glasses_monocle-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/monocle.rsi
     state: icon
@@ -55,13 +55,13 @@
     - node: end
       entity: civ13_glasses_monocle
 - type: construction
-  name: "очки с диоптриями"
+  name: humanity-construction-civ13_glasses_Prescription_Glasses-name
   id: civ13_glasses_Prescription_Glasses
   graph: civ13_glasses_Prescription_Glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Изготовлены компанией «Ботан и Ко»."
+  description: humanity-construction-civ13_glasses_Prescription_Glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/glasses.rsi
     state: icon
@@ -83,13 +83,13 @@
     - node: end
       entity: civ13_glasses_Prescription_Glasses
 - type: construction
-  name: "очки с диоптриями"
+  name: humanity-construction-civ13_glasses_Prescription_Glasses_1-name
   id: civ13_glasses_Prescription_Glasses_1
   graph: civ13_glasses_Prescription_Glasses_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Изготовлены компанией «Не круто и Ко»."
+  description: humanity-construction-civ13_glasses_Prescription_Glasses_1-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/hipster_glasses.rsi
     state: icon
@@ -111,13 +111,13 @@
     - node: end
       entity: civ13_glasses_Prescription_Glasses_1
 - type: construction
-  name: "зелёные очки"
+  name: humanity-construction-civ13_glasses_Green_Glasses-name
   id: civ13_glasses_Green_Glasses
   graph: civ13_glasses_Green_Glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очки цвета лесной зелени. В таких наверняка удобно строить коварные планы."
+  description: humanity-construction-civ13_glasses_Green_Glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/gglasses.rsi
     state: icon
@@ -139,13 +139,13 @@
     - node: end
       entity: civ13_glasses_Green_Glasses
 - type: construction
-  name: "солнцезащитные очки"
+  name: humanity-construction-civ13_glasses_sunglasses-name
   id: civ13_glasses_sunglasses
   graph: civ13_glasses_sunglasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Старинное приспособление для защиты глаз. Улучшенные линзы задерживают опасное солнечное излучение."
+  description: humanity-construction-civ13_glasses_sunglasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/sun.rsi
     state: icon
@@ -167,13 +167,13 @@
     - node: end
       entity: civ13_glasses_sunglasses
 - type: construction
-  name: "повязка на глаза"
+  name: humanity-construction-civ13_glasses_blindfold-name
   id: civ13_glasses_blindfold
   graph: civ13_glasses_blindfold
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Полностью закрывает глаза и лишает зрения."
+  description: humanity-construction-civ13_glasses_blindfold-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/blindfold.rsi
     state: icon
@@ -195,13 +195,13 @@
     - node: end
       entity: civ13_glasses_blindfold
 - type: construction
-  name: "большие солнцезащитные очки"
+  name: humanity-construction-civ13_glasses_large_sunglasses-name
   id: civ13_glasses_large_sunglasses
   graph: civ13_glasses_large_sunglasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Крупные очки с усиленной защитой от ярких вспышек."
+  description: humanity-construction-civ13_glasses_large_sunglasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/bigsunglasses.rsi
     state: icon
@@ -223,13 +223,13 @@
     - node: end
       entity: civ13_glasses_large_sunglasses
 - type: construction
-  name: "красные винтажные очки"
+  name: humanity-construction-civ13_glasses_red_vintage_glasses-name
   id: civ13_glasses_red_vintage_glasses
   graph: civ13_glasses_red_vintage_glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очки в духе шестидесятых. Самое то для модника."
+  description: humanity-construction-civ13_glasses_red_vintage_glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/redlense.rsi
     state: icon
@@ -251,13 +251,13 @@
     - node: end
       entity: civ13_glasses_red_vintage_glasses
 - type: construction
-  name: "синие винтажные очки"
+  name: humanity-construction-civ13_glasses_blue_vintage_glasses-name
   id: civ13_glasses_blue_vintage_glasses
   graph: civ13_glasses_blue_vintage_glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очки в духе шестидесятых. Самое то для модника."
+  description: humanity-construction-civ13_glasses_blue_vintage_glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/bluelense.rsi
     state: icon
@@ -279,13 +279,13 @@
     - node: end
       entity: civ13_glasses_blue_vintage_glasses
 - type: construction
-  name: "зелёные винтажные очки"
+  name: humanity-construction-civ13_glasses_green_vintage_glasses-name
   id: civ13_glasses_green_vintage_glasses
   graph: civ13_glasses_green_vintage_glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очки в духе шестидесятых. Самое то для модника."
+  description: humanity-construction-civ13_glasses_green_vintage_glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/greenlense.rsi
     state: icon
@@ -307,13 +307,13 @@
     - node: end
       entity: civ13_glasses_green_vintage_glasses
 - type: construction
-  name: "жёлтые винтажные очки"
+  name: humanity-construction-civ13_glasses_yellow_vintage_glasses-name
   id: civ13_glasses_yellow_vintage_glasses
   graph: civ13_glasses_yellow_vintage_glasses
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очки в духе шестидесятых. Самое то для модника."
+  description: humanity-construction-civ13_glasses_yellow_vintage_glasses-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/yellowlense.rsi
     state: icon
@@ -335,13 +335,13 @@
     - node: end
       entity: civ13_glasses_yellow_vintage_glasses
 - type: construction
-  name: "красный моновизор"
+  name: humanity-construction-civ13_glasses_univisor_red-name
   id: civ13_glasses_univisor_red
   graph: civ13_glasses_univisor_red
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
+  description: humanity-construction-civ13_glasses_univisor_red-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_r.rsi
     state: icon
@@ -363,13 +363,13 @@
     - node: end
       entity: civ13_glasses_univisor_red
 - type: construction
-  name: "голубой моновизор"
+  name: humanity-construction-civ13_glasses_univisor_cyan-name
   id: civ13_glasses_univisor_cyan
   graph: civ13_glasses_univisor_cyan
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
+  description: humanity-construction-civ13_glasses_univisor_cyan-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_c.rsi
     state: icon
@@ -391,13 +391,13 @@
     - node: end
       entity: civ13_glasses_univisor_cyan
 - type: construction
-  name: "зелёный моновизор"
+  name: humanity-construction-civ13_glasses_univisor_green-name
   id: civ13_glasses_univisor_green
   graph: civ13_glasses_univisor_green
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
+  description: humanity-construction-civ13_glasses_univisor_green-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_g.rsi
     state: icon
@@ -419,13 +419,13 @@
     - node: end
       entity: civ13_glasses_univisor_green
 - type: construction
-  name: "жёлтый моновизор"
+  name: humanity-construction-civ13_glasses_univisor_yellow-name
   id: civ13_glasses_univisor_yellow
   graph: civ13_glasses_univisor_yellow
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
+  description: humanity-construction-civ13_glasses_univisor_yellow-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_y.rsi
     state: icon
@@ -447,13 +447,13 @@
     - node: end
       entity: civ13_glasses_univisor_yellow
 - type: construction
-  name: "белый моновизор"
+  name: humanity-construction-civ13_glasses_univisor_white-name
   id: civ13_glasses_univisor_white
   graph: civ13_glasses_univisor_white
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Визор с одной сплошной линзой в стиле восьмидесятых. Смотрится футуристично."
+  description: humanity-construction-civ13_glasses_univisor_white-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_w.rsi
     state: icon
@@ -475,13 +475,13 @@
     - node: end
       entity: civ13_glasses_univisor_white
 - type: construction
-  name: "яркий моновизор"
+  name: humanity-construction-civ13_glasses_univisor_flashy-name
   id: civ13_glasses_univisor_flashy
   graph: civ13_glasses_univisor_flashy
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Броский визор с одной сплошной линзой в стиле восьмидесятых."
+  description: humanity-construction-civ13_glasses_univisor_flashy-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/univisor_flashy.rsi
     state: icon
@@ -503,13 +503,13 @@
     - node: end
       entity: civ13_glasses_univisor_flashy
 - type: construction
-  name: "защитные очки"
+  name: humanity-construction-civ13_glasses_goggles-name
   id: civ13_glasses_goggles
   graph: civ13_glasses_goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартные боевые защитные очки."
+  description: humanity-construction-civ13_glasses_goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
     state: icon
@@ -531,13 +531,13 @@
     - node: end
       entity: civ13_glasses_goggles
 - type: construction
-  name: "баллистические очки"
+  name: humanity-construction-civ13_glasses_Ballistic_goggles-name
   id: civ13_glasses_Ballistic_goggles
   graph: civ13_glasses_Ballistic_goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Боевые очки, защищающие глаза от осколков."
+  description: humanity-construction-civ13_glasses_Ballistic_goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/tactical_goggles.rsi
     state: icon
@@ -559,13 +559,13 @@
     - node: end
       entity: civ13_glasses_Ballistic_goggles
 - type: construction
-  name: "лётные очки"
+  name: humanity-construction-civ13_glasses_Pilot_goggles-name
   id: civ13_glasses_Pilot_goggles
   graph: civ13_glasses_Pilot_goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лётные очки образца начала XX века."
+  description: humanity-construction-civ13_glasses_Pilot_goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/biker.rsi
     state: icon
@@ -587,13 +587,13 @@
     - node: end
       entity: civ13_glasses_Pilot_goggles
 - type: construction
-  name: "очки ночного видения"
+  name: humanity-construction-civ13_glasses_Night_Vision_Goggles-name
   id: civ13_glasses_Night_Vision_Goggles
   graph: civ13_glasses_Night_Vision_Goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Улучшают зрение при слабом освещении и позволяют видеть в темноте."
+  description: humanity-construction-civ13_glasses_Night_Vision_Goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/nvg_off.rsi
     state: icon
@@ -615,13 +615,13 @@
     - node: end
       entity: civ13_glasses_Night_Vision_Goggles
 - type: construction
-  name: "тепловизионные очки"
+  name: humanity-construction-civ13_glasses_Thermal_Vision_Goggles-name
   id: civ13_glasses_Thermal_Vision_Goggles
   graph: civ13_glasses_Thermal_Vision_Goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Позволяют хорошо различать источники тепла."
+  description: humanity-construction-civ13_glasses_Thermal_Vision_Goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
     state: icon
@@ -643,13 +643,13 @@
     - node: end
       entity: civ13_glasses_Thermal_Vision_Goggles
 - type: construction
-  name: "современные тепловизионные очки"
+  name: humanity-construction-civ13_glasses_Modern_Thermal_Vision_Goggles-name
   id: civ13_glasses_Modern_Thermal_Vision_Goggles
   graph: civ13_glasses_Modern_Thermal_Vision_Goggles
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современные тепловизионные очки, позволяющие также видеть в темноте."
+  description: humanity-construction-civ13_glasses_Modern_Thermal_Vision_Goggles-description
   icon:
     sprite: Civ14/Clothing/exported/glasses/thermal_off.rsi
     state: icon

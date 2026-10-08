@@ -1,88 +1,97 @@
 - type: entity
-  parent: [ RingBase, GoldRingBase ]
+  parent:
+  - RingBase
+  - GoldRingBase
   id: GoldRing
   name: gold ring
   description: A precious ring.
   components:
   - type: Sprite
     layers:
-      - state: ring
-        color: "#ffc833"
-
+    - state: ring
+      color: '#ffc833'
 - type: entity
-  parent: [ RingBase, SilverRingBase ]
+  parent:
+  - RingBase
+  - SilverRingBase
   id: SilverRing
   name: silver ring
   description: Looks slightly less valuable than a gold one.
   components:
   - type: Sprite
     layers:
-      - state: ring
-
+    - state: ring
 - type: entity
-  parent: [ RingBase, GoldRingBase ]
+  parent:
+  - RingBase
+  - GoldRingBase
   id: GoldRingDiamond
-  name: "золотое кольцо с бриллиантом"
-  description: "Украшено космическими алмазами, добытыми с соблюдением всех этических норм."
+  name: золотое кольцо с бриллиантом
+  description: Украшено космическими алмазами, добытыми с соблюдением всех этических норм.
   components:
   - type: Sprite
     layers:
-      - state: ring
-        color: "#ffc833"
-      - state: gem
-        color: "#c1ffff"
+    - state: ring
+      color: '#ffc833'
+    - state: gem
+      color: '#c1ffff'
   - type: StaticPrice
     price: 1500
-
 - type: entity
-  parent: [ RingBase, SilverRingBase ]
+  parent:
+  - RingBase
+  - SilverRingBase
   id: SilverRingDiamond
   name: silver diamond ring
   description: Made from ethically mined space diamonds.
   components:
   - type: Sprite
     layers:
-      - state: ring
-      - state: gem
-        color: "#c1ffff"
+    - state: ring
+    - state: gem
+      color: '#c1ffff'
   - type: StaticPrice
     price: 1400
-
 - type: entity
-  parent: [ RingBase, GoldRingBase ]
+  parent:
+  - RingBase
+  - GoldRingBase
   id: GoldRingGem
   name: gold gem ring
   description: Shiny and valuable!
   components:
   - type: Sprite
     layers:
-      - state: ring
-        color: "#ffc833"
-      - state: gem
-        map: [ "gemColor" ]
+    - state: ring
+      color: '#ffc833'
+    - state: gem
+      map:
+      - gemColor
   - type: StaticPrice
     price: 2100
   - type: RandomSprite
     getAllGroups: true
     available:
-      - gemColor:
-          gem: Rainbow
-
+    - gemColor:
+        gem: Rainbow
 - type: entity
-  parent: [ RingBase, SilverRingBase ]
+  parent:
+  - RingBase
+  - SilverRingBase
   id: SilverRingGem
   name: silver gem ring
   description: Shiny and not quite as valuable!
   components:
   - type: Sprite
     layers:
-      - state: ring
-      - state: gem
-        map: [ "gemColor" ]
+    - state: ring
+    - state: gem
+      map:
+      - gemColor
   - type: StaticPrice
     price: 2000
   - type: RandomSprite
     getAllGroups: true
     available:
-      - gemColor:
-          gem: Rainbow
+    - gemColor:
+        gem: Rainbow

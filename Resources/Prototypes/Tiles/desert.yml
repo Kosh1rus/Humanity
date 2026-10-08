@@ -1,0 +1,41 @@
+- type: tile
+  id: FloorDesert
+  parent: BaseFloorPlanet
+  name: tiles-desert-floor
+  sprite: /Textures/Tiles/Planet/Desert/desert.png
+  variants: 6
+  edgeSpritePriority: 3
+  edgeSprites:
+    SouthEast: /Textures/Tiles/Planet/Desert/single_edge.png
+    NorthEast: /Textures/Tiles/Planet/Desert/single_edge.png
+    NorthWest: /Textures/Tiles/Planet/Desert/single_edge.png
+    SouthWest: /Textures/Tiles/Planet/Desert/single_edge.png
+    South: /Textures/Tiles/Planet/Desert/double_edge.png
+    East: /Textures/Tiles/Planet/Desert/double_edge.png
+    North: /Textures/Tiles/Planet/Desert/double_edge.png
+    West: /Textures/Tiles/Planet/Desert/double_edge.png
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  biome: Desert
+  indestructible: true
+- type: tile
+  parent:
+  - BaseStationTile
+  - FloorDesert
+  id: FloorDesertAstroSand
+  name: tiles-desert-astro-sand
+  sprite: /Textures/Tiles/Desert/desert.png
+  variants: 5
+  footstepSounds:
+    collection: FootstepAsteroid
+  itemDrop: FloorTileItemDesertAstroSand

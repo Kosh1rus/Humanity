@@ -1,11 +1,11 @@
 - type: construction
-  name: "ряса проповедника"
+  name: humanity-construction-civ13_suit_preachers_robe-name
   id: civ13_suit_preachers_robe
   graph: civ13_suit_preachers_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычное облачение священнослужителя."
+  description: humanity-construction-civ13_suit_preachers_robe-description
   icon:
     sprite: Civ14/Clothing/exported/suits/chaplain_hoodie.rsi
     state: icon
@@ -26,13 +26,13 @@
     - node: end
       entity: civ13_suit_preachers_robe
 - type: construction
-  name: "куртка участника"
+  name: humanity-construction-civ13_suit_contestant_jacket-name
   id: civ13_suit_contestant_jacket
   graph: civ13_suit_contestant_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая зелёная куртка от спортивного комбинезона."
+  description: humanity-construction-civ13_suit_contestant_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/squid_player.rsi
     state: icon
@@ -53,13 +53,13 @@
     - node: end
       entity: civ13_suit_contestant_jacket
 - type: construction
-  name: "чёрный жилет"
+  name: humanity-construction-civ13_suit_black_vest-name
   id: civ13_suit_black_vest
   graph: civ13_suit_black_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой чёрный жилет."
+  description: humanity-construction-civ13_suit_black_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/rebel_vest.rsi
     state: icon
@@ -80,13 +80,13 @@
     - node: end
       entity: civ13_suit_black_vest
 - type: construction
-  name: "куртка офицера ДРА"
+  name: humanity-construction-civ13_suit_DRA_officer_jacket-name
   id: civ13_suit_DRA_officer_jacket
   graph: civ13_suit_DRA_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Военная куртка офицера армии Демократической Республики Афганистан."
+  description: humanity-construction-civ13_suit_DRA_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dra_officer.rsi
     state: icon
@@ -107,13 +107,13 @@
     - node: end
       entity: civ13_suit_DRA_officer_jacket
 - type: construction
-  name: "зимняя «афганка»"
+  name: humanity-construction-civ13_suit_afghanka_coat-name
   id: civ13_suit_afghanka_coat
   graph: civ13_suit_afghanka_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Советская зимняя куртка образца начала 1980-х годов."
+  description: humanity-construction-civ13_suit_afghanka_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/winter_afghanka.rsi
     state: icon
@@ -134,13 +134,13 @@
     - node: end
       entity: civ13_suit_afghanka_coat
 - type: construction
-  name: "«афганка» в камуфляже КАФР"
+  name: humanity-construction-civ13_suit_cafr_afghanka_coat-name
   id: civ13_suit_cafr_afghanka_coat
   graph: civ13_suit_cafr_afghanka_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка «афганка» с камуфляжным рисунком КАФР."
+  description: humanity-construction-civ13_suit_cafr_afghanka_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/cafr_pattern_afghanka.rsi
     state: icon
@@ -161,13 +161,13 @@
     - node: end
       entity: civ13_suit_cafr_afghanka_coat
 - type: construction
-  name: "куртка криминалиста"
+  name: humanity-construction-civ13_suit_forensics_jacket-name
   id: civ13_suit_forensics_jacket
   graph: civ13_suit_forensics_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Служебная куртка криминалистического отдела."
+  description: humanity-construction-civ13_suit_forensics_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/forensics.rsi
     state: icon
@@ -188,13 +188,13 @@
     - node: end
       entity: civ13_suit_forensics_jacket
 - type: construction
-  name: "полицейский бронежилет"
+  name: humanity-construction-civ13_suit_police_bulletproof_vest-name
   id: civ13_suit_police_bulletproof_vest
   graph: civ13_suit_police_bulletproof_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Полицейский бронежилет III класса защиты."
+  description: humanity-construction-civ13_suit_police_bulletproof_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/policevest.rsi
     state: icon
@@ -215,13 +215,13 @@
     - node: end
       entity: civ13_suit_police_bulletproof_vest
 - type: construction
-  name: "куртка хаори"
+  name: humanity-construction-civ13_suit_haori_jacket-name
   id: civ13_suit_haori_jacket
   graph: civ13_suit_haori_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая накидка в японском стиле."
+  description: humanity-construction-civ13_suit_haori_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket_custom.rsi
     state: icon
@@ -242,13 +242,13 @@
     - node: end
       entity: civ13_suit_haori_jacket
 - type: construction
-  name: "хаори Абасири, корпус 1"
+  name: humanity-construction-civ13_suit_Abashiri_Haori-name
   id: civ13_suit_Abashiri_Haori
   graph: civ13_suit_Abashiri_Haori
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка хаори с надписью «Корпус 1» на спине."
+  description: humanity-construction-civ13_suit_Abashiri_Haori-description
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket1.rsi
     state: icon
@@ -269,13 +269,13 @@
     - node: end
       entity: civ13_suit_Abashiri_Haori
 - type: construction
-  name: "хаори Абасири, корпус 2"
+  name: humanity-construction-civ13_suit_Abashiri_Haori_1-name
   id: civ13_suit_Abashiri_Haori_1
   graph: civ13_suit_Abashiri_Haori_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка хаори с надписью «Корпус 2» на спине."
+  description: humanity-construction-civ13_suit_Abashiri_Haori_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket2.rsi
     state: icon
@@ -296,13 +296,13 @@
     - node: end
       entity: civ13_suit_Abashiri_Haori_1
 - type: construction
-  name: "хаори Абасири, корпус 3"
+  name: humanity-construction-civ13_suit_Abashiri_Haori_1_2-name
   id: civ13_suit_Abashiri_Haori_1_2
   graph: civ13_suit_Abashiri_Haori_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка хаори с надписью «Корпус 3» на спине."
+  description: humanity-construction-civ13_suit_Abashiri_Haori_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/suits/haori_jacket3.rsi
     state: icon
@@ -323,13 +323,13 @@
     - node: end
       entity: civ13_suit_Abashiri_Haori_1_2
 - type: construction
-  name: "чёрный костюм"
+  name: humanity-construction-civ13_suit_black_suit-name
   id: civ13_suit_black_suit
   graph: civ13_suit_black_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий чёрный костюм."
+  description: humanity-construction-civ13_suit_black_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/black_suit.rsi
     state: icon
@@ -350,13 +350,13 @@
     - node: end
       entity: civ13_suit_black_suit
 - type: construction
-  name: "угольно-чёрный костюм"
+  name: humanity-construction-civ13_suit_dark_black_suit-name
   id: civ13_suit_dark_black_suit
   graph: civ13_suit_dark_black_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий костюм глубокого чёрного цвета."
+  description: humanity-construction-civ13_suit_dark_black_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/really_black_suit.rsi
     state: icon
@@ -377,13 +377,13 @@
     - node: end
       entity: civ13_suit_dark_black_suit
 - type: construction
-  name: "тёмно-серый костюм"
+  name: humanity-construction-civ13_suit_charcoal_suit-name
   id: civ13_suit_charcoal_suit
   graph: civ13_suit_charcoal_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий костюм угольно-серого цвета."
+  description: humanity-construction-civ13_suit_charcoal_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/charcoal_suit.rsi
     state: icon
@@ -404,13 +404,13 @@
     - node: end
       entity: civ13_suit_charcoal_suit
 - type: construction
-  name: "тёмно-синий костюм"
+  name: humanity-construction-civ13_suit_navy_suit-name
   id: civ13_suit_navy_suit
   graph: civ13_suit_navy_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий тёмно-синий костюм."
+  description: humanity-construction-civ13_suit_navy_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/navy_suit.rsi
     state: icon
@@ -431,13 +431,13 @@
     - node: end
       entity: civ13_suit_navy_suit
 - type: construction
-  name: "клетчатый костюм"
+  name: humanity-construction-civ13_suit_checkered_suit-name
   id: civ13_suit_checkered_suit
   graph: civ13_suit_checkered_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий серый костюм в клетку."
+  description: humanity-construction-civ13_suit_checkered_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/checkered_suit.rsi
     state: icon
@@ -458,13 +458,13 @@
     - node: end
       entity: civ13_suit_checkered_suit
 - type: construction
-  name: "бордовый костюм"
+  name: humanity-construction-civ13_suit_burgundy_suit-name
   id: civ13_suit_burgundy_suit
   graph: civ13_suit_burgundy_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий бордовый костюм."
+  description: humanity-construction-civ13_suit_burgundy_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/burgundy_suit.rsi
     state: icon
@@ -485,13 +485,13 @@
     - node: end
       entity: civ13_suit_burgundy_suit
 - type: construction
-  name: "белый лабораторный халат"
+  name: humanity-construction-civ13_suit_white_labcoat-name
   id: civ13_suit_white_labcoat
   graph: civ13_suit_white_labcoat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый халат для лабораторной работы."
+  description: humanity-construction-civ13_suit_white_labcoat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/labcoat.rsi
     state: icon
@@ -512,13 +512,13 @@
     - node: end
       entity: civ13_suit_white_labcoat
 - type: construction
-  name: "хирургический фартук"
+  name: humanity-construction-civ13_suit_surgery_apron-name
   id: civ13_suit_surgery_apron
   graph: civ13_suit_surgery_apron
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий пластиковый фартук для операций."
+  description: humanity-construction-civ13_suit_surgery_apron-description
   icon:
     sprite: Civ14/Clothing/exported/suits/surgical.rsi
     state: icon
@@ -539,13 +539,13 @@
     - node: end
       entity: civ13_suit_surgery_apron
 - type: construction
-  name: "синий рабочий комбинезон"
+  name: humanity-construction-civ13_suit_coveralls-name
   id: civ13_suit_coveralls
   graph: civ13_suit_coveralls
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Рабочий комбинезон из термостойкой ткани."
+  description: humanity-construction-civ13_suit_coveralls-description
   icon:
     sprite: Civ14/Clothing/exported/suits/coveralls.rsi
     state: icon
@@ -566,13 +566,13 @@
     - node: end
       entity: civ13_suit_coveralls
 - type: construction
-  name: "чёрная куртка"
+  name: humanity-construction-civ13_suit_black_jacket-name
   id: civ13_suit_black_jacket
   graph: civ13_suit_black_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинная чёрная куртка."
+  description: humanity-construction-civ13_suit_black_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/piratejacket1.rsi
     state: icon
@@ -593,13 +593,13 @@
     - node: end
       entity: civ13_suit_black_jacket
 - type: construction
-  name: "нарядная коричневая куртка"
+  name: humanity-construction-civ13_suit_fancy_brown_jacket-name
   id: civ13_suit_fancy_brown_jacket
   graph: civ13_suit_fancy_brown_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядная куртка коричневого цвета."
+  description: humanity-construction-civ13_suit_fancy_brown_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/piratejacket2.rsi
     state: icon
@@ -620,13 +620,13 @@
     - node: end
       entity: civ13_suit_fancy_brown_jacket
 - type: construction
-  name: "синий жилет"
+  name: humanity-construction-civ13_suit_blue_vest-name
   id: civ13_suit_blue_vest
   graph: civ13_suit_blue_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий жилет без рукавов."
+  description: humanity-construction-civ13_suit_blue_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/piratejacket3.rsi
     state: icon
@@ -647,13 +647,13 @@
     - node: end
       entity: civ13_suit_blue_vest
 - type: construction
-  name: "чёрный жилет"
+  name: humanity-construction-civ13_suit_black_vest_1-name
   id: civ13_suit_black_vest_1
   graph: civ13_suit_black_vest_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрный жилет без рукавов."
+  description: humanity-construction-civ13_suit_black_vest_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/piratejacket4.rsi
     state: icon
@@ -674,13 +674,13 @@
     - node: end
       entity: civ13_suit_black_vest_1
 - type: construction
-  name: "нарядная красная куртка"
+  name: humanity-construction-civ13_suit_fancy_red_jacket-name
   id: civ13_suit_fancy_red_jacket
   graph: civ13_suit_fancy_red_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Нарядная куртка красного цвета."
+  description: humanity-construction-civ13_suit_fancy_red_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/piratejacket5.rsi
     state: icon
@@ -701,13 +701,13 @@
     - node: end
       entity: civ13_suit_fancy_red_jacket
 - type: construction
-  name: "мундир капитана британского флота"
+  name: humanity-construction-civ13_suit_royal_navy_captain_jacket-name
   id: civ13_suit_royal_navy_captain_jacket
   graph: civ13_suit_royal_navy_captain_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий мундир капитана Королевского флота с золотыми пуговицами, белым шитьём и золотыми обшлагами."
+  description: humanity-construction-civ13_suit_royal_navy_captain_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/british_captain.rsi
     state: icon
@@ -728,13 +728,13 @@
     - node: end
       entity: civ13_suit_royal_navy_captain_jacket
 - type: construction
-  name: "мундир офицера британского флота"
+  name: humanity-construction-civ13_suit_royal_navy_officer_jacket-name
   id: civ13_suit_royal_navy_officer_jacket
   graph: civ13_suit_royal_navy_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий офицерский мундир Королевского флота с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_royal_navy_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
@@ -755,13 +755,13 @@
     - node: end
       entity: civ13_suit_royal_navy_officer_jacket
 - type: construction
-  name: "британский красный мундир"
+  name: humanity-construction-civ13_suit_british_red_jacket-name
   id: civ13_suit_british_red_jacket
   graph: civ13_suit_british_red_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красный мундир солдата британской армии или морской пехоты."
+  description: humanity-construction-civ13_suit_british_red_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/british_soldier_jacket.rsi
     state: icon
@@ -782,13 +782,13 @@
     - node: end
       entity: civ13_suit_british_red_jacket
 - type: construction
-  name: "мундир капитана португальского флота"
+  name: humanity-construction-civ13_suit_portuguese_captain_jacket-name
   id: civ13_suit_portuguese_captain_jacket
   graph: civ13_suit_portuguese_captain_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
+  description: humanity-construction-civ13_suit_portuguese_captain_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/portuguese_captain.rsi
     state: icon
@@ -809,13 +809,13 @@
     - node: end
       entity: civ13_suit_portuguese_captain_jacket
 - type: construction
-  name: "мундир офицера португальского флота"
+  name: humanity-construction-civ13_suit_portuguese_officer_jacket-name
   id: civ13_suit_portuguese_officer_jacket
   graph: civ13_suit_portuguese_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Синий офицерский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_portuguese_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/portuguese_officer.rsi
     state: icon
@@ -836,13 +836,13 @@
     - node: end
       entity: civ13_suit_portuguese_officer_jacket
 - type: construction
-  name: "мундир капитана испанского флота"
+  name: humanity-construction-civ13_suit_spanish_captain_jacket-name
   id: civ13_suit_spanish_captain_jacket
   graph: civ13_suit_spanish_captain_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтый капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
+  description: humanity-construction-civ13_suit_spanish_captain_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/spanish_captain.rsi
     state: icon
@@ -863,13 +863,13 @@
     - node: end
       entity: civ13_suit_spanish_captain_jacket
 - type: construction
-  name: "мундир офицера испанского флота"
+  name: humanity-construction-civ13_suit_spanish_officer_jacket-name
   id: civ13_suit_spanish_officer_jacket
   graph: civ13_suit_spanish_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтый офицерский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_spanish_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
@@ -890,13 +890,13 @@
     - node: end
       entity: civ13_suit_spanish_officer_jacket
 - type: construction
-  name: "мундир испанского солдата"
+  name: humanity-construction-civ13_suit_spanish_soldier_jacket-name
   id: civ13_suit_spanish_soldier_jacket
   graph: civ13_suit_spanish_soldier_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтый мундир испанской армии с красной отделкой."
+  description: humanity-construction-civ13_suit_spanish_soldier_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/spanish_army.rsi
     state: icon
@@ -917,13 +917,13 @@
     - node: end
       entity: civ13_suit_spanish_soldier_jacket
 - type: construction
-  name: "мундир капитана французского флота"
+  name: humanity-construction-civ13_suit_french_captain_jacket-name
   id: civ13_suit_french_captain_jacket
   graph: civ13_suit_french_captain_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый капитанский мундир с золотыми пуговицами, синим шитьём и золотыми обшлагами."
+  description: humanity-construction-civ13_suit_french_captain_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/french_captain.rsi
     state: icon
@@ -944,13 +944,13 @@
     - node: end
       entity: civ13_suit_french_captain_jacket
 - type: construction
-  name: "мундир офицера французского флота"
+  name: humanity-construction-civ13_suit_french_officer_jacket-name
   id: civ13_suit_french_officer_jacket
   graph: civ13_suit_french_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый офицерский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_french_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/french_officer.rsi
     state: icon
@@ -971,13 +971,13 @@
     - node: end
       entity: civ13_suit_french_officer_jacket
 - type: construction
-  name: "мундир капитана флота Соединённых провинций"
+  name: humanity-construction-civ13_suit_united_provinces_captain_jacket-name
   id: civ13_suit_united_provinces_captain_jacket
   graph: civ13_suit_united_provinces_captain_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Оранжевый капитанский мундир с золотыми пуговицами, белым шитьём и золотыми обшлагами."
+  description: humanity-construction-civ13_suit_united_provinces_captain_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_captain.rsi
     state: icon
@@ -998,13 +998,13 @@
     - node: end
       entity: civ13_suit_united_provinces_captain_jacket
 - type: construction
-  name: "мундир офицера флота Соединённых провинций"
+  name: humanity-construction-civ13_suit_united_provinces_officer_jacket-name
   id: civ13_suit_united_provinces_officer_jacket
   graph: civ13_suit_united_provinces_officer_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Оранжевый офицерский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_united_provinces_officer_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_officer.rsi
     state: icon
@@ -1025,13 +1025,13 @@
     - node: end
       entity: civ13_suit_united_provinces_officer_jacket
 - type: construction
-  name: "мундир армии Соединённых провинций"
+  name: humanity-construction-civ13_suit_united_provinces_army_jacket-name
   id: civ13_suit_united_provinces_army_jacket
   graph: civ13_suit_united_provinces_army_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Оранжевый армейский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_united_provinces_army_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dutch_army.rsi
     state: icon
@@ -1052,13 +1052,13 @@
     - node: end
       entity: civ13_suit_united_provinces_army_jacket
 - type: construction
-  name: "мундир испанской армии"
+  name: humanity-construction-civ13_suit_spanish_army_jacket-name
   id: civ13_suit_spanish_army_jacket
   graph: civ13_suit_spanish_army_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Жёлтый армейский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_spanish_army_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/spanish_officer.rsi
     state: icon
@@ -1079,13 +1079,13 @@
     - node: end
       entity: civ13_suit_spanish_army_jacket
 - type: construction
-  name: "мундир португальской армии"
+  name: humanity-construction-civ13_suit_portuguese_army_jacket-name
   id: civ13_suit_portuguese_army_jacket
   graph: civ13_suit_portuguese_army_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зелёный армейский мундир с золотыми пуговицами."
+  description: humanity-construction-civ13_suit_portuguese_army_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/portuguese_army.rsi
     state: icon
@@ -1106,13 +1106,13 @@
     - node: end
       entity: civ13_suit_portuguese_army_jacket
 - type: construction
-  name: "мундир французской армии"
+  name: humanity-construction-civ13_suit_french_army_jacket-name
   id: civ13_suit_french_army_jacket
   graph: civ13_suit_french_army_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый армейский мундир с синей отделкой."
+  description: humanity-construction-civ13_suit_french_army_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/french_army.rsi
     state: icon
@@ -1133,13 +1133,13 @@
     - node: end
       entity: civ13_suit_french_army_jacket
 - type: construction
-  name: "мундир британской армии"
+  name: humanity-construction-civ13_suit_british_army_jacket-name
   id: civ13_suit_british_army_jacket
   graph: civ13_suit_british_army_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красно-белый мундир британского солдата."
+  description: humanity-construction-civ13_suit_british_army_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/british_officer.rsi
     state: icon
@@ -1160,13 +1160,13 @@
     - node: end
       entity: civ13_suit_british_army_jacket
 - type: construction
-  name: "викторианский фрак"
+  name: humanity-construction-civ13_suit_victorian_tailcoat-name
   id: civ13_suit_victorian_tailcoat
   graph: civ13_suit_victorian_tailcoat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Строгий фрак в духе викторианской эпохи. Подойдёт дворецкому."
+  description: humanity-construction-civ13_suit_victorian_tailcoat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/victorian_tailcoat.rsi
     state: icon
@@ -1187,13 +1187,13 @@
     - node: end
       entity: civ13_suit_victorian_tailcoat
 - type: construction
-  name: "кожаное пальто"
+  name: humanity-construction-civ13_suit_leather_overcoat-name
   id: civ13_suit_leather_overcoat
   graph: civ13_suit_leather_overcoat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинное пальто из кожи."
+  description: humanity-construction-civ13_suit_leather_overcoat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/leather_overcoat.rsi
     state: icon
@@ -1214,13 +1214,13 @@
     - node: end
       entity: civ13_suit_leather_overcoat
 - type: construction
-  name: "чёрное кожаное пальто"
+  name: humanity-construction-civ13_suit_black_leather_overcoat-name
   id: civ13_suit_black_leather_overcoat
   graph: civ13_suit_black_leather_overcoat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинное чёрное пальто из кожи."
+  description: humanity-construction-civ13_suit_black_leather_overcoat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/black_leather_overcoat.rsi
     state: icon
@@ -1241,13 +1241,13 @@
     - node: end
       entity: civ13_suit_black_leather_overcoat
 - type: construction
-  name: "чёрный жилет"
+  name: humanity-construction-civ13_suit_black_vest_1_2-name
   id: civ13_suit_black_vest_1_2
   graph: civ13_suit_black_vest_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой чёрный жилет."
+  description: humanity-construction-civ13_suit_black_vest_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/suits/blackvest.rsi
     state: icon
@@ -1268,13 +1268,13 @@
     - node: end
       entity: civ13_suit_black_vest_1_2
 - type: construction
-  name: "оливковый жилет"
+  name: humanity-construction-civ13_suit_olive_vest-name
   id: civ13_suit_olive_vest
   graph: civ13_suit_olive_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой жилет оливкового цвета."
+  description: humanity-construction-civ13_suit_olive_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/olivevest.rsi
     state: icon
@@ -1295,13 +1295,13 @@
     - node: end
       entity: civ13_suit_olive_vest
 - type: construction
-  name: "синий жилет"
+  name: humanity-construction-civ13_suit_blue_vest_1-name
   id: civ13_suit_blue_vest_1
   graph: civ13_suit_blue_vest_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой синий жилет."
+  description: humanity-construction-civ13_suit_blue_vest_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/bluevest.rsi
     state: icon
@@ -1322,13 +1322,13 @@
     - node: end
       entity: civ13_suit_blue_vest_1
 - type: construction
-  name: "короткая кремовая куртка"
+  name: humanity-construction-civ13_suit_cream_short_jacket-name
   id: civ13_suit_cream_short_jacket
   graph: civ13_suit_cream_short_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Короткая куртка кремового цвета."
+  description: humanity-construction-civ13_suit_cream_short_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/texas.rsi
     state: icon
@@ -1349,13 +1349,13 @@
     - node: end
       entity: civ13_suit_cream_short_jacket
 - type: construction
-  name: "костюм чумного доктора"
+  name: humanity-construction-civ13_suit_plague_doctor_suit-name
   id: civ13_suit_plague_doctor_suit
   graph: civ13_suit_plague_doctor_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Одежда чумного доктора лишь прибавляет загадочности его методам."
+  description: humanity-construction-civ13_suit_plague_doctor_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/plaguedoctor.rsi
     state: icon
@@ -1376,13 +1376,13 @@
     - node: end
       entity: civ13_suit_plague_doctor_suit
 - type: construction
-  name: "королевская горностаевая мантия"
+  name: humanity-construction-civ13_suit_regal_ermine_cape-name
   id: civ13_suit_regal_ermine_cape
   graph: civ13_suit_regal_ermine_cape
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Широкая мантия с узором под мех горностая. Знак высокого положения при дворе."
+  description: humanity-construction-civ13_suit_regal_ermine_cape-description
   icon:
     sprite: Civ14/Clothing/exported/suits/regal_cape.rsi
     state: icon
@@ -1403,13 +1403,13 @@
     - node: end
       entity: civ13_suit_regal_ermine_cape
 - type: construction
-  name: "шерстяное пальто степного шамана"
+  name: humanity-construction-civ13_suit_steppe_shaman_wool_coat-name
   id: civ13_suit_steppe_shaman_wool_coat
   graph: civ13_suit_steppe_shaman_wool_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пёстрое шерстяное пальто согревает шамана во время обрядов под открытым небом."
+  description: humanity-construction-civ13_suit_steppe_shaman_wool_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/steppe_shaman_wool_coat.rsi
     state: icon
@@ -1430,13 +1430,13 @@
     - node: end
       entity: civ13_suit_steppe_shaman_wool_coat
 - type: construction
-  name: "куртка автомобилиста"
+  name: humanity-construction-civ13_suit_motorist_jacket-name
   id: civ13_suit_motorist_jacket
   graph: civ13_suit_motorist_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Для тех, кто любит скорость, машины и запах жжёной резины."
+  description: humanity-construction-civ13_suit_motorist_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/motorist_jacket.rsi
     state: icon
@@ -1457,13 +1457,13 @@
     - node: end
       entity: civ13_suit_motorist_jacket
 - type: construction
-  name: "зимняя куртка российских войск"
+  name: humanity-construction-civ13_suit_Russian_Federal_Forces_winter_jacket-name
   id: civ13_suit_Russian_Federal_Forces_winter_jacket
   graph: civ13_suit_Russian_Federal_Forces_winter_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зимняя военная куртка в камуфляже ВСР-93."
+  description: humanity-construction-civ13_suit_Russian_Federal_Forces_winter_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/rus_winter_vsr93.rsi
     state: icon
@@ -1484,13 +1484,13 @@
     - node: end
       entity: civ13_suit_Russian_Federal_Forces_winter_jacket
 - type: construction
-  name: "панковская куртка"
+  name: humanity-construction-civ13_suit_punk_jacket-name
   id: civ13_suit_punk_jacket
   graph: civ13_suit_punk_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Свободная куртка с надписями на спине, любимая бунтарями."
+  description: humanity-construction-civ13_suit_punk_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/punk_vest.rsi
     state: icon
@@ -1511,13 +1511,13 @@
     - node: end
       entity: civ13_suit_punk_jacket
 - type: construction
-  name: "сигнальная куртка"
+  name: humanity-construction-civ13_suit_high_visibility_jacket-name
   id: civ13_suit_high_visibility_jacket
   graph: civ13_suit_high_visibility_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Ярко-жёлтая куртка, заметная издалека."
+  description: humanity-construction-civ13_suit_high_visibility_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/high_vis_jacket_yellow.rsi
     state: icon
@@ -1538,13 +1538,13 @@
     - node: end
       entity: civ13_suit_high_visibility_jacket
 - type: construction
-  name: "куртка парамедика"
+  name: humanity-construction-civ13_suit_paramedic_jacket-name
   id: civ13_suit_paramedic_jacket
   graph: civ13_suit_paramedic_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Служебная куртка сотрудника скорой помощи."
+  description: humanity-construction-civ13_suit_paramedic_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/paramedic_jacket.rsi
     state: icon
@@ -1565,13 +1565,13 @@
     - node: end
       entity: civ13_suit_paramedic_jacket
 - type: construction
-  name: "спортивный костюм"
+  name: humanity-construction-civ13_suit_track_suit-name
   id: civ13_suit_track_suit
   graph: civ13_suit_track_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Удобный костюм для занятий спортом."
+  description: humanity-construction-civ13_suit_track_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/tracksuit.rsi
     state: icon
@@ -1593,13 +1593,13 @@
       entity: civ13_suit_track_suit
 
 - type: construction
-  name: "броня имперского офицера"
+  name: humanity-construction-civ13_suit_imperial_officer_armor-name
   id: civ13_suit_imperial_officer_armor
   graph: civ13_suit_imperial_officer_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлые стальные доспехи имперского офицера."
+  description: humanity-construction-civ13_suit_imperial_officer_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/imperial_officer.rsi
     state: icon
@@ -1620,13 +1620,13 @@
     - node: end
       entity: civ13_suit_imperial_officer_armor
 - type: construction
-  name: "куртка комиссара"
+  name: humanity-construction-civ13_suit_commissar_jacket-name
   id: civ13_suit_commissar_jacket
   graph: civ13_suit_commissar_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красная куртка сурового командира пехоты. Его приказы лучше выполнять без споров."
+  description: humanity-construction-civ13_suit_commissar_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
@@ -1647,13 +1647,13 @@
     - node: end
       entity: civ13_suit_commissar_jacket
 - type: construction
-  name: "куртка инквизитора"
+  name: humanity-construction-civ13_suit_inquisitorial_jacket-name
   id: civ13_suit_inquisitorial_jacket
   graph: civ13_suit_inquisitorial_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрная куртка с красными полосами на рукавах. Её носят следователи, охотящиеся за еретиками и заговорщиками."
+  description: humanity-construction-civ13_suit_inquisitorial_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/commissar.rsi
     state: icon
@@ -1674,13 +1674,13 @@
     - node: end
       entity: civ13_suit_inquisitorial_jacket
 - type: construction
-  name: "куртка инквизитора"
+  name: humanity-construction-civ13_suit_inquisitorial_jacket_1-name
   id: civ13_suit_inquisitorial_jacket_1
   graph: civ13_suit_inquisitorial_jacket_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрная служебная куртка инквизитора."
+  description: humanity-construction-civ13_suit_inquisitorial_jacket_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/inqcape_alt.rsi
     state: icon
@@ -1701,13 +1701,13 @@
     - node: end
       entity: civ13_suit_inquisitorial_jacket_1
 - type: construction
-  name: "мантия эльфийского чародея"
+  name: humanity-construction-civ13_suit_elven_warlock_robe-name
   id: civ13_suit_elven_warlock_robe
   graph: civ13_suit_elven_warlock_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинная мантия таинственного эльфийского предводителя."
+  description: humanity-construction-civ13_suit_elven_warlock_robe-description
   icon:
     sprite: Civ14/Clothing/exported/suits/elf_warlock.rsi
     state: icon
@@ -1728,13 +1728,13 @@
     - node: end
       entity: civ13_suit_elven_warlock_robe
 - type: construction
-  name: "куртка эльфийского арлекина"
+  name: humanity-construction-civ13_suit_elven_harlequin_jacket-name
   id: civ13_suit_elven_harlequin_jacket
   graph: civ13_suit_elven_harlequin_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Яркая театральная куртка странствующего эльфийского убийцы."
+  description: humanity-construction-civ13_suit_elven_harlequin_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/elf_harlequin.rsi
     state: icon
@@ -1755,13 +1755,13 @@
     - node: end
       entity: civ13_suit_elven_harlequin_jacket
 - type: construction
-  name: "пончо"
+  name: humanity-construction-civ13_suit_poncho-name
   id: civ13_suit_poncho
   graph: civ13_suit_poncho
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простое пончо из ткани."
+  description: humanity-construction-civ13_suit_poncho-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customponcho.rsi
     state: icon
@@ -1782,13 +1782,13 @@
     - node: end
       entity: civ13_suit_poncho
 - type: construction
-  name: "худи"
+  name: humanity-construction-civ13_suit_hoodie-name
   id: civ13_suit_hoodie
   graph: civ13_suit_hoodie
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простое удобное худи."
+  description: humanity-construction-civ13_suit_hoodie-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customhoodie.rsi
     state: icon
@@ -1809,13 +1809,13 @@
     - node: end
       entity: civ13_suit_hoodie
 - type: construction
-  name: "матерчатая куртка"
+  name: humanity-construction-civ13_suit_cloth_jacket-name
   id: civ13_suit_cloth_jacket
   graph: civ13_suit_cloth_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простая куртка из ткани."
+  description: humanity-construction-civ13_suit_cloth_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customjacket.rsi
     state: icon
@@ -1836,13 +1836,13 @@
     - node: end
       entity: civ13_suit_cloth_jacket
 - type: construction
-  name: "пиджак"
+  name: humanity-construction-civ13_suit_suit_blazer-name
   id: civ13_suit_suit_blazer
   graph: civ13_suit_suit_blazer
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой матерчатый пиджак."
+  description: humanity-construction-civ13_suit_suit_blazer-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customblazer.rsi
     state: icon
@@ -1863,13 +1863,13 @@
     - node: end
       entity: civ13_suit_suit_blazer
 - type: construction
-  name: "колониальное пальто"
+  name: humanity-construction-civ13_suit_colonial_coat-name
   id: civ13_suit_colonial_coat
   graph: civ13_suit_colonial_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто образца XVIII века."
+  description: humanity-construction-civ13_suit_colonial_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customcolonialcoat_full.rsi
     state: icon
@@ -1890,13 +1890,13 @@
     - node: end
       entity: civ13_suit_colonial_coat
 - type: construction
-  name: "колониальная куртка"
+  name: humanity-construction-civ13_suit_colonial_jacket-name
   id: civ13_suit_colonial_jacket
   graph: civ13_suit_colonial_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка образца XVIII века."
+  description: humanity-construction-civ13_suit_colonial_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customcolonial_full.rsi
     state: icon
@@ -1917,13 +1917,13 @@
     - node: end
       entity: civ13_suit_colonial_jacket
 - type: construction
-  name: "спортивный костюм"
+  name: humanity-construction-civ13_suit_track_suit_1-name
   id: civ13_suit_track_suit_1
   graph: civ13_suit_track_suit_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Удобный костюм для занятий спортом."
+  description: humanity-construction-civ13_suit_track_suit_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/customtracksuit.rsi
     state: icon
@@ -1944,13 +1944,13 @@
     - node: end
       entity: civ13_suit_track_suit_1
 - type: construction
-  name: "одеяние мудрого наставника"
+  name: humanity-construction-civ13_suit_wise_tutor_robes-name
   id: civ13_suit_wise_tutor_robes
   graph: civ13_suit_wise_tutor_robes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Такое одеяние носят опытные наставники."
+  description: humanity-construction-civ13_suit_wise_tutor_robes-description
   icon:
     sprite: Civ14/Clothing/exported/suits/wise_tutor_robe.rsi
     state: icon
@@ -1971,13 +1971,13 @@
     - node: end
       entity: civ13_suit_wise_tutor_robes
 - type: construction
-  name: "одеяние заносчивого ученика"
+  name: humanity-construction-civ13_suit_arrogant_student_robes-name
   id: civ13_suit_arrogant_student_robes
   graph: civ13_suit_arrogant_student_robes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Одеяние ученика с нелёгким характером."
+  description: humanity-construction-civ13_suit_arrogant_student_robes-description
   icon:
     sprite: Civ14/Clothing/exported/suits/arrogant_student_robe.rsi
     state: icon
@@ -1998,13 +1998,13 @@
     - node: end
       entity: civ13_suit_arrogant_student_robes
 - type: construction
-  name: "меховая шуба"
+  name: humanity-construction-civ13_suit_fur_coat-name
   id: civ13_suit_fur_coat
   graph: civ13_suit_fur_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Густой мех хорошо согревает зимой."
+  description: humanity-construction-civ13_suit_fur_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket1.rsi
     state: icon
@@ -2025,13 +2025,13 @@
     - node: end
       entity: civ13_suit_fur_coat
 - type: construction
-  name: "пальто из человеческой кожи"
+  name: humanity-construction-civ13_suit_human_skin_coat-name
   id: civ13_suit_human_skin_coat
   graph: civ13_suit_human_skin_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Сшито из человеческой кожи. Жутковато..."
+  description: humanity-construction-civ13_suit_human_skin_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket5.rsi
     state: icon
@@ -2052,13 +2052,13 @@
     - node: end
       entity: civ13_suit_human_skin_coat
 - type: construction
-  name: "зимнее пальто M05"
+  name: humanity-construction-civ13_suit_M05_snow_pattern_coat-name
   id: civ13_suit_M05_snow_pattern_coat
   graph: civ13_suit_M05_snow_pattern_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто в финском снежном камуфляже M05."
+  description: humanity-construction-civ13_suit_M05_snow_pattern_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket7.rsi
     state: icon
@@ -2079,13 +2079,13 @@
     - node: end
       entity: civ13_suit_M05_snow_pattern_coat
 - type: construction
-  name: "пальто в украинском зимнем камуфляже"
+  name: humanity-construction-civ13_suit_Ukrainian_winter_camo_coat-name
   id: civ13_suit_Ukrainian_winter_camo_coat
   graph: civ13_suit_Ukrainian_winter_camo_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто в зимней камуфляжной расцветке украинской армии."
+  description: humanity-construction-civ13_suit_Ukrainian_winter_camo_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket8.rsi
     state: icon
@@ -2106,13 +2106,13 @@
     - node: end
       entity: civ13_suit_Ukrainian_winter_camo_coat
 - type: construction
-  name: "пальто в камуфляже «Клякса»"
+  name: humanity-construction-civ13_suit_Klyaksa_camo_coat-name
   id: civ13_suit_Klyaksa_camo_coat
   graph: civ13_suit_Klyaksa_camo_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто в российском зимнем камуфляже «Клякса»."
+  description: humanity-construction-civ13_suit_Klyaksa_camo_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket10.rsi
     state: icon
@@ -2133,13 +2133,13 @@
     - node: end
       entity: civ13_suit_Klyaksa_camo_coat
 - type: construction
-  name: "пальто в камуфляже Schneetarn"
+  name: humanity-construction-civ13_suit_Schneetarn_camo_coat-name
   id: civ13_suit_Schneetarn_camo_coat
   graph: civ13_suit_Schneetarn_camo_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто в немецком снежном камуфляже Schneetarn."
+  description: humanity-construction-civ13_suit_Schneetarn_camo_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket9.rsi
     state: icon
@@ -2160,13 +2160,13 @@
     - node: end
       entity: civ13_suit_Schneetarn_camo_coat
 - type: construction
-  name: "шуба из меха орка"
+  name: humanity-construction-civ13_suit_orc_fur_coat-name
   id: civ13_suit_orc_fur_coat
   graph: civ13_suit_orc_fur_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Толстая тёмно-зелёная шуба из неприятных на вид орочьих шкур."
+  description: humanity-construction-civ13_suit_orc_fur_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fur_jacket6.rsi
     state: icon
@@ -2187,13 +2187,13 @@
     - node: end
       entity: civ13_suit_orc_fur_coat
 - type: construction
-  name: "тёмно-зелёное зимнее пальто"
+  name: humanity-construction-civ13_suit_dark_green_winter_coat-name
   id: civ13_suit_dark_green_winter_coat
   graph: civ13_suit_dark_green_winter_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Армейское пальто тёмно-оливкового цвета."
+  description: humanity-construction-civ13_suit_dark_green_winter_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/modern_winter.rsi
     state: icon
@@ -2214,13 +2214,13 @@
     - node: end
       entity: civ13_suit_dark_green_winter_coat
 - type: construction
-  name: "красная куртка"
+  name: humanity-construction-civ13_suit_red_jacket-name
   id: civ13_suit_red_jacket
   graph: civ13_suit_red_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красная куртка в стиле восьмидесятых."
+  description: humanity-construction-civ13_suit_red_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/jacket80s.rsi
     state: icon
@@ -2242,13 +2242,13 @@
       entity: civ13_suit_red_jacket
 
 - type: construction
-  name: "американское зимнее пальто"
+  name: humanity-construction-civ13_suit_american_coat-name
   id: civ13_suit_american_coat
   graph: civ13_suit_american_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплое пальто американского образца."
+  description: humanity-construction-civ13_suit_american_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/us_coat_korea.rsi
     state: icon
@@ -2269,13 +2269,13 @@
     - node: end
       entity: civ13_suit_american_coat
 - type: construction
-  name: "необычное тёмно-синее пальто"
+  name: humanity-construction-civ13_suit_bizarre_dark_blue_coat-name
   id: civ13_suit_bizarre_dark_blue_coat
   graph: civ13_suit_bizarre_dark_blue_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очень стильное пальто."
+  description: humanity-construction-civ13_suit_bizarre_dark_blue_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/bizarre_coat.rsi
     state: icon
@@ -2296,13 +2296,13 @@
     - node: end
       entity: civ13_suit_bizarre_dark_blue_coat
 - type: construction
-  name: "кожаное пальто чекиста"
+  name: humanity-construction-civ13_suit_Cheka_leather_coat-name
   id: civ13_suit_Cheka_leather_coat
   graph: civ13_suit_Cheka_leather_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Блестящее чёрное кожаное пальто сотрудника ЧК."
+  description: humanity-construction-civ13_suit_Cheka_leather_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/leathercoat_c.rsi
     state: icon
@@ -2323,13 +2323,13 @@
     - node: end
       entity: civ13_suit_Cheka_leather_coat
 - type: construction
-  name: "чёрная черкеска"
+  name: humanity-construction-civ13_suit_Black_cherkesska_coat-name
   id: civ13_suit_Black_cherkesska_coat
   graph: civ13_suit_Black_cherkesska_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Традиционная черкеска кубанского казака."
+  description: humanity-construction-civ13_suit_Black_cherkesska_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/kuban_cossak.rsi
     state: icon
@@ -2350,13 +2350,13 @@
     - node: end
       entity: civ13_suit_Black_cherkesska_coat
 - type: construction
-  name: "советская шинель"
+  name: humanity-construction-civ13_suit_Soviet_coat-name
   id: civ13_suit_Soviet_coat
   graph: civ13_suit_Soviet_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Шинель Красной армии раннего образца."
+  description: humanity-construction-civ13_suit_Soviet_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
@@ -2377,13 +2377,13 @@
     - node: end
       entity: civ13_suit_Soviet_coat
 - type: construction
-  name: "шинель японской армии"
+  name: humanity-construction-civ13_suit_Japanese_coat-name
   id: civ13_suit_Japanese_coat
   graph: civ13_suit_Japanese_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Шинель военнослужащего Императорской армии Японии."
+  description: humanity-construction-civ13_suit_Japanese_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
     state: icon
@@ -2404,13 +2404,13 @@
     - node: end
       entity: civ13_suit_Japanese_coat
 - type: construction
-  name: "священническое облачение"
+  name: humanity-construction-civ13_suit_priest_sleev-name
   id: civ13_suit_priest_sleev
   graph: civ13_suit_priest_sleev
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Священное одеяние служителя церкви."
+  description: humanity-construction-civ13_suit_priest_sleev-description
   icon:
     sprite: Civ14/Clothing/exported/suits/priestwhite.rsi
     state: icon
@@ -2431,13 +2431,13 @@
     - node: end
       entity: civ13_suit_priest_sleev
 - type: construction
-  name: "японская армейская шинель"
+  name: humanity-construction-civ13_suit_Japanese_Coat-name
   id: civ13_suit_Japanese_Coat
   graph: civ13_suit_Japanese_Coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Шинель военнослужащего японской армии."
+  description: humanity-construction-civ13_suit_Japanese_Coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
@@ -2458,13 +2458,13 @@
     - node: end
       entity: civ13_suit_Japanese_Coat
 - type: construction
-  name: "коричневый тренч"
+  name: humanity-construction-civ13_suit_Brown_trench_coat-name
   id: civ13_suit_Brown_trench_coat
   graph: civ13_suit_Brown_trench_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинный плащ, защищающий одежду от грязи и дождя."
+  description: humanity-construction-civ13_suit_Brown_trench_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/japcoat2.rsi
     state: icon
@@ -2485,13 +2485,13 @@
     - node: end
       entity: civ13_suit_Brown_trench_coat
 - type: construction
-  name: "шинель российской армии"
+  name: humanity-construction-civ13_suit_Russian_Coat-name
   id: civ13_suit_Russian_Coat
   graph: civ13_suit_Russian_Coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Военная шинель российского образца."
+  description: humanity-construction-civ13_suit_Russian_Coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
     state: icon
@@ -2512,13 +2512,13 @@
     - node: end
       entity: civ13_suit_Russian_Coat
 - type: construction
-  name: "шинель российского офицера"
+  name: humanity-construction-civ13_suit_Russian_officer_coat--name-0a96ba5e
   id: civ13_suit_Russian_officer_coat.
   graph: civ13_suit_Russian_officer_coat.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Офицерская шинель российской армии. Сразу видно, кто старший по званию."
+  description: humanity-construction-civ13_suit_Russian_officer_coat--description-647f1ea0
   icon:
     sprite: Civ14/Clothing/exported/suits/rusoffcoat.rsi
     state: icon
@@ -2539,13 +2539,13 @@
     - node: end
       entity: civ13_suit_Russian_officer_coat.
 - type: construction
-  name: "коричневое зимнее пальто"
+  name: humanity-construction-civ13_suit_brown_winter_coat-name
   id: civ13_suit_brown_winter_coat
   graph: civ13_suit_brown_winter_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотное пальто для холодной погоды."
+  description: humanity-construction-civ13_suit_brown_winter_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/winter_coat.rsi
     state: icon
@@ -2566,13 +2566,13 @@
     - node: end
       entity: civ13_suit_brown_winter_coat
 - type: construction
-  name: "чёрный бушлат"
+  name: humanity-construction-civ13_suit_black_peacoat-name
   id: civ13_suit_black_peacoat
   graph: civ13_suit_black_peacoat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплый чёрный бушлат без лишних украшений."
+  description: humanity-construction-civ13_suit_black_peacoat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/victorian_peacoat.rsi
     state: icon
@@ -2593,13 +2593,13 @@
     - node: end
       entity: civ13_suit_black_peacoat
 - type: construction
-  name: "меховая шуба"
+  name: humanity-construction-civ13_suit_fur_coat_1-name
   id: civ13_suit_fur_coat_1
   graph: civ13_suit_fur_coat_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Густой мех хорошо согревает зимой."
+  description: humanity-construction-civ13_suit_fur_coat_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/kozhanka.rsi
     state: icon
@@ -2620,13 +2620,13 @@
     - node: end
       entity: civ13_suit_fur_coat_1
 - type: construction
-  name: "роскошная шуба"
+  name: humanity-construction-civ13_suit_fancy_fur_coat-name
   id: civ13_suit_fancy_fur_coat
   graph: civ13_suit_fancy_fur_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дорогая и нарядная меховая шуба."
+  description: humanity-construction-civ13_suit_fancy_fur_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fancy_fur_coat.rsi
     state: icon
@@ -2647,13 +2647,13 @@
     - node: end
       entity: civ13_suit_fancy_fur_coat
 - type: construction
-  name: "мантия повелителя"
+  name: humanity-construction-civ13_suit_overlord_robe-name
   id: civ13_suit_overlord_robe
   graph: civ13_suit_overlord_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Необыкновенно изящная мантия могущественной нежити."
+  description: humanity-construction-civ13_suit_overlord_robe-description
   icon:
     sprite: Civ14/Clothing/exported/suits/overlord_coat.rsi
     state: icon
@@ -2674,13 +2674,13 @@
     - node: end
       entity: civ13_suit_overlord_robe
 - type: construction
-  name: "монашеская ряса"
+  name: humanity-construction-civ13_suit_monk_robes-name
   id: civ13_suit_monk_robes
   graph: civ13_suit_monk_robes
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Ряса монаха. Хорошо согревает зимой."
+  description: humanity-construction-civ13_suit_monk_robes-description
   icon:
     sprite: Civ14/Clothing/exported/suits/monk_robes.rsi
     state: icon
@@ -2701,13 +2701,13 @@
     - node: end
       entity: civ13_suit_monk_robes
 - type: construction
-  name: "нарядная меховая одежда"
+  name: humanity-construction-civ13_suit_fine_clothing-name
   id: civ13_suit_fine_clothing
   graph: civ13_suit_fine_clothing
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Добротная меховая куртка и рубаха для зажиточного человека."
+  description: humanity-construction-civ13_suit_fine_clothing-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fine_clothes.rsi
     state: icon
@@ -2728,13 +2728,13 @@
     - node: end
       entity: civ13_suit_fine_clothing
 - type: construction
-  name: "синий спасательный жилет"
+  name: humanity-construction-civ13_suit_lifejacket-name
   id: civ13_suit_lifejacket
   graph: civ13_suit_lifejacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Помогает удержаться на воде."
+  description: humanity-construction-civ13_suit_lifejacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sealvest_blue.rsi
     state: icon
@@ -2755,13 +2755,13 @@
     - node: end
       entity: civ13_suit_lifejacket
 - type: construction
-  name: "куртка пожарного"
+  name: humanity-construction-civ13_suit_firefighter_coat-name
   id: civ13_suit_firefighter_coat
   graph: civ13_suit_firefighter_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает туловище и руки от сильного жара."
+  description: humanity-construction-civ13_suit_firefighter_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/firefighter.rsi
     state: icon
@@ -2782,13 +2782,13 @@
     - node: end
       entity: civ13_suit_firefighter_coat
 - type: construction
-  name: "байкерская куртка"
+  name: humanity-construction-civ13_suit_biker_jacket-name
   id: civ13_suit_biker_jacket
   graph: civ13_suit_biker_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Чёрная куртка для тех, кто любит скорость и риск."
+  description: humanity-construction-civ13_suit_biker_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/biker.rsi
     state: icon
@@ -2809,13 +2809,13 @@
     - node: end
       entity: civ13_suit_biker_jacket
 - type: construction
-  name: "куртка из чешуи ящерицы"
+  name: humanity-construction-civ13_suit_lizard_scale_jacket-name
   id: civ13_suit_lizard_scale_jacket
   graph: civ13_suit_lizard_scale_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лихая куртка из чешуи ящерицы. С-с-слишком круто для школы!"
+  description: humanity-construction-civ13_suit_lizard_scale_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/lizard_jacket.rsi
     state: icon
@@ -2836,13 +2836,13 @@
     - node: end
       entity: civ13_suit_lizard_scale_jacket
 - type: construction
-  name: "куртка из кожи аллигатора"
+  name: humanity-construction-civ13_suit_alligator_scale_jacket-name
   id: civ13_suit_alligator_scale_jacket
   graph: civ13_suit_alligator_scale_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Эффектная куртка из кожи аллигатора. Увидимся позже, аллигатор!"
+  description: humanity-construction-civ13_suit_alligator_scale_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gator_jacket.rsi
     state: icon
@@ -2863,13 +2863,13 @@
     - node: end
       entity: civ13_suit_alligator_scale_jacket
 - type: construction
-  name: "песочная куртка японской армии"
+  name: humanity-construction-civ13_suit_Japanese_sand_colored_jacket-name
   id: civ13_suit_Japanese_sand_colored_jacket
   graph: civ13_suit_Japanese_sand_colored_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка песочного цвета Императорской армии Японии."
+  description: humanity-construction-civ13_suit_Japanese_sand_colored_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ww2_japcoat.rsi
     state: icon
@@ -2890,13 +2890,13 @@
     - node: end
       entity: civ13_suit_Japanese_sand_colored_jacket
 - type: construction
-  name: "дождевик японской армии"
+  name: humanity-construction-civ13_suit_Japanese_rain_coat-name
   id: civ13_suit_Japanese_rain_coat
   graph: civ13_suit_Japanese_rain_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плащ от дождя военнослужащего Императорской армии Японии."
+  description: humanity-construction-civ13_suit_Japanese_rain_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/jap_raincoat.rsi
     state: icon
@@ -2917,13 +2917,13 @@
     - node: end
       entity: civ13_suit_Japanese_rain_coat
 - type: construction
-  name: "куртка японского лётчика"
+  name: humanity-construction-civ13_suit_Japanese_pilot_coat-name
   id: civ13_suit_Japanese_pilot_coat
   graph: civ13_suit_Japanese_pilot_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка пилота японской авиации времён войны."
+  description: humanity-construction-civ13_suit_Japanese_pilot_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/jappilotcoat.rsi
     state: icon
@@ -2944,13 +2944,13 @@
     - node: end
       entity: civ13_suit_Japanese_pilot_coat
 - type: construction
-  name: "шинель армии США"
+  name: humanity-construction-civ13_suit_American_coat-name
   id: civ13_suit_American_coat
   graph: civ13_suit_American_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Военная шинель американского образца."
+  description: humanity-construction-civ13_suit_American_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/us_coat.rsi
     state: icon
@@ -2971,13 +2971,13 @@
     - node: end
       entity: civ13_suit_American_coat
 - type: construction
-  name: "немецкая парка"
+  name: humanity-construction-civ13_suit_German_parka-name
   id: civ13_suit_German_parka
   graph: civ13_suit_German_parka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплая парка солдата вермахта."
+  description: humanity-construction-civ13_suit_German_parka-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gerparka.rsi
     state: icon
@@ -2998,13 +2998,13 @@
     - node: end
       entity: civ13_suit_German_parka
 - type: construction
-  name: "зимний маскировочный костюм"
+  name: humanity-construction-civ13_suit_winter_ghillie_suit-name
   id: civ13_suit_winter_ghillie_suit
   graph: civ13_suit_winter_ghillie_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Зимний костюм «гилли», помогающий скрыться на снегу."
+  description: humanity-construction-civ13_suit_winter_ghillie_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ghillie_winter.rsi
     state: icon
@@ -3025,13 +3025,13 @@
     - node: end
       entity: civ13_suit_winter_ghillie_suit
 - type: construction
-  name: "серая парка"
+  name: humanity-construction-civ13_suit_Grey_parka-name
   id: civ13_suit_Grey_parka
   graph: civ13_suit_Grey_parka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплая серая парка для зимы."
+  description: humanity-construction-civ13_suit_Grey_parka-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gerparka.rsi
     state: icon
@@ -3052,13 +3052,13 @@
     - node: end
       entity: civ13_suit_Grey_parka
 - type: construction
-  name: "шинель немецкого офицера"
+  name: humanity-construction-civ13_suit_German_officer_coat-name
   id: civ13_suit_German_officer_coat
   graph: civ13_suit_German_officer_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Шинель офицера вермахта."
+  description: humanity-construction-civ13_suit_German_officer_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ger_offcoat.rsi
     state: icon
@@ -3079,13 +3079,13 @@
     - node: end
       entity: civ13_suit_German_officer_coat
 - type: construction
-  name: "парка СС"
+  name: humanity-construction-civ13_suit_SS_parka-name
   id: civ13_suit_SS_parka
   graph: civ13_suit_SS_parka
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Немецкая парка с пятнистым камуфляжем Erbsenmuster образца 1944 года."
+  description: humanity-construction-civ13_suit_SS_parka-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sssmock.rsi
     state: icon
@@ -3106,13 +3106,13 @@
     - node: end
       entity: civ13_suit_SS_parka
 - type: construction
-  name: "советская шинель"
+  name: humanity-construction-civ13_suit_Soviet_coat_1-name
   id: civ13_suit_Soviet_coat_1
   graph: civ13_suit_Soviet_coat_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинная шинель красноармейца."
+  description: humanity-construction-civ13_suit_Soviet_coat_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ruscoat.rsi
     state: icon
@@ -3133,13 +3133,13 @@
     - node: end
       entity: civ13_suit_Soviet_coat_1
 - type: construction
-  name: "тёмно-жёлтая советская шинель"
+  name: humanity-construction-civ13_suit_soviet_winter_coat-name
   id: civ13_suit_soviet_winter_coat
   graph: civ13_suit_soviet_winter_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Традиционная советская зимняя шинель тёмно-жёлтого цвета."
+  description: humanity-construction-civ13_suit_soviet_winter_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gulagguard.rsi
     state: icon
@@ -3160,13 +3160,13 @@
     - node: end
       entity: civ13_suit_soviet_winter_coat
 - type: construction
-  name: "светло-голубая советская шинель"
+  name: humanity-construction-civ13_suit_Soviet_winter_coat-name
   id: civ13_suit_Soviet_winter_coat
   graph: civ13_suit_Soviet_winter_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Традиционная советская зимняя шинель светло-голубого цвета."
+  description: humanity-construction-civ13_suit_Soviet_winter_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gulagprisoner1.rsi
     state: icon
@@ -3187,13 +3187,13 @@
     - node: end
       entity: civ13_suit_Soviet_winter_coat
 - type: construction
-  name: "шинель советского офицера"
+  name: humanity-construction-civ13_suit_Soviet_officer_coat-name
   id: civ13_suit_Soviet_officer_coat
   graph: civ13_suit_Soviet_officer_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинная шинель офицера Красной армии."
+  description: humanity-construction-civ13_suit_Soviet_officer_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sov_offcoat.rsi
     state: icon
@@ -3214,13 +3214,13 @@
     - node: end
       entity: civ13_suit_Soviet_officer_coat
 - type: construction
-  name: "современное шерстяное пальто"
+  name: humanity-construction-civ13_suit_modern_coat-name
   id: civ13_suit_modern_coat
   graph: civ13_suit_modern_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Обычное пальто из шерсти."
+  description: humanity-construction-civ13_suit_modern_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/moderncoat.rsi
     state: icon
@@ -3241,13 +3241,13 @@
     - node: end
       entity: civ13_suit_modern_coat
 - type: construction
-  name: "нарядное чёрное пальто"
+  name: humanity-construction-civ13_suit_black_coat-name
   id: civ13_suit_black_coat
   graph: civ13_suit_black_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Элегантное шерстяное пальто чёрного цвета."
+  description: humanity-construction-civ13_suit_black_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/woolcoat.rsi
     state: icon
@@ -3268,13 +3268,13 @@
     - node: end
       entity: civ13_suit_black_coat
 - type: construction
-  name: "роскошное пальто"
+  name: humanity-construction-civ13_suit_fancy__coat-name
   id: civ13_suit_fancy__coat
   graph: civ13_suit_fancy__coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Дорогое пальто из шерсти и кожи."
+  description: humanity-construction-civ13_suit_fancy__coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/expensivecoat.rsi
     state: icon
@@ -3295,13 +3295,13 @@
     - node: end
       entity: civ13_suit_fancy__coat
 - type: construction
-  name: "форменная куртка"
+  name: humanity-construction-civ13_suit_service_jacket-name
   id: civ13_suit_service_jacket
   graph: civ13_suit_service_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартная армейская куртка."
+  description: humanity-construction-civ13_suit_service_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/servicejacket.rsi
     state: icon
@@ -3322,13 +3322,13 @@
     - node: end
       entity: civ13_suit_service_jacket
 - type: construction
-  name: "коричневая лётная куртка"
+  name: humanity-construction-civ13_suit_brown_bombers_jacket-name
   id: civ13_suit_brown_bombers_jacket
   graph: civ13_suit_brown_bombers_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка для полётов на большой высоте, защищающая от холода."
+  description: humanity-construction-civ13_suit_brown_bombers_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/bomberjacket.rsi
     state: icon
@@ -3349,13 +3349,13 @@
     - node: end
       entity: civ13_suit_brown_bombers_jacket
 - type: construction
-  name: "чёрная лётная куртка"
+  name: humanity-construction-civ13_suit_black_bombers_jacket-name
   id: civ13_suit_black_bombers_jacket
   graph: civ13_suit_black_bombers_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Куртка для полётов на большой высоте, защищающая от холода."
+  description: humanity-construction-civ13_suit_black_bombers_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/blackbomberjacket.rsi
     state: icon
@@ -3376,13 +3376,13 @@
     - node: end
       entity: civ13_suit_black_bombers_jacket
 - type: construction
-  name: "немецкая шинель"
+  name: humanity-construction-civ13_suit_German_coat-name
   id: civ13_suit_German_coat
   graph: civ13_suit_German_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Военная шинель немецкого образца."
+  description: humanity-construction-civ13_suit_German_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/germtrench.rsi
     state: icon
@@ -3403,13 +3403,13 @@
     - node: end
       entity: civ13_suit_German_coat
 - type: construction
-  name: "французский тренч"
+  name: humanity-construction-civ13_suit_French_trench_coat-name
   id: civ13_suit_French_trench_coat
   graph: civ13_suit_French_trench_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинный французский плащ для дождливой погоды."
+  description: humanity-construction-civ13_suit_French_trench_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/frenchtrench.rsi
     state: icon
@@ -3430,13 +3430,13 @@
     - node: end
       entity: civ13_suit_French_trench_coat
 - type: construction
-  name: "британская шинель"
+  name: humanity-construction-civ13_suit_British_coat-name
   id: civ13_suit_British_coat
   graph: civ13_suit_British_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Военная шинель британского образца."
+  description: humanity-construction-civ13_suit_British_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/britishtrench.rsi
     state: icon
@@ -3457,13 +3457,13 @@
     - node: end
       entity: civ13_suit_British_coat
 - type: construction
-  name: "королевское пальто"
+  name: humanity-construction-civ13_suit_royal_coat-name
   id: civ13_suit_royal_coat
   graph: civ13_suit_royal_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пальто, достойное монарха."
+  description: humanity-construction-civ13_suit_royal_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/royalcoat.rsi
     state: icon
@@ -3484,13 +3484,13 @@
     - node: end
       entity: civ13_suit_royal_coat
 - type: construction
-  name: "длинное чёрное кожаное пальто"
+  name: humanity-construction-civ13_suit_black_leather_long_coat-name
   id: civ13_suit_black_leather_long_coat
   graph: civ13_suit_black_leather_long_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинное пальто из чёрной кожи."
+  description: humanity-construction-civ13_suit_black_leather_long_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/leathercoat_black.rsi
     state: icon
@@ -3511,13 +3511,13 @@
     - node: end
       entity: civ13_suit_black_leather_long_coat
 - type: construction
-  name: "современное коричневое пальто"
+  name: humanity-construction-civ13_suit_modern_brown_coat-name
   id: civ13_suit_modern_brown_coat
   graph: civ13_suit_modern_brown_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинное коричневое пальто современного покроя."
+  description: humanity-construction-civ13_suit_modern_brown_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/mlongcoat_brown.rsi
     state: icon
@@ -3538,13 +3538,13 @@
     - node: end
       entity: civ13_suit_modern_brown_coat
 - type: construction
-  name: "современное чёрное пальто"
+  name: humanity-construction-civ13_suit_modern_black_coat-name
   id: civ13_suit_modern_black_coat
   graph: civ13_suit_modern_black_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинное чёрное пальто современного покроя."
+  description: humanity-construction-civ13_suit_modern_black_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/mlongcoat_black.rsi
     state: icon
@@ -3565,13 +3565,13 @@
     - node: end
       entity: civ13_suit_modern_black_coat
 - type: construction
-  name: "пальто джентльмена"
+  name: humanity-construction-civ13_suit_gentleman_coat-name
   id: civ13_suit_gentleman_coat
   graph: civ13_suit_gentleman_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Элегантное чёрное пальто."
+  description: humanity-construction-civ13_suit_gentleman_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gentlemancoat.rsi
     state: icon
@@ -3592,13 +3592,13 @@
     - node: end
       entity: civ13_suit_gentleman_coat
 - type: construction
-  name: "сигнальный жилет"
+  name: humanity-construction-civ13_suit_hazard_vest-name
   id: civ13_suit_hazard_vest
   graph: civ13_suit_hazard_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Светоотражающий жилет, хорошо заметный издалека."
+  description: humanity-construction-civ13_suit_hazard_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/hazard.rsi
     state: icon
@@ -3619,13 +3619,13 @@
     - node: end
       entity: civ13_suit_hazard_vest
 - type: construction
-  name: "жёлтый спасательный жилет"
+  name: humanity-construction-civ13_suit_lifejacket_1-name
   id: civ13_suit_lifejacket_1
   graph: civ13_suit_lifejacket_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Помогает удержаться на воде."
+  description: humanity-construction-civ13_suit_lifejacket_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sealvest_yellow.rsi
     state: icon
@@ -3646,13 +3646,13 @@
     - node: end
       entity: civ13_suit_lifejacket_1
 - type: construction
-  name: "зелёный латный доспех"
+  name: humanity-construction-civ13_suit_green_plated_armor-name
   id: civ13_suit_green_plated_armor
   graph: civ13_suit_green_plated_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой железный доспех зелёного цвета, закрывающий почти всё тело."
+  description: humanity-construction-civ13_suit_green_plated_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/knight_green.rsi
     state: icon
@@ -3673,13 +3673,13 @@
     - node: end
       entity: civ13_suit_green_plated_armor
 - type: construction
-  name: "спасательный жилет тюленя"
+  name: humanity-construction-civ13_suit_seal_lifevest-name
   id: civ13_suit_seal_lifevest
   graph: civ13_suit_seal_lifevest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Помогает тюленям держаться на воде во время тренировок."
+  description: humanity-construction-civ13_suit_seal_lifevest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sealvest.rsi
     state: icon
@@ -3700,13 +3700,13 @@
     - node: end
       entity: civ13_suit_seal_lifevest
 - type: construction
-  name: "куртка ФБР"
+  name: humanity-construction-civ13_suit_FBI_jacket-name
   id: civ13_suit_FBI_jacket
   graph: civ13_suit_FBI_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Служебная куртка сотрудника ФБР. Или это прикрытие?"
+  description: humanity-construction-civ13_suit_FBI_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/fbi2.rsi
     state: icon
@@ -3727,13 +3727,13 @@
     - node: end
       entity: civ13_suit_FBI_jacket
 - type: construction
-  name: "куртка ATF"
+  name: humanity-construction-civ13_suit_ATF_jacket-name
   id: civ13_suit_ATF_jacket
   graph: civ13_suit_ATF_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартная куртка агента ATF."
+  description: humanity-construction-civ13_suit_ATF_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/atf.rsi
     state: icon
@@ -3754,13 +3754,13 @@
     - node: end
       entity: civ13_suit_ATF_jacket
 - type: construction
-  name: "куртка DEA"
+  name: humanity-construction-civ13_suit_DEA_jacket-name
   id: civ13_suit_DEA_jacket
   graph: civ13_suit_DEA_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартная куртка агента DEA."
+  description: humanity-construction-civ13_suit_DEA_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dea.rsi
     state: icon
@@ -3781,13 +3781,13 @@
     - node: end
       entity: civ13_suit_DEA_jacket
 - type: construction
-  name: "оливковая куртка армии США"
+  name: humanity-construction-civ13_suit_olive_drab_jacket-name
   id: civ13_suit_olive_drab_jacket
   graph: civ13_suit_olive_drab_jacket
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартная куртка американской армии середины XX века."
+  description: humanity-construction-civ13_suit_olive_drab_jacket-description
   icon:
     sprite: Civ14/Clothing/exported/suits/us_jacket.rsi
     state: icon
@@ -3808,13 +3808,13 @@
     - node: end
       entity: civ13_suit_olive_drab_jacket
 - type: construction
-  name: "маскировочный костюм «гилли»"
+  name: humanity-construction-civ13_suit_ghillie_suit-name
   id: civ13_suit_ghillie_suit
   graph: civ13_suit_ghillie_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Костюм, помогающий сливаться с местностью."
+  description: humanity-construction-civ13_suit_ghillie_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ghillie.rsi
     state: icon
@@ -3835,13 +3835,13 @@
     - node: end
       entity: civ13_suit_ghillie_suit
 - type: construction
-  name: "фартук до груди"
+  name: humanity-construction-civ13_suit_chest_length_apron-name
   id: civ13_suit_chest_length_apron
   graph: civ13_suit_chest_length_apron
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый фартук с оборками, закрывающий грудь."
+  description: humanity-construction-civ13_suit_chest_length_apron-description
   icon:
     sprite: Civ14/Clothing/exported/suits/closechest_apron_f.rsi
     state: icon
@@ -3862,13 +3862,13 @@
     - node: end
       entity: civ13_suit_chest_length_apron
 - type: construction
-  name: "фартук до пояса"
+  name: humanity-construction-civ13_suit_waist_length_apron-name
   id: civ13_suit_waist_length_apron
   graph: civ13_suit_waist_length_apron
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Белый фартук с оборками, закрывающий одежду до пояса."
+  description: humanity-construction-civ13_suit_waist_length_apron-description
   icon:
     sprite: Civ14/Clothing/exported/suits/openchest_apron_f.rsi
     state: icon
@@ -3889,13 +3889,13 @@
     - node: end
       entity: civ13_suit_waist_length_apron
 - type: construction
-  name: "поварской фартук"
+  name: humanity-construction-civ13_suit_a_classic_chefs_apron--name-3d897737
   id: civ13_suit_a_classic_chefs_apron.
   graph: civ13_suit_a_classic_chefs_apron.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Простой белый фартук повара."
+  description: humanity-construction-civ13_suit_a_classic_chefs_apron--description-e83b5e2f
   icon:
     sprite: Civ14/Clothing/exported/suits/apronchef.rsi
     state: icon
@@ -3916,13 +3916,13 @@
     - node: end
       entity: civ13_suit_a_classic_chefs_apron.
 - type: construction
-  name: "фартук Texas Fried Chicken"
+  name: humanity-construction-civ13_suit_Texas_Fried_Chicken_apron-name
   id: civ13_suit_Texas_Fried_Chicken_apron
   graph: civ13_suit_Texas_Fried_Chicken_apron
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Матерчатый фартук с буквами TFC."
+  description: humanity-construction-civ13_suit_Texas_Fried_Chicken_apron-description
   icon:
     sprite: Civ14/Clothing/exported/suits/aprontfc.rsi
     state: icon
@@ -3943,13 +3943,13 @@
     - node: end
       entity: civ13_suit_Texas_Fried_Chicken_apron
 - type: construction
-  name: "синяя гавайская рубашка"
+  name: humanity-construction-civ13_suit_blue_hawaiian_shirt--name-3640921a
   id: civ13_suit_blue_hawaiian_shirt.
   graph: civ13_suit_blue_hawaiian_shirt.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пёстрая и вызывающая гавайская рубашка с синим оттенком."
+  description: humanity-construction-civ13_suit_blue_hawaiian_shirt--description-0121d657
   icon:
     sprite: Civ14/Clothing/exported/suits/hawaiian_blue.rsi
     state: icon
@@ -3970,13 +3970,13 @@
     - node: end
       entity: civ13_suit_blue_hawaiian_shirt.
 - type: construction
-  name: "оранжевая гавайская рубашка"
+  name: humanity-construction-civ13_suit_orange_hawaiian_shirt--name-d28af84c
   id: civ13_suit_orange_hawaiian_shirt.
   graph: civ13_suit_orange_hawaiian_shirt.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пёстрая и вызывающая гавайская рубашка с оранжевым оттенком."
+  description: humanity-construction-civ13_suit_orange_hawaiian_shirt--description-b69732b5
   icon:
     sprite: Civ14/Clothing/exported/suits/hawaiian_orange.rsi
     state: icon
@@ -3997,13 +3997,13 @@
     - node: end
       entity: civ13_suit_orange_hawaiian_shirt.
 - type: construction
-  name: "фиолетовая гавайская рубашка"
+  name: humanity-construction-civ13_suit_purple_hawaiian_shirt--name-4171e95a
   id: civ13_suit_purple_hawaiian_shirt.
   graph: civ13_suit_purple_hawaiian_shirt.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Пёстрая и вызывающая гавайская рубашка с фиолетовым оттенком."
+  description: humanity-construction-civ13_suit_purple_hawaiian_shirt--description-5d885ad6
   icon:
     sprite: Civ14/Clothing/exported/suits/hawaiian_purple.rsi
     state: icon
@@ -4024,13 +4024,13 @@
     - node: end
       entity: civ13_suit_purple_hawaiian_shirt.
 - type: construction
-  name: "фиолетовая куртка сутенёра"
+  name: humanity-construction-civ13_suit_purple_pimp_jacket--name-cd08209d
   id: civ13_suit_purple_pimp_jacket.
   graph: civ13_suit_purple_pimp_jacket.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Яркая фиолетовая куртка на пуговицах в гангстерском стиле."
+  description: humanity-construction-civ13_suit_purple_pimp_jacket--description-ed9fafaf
   icon:
     sprite: Civ14/Clothing/exported/suits/pimpcoat.rsi
     state: icon
@@ -4051,13 +4051,13 @@
     - node: end
       entity: civ13_suit_purple_pimp_jacket.
 - type: construction
-  name: "куртка армии Блюгославии"
+  name: humanity-construction-civ13_suit_Blugoslavian_Jacket--name-82b668f7
   id: civ13_suit_Blugoslavian_Jacket.
   graph: civ13_suit_Blugoslavian_Jacket.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стандартная боевая куртка блюгославской армии."
+  description: humanity-construction-civ13_suit_Blugoslavian_Jacket--description-454f6559
   icon:
     sprite: Civ14/Clothing/exported/suits/bcj.rsi
     state: icon
@@ -4078,13 +4078,13 @@
     - node: end
       entity: civ13_suit_Blugoslavian_Jacket.
 - type: construction
-  name: "противоосколочный жилет Блюгославии"
+  name: humanity-construction-civ13_suit_Blugoslavian_Flak_Jacket--name-b62bf32a
   id: civ13_suit_Blugoslavian_Flak_Jacket.
   graph: civ13_suit_Blugoslavian_Flak_Jacket.
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый жилет из кевлара и плотной ткани."
+  description: humanity-construction-civ13_suit_Blugoslavian_Flak_Jacket--description-5c332688
   icon:
     sprite: Civ14/Clothing/exported/suits/bcj.rsi
     state: icon
@@ -4105,13 +4105,13 @@
     - node: end
       entity: civ13_suit_Blugoslavian_Flak_Jacket.
 - type: construction
-  name: "костюм гориллы"
+  name: humanity-construction-civ13_suit_full_body_gorilla_outfit-name
   id: civ13_suit_full_body_gorilla_outfit
   graph: civ13_suit_full_body_gorilla_outfit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Правдоподобный костюм гориллы в полный рост. Подойдёт для вечеринки или розыгрыша."
+  description: humanity-construction-civ13_suit_full_body_gorilla_outfit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gorilla_suit.rsi
     state: icon
@@ -4132,13 +4132,13 @@
     - node: end
       entity: civ13_suit_full_body_gorilla_outfit
 - type: construction
-  name: "броня солдата-репликанта"
+  name: humanity-construction-civ13_suit_replicant_trooper_armor-name
   id: civ13_suit_replicant_trooper_armor
   graph: civ13_suit_replicant_trooper_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая дорогостоящая пластоидная броня, закрывающая почти всё тело."
+  description: humanity-construction-civ13_suit_replicant_trooper_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/replicant_armor.rsi
     state: icon
@@ -4159,13 +4159,13 @@
     - node: end
       entity: civ13_suit_replicant_trooper_armor
 - type: construction
-  name: "броня пилота-репликанта"
+  name: humanity-construction-civ13_suit_replicant_pilot_armor-name
   id: civ13_suit_replicant_pilot_armor
   graph: civ13_suit_replicant_pilot_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкая дорогостоящая пластоидная броня, закрывающая почти всё тело."
+  description: humanity-construction-civ13_suit_replicant_pilot_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/reppilot_armor.rsi
     state: icon
@@ -4186,13 +4186,13 @@
     - node: end
       entity: civ13_suit_replicant_pilot_armor
 - type: construction
-  name: "броня военной полиции репликантов"
+  name: humanity-construction-civ13_suit_replicant_MP_armor-name
   id: civ13_suit_replicant_MP_armor
   graph: civ13_suit_replicant_MP_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Особенно тяжёлая пластоидная броня, закрывающая почти всё тело."
+  description: humanity-construction-civ13_suit_replicant_MP_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repmp_armor.rsi
     state: icon
@@ -4213,13 +4213,13 @@
     - node: end
       entity: civ13_suit_replicant_MP_armor
 - type: construction
-  name: "броня сержанта-репликанта"
+  name: humanity-construction-civ13_suit_replicant_sergeant_armor-name
   id: civ13_suit_replicant_sergeant_armor
   graph: civ13_suit_replicant_sergeant_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с зелёными знаками отличия."
+  description: humanity-construction-civ13_suit_replicant_sergeant_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repsgt_armor.rsi
     state: icon
@@ -4240,13 +4240,13 @@
     - node: end
       entity: civ13_suit_replicant_sergeant_armor
 - type: construction
-  name: "усиленная броня репликанта"
+  name: humanity-construction-civ13_suit_replicant_reinforced_armor-name
   id: civ13_suit_replicant_reinforced_armor
   graph: civ13_suit_replicant_reinforced_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с дополнительной защитной пластиной."
+  description: humanity-construction-civ13_suit_replicant_reinforced_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repreinforced.rsi
     state: icon
@@ -4267,13 +4267,13 @@
     - node: end
       entity: civ13_suit_replicant_reinforced_armor
 - type: construction
-  name: "броня лейтенанта-репликанта"
+  name: humanity-construction-civ13_suit_replicant_lieutenant_armor-name
   id: civ13_suit_replicant_lieutenant_armor
   graph: civ13_suit_replicant_lieutenant_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с синими знаками отличия."
+  description: humanity-construction-civ13_suit_replicant_lieutenant_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/replieutenant_armor.rsi
     state: icon
@@ -4294,13 +4294,13 @@
     - node: end
       entity: civ13_suit_replicant_lieutenant_armor
 - type: construction
-  name: "броня коммандос-репликанта"
+  name: humanity-construction-civ13_suit_replicant_commando_armor-name
   id: civ13_suit_replicant_commando_armor
   graph: civ13_suit_replicant_commando_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Очень дорогая и прочная пластоидная броня, защищающая прежде всего грудь."
+  description: humanity-construction-civ13_suit_replicant_commando_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repcommando.rsi
     state: icon
@@ -4321,13 +4321,13 @@
     - node: end
       entity: civ13_suit_replicant_commando_armor
 - type: construction
-  name: "броня капитана-репликанта"
+  name: humanity-construction-civ13_suit_replicant_captain_armor-name
   id: civ13_suit_replicant_captain_armor
   graph: civ13_suit_replicant_captain_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с красными знаками отличия."
+  description: humanity-construction-civ13_suit_replicant_captain_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repcaptain_armor.rsi
     state: icon
@@ -4348,13 +4348,13 @@
     - node: end
       entity: civ13_suit_replicant_captain_armor
 - type: construction
-  name: "броня командира-репликанта"
+  name: humanity-construction-civ13_suit_replicant_commander_armor-name
   id: civ13_suit_replicant_commander_armor
   graph: civ13_suit_replicant_commander_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с золотыми знаками отличия."
+  description: humanity-construction-civ13_suit_replicant_commander_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/repcommander_armor.rsi
     state: icon
@@ -4375,13 +4375,13 @@
     - node: end
       entity: civ13_suit_replicant_commander_armor
 - type: construction
-  name: "броня красного гвардейца с плащом"
+  name: humanity-construction-civ13_suit_red_guard_armor_with_robe-name
   id: civ13_suit_red_guard_armor_with_robe
   graph: civ13_suit_red_guard_armor_with_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с багряным плащом."
+  description: humanity-construction-civ13_suit_red_guard_armor_with_robe-description
   icon:
     sprite: Civ14/Clothing/exported/suits/redguard.rsi
     state: icon
@@ -4402,13 +4402,13 @@
     - node: end
       entity: civ13_suit_red_guard_armor_with_robe
 - type: construction
-  name: "броня сенатского гвардейца с плащом"
+  name: humanity-construction-civ13_suit_senate_guard_armor_with_robe-name
   id: civ13_suit_senate_guard_armor_with_robe
   graph: civ13_suit_senate_guard_armor_with_robe
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня с плащом королевского синего цвета."
+  description: humanity-construction-civ13_suit_senate_guard_armor_with_robe-description
   icon:
     sprite: Civ14/Clothing/exported/suits/senateguard.rsi
     state: icon
@@ -4429,13 +4429,13 @@
     - node: end
       entity: civ13_suit_senate_guard_armor_with_robe
 - type: construction
-  name: "стандартная броня штурмовика"
+  name: humanity-construction-civ13_suit_standard_stormtrooper_armor-name
   id: civ13_suit_standard_stormtrooper_armor
   graph: civ13_suit_standard_stormtrooper_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня имперского штурмовика, закрывающая почти всё тело."
+  description: humanity-construction-civ13_suit_standard_stormtrooper_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/stormtrooper_armor.rsi
     state: icon
@@ -4456,13 +4456,13 @@
     - node: end
       entity: civ13_suit_standard_stormtrooper_armor
 - type: construction
-  name: "броня штурмового медика"
+  name: humanity-construction-civ13_suit_stormsurgeon_armor-name
   id: civ13_suit_stormsurgeon_armor
   graph: civ13_suit_stormsurgeon_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлая пластоидная броня имперского медика с мятно-зелёными отметками."
+  description: humanity-construction-civ13_suit_stormsurgeon_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/stormsurgeon_armor.rsi
     state: icon
@@ -4483,13 +4483,13 @@
     - node: end
       entity: civ13_suit_stormsurgeon_armor
 - type: construction
-  name: "лёгкая броня штурмовика"
+  name: humanity-construction-civ13_suit_light_stormtrooper_armor-name
   id: civ13_suit_light_stormtrooper_armor
   graph: civ13_suit_light_stormtrooper_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Облегчённая пластоидная броня имперского штурмовика. Часть пластин снята ради подвижности."
+  description: humanity-construction-civ13_suit_light_stormtrooper_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/stormradio_armor.rsi
     state: icon
@@ -4510,13 +4510,13 @@
     - node: end
       entity: civ13_suit_light_stormtrooper_armor
 - type: construction
-  name: "сегментный доспех"
+  name: humanity-construction-civ13_suit_segmented_armor-name
   id: civ13_suit_segmented_armor
   graph: civ13_suit_segmented_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой железный доспех из пластин, защищающих туловище."
+  description: humanity-construction-civ13_suit_segmented_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/scale_armor.rsi
     state: icon
@@ -4537,13 +4537,13 @@
     - node: end
       entity: civ13_suit_segmented_armor
 - type: construction
-  name: "кольчуга"
+  name: humanity-construction-civ13_suit_chainmail-name
   id: civ13_suit_chainmail
   graph: civ13_suit_chainmail
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Доспех из множества переплетённых металлических колец."
+  description: humanity-construction-civ13_suit_chainmail-description
   icon:
     sprite: Civ14/Clothing/exported/suits/chainmail.rsi
     state: icon
@@ -4564,13 +4564,13 @@
     - node: end
       entity: civ13_suit_chainmail
 - type: construction
-  name: "линоторакс"
+  name: humanity-construction-civ13_suit_linothorax_armor-name
   id: civ13_suit_linothorax_armor
   graph: civ13_suit_linothorax_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотный льняной доспех, защищающий туловище и нижнюю часть тела."
+  description: humanity-construction-civ13_suit_linothorax_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/heavycloth_armor.rsi
     state: icon
@@ -4592,13 +4592,13 @@
       entity: civ13_suit_linothorax_armor
 
 - type: construction
-  name: "ацтекская нагрудная броня"
+  name: humanity-construction-civ13_suit_aztec_harness-name
   id: civ13_suit_aztec_harness
   graph: civ13_suit_aztec_harness
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Несколько металлических пластин на кожаных ремнях защищают туловище."
+  description: humanity-construction-civ13_suit_aztec_harness-description
   icon:
     sprite: Civ14/Clothing/exported/suits/aztec_harness.rsi
     state: icon
@@ -4619,13 +4619,13 @@
     - node: end
       entity: civ13_suit_aztec_harness
 - type: construction
-  name: "броня из кожи аллигатора"
+  name: humanity-construction-civ13_suit_alligator_scale_armor-name
   id: civ13_suit_alligator_scale_armor
   graph: civ13_suit_alligator_scale_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тщательно выделанная и затвердевшая кожа аллигатора защищает туловище."
+  description: humanity-construction-civ13_suit_alligator_scale_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gator_scale_armor.rsi
     state: icon
@@ -4646,13 +4646,13 @@
     - node: end
       entity: civ13_suit_alligator_scale_armor
 - type: construction
-  name: "божественные доспехи фараона"
+  name: humanity-construction-civ13_suit_pharaonic_armor_of_the_gods-name
   id: civ13_suit_pharaonic_armor_of_the_gods
   graph: civ13_suit_pharaonic_armor_of_the_gods
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Доспехи богов пустыни."
+  description: humanity-construction-civ13_suit_pharaonic_armor_of_the_gods-description
   icon:
     sprite: Civ14/Clothing/exported/suits/settra.rsi
     state: icon
@@ -4673,13 +4673,13 @@
     - node: end
       entity: civ13_suit_pharaonic_armor_of_the_gods
 - type: construction
-  name: "броня Кредо"
+  name: humanity-construction-civ13_suit_creed_armor-name
   id: civ13_suit_creed_armor
   graph: civ13_suit_creed_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаный доспех, который носят члены Кредо."
+  description: humanity-construction-civ13_suit_creed_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ac_armor.rsi
     state: icon
@@ -4700,13 +4700,13 @@
     - node: end
       entity: civ13_suit_creed_armor
 - type: construction
-  name: "броня Кредо"
+  name: humanity-construction-civ13_suit_creed_armor_1_2-name
   id: civ13_suit_creed_armor_1_2
   graph: civ13_suit_creed_armor_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кожаный доспех, который носят члены Кредо."
+  description: humanity-construction-civ13_suit_creed_armor_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ac_armor_napol.rsi
     state: icon
@@ -4727,13 +4727,13 @@
     - node: end
       entity: civ13_suit_creed_armor_1_2
 - type: construction
-  name: "жилет матаги"
+  name: humanity-construction-civ13_suit_Matagi_Vest-name
   id: civ13_suit_Matagi_Vest
   graph: civ13_suit_Matagi_Vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тёплый кожаный жилет с меховой подкладкой."
+  description: humanity-construction-civ13_suit_Matagi_Vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/japvest.rsi
     state: icon
@@ -4754,13 +4754,13 @@
     - node: end
       entity: civ13_suit_Matagi_Vest
 - type: construction
-  name: "броня солдата НКР"
+  name: humanity-construction-civ13_suit_NCR_Trooper_Armor-name
   id: civ13_suit_NCR_Trooper_Armor
   graph: civ13_suit_NCR_Trooper_Armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Бронированный жилет солдата НКР."
+  description: humanity-construction-civ13_suit_NCR_Trooper_Armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ncr_armor.rsi
     state: icon
@@ -4781,13 +4781,13 @@
     - node: end
       entity: civ13_suit_NCR_Trooper_Armor
 - type: construction
-  name: "имперская кираса"
+  name: humanity-construction-civ13_suit_imperial_chestplate-name
   id: civ13_suit_imperial_chestplate
   graph: civ13_suit_imperial_chestplate
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Железная кираса имперского образца. От пуль защищает не полностью, зато не стесняет движений."
+  description: humanity-construction-civ13_suit_imperial_chestplate-description
   icon:
     sprite: Civ14/Clothing/exported/suits/imperial_breastplate.rsi
     state: icon
@@ -4808,13 +4808,13 @@
     - node: end
       entity: civ13_suit_imperial_chestplate
 - type: construction
-  name: "броня арбитра"
+  name: humanity-construction-civ13_suit_arbites_armor-name
   id: civ13_suit_arbites_armor
   graph: civ13_suit_arbites_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Массивная красная броня стража порядка с усиленными стальными наплечниками и поножами."
+  description: humanity-construction-civ13_suit_arbites_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/arbit.rsi
     state: icon
@@ -4835,13 +4835,13 @@
     - node: end
       entity: civ13_suit_arbites_armor
 - type: construction
-  name: "латный доспех"
+  name: humanity-construction-civ13_suit_plated_armor-name
   id: civ13_suit_plated_armor
   graph: civ13_suit_plated_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой железный доспех, закрывающий почти всё тело."
+  description: humanity-construction-civ13_suit_plated_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/knight_simple.rsi
     state: icon
@@ -4862,13 +4862,13 @@
     - node: end
       entity: civ13_suit_plated_armor
 - type: construction
-  name: "красный доспех самурайского владыки"
+  name: humanity-construction-civ13_suit_red_samurai_lord_armor-name
   id: civ13_suit_red_samurai_lord_armor
   graph: civ13_suit_red_samurai_lord_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Красный тяжёлый доспех японского феодального владыки."
+  description: humanity-construction-civ13_suit_red_samurai_lord_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai_lord1.rsi
     state: icon
@@ -4889,13 +4889,13 @@
     - node: end
       entity: civ13_suit_red_samurai_lord_armor
 - type: construction
-  name: "латный доспех тамплиера"
+  name: humanity-construction-civ13_suit_templar_plated_armor-name
   id: civ13_suit_templar_plated_armor
   graph: civ13_suit_templar_plated_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый железный доспех под белой накидкой с крестом."
+  description: humanity-construction-civ13_suit_templar_plated_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/knight_templar.rsi
     state: icon
@@ -4917,13 +4917,13 @@
       entity: civ13_suit_templar_plated_armor
 
 - type: construction
-  name: "железная кираса"
+  name: humanity-construction-civ13_suit_iron_chestplate-name
   id: civ13_suit_iron_chestplate
   graph: civ13_suit_iron_chestplate
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кираса из железа."
+  description: humanity-construction-civ13_suit_iron_chestplate-description
   icon:
     sprite: Civ14/Clothing/exported/suits/iron_chestplate.rsi
     state: icon
@@ -4944,13 +4944,13 @@
     - node: end
       entity: civ13_suit_iron_chestplate
 - type: construction
-  name: "кожаный доспех"
+  name: humanity-construction-civ13_suit_leather_armor-name
   id: civ13_suit_leather_armor
   graph: civ13_suit_leather_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Несколько слоёв плотной кожи обеспечивают неплохую защиту."
+  description: humanity-construction-civ13_suit_leather_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/leather_armor.rsi
     state: icon
@@ -4971,13 +4971,13 @@
     - node: end
       entity: civ13_suit_leather_armor
 - type: construction
-  name: "хауберк"
+  name: humanity-construction-civ13_suit_hauberk-name
   id: civ13_suit_hauberk
   graph: civ13_suit_hauberk
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Удлинённая кольчуга, которую носят как рубаху. Защищает лучше обычной."
+  description: humanity-construction-civ13_suit_hauberk-description
   icon:
     sprite: Civ14/Clothing/exported/suits/hauberk.rsi
     state: icon
@@ -4998,13 +4998,13 @@
     - node: end
       entity: civ13_suit_hauberk
 - type: construction
-  name: "доспех эмира"
+  name: humanity-construction-civ13_suit_emirate_armor-name
   id: civ13_suit_emirate_armor
   graph: civ13_suit_emirate_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Свободный, но прочный доспех поверх туники. Подобает правителю эмирата."
+  description: humanity-construction-civ13_suit_emirate_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/emir_armor.rsi
     state: icon
@@ -5025,13 +5025,13 @@
     - node: end
       entity: civ13_suit_emirate_armor
 - type: construction
-  name: "варяжский ламеллярный доспех"
+  name: humanity-construction-civ13_suit_varangian_lamellar_armor-name
   id: civ13_suit_varangian_lamellar_armor
   graph: civ13_suit_varangian_lamellar_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Доспех из небольших прямоугольных железных пластин. Тяжёлый, но достаточно гибкий."
+  description: humanity-construction-civ13_suit_varangian_lamellar_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/varangian_lamellar.rsi
     state: icon
@@ -5052,13 +5052,13 @@
     - node: end
       entity: civ13_suit_varangian_lamellar_armor
 - type: construction
-  name: "имперский китайский доспех"
+  name: humanity-construction-civ13_suit_imperial_chinese_armor-name
   id: civ13_suit_imperial_chinese_armor
   graph: civ13_suit_imperial_chinese_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Добротный лакированный доспех китайского имперского образца с железными пластинами внутри и снаружи."
+  description: humanity-construction-civ13_suit_imperial_chinese_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/imperial_chinese.rsi
     state: icon
@@ -5079,13 +5079,13 @@
     - node: end
       entity: civ13_suit_imperial_chinese_armor
 - type: construction
-  name: "степной кожаный доспех"
+  name: humanity-construction-civ13_suit_steppe_leather_armor-name
   id: civ13_suit_steppe_leather_armor
   graph: civ13_suit_steppe_leather_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Сшитые по обычаю степных кочевников куски кожи дают воину надёжную защиту."
+  description: humanity-construction-civ13_suit_steppe_leather_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/steppe_leather_armor.rsi
     state: icon
@@ -5106,13 +5106,13 @@
     - node: end
       entity: civ13_suit_steppe_leather_armor
 - type: construction
-  name: "королевский латный доспех"
+  name: humanity-construction-civ13_suit_royal_plated_armor-name
   id: civ13_suit_royal_plated_armor
   graph: civ13_suit_royal_plated_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой железный доспех, закрывающий почти всё тело."
+  description: humanity-construction-civ13_suit_royal_plated_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/royalplate.rsi
     state: icon
@@ -5133,13 +5133,13 @@
     - node: end
       entity: civ13_suit_royal_plated_armor
 - type: construction
-  name: "кожаный самурайский доспех"
+  name: humanity-construction-civ13_suit_leather_samurai_armor-name
   id: civ13_suit_leather_samurai_armor
   graph: civ13_suit_leather_samurai_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкий гибкий доспех, закрывающий почти всё тело. Такой носят телохранители феодалов."
+  description: humanity-construction-civ13_suit_leather_samurai_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai3.rsi
     state: icon
@@ -5160,13 +5160,13 @@
     - node: end
       entity: civ13_suit_leather_samurai_armor
 - type: construction
-  name: "самурайский доспех"
+  name: humanity-construction-civ13_suit_samurai_armor-name
   id: civ13_suit_samurai_armor
   graph: civ13_suit_samurai_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотный японский металлический доспех, который носят верные воины феодального владыки."
+  description: humanity-construction-civ13_suit_samurai_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai_warrior3.rsi
     state: icon
@@ -5187,13 +5187,13 @@
     - node: end
       entity: civ13_suit_samurai_armor
 - type: construction
-  name: "доспех самурайского владыки"
+  name: humanity-construction-civ13_suit_samurai_lord_armor-name
   id: civ13_suit_samurai_lord_armor
   graph: civ13_suit_samurai_lord_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой японский доспех феодального владыки."
+  description: humanity-construction-civ13_suit_samurai_lord_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/samurai_lord3.rsi
     state: icon
@@ -5214,13 +5214,13 @@
     - node: end
       entity: civ13_suit_samurai_lord_armor
 - type: construction
-  name: "двемерский доспех"
+  name: humanity-construction-civ13_suit_dwemmer_armor-name
   id: civ13_suit_dwemmer_armor
   graph: civ13_suit_dwemmer_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый дорогой доспех из двемерского металла."
+  description: humanity-construction-civ13_suit_dwemmer_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/dwarmor.rsi
     state: icon
@@ -5241,13 +5241,13 @@
     - node: end
       entity: civ13_suit_dwemmer_armor
 - type: construction
-  name: "броня офицера Братьев Бури"
+  name: humanity-construction-civ13_suit_stormcloak_officer_armor-name
   id: civ13_suit_stormcloak_officer_armor
   graph: civ13_suit_stormcloak_officer_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый кожаный доспех с накинутой медвежьей шкурой."
+  description: humanity-construction-civ13_suit_stormcloak_officer_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/stormcloak.rsi
     state: icon
@@ -5268,13 +5268,13 @@
     - node: end
       entity: civ13_suit_stormcloak_officer_armor
 - type: construction
-  name: "усовершенствованная броня ZGZ-1"
+  name: humanity-construction-civ13_suit_zgz1_advanced_armor-name
   id: civ13_suit_zgz1_advanced_armor
   graph: civ13_suit_zgz1_advanced_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современная китайская броня со средней защитой от пуль и других снарядов."
+  description: humanity-construction-civ13_suit_zgz1_advanced_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/zgz1_armor.rsi
     state: icon
@@ -5295,13 +5295,13 @@
     - node: end
       entity: civ13_suit_zgz1_advanced_armor
 - type: construction
-  name: "медицинская броня ZGZ-1"
+  name: humanity-construction-civ13_suit_Medical_zgz1_advanced_armor-name
   id: civ13_suit_Medical_zgz1_advanced_armor
   graph: civ13_suit_Medical_zgz1_advanced_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Современная броня китайских военных медиков со средней защитой от пуль и других снарядов."
+  description: humanity-construction-civ13_suit_Medical_zgz1_advanced_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/zgz1med_armor.rsi
     state: icon
@@ -5322,13 +5322,13 @@
     - node: end
       entity: civ13_suit_Medical_zgz1_advanced_armor
 - type: construction
-  name: "латы из металлолома"
+  name: humanity-construction-civ13_suit_scrap_plate_armor-name
   id: civ13_suit_scrap_plate_armor
   graph: civ13_suit_scrap_plate_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубо собранный доспех, напоминающий средневековые латы."
+  description: humanity-construction-civ13_suit_scrap_plate_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/scraparmor.rsi
     state: icon
@@ -5349,13 +5349,13 @@
     - node: end
       entity: civ13_suit_scrap_plate_armor
 - type: construction
-  name: "механизированная броня"
+  name: humanity-construction-civ13_suit_mechanized_armor-name
   id: civ13_suit_mechanized_armor
   graph: civ13_suit_mechanized_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый железный доспех, собранный на скорую руку."
+  description: humanity-construction-civ13_suit_mechanized_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/mechanicalarmor.rsi
     state: icon
@@ -5376,13 +5376,13 @@
     - node: end
       entity: civ13_suit_mechanized_armor
 - type: construction
-  name: "хитиновая кираса"
+  name: humanity-construction-civ13_suit_chitin_chestplate-name
   id: civ13_suit_chitin_chestplate
   graph: civ13_suit_chitin_chestplate
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Кираса, изготовленная из панцирей насекомых."
+  description: humanity-construction-civ13_suit_chitin_chestplate-description
   icon:
     sprite: Civ14/Clothing/exported/suits/chitin_armor.rsi
     state: icon
@@ -5403,13 +5403,13 @@
     - node: end
       entity: civ13_suit_chitin_chestplate
 - type: construction
-  name: "доспех Саурона"
+  name: humanity-construction-civ13_suit_saurons_armor-name
   id: civ13_suit_saurons_armor
   graph: civ13_suit_saurons_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Доспех тёмного владыки Саурона."
+  description: humanity-construction-civ13_suit_saurons_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sauronarmor.rsi
     state: icon
@@ -5430,13 +5430,13 @@
     - node: end
       entity: civ13_suit_saurons_armor
 - type: construction
-  name: "орочьи латы"
+  name: humanity-construction-civ13_suit_plated_armor_1-name
   id: civ13_suit_plated_armor_1
   graph: civ13_suit_plated_armor_1
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Недорогой доспех из тёмного железа."
+  description: humanity-construction-civ13_suit_plated_armor_1-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ork_plate_elite.rsi
     state: icon
@@ -5457,13 +5457,13 @@
     - node: end
       entity: civ13_suit_plated_armor_1
 - type: construction
-  name: "тяжёлые орочьи латы"
+  name: humanity-construction-civ13_suit_plated_armor_1_2-name
   id: civ13_suit_plated_armor_1_2
   graph: civ13_suit_plated_armor_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Тяжёлый недорогой доспех из тёмного железа."
+  description: humanity-construction-civ13_suit_plated_armor_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/suits/ork_plate_commander.rsi
     state: icon
@@ -5484,13 +5484,13 @@
     - node: end
       entity: civ13_suit_plated_armor_1_2
 - type: construction
-  name: "броня урук-хай"
+  name: humanity-construction-civ13_suit_orc_urukhai_armor-name
   id: civ13_suit_orc_urukhai_armor
   graph: civ13_suit_orc_urukhai_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Крепкий доспех работы орков."
+  description: humanity-construction-civ13_suit_orc_urukhai_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/urukhai_armor.rsi
     state: icon
@@ -5511,13 +5511,13 @@
     - node: end
       entity: civ13_suit_orc_urukhai_armor
 - type: construction
-  name: "броня Белой Руки"
+  name: humanity-construction-civ13_suit_orc_whitehand_armor-name
   id: civ13_suit_orc_whitehand_armor
   graph: civ13_suit_orc_whitehand_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Крепкий доспех орков Белой Руки."
+  description: humanity-construction-civ13_suit_orc_whitehand_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/whitehand_armor.rsi
     state: icon
@@ -5538,13 +5538,13 @@
     - node: end
       entity: civ13_suit_orc_whitehand_armor
 - type: construction
-  name: "броня орка-воина"
+  name: humanity-construction-civ13_suit_orc_grunt_armor-name
   id: civ13_suit_orc_grunt_armor
   graph: civ13_suit_orc_grunt_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Крепкий доспех работы орков."
+  description: humanity-construction-civ13_suit_orc_grunt_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/grunt_armor.rsi
     state: icon
@@ -5565,13 +5565,13 @@
     - node: end
       entity: civ13_suit_orc_grunt_armor
 - type: construction
-  name: "красный плащ-накидка"
+  name: humanity-construction-civ13_suit_red_cape-name
   id: civ13_suit_red_cape
   graph: civ13_suit_red_cape
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Длинная красная накидка."
+  description: humanity-construction-civ13_suit_red_cape-description
   icon:
     sprite: Civ14/Clothing/exported/suits/redcape.rsi
     state: icon
@@ -5593,13 +5593,13 @@
       entity: civ13_suit_red_cape
 
 - type: construction
-  name: "жёлтый защитный костюм"
+  name: humanity-construction-civ13_suit_yellow_NBC_suit-name
   id: civ13_suit_yellow_NBC_suit
   graph: civ13_suit_yellow_NBC_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает от химических и биологических угроз и радиоактивных частиц."
+  description: humanity-construction-civ13_suit_yellow_NBC_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/nbc.rsi
     state: icon
@@ -5620,13 +5620,13 @@
     - node: end
       entity: civ13_suit_yellow_NBC_suit
 - type: construction
-  name: "оливковый защитный костюм"
+  name: humanity-construction-civ13_suit_olive_drab_NBC_suit-name
   id: civ13_suit_olive_drab_NBC_suit
   graph: civ13_suit_olive_drab_NBC_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защищает от химических и биологических угроз и радиоактивных частиц."
+  description: humanity-construction-civ13_suit_olive_drab_NBC_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/nbc2.rsi
     state: icon
@@ -5647,13 +5647,13 @@
     - node: end
       entity: civ13_suit_olive_drab_NBC_suit
 - type: construction
-  name: "костюм пожарного"
+  name: humanity-construction-civ13_suit_firefighting_suit-name
   id: civ13_suit_firefighting_suit
   graph: civ13_suit_firefighting_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Защитный костюм для работы рядом с огнём."
+  description: humanity-construction-civ13_suit_firefighting_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/nbc2.rsi
     state: icon
@@ -5674,13 +5674,13 @@
     - node: end
       entity: civ13_suit_firefighting_suit
 - type: construction
-  name: "защитный костюм химзащиты"
+  name: humanity-construction-civ13_suit_hazmat_suit-name
   id: civ13_suit_hazmat_suit
   graph: civ13_suit_hazmat_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Яркий костюм для защиты от химических и биологических угроз и радиоактивных частиц."
+  description: humanity-construction-civ13_suit_hazmat_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/hazmat_suit.rsi
     state: icon
@@ -5701,13 +5701,13 @@
     - node: end
       entity: civ13_suit_hazmat_suit
 - type: construction
-  name: "защитное пончо"
+  name: humanity-construction-civ13_suit_NBC_poncho-name
   id: civ13_suit_NBC_poncho
   graph: civ13_suit_NBC_poncho
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Лёгкое пончо, которое быстро надевается и защищает от химических и биологических угроз и радиоактивных частиц."
+  description: humanity-construction-civ13_suit_NBC_poncho-description
   icon:
     sprite: Civ14/Clothing/exported/suits/nbcponcho.rsi
     state: icon
@@ -5728,13 +5728,13 @@
     - node: end
       entity: civ13_suit_NBC_poncho
 - type: construction
-  name: "скафандр"
+  name: humanity-construction-civ13_suit_astronaut_suit-name
   id: civ13_suit_astronaut_suit
   graph: civ13_suit_astronaut_suit
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Серый скафандр для защиты от низкого давления, экстремальных температур и радиации."
+  description: humanity-construction-civ13_suit_astronaut_suit-description
   icon:
     sprite: Civ14/Clothing/exported/suits/astronaut.rsi
     state: icon
@@ -5756,13 +5756,13 @@
       entity: civ13_suit_astronaut_suit
 
 - type: construction
-  name: "красный спасательный жилет"
+  name: humanity-construction-civ13_suit_lifejacket_1_2-name
   id: civ13_suit_lifejacket_1_2
   graph: civ13_suit_lifejacket_1_2
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Помогает удержаться на воде."
+  description: humanity-construction-civ13_suit_lifejacket_1_2-description
   icon:
     sprite: Civ14/Clothing/exported/suits/sealvest.rsi
     state: icon
@@ -5783,13 +5783,13 @@
     - node: end
       entity: civ13_suit_lifejacket_1_2
 - type: construction
-  name: "примитивный костяной нагрудник"
+  name: humanity-construction-civ13_suit_primitive_bone_hair_pipe_armor-name
   id: civ13_suit_primitive_bone_hair_pipe_armor
   graph: civ13_suit_primitive_bone_hair_pipe_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Плотно связанные мелкие кости защищают грудь; вместо ремней — верёвки из растительных волокон."
+  description: humanity-construction-civ13_suit_primitive_bone_hair_pipe_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/native_bonearmor.rsi
     state: icon
@@ -5810,13 +5810,13 @@
     - node: end
       entity: civ13_suit_primitive_bone_hair_pipe_armor
 - type: construction
-  name: "меховой жилет мбата"
+  name: humanity-construction-civ13_suit_mbata_pelt_vest-name
   id: civ13_suit_mbata_pelt_vest
   graph: civ13_suit_mbata_pelt_vest
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Парадный наплечный жилет зулусского воина из шкуры крупной кошки."
+  description: humanity-construction-civ13_suit_mbata_pelt_vest-description
   icon:
     sprite: Civ14/Clothing/exported/suits/zulu_mbata.rsi
     state: icon
@@ -5838,13 +5838,13 @@
       entity: civ13_suit_mbata_pelt_vest
 
 - type: construction
-  name: "гамбезон"
+  name: humanity-construction-civ13_suit_gambeson-name
   id: civ13_suit_gambeson
   graph: civ13_suit_gambeson
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Стёганая куртка из нескольких слоёв ткани. Даёт пехотинцу базовую защиту."
+  description: humanity-construction-civ13_suit_gambeson-description
   icon:
     sprite: Civ14/Clothing/exported/suits/gambeson.rsi
     state: icon

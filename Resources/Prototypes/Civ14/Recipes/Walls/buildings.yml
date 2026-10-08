@@ -1,11 +1,11 @@
 - type: construction
-  name: "деревянная дверь"
+  name: humanity-construction-WoodDoorClassic-name
   id: WoodDoorClassic
   graph: WoodDoorClassic
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: "Обычная деревянная дверь."
+  description: humanity-construction-WoodDoorClassic-description
   icon: { sprite: Civ14/Structures/Doors/wood_door_classic.rsi, state: closed }
   objectType: Structure
   agemin: 0
@@ -16,13 +16,13 @@
     - !type:TileNotBlocked
 
 - type: construction
-  name: "деревенская деревянная дверь"
+  name: humanity-construction-WoodDoorRustic-name
   id: WoodDoorRustic
   graph: WoodDoorRustic
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: "Простая деревянная дверь в деревенском стиле."
+  description: humanity-construction-WoodDoorRustic-description
   icon: { sprite: Civ14/Structures/Doors/wood_door_rustic.rsi, state: closed }
   objectType: Structure
   agemin: 0
@@ -61,13 +61,13 @@
       entity: WoodDoorRustic
 
 - type: construction
-  name: "деревянное окно"
+  name: humanity-construction-WoodWindowClassic-name
   id: WoodWindowClassic
   graph: WoodWindowClassic
   startNode: start
   targetNode: end
   category: construction-category-structures
-  description: "Окно в деревенском стиле с деревянной рамой."
+  description: humanity-construction-WoodWindowClassic-description
   icon: { sprite: Civ14/Structures/windows.rsi, state: windownew_frame }
   objectType: Structure
   agemin: 0

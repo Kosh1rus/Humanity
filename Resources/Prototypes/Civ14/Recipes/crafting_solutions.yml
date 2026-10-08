@@ -9,9 +9,9 @@
     Water:
       amount: 10
   effects:
-    - !type:CreateEntityReactionEffect
-      entity: MaterialClay1
-
+  - !type:SpawnEntity
+    entity: MaterialClay1
+    predicted: false
 - type: reagent
   id: Dirt
   name: reagent-name-dirt

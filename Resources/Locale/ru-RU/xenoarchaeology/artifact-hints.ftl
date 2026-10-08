@@ -55,4 +55,3 @@ artifact-trigger-hint-plasma = Газообразная плазма
 artifact-trigger-hint-land = Резкое торможение
 artifact-trigger-hint-examine = Осмотр
 artifact-trigger-hint-medical = Лечебные реагенты
-

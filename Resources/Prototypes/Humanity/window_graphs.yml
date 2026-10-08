@@ -1,0 +1,52 @@
+- graph:
+  - edges:
+    - steps:
+      - amount: 5
+        doAfter: 5
+        material: Dirt
+      to: end
+    node: start
+  - entity: DirtWallWindow
+    node: end
+  id: HumanityDirtWallWindow
+  start: start
+  type: constructionGraph
+- graph:
+  - edges:
+    - steps:
+      - amount: 5
+        doAfter: 5
+        material: Straw
+      to: end
+    node: start
+  - entity: StrawWallWindow
+    node: end
+  id: HumanityStrawWallWindow
+  start: start
+  type: constructionGraph
+- graph:
+  - edges:
+    - steps:
+      - amount: 5
+        doAfter: 5
+        material: Clay
+      to: end
+    node: start
+  - entity: ClayWallWindow
+    node: end
+  id: HumanityClayWallWindow
+  start: start
+  type: constructionGraph
+- graph:
+  - edges:
+    - steps:
+      - amount: 5
+        doAfter: 5
+        material: WoodPlank
+      to: end
+    node: start
+  - entity: LogWallWindow
+    node: end
+  id: HumanityLogWallWindow
+  start: start
+  type: constructionGraph

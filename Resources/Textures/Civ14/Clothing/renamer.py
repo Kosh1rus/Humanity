@@ -43,5 +43,5 @@ if (__name__ == "__main__"):
 								os.mkdir(currdir+"\\exported\\"+splitid)
 							shutil.copy(splitpath, currdir+"\\exported\\"+splitid)
 							shutil.copy(splitpath2, currdir+"\\exported\\"+splitid)
-							
+
 	reading.close()

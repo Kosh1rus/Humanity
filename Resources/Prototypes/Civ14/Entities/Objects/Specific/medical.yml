@@ -1,4 +1,3 @@
-# just a re-named dylovene for non-futuristic uses
 - type: reagent
   id: Sulfanilamide
   name: reagent-name-sulfanilamide
@@ -6,133 +5,137 @@
   desc: reagent-desc-sulfanilamide
   physicalDesc: reagent-physical-desc-chalky
   flavor: bitter
-  color: "#E8E8D3"
+  color: '#E8E8D3'
   metabolisms:
     Medicine:
       effects:
-        - !type:HealthChange
-          damage:
-            types:
-              Poison: -1
-        - !type:HealthChange
-          conditions:
-            - !type:ReagentThreshold
-              min: 20
-          damage:
-            groups:
-              Brute: 2
-        - !type:Jitter
-          conditions:
-            - !type:ReagentThreshold
-              min: 20
-        - !type:PopupMessage
-          conditions:
-            - !type:ReagentThreshold
-              min: 20
-          type: Local
-          visualType: Medium
-          messages: ["generic-reagent-effect-nauseous"]
-          probability: 0.2
-        - !type:ChemVomit
-          conditions:
-            - !type:ReagentThreshold
-              min: 20
-          probability: 0.02
-        - !type:Drunk
-          conditions:
-            - !type:ReagentThreshold
-              min: 15
+      - !type:HealthChange
+        damage:
+          types:
+            Poison: -1
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Sulfanilamide
+        damage:
+          groups:
+            Brute: 2
+      - !type:Jitter
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Sulfanilamide
+      - !type:PopupMessage
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Sulfanilamide
+        type: Local
+        visualType: Medium
+        messages:
+        - generic-reagent-effect-nauseous
+        probability: 0.2
+      - !type:Vomit
+        conditions:
+        - !type:ReagentCondition
+          min: 20
+          reagent: Sulfanilamide
+        probability: 0.02
+      - !type:Drunk
+        conditions:
+        - !type:ReagentCondition
+          min: 15
+          reagent: Sulfanilamide
   plantMetabolism:
-    - !type:PlantAdjustToxins
-      amount: -10
-    - !type:PlantAdjustHealth
-      amount: 1
-
+  - !type:PlantAdjustToxins
+    amount: -10
+  - !type:PlantAdjustHealth
+    amount: 1
 - type: entity
-  name: "таблетка сульфаниламида"
-  description: "Таблетка противомикробного средства."
+  name: таблетка сульфаниламида
+  description: Таблетка противомикробного средства.
   suffix: Sulfanilamide 10u
   parent: Pill
   id: PillSulfanilamide
   components:
-    - type: Pill
-      pillType: 9
-    - type: Sprite
-      state: pill10
-    - type: Label
-      currentLabel: sulfanilamide 10u
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 20
-          reagents:
-            - ReagentId: Sulfanilamide
-              Quantity: 10
-
+  - type: Pill
+    pillType: 9
+  - type: Sprite
+    state: pill10
+  - type: Label
+    currentLabel: sulfanilamide 10u
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Sulfanilamide
+          Quantity: 10
 - type: entity
-  name: "упаковка сульфаниламида"
-  description: "Баночка с таблетками сульфаниламида."
+  name: упаковка сульфаниламида
+  description: Баночка с таблетками сульфаниламида.
   parent: PillCanister
   id: PillCanisterSulfanilamide
   suffix: Sulfanilamide 10u, 5
   components:
-    - type: Label
-      currentLabel: sulfanilamide 10u
-    - type: StorageFill
-      contents:
-        - id: PillSulfanilamide
-          amount: 5
-
+  - type: Label
+    currentLabel: sulfanilamide 10u
+  - type: StorageFill
+    contents:
+    - id: PillSulfanilamide
+      amount: 5
 - type: entity
-  name: "шприц-тюбик с адреналином"
+  name: шприц-тюбик с адреналином
   parent: ChemicalMedipen
   id: SyretteAdrenaline
-  description: "Позволяет быстро и безопасно стабилизировать пациента в критическом состоянии."
+  description: Позволяет быстро и безопасно стабилизировать пациента в критическом состоянии.
   components:
-    - type: Sprite
-      sprite: Civ14/Objects/syringe.rsi
-      layers:
-        - state: single_use3
-          map: ["enum.SolutionContainerLayers.Fill"]
-    - type: SolutionContainerVisuals
-      maxFillLevels: 1
-      changeColor: false
-      emptySpriteName: single_use3_empty
-    - type: SolutionContainerManager
-      solutions:
-        pen:
-          maxVol: 15
-          reagents:
-            - ReagentId: Epinephrine
-              Quantity: 12
-            - ReagentId: TranexamicAcid
-              Quantity: 3
-    - type: Tag
-      tags: []
-
+  - type: Sprite
+    sprite: Civ14/Objects/syringe.rsi
+    layers:
+    - state: single_use3
+      map:
+      - enum.SolutionContainerLayers.Fill
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: single_use3_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Epinephrine
+          Quantity: 12
+        - ReagentId: TranexamicAcid
+          Quantity: 3
+  - type: Tag
+    tags: []
 - type: entity
-  name: "шприц-тюбик с морфином"
+  name: шприц-тюбик с морфином
   parent: ChemicalMedipen
   id: SyretteMorphine
-  description: "Сильное обезболивающее в удобном шприце-тюбике."
+  description: Сильное обезболивающее в удобном шприце-тюбике.
   components:
-    - type: Sprite
-      sprite: Civ14/Objects/syringe.rsi
-      layers:
-        - state: single_use0
-          map: ["enum.SolutionContainerLayers.Fill"]
-    - type: SolutionContainerVisuals
-      maxFillLevels: 1
-      changeColor: false
-      emptySpriteName: single_use0_empty
-    - type: SolutionContainerManager
-      solutions:
-        pen:
-          maxVol: 15
-          reagents:
-            - ReagentId: Bicaridine
-              Quantity: 10
-            - ReagentId: Diphenhydramine
-              Quantity: 5
-    - type: Tag
-      tags: []
+  - type: Sprite
+    sprite: Civ14/Objects/syringe.rsi
+    layers:
+    - state: single_use0
+      map:
+      - enum.SolutionContainerLayers.Fill
+  - type: SolutionContainerVisuals
+    maxFillLevels: 1
+    changeColor: false
+    emptySpriteName: single_use0_empty
+  - type: SolutionContainerManager
+    solutions:
+      pen:
+        maxVol: 15
+        reagents:
+        - ReagentId: Bicaridine
+          Quantity: 10
+        - ReagentId: Diphenhydramine
+          Quantity: 5
+  - type: Tag
+    tags: []

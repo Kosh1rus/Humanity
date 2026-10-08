@@ -5366,14 +5366,14 @@ entities:
     - type: Transform
       pos: 53.5,62.5
       parent: 2
-- proto: ContainerBlueRustedStalker
+- proto: ContainerBoxStalker
   entities:
   - uid: 2531
     components:
     - type: Transform
       pos: 7.5,83.5
       parent: 2
-- proto: ContainerBlueStalker
+- proto: ContainerBoxStalker
   entities:
   - uid: 2527
     components:
@@ -5407,21 +5407,21 @@ entities:
     - type: Transform
       pos: 57.5,33.5
       parent: 2
-- proto: ContainerRedRustedStalker
+- proto: ContainerBoxStalker
   entities:
   - uid: 2532
     components:
     - type: Transform
       pos: 6.5,81.5
       parent: 2
-- proto: ContainerYellowRustedStalker
+- proto: ContainerBoxStalker
   entities:
   - uid: 2529
     components:
     - type: Transform
       pos: 13.5,33.5
       parent: 2
-- proto: ContainerYellowStalker
+- proto: ContainerBoxStalker
   entities:
   - uid: 2704
     components:

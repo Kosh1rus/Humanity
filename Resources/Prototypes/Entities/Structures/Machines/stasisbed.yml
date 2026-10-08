@@ -1,58 +1,66 @@
 - type: entity
   id: StasisBed
-  name: "стазисная койка"
-  parent: [BaseMachinePowered, ConstructibleMachine]
-  description: "Сильно замедляет обмен веществ пациента и не даёт телу разлагаться. Врач получает больше времени, чтобы стабилизировать его состояние."
+  name: стазисная койка
+  parent:
+  - BaseMachinePowered
+  - ConstructibleMachine
+  - BaseConstructibleMachineDestructible
+  description: Сильно замедляет обмен веществ пациента и не даёт телу разлагаться. Врач получает больше времени, чтобы стабилизировать
+    его состояние.
   components:
-    - type: StasisBed
-    - type: AntiRotOnBuckle
-    - type: HealOnBuckle
-      damage:
-        types:
-          Poison: -0.001
-          Blunt: -0.001
-    - type: Sprite
-      sprite: Structures/Machines/stasis_bed.rsi
-      noRot: true
-      layers:
-        - state: icon
-        - state: unlit
-          shader: unshaded
-          map: ["enum.StasisBedVisualLayers.IsOn"]
-    - type: StasisBedVisuals
-    - type: Appearance
-    - type: ApcPowerReceiver
-      powerLoad: 1000
-    - type: ExtensionCableReceiver
-    - type: Damageable
-      damageContainer: Inorganic
-      damageModifierSet: Metallic
-    - type: Destructible
-      thresholds:
-        - trigger: !type:DamageTrigger
-            damage: 75
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-            - !type:SpawnEntitiesBehavior
-              spawn:
-                SheetSteel1:
-                  min: 1
-                  max: 2
-    - type: Strap
-      position: Down
-      rotation: -90
-    - type: Machine
-      board: StasisBedMachineCircuitboard
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape: !type:PhysShapeAabb
-            bounds: "-0.45,-0.45,0.45,0.05"
-          density: 190
-          mask:
-            - LowImpassable
-
-    - type: PowerSwitch
+  - type: StasisBed
+  - type: AntiRotOnBuckle
+  - type: HealOnBuckle
+    damage:
+      types:
+        Poison: -0.001
+        Blunt: -0.001
+  - type: Sprite
+    sprite: Structures/Machines/stasis_bed.rsi
+    noRot: true
+    layers:
+    - state: icon
+    - state: unlit
+      shader: unshaded
+      map:
+      - unlit
+  - type: GenericVisualizer
+    visuals:
+      enum.PowerDeviceVisuals.Powered:
+        unlit:
+          true:
+            visible: true
+          false:
+            visible: false
+  - type: Appearance
+  - type: ApcPowerReceiver
+    powerLoad: 1000
+  - type: ExtensionCableReceiver
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 175
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+  - type: Strap
+    position: Down
+    rotation: -90
+  - type: Machine
+    board: StasisBedMachineCircuitboard
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: -0.45,-0.45,0.45,0.05
+        density: 190
+        mask:
+        - LowImpassable
+  - type: GuideHelp
+    guides:
+    - MedicalDoctor
+  - type: PowerSwitch
+  - type: AmbientMusicMarkerMedical

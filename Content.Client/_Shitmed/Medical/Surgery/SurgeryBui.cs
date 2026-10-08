@@ -20,10 +20,10 @@ using Robust.Shared.Utility;
 namespace Content.Client._Shitmed.Medical.Surgery;
 
 [UsedImplicitly]
-public sealed class SurgeryBui : BoundUserInterface
+public sealed partial class SurgeryBui : BoundUserInterface
 {
-    [Dependency] private readonly IEntityManager _entities = default!;
-    [Dependency] private readonly IPlayerManager _player = default!;
+    [Dependency] private IEntityManager _entities = default!;
+    [Dependency] private IPlayerManager _player = default!;
 
     private readonly SurgerySystem _system;
     [ViewVariables]
@@ -219,7 +219,7 @@ public sealed class SurgeryBui : BoundUserInterface
             label.Set(msg, null);
 
             _window.Steps.AddChild(label);
-            _window.Steps.AddChild(new HSeparator { Margin = new Thickness(0, 0, 0, 1) });
+            _window.Steps.AddChild(new Content.Client.UserInterface.Controls.Separator { Margin = new Thickness(0, 0, 0, 1) });
         }
         foreach (var stepId in surgery.Comp.Steps)
             AddStep(stepId, netPart, surgeryId);

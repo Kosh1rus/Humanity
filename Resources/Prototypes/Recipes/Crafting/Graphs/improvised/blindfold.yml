@@ -2,12 +2,12 @@
   id: Blindfold
   start: start
   graph:
-    - node: start
-      edges:
-        - to: blindfold
-          steps:
-            - material: Leather
-              amount: 2
-              doAfter: 10
-    - node: blindfold
-      entity: ClothingEyesBlindfold
+  - node: start
+    edges:
+    - to: blindfold
+      steps:
+      - material: Leather
+        amount: 2
+        doAfter: 10
+  - node: blindfold
+    entity: ClothingEyesBlindfold

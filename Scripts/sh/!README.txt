@@ -1,1 +1,0 @@
-Build: buildAllRelease.sh. From the repository root: dotnet run --project Content.Server -c Release --no-build -- --config-file Resources/ConfigPresets/Civ/production.toml; dotnet run --project Content.Client -c Release --no-build.

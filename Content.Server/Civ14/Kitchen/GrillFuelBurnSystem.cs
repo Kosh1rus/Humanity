@@ -15,16 +15,14 @@ using Robust.Shared.GameObjects;
 
 namespace Content.Server.Kitchen;
 
-public sealed class GrillFuelBurnSystem : EntitySystem
+public sealed partial class GrillFuelBurnSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _gameTiming = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly TemperatureSystem _temperature = default!;
-    [Dependency] private readonly AudioSystem _audio = default!;
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly SharedStackSystem _stackSystem = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private TemperatureSystem _temperature = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
+    [Dependency] private SharedStackSystem _stackSystem = default!;
 
-    [Dependency] private readonly SharedPointLightSystem _pointLightSystem = default!;
+    [Dependency] private SharedPointLightSystem _pointLightSystem = default!;
 
     public override void Initialize()
     {

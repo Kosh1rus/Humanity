@@ -8,9 +8,9 @@ using Robust.Shared.Network;
 namespace Content.Client.Commands
 {
     [UsedImplicitly]
-    public sealed class AcceptFactionInviteCommand : IConsoleCommand
+    public sealed partial class AcceptFactionInviteCommand : IConsoleCommand
     {
-        [Dependency] private readonly IEntityManager _entityManager = default!;
+        [Dependency] private IEntityManager _entityManager = default!;
 
         public string Command => "acceptfactioninvite";
         public string Description => "Принять приглашение во фракцию.";

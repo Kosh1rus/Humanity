@@ -1,11 +1,11 @@
 - type: construction
-  name: "первобытная шуба"
+  name: humanity-construction-civ13_suit_primitive_pelt_coat-name
   id: civ13_suit_primitive_pelt_coat
   graph: civ13_suit_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубая шуба из звериных шкур. Защищает от непогоды."
+  description: humanity-construction-civ13_suit_primitive_pelt_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
@@ -27,13 +27,13 @@
     - node: end
       entity: civ13_suit_primitive_pelt_coat
 - type: construction
-  name: "коричневая первобытная шуба"
+  name: humanity-construction-civ13_suit_brown_primitive_pelt_coat-name
   id: civ13_suit_brown_primitive_pelt_coat
   graph: civ13_suit_brown_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубая коричневая шуба из звериных шкур. Защищает от непогоды."
+  description: humanity-construction-civ13_suit_brown_primitive_pelt_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur1.rsi
     state: icon
@@ -55,13 +55,13 @@
     - node: end
       entity: civ13_suit_brown_primitive_pelt_coat
 - type: construction
-  name: "чёрная первобытная шуба"
+  name: humanity-construction-civ13_suit_black_primitive_pelt_coat-name
   id: civ13_suit_black_primitive_pelt_coat
   graph: civ13_suit_black_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубая чёрная шуба из звериных шкур. Защищает от непогоды."
+  description: humanity-construction-civ13_suit_black_primitive_pelt_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur2.rsi
     state: icon
@@ -83,13 +83,13 @@
     - node: end
       entity: civ13_suit_black_primitive_pelt_coat
 - type: construction
-  name: "белая первобытная шуба"
+  name: humanity-construction-civ13_suit_white_primitive_pelt_coat-name
   id: civ13_suit_white_primitive_pelt_coat
   graph: civ13_suit_white_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубая белая шуба из звериных шкур. Защищает от непогоды."
+  description: humanity-construction-civ13_suit_white_primitive_pelt_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur3.rsi
     state: icon
@@ -111,13 +111,13 @@
     - node: end
       entity: civ13_suit_white_primitive_pelt_coat
 - type: construction
-  name: "серая первобытная шуба"
+  name: humanity-construction-civ13_suit_grey_primitive_pelt_coat-name
   id: civ13_suit_grey_primitive_pelt_coat
   graph: civ13_suit_grey_primitive_pelt_coat
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Грубая серая шуба из звериных шкур. Защищает от непогоды."
+  description: humanity-construction-civ13_suit_grey_primitive_pelt_coat-description
   icon:
     sprite: Civ14/Clothing/exported/suits/prehistoric_fur4.rsi
     state: icon
@@ -139,13 +139,13 @@
     - node: end
       entity: civ13_suit_grey_primitive_pelt_coat
 - type: construction
-  name: "примитивный деревянный доспех"
+  name: humanity-construction-civ13_suit_primitive_wood_armor-name
   id: civ13_suit_primitive_wood_armor
   graph: civ13_suit_primitive_wood_armor
   startNode: start
   targetNode: end
   category: construction-category-clothing
-  description: "Небольшие деревянные планки, связанные верёвками из растительных волокон."
+  description: humanity-construction-civ13_suit_primitive_wood_armor-description
   icon:
     sprite: Civ14/Clothing/exported/suits/wooden_chestarmor.rsi
     state: icon

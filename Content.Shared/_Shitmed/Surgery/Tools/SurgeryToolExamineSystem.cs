@@ -6,7 +6,7 @@
 //
 // SPDX-License-Identifier: AGPL-3.0-or-later
 
-using Content.Shared.Body.Organ;
+using Content.Shared.Body;
 using Content.Shared.Body.Part;
 using Content.Shared.Examine;
 using Content.Shared.Verbs;
@@ -17,9 +17,9 @@ namespace Content.Shared._Shitmed.Medical.Surgery.Tools;
 /// <summary>
 ///     Examining a surgical or ghetto tool shows everything it can be used for.
 /// </summary>
-public sealed class SurgeryToolExamineSystem : EntitySystem
+public sealed partial class SurgeryToolExamineSystem : EntitySystem
 {
-    [Dependency] private readonly ExamineSystemShared _examine = default!;
+    [Dependency] private ExamineSystemShared _examine = default!;
 
     public override void Initialize()
     {

@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Primate
-  name: "primate"
+  name: primate
   root: torso
   slots:
     torso:

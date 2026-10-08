@@ -13,11 +13,11 @@ using Robust.Shared.Random;
 
 namespace Content.Shared.Goobstation.Weapons.DodgeWideswing;
 
-public sealed class DodgeWideswingSystem : EntitySystem
+public sealed partial class DodgeWideswingSystem : EntitySystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly StaminaSystem _stamina = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private SharedStaminaSystem _stamina = default!;
 
     /// <summary>
     /// Subscribes to damage change events for entities with the <see cref="DodgeWideswingComponent"/>.
@@ -39,7 +39,7 @@ public sealed class DodgeWideswingSystem : EntitySystem
     {
         if (args.HeavyAttack && (!HasComp<KnockedDownComponent>(uid) || component.WhenKnockedDown) && _random.Prob(component.Chance))
         {
-            _stamina.TakeStaminaDamage(uid, args.Damage.GetTotal().Float() * component.StaminaRatio, source: args.Origin, immediate: false);
+            _stamina.TakeStaminaDamage(uid, args.Damage.GetTotal().Float() * component.StaminaRatio, source: args.Origin);
 
             if (component.PopupId != null)
                 _popup.PopupPredicted(Loc.GetString(component.PopupId, ("target", uid)), uid, args.Origin);

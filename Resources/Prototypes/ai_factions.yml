@@ -1,397 +1,382 @@
 - type: npcFaction
-  id: Nomads
-  hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-
-- type: npcFaction
   id: Dragon
   hostile:
-    - NanoTrasen
-    - Syndicate
-    - Xeno
-    - PetsNT
-    - Zombie
-    - Revolutionary
-    - AllHostile
-    - Wizard
-
+  - NanoTrasen
+  - Syndicate
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: NanoTrasen
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: Mouse
   hostile:
-    - PetsNT
-    - AllHostile
-    - Wizard
-
+  - PetsNT
+  - AllHostile
+  - Wizard
 - type: npcFaction
   id: Passive
-
 - type: npcFaction
   id: PetsNT
+  friendly:
+  - NanoTrasen
   hostile:
-    - Mouse
-    - SimpleHostile
-    - Zombie
-    - Xeno
-    - AllHostile
-    - Wizard
-
+  - Mouse
+  - SimpleHostile
+  - Zombie
+  - Xeno
+  - AllHostile
+  - Dragon
 - type: npcFaction
   id: SimpleHostile
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Syndicate
-    - Passive
-    - PetsNT
-    - Zombie
-    - Revolutionary
-    - AllHostile
-    - Wizard
-
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - Xeno
+  - AllHostile
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: SimpleNeutral
-
 - type: npcFaction
   id: Syndicate
   hostile:
-    - NanoTrasen
-    - Nomads
-    - SimpleHostile
-    - Xeno
-    - PetsNT
-    - Zombie
-    - Dragon
-    - AllHostile
-    - Wizard
-    - France
-    - England
-
+  - NanoTrasen
+  - SimpleHostile
+  - Xeno
+  - PetsNT
+  - Zombie
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: Xeno
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Syndicate
-    - Passive
-    - PetsNT
-    - Zombie
-    - Revolutionary
-    - AllHostile
-    - Wizard
-
+  - NanoTrasen
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - Wizard
+  - Dragon
+  - Xenoborg
 - type: npcFaction
   id: Zombie
   hostile:
-    - NanoTrasen
-    - Nomads
-    - SimpleNeutral
-    - SimpleHostile
-    - Syndicate
-    - Passive
-    - PetsNT
-    - Revolutionary
-    - AllHostile
-    - Wizard
-
+  - NanoTrasen
+  - SimpleNeutral
+  - SimpleHostile
+  - Syndicate
+  - Passive
+  - PetsNT
+  - Revolutionary
+  - AllHostile
+  - Wizard
+  - Dragon
+  - Xenoborg
 - type: npcFaction
   id: Revolutionary
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Zombie
-    - SimpleHostile
-    - Dragon
-    - AllHostile
-    - Wizard
-
+  - NanoTrasen
+  - Zombie
+  - SimpleHostile
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: AllHostile
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Dragon
-    - Mouse
-    - Passive
-    - PetsNT
-    - SimpleHostile
-    - SimpleNeutral
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Wizard
-
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Wizard
+  - Xenoborg
 - type: npcFaction
   id: Wizard
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Dragon
-    - Mouse
-    - Passive
-    - PetsNT
-    - SimpleHostile
-    - SimpleNeutral
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - AllHostile
-
+  - NanoTrasen
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - AllHostile
+  - Xenoborg
+- type: npcFaction
+  id: Xenoborg
+  hostile:
+  - NanoTrasen
+  - Syndicate
+  - Zombie
+  - Revolutionary
+  - Wizard
+  - Xeno
+  - SimpleHostile
+  - AllHostile
+- type: npcFaction
+  id: Nomads
+  hostile:
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
 - type: npcFaction
   id: Predator
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Dragon
-    - Mouse
-    - Passive
-    - PetsNT
-    - SimpleHostile
-    - SimpleNeutral
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Prey
-
+  - NanoTrasen
+  - Nomads
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Prey
 - type: npcFaction
   id: Prey
   hostile:
-    - NanoTrasen
-    - Nomads
-    - Dragon
-    - Mouse
-    - Passive
-    - PetsNT
-    - SimpleHostile
-    - SimpleNeutral
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Predator
-
-## TDM
+  - NanoTrasen
+  - Nomads
+  - Dragon
+  - Mouse
+  - Passive
+  - PetsNT
+  - SimpleHostile
+  - SimpleNeutral
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Predator
 - type: npcFaction
   id: France
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - England
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - England
 - type: npcFaction
   id: England
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - France
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - France
 - type: npcFaction
   id: Soviet
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Germany
-    - US
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Germany
+  - US
 - type: npcFaction
   id: Germany
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Soviet
-    - US
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Soviet
+  - US
 - type: npcFaction
   id: US
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Soviet
-    - Germany
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Soviet
+  - Germany
 - type: npcFaction
   id: SovietCW
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Germany
-    - US
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Germany
+  - US
 - type: npcFaction
   id: Insurgents
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - US
-    - Blugoslavia
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - US
+  - Blugoslavia
 - type: npcFaction
   id: Blugoslavia
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Insurgents
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Insurgents
 - type: npcFaction
   id: UnitedNations
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
 - type: npcFaction
   id: Civilian
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-
-# Gulag
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
 - type: npcFaction
   id: GulagSoviet
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - Germany
-    - US
-    - GulagPrisoner
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - Germany
+  - US
+  - GulagPrisoner
 - type: npcFaction
   id: GulagPrisonerGerman
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - GulagSoviet
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - GulagSoviet
 - type: npcFaction
   id: GulagPrisonerUkrainian
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - GulagSoviet
-
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - GulagSoviet
 - type: npcFaction
   id: GulagPrisonerPolish
   hostile:
-    - SimpleHostile
-    - Syndicate
-    - Xeno
-    - Zombie
-    - Revolutionary
-    - Dragon
-    - AllHostile
-    - Wizard
-    - Predator
-    - GulagSoviet
+  - SimpleHostile
+  - Syndicate
+  - Xeno
+  - Zombie
+  - Revolutionary
+  - Dragon
+  - AllHostile
+  - Wizard
+  - Predator
+  - GulagSoviet

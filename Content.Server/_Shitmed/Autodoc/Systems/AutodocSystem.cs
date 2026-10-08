@@ -15,11 +15,11 @@ using Content.Shared._Shitmed.Autodoc.Systems;
 
 namespace Content.Server._Shitmed.Autodoc.Systems;
 
-public sealed class AutodocSystem : SharedAutodocSystem
+public sealed partial class AutodocSystem : SharedAutodocSystem
 {
-    [Dependency] private readonly InternalsSystem _internals = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly SharedPowerReceiverSystem _power = default!;
+    [Dependency] private InternalsSystem _internals = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private SharedPowerReceiverSystem _power = default!;
 
     public override void Update(float frameTime)
     {

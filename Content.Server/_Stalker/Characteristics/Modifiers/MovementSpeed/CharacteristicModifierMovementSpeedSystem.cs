@@ -1,11 +1,11 @@
-﻿using Content.Shared._Stalker.Characteristics;
+using Content.Shared._Stalker.Characteristics;
 using Content.Shared.Movement.Systems;
 
 namespace Content.Server._Stalker.Characteristics.Modifiers.MovementSpeed;
 
-public sealed class CharacteristicModifierMovementSpeedSystem : EntitySystem
+public sealed partial class CharacteristicModifierMovementSpeedSystem : EntitySystem
 {
-    [Dependency] private readonly MovementSpeedModifierSystem _movementSpeedModifier = default!;
+    [Dependency] private MovementSpeedModifierSystem _movementSpeedModifier = default!;
 
     public override void Initialize()
     {
@@ -16,7 +16,7 @@ public sealed class CharacteristicModifierMovementSpeedSystem : EntitySystem
 
     private void OnUpdate(Entity<CharacteristicModifierMovementSpeedComponent> modifier, ref CharacteristicUpdatedEvent args)
     {
-        _movementSpeedModifier.RefreshMovementSpeedModifiers(modifier);
+        _movementSpeedModifier.RefreshMovementSpeedModifiers(modifier.Owner);
     }
 
 }

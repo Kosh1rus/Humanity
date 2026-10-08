@@ -1,31 +1,36 @@
 - type: entity
   parent: DrinkBaseCup
   id: WoodCup
-  name: "деревянная чашка"
-  description: "Простая чашка, вырезанная из дерева."
+  name: деревянная чашка
+  description: Простая чашка, вырезанная из дерева.
   components:
-    - type: Drink
-    - type: Sprite
-      sprite: "Civ14/Objects/drinks.rsi"
-      state: wood_cup2
-    - type: Construction
-      graph: WoodCup
-      node: end
-      agemin: 0
-      agemax: 8
-
+  - type: Edible
+    solution: drink
+    destroyOnEmpty: false
+    utensil: None
+  - type: Sprite
+    sprite: Civ14/Objects/drinks.rsi
+    state: wood_cup2
+  - type: Construction
+    graph: WoodCup
+    node: end
+    agemin: 0
+    agemax: 8
 - type: entity
   parent: DrinkBaseCup
   id: WoodMug
-  name: "деревянная кружка"
-  description: "Простая кружка, вырезанная из дерева."
+  name: деревянная кружка
+  description: Простая кружка, вырезанная из дерева.
   components:
-    - type: Drink
-    - type: Sprite
-      sprite: "Civ14/Objects/drinks.rsi"
-      state: wood_cup
-    - type: Construction
-      graph: WoodMug
-      node: end
-      agemin: 0
-      agemax: 8
+  - type: Edible
+    solution: drink
+    destroyOnEmpty: false
+    utensil: None
+  - type: Sprite
+    sprite: Civ14/Objects/drinks.rsi
+    state: wood_cup
+  - type: Construction
+    graph: WoodMug
+    node: end
+    agemin: 0
+    agemax: 8

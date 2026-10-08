@@ -1,6 +1,6 @@
-﻿- type: body
+- type: body
   id: Bot
-  name: "bot"
+  name: bot
   root: hand 1
   slots:
     hand 1:

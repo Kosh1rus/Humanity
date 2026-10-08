@@ -16,7 +16,6 @@
   - type: Construction
     graph: HumanityWovenBasket
     node: end
-
 - type: entity
   id: HumanityHideRack
   parent: BaseStructure
@@ -36,7 +35,6 @@
     graph: HumanityHideRack
     node: end
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Wood
   - type: Destructible
     thresholds:
@@ -44,8 +42,10 @@
         damage: 80
       behaviors:
       - !type:DoActsBehavior
-        acts: [ Destruction ]
-
+        acts:
+        - Destruction
+  - type: Injurable
+    damageContainer: StructuralInorganic
 - type: entity
   id: HumanityClayJar
   parent: BaseStorageItem
@@ -64,7 +64,6 @@
   - type: Construction
     graph: HumanityClayJar
     node: end
-
 - type: entity
   id: HumanityMetalPot
   parent: HumanityClayJar
@@ -77,63 +76,66 @@
   - type: Construction
     graph: HumanityMetalPot
     node: end
-
 - type: construction
   id: HumanityWovenBasket
-  name: плетёная корзина
-  description: Для припасов и мелочей.
+  name: humanity-construction-HumanityWovenBasket-name
+  description: humanity-construction-HumanityWovenBasket-description
   graph: HumanityWovenBasket
   startNode: start
   targetNode: end
   category: construction-category-misc
-  icon: { sprite: Civ14/Objects/Storage/storage.rsi, state: produce_basket }
+  icon:
+    sprite: Civ14/Objects/Storage/storage.rsi
+    state: produce_basket
   objectType: Item
   agemin: 0
   agemax: 8
-
 - type: construction
   id: HumanityHideRack
-  name: стойка для шкур
-  description: Подставка для шкур и припасов.
+  name: humanity-construction-HumanityHideRack-name
+  description: humanity-construction-HumanityHideRack-description
   graph: HumanityHideRack
   startNode: start
   targetNode: end
   category: construction-category-furniture
-  icon: { sprite: Civ14/Objects/structures.rsi, state: drying_rack_full }
+  icon:
+    sprite: Civ14/Objects/structures.rsi
+    state: drying_rack_full
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
   conditions:
-  - !type:TileNotBlocked
+  - !type:TileNotBlocked ''
   agemin: 0
   agemax: 8
-
 - type: construction
   id: HumanityClayJar
-  name: глиняный горшок
-  description: Для хранения припасов.
+  name: humanity-construction-HumanityClayJar-name
+  description: humanity-construction-HumanityClayJar-description
   graph: HumanityClayJar
   startNode: start
   targetNode: end
   category: construction-category-misc
-  icon: { sprite: Civ14/Structures/claystuff.rsi, state: claypot1 }
+  icon:
+    sprite: Civ14/Structures/claystuff.rsi
+    state: claypot1
   objectType: Item
   agemin: 1
   agemax: 8
-
 - type: construction
   id: HumanityMetalPot
-  name: железный котелок
-  description: Прочный котелок для припасов.
+  name: humanity-construction-HumanityMetalPot-name
+  description: humanity-construction-HumanityMetalPot-description
   graph: HumanityMetalPot
   startNode: start
   targetNode: end
   category: construction-category-misc
-  icon: { sprite: Civ14/Objects/kitchen.rsi, state: empty_pot }
+  icon:
+    sprite: Civ14/Objects/kitchen.rsi
+    state: empty_pot
   objectType: Item
   agemin: 2
   agemax: 8
-
 - type: constructionGraph
   id: HumanityWovenBasket
   start: start
@@ -147,7 +149,6 @@
         doAfter: 4
   - node: end
     entity: HumanityWovenBasket
-
 - type: constructionGraph
   id: HumanityHideRack
   start: start
@@ -169,7 +170,6 @@
         doAfter: 2
   - node: end
     entity: HumanityHideRack
-
 - type: entity
   id: HumanityHideRackFrame
   parent: CounterWoodFrame
@@ -177,7 +177,7 @@
   description: Нужно закрепить кожаные ремни.
   components:
   - type: Sprite
-    color: "#BC986FFF"
+    color: '#BC986FFF'
   - type: Construction
     graph: HumanityHideRack
     node: frame
@@ -195,8 +195,8 @@
             min: 2
             max: 2
       - !type:DoActsBehavior
-        acts: [ Destruction ]
-
+        acts:
+        - Destruction
 - type: constructionGraph
   id: HumanityClayJar
   start: start
@@ -210,7 +210,6 @@
         doAfter: 5
   - node: end
     entity: HumanityClayJar
-
 - type: constructionGraph
   id: HumanityMetalPot
   start: start

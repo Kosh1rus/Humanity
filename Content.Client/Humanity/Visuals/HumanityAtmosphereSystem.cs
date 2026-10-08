@@ -11,13 +11,13 @@ using Robust.Shared.Random;
 
 namespace Content.Client.Humanity.Visuals;
 
-public sealed class HumanityAtmosphereSystem : EntitySystem
+public sealed partial class HumanityAtmosphereSystem : EntitySystem
 {
-    [Dependency] private readonly IPlayerManager _players = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly TransformSystem _transforms = default!;
-    [Dependency] private readonly IOverlayManager _overlays = default!;
-    [Dependency] private readonly PointLightSystem _lights = default!;
+    [Dependency] private IPlayerManager _players = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private TransformSystem _transforms = default!;
+    [Dependency] private IOverlayManager _overlays = default!;
+    [Dependency] private PointLightSystem _lights = default!;
     private float _elapsed;
     private float _time;
     private readonly Dictionary<EntityUid, (float Base, float Applied)> _fireEnergy = new();

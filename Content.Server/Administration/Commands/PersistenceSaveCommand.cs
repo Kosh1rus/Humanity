@@ -10,17 +10,16 @@ using Content.Server.Humanity.Persistence;
 namespace Content.Server.Administration.Commands;
 
 [AdminCommand(AdminFlags.Server)]
-public sealed class PersistenceSave : IConsoleCommand
+public sealed partial class PersistenceSave : LocalizedEntityCommands
 {
-    [Dependency] private readonly IConfigurationManager _config = default!;
-    [Dependency] private readonly IEntitySystemManager _system = default!;
-    [Dependency] private readonly IMapManager _map = default!;
+    [Dependency] private IConfigurationManager _config = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private MapLoaderSystem _mapLoader = default!;
+    [Dependency] private NomadWorldSaveSystem _worldSave = default!;
 
-    public string Command => "persistencesave";
-    public string Description => "Saves server data to a persistence file to be loaded later.";
-    public string Help => "persistencesave [mapId] [filePath - default: game.map (CCVar) ]";
+    public override string Command => "persistencesave";
 
-    public void Execute(IConsoleShell shell, string argStr, string[] args)
+    public override void Execute(IConsoleShell shell, string argStr, string[] args)
     {
         if (args.Length < 1 || args.Length > 2)
         {
@@ -48,10 +47,9 @@ public sealed class PersistenceSave : IConsoleCommand
             return;
         }
 
-        var mapLoader = _system.GetEntitySystem<MapLoaderSystem>();
         var success = args.Length == 1 && _config.GetCVar(CCVars.UsePersistence)
-            ? _system.GetEntitySystem<NomadWorldSaveSystem>().Save(_map.GetMapEntityId(mapId))
-            : mapLoader.TrySaveMap(mapId, new ResPath(saveFilePath));
+            ? _worldSave.Save(_map.GetMap(mapId))
+            : _mapLoader.TrySaveMap(mapId, new ResPath(saveFilePath));
         if (!success)
         {
             shell.WriteError("Не удалось сохранить мир. Проверьте серверный журнал.");

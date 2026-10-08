@@ -1,4 +1,4 @@
-﻿using System.Numerics;
+using System.Numerics;
 using Content.Client.Viewport;
 using Content.Shared.CCVar;
 using Robust.Client.Graphics;
@@ -12,10 +12,10 @@ namespace Content.Client.UserInterface.Controls
     ///     Wrapper for <see cref="ScalingViewport"/> that listens to configuration variables.
     ///     Also does NN-snapping within tolerances.
     /// </summary>
-    public sealed class MainViewport : UIWidget
+    public sealed partial class MainViewport : UIWidget
     {
-        [Dependency] private readonly IConfigurationManager _cfg = default!;
-        [Dependency] private readonly ViewportManager _vpManager = default!;
+        [Dependency] private IConfigurationManager _cfg = default!;
+        [Dependency] private ViewportManager _vpManager = default!;
 
         public ScalingViewport Viewport { get; }
 
@@ -31,6 +31,8 @@ namespace Content.Client.UserInterface.Controls
             };
 
             AddChild(Viewport);
+
+            _cfg.OnValueChanged(CCVars.ViewportScalingFilterMode, _ => UpdateCfg(), true);
         }
 
         protected override void EnteredTree()
@@ -53,6 +55,7 @@ namespace Content.Client.UserInterface.Controls
             var renderScaleUp = _cfg.GetCVar(CCVars.ViewportScaleRender);
             var fixedFactor = _cfg.GetCVar(CCVars.ViewportFixedScaleFactor);
             var verticalFit = _cfg.GetCVar(CCVars.ViewportVerticalFit);
+            var filterMode = _cfg.GetCVar(CCVars.ViewportScalingFilterMode);
 
             if (stretch && verticalFit && PixelSize.X > 0 && PixelSize.Y > 0)
             {

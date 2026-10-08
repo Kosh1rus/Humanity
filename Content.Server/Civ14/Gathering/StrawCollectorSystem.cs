@@ -12,12 +12,12 @@ namespace Content.Server.Gathering;
 
 public sealed partial class StrawCollectorSystem : EntitySystem
 {
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly SharedMapSystem _map = default!;
-    [Dependency] private readonly ITileDefinitionManager _tileManager = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private SharedMapSystem _map = default!;
+    [Dependency] private ITileDefinitionManager _tileManager = default!;
+    [Dependency] private DoAfterSystem _doAfter = default!;
+    [Dependency] private SharedPopupSystem _popup = default!;
+    [Dependency] private IRobustRandom _random = default!;
 
     // Grass tiles that can be cut
     private readonly HashSet<string> _grassTiles = new()
@@ -49,7 +49,7 @@ public sealed partial class StrawCollectorSystem : EntitySystem
         if (!gridUid.HasValue || !TryComp<MapGridComponent>(gridUid.Value, out var grid))
             return;
 
-        var snapPos = grid.TileIndicesFor(clickLocation);
+        var snapPos = _map.TileIndicesFor(gridUid.Value, grid, clickLocation);
         var tileRef = _map.GetTileRef(gridUid.Value, grid, snapPos);
         var tileDef = (ContentTileDefinition)_tileManager[tileRef.Tile.TypeId];
 
@@ -97,7 +97,7 @@ public sealed partial class StrawCollectorSystem : EntitySystem
 
         var comp = ent.Comp;
         var strawCount = _random.Next(comp.MinAmount, comp.MaxAmount + 1);
-        var coordinates = grid.GridTileToLocal(snapPos);
+        var coordinates = _map.GridTileToLocal(gridUid, grid, snapPos);
         for (int i = 0; i < strawCount; i++)
         {
             Spawn("MaterialStraw1", coordinates);

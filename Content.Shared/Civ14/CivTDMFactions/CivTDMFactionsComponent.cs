@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 using Robust.Shared.Serialization; // Added this line
 using System; // Added for [Serializable]
 
@@ -16,13 +15,13 @@ public sealed partial class CivTDMFactionsComponent : Component
     /// <summary>
     /// The name of faction1
     /// </summary>
-    [DataField("faction1Id", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), AutoNetworkedField]
+    [DataField("faction1Id"), AutoNetworkedField]
     public string? Faction1Id { get; set; }
 
     /// <summary>
     /// The name of faction2
     /// </summary>
-    [DataField("faction2Id", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>)), AutoNetworkedField]
+    [DataField("faction2Id"), AutoNetworkedField]
     public string? Faction2Id { get; set; }
 
     /// <summary>

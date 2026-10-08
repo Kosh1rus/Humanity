@@ -1,0 +1,13 @@
+humanity-plant-wheat = пшеница
+humanity-plant-barley = ячмень
+humanity-plant-corn = кукуруза
+humanity-plant-rice = рис
+humanity-plant-potato = картофель
+humanity-plant-hemp = конопля
+humanity-plant-healingherbs = лечебные травы
+humanity-plant-comfreyherbs = окопник
+humanity-plant-yarrowherbs = тысячелистник
+humanity-plant-elderflowerherbs = бузина
+humanity-plant-milkthistleherbs = расторопша
+humanity-plant-aloe = алоэ
+humanity-plant-poppy = мак

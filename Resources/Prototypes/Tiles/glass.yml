@@ -1,0 +1,58 @@
+- type: tile
+  id: FloorGlass
+  parent: BaseStationTile
+  name: tiles-glass-floor
+  sprite: /Textures/Tiles/glass.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorRGlass
+  parent: BaseStationTile
+  name: tiles-reinforced-glass-floor
+  sprite: /Textures/Tiles/rglass.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetRGlass1
+  variants: 4
+  placementVariants:
+  - 1.0
+  - 1.0
+  - 1.0
+  - 1.0
+  baseTurf: FloorDirt
+  isSubfloor: false
+  heatCapacity: 10000
+- type: tile
+  id: FloorGlassPlasma
+  parent: BaseStationTile
+  name: tiles-plasma-glass-floor
+  sprite: /Textures/Tiles/Glass/glass-plasma.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetPlasma1
+- type: tile
+  id: FloorGlassUranium
+  parent: BaseStationTile
+  name: tiles-uranium-glass-floor
+  sprite: /Textures/Tiles/Glass/glass-uranium.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetUranium1
+- type: tile
+  id: FloorGlassPlastitanium
+  parent: BaseStationTile
+  name: tiles-plastitanium-glass-floor
+  sprite: /Textures/Tiles/Glass/glass-plastitanium.png
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetPlasma1

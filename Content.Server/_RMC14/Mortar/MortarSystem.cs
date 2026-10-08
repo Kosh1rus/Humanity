@@ -9,13 +9,13 @@ using static Content.Shared.Popups.PopupType;
 
 namespace Content.Server._RMC14.Mortar;
 
-public sealed class MortarSystem : SharedMortarSystem
+public sealed partial class MortarSystem : SharedMortarSystem
 {
-    [Dependency] private readonly ContainerSystem _container = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private ContainerSystem _container = default!;
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
     protected override bool CanLoadPopup(
         Entity<MortarComponent> mortar,

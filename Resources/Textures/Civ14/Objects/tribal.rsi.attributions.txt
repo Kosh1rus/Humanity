@@ -1,0 +1,7 @@
+AGPL-3.0: states with matching frames in Civilization 13 at ea9d74c155975889c09707cd60e2a80a2f24078c.
+Source files:
+https://github.com/Civ13/Civ13/blob/ea9d74c155975889c09707cd60e2a80a2f24078c/icons/misc/tribal.dmi
+
+States without a verified source match: animal_remains1.png, animal_remains2.png, animal_remains3.png.
+Civ14 declares CC-BY-SA-3.0 as its default asset license: https://github.com/Civ13/Civ14/blob/459f0b9e4fa8efea11da21dbbeb500d6ac500f64/LICENSE.TXT
+The RSI records both licenses because it contains states from both sources.
