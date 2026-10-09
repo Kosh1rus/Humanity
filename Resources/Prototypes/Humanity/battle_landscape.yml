@@ -12,16 +12,13 @@
     noRot: true
   - type: Clickable
   - type: InteractionOutline
-  - type: Physics
-    bodyType: Static
-  - type: Fixtures
-    fixtures:
-      crater:
-        shape: !type:PhysShapeCircle
-          radius: 0.55
-        hard: false
-        layer: [LowImpassable]
   - type: BattleScar
+    radiusPerTile: 0.16
+    minimumRadius: 0.45
+    maximumRadius: 1.8
+    explosionDamageMultiplier: 0.85
+    proneExplosionDamageMultiplier: 0.65
+    enterDelay: 1
 
 - type: entity
   id: HumanityBattleRubble
@@ -34,6 +31,8 @@
 - type: battleCraterVisuals
   id: HumanityBattleCrater
   verticalCompression: 1.35
+  interiorRadiusFactor: 0.8
+  bodyDepth: 0.18
   mergeRadiusFactor: 0.9
   baseEdgeRadius: 0.88
   interiorDepth: 0.16

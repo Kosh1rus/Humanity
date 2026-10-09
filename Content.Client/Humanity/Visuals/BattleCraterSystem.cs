@@ -15,9 +15,9 @@ public sealed partial class BattleCraterSystem : EntitySystem
 
     [Dependency] private SharedTransformSystem _transforms = default!;
     [Dependency] private IPrototypeManager _prototypes = default!;
+    [Dependency] private BattleCraterEntrySystem _entry = default!;
     private BattleCraterVisualsPrototype? _lastVisuals;
     private readonly Dictionary<EntityUid, float> _depths = new();
-    private readonly List<(EntityUid Grid, Vector2 Position, float Radius)> _craters = new();
     private readonly List<Crater> _lastCraters = new();
     private readonly List<Crater> _currentCraters = new();
     private readonly Dictionary<EntityUid, List<GroundStrip>> _mergedGround = new();
@@ -29,7 +29,6 @@ public sealed partial class BattleCraterSystem : EntitySystem
     {
         base.FrameUpdate(frameTime);
         var visuals = _prototypes.Index(VisualsPrototype);
-        _craters.Clear();
         var current = _currentCraters;
         current.Clear();
         var craters = EntityQueryEnumerator<BattleScarComponent, TransformComponent, SpriteComponent>();
@@ -38,7 +37,6 @@ public sealed partial class BattleCraterSystem : EntitySystem
             if (scar.Rubble || transform.GridUid is not { } grid)
                 continue;
             sprite.Scale = new Vector2(scar.Radius * 2);
-            _craters.Add((grid, _transforms.GetWorldPosition(transform), scar.Radius));
             current.Add(new Crater(craterUid, grid, transform.LocalPosition, scar.Radius, scar.Seed));
         }
         current.Sort((left, right) => left.Uid.CompareTo(right.Uid));
@@ -58,29 +56,20 @@ public sealed partial class BattleCraterSystem : EntitySystem
             _lastVisuals = visuals;
         }
 
-        var bodies = EntityQueryEnumerator<StandingStateComponent, TransformComponent, SpriteComponent>();
-        while (bodies.MoveNext(out var uid, out _, out var transform, out var sprite))
+        var bodies = EntityQueryEnumerator<StandingStateComponent, SpriteComponent>();
+        while (bodies.MoveNext(out var uid, out _, out var sprite))
         {
-            var position = _transforms.GetWorldPosition(transform);
-            var target = 0f;
-            foreach (var crater in _craters)
-            {
-                if (transform.GridUid != crater.Grid)
-                    continue;
-                var distance = (position - crater.Position) / crater.Radius;
-                distance.Y *= visuals.VerticalCompression;
-                if (distance.LengthSquared() < 0.64f)
-                    target = 0.18f;
-            }
+            var target = TryComp<BattleCraterEntryComponent>(uid, out var entry)
+                && entry.Action == null && entry.Crater is { } crater && _entry.IsInside(uid, crater)
+                ? visuals.BodyDepth : 0f;
             _depths.TryGetValue(uid, out var old);
             if (target == 0 && old == 0)
                 continue;
-            var depth = target;
-            sprite.Offset += new Vector2(0, old - depth);
-            if (depth == 0)
+            sprite.Offset += new Vector2(0, old - target);
+            if (target == 0)
                 _depths.Remove(uid);
             else
-                _depths[uid] = depth;
+                _depths[uid] = target;
         }
         foreach (var uid in _depths.Keys.Where(uid => Deleted(uid)).ToArray())
             _depths.Remove(uid);
@@ -204,7 +193,6 @@ public sealed partial class BattleCraterSystem : EntitySystem
                 sprite.Offset += new Vector2(0, depth);
         }
         _depths.Clear();
-        _craters.Clear();
         _currentCraters.Clear();
         _lastCraters.Clear();
         _mergedGround.Clear();

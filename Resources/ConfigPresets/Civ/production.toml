@@ -64,9 +64,9 @@ hub_urls = "https://hub.spacestation14.com/"
 # Authentication (accounts):
 # 0 = Optional, 1 = Required, 2 = Disabled
 # Presumably do require authentication on any public server.
-mode = 0
+mode = 1
 # If true, even if authentication is required, localhost is still allowed to login directly regardless.
-allowlocal = true
+allowlocal = false
 
 [database]
 # Database type to use. Can be "sqlite" or "postgres" currently.

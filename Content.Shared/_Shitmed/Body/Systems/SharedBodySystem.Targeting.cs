@@ -24,7 +24,6 @@ using Content.Shared.Mobs.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Standing;
 using Content.Shared._Shitmed.Targeting;
-using Content.Shared._Shitmed.Targeting.Events;
 using Robust.Shared.CPUJob.JobQueues;
 using Robust.Shared.CPUJob.JobQueues.Queues;
 using Robust.Shared.Network;
@@ -248,7 +247,6 @@ public partial class SharedBodySystem
             && partIdSlot is not null
             && delta != null
             && !HasComp<BodyPartReattachedComponent>(partEnt)
-            && !partEnt.Comp.Enabled
             && damageable.TotalDamage >= partEnt.Comp.SeverIntegrity
             && _severingDamageTypes.Any(damageType => delta.DamageDict.TryGetValue(damageType, out var value) && value > 0))
             severed = true;
@@ -350,10 +348,6 @@ public partial class SharedBodySystem
 
                 Dirty(partEnt.Comp.Body.Value, targeting);
             }
-            // Revival events are handled by the server, so we end up being locked to a network event.
-            // I hope you like the _net.IsServer, Remuchi :)
-            if (_net.IsServer)
-                RaiseNetworkEvent(new TargetIntegrityChangeEvent(GetNetEntity(partEnt.Comp.Body.Value)), partEnt.Comp.Body.Value);
         }
     }
 

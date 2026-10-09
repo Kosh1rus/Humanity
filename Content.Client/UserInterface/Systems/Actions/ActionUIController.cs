@@ -14,6 +14,7 @@ using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Shared.Actions;
 using Content.Shared.Actions.Components;
 using Content.Shared.Charges.Systems;
+using Content.Shared.CombatMode;
 using Content.Shared.Input;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
@@ -276,8 +277,25 @@ public sealed partial class ActionUIController : UIController, IOnStateChanged<G
     {
         QueueWindowUpdate();
 
-        if (_actionsSystem != null)
-            _container?.SetActionData(_actionsSystem, _actions.ToArray());
+        UpdateActionBar();
+    }
+
+    private void UpdateActionBar()
+    {
+        if (_actionsSystem == null)
+            return;
+
+        var index = _actions.FindIndex(action =>
+            EntityManager.TryGetComponent<InstantActionComponent>(action, out var instant)
+            && instant.Event is ToggleCombatActionEvent);
+        if (index > 0)
+        {
+            var harm = _actions[index];
+            _actions.RemoveAt(index);
+            _actions.Insert(0, harm);
+        }
+
+        _container?.SetActionData(_actionsSystem, _actions.ToArray());
     }
 
     private void ActionButtonPressed(ButtonEventArgs args)
@@ -456,7 +474,7 @@ public sealed partial class ActionUIController : UIController, IOnStateChanged<G
         }
 
         if (updateSlots)
-            _container?.SetActionData(_actionsSystem, _actions.ToArray());
+            UpdateActionBar();
     }
 
     private void DragAction()
@@ -478,8 +496,7 @@ public sealed partial class ActionUIController : UIController, IOnStateChanged<G
         if (dragged.Parent is ActionButtonContainer)
             SetAction(dragged, swapAction, false);
 
-        if (_actionsSystem != null)
-            _container?.SetActionData(_actionsSystem, _actions.ToArray());
+        UpdateActionBar();
 
         _menuDragHelper.EndDrag();
     }
@@ -720,7 +737,7 @@ public sealed partial class ActionUIController : UIController, IOnStateChanged<G
             _actions.Add(assign.ActionId);
         }
 
-        _container?.SetActionData(_actionsSystem, _actions.ToArray());
+        UpdateActionBar();
     }
 
     public void RemoveActionContainer()
@@ -761,7 +778,7 @@ public sealed partial class ActionUIController : UIController, IOnStateChanged<G
             return;
 
         LoadDefaultActions();
-        _container?.SetActionData(_actionsSystem, _actions.ToArray());
+        UpdateActionBar();
         QueueWindowUpdate();
     }
 

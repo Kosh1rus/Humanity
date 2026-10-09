@@ -1,3 +1,4 @@
+using System.Numerics;
 using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Humanity.Visuals;
@@ -31,4 +32,19 @@ public sealed partial class BattleCraterVisualsPrototype : IPrototype
 
     [DataField(required: true)]
     public Color EdgeColor;
+
+    [DataField]
+    public float InteriorRadiusFactor = 0.8f;
+
+    [DataField]
+    public float BodyDepth = 0.18f;
+
+    public bool Contains(Vector2 offset, float radius, float? radiusFactor = null)
+    {
+        if (radius <= 0)
+            return false;
+        offset.Y *= VerticalCompression;
+        var factor = radiusFactor ?? InteriorRadiusFactor;
+        return offset.LengthSquared() < radius * radius * factor * factor;
+    }
 }

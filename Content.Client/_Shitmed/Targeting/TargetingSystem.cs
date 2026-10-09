@@ -5,7 +5,6 @@
 
 using Content.Shared.Input;
 using Content.Shared._Shitmed.Targeting;
-using Content.Shared._Shitmed.Targeting.Events;
 using Robust.Client.Player;
 using Robust.Shared.Input.Binding;
 using Robust.Shared.Player;
@@ -28,7 +27,7 @@ public sealed partial class TargetingSystem : SharedTargetingSystem
         SubscribeLocalEvent<TargetingComponent, LocalPlayerDetachedEvent>(HandlePlayerDetached);
         SubscribeLocalEvent<TargetingComponent, ComponentStartup>(OnTargetingStartup);
         SubscribeLocalEvent<TargetingComponent, ComponentShutdown>(OnTargetingShutdown);
-        SubscribeNetworkEvent<TargetIntegrityChangeEvent>(OnTargetIntegrityChange);
+        SubscribeLocalEvent<TargetingComponent, AfterAutoHandleStateEvent>(OnHandleState);
 
         CommandBinds.Builder
         .Bind(ContentKeyFunctions.TargetHead,
@@ -84,15 +83,10 @@ public sealed partial class TargetingSystem : SharedTargetingSystem
         PartStatusShutdown?.Invoke();
     }
 
-    private void OnTargetIntegrityChange(TargetIntegrityChangeEvent args)
+    private void OnHandleState(Entity<TargetingComponent> ent, ref AfterAutoHandleStateEvent args)
     {
-        if (!TryGetEntity(args.Uid, out var uid)
-            || !_playerManager.LocalEntity.Equals(uid)
-            || !TryComp(uid, out TargetingComponent? component)
-            || !args.RefreshUi)
-            return;
-
-        PartStatusUpdate?.Invoke(component);
+        if (_playerManager.LocalEntity == ent.Owner)
+            PartStatusUpdate?.Invoke(ent.Comp);
     }
 
     private void HandleTargetChange(ICommonSession? session, TargetBodyPart target)

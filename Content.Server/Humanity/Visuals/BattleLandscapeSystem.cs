@@ -3,23 +3,22 @@ using System.Numerics;
 using Content.Shared.Barricade;
 using Content.Shared.Civ14.CivResearch;
 using Content.Shared.Destructible;
+using Content.Shared.Explosion;
 using Content.Shared.Explosion.Components;
 using Content.Shared.Humanity.Visuals;
 using Robust.Shared.Map;
 using Robust.Shared.Random;
-using Robust.Shared.Physics;
-using Robust.Shared.Physics.Systems;
 using Robust.Shared.Prototypes;
 
 namespace Content.Server.Humanity.Visuals;
 
 public sealed partial class BattleLandscapeSystem : EntitySystem
 {
-    private static readonly EntProtoId CraterPrototype = "HumanityBattleCrater";
     private static readonly EntProtoId RubblePrototype = "HumanityBattleRubble";
     [Dependency] private SharedMapSystem _maps = default!;
     [Dependency] private SharedTransformSystem _transforms = default!;
     [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
     private readonly HashSet<EntityUid> _explosions = new();
     private readonly Dictionary<EntityUid, Queue<EntityUid>> _scars = new();
 
@@ -31,10 +30,10 @@ public sealed partial class BattleLandscapeSystem : EntitySystem
 
     private void OnDestroyed(EntityUid uid, BarricadeComponent component, DestructionEventArgs args)
     {
-        CreateScar(_transforms.GetMapCoordinates(uid), 0.5f, true);
+        CreateScar(_transforms.GetMapCoordinates(uid), RubblePrototype);
     }
 
-    private void CreateScar(MapCoordinates origin, float radius, bool rubble)
+    private void CreateScar(MapCoordinates origin, EntProtoId prototype, int? tileCount = null)
     {
         if (!_maps.MapExists(origin.MapId))
             return;
@@ -42,15 +41,13 @@ public sealed partial class BattleLandscapeSystem : EntitySystem
         if (!TryComp<CivResearchComponent>(map, out var research) || !research.IsTDM ||
             !_maps.TryFindGridAt(origin, out var grid, out _))
             return;
-        var uid = Spawn(rubble ? RubblePrototype : CraterPrototype, new EntityCoordinates(grid,
+        var uid = Spawn(prototype, new EntityCoordinates(grid,
             Vector2.Transform(origin.Position, _transforms.GetInvWorldMatrix(grid))));
         var scar = Comp<BattleScarComponent>(uid);
-        scar.Radius = radius;
+        if (tileCount is { } count)
+            scar.Radius = Math.Clamp(count * scar.RadiusPerTile, scar.MinimumRadius, scar.MaximumRadius);
         scar.Seed = _random.Next(1, int.MaxValue);
         Dirty(uid, scar);
-        if (!rubble && TryComp<FixturesComponent>(uid, out var fixtures) &&
-            fixtures.Fixtures.TryGetValue("crater", out var fixture))
-            EntityManager.System<SharedPhysicsSystem>().SetRadius(uid, "crater", fixture, fixture.Shape, radius * 0.8f, fixtures);
         if (!_scars.TryGetValue(map, out var marks))
             _scars[map] = marks = new Queue<EntityUid>();
         marks.Enqueue(uid);
@@ -70,9 +67,9 @@ public sealed partial class BattleLandscapeSystem : EntitySystem
         while (query.MoveNext(out var uid, out var explosion))
         {
             if (explosion.Intensity.Count == 0 || !_explosions.Add(uid) ||
-                explosion.ExplosionType is not ("CivGrenade" or "CivDefault"))
+                _prototypes.Index<ExplosionPrototype>(explosion.ExplosionType).Crater is not { } prototype)
                 continue;
-            CreateScar(explosion.Epicenter, Math.Clamp(explosion.Intensity.Count * 0.16f, 0.45f, 1.8f), false);
+            CreateScar(explosion.Epicenter, prototype, explosion.Intensity.Count);
         }
         foreach (var map in _scars.Keys.ToArray())
         {

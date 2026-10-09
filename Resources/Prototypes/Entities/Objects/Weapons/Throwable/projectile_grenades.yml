@@ -5,6 +5,9 @@
   components:
   - type: Appearance
   - type: Damageable
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
   - type: Injurable
     damageContainer: Inorganic
   - type: DeleteOnTrigger

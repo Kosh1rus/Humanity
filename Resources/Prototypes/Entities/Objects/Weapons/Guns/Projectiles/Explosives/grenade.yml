@@ -19,6 +19,7 @@
   categories: [ HideSpawnMenu ]
   name: pellet (ball, lethal)
   components:
+  - type: Shrapnel
   - type: Projectile
     damage:
       types:
@@ -32,6 +33,7 @@
   categories: [ HideSpawnMenu ]
   name: pellet (ball, incendiary)
   components:
+  - type: Shrapnel
   - type: Projectile
     damage:
       types:

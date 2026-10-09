@@ -25,6 +25,15 @@ public sealed partial class ExplosionPrototype : IPrototype
     [DataField("damagePerIntensity", required: true)]
     public DamageSpecifier DamagePerIntensity = default!;
 
+    [DataField]
+    public float BodyPartDamageMultiplier = 0.3f;
+
+    [DataField]
+    public float LimbDamageMultiplier = 2f;
+
+    [DataField]
+    public EntProtoId? Crater;
+
     /// <summary>
     ///     Amount of firestacks to apply in addition to igniting.
     /// </summary>

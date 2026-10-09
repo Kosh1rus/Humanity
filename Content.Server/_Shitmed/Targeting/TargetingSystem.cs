@@ -52,9 +52,6 @@ public sealed partial class TargetingSystem : SharedTargetingSystem
         }
 
         if (changed)
-        {
             Dirty(uid, component);
-            RaiseNetworkEvent(new TargetIntegrityChangeEvent(GetNetEntity(uid)), uid);
-        }
     }
 }

@@ -12,6 +12,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.UserInterface.Controllers;
 using Robust.Shared.Utility;
 using Robust.Client.Graphics;
+using Content.Shared._Shitmed.PartStatus.Events;
 
 
 namespace Content.Client._Shitmed.UserInterface.Systems.PartStatus;
@@ -19,68 +20,55 @@ namespace Content.Client._Shitmed.UserInterface.Systems.PartStatus;
 public sealed partial class PartStatusUIController : UIController, IOnStateEntered<GameplayState>, IOnSystemChanged<TargetingSystem>
 {
     [Dependency] private IEntityManager _entManager = default!;
-    private SpriteSystem _spriteSystem = default!;
+    [Dependency] private IEntityNetworkManager _net = default!;
     private TargetingComponent? _targetingComponent;
     private PartStatusControl? PartStatusControl => UIManager.GetActiveUIWidgetOrNull<PartStatusControl>();
 
     public void OnSystemLoaded(TargetingSystem system)
     {
-        system.PartStatusStartup += AddPartStatusControl;
+        system.PartStatusStartup += UpdatePartStatusControl;
         system.PartStatusShutdown += RemovePartStatusControl;
         system.PartStatusUpdate += UpdatePartStatusControl;
     }
 
     public void OnSystemUnloaded(TargetingSystem system)
     {
-        system.PartStatusStartup -= AddPartStatusControl;
+        system.PartStatusStartup -= UpdatePartStatusControl;
         system.PartStatusShutdown -= RemovePartStatusControl;
         system.PartStatusUpdate -= UpdatePartStatusControl;
     }
 
-    public void OnStateEntered(GameplayState state)
-    {
-        if (PartStatusControl != null)
-        {
-            PartStatusControl.SetVisible(_targetingComponent != null);
-
-            if (_targetingComponent != null)
-                PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
-        }
-    }
-
-    public void AddPartStatusControl(TargetingComponent component)
-    {
-        _targetingComponent = component;
-
-        if (PartStatusControl != null)
-        {
-            PartStatusControl.SetVisible(_targetingComponent != null);
-
-            if (_targetingComponent != null)
-                PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
-        }
-
-    }
+    public void OnStateEntered(GameplayState state) => Refresh();
 
     public void RemovePartStatusControl()
     {
-        if (PartStatusControl != null)
-            PartStatusControl.SetVisible(false);
-
         _targetingComponent = null;
+        Refresh();
     }
 
     public void UpdatePartStatusControl(TargetingComponent component)
     {
-        if (PartStatusControl != null && _targetingComponent != null)
-            PartStatusControl.SetTextures(_targetingComponent.BodyStatus);
+        _targetingComponent = component;
+        Refresh();
     }
 
-    public Texture GetTexture(SpriteSpecifier specifier)
+    private void Refresh()
     {
-        if (_spriteSystem == null)
-            _spriteSystem = _entManager.System<SpriteSystem>();
+        if (PartStatusControl is not { } control)
+            return;
 
-        return _spriteSystem.Frame0(specifier);
+        control.Visible = _targetingComponent != null;
+        if (_targetingComponent != null)
+            control.SetTextures(_targetingComponent.BodyStatus);
+    }
+
+    public Texture GetTexture(SpriteSpecifier specifier) => _entManager.System<SpriteSystem>().Frame0(specifier);
+
+    public void GetPartStatusMessage()
+    {
+        if (_targetingComponent == null)
+            return;
+
+        _net.SendSystemNetworkMessage(new GetPartStatusEvent());
     }
 }

@@ -1,4 +1,5 @@
 using Content.Shared.CCVar;
+using Content.Shared.Body.Part;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
@@ -13,6 +14,7 @@ using Robust.Shared.Physics.Dynamics;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using System.Numerics;
+using System.Linq;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using TimedDespawnComponent = Robust.Shared.Spawners.TimedDespawnComponent;
@@ -396,6 +398,23 @@ public sealed partial class ExplosionSystem
         return damage;
     }
 
+    private void DamageExplosionLimb(EntityUid uid, DamageSpecifier damage, float multiplier)
+    {
+        if (multiplier <= 0 || !damage.DamageDict.Any(entry => entry.Value > 0 && entry.Key.Id is "Blunt" or "Slash" or "Piercing"))
+            return;
+
+        var limbs = _bodySystem.GetBodyChildren(uid)
+            .Where(part => part.Component.CanSever
+                && !part.Component.IsVital
+                && part.Component.PartType is BodyPartType.Arm or BodyPartType.Leg)
+            .ToList();
+        if (limbs.Count == 0)
+            return;
+
+        var limb = _robustRandom.Pick(limbs);
+        _damageableSystem.ChangeBodyDamage(limb.Id, damage * multiplier, ignoreResistances: true);
+    }
+
     private void GetEntitiesToDamage(EntityUid uid, DamageSpecifier originalDamage, string prototype)
     {
         _toDamage.Clear();
@@ -445,6 +464,7 @@ public sealed partial class ExplosionSystem
     {
         if (originalDamage is not null)
         {
+            var prototype = ProtoMan.Index<ExplosionPrototype>(id);
             GetEntitiesToDamage(uid, originalDamage, id);
             foreach (var (entity, damage) in _toDamage)
             {
@@ -452,7 +472,8 @@ public sealed partial class ExplosionSystem
                     continue;
 
                 // TODO EXPLOSIONS turn explosions into entities, and pass the the entity in as the damage origin.
-                _damageableSystem.ChangeBodyDamage(entity, damage, ignoreResistances: true, partMultiplier: 0.3f);
+                _damageableSystem.ChangeBodyDamage(entity, damage, ignoreResistances: true, partMultiplier: prototype.BodyPartDamageMultiplier);
+                DamageExplosionLimb(entity, damage, prototype.LimbDamageMultiplier - prototype.BodyPartDamageMultiplier);
 
                 if (_actorQuery.HasComp(entity))
                 {

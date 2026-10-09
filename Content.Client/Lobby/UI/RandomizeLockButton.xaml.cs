@@ -26,36 +26,11 @@ public sealed partial class RandomizeLockButton : BoxContainer
     /// </summary>
     public string? LabelText { get => LockName.Text; set => LockName.Text = value; }
 
-    /// <summary>
-    /// Tracks which values are allowed to be randomized.
-    /// </summary>
-    public static HumanoidCharacterProfile.RandomizeCfg RandomizeCfg = HumanoidCharacterProfile.RandomizeConfigAll;
+    public bool Locked => LockButton.Pressed;
 
     public RandomizeLockButton()
     {
         RobustXamlLoader.Load(this);
-
-        // Ensure we reset this value to default every time the button is created
-        // Otherwise toggling, disconnecting and reconnecting will leave the cfg in an inconsistent state
-        RandomizeCfg = HumanoidCharacterProfile.RandomizeConfigAll;
-
-        LockButton.OnToggled += args => HandleToggle(args.Pressed);
-    }
-
-    private void HandleToggle(bool toggle)
-    {
-        if (For == default)
-            return;
-        if (toggle)
-        {
-            // if pressed, disable specific randomize by setting its bit to 0
-            RandomizeCfg &= ~For;
-        }
-        else
-        {
-            // if not pressed, enable specific randomize by setting its bit to 1
-            RandomizeCfg |= For;
-        }
     }
 }
 

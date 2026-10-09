@@ -1,5 +1,8 @@
 - type: explosion
   id: CivDefault
+  crater: HumanityBattleCrater
+  bodyPartDamageMultiplier: 0.3
+  limbDamageMultiplier: 2
   damagePerIntensity:
     types:
       Heat: 5
@@ -22,6 +25,9 @@
 
 - type: explosion
   id: CivGrenade
+  crater: HumanityBattleCrater
+  bodyPartDamageMultiplier: 0.3
+  limbDamageMultiplier: 2
   damagePerIntensity:
     types:
       Heat: 5

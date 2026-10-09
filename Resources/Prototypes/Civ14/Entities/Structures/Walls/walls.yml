@@ -18,7 +18,10 @@
     sprite: Civ14/Structures/Walls/straw.rsi
   - type: IconSmooth
     key: walls
-    base: straw
+    states:
+    - !type:CornerSpriteSmoothing
+      base: straw
+      mask: [walls, windows, grilles, marble, doors]
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
@@ -66,7 +69,10 @@
     sprite: Civ14/Structures/Walls/dirtwall.rsi
   - type: IconSmooth
     key: walls
-    base: dirtwall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: dirtwall
+      mask: [walls, windows, grilles, marble, doors]
   - type: Damageable
     damageModifierSet: Wood
   - type: Destructible
@@ -159,7 +165,10 @@
     sprite: Civ14/Structures/Walls/oldwood.rsi
   - type: IconSmooth
     key: walls
-    base: oldwood
+    states:
+    - !type:CornerSpriteSmoothing
+      base: oldwood
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: LogWallIndestructible
   id: LogWall
@@ -241,7 +250,10 @@
     material: WoodPlank
   - type: IconSmooth
     key: walls
-    base: medieval
+    states:
+    - !type:CornerSpriteSmoothing
+      base: medieval
+      mask: [walls, windows, grilles, marble, doors]
   - type: Injurable
     damageContainer: StructuralInorganic
 - type: entity
@@ -260,7 +272,10 @@
     sprite: Civ14/Structures/Walls/stone_block_wall.rsi
   - type: IconSmooth
     key: walls
-    base: stone_block_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: stone_block_wall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: StoneBlockWallIndestructible
   id: StoneBlockWall
@@ -296,7 +311,10 @@
     sprite: Civ14/Structures/Walls/mayan.rsi
   - type: IconSmooth
     key: walls
-    base: mayan
+    states:
+    - !type:CornerSpriteSmoothing
+      base: mayan
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -317,7 +335,10 @@
     sprite: Civ14/Structures/Walls/new_stonebrick.rsi
   - type: IconSmooth
     key: walls
-    base: new_stonebrick
+    states:
+    - !type:CornerSpriteSmoothing
+      base: new_stonebrick
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: StoneBlockWall
   id: StoneBrickWall
@@ -330,7 +351,10 @@
     sprite: Civ14/Structures/Walls/new_stonebrick.rsi
   - type: IconSmooth
     key: walls
-    base: new_stonebrick
+    states:
+    - !type:CornerSpriteSmoothing
+      base: new_stonebrick
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -351,7 +375,10 @@
     sprite: Civ14/Structures/Walls/marble_block_wall.rsi
   - type: IconSmooth
     key: walls
-    base: marble_block_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: marble_block_wall
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -373,7 +400,10 @@
     sprite: Civ14/Structures/Walls/fortress_brickwall.rsi
   - type: IconSmooth
     key: walls
-    base: fortress_brickwall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: fortress_brickwall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: StoneBlockWall
   id: FortressBrickWall
@@ -394,7 +424,10 @@
         - Destruction
   - type: IconSmooth
     key: walls
-    base: fortress_brickwall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: fortress_brickwall
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -415,7 +448,10 @@
     sprite: Civ14/Structures/Walls/roman.rsi
   - type: IconSmooth
     key: walls
-    base: roman
+    states:
+    - !type:CornerSpriteSmoothing
+      base: roman
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -436,7 +472,10 @@
     sprite: Civ14/Structures/Walls/grecian.rsi
   - type: IconSmooth
     key: walls
-    base: grecian
+    states:
+    - !type:CornerSpriteSmoothing
+      base: grecian
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -461,7 +500,10 @@
     sprite: Civ14/Structures/Walls/sandstone_block_wall.rsi
   - type: IconSmooth
     key: walls
-    base: sandstone_block_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: sandstone_block_wall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: SandstoneBlockWallIndestructible
   id: SandstoneBlockWall
@@ -497,7 +539,10 @@
     sprite: Civ14/Structures/Walls/egyptian.rsi
   - type: IconSmooth
     key: walls
-    base: egyptian
+    states:
+    - !type:CornerSpriteSmoothing
+      base: egyptian
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -519,7 +564,10 @@
     sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
   - type: IconSmooth
     key: walls
-    base: sandstone_brickwall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: sandstone_brickwall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: SandstoneBlockWall
   id: SandstoneBrickWall
@@ -532,7 +580,10 @@
     sprite: Civ14/Structures/Walls/sandstone_brickwall.rsi
   - type: IconSmooth
     key: walls
-    base: sandstone_brickwall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: sandstone_brickwall
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -554,7 +605,10 @@
     sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
   - type: IconSmooth
     key: walls
-    base: redsandstone_block_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: redsandstone_block_wall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: SandstoneBlockWall
   id: RedSandstoneBlockWall
@@ -567,7 +621,10 @@
     sprite: Civ14/Structures/Walls/redsandstone_block_wall.rsi
   - type: IconSmooth
     key: walls
-    base: redsandstone_block_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: redsandstone_block_wall
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -589,7 +646,10 @@
     sprite: Civ14/Structures/Walls/sandstone_fortress.rsi
   - type: IconSmooth
     key: walls
-    base: sandstone_fortress
+    states:
+    - !type:CornerSpriteSmoothing
+      base: sandstone_fortress
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: SandstoneBlockWall
   id: FortressSandstoneBrickWall
@@ -610,7 +670,10 @@
         - Destruction
   - type: IconSmooth
     key: walls
-    base: sandstone_fortress
+    states:
+    - !type:CornerSpriteSmoothing
+      base: sandstone_fortress
+      mask: [walls, windows, grilles, marble, doors]
   - type: Construction
     agemin: 0
     agemax: 8
@@ -743,7 +806,10 @@
     material: WoodPlank
   - type: IconSmooth
     key: walls
-    base: aztec
+    states:
+    - !type:CornerSpriteSmoothing
+      base: aztec
+      mask: [walls, windows, grilles, marble, doors]
   - type: Injurable
     damageContainer: StructuralInorganic
 - type: entity
@@ -792,7 +858,10 @@
     material: WoodPlank
   - type: IconSmooth
     key: walls
-    base: nordic
+    states:
+    - !type:CornerSpriteSmoothing
+      base: nordic
+      mask: [walls, windows, grilles, marble, doors]
   - type: Injurable
     damageContainer: StructuralInorganic
 - type: entity
@@ -811,7 +880,10 @@
     sprite: Civ14/Structures/Walls/concrete.rsi
   - type: IconSmooth
     key: walls
-    base: concrete_wall
+    states:
+    - !type:CornerSpriteSmoothing
+      base: concrete_wall
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: ConcreteWallIndestructible
   id: ConcreteWall
@@ -847,7 +919,10 @@
     sprite: Civ14/Structures/Walls/old_brick.rsi
   - type: IconSmooth
     key: walls
-    base: new_brick
+    states:
+    - !type:CornerSpriteSmoothing
+      base: new_brick
+      mask: [walls, windows, grilles, marble, doors]
 - type: entity
   parent: OldBrickWallIndestructible
   id: OldBrickWall

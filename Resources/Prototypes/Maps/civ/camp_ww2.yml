@@ -1,6 +1,6 @@
 - type: gameMap
   id: CampWW2
-  mapName: "Лагерь — Вторая мировая"
+  mapName: "Лагерь"
   mapPath: /Maps/civ/tdm/camp_ww2.yml
   minPlayers: 0
   maxPlayers: 256
@@ -12,7 +12,7 @@
       stationProto: StandardStationTDM
       components:
         - type: StationNameSetup
-          mapNameTemplate: "Лагерь — Вторая мировая"
+          mapNameTemplate: "Лагерь"
         - type: StationJobs
           availableJobs:
             # German

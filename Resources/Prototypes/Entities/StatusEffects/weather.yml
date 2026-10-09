@@ -17,6 +17,7 @@
     sprite:
       sprite: /Textures/Effects/weather.rsi
       state: rain
+    color: "#FFFFFF40"
     sound:
       collection: Rain
       params:
@@ -171,6 +172,7 @@
     sprite:
       sprite: /Textures/Effects/weather.rsi
       state: storm
+    color: "#FFFFFF60"
     sound:
       path: /Audio/Effects/Weather/rain_heavy.ogg
       params:

@@ -85,8 +85,6 @@
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/syndgrenade.rsi
-  - type: ExplosionResistance
-    damageCoefficient: 0.1
   - type: TimerTrigger
     delay: 5
   - type: ExplodeOnTrigger
@@ -316,6 +314,9 @@
   name: modular grenade
   description: A grenade casing. Requires a trigger and a payload.
   components:
+  - type: ExplosionResistance
+    damageCoefficient: 0
+    worn: false
   - type: Sprite
     sprite: Objects/Weapons/Grenades/modular.rsi
     layers:

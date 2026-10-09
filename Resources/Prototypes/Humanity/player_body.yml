@@ -3,5 +3,6 @@
   id: HumanityMobHuman
   name: человек
   components:
+  - type: BattleCraterEntry
   - type: HumanoidProfile
     species: Human
