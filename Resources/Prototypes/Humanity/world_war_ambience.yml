@@ -1,0 +1,38 @@
+- type: worldWarAmbience
+  id: HumanityWorldWarTwo
+  indoorGain: 0.25
+  layers:
+  - sound:
+      path: /Audio/Civ/Ambience/ww2_battle_distant.ogg
+      params:
+        loop: true
+        volume: -23
+  - sound:
+      path: /Audio/Effects/Weather/wind_2_1.ogg
+      params:
+        loop: true
+        volume: -32
+  - sound:
+      collection: HumanityDistantArtillery
+      params:
+        volume: -18
+    interval: 22, 48
+  - sound:
+      collection: HumanityWorldWarAircraft
+      params:
+        volume: -21
+    interval: 100, 180
+
+- type: soundCollection
+  id: HumanityDistantArtillery
+  files:
+  - /Audio/Civ/Weapons/Explosives/Explosions/explo_distantfar01.ogg
+  - /Audio/Civ/Weapons/Explosives/Explosions/explo_distantfar02.ogg
+  - /Audio/Civ/Weapons/Explosives/Explosions/explo_distantfar03.ogg
+
+- type: soundCollection
+  id: HumanityWorldWarAircraft
+  files:
+  - /Audio/Civ/Vehicles/Aircraft/bf109.ogg
+  - /Audio/Civ/Vehicles/Aircraft/il2.ogg
+  - /Audio/Civ/Vehicles/Aircraft/ju87.ogg
