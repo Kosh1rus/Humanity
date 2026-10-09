@@ -9,11 +9,14 @@ using Robust.Shared.Map;
 using Robust.Shared.Random;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Humanity.Visuals;
 
 public sealed partial class BattleLandscapeSystem : EntitySystem
 {
+    private static readonly EntProtoId CraterPrototype = "HumanityBattleCrater";
+    private static readonly EntProtoId RubblePrototype = "HumanityBattleRubble";
     [Dependency] private SharedMapSystem _maps = default!;
     [Dependency] private SharedTransformSystem _transforms = default!;
     [Dependency] private IRobustRandom _random = default!;
@@ -39,11 +42,10 @@ public sealed partial class BattleLandscapeSystem : EntitySystem
         if (!TryComp<CivResearchComponent>(map, out var research) || !research.IsTDM ||
             !_maps.TryFindGridAt(origin, out var grid, out _))
             return;
-        var uid = Spawn(rubble ? null : "HumanityBattleCrater", new EntityCoordinates(grid,
+        var uid = Spawn(rubble ? RubblePrototype : CraterPrototype, new EntityCoordinates(grid,
             Vector2.Transform(origin.Position, _transforms.GetInvWorldMatrix(grid))));
-        var scar = EnsureComp<BattleScarComponent>(uid);
+        var scar = Comp<BattleScarComponent>(uid);
         scar.Radius = radius;
-        scar.Rubble = rubble;
         scar.Seed = _random.Next(1, int.MaxValue);
         Dirty(uid, scar);
         if (!rubble && TryComp<FixturesComponent>(uid, out var fixtures) &&

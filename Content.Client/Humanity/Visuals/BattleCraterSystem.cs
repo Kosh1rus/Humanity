@@ -3,26 +3,59 @@ using System.Linq;
 using Content.Shared.Humanity.Visuals;
 using Content.Shared.Standing;
 using Robust.Client.GameObjects;
+using Robust.Client.Graphics;
+using Robust.Shared.Prototypes;
 
 namespace Content.Client.Humanity.Visuals;
 
 public sealed partial class BattleCraterSystem : EntitySystem
 {
+    private static readonly ProtoId<BattleCraterVisualsPrototype> VisualsPrototype = "HumanityBattleCrater";
+    private const float PixelSize = 1f / 16;
+
     [Dependency] private SharedTransformSystem _transforms = default!;
+    [Dependency] private IPrototypeManager _prototypes = default!;
+    private BattleCraterVisualsPrototype? _lastVisuals;
     private readonly Dictionary<EntityUid, float> _depths = new();
     private readonly List<(EntityUid Grid, Vector2 Position, float Radius)> _craters = new();
+    private readonly List<Crater> _lastCraters = new();
+    private readonly List<Crater> _currentCraters = new();
+    private readonly Dictionary<EntityUid, List<GroundStrip>> _mergedGround = new();
+
+    private readonly record struct Crater(EntityUid Uid, EntityUid Grid, Vector2 Position, float Radius, int Seed);
+    private readonly record struct GroundStrip(Box2 Bounds, Color Color);
 
     public override void FrameUpdate(float frameTime)
     {
         base.FrameUpdate(frameTime);
+        var visuals = _prototypes.Index(VisualsPrototype);
         _craters.Clear();
+        var current = _currentCraters;
+        current.Clear();
         var craters = EntityQueryEnumerator<BattleScarComponent, TransformComponent, SpriteComponent>();
-        while (craters.MoveNext(out _, out var scar, out var transform, out var sprite))
+        while (craters.MoveNext(out var craterUid, out var scar, out var transform, out var sprite))
         {
             if (scar.Rubble || transform.GridUid is not { } grid)
                 continue;
             sprite.Scale = new Vector2(scar.Radius * 2);
             _craters.Add((grid, _transforms.GetWorldPosition(transform), scar.Radius));
+            current.Add(new Crater(craterUid, grid, transform.LocalPosition, scar.Radius, scar.Seed));
+        }
+        current.Sort((left, right) => left.Uid.CompareTo(right.Uid));
+        var visualsChanged = !ReferenceEquals(visuals, _lastVisuals);
+        if (visualsChanged || !current.SequenceEqual(_lastCraters))
+        {
+            var changedGrids = new HashSet<EntityUid>();
+            var changedCraters = visualsChanged
+                ? current.Concat(_lastCraters)
+                : current.Except(_lastCraters).Concat(_lastCraters.Except(current));
+            foreach (var crater in changedCraters)
+                changedGrids.Add(crater.Grid);
+            foreach (var grid in changedGrids)
+                RebuildGround(grid, current.Where(crater => crater.Grid == grid).ToList(), visuals);
+            _lastCraters.Clear();
+            _lastCraters.AddRange(current);
+            _lastVisuals = visuals;
         }
 
         var bodies = EntityQueryEnumerator<StandingStateComponent, TransformComponent, SpriteComponent>();
@@ -35,7 +68,7 @@ public sealed partial class BattleCraterSystem : EntitySystem
                 if (transform.GridUid != crater.Grid)
                     continue;
                 var distance = (position - crater.Position) / crater.Radius;
-                distance.Y *= 1.35f;
+                distance.Y *= visuals.VerticalCompression;
                 if (distance.LengthSquared() < 0.64f)
                     target = 0.18f;
             }
@@ -53,6 +86,116 @@ public sealed partial class BattleCraterSystem : EntitySystem
             _depths.Remove(uid);
     }
 
+    public void DrawGround(EntityUid grid, DrawingHandleWorld handle, Box2 worldBounds)
+    {
+        if (!_mergedGround.TryGetValue(grid, out var strips))
+            return;
+        var localBounds = _transforms.GetInvWorldMatrix(grid).TransformBox(worldBounds);
+        foreach (var strip in strips)
+        {
+            if (strip.Bounds.Intersects(localBounds))
+                handle.DrawRect(strip.Bounds, strip.Color);
+        }
+    }
+
+    private void RebuildGround(EntityUid grid, List<Crater> craters, BattleCraterVisualsPrototype visuals)
+    {
+        _mergedGround.Remove(grid);
+        foreach (var crater in craters)
+        {
+            if (TryComp<SpriteComponent>(crater.Uid, out var sprite))
+                sprite.Visible = true;
+        }
+        var visited = new HashSet<EntityUid>();
+        foreach (var crater in craters)
+        {
+            if (!visited.Add(crater.Uid))
+                continue;
+            var group = new List<Crater> { crater };
+            for (var i = 0; i < group.Count; i++)
+            {
+                foreach (var neighbor in craters)
+                {
+                    if (visited.Contains(neighbor.Uid))
+                        continue;
+                    var delta = neighbor.Position - group[i].Position;
+                    delta.Y *= visuals.VerticalCompression;
+                    var mergeDistance = (neighbor.Radius + group[i].Radius) * visuals.MergeRadiusFactor;
+                    if (delta.LengthSquared() > mergeDistance * mergeDistance)
+                        continue;
+                    visited.Add(neighbor.Uid);
+                    group.Add(neighbor);
+                }
+            }
+            if (group.Count < 2)
+                continue;
+            foreach (var member in group)
+            {
+                if (TryComp<SpriteComponent>(member.Uid, out var sprite))
+                    sprite.Visible = false;
+            }
+            if (!_mergedGround.TryGetValue(grid, out var strips))
+                _mergedGround[grid] = strips = new List<GroundStrip>();
+            Rasterize(group, strips, visuals);
+        }
+    }
+
+    private static void Rasterize(List<Crater> group, List<GroundStrip> strips, BattleCraterVisualsPrototype visuals)
+    {
+        var cells = new Dictionary<Vector2i, float>();
+        foreach (var crater in group)
+        {
+            var minimum = (crater.Position - new Vector2(crater.Radius)) / PixelSize;
+            var maximum = (crater.Position + new Vector2(crater.Radius)) / PixelSize;
+            for (var y = (int) MathF.Floor(minimum.Y); y <= (int) MathF.Ceiling(maximum.Y); y++)
+            for (var x = (int) MathF.Floor(minimum.X); x <= (int) MathF.Ceiling(maximum.X); x++)
+            {
+                var delta = (new Vector2(x + 0.5f, y + 0.5f) * PixelSize - crater.Position) / crater.Radius;
+                delta.Y *= visuals.VerticalCompression;
+                var angle = MathF.Atan2(delta.Y, delta.X);
+                var edge = visuals.BaseEdgeRadius + 0.045f * MathF.Sin(angle * 5 + crater.Seed % 31)
+                    + 0.035f * MathF.Sin(angle * 9 + crater.Seed % 17);
+                var depth = edge - delta.Length();
+                if (depth < 0)
+                    continue;
+                var index = new Vector2i(x, y);
+                cells[index] = MathF.Max(cells.GetValueOrDefault(index), depth);
+            }
+        }
+        foreach (var row in cells.GroupBy(cell => cell.Key.Y))
+        {
+            var start = int.MinValue;
+            var end = 0;
+            var shade = -1;
+            foreach (var cell in row.OrderBy(cell => cell.Key.X))
+            {
+                var nextShade = cell.Value > visuals.InteriorDepth ? 0 : cell.Value > visuals.RimDepth ? 1 : 2;
+                if (start != int.MinValue && (cell.Key.X != end + 1 || shade != nextShade))
+                {
+                    AddStrip(start, end, row.Key, shade);
+                    start = int.MinValue;
+                }
+                if (start == int.MinValue)
+                    start = cell.Key.X;
+                end = cell.Key.X;
+                shade = nextShade;
+            }
+            if (start != int.MinValue)
+                AddStrip(start, end, row.Key, shade);
+        }
+        void AddStrip(int start, int end, int y, int shade)
+        {
+            var color = shade switch
+            {
+                0 => visuals.InteriorColor,
+                1 => visuals.RimColor,
+                _ => visuals.EdgeColor,
+            };
+            strips.Add(new GroundStrip(new Box2(start * PixelSize, y * PixelSize,
+                (end + 1) * PixelSize, (y + 1) * PixelSize), color));
+        }
+    }
+
     public override void Shutdown()
     {
         foreach (var (uid, depth) in _depths)
@@ -61,6 +204,11 @@ public sealed partial class BattleCraterSystem : EntitySystem
                 sprite.Offset += new Vector2(0, depth);
         }
         _depths.Clear();
+        _craters.Clear();
+        _currentCraters.Clear();
+        _lastCraters.Clear();
+        _mergedGround.Clear();
+        _lastVisuals = null;
         base.Shutdown();
     }
 }

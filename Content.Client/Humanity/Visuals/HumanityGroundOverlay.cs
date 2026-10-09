@@ -68,6 +68,7 @@ public sealed class HumanityGroundOverlay(IEntityManager entities) : GridOverlay
         }
         if (research.IsTDM)
         {
+            entities.System<BattleCraterSystem>().DrawGround(Grid.Owner, handle, args.WorldAABB);
             var scars = entities.EntityQueryEnumerator<BattleScarComponent, TransformComponent>();
             while (scars.MoveNext(out _, out var scar, out var scarTransform))
             {

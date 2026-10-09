@@ -22,3 +22,22 @@
         hard: false
         layer: [LowImpassable]
   - type: BattleScar
+
+- type: entity
+  id: HumanityBattleRubble
+  name: обломки
+  components:
+  - type: BattleScar
+    radius: 0.5
+    rubble: true
+
+- type: battleCraterVisuals
+  id: HumanityBattleCrater
+  verticalCompression: 1.35
+  mergeRadiusFactor: 0.9
+  baseEdgeRadius: 0.88
+  interiorDepth: 0.16
+  rimDepth: 0.07
+  interiorColor: "#343023"
+  rimColor: "#413B2A"
+  edgeColor: "#574E36"

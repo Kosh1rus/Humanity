@@ -49,12 +49,15 @@ public sealed partial class MortarWindow : DefaultWindow
         AimChanged?.Invoke(_heading.Value, (int) _range.Value);
     }
 
-    public void Refresh(MortarComponent mortar)
+    public void Refresh(MortarComponent mortar, bool refreshAim = true)
     {
         _minimum = mortar.MinimumRange;
         _maximum = mortar.MaximumRange;
-        _heading.Value = mortar.Heading;
-        _range.Value = mortar.Range;
+        if (refreshAim)
+        {
+            _heading.Value = mortar.Heading;
+            _range.Value = mortar.Range;
+        }
         StatusLabel.Text = Loc.GetString(mortar.Loaded ? "humanity-mortar-ready" : "humanity-mortar-empty");
         FireButton.Disabled = !mortar.Loaded || !mortar.Deployed;
     }

@@ -8,7 +8,13 @@ namespace Content.Client.Humanity.Mortar;
 public sealed partial class MortarAimPreviewSystem : EntitySystem
 {
     [Dependency] private IOverlayManager _overlays = default!;
-    public readonly HashSet<EntityUid> Aiming = new();
+    private readonly Dictionary<EntityUid, float?> _previews = new();
+
+    internal IEnumerable<KeyValuePair<EntityUid, float?>> Previews => _previews;
+
+    public void SetPreview(EntityUid uid, float? heading = null) => _previews[uid] = heading;
+
+    public void RemovePreview(EntityUid uid) => _previews.Remove(uid);
 
     public override void Initialize()
     {
@@ -19,7 +25,7 @@ public sealed partial class MortarAimPreviewSystem : EntitySystem
     public override void Shutdown()
     {
         _overlays.RemoveOverlay<MortarAimOverlay>();
-        Aiming.Clear();
+        _previews.Clear();
         base.Shutdown();
     }
 }
@@ -31,14 +37,15 @@ public sealed class MortarAimOverlay(MortarAimPreviewSystem preview, IEntityMana
     protected override void Draw(in OverlayDrawArgs args)
     {
         var transforms = entities.System<SharedTransformSystem>();
-        foreach (var uid in preview.Aiming)
+        foreach (var (uid, localHeading) in preview.Previews)
         {
             if (!entities.TryGetComponent<MortarComponent>(uid, out var mortar) || !mortar.Deployed ||
                 !entities.TryGetComponent<TransformComponent>(uid, out var xform) ||
                 !xform.Anchored || xform.MapID != args.MapId)
                 continue;
             var start = transforms.GetWorldPosition(xform);
-            var direction = SharedMortarSystem.GetAimDirection(mortar.Heading);
+            var heading = localHeading ?? mortar.Heading;
+            var direction = SharedMortarSystem.GetAimDirection(heading);
             var tip = start + direction * 1.8f;
             var side = new Vector2(-direction.Y, direction.X) * 0.18f;
             var color = new Color(0.9f, 0.8f, 0.5f, 0.85f);

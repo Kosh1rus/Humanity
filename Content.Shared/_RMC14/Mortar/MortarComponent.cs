@@ -16,12 +16,6 @@ public sealed partial class MortarComponent : Component
     public TimeSpan DeployDelay = TimeSpan.FromSeconds(8);
 
     [DataField, AutoNetworkedField]
-    public TimeSpan TargetDelay = TimeSpan.FromSeconds(3);
-
-    [DataField, AutoNetworkedField]
-    public TimeSpan DialDelay = TimeSpan.FromSeconds(1);
-
-    [DataField, AutoNetworkedField]
     public bool Deployed;
 
     [DataField, AutoNetworkedField]
@@ -34,25 +28,7 @@ public sealed partial class MortarComponent : Component
     public bool Loaded;
 
     [DataField, AutoNetworkedField]
-    public Vector2i Target;
-
-    [DataField, AutoNetworkedField]
-    public Vector2i Offset;
-
-    [DataField, AutoNetworkedField]
-    public Vector2i Dial;
-
-    [DataField, AutoNetworkedField]
-    public TimeSpan FireDelay = TimeSpan.FromSeconds(4); // original was 9
-
-    [DataField, AutoNetworkedField]
-    public int TilesPerOffset = 20;
-
-    [DataField, AutoNetworkedField]
-    public int MaxTarget = 1000;
-
-    [DataField, AutoNetworkedField]
-    public int MaxDial = 10;
+    public TimeSpan FireDelay = TimeSpan.FromSeconds(4);
 
     [DataField, AutoNetworkedField]
     public int MinimumRange = 25;
@@ -84,15 +60,9 @@ public sealed partial class MortarComponent : Component
     [DataField, AutoNetworkedField]
     public SoundSpecifier? FireSound = new SoundPathSpecifier("/Audio/Civ/Weapons/Explosives/Cannons/artillery_outgoing.ogg", AudioParams.Default.AddVolume(4));
 
-    [DataField, AutoNetworkedField]
-    public TimeSpan? Cooldown;
-
     [DataField(customTypeSerializer: typeof(TimeOffsetSerializer)), AutoNetworkedField, AutoPausedField]
     public TimeSpan LastFiredAt;
 
     [DataField, AutoNetworkedField]
     public EntProtoId Drop = "MortarKit";
-
-    [DataField, AutoNetworkedField]
-    public int[] FireRandomOffset = new[] { -2, 0, 0, 2 }; // used to be -1 0 0 1
 }
